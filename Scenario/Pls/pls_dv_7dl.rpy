@@ -3,17 +3,17 @@
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(4, u"Алиса. 7ДЛ. Утро")
+    $ alt_chapter(4, u"Alisa. 7DS. Morning")
     call alt_day4_dv_7dl_begin
     pause(1)
     $ persistent.sprite_time = "day"
     $ day_time()
-    $ alt_chapter(4, u"Алиса. 7ДЛ. Поход")
+    $ alt_chapter(4, u"Alisa. 7DS. The Forest")
     call alt_day4_dv_7dl_forest
     pause(1)
     call alt_day4_dv_7dl_dinner
     pause(1)
-    $ alt_chapter(4, u"Алиса. 7ДЛ. Тихий час")
+    $ alt_chapter(4, u"Alisa. 7DS. Quiet hour")
     call alt_day4_dv_7dl_silent_hour
     pause(1)
     call alt_day4_dv_7dl_repetition
@@ -23,7 +23,7 @@
     call alt_day4_dv_7dl_help
     pause(1)
     if alt_day4_dv_7dl_help_cs:
-        $ alt_chapter(4, u"Алиса. 7ДЛ. Поездка")
+        $ alt_chapter(4, u"Alisa. 7DS. Roadtrip")
         call alt_day4_dv_7dl_roadtrip
         pause(1)
         call alt_day4_dv_7dl_alco
@@ -41,7 +41,7 @@
         if alt_day4_dv_7dl_vodka != 2:
             $ persistent.sprite_time = "sunset"
             $ sunset_time()
-            $ alt_chapter(4, u"Алиса. 7ДЛ. Ужин")
+            $ alt_chapter(4, u"Alisa. 7DS. Supper")
             call alt_day4_dv_7dl_supper
             pause(1)
             $ persistent.sprite_time = "night"
@@ -54,25 +54,25 @@ label alt_day5_dv_7dl_start:
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
     if alt_day4_dv_7dl_vodka == 2:
-        $ alt_chapter(5, u"Алиса. 7ДЛ. Похмелье")
+        $ alt_chapter(5, u"Alisa. 7DS. Hangover")
         call alt_day5_dv_7dl_alco_morning
         pause(1)
         call alt_day5_dv_7dl_begin
         pause(1)
     elif alt_day4_dv_7dl_help_cs:
-        $ alt_chapter(5, u"Алиса. 7ДЛ. Возвращение.")
+        $ alt_chapter(5, u"Alisa. 7DS. Return.")
         call alt_day5_dv_7dl_roadtrip
         pause(1)
     else:
-        $ alt_chapter(5, u"Алиса. 7ДЛ. Утро.")
+        $ alt_chapter(5, u"Alisa. 7DS. Morning.")
         call alt_day5_dv_7dl_begin
         pause(1)
     $ persistent.sprite_time = "day"
     $ day_time()
-    $ alt_chapter(5, u"Алиса. 7ДЛ. Свечка.")
+    $ alt_chapter(5, u"Alisa. 7DS. 'Candle'.")
     call alt_day5_dv_7dl_candle
     pause(1)
-    $ alt_chapter(5, u"Алиса. 7ДЛ. День")
+    $ alt_chapter(5, u"Alisa. 7DS. Day")
     call alt_day5_dv_7dl_dinner
     pause(1)
     call alt_day5_dv_7dl_silent_hour
@@ -83,17 +83,17 @@ label alt_day5_dv_7dl_start:
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(5, u"Алиса. 7ДЛ. Вечер")
+    $ alt_chapter(5, u"Alisa. 7DS. Evening")
     call alt_day5_dv_7dl_supper
     pause(1)
     call alt_day5_dv_7dl_evening
     pause(1)
-    $ alt_chapter(5, u"Алиса. 7ДЛ. Костёр")
+    $ alt_chapter(5, u"Alisa. 7DS. Campfire")
     call alt_day5_dv_7dl_campfire
     pause(1)
     $ persistent.sprite_time = "night"
     $ night_time()
-    $ alt_chapter(5, u"Алиса. 7ДЛ. Ночь")
+    $ alt_chapter(5, u"Alisa. 7DS. Night")
     call alt_day5_dv_7dl_night
     pause(1)
     call alt_day5_dv_7dl_sleeptime
@@ -105,7 +105,7 @@ label alt_day6_dv_7dl_start:
     pause(1)
     $ sunset_time()
     $ persistent.sprite_time = "sunset"
-    $ alt_chapter(6, u"Алиса. 7ДЛ. Утро")
+    $ alt_chapter(6, u"Alisa. 7DS. Morning")
     call alt_day6_dv_7dl_begin
     pause(1)
     call alt_day6_dv_7dl_mission
@@ -116,7 +116,7 @@ label alt_day6_dv_7dl_start:
     pause(1)
     $ persistent.sprite_time = "day"
     $ day_time()
-    $ alt_chapter(6, u"Алиса. 7ДЛ. День")
+    $ alt_chapter(6, u"Alisa. 7DS. Day")
     call alt_day6_dv_7dl_dinner
     pause(1)
     if alt_day6_dv_7dl_route == 'sl':
@@ -140,7 +140,7 @@ label alt_day6_dv_7dl_start:
     $ sunset_time()
     call alt_day6_dv_7dl_supper
     pause(1)
-    $ alt_chapter(6, u"Алиса. 7ДЛ. Танцы")
+    $ alt_chapter(6, u"Alisa. 7DS. Dances")
     call alt_day6_dv_7dl_dance
     pause(1)
     if alt_day6_dv_7dl_transit:
@@ -193,7 +193,7 @@ label alt_day6_dv_7dl_start:
 label alt_day7_dv_7dl_start:
     $ persistent.sprite_time = "prolog"
     $ prolog_time()
-    $ alt_chapter(7, u"Алиса. 7ДЛ. Утро")
+    $ alt_chapter(7, u"Alisa. 7DS. Morning")
     call alt_day7_dv_7dl_begin
     pause(1)
     if alt_day7_dv_7dl_check == 'mt':
@@ -204,7 +204,7 @@ label alt_day7_dv_7dl_start:
         $ routetag = "dv7dlbad"
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(7, u"Алиса. 7ДЛ. Отъезд")
+    $ alt_chapter(7, u"Alisa. 7DS. Departure")
     call alt_day7_dv_7dl_router
     pause(1)
     $ persistent.sprite_time = "day"
@@ -233,7 +233,7 @@ label alt_day7_dv_7dl_start:
     pause(1)
     $ persistent.sprite_time = "prolog"
     $ prolog_time()
-    $ alt_chapter(7, u"Алиса. 7ДЛ. Эпилог")
+    $ alt_chapter(7, u"Alisa. 7DS. Epilogue")
     if alt_day7_dv_7dl_check == 'dv_2':
         if karma >= 75:
             if alt_day7_dv_7dl_story_end:

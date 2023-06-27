@@ -10,7 +10,7 @@
         $ counter_us_7dl += 2
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(4, u"Одиночка. Утро")
+    $ alt_chapter(4, u"Loner. Morning")
     if counter_dv_7dl == 4:
         call alt_day4_me_neu_dv
         pause(1)
@@ -68,7 +68,7 @@
                 pause(1)
     $ persistent.sprite_time = "day"
     $ day_time()
-    $ alt_chapter(4, u"Одиночка. День")
+    $ alt_chapter(4, u"Loner. Day")
     call alt_day4_me_neu_dinner
     pause(1)
     if alt_day4_me_neu_escape:
@@ -97,7 +97,7 @@
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(4, u"Одиночка. Вечер")
+    $ alt_chapter(4, u"Loner. Evening")
     call alt_day4_me_neu_supper
     pause(1)
     if not alt_day4_me_neu_volley:
@@ -140,7 +140,7 @@
 
 label alt_day5_me_neu_start:
     call alt_day5_me_neu_vars
-    $ alt_chapter(5, u"Одиночка. Утро")
+    $ alt_chapter(5, u"Loner. Morning")
     if counter_us_7dl_px == 1:
         $ persistent.sprite_time = "night"
         $ night_time()
@@ -181,7 +181,7 @@ label alt_day5_me_neu_start:
         pause(1)
     $ persistent.sprite_time = "day"
     $ day_time()
-    $ alt_chapter(5, u"Одиночка. Обед")
+    $ alt_chapter(5, u"Loner. Dinner")
     call alt_day5_me_neu_dinner
     pause(1)
     if counter_us_7dl_px == 2:
@@ -193,7 +193,7 @@ label alt_day5_me_neu_start:
         pause(1)
         $ persistent.sprite_time = "sunset"
         $ sunset_time()
-        $ alt_chapter(5, u"Одиночка. Вечер")
+        $ alt_chapter(5, u"Loner. Evening")
         call alt_day5_me_neu_us_punishment
         pause(1)
         if alt_day5_me_neu_us_stores:
@@ -223,7 +223,7 @@ label alt_day5_me_neu_start:
             $ routetag = "us_7dl"
         jump alt_day6_us_7dl_start
     else:
-        if 'music' in list_clubs_7dl or len(list_clubs_7dl) == 0:
+        if alt_day5_me_neu_mi_help == True or len(list_clubs_7dl) == 0:
             call alt_day5_me_neu_mi_estrade
             pause(1)
             if alt_day5_me_neu_mt_voyeur == 1:
@@ -243,12 +243,12 @@ label alt_day5_me_neu_start:
         pause(1)
         $ persistent.sprite_time = "sunset"
         $ sunset_time()
-        $ alt_chapter(5, u"Одиночка. Вечер")
+        $ alt_chapter(5, u"Loner. Evening")
         call alt_day5_me_neu_supper
         pause(1)
         call alt_day5_me_neu_evening
         pause(1)
-        $ alt_chapter(5, u"Одиночка. Костёр")
+        $ alt_chapter(5, u"Loner. Campfire")
         call alt_day5_me_neu_campfire
         pause(1)
         $ persistent.sprite_time = "night"
@@ -294,7 +294,7 @@ label alt_day5_me_neu_start:
 label alt_day6_me_neu_start:
     $ persistent.sprite_time = "prolog"
     $ prolog_time()
-    $ alt_chapter(-1, u"Одиночка. Обречённое")
+    $ alt_chapter(-1, u"Loner. Doom")
     scene black
     show screen alt_me_neu_wip
     call alt_day7_me_neu_bad
@@ -304,7 +304,7 @@ label alt_day6_me_neu_start:
 screen alt_me_neu_wip:
     modal True
     add get_image("gui/o_rly/base.png")
-    text "Продолжение находится в разработке. А пока что можете прочитать преждевременный «финал»-заглушку":
+    text "This route is currently unfinished. For now you can read the 'bad' ending.":
         text_align 0.5
         yalign 0.46
         xalign 0.5

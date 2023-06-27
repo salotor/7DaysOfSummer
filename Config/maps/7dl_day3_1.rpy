@@ -1,7 +1,7 @@
 ﻿label alt_day3_map_prepare:
     $ persistent.sprite_time = "day"
     $ day_time()
-    $ alt_chapter(3, u"День")
+    $ alt_chapter(3, u"Day")
     $ disable_all_zones_alt2()
     $ disable_all_chibi_alt2()
 

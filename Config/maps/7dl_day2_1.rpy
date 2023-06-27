@@ -21,7 +21,7 @@
 
     $ persistent.sprite_time = "day"
     $ day_time()
-    $ alt_chapter(2, u"Знакомство с лагерем")
+    $ alt_chapter(2, u"Meet the Camp")
 
 label alt_day2_map:
     $ persistent.sprite_time = "day"

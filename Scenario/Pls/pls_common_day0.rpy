@@ -3,7 +3,7 @@
     $ prolog_time()
     scene black
     play music music_list["drown"] fadein 3
-    $ plthr = u"Выбор"
+    $ plthr = u"Choice"
     $ alt_chapter0()
     with fade
     show spill_red with dspr
@@ -25,7 +25,7 @@
     with dissolve2
     $ renpy.pause(3)
     scene black with fade2
-    show alt_credits "Я с трудом вспоминаю, \n с чего всё началось…" with dissolve2:
+    show alt_credits "I barely remember \n how it all began…" with dissolve2:
         pos (200,540)
     with dissolve2
     $ renpy.block_rollback()
@@ -51,14 +51,14 @@ label alt_day0_approve_dr:
 
 label alt_day0_role_h:
     $ herc = True
-    $ plthr = u"Герк"
+    $ plthr = u"Herc"
     $ alt_chapter0()
     play sound sfx_7dl["role_herc"]
     $ renpy.pause(4)
     with fade2
     $ routetag = "prologue"
     scene black with fade
-    show alt_credits "ПРЕДУПРЕЖДЕНИЕ\nВсе совпадения персонажей и характеров\nс реально существующими людьми\nсчитать злой волей автора" with dissolve2:
+    show alt_credits "WARNING\nAll personality and character coincidences\nwith real people\nshould be considered the ill will of the author" with dissolve2:
         pos (200,540)
     $ renpy.pause(4)
     $ prolog_time()
@@ -67,14 +67,14 @@ label alt_day0_role_h:
 
 label alt_day0_role_l:
     $ loki = True
-    $ plthr = u"Локи"
+    $ plthr = u"Loki"
     $ alt_chapter0()
     play sound sfx_7dl["role_loki"]
     $ renpy.pause(4)
     with dissolve2
     $ routetag = "prologue"
     scene black with fade
-    show alt_credits "ПРЕДУПРЕЖДЕНИЕ\nВсе совпадения персонажей и характеров\nс реально существующими людьми\nсчитать злой волей автора" with dissolve2:
+    show alt_credits "WARNING\nAll personality and character coincidences\nwith real people\nshould be considered the ill will of the author" with dissolve2:
         pos (200,540)
     $ renpy.pause(4)
     $ prolog_time()
@@ -83,14 +83,14 @@ label alt_day0_role_l:
 
 label alt_day0_role_d:
     $ dr = True
-    $ plthr = u"Дрищ"
+    $ plthr = u"Wimp"
     $ alt_chapter0()
     play sound sfx_7dl["role_drisch"]
     $ renpy.pause(4)
     with fade2
     $ routetag = "prologue"
     scene black with fade
-    show alt_credits "ПРЕДУПРЕЖДЕНИЕ\nВсе совпадения персонажей и характеров\nс реально существующими людьми\nсчитать злой волей автора" with dissolve2:
+    show alt_credits "WARNING\nAll personality and character coincidences\nwith real people\nshould be considered the ill will of the author" with dissolve2:
         pos (200,540)
     $ renpy.pause(4)
     $ prolog_time()

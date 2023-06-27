@@ -1,5 +1,5 @@
 ﻿label alt_day4_me_neu_map_evening:
-    $ alt_chapter(4, u"Одиночка. Поиск ответов.")
+    $ alt_chapter(4, u"Loner. Searching for answers.")
     $ disable_all_zones_alt2()
     $ disable_all_chibi_alt2()
 
@@ -64,9 +64,9 @@ label alt_day4_me_neu_map_cyber:
         call alt_day4_me_neu_map_cyber1
         return
     else:
-        th "И что мне тут делать?"
-        th "Пытаться объяснить будущим светилам советской науки что такое мультиварка?"
-        th "Лучше отправлюсь куда-нибудь ещё."
+        th "And what am I supposed to do there?"
+        th "Gonna explain to the future geniuses of Soviet science what the hell is a multicooker?"
+        th "Nah, I'm gonna go somewhere else."
         $ disable_current_zone_alt2()
         jump alt_day4_me_neu_map_answers
 label alt_day4_me_neu_map_admin_house:
@@ -74,8 +74,8 @@ label alt_day4_me_neu_map_admin_house:
         call alt_day4_me_neu_map_admin_house1
         return
     else:
-        th "За все четыре дня в лагере я ни разу не видел ни одного представителя местной администрации."
-        th "Делать здесь мне решительно нечего."
+        th "During these 4 days in the camp I haven't seen a single administrative worker."
+        th "Definitely don't have anything to do here."
         $ disable_current_zone_alt2()
         jump alt_day4_me_neu_map_answers
 

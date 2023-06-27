@@ -2,13 +2,13 @@
     call alt_day2_vars
     $ sunset_time()
     $ persistent.sprite_time = "sunset"
-    $ alt_chapter(2, u"Пробуждение")
+    $ alt_chapter(2, u"Morning")
     call alt_day2_begin
     pause(1)
-    $ alt_chapter(2, u"Линейка")
+    $ alt_chapter(2, u"Lineup")
     call alt_day2_lineup
     pause(1)
-    $ alt_chapter(2, u"Завтрак")
+    $ alt_chapter(2, u"Breakfast")
     call alt_day2_bf
     pause(1)
     if alt_day1_un == 4:
@@ -34,13 +34,13 @@
     call alt_day2_dinner
     pause(1)
     if alt_day2_us_escape:
-        $ alt_chapter(2, u"Великий побег")
+        $ alt_chapter(2, u"The Grand Escape")
         call alt_day2_grand_escape
     else:
-        $ alt_chapter(2, u"День")
+        $ alt_chapter(2, u"Day")
         call alt_day2_siesta
     pause(1)
-    $ alt_chapter(2, u"Турнир")
+    $ alt_chapter(2, u"Tournament")
     call alt_day2_tournament
     pause(1)
     if alt_day2_walk == 2:
@@ -48,16 +48,16 @@
     else:
         call alt_day2_walk_alone
     pause(1)
-    $ alt_chapter(2, u"Ультиматум")
+    $ alt_chapter(2, u"Ultimatum")
     call alt_day2_ultim
     pause(1)
     call alt_day2_cards_tournament_vars
-    $ alt_chapter(2, u"Турнир")
+    $ alt_chapter(2, u"Tournament")
     call alt_day2_cards_tournament
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(2, u"Ужин")
+    $ alt_chapter(2, u"Supper")
     call alt_day2_supper
     pause(1)
     if alt_day2_us_cake == 1:

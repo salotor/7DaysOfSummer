@@ -1,7 +1,7 @@
 ﻿label alt_day5_mi_dj_mapprepare:
     $ day_time()
     $ persistent.sprite_time = "day"
-    $ alt_chapter(5, u"Мику. DJ. В поисках Мику!")
+    $ alt_chapter(5, u"Miku. DJ. In search of Miku!")
     $ disable_all_zones_alt2()
     $ disable_all_chibi_alt2()
     $ set_zone_alt2('music_club_alt2',    'alt_day5_mi_dj_music_club')
@@ -20,13 +20,13 @@
 label alt_day5_mi_dj_map:
     scene black with fade
     if len(list_mi_search_7dl) >= 5:
-        "Я устал и запыхался, я обежал этот чёртов лагерь уже сто раз…"
-        "И нигде, ни в одном из мест, где только могла быть девушка, её либо не видели, либо она вот-вот ушла."
-        "Я прикинул, куда можно было бы пойти ещё."
+        "I'm tired, I'm beat, I've ran around this damned camp about a 100 times now…"
+        "And nowhere, not in any single place, where the girl could be she either wasn't seen, or she just left."
+        "I thought about where else I could go."
         play sound sfx_7dl["eat_horn"] fadein 5
-        th "Уже пора ужинать. Время-то как летит."
-        dreamgirl "Пойдёшь набивать утробу?"
-        th "Да нет. Но там будет вожатая. И Славя. Кажется, пришла пора попросить помощи."
+        th "It's almost dinner. How time flies."
+        dreamgirl "Going to go eat?"
+        th "Uhh, nah. But the camp leader's going to be there. And Slavya. Maybe it's time to ask for help."
         stop sound fadeout 3
         return
     else:

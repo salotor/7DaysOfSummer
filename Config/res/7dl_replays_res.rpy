@@ -127,18 +127,18 @@ init:
 
     ##\\\\\\\\\\\\\\\\\\\\\\\\\ТЕКСТЫ\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     # Персонажи
-    image sdl_repl_char_label = Text("Персонаж", style="sdl_repl_font_small")
-    image sdl_repl_char_label_loki = Text("Локи", style="sdl_repl_font_small")
-    image sdl_repl_char_label_herc = Text("Герк", style="sdl_repl_font_small")
-    image sdl_repl_char_label_dr   = Text("Дрищ", style="sdl_repl_font_small")
+    image sdl_repl_char_label = Text("Character", style="sdl_repl_font_small")
+    image sdl_repl_char_label_loki = Text("Loki", style="sdl_repl_font_small")
+    image sdl_repl_char_label_herc = Text("Herc", style="sdl_repl_font_small")
+    image sdl_repl_char_label_dr   = Text("Wimp", style="sdl_repl_font_small")
     # Разделы
-    image sdl_repl_section_label_mi = Text("Мику",     style="sdl_repl_font_medium", color="#00DFFF")
-    image sdl_repl_section_label_dv = Text("Алиса",    style="sdl_repl_font_medium", color="#FF7F00")
-    image sdl_repl_section_label_sl = Text("Славя",    style="sdl_repl_font_medium", color="#FFD400")
-    image sdl_repl_section_label_un = Text("Лена",     style="sdl_repl_font_medium", color="#D456FF")
-    image sdl_repl_section_label_mt = Text("Ольга",    style="sdl_repl_font_medium", color="#00EA00")
-    image sdl_repl_section_label_us = Text("Ульяна",   style="sdl_repl_font_medium", color="#FF0000")
-    image sdl_repl_section_label_me = Text("Одиночка", style="sdl_repl_font_medium", color="#808080")
+    image sdl_repl_section_label_mi = Text("Miku",     style="sdl_repl_font_medium", color="#00DFFF")
+    image sdl_repl_section_label_dv = Text("Alisa",    style="sdl_repl_font_medium", color="#FF7F00")
+    image sdl_repl_section_label_sl = Text("Slavya",    style="sdl_repl_font_medium", color="#FFD400")
+    image sdl_repl_section_label_un = Text("Lena",     style="sdl_repl_font_medium", color="#D456FF")
+    image sdl_repl_section_label_mt = Text("Olga",    style="sdl_repl_font_medium", color="#00EA00")
+    image sdl_repl_section_label_us = Text("Ulyana",   style="sdl_repl_font_medium", color="#FF0000")
+    image sdl_repl_section_label_me = Text("Loner", style="sdl_repl_font_medium", color="#808080")
 
     ##\\\\\\\\\\\\\\\\\\\\\\\\\ЗВУКИ\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     # SFX

@@ -2,7 +2,7 @@
     call alt_day4_mi_dj_vars
     $ persistent.sprite_time = "night"
     $ night_time()
-    $ alt_chapter(4, u"Мику. DJ. Ночь")
+    $ alt_chapter(4, u"Miku. DJ. Night")
     call alt_day4_mi_dj_begin
     pause(1)
     if alt_day4_mi_dj_hedg:
@@ -10,7 +10,7 @@
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(4, u"Мику. DJ. Утро")
+    $ alt_chapter(4, u"Miku. DJ. Morning")
     call alt_day4_mi_dj_morning
     pause(1)
     call alt_day4_mi_dj_day
@@ -20,7 +20,7 @@
         pause(1)
         $ persistent.sprite_time = "day"
         $ day_time()
-        $ alt_chapter(4, u"Мику. DJ. День")
+        $ alt_chapter(4, u"Miku. DJ. Day")
         call alt_day4_mi_dj_dinner
         pause(1)
     else:
@@ -29,11 +29,11 @@
         $ persistent.sprite_time = "day"
         $ day_time()
         if not alt_day4_mi_dj_hedg:
-            $ alt_chapter(4, u"Мику. DJ. День")
+            $ alt_chapter(4, u"Miku. DJ. Day")
             call alt_day4_mi_dj_dinner
             pause(1)
         else:
-            $ alt_chapter(4, u"Мику. DJ. День")
+            $ alt_chapter(4, u"Miku. DJ. Day")
             call alt_day4_mi_dj_dinner2
             pause(1)
     call alt_day4_mi_dj_repetition
@@ -42,7 +42,7 @@
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(4, u"Мику. DJ. Вечер")
+    $ alt_chapter(4, u"Miku. DJ. Evening")
     call alt_day4_mi_dj_supper
     pause(1)
     call alt_day4_mi_dj_evening
@@ -59,17 +59,17 @@ label alt_day5_mi_dj_start:
     call alt_day5_mi_dj_vars
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(5, u"Мику. DJ. Утро")
+    $ alt_chapter(5, u"Miku. DJ. Morning")
     call alt_day5_mi_dj_begin
     pause(1)
     call alt_day5_mi_dj_breakfast
     pause(1)
-    $ alt_chapter(5, u"Мику. DJ. Кино")
+    $ alt_chapter(5, u"Miku. DJ. Movie")
     call alt_day5_mi_dj_cinema
     pause(1)
     $ persistent.sprite_time = "day"
     $ day_time()
-    $ alt_chapter(5, u"Мику. DJ. День")
+    $ alt_chapter(5, u"Miku. DJ. Day")
     call alt_day5_mi_dj_dinner
     pause(1)
     call alt_day5_mi_dj_jammer
@@ -80,7 +80,7 @@ label alt_day5_mi_dj_start:
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(5, u"Мику. DJ. Вечер")
+    $ alt_chapter(5, u"Miku. DJ. Evening")
     call alt_day5_mi_dj_supper
     pause(1)
     call alt_day5_mi_dj_campfire
@@ -95,7 +95,7 @@ label alt_day5_mi_dj_start:
         call alt_day5_mi_dj_voyeur_4
     pause(1)
     if alt_day5_mi_dj_voyeur == 4 or (alt_day5_mi_dj_voyeur == 2 and alt_day5_mi_dj_dv_blade):
-        $ alt_chapter(5, u"Мику. DJ. Ночь")
+        $ alt_chapter(5, u"Miku. DJ. Night")
         call alt_day5_mi_dj_late_evening
         pause(1)
         if alt_day5_mi_dj_apology == 1:
@@ -123,7 +123,7 @@ label alt_day6_mi_dj_start:
     call alt_day6_mi_dj_vars
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(6, u"Мику. DJ. Утро")
+    $ alt_chapter(6, u"Miku. DJ. Morning")
     if alt_day5_mi_dj_hentai_done:
         call alt_day6_mi_dj_good
         pause(1)
@@ -132,12 +132,12 @@ label alt_day6_mi_dj_start:
         pause(1)
         call alt_day6_mi_dj_neutral_breakfast
         pause(1)
-    $ alt_chapter(6, u"Мику. DJ. В эфире!")
+    $ alt_chapter(6, u"Miku. DJ. Live!")
     call alt_day6_mi_dj_radio
     pause(1)
     $ persistent.sprite_time = "day"
     $ day_time()
-    $ alt_chapter(6, u"Мику. DJ. День")
+    $ alt_chapter(6, u"Miku. DJ. Day")
     call alt_day6_mi_dj_dinner
     pause(1)
     if alt_day5_mi_dj_hentai_done:
@@ -148,7 +148,7 @@ label alt_day6_mi_dj_start:
         call alt_day6_mi_dj_tale
     else:
         call alt_day6_mi_dj_plain
-    $ alt_chapter(6, u"Мику. DJ. Концерт")
+    $ alt_chapter(6, u"Miku. DJ. Concert")
     call alt_day6_mi_dj_concert
     pause(1)
     if alt_day5_mi_dj_voyeur != 4:
@@ -189,7 +189,7 @@ label alt_day6_mi_dj_start:
         $ sunset_time()
         call alt_day6_mi_dj_late_supper_sl
         pause(1)
-    $ alt_chapter(6, u"Мику. DJ. Танцы")
+    $ alt_chapter(6, u"Miku. DJ. Disco")
     call alt_day6_mi_dj_discotheque
     pause(1)
     call alt_day6_mi_dj_first_dance
@@ -217,7 +217,7 @@ label alt_day6_mi_dj_start:
 label alt_day7_mi_dj_start:
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(7, u"Мику. DJ. Утро")
+    $ alt_chapter(7, u"Miku. DJ. Morning")
     if alt_day6_mi_dj_hentai2:
         $ routetag = "mi7dlgood"
         call alt_day7_mi_dj_together
@@ -244,7 +244,7 @@ label alt_day7_mi_dj_start:
     $ persistent.sprite_time = "prolog"
     $ prolog_time()
     if alt_day6_mi_dj_catapult in (1, 2):
-        $ alt_chapter(7, u"Мёрзну без тебя")
+        $ alt_chapter(7, u"Freezing without you")
         call alt_day7_mi_dj_epilogue_frost
         pause(1)
         if alt_day6_mi_dj_catapult == 2:
@@ -254,7 +254,7 @@ label alt_day7_mi_dj_start:
             call alt_day7_mi_dj_true
             pause(1)
     else:
-        $ alt_chapter(7, u"Мир сошёл с ума")
+        $ alt_chapter(7, u"World has gone mad")
         call alt_day7_mi_dj_good
         pause(1)
         if alt_day6_mi_dj_hentai2:

@@ -135,9 +135,9 @@ init 2 python:
 # -----------------------------------------------------------------------------------------------
 # Ключ: me+sh (по алфафиту); Значения: суффикс представления, падеж стола, падежи игроков
     alt_table_special_name = {
-        "me+sh":    ["образовалась мужская компания:","t","i"],                                                 # Семён + Шурик, стол: ТП, игроки: ИП
-        "dv+us":    ["оккупировали рыжие:","i","i"],                                                            # Алиса + Ульяна, стол: ИП, игроки: ИП
-        "dv+mi":    ["заняли наши музыканты:","i","i"]                                                          # Алиса + Мику, стол: ИП, игроки: ИП
+        "me+sh":    ["men's company has formed:","t","i"],                                                 # Семён + Шурик, стол: ТП, игроки: ИП
+        "dv+us":    ["got occupied by redheads:","i","i"],                                                            # Алиса + Ульяна, стол: ИП, игроки: ИП
+        "dv+mi":    ["was taken by our musicians:","i","i"]                                                          # Алиса + Мику, стол: ИП, игроки: ИП
 
         }
 
@@ -146,34 +146,34 @@ init 2 python:
 # отсортировано по возможным сочетаниям ников в алфавитном порядке
 # -----------------------------------------------------------------------------------------------
     alt_table_mutual_taunt = {
-        "dv+me":    "Двачевская с вызовом уставилась на меня, явно намекая на беседу у крыльца.",
-        "dv+mi":    "Мику настороженно покосилась на Алису, пока та с видом победителя устраивалась за столом.",
-        "dv+mz":    "Алиса пыталась хорохориться, а вот Женя в противовес ей была совершенно спокойна.",
-        "dv+sh":    "Алиса плотоядно уставилась на Шурика, но тот, похоже, вообще не обратил на неё внимания.",
-        "dv+sl":    "Идеальное решение. Человек, который хочет выиграть во что бы то ни стало, против человека, которому все эти глупости не нужны.",
-        "dv+un":    "Алиса подмигнула, а Лена, к моему удивлению, слабо улыбнулась и что-то сказала рыжей.",
-        "dv+us":    "Две бестии сцепились взглядами — ни та, ни другая явно не собирались уступать!",
-        "me+mi":    "Кажется, Мику понятия не имела о том, что за игра грядёт, но всеми силами старалась получать удовольствие.",
-        "me+mz":    "Жужелица сидела с видом величайшего одолжения. Видимо, она очень хочет, чтобы всё это завершилось побыстрее.",
-        "me+sh":    "Шурик поправил очки на переносице, сложил руки крестом на груди, и задумчиво уставился на крышку стола. Витает в своих мыслях, не иначе.",
-        "me+sl":    "Славя тепло улыбнулась мне, видимо, подбадривая, а я только и смог, что пожать плечами да криво улыбнуться.",    # Семён + Славя
-        "me+un":    "Лена села напротив, съёжилась и старалась глядеть куда угодно, лишь бы не на меня и уж тем более не в глаза.",    # Семён + Лена
-        "me+us":    "Мелкая, поглядев, не смотрит ли кто, украдкой показала мне язык.",
-        "mi+mz":    "Женя взглянула на свою оппонентку, сокрушенно вздохнула, и села напротив.",    # Мику + Женя
-        "mi+sh":    "Стоило Шурику сесть за стол, Мику сразу прошила его словесной «очередью». Кибернетик невозмутимо кивнул и что-то ответил.",    # Мику + Шурик
-        "mi+sl":    "Славя заняла место напротив Мику. Девочки обменялись парой фраз и пожелали друг другу удачи.",    # Мику + Славя
-        "mi+un":    "Мику обрадовалась, когда напротив неё села Лена. Её чувства оказались взаимны — зеленоглазка улыбнулась.",    # Мику + Лена
-        "mi+us":    "Девочка-ракета, увидев, что я гляжу в их сторону, показала мне язык, а Мику помахала рукой.",    # Мику + Ульяна
-        "mz+sh":    "И тот, и другая молчаливо взирали друг на друга поверх очков, дожидаясь начала игры.",    # Женя + Шурик
-        "mz+sl":    "Интересная пара. Славя, которой все эти глупости не нужны, против Жени, которая предпочла бы занятие полезнее, чем игра в карты.",    # Женя + Славя
-        "mz+un":    "Человеку, который старается избежать лишнего внимания, в оппоненты выпал человек, которому нет до тебя никакого дела.",    # Женя + Лена
-        "mz+us":    "К счастью для Ульяны, взглядом испепелять нельзя. Егоза тоже не в восторге от того, что Рандом послал ей в оппоненты Жужелицу.",    # Женя + Ульяна
-        "sh+sl":    "Славя приветливо улыбнулась Шурику, на что тот ответил кивком.",    # Шурик + Славя
-        "sh+un":    "Шурик занял место напротив Лены и о чём-то спросил пионерку. Что-то про «плакаты для стенда».",    # Шурик + Лена
-        "sh+us":    "Ульянка тут же зашептала что-то Шурику на ухо, я успел расслышать что-то вроде «вступлю в клуб».", # Шурик + Ульяна
-        "sl+un":    "Хоть Славя и приободрила Лену, но с таким настроем она вряд ли дойдёт до финала.",    # Славя + Лена
-        "sl+us":    "Ульянка плюхнулась на стул напротив Слави и показала той язык. Славя, поглядев, не смотрит ли кто, украдкой показала язык в ответ, чем меня удивила.",    # Славя + Ульяна
-        "un+us":    "Лена сильно вздрогнула, когда к ней подскочила мелкая, а затем залилась краской, после того как Ульянка что-то шепнула ей на ухо. Рыжая бандитка расхохоталась на всю столовую, но после замечания Электроника всё же села за стол.", # Лена + Ульяна
+        "dv+me":    "Dvachevskaya stared at me with a challenge, clearly alluding to the conversation on the porch.",
+        "dv+mi":    "Miku eyed Alisa warily as she settled at the table, looking victorious.",
+        "dv+mz":    "Alisa was trying to show off, but Zhenya, on the other hand, was completely calm.",
+        "dv+sh":    "Alisa stared carnivorously at Shurik, but he didn't seem to pay any attention to her at all.",
+        "dv+sl":    "The perfect solution. A person who wants to win at all costs against a person who doesn't need all this nonsense.",
+        "dv+un":    "Alisa winked, and Lena, to my surprise, smiled weakly and said something to the redhead.",
+        "dv+us":    "The two beasts clashed with each other, neither of them clearly intent on conceding!",
+        "me+mi":    "Miku seemed to have no idea what the game was coming up, but she tried her best to enjoy herself.",
+        "me+mz":    "The Buzzer sat there with a look of the greatest favor. Apparently, she really wants this to be over quickly.",
+        "me+sh":    "Shurik adjusted his glasses on the bridge of his nose, folded his arms crosswise across his chest, and stared thoughtfully at the table top. He was in his own thoughts, that's for sure.",
+        "me+sl":    "Slavya smiled warmly at me, apparently encouraging me, but all I could do was shrug my shoulders and smile crookedly.",    # Семён + Славя
+        "me+un":    "Lena sat across from me, cringing and trying to look anywhere but at me, and certainly not in my eyes.",    # Семён + Лена
+        "me+us":    "The little one, looking to see if anyone was watching, furtively showed me her tongue.",
+        "mi+mz":    "Zhenya looked at her opponent, sighed sadly, and sat down opposite.",    # Мику + Женя
+        "mi+sh":    "As soon as Shurik sat down at the table, Miku immediately shot him up with words. The cyberneticist nodded nonchalantly and answered something.",    # Мику + Шурик
+        "mi+sl":    "Slavya took a seat across from Miku. The girls exchanged a few words and wished each other good luck.",    # Мику + Славя
+        "mi+un":    "Miku was glad when Lena sat down across from her. Her feelings were reciprocated - the green-eyed girl smiled.",    # Мику + Лена
+        "mi+us":    "The rocket girl, seeing that I was looking in their direction, showed me her tongue, and Miku waved.",    # Мику + Ульяна
+        "mz+sh":    "Both looked at each other silently over their glasses, waiting for the game to begin.",    # Женя + Шурик
+        "mz+sl":    "An interesting couple. Slavya, who doesn't need all this nonsense, versus Zhenya, who would prefer an activity more useful than playing cards.",    # Женя + Славя
+        "mz+un":    "The person who is trying to avoid unnecessary attention has fallen out as an opponent of someone who doesn't care about you.",    # Женя + Лена
+        "mz+us":    "Fortunately for Ulyana, you can't burn people with your eyes. She also wasn't happy that Random sent her the Buzzer as an opponent.",    # Женя + Ульяна
+        "sh+sl":    "Slavya smiled at Shurik in a friendly way, to which he responded with a nod.",    # Шурик + Славя
+        "sh+un":    "Shurik took a seat across from Lena and asked the pioneer girl something. Something about «posters for the stand».",    # Шурик + Лена
+        "sh+us":    "Ulyanka immediately whispered something in Shurik's ear, and I heard something like «will sign up for club».", # Шурик + Ульяна
+        "sl+un":    "Although Slavya cheered Lena up, it's unlikely she'll make it to the finals with that attitude.",    # Славя + Лена
+        "sl+us":    "Ulyanka sat down on the chair opposite Slavya and showed her her tongue. Slavya, looking to see if anyone was watching, furtively showed her tongue in response, which surprised me.",    # Славя + Ульяна
+        "un+us":    "Lena shuddered when the little girl jumped up to her, and then blushed after Ulyanka whispered something in her ear. The redheaded bandit laughed all over the canteen, but after a remark from Electronik, she still sat down at the table.", # Лена + Ульяна
         }
 
 # -----------------------------------------------------------------------------------------------
@@ -183,30 +183,30 @@ init 2 python:
 # -----------------------------------------------------------------------------------------------
     alt_table_taunt_with_me = {
         "un":   [           # Лена
-                    "Лена сидела напротив меня.",
-                    "С противоположной стороны стола мне робко улыбалась Лена."
+                    "Lena was sitting across from me.",
+                    "On the opposite side of the table, Lena smiled at me timidly."
                 ],
         "sl":   [           # Славя
-                    "Напротив меня сидела Славя."
+                    "Across from me sat Slavya."
                 ],
         "dv":   [           # Алиса
-                    "Алиса, улыбаясь, сидела напротив меня.",
-                    "С противоположной стороны ехидно усмехалась Рыжевская."
+                    "Alisa, smiling, sat across from me.",
+                    "On the opposite side, Redhead grinned sneeringly."
                 ],
         "mi":   [           # Мику
-                    "Японка лучезарно улыбалась мне по ту сторону стола.",
-                    "С противоположной стороны стола расположилась аниме-девочка.",
-                    "Мику удобно устроилась напротив меня."
+                    "The Japanese girl smiled radiantly at me on the other side of the table.",
+                    "On the opposite side of the table was the anime girl.",
+                    "Miku sat comfortably across from me."
                 ],
         "us":   [           # Ульяна
-                    "Ульянка корчила мне рожи с той стороны стола.",
-                    "На противоположном стуле ёрзала мелкая."
+                    "Ulyanka was making faces at me from across the table.",
+                    "The little one was fidgeting on the opposite chair."
                 ],
         "sh":   [           # Шурик (для пробы оставим пустым)
                     None
                 ],
         "mz":   [           # Женя (картинки без очков)
-                    "С противоположной стороны стола на меня зыркала нелюдимая библиотекарша."
+                    "On the opposite side of the table, an unsociable librarian glared at me."
                 ]
         }
 
@@ -218,39 +218,39 @@ init 2 python:
 # -----------------------------------------------------------------------------------------------
     alt_table_taunt_gamblers = {
         "un":   [           # Лена
-                    "Лена перехватила мой взгляд и вся покраснела.",
-                    "Лена притворилась, что не заметила, как я смотрю на неё.",
-                    "Удивлён, что Лена согласилась участвовать в публичном мероприятии."
+                    "Lena intercepted my gaze and turned all red.",
+                    "Lena pretended not to notice me looking at her.",
+                    "I'm surprised that Lena agreed to participate in a public event."
                 ],
         "sl":   [           # Славя
-                    "Славя почувствовала, что я на неё смотрю, и улыбнулась.",
-                    "Славя ободряюще кивнула мне.",
-                    "Странно было видеть «правильную» девочку с картами в зубах."
+                    "Slavya sensed that I was looking at her and smiled.",
+                    "Slavya nodded encouragingly at me.",
+                    "It was strange to see the «proper» girl with cards in her teeth."
                 ],
         "dv":   [           # Алиса
-                    "Двачевская расхохоталась, увидев, как я притворяюсь, что не смотрю на неё.",
-                    "Надеюсь, Алиса слетит в этом же раунде!",
-                    "Ну уж Двачевская своего не упустит."
+                    "Dvachevskaya laughed when she saw me pretending not to look at her.",
+                    "I hope Alisa gets knocked off in this round!",
+                    "Well, Dvachevskaya won't lose that easily."
                 ],
         "mi":   [           # Мику
-                    "Вид у японки был забавный — она изо всех сил притворялась, что знает, зачем здесь находится.",
-                    "За японку переживать не приходится — она, похоже, вообще к картам равнодушна.",
-                    "Японка явно была чем-то взволнована. И дело было совсем не в картах."
+                    "The Japanese girl looked amused - she pretended to know why she was here.",
+                    "You don't have to worry about the Japanese girl - she didn't seem to care about cards at all.",
+                    "The Japanese girl was obviously agitated about something. And it wasn't the cards at all."
                 ],
         "us":   [           # Ульяна
-                    "Мелкая показала мне язык и отвернулась.",
-                    "Мелкая была занята запугиванием оппонента.",
-                    "Мелкая улыбалась и качала головой, готовясь к решительной победе!"
+                    "Kid showed me her tongue and turned away.",
+                    "Kid was busy intimidating her opponent.",
+                    "Kid was smiling and shaking her head, preparing for a decisive victory!"
                 ],
         "sh":   [           # Шурик
-                    "Он подмигнул мне и выставил большой палец.",
-                    "Прикрыв глаза, кибернетик что-то высчитывал в уме. Шансы на победу?",
-                    "Парень, похоже, и в самом деле ни разу не слышал про такую игру — выглядел он растерянным."
+                    "He winked at me and gave me a thumbs-up.",
+                    "With his eyes closed, the cybernetic was calculating something in his mind. The odds of winning?",
+                    "The guy really didn't seem to have heard of such a game - he looked confused."
                 ],
         "mz":   [           # Женя
-                    "Женя, как обычно, проигнорировала меня.",
-                    "Видно было, что Женя рада бы всё бросить и пойти в библиотеку.",
-                    "Вот уж кто тут явно выглядит чужеродно, так это Женя."
+                    "Zhenya, as usual, ignored me.",
+                    "You could see that Zhenya would be glad to drop everything and go to the library.",
+                    "It's obviously Zhenya who looks alien here."
                 ]
         }
 
@@ -282,101 +282,101 @@ init 2 python:
                         [None, " "]
                     ],
         "dv>mi":    [       # Алиса > Мику
-                        [None, "Двачевская вскочила из-за стола и заулюлюкала:"],
-                        [dv, "Оле-оле-оле! Алиса, вперёд!"],
-                        [None, "Она радовалась своей победе так, будто выиграла как минимум машину."],
+                        [None, "Dvachevskaya jumped up from the table and hooted:"],
+                        [dv, "Ole, ole, ole! Alisa, let's go!"],
+                        [None, "She rejoiced at her victory as if she had won at least a car."],
                         "*",
-                        [mi, "Ничего-ничего, Алисочка. Я тебе всё-ё-ё припомню."],
-                        [None, "Мику задрала нос и отошла к зрителям."]
+                        [mi, "It's okay, Alisochka. I'll remember everything..."],
+                        [None, "Miku turned her nose up and stepped back to the audience."]
                     ],
         "dv>mz":    [       # Алиса > Женя
-                        [None, "Несмотря на разгромную победу, она почему-то не выглядела счастливой."],
-                        [dv, "Всё, да?"],
-                        [None, "Растерянно спросила она у Жени."],
+                        [None, "Despite the landslide victory, she didn't look happy for some reason."],
+                        [dv, "That's it, huh?"],
+                        [None, "Confused, she asked Zhenya."],
                         "*",
-                        [mz, "Аллилуйя, наконец, я могу быть свободна."],
-                        [None, "Проскрипела Женя и убралась прочь из столовой."]
+                        [mz, "Hallelujah, I'm finally free."],
+                        [None, "Zhenya squeaked and cleared out of the canteen."]
                     ],
         "dv>sh":    [       # Алиса > Шурик
-                        [None, "Победив, она повела себя странно."],
-                        [None, "Встала из-за стола и, приложив к глазам вывернутые ладони в жесте очкарика, покачала локтями."],
-                        [dv, "Очкарики в пролёте! Адью."],
+                        [None, "When she won, she acted strangely."],
+                        [None, "She stood up from the table, put her twisted palms to her eyes in a goggle gesture, and shook her elbows."],
+                        [dv, "Glasses are out! Adieu."],
                         "*",
-                        [sh, "Зачем только шёл…"],
-                        [None, "Шурик безразлично пожал плечами и встал из-за стола."]
+                        [sh, "Why did I even come…"],
+                        [None, "Shurik shrugged his shoulders indifferently and got up from the table."]
                     ],
         "dv>sl":    [       # Алиса > Славя
-                        [None, "Проиграв, Славя улыбнулась и кивнула ей."],
-                        [sl, "Всё? Я могу идти?"],
-                        [None, "Алиса кивнула, её интересовала только победа."],
+                        [None, "Losing, Slavya smiled and nodded to her."],
+                        [sl, "That's it? Can I go now?"],
+                        [None, "Alisa nodded; she was only interested in winning.."],
                         "*",
-                        [dv, "А ты ничего, выскочка, играть умеешь."],
-                        [sl, "Скажешь тоже."],
+                        [dv, "And you're all right, upstart, you can play."],
+                        [sl, "Oh, please."],
                     ],
         "dv>un":    [       # Алиса > Лена
-                        [None, "Она снисходительно посмотрела на Лену."],
-                        [dv, "Будто кто-то сомневался, что будет иначе!"],
-                        [None, "Перегнувшись, она щёлкнула оппонентку по лбу."],
+                        [None, "She looked condescendingly at Lena."],
+                        [dv, "As if anyone doubted that it would be otherwise!"],
+                        [None, "Rolling over, she flicked her opponent on the forehead."],
                         "*",
-                        [un, "Да не особо и хотелось."],
-                        [None, "Лена сделала вид, что её не волнуют результаты матча."]
+                        [un, "I didn't really feel like it."],
+                        [None, "Lena pretended not to care about the results of the match."]
                     ],
         "dv>us":    [       # Алиса > Ульяна
-                        [None, "Победив свою подругу, рыжая высокомерно задрала нос:"],
-                        [dv, "Слишком юн ты, падаван, попробуй в следующем году."],
+                        [None, "Defeating her friend, the redhead arrogantly turned up her nose:"],
+                        [dv, "You are too young, Padawan, try next year."],
                         "*",
-                        [us, "Смотрите на эту старую грымзу."],
-                        [None, "Ульянку задело поражение, и она не скрывала это."]
+                        [us, "Look at this old hag."],
+                        [None, "Ulyanka was hurt by the defeat, and she made no secret of it."]
                     ],
 # ------------------------------------------- Семён
         "me>dv":    [       # Семён > Алиса
-                        [None, "Двачевская до самого конца не рассматривала меня как серьёзного противника, и это сыграло против неё."],
+                        [None, "Until the end, Dvachevskaya did not see me as a serious opponent, and this played against her."],
                         "*",
-                        [None, "Победа над рыжей врединой пробудила во мне азарт."]
+                        [None, "Defeating the red-headed pest made me excited."]
                     ],
         "me>mi":    [       # Семён > Мику
-                        [None, "Хотя я не мог принять победу над хафу как своё личное достижение. Она просто не до конца поняла правила."],
+                        [None, "I couldn't take defeating hafu as my own personal accomplishment, though. She just didn't fully understand the rules."],
                         "*",
-                        [None, "Думаю, если бы у Мику была возможность отыграться, меня ждало поражение."]
+                        [None, "I think if Miku had had a chance to win back, I would have been facing defeat."]
 
                     ],
         "me>mz":    [       # Семён > Женя
-                        [None, "Простая задача, когда твой противник заинтересован в скорейшем поражении."],
+                        [None, "A simple task when your opponent is interested in a quick defeat."],
                         "*",
-                        [None, "Краем глаза я заметил, как грустно вздохнул Электроник."],
-                        [None, "Переживает за Жужелицу? Или «из-за»?"]
+                        [None, "From the corner of my eye, I noticed the sad sigh of Electronik."],
+                        [None, "Worried for Buzzer? Or «because» of her?"]
                     ],
         "me>sh":    [       # Семён > Шурик
 
-                        [None, "Шурик оказался достойным противником."],
+                        [None, "Shurik turned out to be a worthy opponent."],
                         "*",
-                        [None, "Пришлось постараться, чтобы одолеть его."],
+                        [None, "It took a lot of effort to defeat him."],
 
 
 
                     ],
         "me>sl":    [       # Семён > Славя
-                        [None, "Расслабляться сейчас рано. Основные трудности ещё впереди."],
+                        [None, "It's too early to relax. The main difficulties are yet to come."],
                         "*",
-                        [None, "Нетрудно выиграть, когда твой противник живое воплощение фразы «главное — не победа, главное — участие»."],
+                        [None, "It's not hard to win when your opponent is the living embodiment of the phrase «the main thing is not to win, the main thing is to participate»."],
 
 
                     ],
         "me>un":    [       # Семён > Лена
-                        [None, "Надеюсь, Лена не будет сильно расстраиваться."],
+                        [None, "I hope Lena won't be too disappointed."],
                         "*",
-                        [None, "Это же всего лишь игра, верно?"]
+                        [None, "This is just a game, right?"]
 
                     ],
         "me>us":    [       # Семён > Ульяна
 
-                        [None, "Похоже, птица удачи сегодня прочно обосновалась на моём плече, а Ульянка познакомилась с птицей «обломинго»."],
+                        [None, "It seems that the bird of fortune is firmly settled on my shoulder today, and Ulyanka has met the bird «Oblomingo»."],
                         "*",
-                        [th, "Ну что, ждём ещё одну «котлету по-Ульяновски»?"],
-                        [dreamgirl, "Девчушка изобретательная, придумает месть пострашнее."],
-                        [dreamgirl, "Или махнёт рукой на дурака и простит."],
-                        [dreamgirl, "Как карта ляжет."],
-                        [th, "Каламбур, однако."]
+                        [th, "So, should we expect another «cutlet Ulyana-style»?"],
+                        [dreamgirl, "The girl is inventive, she will think up a more terrible revenge."],
+                        [dreamgirl, "Or she'll give up on the fool and forgive."],
+                        [dreamgirl, "As the card goes."],
+                        [th, "Puns, huh."]
 
                     ],
 # ------------------------------------------- Мику
@@ -484,12 +484,12 @@ init 2 python:
                         [None, " "]
                     ],
         "sh>us":    [       # Шурик > Ульяна
-                        [None, "Шурик снисходительно посмотрел на Ульяну — мол, знай наших."],
-                        [sh, "Спасибо за игру."],
-                        [None, "Вежливо поблагодарил он."],
+                        [None, "Shurik condescendingly looked at Ulyana, as if saying, 'Know our people'."],
+                        [sh, "Thank you for playing."],
+                        [None, "He thanked politely."],
                         "*",
-                        [us, "Бу-бу-бу, вредина, не дал ребёнку победить!"],
-                        [None, "Ульяна надулась и отвернулась."]
+                        [us, "Boo-boo-boo, pest, didn't let the kid win!"],
+                        [None, "Ulyana puffed up and turned away."]
                     ],
 # ------------------------------------------- Славя
         "sl>dv":    [       # Славя > Алиса
@@ -554,17 +554,17 @@ init 2 python:
                         [None, " "]
                     ],
         "un>sl":    [       # Лена > Славя
-                        [sl, "Удачи."],
+                        [sl, "Good luck."],
                         "*",
-                        [un, "С-спасибо."],
-                        [None, "Растерянно ответила Лена."]
+                        [un, "T-thanks."],
+                        [None, "At a loss, Lena replied."]
                     ],
         "un>us":    [       # Лена > Ульяна
-                        [None, "Она сама до конца, видимо, ещё не поверила, что победила."],
-                        [un, "Я что, я…"],
+                        [None, "She herself, apparently, has not yet fully believed that she has won."],
+                        [un, "I what, I…"],
                         "*",
-                        [us, "А-а-а, Ленка-пенка-колбаса, вредная сосиска!"],
-                        [None, "Ульяна хотела было добавить ещё что-то, но подоспевшая вожатая оттащила её в сторону."]
+                        [us, "Aaaaah, Lenka the penny sausage, the noxious sausage!"],
+                        [None, "Ulyana wanted to add something else, but the rushing squad leader pulled her aside."]
                     ],
 # ------------------------------------------- Ульяна
         "us>dv":    [       # Ульяна > Алиса
@@ -588,11 +588,11 @@ init 2 python:
                         [None, " "]
                     ],
         "us>sh":    [       # Ульяна > Шурик
-                        [None, "Победив, Ульяна повела себя предсказуемо."],
-                        [us, "И так будет с каждым!"],
+                        [None, "Having won, Ulyana behaved predictably."],
+                        [us, "And so it will be with everyone!"],
                         "*",
-                        [sh, "И тебе спасибо."],
-                        [None, "Поднявшись, Шурик отошёл в сторону."]
+                        [sh, "Thank you too."],
+                        [None, "After getting up, Shurik stepped aside."]
                     ],
         "us>sl":    [       # Ульяна > Славя
                         [None, " "],
@@ -616,29 +616,29 @@ init 2 python:
 # -----------------------------------------------------------------------------------------------
     alt_table_gamblers_winner_1_tour = {
        "me":   [           # Сёма
-                    [None, "Я направляюсь к победе."]
+                    [None, "I'm on my way to victory."]
                 ],
         "un":   [           # Лена
-                    [None, "Ей пришлось потрудиться, но победа оказалась за ней."]
+                    [None, "She had to work hard, but she won."]
                 ],
         "sl":   [           # Славя
-                    [None, "Активистка, похоже, не поняла, что произошло, но покорно пересела за стол полуфиналистов."]
+                    [None, "The activist did not seem to understand what happened, but obediently moved to the table of semifinalists."]
                 ],
         "dv":   [           # Алиса
-                    [None, "Она раскатала противника с разгромным счётом — кажется, наслаждалась игрой."]
+                    [None, "She rolled her opponent by a landslide - she seemed to enjoy the game."]
                 ],
         "mi":   [           # Мику
-                    [None, "Да уж, талантливый человек талантлив во всём."]
+                    [None, "Yeah, I guess a talented person is talented at everything."]
                 ],
         "us":   [           # Ульяна
-                    [None, "Мелкая не заморачивалась над такой глупостью, как правила игры."],
-                    [None, "Вместо этого она играла по своим собственным."]
+                    [None, "The kid didn't bother with something as silly as the rules of the game."],
+                    [None, "Instead, she played by her own."]
                 ],
         "sh":   [           # Шурик
-                    [None, "Честно сказать, не удивлён. У него были все шансы."]
+                    [None, "Honestly, I'm not surprised. He had every chance."]
                 ],
         "mz":   [           # Женя
-                    [None, "Она с неудовольствием скривилась — кажется, поняла, что победа значит ещё и дальнейшее участие в этой дурацкой игре."]
+                    [None, "She grimaced in displeasure - she seemed to realize that winning also meant continuing to participate in this stupid game."]
                 ]
     }
 
@@ -652,30 +652,30 @@ init 2 python:
 # -----------------------------------------------------------------------------------------------
     alt_table_gamblers_winner_semifinal = {
         "me":   [           # Сёма
-                    [None, "Я прохожу в финал."]
+                    [None, "I'm going to the finals."]
                 ],
         "un":   [           # Лена
-                    [None, "Вот уже вторую игру подряд она сидит с потерянным видом, но ей достаются всё более сильные комбинации. Не подыгрывает ли ей крупье?"]
+                    [None, "For the second game in a row, she's sitting there looking lost, but she's getting stronger and stronger combinations. Isn't the dealer playing along with her?"]
                 ],
         "sl":   [           # Славя
-                    [None, "Девушка ворчала и пожимала плечами, не особо желая продолжать игру. Кажется, она и присоединиться-то решила из одного лишь чувства товарищества."]
+                    [None, "The girl grumbled and shrugged, not really wanting to continue the game. She seemed to have decided to join in just out of a sense of camaraderie."]
                 ],
         "dv":   [           # Алиса
-                    [None, "Рыжая шла бульдозером, не задерживаясь ни на одном из оппонентов — её целью был финал, и никак иначе!"]
+                    [None, "The redhead was bulldozing along, not lingering on any of her opponents - her goal was the finale, and nothing else!"]
                 ],
         "mi":   [           # Мику
-                    [None, "Она радовалась каждой удачной карте, как маленький ребёнок."]
+                    [None, "She rejoiced at every good card like a little child."]
                 ],
         "us":   [           # Ульяна
-                    [None, "Мелкая сегодня в ударе."],
-                    [None, "Вторая игра подряд без знания правил — практически как вождение автомобиля без рук."]
+                    [None, "The little one is on a roll today."],
+                    [None, "The second game in a row without knowing the rules is almost like driving a car without hands."]
                 ],
         "sh":   [           # Шурик
-                    [None, "Его невозмутимости позавидовал бы сам Будда. Быть может, в этом и был его секрет?"]
+                    [None, "His equanimity would have been the envy of Buddha himself. Perhaps that was his secret?"]
                 ],
         "mz":   [           # Женя
-                    [None, "Меня откровенно забавляло то, что она-то как раз меньше всего хотела играть."],
-                    [None, "А ушла так далеко."]
+                    [None, "I was frankly amused by the fact that she wanted to play the least."],
+                    [None, "But she got this far."]
                 ]
     }
 
@@ -691,30 +691,30 @@ init 2 python:
 # -----------------------------------------------------------------------------------------------
     alt_table_gamblers_winner_final = {
         "me":   [           # Сёма
-                    [None, "Не думал, что с моим везением дойду хотя бы до полуфинала."],
-                    [None, "Потому и красивых речей и благодарностей проигравшим от меня не ждите, я морально к этому не готовился."]
+                    [None, "I didn't think that with my luck I would make it at least to the semifinals."],
+                    [None, "So, do not expect from me beautiful speeches and gratitude to the losers, I am not mentally prepared for this."]
                 ],
         "un":   [           # Лена
-                    [None, "Прибывавшая в лёгком шоке Лена вздрогнула от неожиданности, услышав своё имя."]
+                    [None, "Lena, who was in mild shock, flinched in surprise when she heard her name."]
                 ],
         "sl":   [           # Славя
-                    [None, "Славя сильно смутилась, оказавшись в центре внимания и оваций."]
+                    [None, "Slavya was very embarrassed to be the center of attention and applause."]
                 ],
         "dv":   [           # Алиса
-                    [None, "Рыжая возвысилась над остальными, забравшись на стул, и вскинула руки вверх."],
-                    [th, "Аве мне, да?"]
+                    [None, "The redhead towered over the others, climbing into a chair and throwing her arms up in the air."],
+                    [th, "Ave me, yeah?"]
                 ],
         "mi":   [           # Мику
-                    [None, "Мику поклонилась зрителям из зала и поблагодарила тех за поддержку."]
+                    [None, "Miku bowed to the audience and thanked them for their support."]
                 ],
         "us":   [           # Ульяна
-                    [None, "Ульяна выглядела как человек, который ни на секунду не сомневался в своей победе."]
+                    [None, "Ulyana looked like someone who never doubted for a second that she would win."]
                 ],
         "sh":   [           # Шурик
-                    [None, "Шурик напустил на себя невозмутимый вид, достойный нашего бронзового деятеля."]
+                    [None, "Shurik put on a look of equanimity worthy of our bronze figure."]
                 ],
         "mz":   [           # Женя
-                    [None, "Жужелица поморщилась, когда зал взорвался овациями и аплодисментами в её честь."]
+                    [None, "The buzzer grimaced as the auditorium exploded with applause and cheers in her honor."]
                 ]
     }
 
@@ -728,33 +728,33 @@ init 2 python:
 # -----------------------------------------------------------------------------------------------
     alt_table_gamblers_loser_1_tour = {
         "me":   [           # Сёма
-                    [None, "Я остаюсь в первом коне."],
-                    [None, "Побуду болельщиком; что мне ещё остаётся?"]
+                    [None, "I stay in the first round."],
+                    [None, "I'll be a fan; what else can I do?"]
                 ],
         "un":   [           # Лена
-                    [None, "Лена тихо поднялась и присоединилась к болельщикам. Вид у неё был расстроенный."]
+                    [None, "Lena quietly got up and joined the fans. She looked upset."]
                 ],
         "sl":   [           # Славя
-                    [None, "Славя пожала плечами, поднялась, и, миновав вожатую и что-то ей сказав, заняла место среди болельщиков."]
+                    [None, "Slavya shrugged, stood up, and, after passing the counselor and saying something to her, took her place among the fans."]
                 ],
         "dv":   [           # Алиса
-                    [None, "Увидеть лицо Двачевской, терпящей поражение — бесценно!"],
-                    [None, "Я расхохотался, прикрываясь рукой, но она, похоже, услышала — обожгла взглядом."]
+                    [None, "To see Dvachevskaya's face in defeat is priceless!"],
+                    [None, "I laughed, covering with my hand, but she seemed to hear me - she burned me with her gaze."]
                 ],
         "mi":   [           # Мику
-                    [None, "Мику поднялась, помахала всем и встала к болельщикам."],
-                    [None, "Она была чем-то очень довольна."]
+                    [None, "Miku got up, waved to everyone, and went up to the fans."],
+                    [None, "She was very happy about something."]
                 ],
         "us":   [           # Ульяна
-                    [None, "Ульяна надулась, закричала что-то и пробовала было топать ногами, но Ольга Дмитриевна быстро успокоила её."],
-                    [None, "Понурившись, мелкая было побрела прочь из столовой, но окрик вожатой вынудил её сменить курс на места для болельщиков."]
+                    [None, "Ulyana sulked, shouted something and tried to stamp her feet, but Olga Dmitrievna quickly calmed her down."],
+                    [None, "The little one tried to wander away from the canteen, but a shout from the squad leader forced her to change her course to the cheerleading seats."]
                 ],
         "sh":   [           # Шурик
-                    [None, "Шурик среагировал так, как я и ожидал — поправил очки, резким движением отбросил чёлку со лба и встал."],
-                    [None, "Коротко наклонил голову и занял своё место в толпе."]
+                    [None, "Shurik reacted the way I expected - he adjusted his glasses, flicked his bangs back from his forehead, and stood up."],
+                    [None, "He tilted his head briefly and took his place in the crowd."]
                 ],
         "mz":   [           # Женя
-                    [None, "С видом величайшего облегчения Женя бросила карты на стол и, встав, направилась на улицу."]
+                    [None, "With a look of great relief, Zhenya threw the cards on the table, stood up and headed outside."]
                 ]
     }
 
@@ -768,41 +768,41 @@ init 2 python:
 # -----------------------------------------------------------------------------------------------
     alt_table_gamblers_loser_semifinal = {
         "me":   [           # Сёма
-                    [None, "А я продул. Что тут ещё скажешь?"]
+                    [None, "And I blew it. What else can I say?"]
                 ],
         "un":   [           # Лена
-                    [None, "Лена тихо поднялась и присоединилась к болельщикам."]
+                    [None, "Lena quietly rose and joined the fans."]
                 ],
         "sl":   [           # Славя
-                    [None, "Славя замученно улыбнулась и с огромным облегчением отодвинула карты."],
-                    [sl, "Всё, наигралась на год вперёд."],
-                    [None, "Она поднялась и пошла к ждущей её Ольге Дмитриевне."]
+                    [None, "Slavya smiled wistfully and pushed the cards away with great relief."],
+                    [sl, "That's it, I'm done for the year to come."],
+                    [None, "She got up and went to Olga Dmitrievna, who was waiting for her."]
                 ],
         "dv":   [           # Алиса
-                    [None, "Алиса долго не хотела верить в то, что проиграла."],
-                    [None, "Она даже пыталась заставить судью назначить переигровку — безрезультатно."],
-                    [None, "Двачевская встала из-за стола, цедя непечатное."]
+                    [None, "For a long time Alisa did not want to believe that she had lost."],
+                    [None, "She even tried to get the judge to order a rematch, to no avail."],
+                    [None, "Dvachevskaya stood up from the table, chanting unprintable."]
                 ],
         "mi":   [           # Мику
-                    [None, "Мику посмотрела на свои карты ещё раз, видимо, пытаясь запомнить получше."],
-                    [None, "А может, она так и не усвоила правил игры."],
-                    [None, "Я бы не удивился."]
+                    [None, "Miku looked at her cards again, apparently trying to remember them better."],
+                    [None, "Or maybe she never learned the rules of the game."],
+                    [None, "I wouldn't be surprised."]
                 ],
         "us":   [           # Ульяна
-                    [us, "Эй, вы все неправильно играли! Вы все жулики, жулики!"],
-                    [None, "Кричала Ульянка, отбиваясь."],
-                    [None, "Минут десять только ушло на то, чтобы немного успокоить её и привести в чувство."],
-                    [None, "В итоге мелкая топнула ногой и выбежала из зала."]
+                    [us, "Hey, you all played it wrong! You're all crooks, crooks!"],
+                    [None, "Shouted Ulyanka, fighting back."],
+                    [None, "It took ten minutes to calm her down a little and bring her to her senses."],
+                    [None, "In the end, the little one stomped her foot and ran out of the canteen."]
                 ],
         "sh":   [           # Шурик
-                    [None, "Шурик кивнул и поднялся из-за стола."],
-                    [None, "Кажется, у него проблемы с проявлением эмоций."]
+                    [None, "Shurik nodded and got up from the table."],
+                    [None, "He seems to have trouble showing emotion."]
                 ],
         "mz":   [           # Женя
-                    [None, "Давненько я не видел, чтобы так бурно радовались поражению."],
-                    [None, "Женя разулыбалась, вздохнула, расправила плечи."],
-                    [mz, "Ну наконец-то!"],
-                    [None, "Рявкнула она и вышла вон из столовой."]
+                    [None, "It's been a long time since I've seen anyone so excited about defeat."],
+                    [None, "Zhenya smiled, sighed, and squared her shoulders."],
+                    [mz, "Finally!"],
+                    [None, "She barked and walked out of the canteen."]
                 ]
     }
 
@@ -817,36 +817,36 @@ init 2 python:
 # -----------------------------------------------------------------------------------------------
     alt_table_gamblers_loser_final = {
         "me":   [           # Сёма
-                    [None, "Не зря говорят, что третье место лучше второго."],
-                    [None, "Ведь третье место — все равно призовое, а вот второе могло бы быть первым, и от этого обиднее."]
+                    [None, "It's not for nothing that they say third place is better than second place."],
+                    [None, "After all, third place is still a prize, but second place could have been first, and that's more hurtful."]
                 ],
         "un":   [           # Лена
-                    [None, "Лена тихонько отошла в сторону, оставляя победителя греться в лучах славы."]
+                    [None, "Lena quietly stepped aside, leaving the winner to bask in the glory."]
                 ],
         "sl":   [           # Славя
-                    [None, "Болельщиков у активистки оказалось даже больше, чем у победителя. В основном это ребятишки из младших отрядов."]
+                    [None, "The activist had even more fans than the winner. Most of them were kids from the younger squads."]
                 ],
         "dv":   [           # Алиса
-                    [None, "Алиса недовольно цокнула, но тем и ограничилось."]
+                    [None, "Alice tsked unhappily, but that was all."]
                 ],
         "mi":   [           # Мику
-                    [None, "Лена подошла к Мику, желая утешить, но та улыбнулась, как ни в чём не бывало, сказала, что всё хорошо, что она нисколько не переживает, и…"],
-                    [None, "Бррр!"],
-                    [th, "Тараторю прям как Мику."]
+                    [None, "Lena approached Miku, wanting to console her, but she smiled as if nothing had happened, saying that everything was fine, that she wasn't worried at all, and…"],
+                    [None, "Brrr!"],
+                    [th, "I'm babbling just like Miku."]
 
                 ],
         "us":   [           # Ульяна
-                    [None, "Ульяна была категорически не согласна и требовала от Электроника переигровки."],
-                    [None, "Причём так активно, что для усмирения пришлось подключиться вожатой."]
+                    [None, "Ulyana strongly disagreed and demanded a rematch from Electronik."],
+                    [None, "And she was so active that the squad leader had to be involved to subdue her."]
 
                 ],
         "sh":   [           # Шурик
-                    [None, "Шурик воспринял поражение спокойно, как досадное, но малозначительное обстоятельство."]
+                    [None, "Shurik took the defeat calmly, as an unfortunate but insignificant circumstance."]
                 ],
         "mz":   [           # Женя
-                    [None, "Библиотекарша выглядела как человек, чьи страдания наконец окончены."],
-                    [mz, "Теперь то можно я пойду?"],
-                    [mt, "Нет."]
+                    [None, "The librarian looked like a person whose suffering was finally over."],
+                    [mz, "Can I go now?"],
+                    [mt, "No."]
                 ]
     }
 
@@ -855,32 +855,32 @@ init 2 python:
 # верхний полуфинал = 5, нижний полуфинал = 6, финал = 7
 # ПОКА ВЫЗЫВАЮТСЯ НЕ ВСЕ — ЭТО ЦИФРЫ
     alt_table_name_cases = {                                                                                    # словарь склонений столов
-        "i": ["стол","Первый","Второй","Третий","Последний","Первый полуфинальный","Второй полуфинальный","финал"],                     # именительный падеж
-        "r": ["стола","Первого","Второго","Третьего","Последнего","1й 1/2","2й 1/2","финал"],               # родительный падеж
-        "d": ["столу","Первому","Второму","Третьему","Последнему","1й 1/2","2й 1/2","финал"],               # дательный падеж
-        "t": ["столом","За первым","За вторым","За третьим","За последним","За первым полуфинальным","За вторым полуфинальным","финал"],      # творительный падеж (винительного не надо)
-        "p": ["столе","Первом","Втором","Третьем","Последнем","1й 1/2","2й 1/2","финал"]                    # предложный падеж
+        "i": ["table","First","Second","Third","Last","First semifinal","Second semifinal","final"],                     # именительный падеж
+        "r": ["table","First","Second","Third","Last","First semifinal","Second semifinal","final"],               # родительный падеж
+        "d": ["table","First","Second","Third","Last","First semifinal","Second semifinal","final"],               # дательный падеж
+        "t": ["table","On the first","On the second","On the third","On the last","On first semifinal","On second semifinal","final"],      # творительный падеж (винительного не надо)
+        "p": ["table","First","Second","Third","Last","First semifinal","Second semifinal","final"]                    # предложный падеж
     }
 
 # ===============================================================================================
 # словарь суффиксов принадлежности столов
 # ДОЛЖНО БЫТЬ НЕ МЕНЕЕ 4-х значений (максимум 4 стола в проходе, вызванный вариант далее не вызывается)
     alt_table_affiliation = {
-        1:  ["заняли","i","i"],                 # если "заняли" = стол: именительный падеж, игроки: именительный падеж
-        2:  ["принадлежал","i","d"],            # если "принадлежал" = стол: именительный падеж, игроки: дательный падеж
-        3:  ["расположились","t","i"],          # если "расположились" = стол: творительный падеж, игроки: именительный падеж
-        4:  ["встречаются","t","i"],            # если "встречаются" = стол: творительный падеж, игроки: именительный падеж
-        5:  ["прочно оккупировали","i","i"]     # если "оккупировали" = стол: именительный падеж, игроки: именительный падеж
+        1:  ["taken by","i","i"],                 # если "заняли" = стол: именительный падеж, игроки: именительный падеж
+        2:  ["belonged to","i","d"],            # если "принадлежал" = стол: именительный падеж, игроки: дательный падеж
+        3:  ["settled","t","i"],          # если "расположились" = стол: творительный падеж, игроки: именительный падеж
+        4:  ["meet","t","i"],            # если "встречаются" = стол: творительный падеж, игроки: именительный падеж
+        5:  ["firmly occupied by","i","i"]     # если "оккупировали" = стол: именительный падеж, игроки: именительный падеж
     }
 
 # ===============================================================================================
 # словарь суффиксов принадлежности столов — победители
 # ДОЛЖНО БЫТЬ НЕ МЕНЕЕ 4-х значений (максимум 4 стола в проходе, вызванный вариант далее не вызывается)
     alt_table_winner = {
-        1:  [" победа ушла","t","d"],                                        # если "победа ушла" = стол: творительный падеж, игроки: дательный падеж
-        2:  [" принёс удачу","i","d"],                                       # если "принёс удачу" = стол: именительный падеж, игроки: дательный падеж
-        3:  [", кажется, всё подыгрывало","t","d"],                         # если "всё подыгрывало" = стол: творительный падеж, игроки: дательный падеж
-        4:  [" удача сегодня совершенно определённо улыбалась","t","d"]      # если "удача..улыбалась" = стол: творительный падеж, игроки: дательный падеж
+        1:  [" victory went to","t","d"],                                        # если "победа ушла" = стол: творительный падеж, игроки: дательный падеж
+        2:  [" brought good luck to","i","d"],                                       # если "принёс удачу" = стол: именительный падеж, игроки: дательный падеж
+        3:  [", everything seemed to be in favor of","t","d"],                         # если "всё подыгрывало" = стол: творительный падеж, игроки: дательный падеж
+        4:  [" luck was definitely smiling today for","t","d"]      # если "удача..улыбалась" = стол: творительный падеж, игроки: дательный падеж
     }
 
 # ==============================================================================
@@ -1047,14 +1047,14 @@ init 3 python:
         take_of_gamblers = ['me','un','sl','dv','mi','us','sh','mz']                                            # ники (текст)
     # Склоняем картежников (имена):
         #name_me = [u'я',u'меня',u'мне',u'меня',u'мной',u'мне']                                                  # имена Семёна (именительный..предложный)
-        name_me = [u'ваш покорный слуга','вашего покорного слуги','вашему покорному слуге','вашего покорного слугу','вашим покорным слугой','вашем покорном слуге']
-        name_un = [u'Лена',u'Лены',u'Лене',u'Лену',u'Леной',u'Лене']                                            # имена Лены (именительный..предложный)
-        name_sl = [u'Славя',u'Слави',u'Славе',u'Славю',u'Славей',u'Славе']                                      # имена Слави (именительный..предложный)
-        name_dv = [u'Алиса',u'Алисы',u'Алисе',u'Алису',u'Алисой',u'Алисе']                                      # имена Алисы (именительный..предложный)
-        name_mi = [u'Мику']*6                                                                                   # имена Мику (именительный..предложный) = одинаковые, но пусть так
-        name_us = [u'Ульяна',u'Ульяны',u'Ульяне',u'Ульяну',u'Ульяной',u'Ульяне']                          # имена Ульяны (именительный..предложный)
-        name_sh = [u'Шурик',u'Шурика',u'Шурику',u'Шурика',u'Шуриком',u'Шурике']                                 # имена Шурика (именительный..предложный)
-        name_mz = [u'Женя',u'Жени',u'Жене',u'Женю',u'Женей',u'Жене']                                            # имена Жени (именительный..предложный)
+        name_me = [u'yours truly','yours truly','yours truly','yours truly','yours truly','yours truly']
+        name_un = [u'Lena',u'Lena',u'Lena',u'Lena',u'Lena',u'Lena']                                            # имена Лены (именительный..предложный)
+        name_sl = [u'Slavya',u'Slavya',u'Slavya',u'Slavya',u'Slavya',u'Slavya']                                      # имена Слави (именительный..предложный)
+        name_dv = [u'Alisa',u'Alisa',u'Alisa',u'Alisa',u'Alisa',u'Alisa']                                      # имена Алисы (именительный..предложный)
+        name_mi = [u'Miku']*6                                                                                   # имена Мику (именительный..предложный) = одинаковые, но пусть так
+        name_us = [u'Ulyana',u'Ulyana',u'Ulyana',u'Ulyana',u'Ulyana',u'Ulyana']                          # имена Ульяны (именительный..предложный)
+        name_sh = [u'Shurik',u'Shurik',u'Shurik',u'Shurik',u'Shurik',u'Shurik']                                 # имена Шурика (именительный..предложный)
+        name_mz = [u'Zhenya',u'Zhenya',u'Zhenya',u'Zhenya',u'Zhenya',u'Zhenya']                                            # имена Жени (именительный..предложный)
         name_of_gamblers = [name_me,name_un,name_sl,name_dv,name_mi,name_us,name_sh,name_mz]                    # список списков имен картежников
         cases = ['i','r','d','v','t','p']                                              # Список используемых падежей
     # Создаем картежников
@@ -1467,12 +1467,12 @@ init 3 python:
     def alt_comparison_poker_hands(winner_hand, loser_hand, winner, loser):
         name_of_combo = {                                           # склонения комбинаций по падежам
             0:  {                                                   # Старшая карта
-                    'i':    ["старший", "старшая", "старшие карты"],
-                    'r':    ["старшего", "старшей", "старших карт"],
-                    'd':    ["старшему", "старшей", "старшим картам"],
-                    'v':    ["старшего", "старшую", "старшие карты"],
-                    't':    ["старшим", "старшей", "старшими картами"],
-                    'p':    ["старшем", "старшей", "старших картах"],
+                    'i':    ["high", "high", "high cards"],
+                    'r':    ["high", "high", "high cards"],
+                    'd':    ["high", "high", "high cards"],
+                    'v':    ["high", "high", "high cards"],
+                    't':    ["high", "high", "high cards"],
+                    'p':    ["high", "high", "high cards"],
                     'num':  0,                                      # число карты — единственное
                     'case': None,                                   # падеж — транзит на карту
                     'cas0': 'i',                                    # падеж для 0 — именительный
@@ -1480,12 +1480,12 @@ init 3 python:
                     'me':   None                                    # Сёмино местоимение — транзит на карту
                     },
             1:  {                                                   # Пара
-                    'i':    ["пара", "", "пары"],
-                    'r':    ["пары", "", "пар"],
-                    'd':    ["паре" "", "парам"],
-                    'v':    ["пару", "", "пары"],
-                    't':    ["парой", "", "парами"],
-                    'p':    ["паре" "", "парах"],
+                    'i':    ["pair", "", "pairs"],
+                    'r':    ["pair", "", "pairs"],
+                    'd':    ["pair" "", "pairs"],
+                    'v':    ["pair", "", "pairs"],
+                    't':    ["pair", "", "pairs"],
+                    'p':    ["pair" "", "pairs"],
                     'num':  1,                                      # число карты — множественное
                     'case': 'r',                                    # падеж — родительный (пара двоек)
                     'cas0': 'r',                                    # падеж для 0 — родительный (из троек)
@@ -1493,12 +1493,12 @@ init 3 python:
                     'me':   1                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             2:  {                                                   # Две пары (добавить куда-то "и")
-                    'i':    ["две пары", "", "две пары"],
-                    'r':    ["двух пар" "", "двух пар"],
-                    'd':    ["двум парам", "", "двум парам"],
-                    'v':    ["две пары", "", "две пары"],
-                    't':    ["двумя парами", "", "двумя парами"],
-                    'p':    ["двух парах" "", "двух парах"],
+                    'i':    ["two pairs", "", "two pairs"],
+                    'r':    ["two pairs", "", "two pairs"],
+                    'd':    ["two pairs" "", "two pairs"],
+                    'v':    ["two pairs", "", "two pairs"],
+                    't':    ["two pairs", "", "two pairs"],
+                    'p':    ["two pairs" "", "two pairs"],
                     'num':  1,                                      # число карты — множественное
                     'case': 'r',                                     # падеж — родительный (пара троек и двоек)
                     'cas0': 'r',                                    # падеж для 0 — родительный (из дам и шестёрок)
@@ -1506,90 +1506,90 @@ init 3 python:
                     'me':   2                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             3:  {                                                   # Тройка
-                    'i':    ["тройка", "", "тройки"],
-                    'r':    ["тройки" "", "троек"],
-                    'd':    ["тройке" "", "тройкам"],
-                    'v':    ["тройку" "", "тройки"],
-                    't':    ["тройкой" "", "тройками"],
-                    'p':    ["тройке" "", "тройках"],
+                    'i':    ["three of a kind", "", "three of a kind"],
+                    'r':    ["three of a kind" "", "three of a kind"],
+                    'd':    ["three of a kind" "", "three of a kind"],
+                    'v':    ["three of a kind" "", "three of a kind"],
+                    't':    ["three of a kind" "", "three of a kind"],
+                    'p':    ["three of a kind" "", "three of a kind"],
                     'num':  1,                                      # число карты — множественное
                     'case': 'r',                                     # падеж — родительный (тройка дам)
                     'cas0': 'r',                                    # падеж для 0 — родительный (из девяток)
-                    'pr':   "из ",                                  # приставка для 0
+                    'pr':   "from ",                                  # приставка для 0
                     'me':   1                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             4:  {                                                   # Стрит
-                    'i':    ["стрит от", "", "стриты"],
-                    'r':    ["стрита от", "", "стритов"],
-                    'd':    ["стриту от", "", "стритам"],
-                    'v':    ["стрит от", "", "стриты"],
-                    't':    ["стритом от", "", "стритами"],
-                    'p':    ["стрите от", "", "стритах"],
+                    'i':    ["straight from", "", "straights"],
+                    'r':    ["straight from", "", "straights"],
+                    'd':    ["straight from", "", "straights"],
+                    'v':    ["straight from", "", "straights"],
+                    't':    ["straight from", "", "straights"],
+                    'p':    ["straight from", "", "straights"],
                     'num':  0,                                      # число карты — единственное
                     'case': 'r',                                     # падеж — родительный (стрит от короля, стрит от семёрки)
                     'cas0': 'r',                                    # падеж для 0 — родительный (от семёрки)
-                    'pr':   "от ",                                  # приставка для 0
+                    'pr':   "from ",                                  # приставка для 0
                     'me':   0                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             5:  {                                                   # Флеш ("от" добавить в мастях)
-                    'i':    ["флеш", "", "флеши"],
-                    'r':    ["флеша", "", "флешей"],
-                    'd':    ["флешу", "", "флешам"],
-                    'v':    ["флеш", "", "флеши"],
-                    't':    ["флешем", "", "флешами"],
-                    'p':    ["флеше", "", "флешах"],
+                    'i':    ["flush", "", "flushes"],
+                    'r':    ["flush", "", "flushes"],
+                    'd':    ["flush", "", "flushes"],
+                    'v':    ["flush", "", "flushes"],
+                    't':    ["flush", "", "flushes"],
+                    'p':    ["flush", "", "flushes"],
                     'num':  0,                                      # число карты — единственное
                     'case': 'r',                                     # падеж — родительный (флеш (хх) от короля, флеш (хх) от семёрки)
                     'cas0': 'r',                                    # падеж для 0 — родительный (от дамы)
-                    'pr':   "от ",                                  # приставка для 0
+                    'pr':   "from ",                                  # приставка для 0
                     'me':   0                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             6:  {                                                   # Фулл-хаус (добавить "из", "и")
-                    'i':    ["фулл-хаус из трёх", "", "фулл-хаусы"],
-                    'r':    ["фулл-хауса из трёх", "", "фулл-хаусов"],
-                    'd':    ["фулл-хаусу из трёх", "", "фулл-хаусам"],
-                    'v':    ["фулл-хаус из трёх", "", "фулл-хаусы"],
-                    't':    ["фулл-хаусом из трёх", "", "фулл-хаусами"],
-                    'p':    ["фулл-хаусе из трёх", "", "фулл-хаусах"],
+                    'i':    ["full-house of three", "", "full-houses"],
+                    'r':    ["full-house of three", "", "full-houses"],
+                    'd':    ["full-house of three", "", "full-houses"],
+                    'v':    ["full-house of three", "", "full-houses"],
+                    't':    ["full-house of three", "", "full-houses"],
+                    'p':    ["full-house of three", "", "full-houses"],
                     'num':  1,                                      # число карты — множественное
                     'case': 'r',                                     # падеж — родительный (фулл-хаус из тройки королей и двойки шестёрок)
                     'cas0': 'r',                                    # падеж для 0 — родительный (из вальтов и пятёрок)
-                    'pr':   "из ",                                  # приставка для 0
+                    'pr':   "from ",                                  # приставка для 0
                     'me':   0                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             7:  {                                                   # Покер
-                    'i':    ["покер из", "", "покеры"],
-                    'r':    ["покера из", "", "покеров"],
-                    'd':    ["покеру из", "", "покерам"],
-                    'v':    ["покер из", "", "покеры"],
-                    't':    ["покером из", "", "покерами"],
-                    'p':    ["покере из", "", "покерах"],
+                    'i':    ["quad of", "", "quads"],
+                    'r':    ["quad of", "", "quads"],
+                    'd':    ["quad of", "", "quads"],
+                    'v':    ["quad of", "", "quads"],
+                    't':    ["quad of", "", "quads"],
+                    'p':    ["quad of", "", "quads"],
                     'num':  1,                                      # число карты — множественное
                     'case': 'r',                                     # падеж — родительный (покер из десяток)
                     'cas0': 'r',                                    # падеж для 0 — родительный (из тузов)
-                    'pr':   "из ",                                  # приставка для 0
+                    'pr':   "of ",                                  # приставка для 0
                     'me':   0                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             8:  {                                                   # Стрит-флеш ("от" перенести в масти)
-                    'i':    ["стрит-флеш", "", "стрит-флеши"],
-                    'r':    ["стрит-флеша", "", "стрит-флешей"],
-                    'd':    ["стрит-флешу", "", "стрит-флешам"],
-                    'v':    ["стрит-флеш", "", "стрит-флеши"],
-                    't':    ["стрит-флешем", "", "стрит-флешами"],
-                    'p':    ["стрит-флеше", "", "стрит-флешах"],
+                    'i':    ["straight flush", "", "straight flushes"],
+                    'r':    ["straight flush", "", "straight flushes"],
+                    'd':    ["straight flush", "", "straight flushes"],
+                    'v':    ["straight flush", "", "straight flushes"],
+                    't':    ["straight flush", "", "straight flushes"],
+                    'p':    ["straight flush", "", "straight flushes"],
                     'num':  0,                                      # число карты — единственное
                     'case': 'r',                                     # падеж — родительный (стрит-флеш (хх) от короля, стрит-флеш (хх) от семёрки)
                     'cas0': 'r',                                    # падеж для 0 — родительный (от дамы)
-                    'pr':   "от ",                                  # приставка для 0
+                    'pr':   "from ",                                  # приставка для 0
                     'me':   0                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             9:  {                                                   # Роял-флеш ("от" НЕ надо, от туза он); и не сравниваем по одинаковым комбинациям, ибо ничья
-                    'i':    ["роял-флеш"],
-                    'r':    ["роял-флеша"],
-                    'd':    ["роял-флешу"],
-                    'v':    ["роял-флеш"],
-                    't':    ["роял-флешем"],
-                    'p':    ["роял-флеше"],
+                    'i':    ["flush royale"],
+                    'r':    ["flush royale"],
+                    'd':    ["flush royale"],
+                    'v':    ["flush royale"],
+                    't':    ["flush royale"],
+                    'p':    ["flush royale"],
                     'num':  False,                                      # число карты — НЕТ (про туза не говорим)
                     'case': False,                                       # падежа тоже нет
                     'me':   0                                       # Сёмино местоимение — [мой, моя, мои]
@@ -1597,172 +1597,172 @@ init 3 python:
             }
         value_name = {                                             # склонения значений карт по падежам и количеству
             1:  {                                                  # вот тут туза на всякий случай впишем
-                    'i':    ["туз", "тузы"],
-                    'r':    ["туза", "тузов"],
-                    'd':    ["тузу", "тузам"],
-                    'v':    ["туза", "тузов"],
-                    't':    ["тузом", "тузами"],
-                    'p':    ["тузе", "тузах"],
+                    'i':    ["ace", "aces"],
+                    'r':    ["ace", "aces"],
+                    'd':    ["ace", "aces"],
+                    'v':    ["ace", "aces"],
+                    't':    ["ace", "aces"],
+                    'p':    ["ace", "aces"],
                     'me':   0                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             2:  {                                                  #
-                    'i':    ["двойка", "двойки"],
-                    'r':    ["двойки", "двоек"],
-                    'd':    ["двойке", "двойкам"],
-                    'v':    ["двойку", "двойки"],
-                    't':    ["двойкой", "двойками"],
-                    'p':    ["двойке", "двойках"],
+                    'i':    ["deuce", "deuces"],
+                    'r':    ["deuce", "deuces"],
+                    'd':    ["deuce", "deuces"],
+                    'v':    ["deuce", "deuces"],
+                    't':    ["deuce", "deuces"],
+                    'p':    ["deuce", "deuces"],
                     'me':   1                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             3:  {                                                  #
-                    'i':    ["тройка", "тройки"],
-                    'r':    ["тройки", "троек"],
-                    'd':    ["тройке", "тройкам"],
-                    'v':    ["тройку", "тройки"],
-                    't':    ["тройкой", "тройками"],
-                    'p':    ["тройке", "тройках"],
+                    'i':    ["three", "threes"],
+                    'r':    ["three", "threes"],
+                    'd':    ["three", "threes"],
+                    'v':    ["three", "threes"],
+                    't':    ["three", "threes"],
+                    'p':    ["three", "threes"],
                     'me':   1                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             4:  {                                                  #
-                    'i':    ["четвёрка", "четвёрки"],
-                    'r':    ["четвёрки", "четвёрок"],
-                    'd':    ["четвёрке", "четвёркам"],
-                    'v':    ["четвёрку", "четвёрки"],
-                    't':    ["четвёркой", "четвёрками"],
-                    'p':    ["четвёрке", "четвёрках"],
+                    'i':    ["four", "fours"],
+                    'r':    ["four", "fours"],
+                    'd':    ["four", "fours"],
+                    'v':    ["four", "fours"],
+                    't':    ["four", "fours"],
+                    'p':    ["four", "fours"],
                     'me':   1                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             5:  {                                                  #
-                    'i':    ["пятёрка", "пятёрки"],
-                    'r':    ["пятёрки", "пятёрок"],
-                    'd':    ["пятёрке", "пятёркам"],
-                    'v':    ["пятёрку", "пятёрки"],
-                    't':    ["пятёркой", "пятёрками"],
-                    'p':    ["пятёрке", "пятёрках"],
+                    'i':    ["five", "fives"],
+                    'r':    ["five", "fives"],
+                    'd':    ["five", "fives"],
+                    'v':    ["five", "fives"],
+                    't':    ["five", "fives"],
+                    'p':    ["five", "fives"],
                     'me':   1                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             6:  {                                                  #
-                    'i':    ["шестёрка", "шестёрки"],
-                    'r':    ["шестёрки", "шестёрок"],
-                    'd':    ["шестёрке", "шестёркам"],
-                    'v':    ["шестёрку", "шестёрки"],
-                    't':    ["шестёркой", "шестёрками"],
-                    'p':    ["шестёрке", "шестёрках"],
+                    'i':    ["six", "sixes"],
+                    'r':    ["six", "sixes"],
+                    'd':    ["six", "sixes"],
+                    'v':    ["six", "sixes"],
+                    't':    ["six", "sixes"],
+                    'p':    ["six", "sixes"],
                     'me':   1                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             7:  {                                                  #
-                    'i':    ["семёрка", "семёрки"],
-                    'r':    ["семёрки", "семёрок"],
-                    'd':    ["семёрке", "семёркам"],
-                    'v':    ["семёрку", "семёрки"],
-                    't':    ["семёркой", "семёрками"],
-                    'p':    ["семёрке", "семёрках"],
+                    'i':    ["seven", "sevens"],
+                    'r':    ["seven", "sevens"],
+                    'd':    ["seven", "sevens"],
+                    'v':    ["seven", "sevens"],
+                    't':    ["seven", "sevens"],
+                    'p':    ["seven", "sevens"],
                     'me':   1                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             8:  {                                                  #
-                    'i':    ["восьмёрка", "восьмёрки"],
-                    'r':    ["восьмёрки", "восьмёрок"],
-                    'd':    ["восьмёрке", "восьмёркам"],
-                    'v':    ["восьмёрку", "восьмёрки"],
-                    't':    ["восьмёркой", "восьмёрками"],
-                    'p':    ["восьмёрке", "восьмёрках"],
+                    'i':    ["eight", "eights"],
+                    'r':    ["eight", "eights"],
+                    'd':    ["eight", "eights"],
+                    'v':    ["eight", "eights"],
+                    't':    ["eight", "eights"],
+                    'p':    ["eight", "eights"],
                     'me':   1                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             9:  {                                                  #
-                    'i':    ["девятка", "девятки"],
-                    'r':    ["девятки", "девяток"],
-                    'd':    ["девятке", "девяткам"],
-                    'v':    ["девятку", "девятки"],
-                    't':    ["девяткой", "девятками"],
-                    'p':    ["девятке", "девятках"],
+                    'i':    ["nine", "nines"],
+                    'r':    ["nine", "nines"],
+                    'd':    ["nine", "nines"],
+                    'v':    ["nine", "nines"],
+                    't':    ["nine", "nines"],
+                    'p':    ["nine", "nines"],
                     'me':   1                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             10: {                                                  #
-                    'i':    ["десятка", "десятки"],
-                    'r':    ["десятки", "десяток"],
-                    'd':    ["десятке", "десяткам"],
-                    'v':    ["десятку", "десятки"],
-                    't':    ["десяткой", "десятками"],
-                    'p':    ["десятке", "десятках"],
+                    'i':    ["ten", "tens"],
+                    'r':    ["ten", "tens"],
+                    'd':    ["ten", "tens"],
+                    'v':    ["ten", "tens"],
+                    't':    ["ten", "tens"],
+                    'p':    ["ten", "tens"],
                     'me':   1                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             11: {                                                  # Валет
-                    'i':    ["валет", "вальты"],
-                    'r':    ["вальта", "вальтов"],
-                    'd':    ["вальту", "вальтам"],
-                    'v':    ["вальта", "вальтов"],
-                    't':    ["вальтом", "вальтами"],
-                    'p':    ["вальте", "вальтах"],
+                    'i':    ["jack", "jacks"],
+                    'r':    ["jack", "jacks"],
+                    'd':    ["jack", "jacks"],
+                    'v':    ["jack", "jacks"],
+                    't':    ["jack", "jacks"],
+                    'p':    ["jack", "jacks"],
                     'me':   0                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             12: {                                                  # Дама
-                    'i':    ["дама", "дамы"],
-                    'r':    ["дамы", "дам"],
-                    'd':    ["даме", "дамам"],
-                    'v':    ["даму", "дам"],
-                    't':    ["дамой", "дамами"],
-                    'p':    ["даме", "дамах"],
+                    'i':    ["queen", "queens"],
+                    'r':    ["queen", "queens"],
+                    'd':    ["queen", "queens"],
+                    'v':    ["queen", "queens"],
+                    't':    ["queen", "queens"],
+                    'p':    ["queen", "queens"],
                     'me':   1                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             13: {                                                  # Король
-                    'i':    ["король", "короли"],
-                    'r':    ["короля", "королей"],
-                    'd':    ["королю", "королям"],
-                    'v':    ["короля", "королей"],
-                    't':    ["королём", "королями"],
-                    'p':    ["короле", "королях"],
+                    'i':    ["king", "kings"],
+                    'r':    ["king", "kings"],
+                    'd':    ["king", "kings"],
+                    'v':    ["king", "kings"],
+                    't':    ["king", "kings"],
+                    'p':    ["king", "kings"],
                     'me':   0                                       # Сёмино местоимение — [мой, моя, мои]
                     },
             14: {                                                  # Туз
-                    'i':    ["туз", "тузы"],
-                    'r':    ["туза", "тузов"],
-                    'd':    ["тузу", "тузам"],
-                    'v':    ["туза", "тузов"],
-                    't':    ["тузом", "тузами"],
-                    'p':    ["тузе", "тузах"],
+                    'i':    ["ace", "aces"],
+                    'r':    ["ace", "aces"],
+                    'd':    ["ace", "aces"],
+                    'v':    ["ace", "aces"],
+                    't':    ["ace", "aces"],
+                    'p':    ["ace", "aces"],
                     'me':   0                                       # Сёмино местоимение — [мой, моя, мои]
                     }
             }
         name_of_suit = ["Дваче","СССР","Унылок","ЮВАО"]     # масти
         combo_difference = {                                                            # разница комбинаций
             0:  {                                                                       # комбинации одинаковы
-                    'm':     "почти удалось добиться ничьей.",                          # тут первая фраза ПРОИГРАВШЕГО м
-                    'f':     "почти удалось свести игру вничью.",                       # тут первая фраза ПРОИГРАВШЕГО ж
-                    'p2':    ["Хотя у нас обоих на руках оказались","но у","а у"],      # 1,3,6 части фразы
+                    'm':     "almost managed to get a draw.",                          # тут первая фраза ПРОИГРАВШЕГО м
+                    'f':     "almost managed to draw the game.",                       # тут первая фраза ПРОИГРАВШЕГО ж
+                    'p2':    ["Although we both had our hands full of","but","and"],      # 1,3,6 части фразы
                     'cc':    "i",                                                       # падеж комбинации
                     'nc':    2                                                          # индекс в списке комбинаций
                     },
             1:  {                                                                       # разница 1..3
-                    'm':     "выиграл с небольшим перевесом.",                          # первая фраза ПОБЕДИТЕЛЯ м
-                    'f':     "выиграла с небольшим перевесом.",                         # первая фраза ПОБЕДИТЕЛЯ ж
-                    'p2':    ["Всё-таки","по отношению к","хоть ненамного, но младше."], # 1,4,7 части фразы
+                    'm':     "won by a small margin.",                          # первая фраза ПОБЕДИТЕЛЯ м
+                    'f':     "won by a small margin.",                         # первая фраза ПОБЕДИТЕЛЯ ж
+                    'p2':    ["After all","compared to","is just a bit, but still weaker."], # 1,4,7 части фразы
                     'ccL':   "i",                                                       # падеж первой комбинации
                     'ccw':   "d"                                                        # падеж второй комбинации
                     },
             2:  {                                                                       # разница 4..6
-                    'm':     "победил со значительным преимуществом.",                  # первая фраза ПОБЕДИТЕЛЯ м
-                    'f':     "победила с подавляющим преимуществом.",                 # первая фраза ПОБЕДИТЕЛЯ ж
-                    'p2':    ["С такими картами, как","против","нужно было сдаваться сразу."], # 1,4,7 части фразы
+                    'm':     "won with a significant advantage.",                  # первая фраза ПОБЕДИТЕЛЯ м
+                    'f':     "won with a significant advantage.",                 # первая фраза ПОБЕДИТЕЛЯ ж
+                    'p2':    ["With cards like","against","should've forfeited right there."], # 1,4,7 части фразы
                     'ccL':   "i",                                                       # падеж первой комбинации
                     'ccw':   "r"                                                        # падеж второй комбинации
                     },
             3:  {                                                                       # разница 7..9
-                    'm':     "победил с разгромным счётом, можно сказать «всухую».",    # первая фраза ПОБЕДИТЕЛЯ м
-                    'f':     "победила с разгромным счётом, можно сказать «всухую».",   # первая фраза ПОБЕДИТЕЛЯ ж
-                    'p2':    ["Что ни говори, но","по сравнению с","— это меньше, чем ничего."], # 1,4,7 части фразы
+                    'm':     "won with a smashing score, you could say 'dry'.",    # первая фраза ПОБЕДИТЕЛЯ м
+                    'f':     "won with a smashing score, you could say 'dry'.",   # первая фраза ПОБЕДИТЕЛЯ ж
+                    'p2':    ["Whatever you say, but","compared to","— is less than nothing."], # 1,4,7 части фразы
                     'ccL':   "i",                                                       # падеж первой комбинации
                     'ccw':   "t"                                                        # падеж второй комбинации
                     }
             }
         rivals = {                                                                  # сопернички
-            'me':   ["Мне","Я",[["мой","моя","мои"],["моему","моей","моим"],["моего","моей","моих"],["моим","моей","моими"]],"","меня","меня"],
-            'un':   ["Лене","Лена","её","её","Лены","неё"],
-            'sl':   ["Славе","Славя","её","её","Слави","неё"],
-            'dv':   ["Алисе","Алиса","её","её","Алисы","неё"],
-            'mi':   ["Мику","Мику","её","её","Мику","неё"],
-            'us':   ["Ульяне","Ульяна","её","её","Ульянки","неё"],
-            'sh':   ["Шурику","Шурик","его","его","Шурика","него"],
-            'mz':   ["Жене","Женя","её","её","Жени","неё"]
+            'me':   ["I","I",[["my","my","my"],["my","my","my"],["my","my","my"],["my","my","my"]],"","my","my"],
+            'un':   ["Lena","Lena","her","her","Lena's","her"],
+            'sl':   ["Slavya","Slavya","her","her","Slavya's","her"],
+            'dv':   ["Alisa","Alisa","her","her","Alisa's","her"],
+            'mi':   ["Miku","Miku","her","her","Miku's","her"],
+            'us':   ["Ulyana","Ulyana","her","her","Ulyanka's","her"],
+            'sh':   ["Shurik","Shurik","his","his","Shurik's","his"],
+            'mz':   ["Zhenya","Zhenya","her","her","Zhenya's","her"]
             }
         residual = winner_hand[0]-loser_hand[0]
         if residual == 0:

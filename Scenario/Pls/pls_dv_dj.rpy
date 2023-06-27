@@ -4,45 +4,45 @@
     $ alt_pause(.1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(4, u"Алиса. DJ. Утро")
+    $ alt_chapter(4, u"Alisa. DJ. Morning")
     call alt_day4_dv_dj_morning
     $ alt_pause(1)
-    $ alt_save_name(4, u"Алиса. DJ. Завтрак")
+    $ alt_save_name(4, u"Alisa. DJ. Breakfast")
     call alt_day4_dv_dj_breakfast
     $ alt_pause(1)
-    $ alt_chapter(4, u"Алиса. DJ. Освобождение рыжей!")
+    $ alt_chapter(4, u"Alisa. DJ. Freedom to readhead!")
     call alt_day4_dv_dj_alise_free
     $ alt_pause(1)
-    $ alt_chapter(4, u"Алиса. DJ. Рыжий ураган")
+    $ alt_chapter(4, u"Alisa. DJ. Red hurricane")
     call alt_day4_dv_dj_radio_event
     $ alt_pause(1)
     $ persistent.sprite_time = "day"
     $ day_time()
-    $ alt_save_name(4, u"Алиса. DJ. Обед")
+    $ alt_save_name(4, u"Alisa. DJ. Dinner")
     call alt_day4_dv_dj_lunch
     $ alt_pause(1)
-    $ alt_chapter(4, u"Алиса. DJ. Тихий час")
+    $ alt_chapter(4, u"Alisa. DJ. Quiet hour")
     call alt_day4_dv_dj_silent_hour
     $ alt_pause(1)
-    $ alt_save_name(4, u"Алиса. DJ. Полдник")
+    $ alt_save_name(4, u"Alisa. DJ. Lunch")
     call alt_day4_dv_dj_afternoon
     $ alt_pause(1)
-    $ alt_save_name(4, u"Алиса. DJ. Концерт")
+    $ alt_save_name(4, u"Alisa. DJ. Concert")
     call alt_day4_dv_dj_concert
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_save_name(4, u"Алиса. DJ. Ужин")
+    $ alt_save_name(4, u"Alisa. DJ. Evening")
     call alt_day4_dv_dj_dinner
     $ alt_pause(1)
-    $ alt_chapter(4, u"Алиса. DJ. Поиски Ульяны")
+    $ alt_chapter(4, u"Alisa. DJ. Searching for Ulyana")
     call alt_day4_dv_dj_us_search
     $ alt_pause(1)
     $ persistent.sprite_time = 'night'
     $ night_time()
-    $ alt_save_name(4, u"Алиса. DJ. Свидание на пляже")
+    $ alt_save_name(4, u"Alisa. DJ. Beach date")
     call alt_day4_dv_dj_date_on_the_beach
     $ alt_pause(1)
-    $ alt_save_name(4, u"Алиса. DJ. Отбой")
+    $ alt_save_name(4, u"Alisa. DJ. Lights out")
     call alt_day4_dv_dj_sleeptime
     $ alt_pause(1)
     jump alt_day5_dv_dj_begin
@@ -50,69 +50,69 @@
 label alt_day5_dv_dj_begin:
     call alt_day5_dv_dj_vars
     $ alt_pause(1)
-    $ alt_chapter(5, u"Алиса. DJ. Утро")
+    $ alt_chapter(5, u"Alisa. DJ. Morning")
     call alt_day5_dv_dj_morning
     $ alt_pause(1)
-    $ alt_save_name(5, u"Алиса. DJ. Завтрак")
+    $ alt_save_name(5, u"Alisa. DJ. Breakfast")
     $ day_time()
     call alt_day5_dv_dj_breakfast
     $ alt_pause(1)
-    $ alt_chapter(5, u"Алиса. DJ. 2ch-FM")
+    $ alt_chapter(5, u"Alisa. DJ. 2ch-FM")
     call alt_day5_dv_dj_dvachcast
     $ alt_pause(1)
     $ persistent.sprite_time = "day"
-    $ alt_chapter(5, u"Алиса. DJ. Обед")
+    $ alt_chapter(5, u"Alisa. DJ. Lunch")
     call alt_day5_dv_dj_lunch
     $ alt_pause(1)
-    $ alt_save_name(5, u"Алиса. DJ. Тихий час")
+    $ alt_save_name(5, u"Alisa. DJ. Quiet hour")
     call alt_day5_dv_dj_map_siesta
     $ alt_pause(1)
-    $ alt_save_name(5, u"Алиса. DJ. Полдник")
+    $ alt_save_name(5, u"Alisa. DJ. Lunch")
     call alt_day5_dv_dj_afternoon
     $ alt_pause(1)
-    $ alt_chapter(5, u"Алиса. DJ. Радиоэфир")
+    $ alt_chapter(5, u"Alisa. DJ. Broadcast")
     call alt_day5_dv_dj_radio_broadcast
     $ alt_pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_save_name(5, u"Алиса. DJ. Ужин")
+    $ alt_save_name(5, u"Alisa. DJ. Evening")
     call alt_day5_dv_dj_dinner
     $ alt_pause(1)
-    $ alt_chapter(5, u"Алиса. DJ. Костёр")
+    $ alt_chapter(5, u"Alisa. DJ. Fire")
     call alt_day5_dv_dj_campfire
     $ alt_pause(1)
     $ persistent.sprite_time = 'night'
     $ night_time()
-    $ alt_save_name(5, u"Алиса. DJ. Отбой")
+    $ alt_save_name(5, u"Alisa. DJ. Lights out")
     call alt_day5_dv_dj_sleeptime
     $ alt_pause(1)
     jump alt_day6_dv_dj_begin
 
 label alt_day6_dv_dj_begin:
-    $ alt_chapter(6, u"Алиса. DJ. Пробуждение")
+    $ alt_chapter(6, u"Alisa. DJ. Morning")
     $ persistent.sprite_time = "day"
     $ sunset_time()
     call alt_day6_dv_dj_morning
     $ alt_pause(1)
-    $ alt_save_name(6, u"Алиса. DJ. Завтрак")
+    $ alt_save_name(6, u"Alisa. DJ. Breakfast")
     call alt_day6_dv_dj_breakfast
     $ alt_pause(1)
-    $ alt_chapter(6, u"Алиса. DJ. Радиоэфир")
+    $ alt_chapter(6, u"Alisa. DJ. Broadcast")
     $ day_time()
     call alt_day6_dv_dj_broadcast
     $ alt_pause(1)
-    $ alt_save_name(6, u"Алиса. DJ. Обед")
+    $ alt_save_name(6, u"Alisa. DJ. Dinner")
     call alt_day6_dv_dj_lunch
     $ alt_pause(1)
-    $ alt_save_name(6, u"Алиса. DJ. Тихий час")
+    $ alt_save_name(6, u"Alisa. DJ. Quiet hour")
     call alt_day6_dv_dj_siesta
     $ alt_pause(1)
-    $ alt_chapter(6, u"Алиса. DJ. Концерт")
+    $ alt_chapter(6, u"Alisa. DJ. Concert")
     call alt_day6_dv_dj_concert
     $ alt_pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(6, u"Алиса. DJ. Ужин")
+    $ alt_chapter(6, u"Alisa. DJ. Evening")
     call alt_day6_dv_dj_dinner
     $ alt_pause(1)
 
@@ -126,17 +126,17 @@ label alt_day6_dv_dj_begin:
         $ alt_dv_dj_ends = 'neu'
     else:
         $ alt_dv_dj_ends = 'bad'
-    $ alt_save_name(6, u"Алиса. DJ. Вечер")
+    $ alt_save_name(6, u"Alisa. DJ. Evening")
     call alt_day6_dv_dj_no_dance
     $ alt_pause(1)
     $ persistent.sprite_time = 'night'
     $ night_time()
-    $ alt_save_name(6, u"Алиса. DJ. Разговор по душам")
+    $ alt_save_name(6, u"Alisa. DJ. Heart to heart")
     call alt_day6_dv_dj_un_night
     if alt_dv_dj_ends == 'true' and lp_dv < 16:
         return
     $ alt_pause(1)
-    $ alt_save_name(6, u"Алиса. DJ. Отбой")
+    $ alt_save_name(6, u"Alisa. DJ. Lights out")
     if alt_dv_dj_ends == 'true' or alt_dv_dj_ends == 'good':
         call alt_day6_dv_dj_sleeptime
     else:
@@ -145,22 +145,22 @@ label alt_day6_dv_dj_begin:
     jump alt_day7_dv_dj_begin
 
 label alt_day7_dv_dj_begin:
-    $ alt_save_name(7, u"Алиса. DJ. Сон")
+    $ alt_save_name(7, u"Alisa. DJ. Dream")
     call alt_day7_dv_dj_dream
     $ alt_pause(1)
-    $ alt_save_name(7, u"Алиса. DJ. Утро")
+    $ alt_save_name(7, u"Alisa. DJ. Morning")
     $ persistent.sprite_time = "day"
     $ day_time()
     call alt_day7_dv_dj_morning
-    $ alt_save_name(7, u"Алиса. DJ. Точки над Ё")
+    $ alt_save_name(7, u"Alisa. DJ. Points over i")
     call alt_day7_dv_dj_points
     $ alt_pause(1)
-    $ alt_save_name(7, u"Алиса. DJ. Отбытие")
+    $ alt_save_name(7, u"Alisa. DJ. Departure")
     call alt_day7_dv_dj_departure
     $ alt_pause(1)
     $ persistent.sprite_time = "prolog"
     $ prolog_time()
-    $ alt_save_name(7, u"Алиса. DJ. Эпилог")
+    $ alt_save_name(7, u"Alisa. DJ. Epilogue")
     if alt_dv_dj_ends == 'bad':
         call alt_day7_dv_dj_bad
     elif alt_dv_dj_ends == 'neu':

@@ -299,7 +299,7 @@ screen unreleased_1_7dl:
         xpos 0.534
         ypos 0.236
         action [Hide("stories_main_7dl", transition=Dissolve(0.2)), Stop('music', fadeout=1), SetField(sdl_mus_engine, "is_active", False), Jump("alt_cherry_berry")]
-    textbutton "Бездна анального угнетения":
+    textbutton "Abyss of anal destruction":
         style "log_button"
         text_style "old_road_textbutton"
         xpos 0.534

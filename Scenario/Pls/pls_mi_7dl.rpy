@@ -3,19 +3,19 @@
     $ routetag = "mi7dl"
     $ persistent.sprite_time = "night"
     $ night_time()
-    $ alt_chapter(4, u"Мику. 7ДЛ. Поездка.")
+    $ alt_chapter(4, u"Miku. 7DS. The trip.")
     call alt_day4_mi_7dl_ch1
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(4, u"Мику. 7ДЛ. Утро.")
+    $ alt_chapter(4, u"Miku. 7DS. Morning.")
     call alt_day4_mi_7dl_ch2
     $ persistent.sprite_time = "day"
     $ day_time()
     if alt_day3_mi_7dl_donor == 2:
         call alt_day4_mi_7dl_ch3
         pause(1)
-    $ alt_chapter(4, u"Мику. 7ДЛ. В город!")
+    $ alt_chapter(4, u"Miku. 7DS. To the town!")
     call alt_day4_mi_7dl_ch4
     pause(1)
     if alt_day3_mi_7dl_donor == 0:
@@ -25,16 +25,16 @@
         pause(1)
         call alt_day4_mi_7dl_ch52
     pause(1)
-    $ alt_chapter(4, u"Мику. 7ДЛ. Домой.")
+    $ alt_chapter(4, u"Miku. 7DS. Going home.")
     call alt_day4_mi_7dl_ch6
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(4, u"Мику. 7ДЛ. Вечер.")
+    $ alt_chapter(4, u"Miku. 7DS. Evening.")
     call alt_day4_mi_7dl_ch7
     pause(1)
     if alt_day3_mi_7dl_donor >= 1:
-        $ alt_chapter(4, u"Мику. 7ДЛ. Рандеву?")
+        $ alt_chapter(4, u"Miku. 7DS. Rendez-vous?")
         call alt_day4_mi_7dl_ch8a
         pause(1)
         $ persistent.sprite_time = "night"
@@ -55,15 +55,15 @@ label alt_day5_mi_7dl_start:
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
     if alt_day4_mi_7dl_ev_savior and loki:
-        $ alt_chapter(5, u"Мику. 7ДЛ. Дождь вместе")
+        $ alt_chapter(5, u"Miku. 7DS. Rain together")
         call alt_day5_mi_7dl_rain_2gether
     else:
-        $ alt_chapter(5, u"Мику. 7ДЛ. У мира есть ты")
+        $ alt_chapter(5, u"Miku. 7DS. The world has you")
         call alt_day5_mi_7dl_morning
     pause(2)
     $ persistent.sprite_time = "day"
     $ day_time()
-    $ alt_chapter(5, u"Мику. 7ДЛ. День")
+    $ alt_chapter(5, u"Miku. 7DS. Day")
     call alt_day5_mi_7dl_dinner
     pause(1)
     call alt_day5_mi_7dl_router
@@ -78,7 +78,7 @@ label alt_day5_mi_7dl_start:
     else:
         call alt_day5_mi_7dl_branch
     pause(2)
-    $ alt_chapter(5, u"Мику. 7ДЛ. ДжентльСемён.")
+    $ alt_chapter(5, u"Miku. 7DS. GentleSemen.")
     call alt_day5_mi_7dl_potato
     pause(1)
     if not alt_day5_mi_7dl_voyeur:
@@ -86,7 +86,7 @@ label alt_day5_mi_7dl_start:
         pause(2)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(5, u"Мику. 7ДЛ. Костёр")
+    $ alt_chapter(5, u"Miku. 7DS. Bonfire")
     call alt_day5_mi_7dl_firecamp
     pause(3)
     $ persistent.sprite_time = "night"
@@ -99,7 +99,7 @@ label alt_day6_mi_7dl_start:
     call alt_day6_mi_7dl_vars
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(6, u"Мику. 7ДЛ. Утро")
+    $ alt_chapter(6, u"Miku. 7DS. Morning")
     call alt_day6_mi_7dl_wakeup
     pause(1)
     $ persistent.sprite_time = "day"
@@ -107,7 +107,7 @@ label alt_day6_mi_7dl_start:
     if alt_day5_mi_7dl_voyeur:
         call alt_day6_mi_7dl_soul
         pause(1)
-        $ alt_chapter(6, u"Мику. 7ДЛ. День")
+        $ alt_chapter(6, u"Miku. 7DS. Day")
         call alt_day6_mi_7dl_dinner
         pause(1)
         call alt_day6_mi_7dl_soul_day
@@ -120,7 +120,7 @@ label alt_day6_mi_7dl_start:
     elif alt_hpt < alt_spt:
         call alt_day6_mi_7dl_star
         pause(1)
-        $ alt_chapter(6, u"Мику. 7ДЛ. День")
+        $ alt_chapter(6, u"Miku. 7DS. Day")
         call alt_day6_mi_7dl_dinner
         pause(1)
         call alt_day6_mi_7dl_star_day
@@ -136,7 +136,7 @@ label alt_day6_mi_7dl_start:
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(6, u"Мику. 7ДЛ. Вечер")
+    $ alt_chapter(6, u"Miku. 7DS. Evening")
     if alt_day6_mi_7dl_left:
         call alt_day6_mi_7dl_catapult
         pause(1)
@@ -174,7 +174,7 @@ label alt_day7_mi_7dl_start:
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(7, u"Мику. 7ДЛ. Утро")
+    $ alt_chapter(7, u"Miku. 7DS. Morning")
     call alt_day7_mi_7dl_wakeup
     pause(1)
     call alt_day7_mi_7dl_packing
@@ -182,7 +182,7 @@ label alt_day7_mi_7dl_start:
     $ persistent.sprite_time = "day"
     $ day_time()
     if alt_day6_mi_7dl_left:
-        $ alt_chapter(7, u"Мику. 7ДЛ. Отъезд")
+        $ alt_chapter(7, u"Miku. 7DS. Departure")
         call alt_day7_mi_7dl_departure_lone
         pause(1)
         $ persistent.sprite_time = "prolog"
@@ -202,14 +202,14 @@ label alt_day7_mi_7dl_start:
         pause(1)
         return
     else:
-        $ alt_chapter(7, u"Мику. 7ДЛ. Не отпускай")
+        $ alt_chapter(7, u"Miku. 7DS. Don't let go")
         call alt_day7_mi_7dl_departure_a2th
         pause(1)
         $ persistent.sprite_time = "prolog"
         $ prolog_time()
         if alt_day7_mi_7dl_pt == 1:
             if alt_hpt >= 9:
-                $ alt_chapter(-1, u"Мику. 7ДЛ. Сны.")
+                $ alt_chapter(-1, u"Miku. 7DS. Dreams.")
                 call alt_day7_mi_7dl_good_human
             else:
                 call alt_day7_mi_7dl_neu_human

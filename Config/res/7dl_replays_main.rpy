@@ -237,7 +237,7 @@ screen sdl_repl_section_selector(engine):
                         action [Function(engine.set_cur_section, section)]
             $ sdl_section_count += 1
         if engine.get_cur_section() == None:
-            text "Прогресс прохождения мода: [sdl_repl_progress]%":
+            text "Progreesion: [sdl_repl_progress]%":
                 style "old_road_textbutton"
                 xpos 0.534
                 ypos 0.187
@@ -327,11 +327,11 @@ screen sdl_repl_day(engine):
         $ sdl_label_count += 1
 
     # Нумерация страниц
-    text "Часть " + str(engine.get_cur_page() + 1):
+    text "Part " + str(engine.get_cur_page() + 1):
         style "replays_text"
         xcenter 0.432
         ycenter 0.885
-    text "Часть " + str(engine.get_cur_page() + 2):
+    text "Part " + str(engine.get_cur_page() + 2):
         style "replays_text"
         xcenter 0.741
         ycenter 0.883

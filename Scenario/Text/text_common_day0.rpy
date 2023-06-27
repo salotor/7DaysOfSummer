@@ -2,196 +2,196 @@
     scene anim prolog_2
     with dissolve2
     play music music_7dl["seven_summer_days"] fadein 3
-    "Мне снова снилось что-то."
-    "И я снова кричал во сне."
+    "I was dreaming again."
+    "And once more I was screaming."
     scene bg ext_entrance_night_clear_7dl
     $ renpy.show("uvao_d1", at_list = [left], what = Notch("uvao_d1"))
     show prologue_dream
     pause(.02)
     scene anim prolog_10 with fade
-    "Кричал, кричал — и проснулся от собственного крика, не от страха, не от звука, а от ощущения, мало похожего на человеческие переживания."
-    "Я с трудом мог собрать мысли, но хорошо помнил странные жёлтые — кошачьи — глаза."
-    "Помнил, как и последние сто раз, что она приходила в мой сон и протягивала руку."
-    "Каждый раз отталкивал."
+    "I screamed and screamed — and woke up from my own screaming, not from horror, not from sounds; but from a feeling, barely resembling human experiences."
+    "I barely could collect myself, but I could very well remember strange yellow — catlike — eyes."
+    "Remembered, just like the last 100 times she came into my dream and offered me her hand."
+    "Pushed her away every time."
     scene anim prolog_5
     with dissolve
-    "Меня влекла смерть."
-    "Холодная, молчаливая и вечная."
-    "А не вечные блуждания непонятно где."
+    "I was drawn to death."
+    "Cold, silent and eternal."
+    "Not these perpetual wanderings god knows where."
     scene
     $ renpy.show("anim prolog_5", what = Desat1("anim prolog_5"))
-    show alt_credits "Ты пойдёшь со мной?" with dissolve2:
+    show alt_credits "Will you go with me?" with dissolve2:
         pos (747,105)
     pause(0.4)
     scene anim prolog_4
     with dissolve
-    me "Не пойду."
-    "Голос со сна был хриплым, горло опять засорилось, и я несколько минут кашлял, пока не выхаркал сгусток мокроты."
-    "Повернулся, опираясь на локоть, достал из-под подушки телефон."
-    "Пять часов."
-    "Любимое время, пока город ещё спит."
+    me "I won't."
+    "My voice was husky after sleep, throat clogged up again, so I was coughing for a few minutes until I spat out phlegmatic clot."
+    "Turned around, resting on my elbow, checked the phone."
+    "5 AM."
+    "My favorite time, while the city is still asleep."
     with fade
-    "Нащупал пачку сигарет, закурил, вдохнул сладковатой сизой отравы."
-    "Пять часов единого бесконечного дня, затянувшегося вот уже на десять лет."
-    dreamgirl "Опять куришь."
-    th "Опять болтаешь не по делу."
-    "Вяло отмахнулся я."
-    dreamgirl "Тебе опять снилась она."
-    th "Не твоё дело."
-    "Я усилием воли отключил посторонний поток сознания и, откинувшись на подушку, выпустил в потолок целый клуб дыма."
-    "Помнится, меня так пугали, что пожелтеет потолок…"
-    "Пожелтеют лёгкие…"
-    "Пожелтеет всё."
-    th "Вот было бы здорово умереть."
-    "В десятитысячный раз подумалось мне."
-    th "Наверное, там темно и ничего не происходит."
-    th "А может, даже и холодно?"
-    "Место окурку нашлось в одной из жестяных банок, валяющихся возле кровати, а мне пришлось подниматься."
-    "Я с кряхтеньем выпрямился на диване и провёл предварительную диагностику организма."
-    "Снова болело колено, болело… всё."
+    "Found a pack of cigarettes, lit one up, inhaled the sweetish bluish poison."
+    "Five hours of a single everlasting day, dragging on for about ten years now."
+    dreamgirl "You're smoking again."
+    th "And you're chatting about nothing again."
+    "I sluggishly shrugged."
+    dreamgirl "You dreamed of her."
+    th "Not your business."
+    "Shutting down the extra consciousness stream I laid back on the pillow and exhaled a puff of smoke into the ceiling."
+    "I remember I was told that the ceiling will turn yellow…"
+    "My lungs will turn yellow…"
+    "Everything will turn yellow."
+    th "It'd be great to die, huh."
+    "For the millionth time thought I."
+    th "It's probably dark there, and nothing ever happens."
+    th "Maybe it's also cold?"
+    "The cig butt got tossed into one of the cans lying near the bed, and I had to get up."
+    "Creakingly, I got up from the couch and started self-diagnosing."
+    "My knee hurts again, my... everything hurts again."
     scene black
     show laptop_7dl
     show anim_laptop with fade
-    "Глаза снова отказывались ловить фокус после пробуждения, и пришлось несколько минут сидеть, мотая головой."
-    th "Мне двадцать девять лет."
-    "Напомнил себе я."
-    th "Это Земля, Санкт-Петербург образца конца две тысячи восемнадцатого года."
-    th "Моё имя — Семён. Персунов. {w}Звучит как анекдот, но прошу винить в этом маму с папой."
+    "Eyes were still struggling to regain focus after awakening, so I had to sit still for a few minutes shaking my head."
+    th "I'm twenty-nine years old."
+    "I reminded myself."
+    th "This is Earth, Saint-Petersburg at the end of 2018th year."
+    th "My name is Semyon. Persunov. {w}Sounds like a joke, but my parents are to blame for it."
     hide anim_laptop
     show laptop_prologue
     with dspr
-    "Я пригляделся: на экране висела заставка какого-то очередного сайта, где люди людей ненавидят."
-    "Лиха беда начало. После прогона базовых систем пришло время диагностики систем посложнее."
+    "I looked closely: the screen was showing yet another site where people hated each other."
+    "Urgh. After recovering my basic functions it was time for more complex ones."
     scene bg semen_room with dissolve
-    "Поднявшись, я пошатнулся от скрутившей слабости и был вынужден опереться о стенку."
-    "Но утро уж вступало в свои права — не прошло и двух минут, а я добрался до ванной."
+    "After I got up, I reeled from weakness and had to rely on a wall."
+    "But the morning was coming — not even two minutes later I reached bathroom."
     scene bg int_semen_bath_7dl with dissolve
     play sound sfx_open_water_sink
     play sound_loop sfx_water_sink_stream fadein 1
-    "Отражение в зеркале ожгло угрюмым взглядом и отвернулось."
-    th "Я — дизайнер-фрилансер. Дальше должны идти пафосные слова о невероятно опасном задании и сверка часов, но нет. Ничего такого."
-    "Я играл в эту игру каждый день, воскресая ото сна носом в клавиатуру."
-    "Хотя с моим образом жизни все режимы давным-давно накрылись медным тазом."
-    "Я не был и ночным жителем, и дневным меня назвать было трудно."
+    "The man in the mirror burned me with a stubborn gaze and turned around."
+    th "I am a freelance designer. After that there were supposed to be pretentious words about secret missions and watch checking, but no. Nothing like that."
+    "I played this game every day, arising from my slumber face-first-into-keyboard."
+    "Well, with my lifestyle any semblance of a sleep schedule got completely obliterated long ago."
+    "Although I wasn't an owl, I wasn't a skylark either."
     stop sound_loop
     play sound sfx_close_water_sink
     pause(1)
     scene bg semen_room with dissolve
-    "Комната хранила следы былой роскоши — начиная со свисающих унылыми буклями обоев, которые у меня так и не дошли руки подклеить, заканчивая километровыми мотками пыли на четырёх плафонах люстры."
-    "Всё равно я её никогда не включаю. Не уверен даже, работают ли лампочки."
-    "В целом берлога моя полностью отвечала ожиданиям того, как должно выглядеть место обитания человека компьютеризированного, одинокого."
-    "По правде сказать, половину местного бардака можно было бы вытряхнуть отсюда меньше чем за десять минут, просто разбросав всё по пакетам из пакета с пакетами."
-    "Но это же не наши методы. Протоптанные тропинки между кучами мусора, вещами, огрызками техники и журналами — вот наше всё."
-    "Зато идеально чистым был компьютерный стол."
-    "Сразу видно — кто-то залил пивом клавиатуру. Или это был чай?"
-    "Почесав затылок, я был вынужден констатировать, что всё-таки пиво. Хвала Рандому за бессмертных «рейзеров»!"
-    "На экране замерла заставка телетрансляции — откуда-то, кажется, из Японии, где в очередной раз вытащили на сцену несуществующих человечков и заставили их петь."
-    "И было это форменным идиотизмом — чувствовать себя человеком без существования, когда несуществующие человечки собирают стадионы."
-    "Не к месту вспомнилось вдруг, что термин «хикикомори» придумали тоже японцы."
-    "Кстати, наш «Юбилейный» японцы обещали посетить с концертами в феврале, и ни в чём они не виноваты, японцы-то, хоть и придумали этот чёртов термин."
-    "И никто не виноват."
-    "Может, даже и я."
-    "Я вернулся к монитору и, подкурив предпоследнюю, с грустью констатировал, что, похоже, придётся выбраться на улицу."
-    "Сигареты заканчивались, несмотря на то, что последний раз я брал целый блок."
-    "Последний раз…"
-    "За монитором был пустынный сектор рунета, в котором я обычно обитал, — парочка форумов, две или три доски объявлений, сборщик почты да неизменный YouTube."
-    "Социальные сети я презирал как лишнее напоминание о том, кто я есть."
-    "За окном была такая же пустынная улица — почему-то с утра пораньше в предновогодние дни никто вдруг не спешил по магазинам."
+    "The room housed traces of old luxury — starting with hanging wallpapers that I never glued back up, ending with kilometer long clouds of dust on the chandelier."
+    "I don't turn it on anyways. Hell, I don't even know if the lightbulbs still work."
+    "My den was practically a perfect example of how a home of `homo computerius lonelius` should've looked like."
+    "Honestly, half of this garbage could just be tossed out in 10 minutes simply by resorting it into bags from bag of bags."
+    "But nooo, we don't do that here. Trodden pathways between trash heaps, things, remainders of mechanisms and magazines — that's our style."
+    "However, the desk was pristinely clean."
+    "Clear as day - someone spilled beer over keyboard. Or was it tea?"
+    "After scratching my head I was forced to admit: indeed, it was beer. Thank Random for immortal «Razers»!"
+    "On the screen was a stream — somewhere from Japan, I think, where once again they pulled non-existent little humans onto the stage and made them sing."
+    "And that was utter idiocy — feeling like a human without existence, when non-existent people draw in entire stadiums."
+    "I remembered out of place that the term «hikikomori» was created by the same japanese."
+    "Actually, they promised to visit us with concerts in February, and they haven't done anything, actually, even though they created this damn term."
+    "And nobody is to blame."
+    "Maybe even me."
+    "I came back to the monitor, and lighting up the penultimate cig, had to sadly state, that it seems like I'll have to go out."
+    "Cigs were running out despite me grabbing an entire block last time."
+    "Last time…"
+    "Behind the monitor there was the desolate section of runet which I inhabited, — a couple forums, two or three imageboards, email and unchanging YouTube."
+    "Social networks I despised as they reminded me of who I am."
+    "The streets were just as desolate — somehow at the dawn in pre-Christmas days nobody was rushing to stores."
     play sound_loop sfx_street_traffic_outside fadein 2
-    "Только неизменный трафик, борющийся с ледяным ветром с Невы."
-    "Иногда мне казалось, что это некий конвейер, везущий на себе игрушечные модельки машинок, за рулём которых никого нет."
-    "И верилось: во всём мире теперь только так — промозгло, холодно и приглушённо-шумно."
-    me "Я закрою глаза, и ты исчезнешь. Конец света через три… два…"
+    "Only the constant traffic, going against the chilling wind of Neva."
+    "Sometimes I imagined it was a conveyor belt, carrying toy cars on itself, piloted by no one."
+    "And I believed it: that's how it is in the entire world — chilly, cold and mufflenoisy."
+    me "I'm gonna close my eyes, and you will disappear. The world ends in three… two…"
     show blinking
     pause (3)
-    dreamgirl "С мягким знаком."
-    me "А это обязательное условие?"
-    dreamgirl "Не совсем. Но ты можешь поорать, поспрашивать «кто здесь». Можешь же?"
-    me "А это поможет?"
-    dreamgirl "Нет, но мне будет приятно."
-    me "Знаешь, что ещё приятно?"
-    dreamgirl "Знаю, милый."
-    dreamgirl "Только не предлагай мне это, у меня ни рук, ни… Скажи, а почему ты дома сидишь? Утро-то какое! Айда гулять!"
-    me "В шесть утра. Разумеется."
-    "Я прислонился лбом к холодному стеклу. Всегда хотелось иметь альтер эго, эдакое приятное раздвоение личности, с которым можно будет поболтать."
-    "Но, с безжалостной честностью посмотрев на себя со стороны, я понимал — придушу через полчаса общения."
-    "И вот…"
-    "Собеседник в голове начал проявляться несколько лет назад, но правом голоса обзавёлся не так давно."
-    "В тот самый момент, когда «сто вторая» маршрутка хлопнула за спиной дверью и умчалась прочь, оставляя меня наедине с местом, от которого веяло смертью."
-    "И памятью."
-    dreamgirl "Ты же понимаешь, что ни в чём не виноват?"
-    me "Так если посудить, то никто не виноват. {w}Ни в чём и никогда."
-    dreamgirl "Тогда назначаем виноватым тебя! {w}В наказание — самоубийство об стену с разбега."
-    dreamgirl "Дальний угол хорош! Там ещё гвоздь такой уместный, можно ещё глазом на него. Так что на счёт «три»…"
-    me "Да иди ты!"
-    dreamgirl "Как будто тебе есть что терять."
-    dreamgirl "Прямо беда с тобой таким — со всех сторон цивилизованная амёба с нулевой пассионарностью."
-    me "Это как?"
-    dreamgirl "Если к тебе дьявол припрётся покупать душу — ему будет нечего предложить взамен. Ты же не хочешь ничего!"
-    me "Не хочу."
-    dreamgirl "Вот и зачем ты тогда?"
-    "Презрительно фыркнул голос."
-    dreamgirl "Есть что-то, ради чего ты вообще существуешь?"
-    dreamgirl "Заветная мечта?"
-    me "Как бы мне от тебя избавиться?{w} Вот моя заветная мечта."
-    dreamgirl "Сходи прогуляйся."
-    me "Что, поможет?"
-    dreamgirl "Нет. Но хотя бы голову проветришь, пустую, звонкую. Иди!"
-    me "Откуда ты взялся… взялась… взялось? Тебя не должно быть, я все симптомы душевных болезней наперечёт знаю."
-    dreamgirl "А ниоткуда. Я, конечно, польщён… польщена… польщено тем, что ты так старательно навязываешь мне некую личностность. {w}Но давай не будем."
-    dreamgirl "И прекрати уже со мной вслух разговаривать, совсем уже долбанулся, сам с собой в квартире вслух разговаривает."
-    dreamgirl "Что только люди подумают…"
-    th "Прочь из моей головы. Тебя нет."
-    "Мгновенно перешёл на внутренний диалог я."
-    dreamgirl "Правда? А мне показалось, что это {i}тебя{/i} нет."
-    dreamgirl "Я как в том романе Адамса — за каким-то хреном произнесённое слово, причём, судя по всему, матерное, которое очень многим не понравилось.{w} Волеизъявление."
-    dreamgirl "А вот тебя — нет.{w} Ты лёг спать десять лет назад после автокатастрофы и до сих пор не проснулся, так и спишь носом в клавиатуру."
-    dreamgirl "Хотя вру — спишь ты с тех самых пор, когда впервые купил себе этот чёртов ПК."
-    dreamgirl "Ты, кстати, в курсе, что через пять месяцев будет круглая дата вашего трогательного сожительства? {w}Как отмечать будете?"
-    dreamgirl "Ты подаришь ему кольцо?{w} Срок уже приличный, пора решаться."
-    th "Вон, я сказал."
-    dreamgirl "Обойдёшься. Твоя иллюзия существования поддерживается только потому, что мне этого хочется."
-    dreamgirl "На самом деле достаточно просто признать это."
-    dreamgirl "Понимаешь? Перестать пыжиться своим никому не нужным «я», избавиться от очередной иллюзии — Деда Мороза нет, зубной феи нет, правды тоже нет."
-    dreamgirl "Последний логический шаг, Сём.{w} Признай, что и тебя — тоже нет."
-    me "И меня тоже нет."
-    "Я произнёс эту фразу вслух — так она мне понравилась."
-    me "Уснуть — и видеть сны, быть может."
+    dreamgirl "With a soft sign."
+    me "Is that necessary?"
+    dreamgirl "Not really. But you can scream or ask «WHO'S THERE?». Can you?"
+    me "Will that help?"
+    dreamgirl "Nah, but it would be nice."
+    me "You know what else would be nice?"
+    dreamgirl "I know, honey."
+    dreamgirl "Just don't offer me that, I don't even have arms, nor… Tell me, why are you still at home? Look outside! Let's go out!"
+    me "At 6 in the morning. Of course."
+    "I leaned my forehead against the cold glass. Always wanted an alter ego, somewhat pleasant personality split with which you could talk."
+    "But, after looking at myself with cruel honesty, I understood — I'll strangle it after half an hour of talking."
+    "And well…"
+    "Inner companion started materializing a few years ago, but didn't talk until very recently."
+    "In that same moment, when the «102» minibus closed its doors behind me, leaving me alone in a place reeking of death."
+    "And memory."
+    dreamgirl "You do realize you aren't guilty?"
+    me "If we look at it that way, then nobody is guilty. {w}Never and not in anything."
+    dreamgirl "Then you're appointed as the guilty! {w}Your punishment - suicide by slamming yourself into the wall."
+    dreamgirl "The far corner is pretty great for that! There's also a pretty nice nail, you could jam yourself with your eye there. So, on the count of «three»…"
+    me "Screw you!"
+    dreamgirl "As if you have anything to lose."
+    dreamgirl "What a shame you're like this — doesn't matter I look at you, you're still a civilized amoeba with no passion."
+    me "Huh?"
+    dreamgirl "Even if a devil comes to you offering you a deal for your soul - you don't even have anything to offer him. You don't want anything!"
+    me "Don't wanna."
+    dreamgirl "Then why ARE you?"
+    "The voice snorted contemptiously."
+    dreamgirl "Is there any reason for your existence?"
+    dreamgirl "Any cherished dreams?"
+    me "How do I get rid of you?{w} That's my cherished dream."
+    dreamgirl "Go out and touch grass."
+    me "What, will it help?"
+    dreamgirl "No, but you will at least clear your empty ringing head. Go!"
+    me "Where did you even come from? You shouldn't even exist, I remembered all symptoms of mental illnesses."
+    dreamgirl "From nowhere. I'm honestly quite pleased with you trying to give me an identity. {w}But let's not do that."
+    dreamgirl "And stop talking to me out loud, you absolute idiot, talking to himself in the apartment out loud."
+    dreamgirl "What are people going to think…"
+    th "Get out of my head. You don't exist."
+    "I instantly snapped to inner monologue."
+    dreamgirl "Really? And I thought that {i}you{/i} don't exist."
+    dreamgirl "I'm that like Adams novel — a word that nobody asked for (also seems like it was a swear), which a lot of people didn't like.{w} The will."
+    dreamgirl "And as for you - you don't exist.{w} You went to sleep 10 years ago after the accident, and still haven't woken up, so you keep sleeping headfirst in the keyboard."
+    dreamgirl "Actually no, I'm lying, you sleep ever since you bought this PC."
+    dreamgirl "You know that in 5 months it's going to be an anniversary for you and it? {w}How are you going to celebrate that?"
+    dreamgirl "Going to gift it a ring?{w} It's been a long time, you have to make a decision already."
+    th "Get out."
+    dreamgirl "Nah. Your illusion of existence is still here because I want it."
+    dreamgirl "You just have to admit it."
+    dreamgirl "Do you get it? Stop puffing yourself up with your ego that nobody needs, get rid of yet another illusion — there's no Santa Claus, no tooth fairy and there's no Queen of England. No truth either."
+    dreamgirl "The last logical step.{w} Admit that you also — don't exist."
+    me "And I also don't exist."
+    "I said that out loud, that's how much I liked it."
+    me "Fall asleep and dream - maybe."
     scene bg semen_room_window with dissolve
     play sound_loop sfx_street_traffic_outside fadein 2
     play music sfx_7dl["ringtone"]
     pause(3)
-    "Мобильный на столе зажужжал, привлекая моё внимание."
-    "Спасаясь от почти ощутимого треска реальности по швам, я вцепился в трубку."
+    "The phone on the desk rang, grabbing my attention."
+    "Escaping almost palpable cracking of reality, I picked it up."
     stop music fadeout 2
-    me "Слушаю."
-    me "Проснулся."
-    me "Нет."
-    me "Не занят."
-    me "Вы серьёзно? Семь часов утра, вообще-то."
-    me "Да, конечно."
+    me "Yes."
+    me "Woke up."
+    me "No."
+    me "Not busy."
+    me "Are you serious? It's seven in the morning, just so you know."
+    me "Yeah, sure."
     nvl clear
-    "Я снова кинул взгляд на заснеженные многоэтажки."
-    me "Да, буду вечером."
+    "I glanced at snow-covered buildings."
+    me "Yeah, I'll be there."
     pause(4)
     stop sound_loop fadeout 3
     play ambience ambience_cold_wind_loop fadein 3
-    "Почему бы и нет?"
-    "Лишняя денежка на Новый Год не помешает."
-    "Купить себе чего-нибудь алкогольного и залить сверху тоску-одиночество, встречая праздники где-нибудь в игрушке или на форуме."
-    dreamgirl "А ещё можно потратить деньги и сходить куда-нибудь."
-    me "Куда?"
-    dreamgirl "Да хотя бы в центр! Невский опять перекроют, кругом люди будут гулять, веселиться!"
-    me "И среди этого бардака — я. {w}Душа компании, ничего не скажешь."
-    "Я сходил на кухню и напился воды из-под крана, после чего вернулся обратно в комнату и уселся в кресло."
-    "День впереди предстоял долгий и скучный."
+    "Why not?"
+    "Extra money for New Years would be nice."
+    "Purchase something alcoholic to drown out longing loneliness, celebrating while playing something or on a forum."
+    dreamgirl "Or you could spend the money on going somewhere."
+    me "Where?"
+    dreamgirl "To the city center! They'll close down streets again, people are going to be having fun!"
+    me "And within that entire mess is going to be me. {w}Soul of the company."
+    "I went to kitchen to drink tap water and returned back to the room, plummeting onto a sofa."
+    "The day was going to be boring."
     scene bg int_sam_house_clean_7dl
     with clock_l
-    "И, разумеется, никак не запоминающийся."
-    "Когда часы пробили шесть, я не мог вспомнить, чем занимался весь день."
-    "Как и всегда, впрочем."
-    "Но сегодня меня звали кое-куда."
-    "Затычки с Мэнсоном в уши, пальто на рыбьем меху на плечи — и навстречу декабрьскому вечеру."
+    "And completely unmemorable, as it turns out."
+    "When the clock struck 6 I could barely remember what I was doing this entire day."
+    "Just like always."
+    "But today I had to go somewhere."
+    "Earplugs with Manson in my ears, coat on my shoulders — straight ahead into a December evening."
     scene anim intro_1
     with fade
     $ volume(0.3, 'music')
@@ -217,20 +217,20 @@
     play sound sfx_intro_bus_stop_sigh
     with fade
     pause(3)
-    "Мало-помалу удалось привести голову в порядок, раскидать по дальним тёмным полочкам всё, что наговорил незваный гость."
-    "Неотразимый аргумент — логическую бомбу я крайне аккуратно спрятал в самый дальний чулан. {w}Меня нет? Хм. Звучит как неплохое оружие судного дня."
-    "Теперь само воспоминание о визите…"
-    dreamgirl "Не расслабляйся. Твоя остановка, а тебе ещё полчаса жалеть себя, пока автобус подойдёт."
-    th "Слушай, я же наушниками заткнул уши."
-    "Я переключился на мелодию потяжелее, но это не сильно помогло."
-    th "От тебя что, совсем спасения нет?"
-    dreamgirl "Почему же. Есть. Начни жить. Пойми одно, милый, я — это твоя жажда общения, иллюзия истосковавшегося по бытию сознания. Сделай вдох поглубже, стань самодостаточным."
-    th "А нельзя без этого?"
-    "С тоской спросил я."
-    dreamgirl "Можно. Есть один экспресс-метод…"
-    th "Какой?"
-    "Внутренний голос промолчал, вместо ответа вытаскивая на поверхность непонятные, ненужные воспоминания."
-    dreamgirl "У тебя тут интереснее, чем у родителей на балконе!"
+    "Gradually I managed to clear my head, digesting everything that the uninvited guest told me."
+    "Infallible argument — the logic bomb, I very carefully stashed deep within my subconscious. {w}I don't exist? Huh. Sounds like a very good doomsday weapon."
+    "Now for the memory of this visit…"
+    dreamgirl "Don't relax. Your stop, and you also have half an hour to feel sorry for yourself until the bus comes."
+    th "Wait, I have earplugs."
+    "I switched to a heavier track, but that didn't help."
+    th "Is there absolutely no salvation from you?"
+    dreamgirl "Why, there is. Start living. Get this through your head honey, I am your thirst for communication, an illusion of a mind yearning to exist. Take a deep breath, become self-sufficient."
+    th "Can't we avoid that?"
+    "I asked melancholically."
+    dreamgirl "Well, we can. There's an express-method for that…"
+    th "Which one?"
+    "Inner voice went silent, instead dragging out unneeded memories."
+    dreamgirl "Wow, it's more interesting here than in parents balcony!"
     pause(3)
     stop music fadeout 3
     scene anim prolog_2
@@ -238,54 +238,54 @@
     pause(1)
     $ set_mode_nvl()
     play music music_7dl["lonesome_shepherd"]
-    "Моё первое двенадцатое апреля — то самое, которое я запомнил."
-    "Меня куда-то ведёт отец, держа за руку, из динамиков вещает Левитан в записи, а с экрана машет рукой какая-то улыбающаяся женщина с орденами."
-    "И не верится в то, что это космонавт, — они же небожители. Они обитают там, где кончается воздух и начинается Вселенная. Как эта маленькая женщина может быть тем серебристым чудом, что показывали всем нам в фильмах?"
-    "А в детской голове срабатывает механизм, и я вдруг отчётливо понимаю, что если эта маленькая женщина смогла — то и я смогу. Надо только…"
-    "Что именно «только» — я так и не узнал, после того как меня завернули на медицинской комиссии, — наследственность, прости Рандом…"
-    "Или дело в том, что я пару раз, нагулявшись «Оболонью», заночевал на мостовой?"
-    "Так или иначе, после томографии завернули — с мечтой пришлось попрощаться."
+    "My first April 12th - the one that I remembered."
+    "My father is leading me somewhere, holding my hand, a recording of Levitan is being played from speakers, and on the screen there is a woman decked out in medals waving."
+    "And I don't believe that she's a cosmonaut - they're supposed to be celestials. They exist where air ends, and the Universe begins. How can this small woman be the silver wonder shown to us in the films?"
+    "And in my childish hand something clicks in, and I realize: if this small woman could — then I also can. I just need to…"
+    "What specifically I «needed to» I didn't find out, after I got turned around on medical examination, — inheritance, forgive me Random…"
+    "Or is it because of those couple times I slept outside after drinking too much?"
+    "Either way, after tomography I was rejected — and so I had to say goodbye to my dream."
     nvl clear
-    "Или вот ещё — жестяные рупоры репродукторов прибиты за держащие скобы наживую на стволы сосен, и вниз от моего места идёт склон, по которому я всегда перемещался только бегом."
-    "Наступая между корней сосен, между камнями — приветом от ледника, что гостил здесь пару десятков тысяч лет назад, — я лечу вниз по склону."
-    "Мне немного грустно от того, что все мальчики нашли здесь себе кого-то, кто хотя бы не отказывается танцевать с ними."
-    "Но здесь и сейчас меня переполняет счастье, которое возможно только в детстве!"
-    "А из динамиков льётся бравурный марш из «Индианы Джонса», и до гран-при нашего оркестра конкретно с этим маршем немногим менее полугода."
-    "Слепящие софиты в глаза, а я стою, расставив ноги, и держу трубу перед собой, выдавая фортиссимо, так как микрофоны во все времена презирал — что мне, дыхалки не хватит сыграть так, чтобы меня услышали в зале?!"
-    "В мире существует всего пара вещей, позволяющих услышать глас божий, — это орган, причём непременно церковный…"
-    "И симфонический оркестр."
-    "А я служу концентратором этому голосу."
+    "Or this memory — tin speaker horns nailed down to pine trunks, and down from here is a slope which I always could only traverse while running."
+    "Stepping between the roots, between the rocks — a so-called hello from a glacier which used to be here tens of thousands years ago, — I tumble downhill."
+    "It's a bit said that all boys here found someone, who at least doesn't reject their dance invitations."
+    "But here and now I'm overflowing with happiness only possible at this age!"
+    "And a brave march from «Indiana Jones» is pouring out from speakers, and before the grand-prix of our orchestra specifically with this march there's a little less than six months."
+    "Blinding lights before my eyes, and I'm standing, astride, holding the trumpet, blasting fortissimo, as I've already despised microphones — what, wouldn't I have enough breath to play so they hear me?!"
+    "There's only a few things in the world that allow you to hear God's voice, — one of them is organ, and it has to be in church…"
+    "And a symphonic orchestra."
+    "And I, am the one serving as the mouthpiece of that voice."
     nvl clear
     me "I refuse to replay the mistakes that we made yesterday."
-    "Здесь всегда так холодно и ветрено."
-    "Как будто где-то неподалёку расположен разлом между мирами, ведущий в земли вечной мерзлоты."
-    "Здесь всегда так хорошо чувствуется смерть."
-    "А мне везло всю жизнь — не ломал кости, не дрался всерьёз — потасовки в школе не в счёт."
-    "И не сталкивался со смертью."
-    "Теперь вот пришлось."
+    "It's always so cold and windy here."
+    "As if there's a rift around here, leading to the lands of eternal winter."
+    "The death is always felt here quite well."
+    "And I was lucky my whole life — didn't break my bones, never seriously fought — school fights don't count."
+    "Never had to face death."
+    "And now I do."
     nvl clear
-    "Зелёные глаза, рисунки в два ряда на стенах, повязка на правом глазу."
-    "Мы ещё так смеялись, говорили, что это пиратская повязка."
-    "Вот и досмеялись."
-    "Между той стороной и этой — только бесконечный дождь, визг тормозов и юзом идущая на нас машина."
-    "Очень, очень сильный толчок в спину, я вылетаю на обочину."
-    "Один."
+    "Green eyes, drawings in two rows on the walls, an eyepatch on the right eye."
+    "We laughed back then, said that it was a pirate eyepatch."
+    "Laughed too hard."
+    "Between that side and this one — only endless rain, screeching of brakes and a skidding car coming straight at us."
+    "A strong push into back, I fly out to the roadside."
+    "Alone."
     nvl clear
     $ renpy.show("uvao_d1", at_list = [left], what = Notch("uvao_d1"))
     with dspr
-    dreamgirl "Знаешь, не везде дела идут плохо. Знаешь?"
-    dreamgirl "Есть места, где всё было совсем не так. Совсем иначе."
-    dreamgirl "Хочешь, я отведу тебя туда?"
+    dreamgirl "You know, not everywhere things are like that. You know, right?"
+    dreamgirl "There are places, where everything has been different. Completely different."
+    dreamgirl "Want me to lead you there?"
     nvl clear
     scene anim prolog_1
-    "А я очень хочу."
-    "Но мне и страшно: какое-то чувство вопит мне, что пути назад не будет, если я протяну руку."
-    "Потому я и остался здесь, наедине с компьютером, одиночеством и мешающим мне прошлым."
+    "And I really want to."
+    "But I'm afraid: some feeling is screaming at me, that there will be no way back if I extend my hand."
+    "That's why I'm still here, alone with my computer, loneliness and my annoying past."
     nvl clear
-    "По ту сторону невидимой границы осталось обеспечивающее существование эго, оставляя меня одного, обнажённого, против простого вопроса — а действительно ли я так нужен?"
-    "Нет, не так. Вопрос звучит по-другому."
-    "Не «кто я» или «где я». А «зачем я?»."
-    "Хоть кто-нибудь почешется, если меня однажды не станет?"
+    "On the other side of the invisible border remains the ego, providing me with existential sustenance, leaving me here alone, naked, against a simple question — am I really needed?"
+    "No, not like that. The question sounds differently."
+    "Not «who am I» or «where am I», but «why am I?»."
+    "Will anyone remember if I disappear?"
     nvl clear
     play sound sfx_intro_bus_engine_start
     pause(3)
@@ -293,11 +293,11 @@
     $ set_mode_adv()
     scene anim intro_9
     with fade2
-    "Всем будет плевать. {w}И это здорово, наверное."
-    me "Среди подлости и предательства, и суда, на расправу скорого, есть приятное обстоятельство."
-    me "На меня всем плевать. И это здорово."
-    "Переврал строчку я."
-    "Вот и крутилось это в голове всё время, что я устраивался в салоне подошедшего автобуса марки «ЛиАЗ» — старинного, таких на маршруте, пожалуй, что и не встретишь."
+    "Nobody will care. {w}And that's great, maybe."
+    me "Among the meanness and betrayal, and the court, quick to punish, there is a pleasant circumstance."
+    me "Nobody cares about me. And that's great."
+    "I distorted the line."
+    "And that's what kept twirling inside my head during the time when I was trying to sit down in a «LiAZ» bus — antique, can't find those on the route anymore I think."
     pause(2)
     scene anim intro_10
     with fade
@@ -314,31 +314,31 @@
     with fade
     stop ambience fadeout 2
     play sound_loop sfx_bus_interior_moving fadein 4
-    th "Я — Персунов Семён, двадцать девять лет, фрилансер."
-    dreamgirl "Повтори это ещё сорок четыре раза. Кстати, ты знаешь, что повторение одного и того же слова пару десятков раз резко обесценивает его смысловую нагрузку?"
-    dreamgirl "Вот, например, твоё «фрилансер». Давай-ка произнесём его вслух! Фрилансер, фрилансер, фрилансер… «Фри» означает свободу или отсутствие чего-то."
-    dreamgirl "Смотри-смотри — чайлд-фри. Или даже шуга-фри. А может, нуб-фри?{w} Ты же заядлый просиживатель штанов за игрушками, должен знать."
-    dreamgirl "А «лансер» — это от английского названия лёгкого копья."
-    dreamgirl "Ты же в курсе, что первые копья представляли собой обтёсанную жердину, всё предназначение которой было сбросить всадника с лошади?{w} Это японцы извращались со своими нагинатами, за каким-то фигом удлиняя рукоятки мечей до совершенно неприличных размеров."
-    dreamgirl "Как считаешь, может, комплексы виноваты? По поводу размеров."
-    th "Заткнись, пожалуйста."
-    dreamgirl "Как это? Мы же только начали!{w} Итак, ты у нас свободный носитель лёгкого копья."
-    dreamgirl "Звучит! Фрилансер, фрилансер, фрилансер."
-    dreamgirl "А может, нет? Может, это не фрилансер, а ланс-фри?{w} Человек, свободный от тягот службы и ношения всяких длинных тяжёлых штук?"
-    dreamgirl "Ну, свободный художник же! Ландскнехт.{w} Чёртов наймит, согласный подставлять свои мягкие места под удары за звонкую монету."
-    dreamgirl "Тебе тоже в сребрениках платят?{w} Кстати, всегда было любопытно, а тридцать сребреников — это сколько по нынешнему курсу доллара?"
-    th "Заткниииись."
-    "Чтобы отвлечься, я опять принялся считать количество смертей на квадратный метр."
-    "Это всегда помогало расслабиться — вот на пересечении с Народной опять оторвало вывеску, она, как в «Пункте назначения», легко прошьёт и автобус, и мою голову, если перестанет держать последний болт."
-    "Взрыв двигателя автобуса — тоже звучало неплохо."
-    "А вот и моя любимая — да такая, что дух захватывает, — мы въехали на горб Володарского моста, и если вдруг что…"
-    "Что именно «вдруг что», я так и не понял — но, судя по тому, как развернулся и кувыркнулся мир за окном, мы только что исполнили па на гололедице."
+    th "I — am Persunov Semyon, twenty nine years, freelancer."
+    dreamgirl "Repeat that 44 more times. Hey, did you know that repeating the same word tens of times out loud actually reduces the meaning of it into nothing?"
+    dreamgirl "For example, your «freelancer». Let's say it out loud! Freelancer, freelancer, freelancer… «Free» means freedom or the lack of something."
+    dreamgirl "Look, look — child-free. Or even sugar-free. Or maybe, noob-free?{w} You're an epic gamer, you should know that."
+    dreamgirl "And «lancer» — comes from english name of a light spear."
+    dreamgirl "You knew that first spears were just hewn sticks with their only purpose being dismounting cavalry?{w} It was only Japanese being perverts with their naginatas, for unknown reasons extending sword handles to extreme sizes."
+    dreamgirl "How do you think, were they compensating? The sizes, I mean."
+    th "Please shut up."
+    dreamgirl "why? We're just starting!{w} Alright, you are a free wielder of a light spear."
+    dreamgirl "Sounds good! Freelancer, freelancer, freelancer."
+    dreamgirl "Or maybe it doesn't? Maybe you aren't a freelancer, but rather a lance-free?{w} A man free from service and carrying big heavy things?"
+    dreamgirl "C'mon, that's a free artist! Landsknecht.{w} Damn sellout, always ready to offer his ass for hitting, as long as he gets paid."
+    dreamgirl "Do you also get paid in silver?{w} Also, I always wondered, how much is 30 silver coins in current dollar equivalent?"
+    th "Shuuuut uuuuuup."
+    "To distract myself I started counting amount of deaths per square meter again."
+    "It always helped me relax — now, on the intersection a sign will fall down and, it, like in «Destination Point», will easily pierce the bus, and my head as soon as the last screw stops holding it."
+    "Bus engine detonation would also do fine."
+    "And here's my favorite — a truly breathtaking one, — we ride up onto the bridge, and if anything…"
+    "But what «if anything», I couldn't quite get — but, judging by how the world beyond the window flipped and turned, we just slipped."
     stop sound
     stop sound_loop
     scene black with fade
-    "В ушах что-то тонко пищало, вхолостую ревел двигатель, где-то на заднем плане дьявольским хохотом заливался внутренний голос. И длилось это бесконечные несколько секунд."
+    "Something was ringing inside my ears, the engine was idly revving, somewhere in the back the inner voice was devilishly cackling. And that lasted an infinite few seconds."
     play sound sfx_shoulder_dive_water
-    "И в тот самый момент, когда чёрные языки воды впервые лизнули подошвы моих ботинок, я наконец уступил просьбам — и засомневался в реальности происходящего."
+    "And in that same moment, when black water first licked my boots, I finally gave in — and doubted the reality."
     play ambience ambience_camp_center_night fadein 2
     scene bg ext_entrance_night_clear_7dl
     show owl behind prologue_dream:
@@ -346,48 +346,48 @@
     $ renpy.show("uvao_d1", at_list = [left], what = Notch("uvao_d1"))
     show prologue_dream
     with fade3
-    "Из ничего соткалась картинка с какими-то воротами, ведущими, судя по надписи, в пионерский лагерь, — на переднем плане грустная шатеночка, о чём-то меня спрашивающая."
-    "И лицо её было знакомое-знакомое…"
-    "А вода была всё ближе, и так обидно было отчего-то…"
-    "Я обернулся к незнакомке и что было сил зафиксировал её в сознании."
-    th "Так о чём…"
+    "From nowhere a picture came with gates, leading, according to the writing, to a pioneer camp, — on the front there was a sad brown-haired girl, asking me something."
+    "Her face was so familiar…"
+    "And water was so ever closer, and it was so shameful somehow…"
+    "I turned to her and tried to anchor her within my mind."
+    th "So what were we…"
     stop sound_loop fadeout 3
-    show alt_credits "Ты пойдёшь со мной?" with dissolve2:
+    show alt_credits "Will you go with me?" with dissolve2:
         pos (747,105)
     pause(3)
     scene bg ext_entrance_night_clear_7dl
     $ renpy.show("uvao_d1", at_list = [left], what = Notch("uvao_d1"))
     show prologue_dream
-    th "Так это… ты?!"
-    dreamgirl "Нет, но… Решайся."
-    "По ногам хлестнуло льдом, а в наушниках играл чёртов «Пастух», и я был больше там — в прошлом, в памяти, чем реально на сиденье автобуса."
-    "А потому ничуть не удивился, когда картинка сменилась, — всё верно, мне же так хотелось в лето!"
-    "Тихая, тёмная южная ночь у ворот с надписью «Пионерлагерь»."
-    "Красивая незнакомка."
-    "И полное отсутствие стимулов возвращаться — реальный мир только что себя закопал."
-    "А я вдруг понял, откуда знаю эти правильные черты лица, эти огромные глаза."
-    th "Я же сам их создал! Плоть от плоти, это мои сны — чуть ли не с младенчества."
-    "Она иногда снилась мне. {w}Иногда. {w}Всю мою жизнь."
-    "Звала с собой."
-    "Но причины возвращаться из пелены сна всегда находились. {w}До сегодняшнего дня."
-    "Так что…"
+    th "So it's... you?!"
+    dreamgirl "No, but… Decide."
+    "Ice splattered on my feet, and in the earplugs was still playing that damned «Shepherd», and I was more there — in the past, in my memory, than on this bus seat."
+    "And so I didn't get surprised when everything changed again, — that's right, I still wanted summer!"
+    "Quiet, dark south night near gates with writing «Pioneer camp»."
+    "Beautiful stranger."
+    "And a complete lack of reasons to return — real world just buried itself."
+    "And then I remembered why I remember these facial features, those eyes."
+    th "I created them! Flesh to flesh, those are my dreams — ever since I was an infant."
+    "She sometimes came to me in a dream. {w}Sometimes. {w}All my life."
+    "Called me with her."
+    "But I always had reasons for waking up. {w}Until today."
+    "So…"
     pause(2)
     menu:
-        "Пойду, милая":
-            "Конечно, пойду."
-        "Нет, я останусь здесь":
+        "I will, honey":
+            "Of course I will."
+        "No, I will stay here":
             $ alt_day_catapult = True
-    "В голову пришло, что это нелогично было — изо всех сил заставлять меня думать и делать, а в такой ответственный момент подсунуть иллюзию."
+    "I had a thought that it wouldn't be logical — making me think and do something, and in this critical moment just shove an illusion into my face."
     scene black
     stop ambience
-    "Темнота накрыла меня с головой ледяным тяжёлым одеялом."
+    "The darkness covered me with cold, heavy blanket."
     stop music fadeout 4
     pause(4)
     if alt_day_catapult:
         play music "<to 52.94>" + music_7dl["herc_death"] fadein 3
         scene black with fade
-        "От холода ныло уже всё тело, вся Вселенная превратилась в вездесущий ледяной мокрый вакуум."
-        "А секунду спустя чёрная вода сомкнулась над моей головой."
+        "The whole body ached from cold, the entire Universe turned into omnipresent, cold, dark vacuum."
+        "And a second later black water closed above my head."
         pause(2)
         scene black
         show gameover
@@ -405,36 +405,36 @@ label alt_day0_start_h:
     show spill_gray
     with dissolve
     play music music_7dl["vampire"] fadein 3
-    "Существует не так много вещей, по-настоящему заслуживающих веры."
-    me "Остынь, чувак!"
-    "Я верю в смерть."
-    "Жадно замершую на самом краешке свинцового шарика."
+    "There aren't many things that deserve your faith in them."
+    me "Dude, chill!"
+    "I believe in death."
+    "Avariciously waiting at the very tip of a lead ball."
     scene black with fade
-    me "Пожалуйста, опусти пистолет."
-    "Я верю в страх — клубящийся на дне ствола пистолета, направленного тебе в лицо."
-    voice "Вы тупые? {w}Бутылку на прилавок, руки на прилавок, в темпе!"
-    "Страх, шепчущий, что люди будут жить, любить и работать — и всё это будет уже не для тебя."
-    "Потому что тебя там не будет."
-    "А хочется жизнь. Хочется… Жизнь."
-    "А не глухота, тошнота и мгла."
-    "Я верю в боль."
-    me "Сейчас, сейчас! {w}Зина, пожалуйста, дай молодому человеку, что он просит."
-    "Помертвевшая от ужаса Зинаида судорожно кивнула."
-    "ИЖ-79-9, или в просторечии «Макарыч», внушает страх, но согласно закону летальным оружием не является."
-    "Я верю в ненависть."
-    "Я вижу, как посетитель держит оружие и куда он целится."
-    "Попадание в мягкие ткани, в глаза… {w}Верная смерть."
-    "Он готов нести смерть, страх и боль."
-    "Сократить дистанцию, сломать руку, и любой суд меня оправдает."
-    "Пять метров… {w}Четыре… {w}Три…"
-    "Дистанция прямого рывка."
-    "Я верю в то, что всё это когда-нибудь закончится."
+    me "Please, put the gun down."
+    "I believe in fear — swirling at the end of pistol's barrel, pointed at your face."
+    voice "Are you stupid? {w}Bottle on the counter, hands on the counter, faster!"
+    "Fear, whispering, that people are gonna live, love and work — and it won't be for you."
+    "Because you won't be there."
+    "And you want life. Want… Life."
+    "Not the deafness, nausea and darkness."
+    "I believe in pain."
+    me "Alright, alright! {w}Zina, please, give him what he is asking for."
+    "Zina, pale from horror, nodded."
+    "ИЖ-79-9, or, as everyone calls them, «Makarov», induces fear, but according to the law isn't considered a lethal weapon."
+    "I believe in hatred."
+    "I see how the visitor is holding his gun and where he's aiming."
+    "Direct hit into soft tissues, into eyes… {w}Sure death."
+    "He's prepared to bring death, fear and pain."
+    "Shorten the distance, break his hand, any court would say I'm not guilty."
+    "Five meters… {w}Four… {w}Three…"
+    "Rushing distance."
+    "I believe that someday all of this will end."
     stop music fadeout 3
     play sound sfx_7dl["makarych"] fadein 0
     scene believe_in_pain with flash_red
     with fade3
     pause(5)
-    "День не задался с самого утра."
+    "The day was pretty shit from the morning."
     play music music_7dl["prologue_1"]
     scene bg ext_entrance_night_clear_7dl
     $ renpy.show("uvao_d1", at_list = [left], what = Notch("uvao_d1"))
@@ -442,26 +442,26 @@ label alt_day0_start_h:
     pause(.05)
     scene bg semen_room
     with fade
-    "В холодильнике было шаром покати, а из двух последних яиц, что предназначались мне на завтрак, одно оказалось тухлым."
-    "Я узнал об этом, когда вылил его к первому в сковородку."
-    "Так что вместо завтрака я убирал за Махой, снова наевшейся ватных палочек и, как результат…"
-    "Маха — это моя кошка."
-    "А я — дурак."
+    "There was nothing in the fridge, and out of the last two eggs that were supposed to be my breakfast one turned out to be rotten."
+    "I figured that out when I added it to the first one sizzling on the pan."
+    "So instead of breakfast I was cleaning up after Maha, which feasted on cotton buds, and as a result…"
+    "Maha is my cat."
+    "And I'm — I'm a fool."
     scene anim intro_1
     with fade
     pause(3)
-    "Вечер, пятница, 28 декабря 2018 года."
-    "Дата и без того скверная."
-    "А тут ещё и работа."
+    "Evening, Friday, 28th of December, 2018th year."
+    "Already a nasty date."
+    "And I have to work."
     scene anim intro_2
     with fade
     play sound sfx_intro_bus_stop_steps
     pause(3)
     scene anim intro_3
     with fade
-    "Как говорил мой отчим — если мужчина ничего не умеет, он идёт работать охранником."
-    "А если женщина ничего не умеет — она идёт на панель."
-    "Суть одна — спать за деньги."
+    "As my stepfather said — if a man can't do anything, he becomes a security guard."
+    "And if a woman can't do anything — she whores herself out."
+    "Same thing, really — sleeping for money."
     pause(3)
     scene anim intro_4
     with fade
@@ -476,43 +476,43 @@ label alt_day0_start_h:
     play sound sfx_intro_bus_stop_sigh
     with fade
     pause(3)
-    "Питерская зима — довольно скверная штука."
-    "Нева то и дело норовит вскрыться и окутать стылой промозглой сыростью всё в радиусе километра."
+    "Winters in Petersburg — foul things."
+    "Neva tries to open up and envelop everything within a kilometer radius with cold, dark dampness all of the time."
     scene anim intro_7
     with fade
     pause(3)
     scene bg bus_stop
     with fade
-    "Меня подводит пальто на рыбьем меху."
-    "Такая ерунда.{w} Штаны и перчатки я себе купил, а на хорошую куртку уже не хватило."
-    "А потом это перестало иметь значение."
-    "Когда ты работаешь два через два и единственный твой собеседник — это донянчивающая третье поколение Зинаида Матвеевна, рано или поздно очень многое перестаёт иметь значение."
+    "The coat's letting me down."
+    "Such nonsense.{w} Managed to buy pants and gloves, and ran out of money for a good jacket."
+    "And then that stopped mattering."
+    "When you work 2 days after 2 and your only companion is Zinaida Matveevna, who pretty much nursed three generations after her, sooner or later a lot of things lose their meaning."
     scene stars:
         zoom 1.1
         linear 0.4 zoom 1.0
     with fade
     pause(3)
-    "Некоторое время спасало самообразование, саморазвитие, но…"
-    "Наверное, иногда стоит прогнуться под обстоятельства, спустить на тормозах, найти компромисс."
-    "Поиск компромиссов — это очень, очень полезное качество."
-    "Как жаль, что я им не обладаю."
+    "Self-education and self-improvement saved me for some time, but…"
+    "Maybe sometimes you should give in to circumstances, slow down, find a compromise."
+    "Finding compromises is a very, very useful quality."
+    "Too bad I don't have it."
     show blackout_exh
     pause(2)
     play ambience ambience_cold_wind_loop fadein 3
-    "Меня портит моя вспыльчивость."
-    "Ну, когда-то она называлась так…"
+    "My temper spoils everything."
+    "Well, some time ago it was called that…"
     show blinking  with dissolve
-    "Ещё тогда, когда меня заботили определения и оценки."
-    "Я — соринка в глазу общества, ненормальный, чуждый элемент."
-    "Проблема в том лишь, что в этом мире больше не осталось действительно нормальных людей."
+    "Back when I cared about definitions."
+    "I am a mote in the eye of society, an abnormal, alien element."
+    "The problem is, there are no more normal people in this world."
     pause(3)
     scene bg bus_stop
     with fade
     pause(3)
-    "Небо сегодня какое свежее. Какое равнодушное."
-    "Я ходил по утрамбованному снежку возле остановки, безуспешно пытаясь согреться."
+    "Sky seems fresh today. How indifferent."
+    "I walked on the packed snow near the bus stop, unsuccessfully trying to keep warm."
     stop music fadeout 3
-    "Как обычно, в моменты вынужденного безделья мало-помалу начал углубляться в воспоминания."
+    "As usual, in moments of forced idleness, little by little I began to delve into memories."
     $ volume(1.0, 'music')
     play music music_7dl["seven_summer_days"] fadein 3
     pause(3)
@@ -520,62 +520,62 @@ label alt_day0_start_h:
     with fade
     pause(1)
     $ set_mode_nvl()
-    "Любопытно, что стало бы, умей любой ребёнок на начале своего жизненного пути заглядывать в будущее?"
-    "Если бы жизнь была действительно честна с нами и действительно предлагала свободу выбора, а не её иллюзию."
-    "Если бы этот ребёнок видел, как малозначима золотая медаль за учёбу, как суетны и смешны попытки научиться чему-то, что никогда не пригодится."
-    "Музыка? Не нужна."
-    "Спорт? Мимо."
-    "Точные науки? Не то."
-    "Всё это — ненужный багаж, пассив в памяти."
+    "I wonder, what would happen if any child at the beginning of his life journey could look into the future?"
+    "If life really was honest with us and really offered freedom of choice, and not its illusion."
+    "If this child could see how insignificant a gold medal for studying is, how futile and ridiculous are attempts to try to learn something that will never be useful."
+    "Music? Don't need it."
+    "Sports? Miss."
+    "Accurate sciences? That's not it."
+    "All this is unnecessary baggage, a liability in memory."
     nvl clear
-    "Как тогда поступил бы этот ребёнок?"
-    "Что сделал бы, если б я-настоящий мог поговорить со мной-ребёнком и рассказать, что самым важным навыком будет умение быстро бегать и точно стрелять?"
-    "Наверное, не стал бы поступать в ВУЗ, никаких лекций, конспектов, смешного знакомства в библиотеке, попыток построить своё нечаянное счастье."
-    "Я рассказал бы о том, как не вовремя приходит беда — хотя к кому когда она приходит вовремя…"
-    "О том, что первые полгода после известия, что мать сбило машиной, не стоило тратить на поиски водителя, скрывшегося с места аварии."
-    "О том, что нельзя верить в людей, потому что эти люди предадут."
+    "How would that kid go?"
+    "What would he do, if me-current could talk to me-child and tell him, that his most important skill will be quick legs and accurate aim?"
+    "Probably he would not enter the university, no lectures, notes, funny acquaintances in the library, attempts to build his unexpected happiness."
+    "I would tell him how trouble comes at the wrong time — although, when does it come at the right time…"
+    "That that the first six months after the news that mother was hit by a car should not be spent searching for the driver who fled the scene of the accident."
+    "That you can't trust people, because they will betray you."
     nvl clear
-    "Я вооружил бы самого себя знанием — и не стал бы ругаться с заместителем по учебной работе."
-    "И не пошёл бы в армию, оставляя за спиной недееспособную мать."
-    "В ту армию, что вытравила из меня остатки человека, научив взамен лишь исполнять приказы."
-    "А ещё терпеть, стиснув зубы."
+    "I would've armed myself with knowledge — and would not quarrel with the deputy for academic work."
+    "And I would not go into the army, leaving behind my disabled mother."
+    "To that same army, which purged the remainders of my humanity, teaching me only to follow orders."
+    "And I would endure, gritting my teeth."
     nvl clear
     scene anim intro_7
     with fade
     play sound_loop sfx_street_traffic_outside fadein 2
-    "Может быть, тогда не произошло бы суда, первого условного за нанесение телесных средних ответственному за мой вопрос офицеру."
-    "Наверное, не стоило мне тогда распускать руки, да только свежи были в памяти издевательства, которые в нашей стране имеют всем знакомое название — «дедовщина»."
-    "Это не могло исправить положение, в котором оказалась моя мать."
-    "Как и не отменяло факта, что если бы не упрямство этого «пиджачка», который выполнял свой план по призыву, я мог бы сам позаботиться о ней."
-    "Я носил свой условный срок как ризу пред лицом Высшей Справедливости, но мать так и не выпустили из Скворцова-Степанова, она так и угасла, глядя сквозь толстое стекло на тёмно-серую питерскую тоску."
-    "А может быть, всё произошло бы так же, просто немного другим путём?"
-    "Мой отец привил мне тягу к этой Высшей Справедливости — и это было его единственным вкладом в моё воспитание."
-    "Но несмотря на подлость его, на предательство — я продолжал глупо верить в совесть, в справедливость для всех."
-    "Не умел иначе."
+    "Maybe then there would not have been a trial, the first conditional for inflicting medium injuries on the officer responsible for my question."
+    "Probably, I shouldn’t have thrown hands then, but the bullying was fresh in my memory, which in our country has a familiar name for everyone - “hazing”."
+    "It couldn't have fixed my mother's situation."
+    "As it did not change the fact that if it were not for the stubbornness of this 'jacket', who carried out his plan for the draft, I could take care of her myself."
+    "I wore my probation like a robe in the face of Supreme Justice, but my mother was never released from Skvortsovo-Stepanov, she faded away, looking through thick glass at the dark gray St. Petersburg's melancholy."
+    "Or maybe everything would've still happened, just a bit differently?"
+    "My father instilled in me a strive for this Supreme Justice — and that was his only contribution to my upbringing."
+    "But despite his cruelty, his betrayal, I continued to foolishly believe in conscience, in justice for all.."
+    "I couldn't do otherwise."
     nvl clear
     scene bg ext_city_night_7dl
     with fade
-    "Наверное, стоило бы пойти служить."
-    "Для прямолинейных глупцов вроде меня работа в полиции или в армии по контракту была бы идеальным вариантом."
-    "Но государство отняло у меня мать, поэтому на государеву службу я не пошёл бы, даже умирая от голода."
-    "Я попробовал себя в рекламе и продажах."
-    "И у меня даже начало получаться, я даже стал немного зарабатывать сверх минимума."
-    "Но несколько рокировок, и маячившее место начальника отдела ушло племяннику нашего Частного Предпринимателя."
-    "Спасибо судье, вошла в положение и не засчитала дело рецидивом. Святая женщина."
-    "И вот я здесь."
-    "Сычёв. {w}Семён Сычёв."
+    "Maybe I should've served."
+    "For downright fools like me, a job in the police or in the army under contract would be ideal."
+    "But the state took my mother away from me, so I would not go to the state service, even dying of hunger."
+    "I tried myself in marketing."
+    "And I even started to succeed, I even began to earn a little more than the minimum."
+    "But several reshuffles, and the looming position of the head of the department went to the nephew of our Private Entrepreneur."
+    "Thanks to the judge, she understood and did not count the case as a relapse. Bless her."
+    "And here I am."
+    "Sychev. {w}Semyon Sychev."
     nvl clear
-    "Определённые плюсы в работе охранником были — много свободного времени, скользящий график, достойная зарплата."
-    "Но со всеми своими учёбами и работами я оказался на обочине общества."
-    "Нелюдимый и неласковый — в полном соответствии со своей фамилией."
-    "Подругой не обзавёлся, о семье не думал — а на горизонте уже маячит тридцак."
-    "Не этого я хотел, когда заканчивал школу, ох, не этого."
-    "А ещё… Ещё мне очень часто снится один сон."
-    "Будто бы я размышляю о том, что каждый человек должен быть на своём месте."
-    "Но некоторым просто не повезло родиться совершенно не там."
-    "Но если немного поднапрячься, взять себя в руки, найти правильный путь…"
+    "There were certain advantages in working as a security guard - a lot of free time, a flexible schedule, a decent salary."
+    "But with all my studies and work, I found myself on the sidelines of society."
+    "Unsociable and unaffectionate - in full accordance with my last name."
+    "I didn’t get a girlfriend, I didn’t think about a family - and thirties are already looming on the horizon."
+    "This is not what I wanted when I left school, oh, anything but this."
+    "And also... I often have the same dream."
+    "It's like I'm thinking that every person should be in their place."
+    "But some just weren't lucky enough to be born in the wrong place."
+    "But if you push yourself a little, pull yourself together, find the right way…"
     $ set_mode_adv()
-    show alt_credits "Ты пойдёшь со мной?" with dissolve2:
+    show alt_credits "Will you go with me?" with dissolve2:
         pos (747,105)
     nvl clear
     play sound sfx_intro_bus_engine_start
@@ -583,11 +583,11 @@ label alt_day0_start_h:
     play sound_loop sfx_intro_bus_engine_loop fadein 3
     scene anim intro_9
     with fade2
-    "Подъехавший «ЛиАЗ» меня, мягко говоря, удивил."
-    "Старый-старый, ископаемое, свидетель времени, когда не считались нелепыми атавизмами честь и совесть."
-    "Наверное, я был бы очень уместен именно там — в стране молодости таких вот краснобоких «ЛиАЗов»."
-    "Думал, их заменили на машинки поновее — жизнерадостные зелёные кубики с площадкой для въезда инвалидов, свидетельство эпохи."
-    "Наверное, последний из могикан."
+    "Arriving «LiAZ» has surprised me, to say the least."
+    "Old fossil, witness of the time when honor and conscience were not considered ridiculous atavisms."
+    "Probably, I would fit exactly there - in the country of youth of such red-sided «LiAZes»."
+    "I thought they were replaced with newer cars - cheerful green cubes with a platform for the entry of the disabled, evidence of this era."
+    "This is the last highlander, probably."
     stop music fadeout 5
     pause(2)
     scene anim intro_10
@@ -607,45 +607,45 @@ label alt_day0_start_h:
     play sound_loop sfx_bus_interior_moving fadein 4
     $ volume(0.5, 'music')
     play music music_list["lightness_radio_bus"] fadein 7
-    "Город жил. Ему было плевать на меня, он просто жил."
-    "И если однажды не станет Сычёва Семёна Семёныча, об этом никто никогда не вспомнит."
+    "The city lived. It didn't care about me, it just lived."
+    "And if once Sychev Semyon Semyonovich disappears, nobody would even care."
     show blink  with dissolve
     pause(1.5)
-    "Такой вот реквием по мечте."
-    "А в салоне играло что-то такое тёплое и доброе, родом из далёкого-далёкого детства."
-    "Когда не имели значения громкие имена и пафосный антураж, и народ тянулся просто к звукам хорошей песни."
-    "Она навевала какую-то ностальгию, и изнутри отозвалось неожиданным теплом, разбежавшимся мурашками по коже, немного, но всё же согревая."
+    "Requiem for a dream, heh."
+    "And something so warm and kind was playing in the cabin, coming from a far, far away childhood."
+    "When big names and pretentious entourage did not matter, and the people were simply drawn to the sounds of a good song."
+    "It evoked some kind of nostalgia, and from the inside came a response with unexpected warmth, running up goosebumps on the skin, a little, but still warming."
     stop music fadeout 3
-    "Я закрыл глаза."
+    "I close my eyes."
     show blink  with dissolve
     pause(1.5)
-    "И открыл их уже около своей остановки."
+    "And opened them near my stop."
     stop sound_loop
     stop ambience fadeout 3
     play music music_7dl["exodus"] fadein 5
     scene bg int_store_7dl with fade
-    "Я подчинил жизнь распорядку."
-    "После заступления на смену принимаю объект, здороваюсь с Зиной и занимаю место в уголке."
-    "Привычное и распланированное до секунд бытие."
-    "Несостоявшийся музыкант, несостоявшийся спортсмен и просто замечательный человек охраняет чужие сигареты, потому что ничего другого он не умеет."
-    "Но, как я уже говорил, сегодня всё было не так."
-    "Особенно стало не так, когда в помещение магазина, впустив вместе с собой целый клуб морозного воздуха, ввалился этот пьяный дурак."
-    "И плевать он хотел на закон — ему хотелось выпить."
-    "Я ожидал угроз, агрессии, мата. {w}В конце концов, я затем здесь и сижу."
-    "Но когда он достал из кармана пистолет…"
+    "I submitted my life to order."
+    "After interceding for the shift, I check the place, greet Zina and take a place in the corner."
+    "Habitual and planned existence, right down to seconds."
+    "A failed musician, a failed athlete and just a wonderful person all around guards other people's cigarettes, because he can't do anything else."
+    "But like I said, it wasn't like that today."
+    "It became especially wrong when this drunken fool burst into the store, letting in a whole club of frosty air with him."
+    "And he didn't care about the law - he just wanted to drink."
+    "I expected threats, aggression, swears. {w}After all, that's why I'm here."
+    "But when he pulled out a gun…"
     stop ambience
     play sound sfx_7dl["makarych"] fadein 0
-    "В общем, день определённо не задался."
+    "Well, the day was pretty shit from the start."
     scene bg ext_entrance_night_clear_7dl
     show prologue_dream
     with fade3
     $ night_time()
     play ambience ambience_camp_center_night fadein 2
-    "Две пули, два кусочка питерского неба — в голову."
-    "У других на краю небытия перед глазами проносится вся жизнь."
-    "Во всяком случае, я так слышал — у меня-то была совершенно другая картинка."
-    "Какое-то странное место, летняя ночь, тишина."
-    "И лишь знакомый голос родом из страны детских снов:"
+    "Two bullets, two pieces of the sky — straight into head."
+    "For others, on the edge of non-existence, their whole life flashes before their eyes."
+    "Or so I heard — I had a completely different picture before me."
+    "Some strange place, summer night, silence."
+    "And only a familiar voice coming from the land of children's dreams:"
     scene black
     with fade3
     scene bg ext_entrance_night_clear_7dl
@@ -654,16 +654,16 @@ label alt_day0_start_h:
     $ renpy.show("uvao_d1", at_list = [left], what = Notch("uvao_d1"))
     show prologue_dream
     with fade3
-    show alt_credits "Ты пойдёшь со мной?" with dissolve2:
+    show alt_credits "Will you go with me?" with dissolve2:
         pos (747,105)
     pause(3)
     scene bg ext_entrance_night_clear_7dl
     $ renpy.show("uvao_d1", at_list = [left], what = Notch("uvao_d1"))
     show prologue_dream
     menu:
-        "Пойду, милая":
-            "Я молча схватил протянутую руку."
-        "Нет, я останусь здесь":
+        "I will, honey":
+            "I silently grabbed the outstretched hand."
+        "No, I will stay here":
             $ alt_day_catapult = True
     pause(1)
     stop music fadeout 3
@@ -671,20 +671,20 @@ label alt_day0_start_h:
     stop ambience
     if alt_day_catapult:
         play music "<to 52.94>" + music_7dl["herc_death"] fadein 3
-        "Прошлое — зияющая рана."
-        "Единственная твоя надежда на спасение — это обернуться и встретить его лицом к лицу."
-        "Но это всё равно, что целовать губы своей мёртвой возлюбленной."
-        "Они холодны и прячут в себе ледяную тьму."
+        "The past is a gaping wound."
+        "Your only hope of salvation is to turn around and meet it face to face."
+        "But it's like kissing the lips of your dead lover."
+        "They are cold and hide icy darkness in themselves."
         scene bg int_store_7dl with fade
-        "Мы согласны умирать ради тех, кого любим, ради тех, кто сможет жить после нас."
-        "Чего ради умираю я?"
+        "We agree to die for the sake of those we love, for the sake of those who can live after us."
+        "What am I dying for?"
         play sound sfx_7dl["makarych"] fadein 0
-        "Газовый баллончик подал давление на свинцовый шарик, и маленькая круглая смерть вошла в мягкие ткани рядом с глазом. И ещё одна — в самый центр лба."
+        "The gas canister applied pressure to the lead ball, and a small, round death entered the soft tissue near the eye. And one more - in the very center of the forehead."
         scene black with fade
-        "Ради чего? Ради бутылки водки?"
-        "Ради соблюдения никому не нужного идиотского запрета на торговлю спиртным после десяти вечера?"
+        "For what? For a bottle of vodka?"
+        "For the sake of enforcing an unnecessary idiotic ban on the sale of alcohol after ten in the evening?"
         play sound sfx_bodyfall_1
-        "Только у меня могла случиться такая идиотская смерть."
+        "Only I could have a death this idiotic."
         pause(2)
         scene black
         show gameover
@@ -701,33 +701,33 @@ label alt_day0_start_l:
     $ renpy.show("bg ext_winterpark_7dl", what = Dawn("bg ext_winterpark_7dl"))
     with dissolve
     play music music_7dl["nap_one"] fadein 3
-    voice "Прости."
-    "Хруст фаланг под опускающейся ногой, закованной в лакированный штиблет."
-    "Что-то жизненно важное, лопающееся под ударом ноги."
-    "Тело подпрыгивает на заплёванном, грязном полу подъезда и не шевелится больше."
-    "Не умерло, нет. {w}А стоило бы."
-    voice "Прощай."
-    "Всё началось почти десять лет назад."
-    "Десять лет, изменившие мир и одного глупенького мальчика."
+    voice "Sorry."
+    "The crunch of the phalanxes under the lowering leg, clad in a lacquered shoe."
+    "Something vital, bursting under a kick."
+    "The body bounces on the spitting, dirty floor of the entrance and does not move anymore.."
+    "Didn't die, no. {w}But should have."
+    voice "Goodbye."
+    "It all started almost ten years ago."
+    "Ten years that changed the world and one stupid boy."
     scene op_back with dissolve
     play sound_loop sfx_bus_interior_moving fadein 2
-    "На дворе заканчивались нулевые, а я, студент — гордый тем, что полностью создал себя, — опоздал."
-    "За год подработки в кафе с живой музыкой я повидал всего, но незыблемым оставалось одно — как штык в 9:37 я стоял на остановке и поджидал свой ПАЗик."
-    "А здесь задержался."
-    "Я помню эти лица — девочку метр с кепкой, работающую в ночную смену местного интернет-кафе, Тэш, кажется."
-    "На второй остановке обычно заходила Юля — мы раньше работали вместе и до сих пор здороваемся кивками."
-    "Привычное и распланированное до секунд бытие."
-    "Моё место мизантропское — на отшибе."
-    "И я всегда занимал его, так как не переносил чужих прикосновений."
-    "А здесь опоздал. {w}И за две минуты что-то сдвинулось в пластах мироздания."
+    "The 2000s were ending, and I, a student - proud of the fact that I completely created myself - was late."
+    "For a year of part-time work in a cafe with live music, I saw everything, but one thing remained unshakable - like a bayonet at 9:37 I stood at the bus stop and waited for my minibus."
+    "But I lingered here."
+    "I remember these faces - a short girl, working the night shift of a local Internet cafe, Tash, it seems."
+    "At the second stop, Yulya usually came in - we used to work together and still greeted each other with nods."
+    "Habitual and planned existence, down to the seconds."
+    "My place is misanthropic - on the outskirts."
+    "And I always occupied it, because I could not stand other people's touches.."
+    "And I was late. {w}In these two minutes something moved in the layers of the universe."
     with fade
-    "Моё место оказалось занято каким-то парнем, пришлось садиться рядом с Тэш."
-    "Время до моей остановки надо было чем-то убить — и от нечего делать я заглянул за плечо «компьютерной» девочке, где она увлечённо трещала с кем-то по аське."
-    "Один номер почему-то запомнился.{w} Наверное, потому что был достаточно красивым, пятизначным…"
-    "И мало удивительного было в том, что, вернувшись домой, я машинально забил номер в поиск, мы разговорились… Подружились… Спешили вечерами в сеть."
-    "Пришлось потрудиться, объясняя, откуда у меня взялся этот номер."
-    "Но оно того стоило."
-    "Так что ничего удивительного в том, что однажды я просто признался себе, что мой лучший друг — это анонимный собеседник в асечном окошке."
+    "My seat was taken by some guy, had to sit next to Tash."
+    "The time before my stop had to be killed with something - and having nothing to do, I looked over the shoulder of the 'computer' girl, where she enthusiastically cracked with someone on ICQ."
+    "One number was particularly memorable.{w} Probably because it was beautiful, five digits…"
+    "And it was not surprising that when I returned home, I mechanically entered the number into the search, we started talking... We became friends... We hurried to talk in the evenings."
+    "Had to really rack my brain to figure out how to explain how I got the number."
+    "But it was worth it."
+    "So there wasn't anything surprising in me confessing to myself that my best friend was just an anonymous message window in ICQ."
     stop music
     stop sound_loop
     scene bg ext_entrance_night_clear_7dl
@@ -737,29 +737,29 @@ label alt_day0_start_l:
     scene anim prolog_3
     with fade
     play music music_7dl["exodus"] fadein 3
-    "Я всегда считал, что каждый получает только ту реальность, какую заслуживает."
-    "Реальность наркомана состоит из шприца, почти невидимых вен и раствора на ложке над зажигалкой."
-    "Реальность художника — из образов, перспектив и горящей на кончиках пальцев идеи."
-    "А моя реальность…"
-    "Что ж, я не был безгрешен, и мне пришлось устроить ряд подлогов ради того, чтобы оказаться на первом курсе консерватории."
-    "Я не гордился этим, но к своей мечте — связать жизнь с музыкой — шёл бульдозером."
-    "Просто потому, что с первой мечтой в моей жизни, стать космонавтом, меня развернули — что-то в моём светлом детстве пошло не так, что-то со внутренними органами."
+    "I always believed that everyone gets the reality that they deserve."
+    "A drug addict's reality consists of a syringe, barely visible veins and a mixture on a teaspoon heated by a lighter."
+    "An artist's reality — from images, perspectives and an idea, burning at the tip of his fingers."
+    "And my reality…"
+    "Well, I was not sinless, and I had to arrange a series of forgeries in order to be in the first year of the conservatory."
+    "I wasn't proud of it, but towards my dream — being heavily involved in music — I was bulldozing."
+    "Just because with the first dream in my life, to become an astronaut, they flipped me off - something went wrong in my bright childhood, something with internal organs."
     scene anim intro_1
     with fade
     pause(3)
-    "Как результат, моя реальность состояла из нотных тетрадей, бесконечных репетиций, сольфеджио и попыток считать мелодию «с листа»."
-    "И…"
+    "As a result, my reality consisted of music notebooks, endless rehearsals, solfeggio and attempts to sightread melodies."
+    "And…"
     with fade2
-    "Я заканчивал второй курс, когда столкнулся с ней на нашей духовой кафедре."
-    "И мы, как намагниченные, тянулись и тянулись один к другому."
-    "Хотя я изо всех сил строил из себя ответственного юношу, не разменивающегося на мелочи."
-    "Несмотря даже на то, что нас представили друг другу общие знакомые спустя неделю."
-    "А ещё через неделю я признался своему единственному приятелю — тому таинственному собеседнику из сети — в том, что, кажется, схожу с ума."
-    "И полтора часа восторженных эпитетов, расписываний «какая она!» спустя, мне задали вопрос: и что, нашему общению теперь конец?"
-    me "Конечно же, нет! Я даже не собираюсь…"
-    "Чего я не собирался — я не договорил."
+    "I was finishing my second year when I ran into her at our brass department."
+    "And we, as if we were magnetized, were drawn to each other."
+    "Although I did my best to show myself as a responsible young man, not exchanging for trifles."
+    "Even though that we were introduced to each other by mutual acquaintances a week later."
+    "And a week later, I confessed to my only friend - that mysterious interlocutor from the network - that I think I'm going crazy."
+    "And an hour and a half of enthusiastic epithets, painting 'how she was' later, I was asked a question: so what, our communication is now over?"
+    me "Of course not! I'm not even going to…"
+    "I didn't manage to finish 'whatever I was going to'."
     play sound sfx_door_bell
-    "По ту сторону двери стояла она."
+    "She was on the other side of the door."
     scene anim intro_2
     with fade
     play sound sfx_intro_bus_stop_steps
@@ -771,9 +771,9 @@ label alt_day0_start_l:
     hide blind1_1
     show blind1_2
     with dissolve
-    "Почему она пришла? Непонятно."
+    "Why did she come? No idea."
     hide blind1_2
-    "Но факты штука упрямая — по ту сторону двери стояла она."
+    "But facts are stubborn things - she was standing on the other side of the door."
     pause(3)
     scene anim intro_4
     with fade
@@ -788,74 +788,74 @@ label alt_day0_start_l:
     play sound sfx_intro_bus_stop_sigh
     with fade
     pause(3)
-    "Я всю жизнь хотел пинать мяч, всю жизнь мечтал помахать рукой Земле из космоса."
-    "Но где-то в Небесной Канцелярии решили, что я буду полезнее в качестве музыканта."
-    "Сначала больные почки. {w}Потом повреждение колена."
-    "Я понял намёк и полностью посвятил себя музыке, не размениваясь на мелочи."
-    "Так что про любовь я знал только то, что она есть."
-    "Только то, что сумели воспитать во мне Гершвин, Григ, Бетховен."
-    "Вечерами и мне мечталось о том, что я однажды встречу свою Джульетту Гвиччарди."
-    "По-своему, по-обывательски, я был наивен и верил в то, что любому человеку свойственна тяга к чистому и светлому."
-    "Человека должна привлекать жизнь, прекрасная, настоящая."
-    "А не глухота, тошнота и мгла…"
-    "Семнадцать лет, чего вы хотели… {w}Перспективный мальчик."
+    "All my life I wanted to kick a ball, all my life I dreamed of waving my hand to the Earth from space."
+    "But somewhere in the Heavenly Chancellery they decided that I would be more useful as a musician."
+    "First the weak kidneys. {w}Then a knee trauma."
+    "I took the hint and devoted myself completely to music."
+    "So the only thing I knew about love that it exists."
+    "Only what Gershwin, Grieg, Beethoven managed to bring up in me."
+    "In the evenings I also dreamed that one day I would meet my Juliet Guicciardi."
+    "In my own way, in a philistine way, I was naive and believed that all people are characterized by a craving for pure and bright."
+    "A person should be attracted to beautiful, real life."
+    "Not the deafness, nausea and darkness…"
+    "17 years old, what else did you expect… {w}A promising boy."
     scene anim intro_7
     with fade
     pause(3)
     scene bg bus_stop
     with fade
-    "А ведь мы даже не поцеловались."
-    "Держались за руки, ходили вместе, медленно двигаясь к тому, когда кому-нибудь из нас хватит решимости перевести её и меня в «нас»."
-    "Оказалось, решимости хватило кому-то другому."
+    "We didn't even kiss."
+    "We held hands, walked together, slowly moving towards when either of us had the courage to move her and me to «us»."
+    "As it turned out, someone else had the courage."
     with fade2
-    "Он забрал её у меня — её улыбку, тепло ладони, жадное внимание в голубых глазах."
-    "И, будто в ознаменование того, что беда не приходит одна, замолчал и мой таинственный асечный визави."
-    "Он очень долго молчал и до этого, но я тогда был занят — я был влюблён."
+    "He took her from me - her smile, the warmth of her palm, the greedy attention in her blue eyes."
+    "And, as if to commemorate the fact that trouble does not come alone, my mysterious ICQ colleague also fell silent."
+    "He was silent for a very long time before that, but then I was busy - I was in love."
     pause(3)
     scene anim prolog_2
     with fade
     pause(1)
-    "Почему-то даже в голову не пришло мстить или бороться…"
-    "Просто улетели в помойное ведро и сгорели несколько тетрадей со стихами, серенадами, и сюита «Ей» звалась теперь «Без Лица»."
-    "Просто из телефона, записной книжки и почтового ящика безжалостно были выкорчёваны номера и контакты."
-    "Я замкнулся в себе и полностью сосредоточился на учёбе."
-    "Учёба, работа, учёба, работа, — музыка — не дающая успокоения, но хотя бы не бесящая."
-    "Наверное, меня, как любого другого представителя знака Близнецов, действительно необходимо очень сильно обидеть, чтобы мы начали выкладываться в творческом плане."
-    "Хотя я никогда не верил во всю эту зодиакальную чушь."
+    "For some reason, it never even occurred to me to take revenge or fight…"
+    "Just trashed several notebooks with poems, serenades, and suite «For Her» was now called «Faceless»."
+    "Just uprooted and expurged numbers and contacts from phone, address book and mailbox."
+    "I withdrew into myself and completely focused on my studies."
+    "Studying, work, studying, work, — music — never calming, but not enraging either."
+    "Probably, I, like any other representative of the Gemini sign, really need to be offended very much so that we begin to give our best in a creative way."
+    "Even though I never believed in this zodiacal idiocy."
     scene bg ext_khruschevka_rain_7dl
     play ambience ambience_7dl["rain"] fadein 5
-    "Но я начал срывать овации — бывший бесталанный, вечная вторая партия, тот, на кого ректор уже давно рукой махнул, я будто бы обрёл второе дыхание…"
-    "Да-да, то самое, которое не светит ни одному из духовиков с их гипертрофированными лёгкими."
-    "Гран-при на фестивале духовых инструментов, первое место среди трубачей в смотре-конкурсе «Звуки СНГ», приглашение на стажировку в Берлин с перспективой трудоустройства…"
-    "Я видел это всё во сне, находясь будто под наркозом, и с трудом воспринимал."
-    "Я рос как музыкант, загибаясь как романтик и ребёнок."
-    "Сейчас я понимал, что вообще мало удивительного в том, сколько боли обычно прячут глаза любого талантливого музыканта."
+    "But I began to get standing ovations - the former mediocrity, the eternal second party, the one on whom the rector had long given up, I seemed to have tapped into my second wind…"
+    "Yeah, that same thing that wind players with their hypertrophied lungs won't ever get."
+    "Grand prize at the festival of wind instruments, first place among trumpeteers in the review competition «Sounds of CIS», an invitation to an internship in Berlin with the prospect of employment…"
+    "I saw it all in a dream, as if under anesthesia, and hardly managed to perceive."
+    "I was growing as a musician, dying as a romanticist and a child."
+    "Now I understood that it wasn't surprising how much pain usually is hidden in the eyes of any talented musician.."
     scene white with blind_l
-    "До конца учебного года оставалось немногим меньше месяца, до поездки в Германию — полутора, когда давным-давно мёртво молчащий контакт разродился «приветом»."
+    "There was a little less than a month left until the end of the school year, a month and a half before the trip to Germany, when a long gone silent contact has appeared with a «hello»."
     scene cg d3_fag_room_7dl
     with fade
     pause(2)
     play ambience ambience_cold_wind_loop fadein 3
-    "И я забыл обо всём."
-    "Это была первая за полгода ночь, когда я засиделся у монитора до рассвета."
-    "Мы, захлёбываясь, говорили обо всём на свете."
-    "Мой мудрый визави — человек, которого мне так не хватало эти полгода бесконечной вьюги."
-    "А когда наутро я рассказал о женском коварстве и том, что отдал бы многое, только бы просто заглянуть в глаза ему, пожать лапу и проставить по паре чего-нибудь вкусного…"
-    voice "А ты выгляни на лестничную площадку."
+    "And I forgot about everything."
+    "It was the first night in six months when I was sitting at the monitor until dawn."
+    "We talked about everything in the world."
+    "My wise vis-a-vis, the person whom I missed so much these six months of endless blizzard."
+    "And when in the morning I told about female deceit and that I would give a lot, just to look into his eyes, shake his hand and grab something delicious…"
+    voice "Take a look outside."
     scene bg int_staircase_7dl
     with diam
-    "Она просидела всю ночь на подоконнике, болтая с мобильного со мной по аське."
-    "Она. Разделившая простое «Мы» на «Ты» и «Я»."
-    "Как она оказалась ещё и моим лучшим другом?"
-    "Тем, чьи мысли я всегда слышал произносимыми голосом Брэндона Кинера, с лукавой улыбкой и мудрым умением выслушать."
+    "She sat all night on the windowsill, chatting with me on ICQ on her mobile."
+    "Her. The one who split that simple «Us» into «You» and «Me»."
+    "How did she turn out to also be my best friend?"
+    "The one, whose thoughts I have always heard in the voice of Brandon Keener, with a sly smile and a wise listening skill."
     stop sound_loop fadeout 4
-    "Как она посмела…"
-    "Она захлопнула дверь за собой."
+    "How dare she…"
+    "She slammed the door behind herself."
     play sound sfx_face_slap
-    "Схватилась за щёку, которую обожгло пощёчиной."
-    me "Выпьешь чаю, и я не хочу тебя видеть. Никогда."
-    "Ответила."
-    "Я не знаю, сколько мы били друг друга, сколько орали, но…"
+    "Grabbed her cheek, which was burning from a slap in the face."
+    me "Have some tea and I don't want to see you. Never again."
+    "She responded."
+    "I don't know for how long we were quarreling, fighting, screaming, but…"
     pause(3)
     scene anim prolog_5
     with fade
@@ -863,17 +863,17 @@ label alt_day0_start_l:
     scene anim prolog_5
     with fade
     pause(3)
-    "Я не пошёл учиться.{w} Ни в этот день, ни в следующий."
-    "А до ближайшей смены было… Да, как раз два дня."
-    "Да и она ушла только на третий день."
-    "Пошатываясь от недосыпа, с глазами в красной паутинке, взъерошенная, проходившая всё это время в моей рубашке."
-    "Прекрасная. {w}Моя."
-    "Только закрыв за ней дверь, я понял, каким же был идиотом, что не позволил произойти этому раньше."
-    "Так что спустя ровно сорок восемь часов после визита Ксаны я привычно заткнул уши музыкой и вышел было в подъезд…"
-    "Похоже, что он всё узнал."
-    "Сама Ксения ему сказала, или он догадался — я не знаю."
-    "Меня встретили в подъезде. {w}Не помню, сколько их было — трое? Четверо?"
-    "Оголодавшие хищники, рвущие жертву стаей."
+    "I didn't go studying.{w} Not today, not tomorrow."
+    "And the next shift was in… Yeah, about two days."
+    "She left on the third day anyways."
+    "Staggering from lack of sleep, with red eyes, disheveled, walking this time in my shirt."
+    "Beautiful. {w}Mine."
+    "It wasn't until I closed the door behind her that I realized what an idiot I was for not letting this happen sooner."
+    "So exactly forty-eight hours after her visit, I habitually plugged my ears with music and went out into the entrance…"
+    "Seemed like he figured everything out."
+    "Did Ksenia tell him, did he guess - I didn't know."
+    "I ran into them on the entrance. {w}Don't remember how many of them were there, three? Four?"
+    "Starving pack of predators, tearing into its prey."
     $ volume(1.0, 'music')
     play music music_7dl["beth"] fadein 3
     pause(3)
@@ -884,64 +884,64 @@ label alt_day0_start_l:
     play sound sfx_lena_hits_alisa
     pause(1)
     $ set_mode_nvl()
-    "После первого контакта прямым в лицо сознание уплыло, и я не считал количества сыплющихся на меня ударов."
-    "Многочисленные ушибы, перелом трёх пальцев правой руки и — самое страшное — отбитые лёгкие."
-    "Я открыл глаза в больнице."
-    "И чуть не закрыл их навсегда, когда огласили диагноз."
-    "Семён Персунов, подающий надежды музыкант, стал узником Замка Тишины."
-    "Какой там Берлин, какая стажировка, — представители Берлинского Филармонического готовы были помочь чем угодно, но они не были способны на чудо."
-    "Обычно здесь ставят точку и закрывают книгу."
-    "Потому что история теряет всякий смысл."
+    "After the first contact, straight into the face, consciousness floated away, and I did not count the number of blows raining down on me."
+    "Multiple bruises, a fracture of three fingers of the right hand and, worst of all, broken lungs."
+    "I opened my eyes in the hospital."
+    "And I almost closed them forever when they announced the diagnosis."
+    "Semyon Persunov, a promising musician, became a prisoner of the Castle of Silence."
+    "Who cares about Berlin, who cares about an internship - representatives of the Berlin Philharmonic were ready to help in any way, but they were not capable of a miracle."
+    "Usually that's where you come to a full stop and close the book."
+    "Because the story loses all meaning."
     nvl clear
     pause(3)
-    "А я почему-то решил барахтаться."
-    "Бывший «перспективный мальчик» ещё полгода ходил по стеночке, восстанавливаясь."
-    "Из них три месяца — под присмотром специалистов после нескольких неудачных попыток суицида."
-    "Бывший «подающий надежды», бывший лауреат, бывший, бывший, бывший…"
-    "И стоит ли удивляться, что самая красивая, самая мудрая и хорошая махнула хвостом, лишь узнав о том, во что я превратился?"
+    "And for some reason I decided to crawl."
+    "Former «promising boy» had to walk along the wall for another six months, recovering."
+    "During three of them - under the supervision of specialists after several unsuccessful suicide attempts."
+    "Former «up-and-coming», former laureate, former, former, former…"
+    "And is it any wonder that the most beautiful, wisest and best wagged her tail, right after learning about what I had become?"
     if persistent.d3_loki:
-        "Как будто не было никогда наших отношений."
-        "Как будто не было этих трёх дней бешеного марафона, не расцепляя рук."
+        "As if our relationship never existed."
+        "As if there were no three days of a frenzied marathon, hand in hand."
     else:
-        "Как будто не было никогда ни нас, ни нашей трогательной дружбы."
-    voice "Прости.{w} Прощай."
-    "Что самое больное и печальное — я не чувствовал к ней злости!"
-    "К человеку, пустившему мою жизнь под откос, сломавшему и уничтожившему меня."
-    "А должен был! Во все времена все писатели говорили, что оборотной стороной каждой любви является ненависть."
+        "As if there was never neither us nor our touching friendship."
+    voice "Sorry.{w} Goodbye."
+    "The most painful and sad thing - I wasn't feeling any anger towards her!"
+    "Towards the person that broke me, derailed my entire life, the one that has destroyed me."
+    "I had to! All writers said this all the time, that the other side of love is hatred."
     nvl clear
-    "Я должен был ненавидеть Ксану."
-    "Должен."
-    "Но не мог."
+    "I had to hate her."
+    "Had to."
+    "But I couldn't."
     nvl clear
     scene anim prolog_5
     with fade
     play sound_loop sfx_street_traffic_outside fadein 2
-    "Во мне что-то сломалось. Куда-то делся внутренний яростный огонь, что мог бы сделать меня карающей дланью, толкнуть на преступление, на глупости."
-    "Я стал тенью себя прежнего, но не сдался. Лишив меня дела всей жизни, ублюдок таким образом дал мне новое."
-    "Шло время. Я сдал оставшийся год экстерном и ушёл в дом детского и юношеского творчества руководителем духового кружка, где полностью посвятил себя преподаванию музыки."
-    "Я не знаю, откуда они узнали, но одним зимним вечером ко мне в аудиторию заглянул отец одного из моих учеников. Он не стал ходить вокруг да около и сразу предложил помощь."
-    "Таким образом было положено начало."
+    "Something broke in me. The inner furious fire has gone somewhere, which could make me a punishing hand, push me to crimes, to stupidity."
+    "I became a shadow of my former self, but I did not give up. Depriving me of my life's work, the bastard thus gave me a new purpose."
+    "Time passed. I passed the remaining year as an external student and went to the house of children's and youth creativity as the head of the brass circle, where I devoted myself entirely to teaching music."
+    "I don't know how they found out, but one winter evening the father of one of my students passed by my classroom. He didn't beat around the bush and immediately offered to help."
+    "And so it all began."
     nvl clear
-    "Ещё пять лет, пока один из моих бывших одноклассников не получил всё-таки пост заместителя в районной СЭС."
-    "Замы, помощники, полпреды, секретари — не сильные мира сего, а те, кто носит им бумаги на подпись. И пишет эти бумаги."
-    "Как сказал классик, миром правят лейтенанты и капитаны: при смене власти генералов расстреливают, а сержантов вешают."
-    "А месть во все времена подавали холодной."
-    "Я был тенью, трикстером, плетущим сеть на человека. Как когда-то сплёл её ас Локи — кличка прилипла сама собой; разве что моя Сигюн оказалась куда не так верна и променяла блюдо с ядом на медовые посулы хлыща, не любившего её ни секунды."
+    "Five more years, until one of my former classmates finally got the post of deputy in the district SES."
+    "Deputies, assistants, plenipotentiaries, secretaries are not the powers that be, but those who carry papers for them to sign. And write these papers."
+    "As the classic said, lieutenants and captains rule the world: when the power changes, generals are shot, and sergeants are hanged."
+    "And revenge was always served cold."
+    "I was a shadow, a trickster, weaving a web. As the ace Loki once wove her, the nickname stuck by itself; except that my Sigyn turned out to be far less faithful and exchanged a dish with poison for the honey promises of a dandy who did not love her for a second."
     nvl clear
-    "Ещё годик — моя жертва каким-то чутьём засекла сужающих круги акул и вела все дела идеально честно, частенько даже в убыток себе."
-    "Но вода точит камень — у меня появился шанс."
-    "Дело было в последней декаде июля, на валовых заказах штат перестал справляться, привлекли специалистов на аутсорсе, «забыли» заключить договоры — и в дверь этой фирмочки постучалась выездная налоговая проверка."
-    "За ней пожарники, санитары, кадастровая служба — в нашей сумрачной столице практически невозможно существовать на территории города и быть безгрешным."
-    "Закон кармы в действии."
+    "Another year - my victim somehow detected sharks narrowing circles and conducted all affairs perfectly honestly, often even at a loss to himself."
+    "But the water wears away the stone - I got a chance."
+    "It was in the last ten days of July, the firm stopped coping with gross orders, attracted outsourcing specialists, 'forgot' to conclude contracts - and an on-site tax audit knocked on the door of this company."
+    "Right after were firefighters, orderlies, the cadastral service - in our gloomy capital it is almost impossible to exist on the territory of the city and be sinless."
+    "Karmic retribution in action."
     nvl clear
-    "Решение о банкротстве суд выдал меньше чем через полгода тяжб."
-    "Не могу сказать, что мне стало легче от этого, — даже если бы его прилюдно распяли, это не вернуло бы меня к музыке."
-    "Я всё ещё оставался тем молодым угрюмым руководителем кружка самодеятельности, шарахающимся от коллектива и знакомств."
-    "Чёртовым одиночкой, не испытавшим даже мрачного ликования, когда всё закончилось."
-    "Идеальной кандидатурой на роль человека, погибающего при загадочных обстоятельствах."
+    "The court issued a bankruptcy decision after less than six months of litigation."
+    "I can’t say that I felt better from this - even if he was crucified in public, it would not return me to music."
+    "I still remained that young gloomy leader of the amateur circle, shying away from the team and acquaintances."
+    "A damn loner who didn't even feel a grim glee when it was over."
+    "An ideal candidate for the role of a man who dies under mysterious circumstances."
     nvl clear
-    "Если чему и научился за эти десять лет — так это тому, что иногда даже две минуты могут круто повернуть судьбу человека."
-    "Поэтому научился ценить время и по педантичности и пунктуальности сумел бы заткнуть за пояс любого японца."
+    "If I have learned anything in these ten years, it is that sometimes even two minutes can dramatically change the fate of a person."
+    "Therefore, I learned to value time and, in terms of pedantry and punctuality, would be able to plug any Japanese into the belt."
     nvl clear
     play sound sfx_intro_bus_engine_start
     pause(3)
@@ -949,10 +949,10 @@ label alt_day0_start_l:
     $ set_mode_adv()
     scene anim intro_9
     with fade2
-    "И потому я тютелька в тютельку стою на остановке автобуса."
-    th "Четыреста десятый, наш автобус отправляется в ад."
-    "Научив пунктуальности, жизнь не научила меня ничему другому. И ума точно не добавила."
-    "Именно поэтому я машу ладонью водителю ЛиАЗа — старенького, красного, сейчас таких и не встретишь почти: всё заменили евроноводелы."
+    "And that's why I'm standing at the bus stop."
+    th "410, our bus is going to hell."
+    "Having taught punctuality, life has taught me nothing else. And it definitely didn’t add any smartness."
+    "That is why I wave my hand to the driver of the LiAZ - an old, red one, now you almost never see them: everything has been replaced by European-made new ones."
     stop music fadeout 5
     pause(2)
     scene anim intro_10
@@ -971,101 +971,101 @@ label alt_day0_start_l:
     stop ambience fadeout 2
     play sound_loop sfx_bus_interior_moving fadein 4
     play music music_7dl["laugh_throught_the_universe"] fadein 3
-    th "Где же она, обещанная ненависть к человеку, который тебя уничтожил?"
-    "Связь с Ксаной меня уже чуть не убила однажды."
-    "А она позвонила. {w}И попросила приехать."
-    "Логика, моя верная подруга."
-    "Я могу лишь гадать, зачем она меня позвала."
-    "Предположим, что не просто так."
-    "Предположим, что там меня ждёт что-то очень плохое."
+    th "Where is it, the promised hatred towards the person that destroyed you?"
+    "Communicating with Oksana almost killed me once."
+    "But she called. {w}And asked me to come."
+    "Logic, my old friend."
+    "I can only wonder why she called me."
+    "Let's just assume there is a reason."
+    "Suppose something very bad is waiting for me there."
     with fade
-    "Но порой любовь — совсем не счастье, порой она бремя и проклятье."
-    "Поэтому я должен рискнуть."
-    "За десять лет мир изменился. {w}Я изменился."
-    "Незыблемым осталось одно."
-    "Я всё ещё{w} {b}не могу без неё{/b}."
-    "Я закрыл глаза."
+    "But sometimes love is not happiness at all, sometimes it is a burden and a curse."
+    "That's why I had to take the risk."
+    "The world changed over the last ten years. {w}I changed."
+    "One thing was certain."
+    "I still{w} {b}can't be without her{/b}."
+    "I closed my eyes."
     show blink
     pause(1.5)
     scene bg ext_winterpark_7dl with dissolve
     pause(1.5)
     stop ambience
     stop sound_loop
-    "Ксана назначила встречу в ЦПКиО."
+    "She made an appointment at the Central Park of Culture."
     play ambience ambience_7dl["night_city"] fadein 3
-    "Где-то рядом с катком, сказала, что будет ждать меня у самой коробки."
-    "Мой подарок на Новый Год. Подарок в игре, где победитель теряет всё."
-    "Чего-то такого и я ждал — Локи ведь тоже не очень хорошо кончил."
-    "Поэтому когда на меня, растянувшись цепью, пошла уже знакомая четвёрка, я даже не испугался."
-    th "Вот и всё."
-    "Сказал я себе."
-    "Две зажигалки, удобно лёгшие в кулаки, прозрачная питерская ночь и любовь всей моей жизни."
-    th "Вот и всё."
-    "Я пошёл к ним, побежал навстречу злому сверканию глаз, застывшим оскалам, тупоносым ботинкам, которыми так удобно ломать рёбра…"
-    "Локи, Асгард приговорил тебя к смерти."
-    "Мой смех разнёсся по Вселенной."
+    "Somewhere near the skating rink, she said that she would be waiting for me at the box."
+    "My New Year's gift. A gift in a game where the winner loses everything."
+    "Well, I was expecting something like this - Loki didn't have a good ending either."
+    "Therefore, when the already familiar four went at me, stretching out in a chain, I was not even scared."
+    th "That's it, folks."
+    "I said to myself."
+    "Two lighters, comfortably lying in fists, a transparent St. Petersburg night and the love of my life."
+    th "That's it."
+    "I went to them, ran towards the evil sparkle of eyes, frozen grins, blunt-toed boots, which are so convenient for breaking ribs…"
+    "Loki, Asgard sentences you to death."
+    "My laughter echoed across Universe."
     scene cg d7_sl_gonna_be_ok_7dl
     show ldb_blind
     show blackout_exh
     show prologue_dream
     with fade
     play ambience ambience_camp_center_night fadein 2
-    "С катка доносились звуки очередного попсового мотивчика, а я лежал в глубоком снегу и смотрел на фонарь, чей свет резал ледяной воздух толстыми ломтями."
-    "Было жутко холодно, но пошевелиться я не мог."
-    "Похоже, они попали куда-то, где ещё не всё зажило."
-    "Поэтому ощущению тепла не удивился уже — слышал, что такое происходит с замерзающими."
+    "From the rink came the sounds of another pop tune, and I laid in deep snow and looked at the lantern, whose light cut the icy air in thick slices."
+    "It was terribly cold, but I could not move."
+    "It looked like they hit somewhere where not everything has healed yet.."
+    "So, I was not surprised at the feeling of warmth - I heard that this happens with freezing people."
     stop music fadeout 3
-    "А под захлопнувшимся веком обнаружилась странная картинка."
+    "And under the closed eyelid, a strange picture was found."
     $ renpy.show("bg ext_entrance_night_clear_7dl", what = D3_intro("bg ext_entrance_night_clear_7dl"))
     show owl behind prologue_dream:
         pos (931, 88)
     show prologue_dream
     with blind_d
-    "Застывшие во мгновении полёта гипсовые пионеры, стоящие по разные стороны от полуоткрытых фигурных ворот с колышками сверху."
-    "Была ночь, стояла полная тишина, нарушаемая лишь пением цикад."
-    "И лишь знакомый с детства голос, зовущий в страну, откуда нет возврата:"
+    "Plaster pioneers frozen in the moment of flight, standing on opposite sides of the half-open figured gate with pegs on top."
+    "Night, in complete silence, broken only by the singing of cicadas."
+    "And only a voice familiar from childhood, calling to a land of no return:"
     scene bg ext_entrance_night_clear_7dl
     show owl behind prologue_dream:
         pos (931, 88)
     $ renpy.show("uvao_d1", at_list = [left], what = D3_intro("uvao_d1"))
     show prologue_dream
     with fade3
-    show alt_credits "Ты пойдёшь со мной?" with dissolve2:
+    show alt_credits "Will you go with me?" with dissolve2:
         pos (747,105)
     pause(3)
     scene bg ext_entrance_night_clear_7dl
     $ renpy.show("uvao_d1", at_list = [left], what = Notch("uvao_d1"))
     show prologue_dream
     with dissolve
-    th "Ты, как всегда, вовремя…"
-    th "Впрочем… Что я теряю?"
+    th "Right on time, as usual…"
+    th "Eh, what am I losing anyways?"
     pause(2)
     menu:
-        "Пойду, милая":
-            me "Надеюсь, там не будет больше ни её, ни его, ни этой чёртовой четвёрки."
-        "Нет, я останусь здесь":
+        "I will, honey":
+            me "Hope neither she, nor him, nor that damned quartet will be there."
+        "No, I will stay here":
             $ alt_day_catapult = True
     stop ambience
-    "Сначала перестала иметь значение боль."
-    "Потом пропали саднящие ощущения в ссаженных щеках и бульканье в лёгких."
-    "Мороз перестал иметь значение."
-    "И…"
+    "First the pain stopped mattering."
+    "Then the raw sensations in the bruised cheeks and the gurgling in the lungs disappeared.."
+    "The cold stopped mattering."
+    "And…"
     pause(1)
     pause(2)
     if alt_day_catapult:
         play music "<to 52.94>" + music_7dl["herc_death"] fadein 3
-        "Холода больше не было."
+        "There was no more cold."
         scene cg d7_sl_gonna_be_ok_7dl
         show ldb_blind
         show blackout_exh
         show prologue_dream
         with fade
-        "Девушка, что снилась мне всю мою жизнь, печально улыбнулась на прощанье, и горькая слезинка замёрзла на идеальной щеке."
-        "Новогоднее, выпивающее жизнь, ледяное настроение приняло меня в свои объятья."
-        "Сердце постучалось в завтра."
-        "Тук-тук."
+        "The girl that I dreamed about all my life smiled sadly at parting, and a bitter tear froze on her perfect cheek."
+        "New Year's, life-drinking, icy mood took me into its arms."
+        "Heart knocked on tomorrow's door."
+        "Knock-knock."
         scene black with fade
-        "Но ему никто не ответил."
+        "But nobody came."
         pause(2)
         scene black
         show gameover

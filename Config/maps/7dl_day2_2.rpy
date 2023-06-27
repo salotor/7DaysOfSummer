@@ -1,7 +1,7 @@
 ﻿label alt_day2_mapEv_prepare:
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(2, u"Вечерние события")
+    $ alt_chapter(2, u"Evening events")
     $ disable_all_zones_alt2()
     $ disable_all_chibi_alt2()
 

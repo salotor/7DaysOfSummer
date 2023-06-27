@@ -7,12 +7,12 @@ init -1:
     $ plthr = u"None"
 
 init 2:
-    $ mods["scenario__alt_sevendl"] = u"7 Дней Лета: Lost Alpha"
+    $ mods["scenario__alt_sevendl"] = u"7 Days of Summer: Lost Alpha"
     $ mod_tags["scenario__alt_sevendl"] = ["length:days","gameplay:vn","protagonist:male"]
 
-    $ timeskip_dev = "Рут находится в разработке…\nВ активной разработке: Одиночка, день 6"
+    $ timeskip_dev = "To be continued…\nIn development: Loner, day 6"
 
-    $ alt_credits_text = "{image=logo_7dl}\n\n\n{b}Сценарий{/b}\n\ndialup, 7дл-кун, abcb\n\n{b}Режиссура сцен{/b}\n\nGr0m, Ismir, 7дл-кун, still13free, Макс Ветров, stranburg\n\n{b}Графика{/b}\n\nТэй (shwwma), GoodbyeNona, SkieyWayfarer, Макс Смолев, Narwhal Iv, Kef34, Mannych, FairyApple, nyamaznya, nenkoket, Trojan, NikHaker, rina.jess, childofburningtime27, Касандра, resident_art, Mo~, Эру, Денис Кучер, goozeecat, Таруто Неко, Primary, teromioset, RanKate, LCKR, Katy-Tan, Eve Kel'man, Панельев\n\n{b}Музыка{/b}\n\nApril Rain, Tym Nyman, DeadPunk, ППВК, Kevin MacLeod, SinkWay, DeepCosmo и др.\n\n{b}Логика повествования, вычитка сценария{/b}\n\nSitzileon, Ismir, Salotor, Dantiras, faddeev, Kaiserd3, Alex New, tngeyzer, Макс Ветров, Евген\n\n{b}Код и адаптация{/b}\n\nSalotor — порт сценария в Steam и на Андроид, главное меню, галерея, раздел «Истории», прочие технические решения\n\nKaiserd3 — ачивлист, просмотрщик сцен, музыкальный плеер\n\nSitzileon — рефаб рутов\n\nEldhenn, Kibconj — порт сценария в Steam\n\nBlackMazeGOD — главное меню\n\nNuttyprof, openplace — новая карта лагеря и новый карточный турнир\n\nЛенофаг Простой, Ravsii — стартовые меню\n\nDantiras — старый ачивлист\n\n{b}Товарищи, помогавшие со всем остальным{/b}\n\nМакс Ветров, Drago23, Arlien, Peregarrett, Demiurge-kun, Дельта, KirillZ89, Ленофаг Простой, Ленивый Бегун, Занудный, Serge Domingo, Ravsii, Peregarrett, Chess, shers, polandkyn, alexzen84, traven42, nikolaystorm, Рыжий Тигра, Дмитрий Мерзляков, Paul Atrides, AlzGamer и др.\n\n{b}Благодарим за предоставленные ресурсы{/b}\n\nРазработчиков модификаций «Саманта», «Булки, кефир и рок-н-ролл», «Двое», «Последнее Лето», «Эти безумные деньки!», «Бесконечное лето: продолжение истории», «Дубликат», «По ту сторону Совёнка», визуальных новелл «HSOOVN», «Katawa Shoujo», «Young Hearts», группу «КПБСА».\n\n{b}Команда разработчиков «7 Дней Лета: Lost Alpha»{/b}\n\ndialup, salotor, Gr0m, Ismir, Corvinus, Макс Ветров, Евген, stranburg\n\n{b}Выражаем отдельную благодарность{/b}\n\nКоманде «Soviet Games» за предоставление ресурсов и платформы для творчества\n\n7дл-куну за ранее проделанную работу над модификацией «7 дней лета»\n\nСпасибо всем, кто не был упомянут, но внёс свой вклад, — за то, что помогали и поддерживали!"
+    $ alt_credits_text = "{image=logo_7dl}\n\n\n{b}Scenario{/b}\n\ndialup, 7DS-kun, abcb\n\n{b}Directed by{/b}\n\nGr0m, Ismir, 7DS-kun, still13free, Макс Ветров, stranburg\n\n{b}Visuals{/b}\n\nТэй (shwwma), GoodbyeNona, SkieyWayfarer, Макс Смолев, Narwhal Iv, Kef34, Mannych, FairyApple, nyamaznya, nenkoket, Trojan, NikHaker, rina.jess, childofburningtime27, Касандра, resident_art, Mo~, Эру, Денис Кучер, goozeecat, Таруто Неко, Primary, teromioset, RanKate, LCKR, Katy-Tan, Eve Kel'man, Панельев\n\n{b}Music{/b}\n\nApril Rain, Tym Nyman, DeadPunk, ППВК, Kevin MacLeod, SinkWay, DeepCosmo, and others\n\n{b}Narrative logic, script proofreading{/b}\n\nSitzileon, Ismir, Salotor, Dantiras, faddeev, Kaiserd3, Alex New, tngeyzer, Макс Ветров, Евген\n\n{b}Technical part{/b}\n\nSalotor — Steam and Android ports, main menu, gallery, «Extras», other technical stuff\n\nKaiserd3 — achievelist, scene selector, music player\n\nSitzileon — route refactoring\n\nEldhenn, Kibconj — Steam port\n\nBlackMazeGOD — main menu\n\nNuttyprof, openplace — new camp map, new tournament\n\nЛенофаг Простой, Ravsii — starting menu\n\nDantiras — old achievelist\n\n{b}Translation{/b}\n\nDrh — translation\n\nLyonyai — translation, technical stuff\n\nMacrosis — visuals, proofreading\n\nArthurFerand — proofreading\n\nUnitdragon — translation consulting\n\n{b}Comrades, that were helping with everything else{/b}\n\nМакс Ветров, Drago23, Arlien, Peregarrett, Demiurge-kun, Дельта, KirillZ89, Ленофаг Простой, Ленивый Бегун, Занудный, Serge Domingo, Ravsii, Peregarrett, Chess, shers, polandkyn, alexzen84, traven42, nikolaystorm, Рыжий Тигра, Дмитрий Мерзляков, Paul Atrides, AlzGamer and others\n\n{b}Thanks for resources provided by{/b}\n\nDevelopers of «Саманта», «Булки, кефир и рок-н-ролл», «Двое», «Последнее Лето», «Эти безумные деньки!», «Бесконечное лето: продолжение истории», «Дубликат», «По ту сторону Совёнка», visual novels «HSOOVN», «Katawa Shoujo», «Young Hearts», group «КПБСА».\n\n{b}Developer team of «7 Days of Summer: Lost Alpha»{/b}\n\nDialup, Salotor, Gr0m, Ismir, Corvinus, Макс Ветров, Евген, Stranburg\n\n{b}Translation team of «7 Days of Summer: Lost Alpha»{/b}\n\nDrh, Lyonyai, Macrosis, Arthur Ferand, Unitdragon\n\n{b}Special thanks to{/b}\n\n«Soviet Games» for providing resources and a platform for creativity\n\n7DS-kun for the work previously done for the mod «7 Days of Summer»\n\nThanks to everyone, who was not mentioned, but contributed something, for helping and supporting!"
 
     #Day - базис
     #Sunset - 94%, 82%, 100%
@@ -25,7 +25,7 @@ init 2:
     'day': (72, 246, 2, 255),
     'prolog': (60, 177, 2, 255)}
     $ store.names_list.append('ai')
-    $ names['ai'] = u'Собеседник'
+    $ names['ai'] = u'Interlocutor'
 
     $ colors['al'] = {
     'night': (122, 121, 102, 255),
@@ -33,7 +33,7 @@ init 2:
     'day': (211, 181, 153, 255),
     'prolog': (177, 130, 153, 255)}
     $ store.names_list.append('al')
-    $ names['al'] = u'Алька'
+    $ names['al'] = u'Alka'
 
     $ colors['am'] = {
     'night': (94, 143, 100, 255),
@@ -41,7 +41,7 @@ init 2:
     'day': (162, 214, 149, 255),
     'prolog': (136, 154, 149, 255)}
     $ store.names_list.append('am')
-    $ names['am'] = u'Я'
+    $ names['am'] = u'Me'
 
     $ colors['ase'] = {
     'night': (137, 44, 44, 255),
@@ -49,7 +49,7 @@ init 2:
     'day': (236, 66, 66, 255),
     'prolog': (198, 48, 66, 255)}
     $ store.names_list.append('ase')
-    $ names['ase'] = u'Алиса'
+    $ names['ase'] = u'Alisa'
 
     $ colors['ba'] = {
     'night': (137, 153, 135, 255),
@@ -57,7 +57,7 @@ init 2:
     'day': (237, 229, 201, 255),
     'prolog': (199, 165, 201, 255)}
     $ store.names_list.append('ba')
-    $ names['ba'] = u'Саныч'
+    $ names['ba'] = u'Sanich'
 
     $ colors['bb'] = {
     'night': (133, 116, 90, 255),
@@ -65,7 +65,7 @@ init 2:
     'day': (229, 173, 135, 255),
     'prolog': (192, 125, 135, 255)}
     $ store.names_list.append('bb')
-    $ names['bb'] = u'Алексей Максимыч'
+    $ names['bb'] = u'Alexei Maksimovich'
 
     $ colors['dn'] = {
     'night': (119, 68, 45, 255),
@@ -73,7 +73,7 @@ init 2:
     'day': (205, 102, 67, 255),
     'prolog': (172, 73, 67, 255)}
     $ store.names_list.append('dn')
-    $ names['dn'] = u'Даня'
+    $ names['dn'] = u'Danya'
 
     $ colors['dy'] = {
     'night': (192, 192, 192, 255),
@@ -81,7 +81,7 @@ init 2:
     'day': (56, 90, 107, 255),
     'prolog': (192, 192, 192, 255)}
     $ store.names_list.append('dy')
-    $ names['dy'] = u'Динамики'
+    $ names['dy'] = u'Speakers'
 
     $ colors['hg'] = {
     'night': (41, 119, 41, 255),
@@ -89,7 +89,7 @@ init 2:
     'day': (60, 170, 60, 255),
     'prolog': (60, 170, 60, 255)}
     $ store.names_list.append('hg')
-    $ names['hg'] = u'Парень'
+    $ names['hg'] = u'Guy'
 
     $ colors['ka'] = {
     'night': (137, 82, 85, 255),
@@ -97,7 +97,7 @@ init 2:
     'day': (236, 123, 127, 255),
     'prolog': (198, 89, 127, 255)}
     $ store.names_list.append('ka')
-    $ names['ka'] = u'Катюшка'
+    $ names['ka'] = u'Katushka'
 
     $ colors['kids'] = {
     'night': (235, 120, 131, 255),
@@ -105,7 +105,7 @@ init 2:
     'day': (235, 120, 131, 255),
     'prolog': (235, 120, 131, 255)}
     $ store.names_list.append('kids')
-    $ names['kids'] = u'Дети'
+    $ names['kids'] = u'Kids'
 
     $ colors['ml'] = {
     'night': (43, 134, 98, 255),
@@ -113,7 +113,7 @@ init 2:
     'day': (74, 200, 147, 255),
     'prolog': (62, 144, 147, 255)}
     $ store.names_list.append('ml')
-    $ names['ml'] = u'Мальчик'
+    $ names['ml'] = u'Boy'
 
     $ colors['ml2'] = {
     'night': (43, 53, 134, 255),
@@ -121,7 +121,7 @@ init 2:
     'day': (74, 79, 200, 255),
     'prolog': (62, 57, 200, 255)}
     $ store.names_list.append('ml2')
-    $ names['ml2'] = u'Мальчик'
+    $ names['ml2'] = u'Boy'
 
     $ colors['ml3'] = {
     'night': (62, 114, 98, 255),
@@ -129,7 +129,7 @@ init 2:
     'day': (107, 170, 147, 255),
     'prolog': (90, 122, 147, 255)}
     $ store.names_list.append('ml3')
-    $ names['ml3'] = u'Мальчик'
+    $ names['ml3'] = u'Boy'
 
     $ colors['sak'] = {
     'night': (89, 115, 146, 255),
@@ -137,7 +137,7 @@ init 2:
     'day': (153, 171, 218, 255),
     'prolog': (129, 123, 218, 255)}
     $ store.names_list.append('sak')
-    $ names['sak'] = u'Сакишита Чихиро'
+    $ names['sak'] = u'Sakishita Chihiro'
 
     $ colors['tn'] = {
     'night': (125, 111, 62, 255),
@@ -145,7 +145,7 @@ init 2:
     'day': (216, 166, 93, 255),
     'prolog': (181, 120, 93, 255)}
     $ store.names_list.append('tn')
-    $ names['tn'] = u'Тоник'
+    $ names['tn'] = u'Tonik'
 
     $ colors['voice1'] = {
     'night': (159, 8, 73, 255),
@@ -153,7 +153,7 @@ init 2:
     'day': (255, 136, 192, 255),
     'prolog': (196, 7, 124, 255)}
     $ store.names_list.append('voice1')
-    $ names['voice1'] = u'Продавщица'
+    $ names['voice1'] = u'Saleswoman'
 
     $ colors['voices'] = {
     'night': (192, 192, 192, 255),
@@ -161,7 +161,7 @@ init 2:
     'day': (192, 192, 192, 255),
     'prolog': (192, 192, 192, 255)}
     $ store.names_list.append('voices')
-    $ names['voices'] = u'Голоса'
+    $ names['voices'] = u'Voices'
 
     $ colors['we'] = {
     'night': (67, 23, 111, 255),
@@ -169,7 +169,7 @@ init 2:
     'day': (252, 15, 192, 255),
     'prolog': (150, 50, 100, 255)}
     $ store.names_list.append('we')
-    $ names['we'] = u'Хором'
+    $ names['we'] = u'Choir'
 
     $ reload_names()
 

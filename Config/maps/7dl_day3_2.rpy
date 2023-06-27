@@ -3,7 +3,7 @@
     $ disable_all_chibi_alt2()
     $ persistent.sprite_time = "day"
     $ day_time()
-    $ alt_chapter(3, u"Вообще-то, тихий час!")
+    $ alt_chapter(3, u"Actually, it's quiet hour!")
     $ set_zone_alt2("music_club_alt2",      "alt_day3_eventAf_music_club")
     if alt_day3_date == 'dv':
         $ set_chibi_alt2("music_club_alt2",      "dv")

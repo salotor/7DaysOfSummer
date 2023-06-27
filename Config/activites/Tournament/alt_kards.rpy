@@ -6,19 +6,19 @@ label alt_day2_cards_tournament:
     scene bg int_dining_hall_day with fade
     play music music_list["i_want_to_play"] fadein 1
     play ambience ambience_medium_crowd_indoors_1 fadein 1
-    "А внутри уже всё было готово!"
-    "Столы были сдвинуты плей-офф таблицей, победитель пересаживался за соседний стол, проигравший просто вставал с места."
-    "Настроение у всех было приподнятое и праздничное."
-    "Я пригляделся, смотря по соперникам и прикидывая шансы."
+    "And the inside was all set!"
+    "The tables were placed like the playoff table, the winner would move to the next table, the loser would just get up from his seat."
+    "Everyone's mood was upbeat and festive."
+    "I took a closer look, looking at the opponents and figuring out the odds."
 
     show sh normal pioneer far at right
     show us laugh2 pioneer far at left
     with dissolve
-    "Шурик, как и я, не совсем понимающий, что он здесь забыл, сидел рядом с Ульяной."
+    "Shurik, like me, not quite sure what he was doing here, was sitting next to Ulyana."
     show sh serious pioneer far
     show us laugh pioneer far
     with dspr
-    "Егоза нетерпеливо раскачивалась на стуле и пыталась вытянуть из Шурика какие-то сведения о предстоящей игре, на что тот только недовольно хмурился и делал вид, что он вообще не с ней."
+    "The kid swayed impatiently in her chair and tried to get some information from Shurik about the upcoming game, to which he only frowned grudgingly and pretended that he was not with her at all."
     hide sh
     hide us
     with dissolve
@@ -27,14 +27,14 @@ label alt_day2_cards_tournament:
     show mz normal glasses pioneer far at left
     with dissolve
     if ('library' in list_voyage_7dl):
-        "Следующий стол оккупировала жужелица из библиотеки, ей противостояла Славя."
+        "The next table was occupied by the buzzkill from the library, confronted by Slavya."
     else:
-        "Следующий стол занимала та самая Женя, против неё играла Славя."
-    "Я, поймав её взгляд, ободряюще улыбнулся:"
-    me "Удачи."
+        "The next table was occupied by the same Zhenya, with Slavya playing against her."
+    "I, catching her gaze, smiled encouragingly:"
+    me "Good luck."
     show sl smile pioneer far with dspr
-    sl "Спасибо."
-    "Она улыбнулась в ответ."
+    sl "Thank you."
+    "She smiled back."
     hide sl
     hide mz
     with dissolve
@@ -42,37 +42,37 @@ label alt_day2_cards_tournament:
     show dv smile pioneer2 far at left
     show mi normal pioneer far at right
     with dissolve
-    "Алисе в жертвы досталась Мику, и я на секунду пожалел несчастную японскую девочку."
-    "То, каким азартом горели глаза Алисы, говорило лишь об одном — хищница настроена на победу и ни на что иное!"
+    "Alisa got Miku as her prey, and I felt sorry for the poor Japanese girl for a moment."
+    "The way Alisa's eyes burned with excitement told me only one thing - that the predator was determined to win and nothing else!"
     if alt_day2_dv_ultim == 1:
         show dv laugh pioneer2 far with dspr
         pause(0.3)
         show dv smile pioneer2 far with dspr
-        "Поймав мой взгляд, Алиса подмигнула, напоминая о пари, и я ответно кивнул."
+        "Catching my gaze, Alisa winked, reminding me of the bet, and I nodded back."
     elif alt_day2_dv_ultim == 2:
         show dv sad pioneer2 far with dspr
-        "Встретившись со мной глазами, она почему-то вздрогнула и{nw}"
+        "When she met my eyes, for some reason she flinched and{nw}"
         hide dv with dissolve
-        extend " мгновенно отвернулась."
-        "Кажется, сценка у дверей произвела на неё неизгладимое впечатление!"
+        extend " immediately looked away."
+        "The scene at the door seems to have made a lasting impression on her!"
     else:
-        "Меня она не удостоила даже взглядом."
+        "She didn't even look at me."
     hide dv
     hide mi
     with dissolve
 
     show un normal pioneer far with dissolve
-    "Пустовало одно место — напротив Лены. Кажется, мне предстоит играть с ней."
-    "Всё остальное пространство было занято болельщиками и зрителями."
+    "There was an empty seat across from Lena. It looks like I have to play with her."
+    "The rest of the space was occupied by fans and spectators."
     show un smile pioneer with dspr
-    me "Привет ещё раз."
-    "Я опустился на стул напротив."
-    me "Кажется, нам предстоит выступить друг против друга."
+    me "Hello again."
+    "I sank into the chair across from her."
+    me "Looks like we're going up against each other."
     show un shy pioneer with dissolve
-    un "Да…"
-    "От внимания зрителей она явно чувствовала себя не в своей тарелке."
-    me "Значит, удачи нам обоим."
-    "На секундочку вдруг захотелось сдать партию, чтобы немного приободрить эту грустную девочку. Надо же иногда делать и добрые дела, не так ли?"
+    un "Yes..."
+    "The attention of the audience clearly made her feel out of place."
+    me "So good luck to both of us."
+    "For a second I suddenly felt like giving up the game to cheer up that sad girl a little. You have to do good deeds sometimes, don't you?"
     hide un with dissolve
 
     $ persistent.sprite_time = "day"
@@ -86,31 +86,31 @@ label alt_day2_cards_tournament:
         renpy.transition(dissolve)
 # ------------------------------------------------------------- /ADD
     show el smile pioneer at right with dissolve
-    "Закончив считать карты, Электроник повернулся в нашу сторону и с нездоровым даже для него оживлением обратился к нам:"
-    el "Карты у нас есть, все на местах. Начинаем турнир!"
+    "Finished counting the cards, Electronik turned in our direction and turned to us with an unhealthy animation, even for him:"
+    el "We have the cards, everyone is in place. Let the tournament begin!"
     show el normal pioneer with dspr
-    me "Погоди, торопыга."
-    "Проворчал я."
-    me "Как насчёт правил? Или мы в техасский холдем поиграть присели?"
+    me "Hold the horses, speedster."
+    "I grumbled."
+    me "What about the rules? Or are we playing Texas Hold'em?"
     show el surprise pioneer with dspr
-    el "Ой, правила. Точно."
+    el "Oh, the rules. Right."
     show el normal pioneer with dspr
-    "Электроник взял маркер, которым чертил схемы игры, и погрузился в размышления, машинально покусывая колпачок."
+    "Electronik took the marker with which he had been drawing the game diagrams, and plunged into thought, biting the cap mechanically."
     show el serious pioneer with dspr
-    el "Так вот."
-    "Он показал на схему."
+    el "So."
+    "He pointed to the diagram."
 # ------------------------------------------------------------- ADD Показываем схему турнира на фоне зала
     python:
         renpy.show('alt_tournament_bg',layer='underlay')
         renpy.transition(dissolve)
 # ------------------------------------------------------------- /ADD
-    el "Это схема турнира, и…"
+    el "This is the tournament scheme, and…"
     show dv angry pioneer2 at left
     show el normal pioneer at cright
     with dissolve
-    dv "Да уж не тупые. Поняли, что проигравший выбывает."
-    "Перебила его Алиса."
-    dv "О правилах игры давай."
+    dv "We're not dumb. We know the loser is out."
+    "Alisa interrupted him."
+    dv "About the rules of the game, come on."
     hide dv
     show el sad pioneer at center
     with dissolve
@@ -119,56 +119,56 @@ label alt_day2_cards_tournament:
         renpy.hide('alt_tournament_bg',layer='underlay')
         renpy.transition(dissolve)
 # ------------------------------------------------------------- /ADD
-    el "Ладно."
-    "Смутившийся было Электроник мгновенно набрал привычный темп."
+    el "Okay."
+    "The embarrassed Electronik instantly picked up his usual pace."
     show el smile pioneer at center with dspr
-    el "Основное правило — проигравший выбывает. Поэтому никаких вторых шансов, переигровок, реваншей и прочего!"
-    "Он отмахнулся от тянущей руку Ульянки, и продолжил."
-    el "Каждый тур состоит из двух игр, если и после них у игроков будет ничья, исход решит третья партия. После этого проигравшие в туре выбывают, и начинается сле…"
-    me "Я тебя умоляю."
-    "Не выдержал я."
-    me "Хватит уж о системе плей-офф! Мы все прекрасно знаем, как она работает! Давай о правилах игры!"
-    el "Я уже почти перешёл к ним."
-    "Выкрутился Электроник."
-    el "Поскольку добровольцев…"
-    "Он кинул взгляд в мою сторону и мгновенно поправился."
-    el "Участников будет восемь, то туров, будет, соответственно, три."
+    el "The basic rule is that the loser is eliminated. So no second chances, re-matchings, or anything else!"
+    "He waved off the reaching hand of Ulyanka, and continued."
+    el "Each round consists of two games, if even after them the players have a draw, the outcome will be decided by the third game. After that, the losers of the round are eliminated, and the next..."
+    me "I'm begging you."
+    "I couldn't take it."
+    me "Enough about the playoff system! We all know how it works! Let's talk about the rules of the game!"
+    el "I'm almost there."
+    "Electronik's got it."
+    el "Since the volunteers..."
+    "He threw a glance in my direction and instantly corrected himself."
+    el "There will be eight contestants, so there will be three rounds."
     show el laugh pioneer with dspr
-    "Тут у него загорелась во лбу звезда, и он поднял указательный палец."
-    el "Победитель последнего тура получит огромный приз!"
+    "Then the star in his forehead lit up, and he held up his index finger."
+    el "The winner of the last round gets a huge prize!"
     show dv angry pioneer2 at left
     show el surprise pioneer at cright
-    $ meet('we',"Семён | Алиса")
-    we "К игре!" with vpunch
-    $ meet('we',"Хором")
-    "Хором с Алисой рявкнули мы."
-    el "Да я уже почти там. Чего вы, в самом деле!"
-    "Он спрятал растерянность, делая вид, что прочищает горло."
+    $ meet('we',"Semyon | Alisa")
+    we "Tell us the rules already!" with vpunch
+    $ meet('we',"Chorus")
+    "We barked together with Alisa."
+    el "I'm almost there. Why, really!"
+    "He hid his confusion, pretending to clear his throat."
     hide dv
     show el normal pioneer at center
     with dissolve
-    el "Итак, все комбинации покерные, вы должны собрать у себя комбинацию сильнее, чем у противника. Двойку, тройку, четвёрку…"
+    el "So, all the combinations are from poker, you have to collect a combination stronger than your opponent's. Two, three, four..."
     show us grin pioneer at cleft
     show el normal pioneer at cright
     with dissolve
-    us "Пятёрку!"
-    "Крикнула Ульяна, видимо, уставшая от того, что её игнорируют."
-    el "Если кто-то не в курсе относительно ценности комбинаций."
-    "Проигнорировал реплику Эл."
+    us "Five!"
+    "Shouted Ulyana, apparently tired of being ignored."
+    el "In case anyone isn't aware of the value of the combinations."
+    "Electronik ignored her retort."
     hide us
     show el normal pioneer at center
     with dissolve
-    el "Их можно посмотреть на таблице."
-    "И он показал на другую половину бумажного листа."
+    el "You can see them on the table."
+    "And he pointed to the other half of the paper sheet."
 # ----------------------------------------------------------------------------------- ADD Показываем правила игры
     if persistent.altRulesRead_new:                            # если правила игры уже прочитаны
         menu:
-            "Показать комбинации":
+            "Show combinations":
                 jump alt_day2_poker_rules_reading
-            "Комбинации вроде бы помню, но нужна подсказка при игре":
+            "I know combinations, but wouldn't mind a hint":
                 $ alt_hint_poker_contractual = True
                 jump alt_day2_poker_rules_known
-            "Я комбинации знаю, и подсказки не нужны":
+            "I know combinations, no hints required":
                 $ alt_hint_poker_contractual = False
                 jump alt_day2_poker_rules_known
     else:                                                       # если ещё правил не читали — читаем.
@@ -177,148 +177,148 @@ label alt_day2_cards_tournament:
 label alt_day2_poker_rules_reading:
     $ alt_hint_poker_contractual = True
     $ set_mode_nvl()
-    "{size=35}{u}Возможные комбинации карт в порядке увеличения достоинства:{/u}{/size}{nw}"
+    "{size=35}{u}Possible card combinations in order of increasing value:{/u}{/size}{nw}"
     ""
 
-    "- {b}Старшая карта{/b} (англ. {i}high card{i}): ни одна из вышеописанных комбинаций,{nw}"
+    "- {b}High card{/b}: no combination,{nw}"
     if persistent.font_size == 'small':
-        "например: {b}{color=#FF6600}Т{image=suit_2ch_S} 10{image=suit_2ch_S}{color=#009833} 9{image=suit_utan_S} 5{image=suit_uvao_S} 4{image=suit_uvao_S}{/color}{color=#FF6600} 2{image=suit_ussr_S}{/color}{/color}{/b}."
+        "for example: {b}{color=#FF6600}Т{image=suit_2ch_S} 10{image=suit_2ch_S}{color=#009833} 9{image=suit_utan_S} 5{image=suit_uvao_S} 4{image=suit_uvao_S}{/color}{color=#FF6600} 2{image=suit_ussr_S}{/color}{/color}{/b}."
     elif persistent.font_size == 'large':
-        "например: {b}{color=#FF6600}Т{image=suit_2ch_L} 10{image=suit_2ch_L}{color=#009833} 9{image=suit_utan_L} 5{image=suit_uvao_L} 4{image=suit_uvao_L}{/color}{color=#FF6600} 2{image=suit_ussr_L}{/color}{/color}{/b}."
-    "Вышеприведённая комбинация называется «старший туз»."
-    "Если у соперников на руках оказывается по старшей карте,{nw}"
-    "победитель определяется по старшей из имеющихся на руках карт."
-    "Если старшие карты у игроков равны, объявляется ничья.{nw}"
+        "for example: {b}{color=#FF6600}Т{image=suit_2ch_L} 10{image=suit_2ch_L}{color=#009833} 9{image=suit_utan_L} 5{image=suit_uvao_L} 4{image=suit_uvao_L}{/color}{color=#FF6600} 2{image=suit_ussr_L}{/color}{/color}{/b}."
+    "The above combination is called «ace high»."
+    "If the opponents each have a high card,{nw}"
+    "the winner is determined by the highest card in hand."
+    "If the players' high cards are equal, a draw is declared.{nw}"
     ""
 
     if persistent.font_size == 'small':
-        "- {b}Пара{/b}/Двойка (англ. {i}one pair{/i}): две карты одного достоинства, например: {b}{color=#FF6600}9{image=suit_ussr_S}{color=#009833} 9{image=suit_utan_S}{/color}{/b}."
+        "- {b}Pair{/b}: two of the same card: {b}{color=#FF6600}9{image=suit_ussr_S}{color=#009833} 9{image=suit_utan_S}{/color}{/b}."
     elif persistent.font_size == 'large':
-        "- {b}Пара{/b}/Двойка (англ. {i}one pair{/i}): две карты одного достоинства, например: {b}{color=#FF6600}9{image=suit_ussr_L}{color=#009833} 9{image=suit_utan_L}{/color}{/b}."
-    "При наличии этой комбинации у двух игроков, преимущество у того, у кого выше{nw}"
-    "достоинство карт, составляющих пару. Если пары идентичны, объявляется ничья.{nw}"
-    ""
-
-    pause(1)
-    nvl clear
-
-    if persistent.font_size == 'small':
-        "- {b}Две пары{/b}/Две двойки/Два плюс два (англ. {i}two pairs{/i}): две пары карт, например: {b}{color=#009833}8{image=suit_uvao_S} 8{image=suit_utan_S} {color=#FF6600}4{image=suit_ussr_S} 4{image=suit_2ch_S}{/color}{/b}."
-    elif persistent.font_size == 'large':
-        "- {b}Две пары{/b}/Две двойки/Два плюс два (англ. {i}two pairs{/i}): две пары карт, например: {b}{color=#009833}8{image=suit_uvao_L} 8{image=suit_utan_L} {color=#FF6600}4{image=suit_ussr_L} 4{image=suit_2ch_L}{/color}{/b}."
-    "Если на руках {b}три{/b} пары, пара карт самого младшего достоинства не учитывается,{nw}"
-    "{i}комбинации «Три пары» в игре нет{/i}."
-    "Когда у двух игроков на руках окажутся по две пары, старшей является та,{nw}"
-    "в которую входят две наиболее высокие по достоинству карты."
-    "В случае, когда старшие пары карт оказываются идентичными, старшинство{nw}"
-    "комбинации в целом определяется по младшей паре карт."
-    "Победителем будет считаться игрок, у которого младшая пара состоит из старших карт.{nw}"
-    "Если у обоих игроков комбинации по достоинству карт полностью идентичны, объявляется ничья.{nw}"
-    ""
-
-    "- {b}Тройка{/b}/Сет/Триплет/Трипс (англ. {i}three of a kind, set{/i} — «три одинаковых», «набор»):{nw}"
-    if persistent.font_size == 'small':
-        "три карты одного достоинства, например: {b}{color=#009833}7{image=suit_uvao_S} 7{image=suit_utan_S} {color=#FF6600}7{image=suit_2ch_S}{/color}{/b}."
-    elif persistent.font_size == 'large':
-        "три карты одного достоинства, например: {b}{color=#009833}7{image=suit_uvao_L} 7{image=suit_utan_L} {color=#FF6600}7{image=suit_2ch_L}{/color}{/b}."
-    "Когда у двух соперников на руках одновременно окажутся тройки, победителем объявляется{nw}"
-    "тот игрок, у которого тройку составляют карты более высокого достоинства."
-    "Идентичных троек, как и покеров, и фулл-хаусов, в игре быть не может.{nw}"
+        "- {b}Pair{/b}): two of the same card, example: {b}{color=#FF6600}9{image=suit_ussr_L}{color=#009833} 9{image=suit_utan_L}{/color}{/b}."
+    "If two players have this combination, the one with the higher{nw}"
+    "the value of the cards that make up the pair has the advantage. If the pairs are identical, a draw is declared.{nw}"
     ""
 
     pause(1)
     nvl clear
 
-    "- {b}Стрит{/b} (англ. {i}straight{/i} — «порядок»): пять карт по порядку любых мастей,{nw}"
     if persistent.font_size == 'small':
-        "например: {b}{color=#FF6600}5{image=suit_2ch_S} 4{image=suit_ussr_S} {color=#009833}3{image=suit_utan_S} {color=#FF6600}2{image=suit_2ch_S} Т{image=suit_2ch_S}{/color}{/color}{/b}."
+        "- {b}Two pairs{/b}: two pairs, example: {b}{color=#009833}8{image=suit_uvao_S} 8{image=suit_utan_S} {color=#FF6600}4{image=suit_ussr_S} 4{image=suit_2ch_S}{/color}{/b}."
     elif persistent.font_size == 'large':
-        "например: {b}{color=#FF6600}5{image=suit_2ch_L} 4{image=suit_ussr_L} {color=#009833}3{image=suit_utan_L} {color=#FF6600}2{image=suit_2ch_L} Т{image=suit_2ch_L}{/color}{/color}{/b}."
-    "Если на руках оказывается {b}шесть{/b} карт по порядку, младшая карта в комбинации не участвует.{nw}"
-    "Туз может как начинать порядок, так и заканчивать его."
-    if persistent.font_size == 'small':
-        "В приведённом выше примере {b}{color=#FF6600}Т{image=suit_2ch_S}{/color}{/b} заканчивает комбинацию и его достоинство{nw}"
-        "оценивается в единицу, а {b}{color=#FF6600}5{image=suit_2ch_S}{/color}{/b} считается старшей картой."
-        "Вышеприведённая комбинация является самым младшим стритом; самый старший стрит —{nw}"
-        "это стрит от туза: {b}{color=#FF6600}Т{image=suit_ussr_S} {color=#009833}К{image=suit_uvao_S} {color=#FF6600}Д{image=suit_2ch_S} В{image=suit_2ch_S} 10{image=suit_ussr_S}{/color}{/color}{/b}."
-    elif persistent.font_size == 'large':
-        "В приведённом выше примере {b}{color=#FF6600}Т{image=suit_2ch_L}{/color}{/b} заканчивает комбинацию и его достоинство{nw}"
-        "оценивается в единицу, а {b}{color=#FF6600}5{image=suit_2ch_L}{/color}{/b} считается старшей картой."
-        "Вышеприведённая комбинация является самым младшим стритом; самый старший стрит —{nw}"
-        "это стрит от туза: {b}{color=#FF6600}Т{image=suit_ussr_L} {color=#009833}К{image=suit_uvao_L} {color=#FF6600}Д{image=suit_2ch_L} В{image=suit_2ch_L} 10{image=suit_ussr_L}{/color}{/color}{/b}."
-    "При одновременном наличии стритов у двух игроков победитель определяется по старшей{nw}"
-    "карте комбинации; если и старшие карты окажутся одинаковыми — объявляется ничья.{nw}"
+        "- {b}Two pairs{/b}: two pairs, example: {b}{color=#009833}8{image=suit_uvao_L} 8{image=suit_utan_L} {color=#FF6600}4{image=suit_ussr_L} 4{image=suit_2ch_L}{/color}{/b}."
+    "If there are {b} three{/b} pairs in hand, the pair of cards of the lowest value does not count,{nw}"
+    "{i}There are no «Three pair» combinations in the game{/i}."
+    "When two players have two pairs in their hands, the senior pair is the one that,{nw}"
+    "which includes the two highest-ranking cards."
+    "In the case when the highest pairs of cards are identical, the seniority{nw}"
+    "of the combination as a whole is determined by the lowest pair of cards."
+    "The winner will be the player whose lowest pair consists of the highest cards.{nw}"
+    "If both players have completely identical card combinations by value, a draw is declared.{nw}"
     ""
 
+    "- {b}Three of a kind{/b}/Set/Triplet:{nw}"
     if persistent.font_size == 'small':
-        "- {b}Флеш{/b} (англ. {i}flush{/i} — «масть»): пять карт одной масти, например: {b}{color=#009833}К{image=suit_utan_S} В{image=suit_utan_S} 8{image=suit_utan_S} 4{image=suit_utan_S} 3{image=suit_utan_S}{/b}.{nw}"
+        "three cards of the same value, example: {b}{color=#009833}7{image=suit_uvao_S} 7{image=suit_utan_S} {color=#FF6600}7{image=suit_2ch_S}{/color}{/b}."
     elif persistent.font_size == 'large':
-        "- {b}Флеш{/b} (англ. {i}flush{/i} — «масть»): пять карт одной масти, например: {b}{color=#009833}К{image=suit_utan_L} В{image=suit_utan_L} 8{image=suit_utan_L} 4{image=suit_utan_L} 3{image=suit_utan_L}{/b}.{nw}"
-    "Такую комбинацию для оценки называют «флеш от короля» — старшей карты комбинации."
-    "Самая старшая комбинация — с тузом.{nw}"
-    "Если на руках оказывается {b}шесть{/b} карт одной масти, младшая карта комбинации игнорируется."
-    "Если у обоих соперников на руках будет такая комбинация, преимущество отдаётся тому,{nw}"
-    "у кого старшая карта в комбинации окажется более высокого достоинства."
-    "Если же получится так, что достоинство старших карт одинаково, объявляется ничья.{nw}"
+        "three cards of the same value, example: {b}{color=#009833}7{image=suit_uvao_L} 7{image=suit_utan_L} {color=#FF6600}7{image=suit_2ch_L}{/color}{/b}."
+    "When two opponents simultaneously have triplets, the winner is{nw}"
+    "the player who has a three of cards of higher value."
+    "Identical threes, as well as pokers and full houses, cannot be in the game.{nw}"
     ""
 
     pause(1)
     nvl clear
 
-    "- {b}Фулл-хаус{/b}/Полный дом/Три плюс два (англ. {i}full house, full boat{/i} — «полный дом», «полная лодка»):{nw}"
+    "- {b}Straight{/b}: five cards of any suit in order,{nw}"
     if persistent.font_size == 'small':
-        "одна тройка и одна пара, например: {b}{color=#FF6600}10{image=suit_ussr_S} 10{image=suit_2ch_S} {color=#009833}10{image=suit_utan_S} 8{image=suit_uvao_S} {color=#FF6600}8{image=suit_ussr_S}{/color}{/color}{/b}{/b}."
+        "example: {b}{color=#FF6600}5{image=suit_2ch_S} 4{image=suit_ussr_S} {color=#009833}3{image=suit_utan_S} {color=#FF6600}2{image=suit_2ch_S} Т{image=suit_2ch_S}{/color}{/color}{/b}."
     elif persistent.font_size == 'large':
-        "одна тройка и одна пара, например: {b}{color=#FF6600}10{image=suit_ussr_L} 10{image=suit_2ch_L} {color=#009833}10{image=suit_utan_L} 8{image=suit_uvao_L} {color=#FF6600}8{image=suit_ussr_L}{/color}{/color}{/b}{/b}."
-    "Если на руках две тройки, тройка карт младшего достоинства считается, как пара карт;{nw}"
-    "{i}комбинации «Две тройки» в игре нет{/i}."
-    "Если у соперников одновременно оказались на руках такие комбинации,{nw}"
-    "старшей считается та, в которой тройку составляют более высокие по достоинству карты,"
+        "example: {b}{color=#FF6600}5{image=suit_2ch_L} 4{image=suit_ussr_L} {color=#009833}3{image=suit_utan_L} {color=#FF6600}2{image=suit_2ch_L} Т{image=suit_2ch_L}{/color}{/color}{/b}."
+    "If there are {b}six{/b} cards in order, the lowest card does not participate in the combination.{nw}"
+    "Ace can both start and end the combination."
     if persistent.font_size == 'small':
-        "например: {b}{color=#009833}В{image=suit_uvao_S} {color=#FF6600}В{image=suit_2ch_S} В{image=suit_ussr_S} {color=#009833}9{image=suit_uvao_S} 9{image=suit_utan_S}{/color}{/color}{/b}{/b} старше, чем {b}{color=#FF6600}7{image=suit_2ch_S} 7{image=suit_ussr_S} {color=#009833}7{image=suit_utan_S} Т{image=suit_uvao_S} {color=#FF6600}Т{image=suit_2ch_S}{/color}{/color}{/b}."
+        "In the above example {b}{color=#FF6600}Т{image=suit_2ch_S}{/color}{/b} finishes the combination and is{nw}"
+        "valued at 1, and {b}{color=#FF6600}5{image=suit_2ch_S}{/color}{/b} is considered the high card."
+        "The above combination is the smallest straight; the biggest straight —{nw}"
+        "is a straight from ace: {b}{color=#FF6600}Т{image=suit_ussr_S} {color=#009833}К{image=suit_uvao_S} {color=#FF6600}Д{image=suit_2ch_S} В{image=suit_2ch_S} 10{image=suit_ussr_S}{/color}{/color}{/b}."
     elif persistent.font_size == 'large':
-        "например: {b}{color=#009833}В{image=suit_uvao_L} {color=#FF6600}В{image=suit_2ch_L} В{image=suit_ussr_L} {color=#009833}9{image=suit_uvao_L} 9{image=suit_utan_L}{/color}{/color}{/b}{/b} старше, чем {b}{color=#FF6600}7{image=suit_2ch_L} 7{image=suit_ussr_L} {color=#009833}7{image=suit_utan_L} Т{image=suit_uvao_L} {color=#FF6600}Т{image=suit_2ch_L}{/color}{/color}{/b}."
-    "Два фулл-хауса, как и два покера, одинаковыми быть не могут (джокеров в колоде нет).{nw}"
+        "In the above example {b}{color=#FF6600}Т{image=suit_2ch_L}{/color}{/b} finishes the combination and is{nw}"
+        "valued at 1, and {b}{color=#FF6600}5{image=suit_2ch_L}{/color}{/b} is considered the high card."
+        "The above combination is the smallest straight; the biggest straight —{nw}"
+        "is a straight from ace: {b}{color=#FF6600}Т{image=suit_ussr_L} {color=#009833}К{image=suit_uvao_L} {color=#FF6600}Д{image=suit_2ch_L} В{image=suit_2ch_L} 10{image=suit_ussr_L}{/color}{/color}{/b}."
+    "If two players have simultaneous strings, the winner is determined by the highest{nw}"
+    "card in the combination; if the high cards are the same - a draw is declared.{nw}"
     ""
 
-    "- {b}Покер{/b}/Каре/Четвёрка (англ. {i}four of a kind, quads{/i} — «четыре одинаковых»): четыре карты{nw}"
     if persistent.font_size == 'small':
-        "одинакового достоинства, например: {b}{color=#FF6600}8{image=suit_ussr_S} 8{image=suit_2ch_S} {color=#009833}8{image=suit_uvao_S} 8{image=suit_utan_S}{/color}{/b}{/b}, остальные карты не важны."
+        "- {b}Flush{/b}: five cards of the same suit, example: {b}{color=#009833}К{image=suit_utan_S} В{image=suit_utan_S} 8{image=suit_utan_S} 4{image=suit_utan_S} 3{image=suit_utan_S}{/b}.{nw}"
     elif persistent.font_size == 'large':
-        "одинакового достоинства, например: {b}{color=#FF6600}8{image=suit_ussr_L} 8{image=suit_2ch_L} {color=#009833}8{image=suit_uvao_L} 8{image=suit_utan_L}{/color}{/b}{/b}, остальные карты не важны."
-    "Если в дополнение к покеру на руках у игрока имеется ещё и пара, она не считается;{nw}"
-    "{i}комбинации «Четыре + два» в игре нет{/i}."
-    "Два покера принципиально не могут быть одинаковыми, так что когда у двух игроков в наличии{nw}"
-    "такие комбинации, побеждает тот, у кого покер состоит из карт более высокого достоинства.{nw}"
+        "- {b}Flush{/b}: five cards of the same suit, example: {b}{color=#009833}К{image=suit_utan_L} В{image=suit_utan_L} 8{image=suit_utan_L} 4{image=suit_utan_L} 3{image=suit_utan_L}{/b}.{nw}"
+    "Such a combination for evaluation is called «flush from king» — highest card in the combination."
+    "The highest combination is with an ace.{nw}"
+    "If there are {b}six{/b} cards of the same suit, the lowest card of the combination is ignored."
+    "If both opponents have this combination in their hands, the advantage goes to,{nw}"
+    "who has the highest card in the combination is higher in value."
+    "If it turns out that the value of the high cards is the same, a draw is declared.{nw}"
     ""
 
     pause(1)
     nvl clear
 
-    "- {b}Стрит-флеш{/b} (англ. {i}straight flush{/i} — «масть по порядку»): любые пять карт одной масти по порядку,{nw}"
+    "- {b}Full house{/b}:{nw}"
     if persistent.font_size == 'small':
-        "например: {b}{color=#009833}9{image=suit_utan_S} 8{image=suit_utan_S} 7{image=suit_utan_S} 6{image=suit_utan_S} 5{image=suit_utan_S}{/color}{/b}. Туз может как начинать порядок (роял-флеш),{nw}"
-        "так и заканчивать его: {b}{color=#009833}5{image=suit_uvao_S} 4{image=suit_uvao_S} 3{image=suit_uvao_S} 2{image=suit_uvao_S} Т{image=suit_uvao_S}{/color}{/b}."
-        "Комбинации карт {b}{color=#FF6600}2{image=suit_ussr_S} Т{image=suit_ussr_S} К{image=suit_ussr_S} Д{image=suit_ussr_S} В{image=suit_ussr_S}{/color}{/b} или {b}{color=#FF6600}4{image=suit_2ch_S} 3{image=suit_2ch_S} 2{image=suit_2ch_S} Т{image=suit_2ch_S} К{image=suit_2ch_S}{/color}{/b} — не являются стрит-флешами.{nw}"
+        "one triplet and one pair, example: {b}{color=#FF6600}10{image=suit_ussr_S} 10{image=suit_2ch_S} {color=#009833}10{image=suit_utan_S} 8{image=suit_uvao_S} {color=#FF6600}8{image=suit_ussr_S}{/color}{/color}{/b}{/b}."
     elif persistent.font_size == 'large':
-        "например: {b}{color=#009833}9{image=suit_utan_L} 8{image=suit_utan_L} 7{image=suit_utan_L} 6{image=suit_utan_L} 5{image=suit_utan_L}{/color}{/b}. Туз может как начинать порядок (роял-флеш),{nw}"
-        "так и заканчивать его: {b}{color=#009833}5{image=suit_uvao_L} 4{image=suit_uvao_L} 3{image=suit_uvao_L} 2{image=suit_uvao_L} Т{image=suit_uvao_L}{/color}{/b}."
-        "Комбинации карт {b}{color=#FF6600}2{image=suit_ussr_L} Т{image=suit_ussr_L} К{image=suit_ussr_L} Д{image=suit_ussr_L} В{image=suit_ussr_L}{/color}{/b} или {b}{color=#FF6600}4{image=suit_2ch_L} 3{image=suit_2ch_L} 2{image=suit_2ch_L} Т{image=suit_2ch_L} К{image=suit_2ch_L}{/color}{/b} — не являются стрит-флешами.{nw}"
-    "Если на руках у игрока оказывается {b}шесть{/b} карт по порядку, младшая карта игнорируется."
-    "Если у двух игроков одновременно на руках оказывается стрит-флеш, выигрывает тот,{nw}"
-    "у кого комбинация начинается с карты более высокого достоинства."
-    "Если у обоих игроков стрит-флеши идентичные, объявляется ничья.{nw}"
+        "one triplet and one pair, example: {b}{color=#FF6600}10{image=suit_ussr_L} 10{image=suit_2ch_L} {color=#009833}10{image=suit_utan_L} 8{image=suit_uvao_L} {color=#FF6600}8{image=suit_ussr_L}{/color}{/color}{/b}{/b}."
+    "If there are two threes in hand, the three of the lowest ranking card counts as a pair of cards;{nw}"
+    "{i}there is no combination of «Two triplets» in the game{/i}."
+    "If the opponents have the following combinations in their hands at the same time,{nw}"
+    "the better is the one in which the three cards are higher in value,"
+    if persistent.font_size == 'small':
+        "example: {b}{color=#009833}В{image=suit_uvao_S} {color=#FF6600}В{image=suit_2ch_S} В{image=suit_ussr_S} {color=#009833}9{image=suit_uvao_S} 9{image=suit_utan_S}{/color}{/color}{/b}{/b} bigger than {b}{color=#FF6600}7{image=suit_2ch_S} 7{image=suit_ussr_S} {color=#009833}7{image=suit_utan_S} Т{image=suit_uvao_S} {color=#FF6600}Т{image=suit_2ch_S}{/color}{/color}{/b}."
+    elif persistent.font_size == 'large':
+        "example: {b}{color=#009833}В{image=suit_uvao_L} {color=#FF6600}В{image=suit_2ch_L} В{image=suit_ussr_L} {color=#009833}9{image=suit_uvao_L} 9{image=suit_utan_L}{/color}{/color}{/b}{/b} bigger than {b}{color=#FF6600}7{image=suit_2ch_L} 7{image=suit_ussr_L} {color=#009833}7{image=suit_utan_L} Т{image=suit_uvao_L} {color=#FF6600}Т{image=suit_2ch_L}{/color}{/color}{/b}."
+    "Two full houses, like two quads, cannot be the same (there are no jokers in the deck).{nw}"
     ""
 
-    "- {b}Роял-флеш{/b} (англ. {i}royal flush{/i} — «королевская масть»): не является отдельной комбинацией,{nw}"
-    "а является частным случаем стрит-флеша, старшим из всех возможных, и состоит из 5 старших{nw}"
+    "- {b}Four of a kind{/b}Quad: four cards{nw}"
     if persistent.font_size == 'small':
-        "(туз, король, дама, валет, десять) карт одной масти, например: {b}{color=#FF6600}Т{image=suit_ussr_S} К{image=suit_ussr_S} Д{image=suit_ussr_S} В{image=suit_ussr_S} 10{image=suit_ussr_S}{/color}{/b}."
+        "of equal value, example: {b}{color=#FF6600}8{image=suit_ussr_S} 8{image=suit_2ch_S} {color=#009833}8{image=suit_uvao_S} 8{image=suit_utan_S}{/color}{/b}{/b}, rest of the cards don't matter."
     elif persistent.font_size == 'large':
-        "(туз, король, дама, валет, десять) карт одной масти, например: {b}{color=#FF6600}Т{image=suit_ussr_L} К{image=suit_ussr_L} Д{image=suit_ussr_L} В{image=suit_ussr_L} 10{image=suit_ussr_L}{/color}{/b}."
-    "Если хотя бы одна из пяти карт не совпадает по масти с остальными, в таком случае получившаяся{nw}"
-    "комбинация будет расцениваться как стрит от туза."
-    "Эта комбинация выпадает достаточно редко; может быть, кому-то и повезёт…{nw}"
+        "of equal value, example: {b}{color=#FF6600}8{image=suit_ussr_L} 8{image=suit_2ch_L} {color=#009833}8{image=suit_uvao_L} 8{image=suit_utan_L}{/color}{/b}{/b}, rest of the cards don't matter."
+    "If, in addition to the quad, the player also has a pair, it does not count;{nw}"
+    "{i}there is no combination «4+2» in the game{/i}."
+    "Two quads fundamentally cannot be the same, so when two players have{nw}"
+    "such combinations, the winner is the one with the four of a kind of higher value.{nw}"
+    ""
+
+    pause(1)
+    nvl clear
+
+    "- {b}Straight Flush{/b}: any five cards of the same suit in order,{nw}"
+    if persistent.font_size == 'small':
+        "example: {b}{color=#009833}9{image=suit_utan_S} 8{image=suit_utan_S} 7{image=suit_utan_S} 6{image=suit_utan_S} 5{image=suit_utan_S}{/color}{/b}. Ace can both start the combination (royal flush),{nw}"
+        "and finish it: {b}{color=#009833}5{image=suit_uvao_S} 4{image=suit_uvao_S} 3{image=suit_uvao_S} 2{image=suit_uvao_S} Т{image=suit_uvao_S}{/color}{/b}."
+        "Card combinations of {b}{color=#FF6600}2{image=suit_ussr_S} Т{image=suit_ussr_S} К{image=suit_ussr_S} Д{image=suit_ussr_S} В{image=suit_ussr_S}{/color}{/b} or {b}{color=#FF6600}4{image=suit_2ch_S} 3{image=suit_2ch_S} 2{image=suit_2ch_S} Т{image=suit_2ch_S} К{image=suit_2ch_S}{/color}{/b} — are not straight flushes.{nw}"
+    elif persistent.font_size == 'large':
+        "example: {b}{color=#009833}9{image=suit_utan_L} 8{image=suit_utan_L} 7{image=suit_utan_L} 6{image=suit_utan_L} 5{image=suit_utan_L}{/color}{/b}. Ace can both start the combination (royal flush),{nw}"
+        "and finish it: {b}{color=#009833}5{image=suit_uvao_L} 4{image=suit_uvao_L} 3{image=suit_uvao_L} 2{image=suit_uvao_L} Т{image=suit_uvao_L}{/color}{/b}."
+        "Card combinations of {b}{color=#FF6600}2{image=suit_ussr_L} Т{image=suit_ussr_L} К{image=suit_ussr_L} Д{image=suit_ussr_L} В{image=suit_ussr_L}{/color}{/b} or {b}{color=#FF6600}4{image=suit_2ch_L} 3{image=suit_2ch_L} 2{image=suit_2ch_L} Т{image=suit_2ch_L} К{image=suit_2ch_L}{/color}{/b} — are not straight flushes.{nw}"
+    "If a player has {b}six{/b} cards in order, the lowest card is ignored."
+    "If two players hold a straight flush at the same time, the winner is the one,{nw}"
+    "whose combination begins with a higher value card."
+    "If both players have identical straight flushes, a draw is declared.{nw}"
+    ""
+
+    "- {b}Royal flush{/b}: is not a separate combination,{nw}"
+    "but is a special case of straight flush, the highest of all possible, and consists of 5 senior{nw}"
+    if persistent.font_size == 'small':
+        "(ace, king, queen, jack, ten) cards of the same suit, example: {b}{color=#FF6600}Т{image=suit_ussr_S} К{image=suit_ussr_S} Д{image=suit_ussr_S} В{image=suit_ussr_S} 10{image=suit_ussr_S}{/color}{/b}."
+    elif persistent.font_size == 'large':
+        "(ace, king, queen, jack, ten) cards of the same suit, example: {b}{color=#FF6600}Т{image=suit_ussr_L} К{image=suit_ussr_L} Д{image=suit_ussr_L} В{image=suit_ussr_L} 10{image=suit_ussr_L}{/color}{/b}."
+    "If at least one of the five cards is not the same suit as the others, then the resulting{nw}"
+    "the combination will be considered a straight from the ace."
+    "This combination comes out quite rarely; maybe someone will get lucky…{nw}"
     ""
 
     pause(1)
@@ -327,16 +327,16 @@ label alt_day2_poker_rules_reading:
 
 label alt_day2_poker_rules_known:
 # ----------------------------------------------------------------------------------- /ADD
-    el "Ну а сейчас для лучшего усвоения материала, давайте сыграем пробную партию."
-    el "На сторону сдаётся по шесть карт…"
+    el "Now, to learn the material better, let's play a test game."
+    el "Six cards per side..."
     show us dontlike pioneer at left
     show el angry pioneer at right
     with dissolve
-    extend " По шесть, а не по двенадцать!"
-    "Закричал он, кинув косой взгляд на столик Шурика и Ульяны."
-    "Немудрено — рыжая бестия забрала себе все 12 карт и разглядывала их, выбирая покрасивее."
+    extend " I said six, not twelve!"
+    "He shouted, glancing obliquely at Shurik and Ulyana's table."
+    "No wonder - the redheaded beastie had taken all twelve cards and was looking at them, picking out the prettiest ones."
     hide us with dissolve
-    "После нескольких минут споров и ругани Ульянка фыркнула и вернула карты на родину, после чего, перемешав колоду, сдала себе и Шурику по шесть карт."
+    "After a few minutes of arguing and swearing, Ulyanka snorted and returned the cards to their homeland, then, after shuffling the deck, dealt herself and Shurik six cards each."
 # --------------------------------------------------------------------- ADD Блокировка роллбэка включена
     $ d2_cardgame_block_rollback = True
 # --------------------------------------------------------------------- /ADD
@@ -345,9 +345,9 @@ label alt_day2_poker_rules_known:
 
     if persistent.altCardsDemo_new:
         menu:
-            "Пройти обучение":
+            "Do the tutorial":
                 jump alt_day2_demo_play_new
-            "Пропустить обучение":
+            "Skip the tutorial":
                 jump alt_day2_cards_continue_new
 
 label alt_day2_demo_play_new:
@@ -361,8 +361,8 @@ label alt_day2_demo_play_new:
                         (2, 'rival_select','jump'): 'alt_day2_demo_play_after_loop_new'
                     }
         generate_cards_alt('bg hall', dialogs)
-        rival = CardGameRivalWiseUsual(un_avatar_set, u"Пробная игра", 'foolplay', 5)
-        alt_name_my_rival_r = "Лены"
+        rival = CardGameRivalWiseUsual(un_avatar_set, u"Test game", 'foolplay', 5)
+        alt_name_my_rival_r = "Lena"
         VISIBLE = False
         alt_whose_first_move = 'rival'
     jump cards_gameloop_wise_alt
@@ -372,96 +372,96 @@ label alt_day2_demo_play_intro_new:
     show el normal pioneer at cleft with dissolve
     $ show_cards_alt()
     $ renpy.transition(dissolve)
-    el "Это не просто карты."
+    el "These are not just cards."
     if alt_day2_walk == 1:
-        th "Это ещё и ваш способ оставить противника без штанов."
-        th "Если бы мы играли на деньги…"
-        dreamgirl "Или на раздевание…"
-        "Впрочем, не будем о грустном."
-    el "Это ваши войска специального назначения. {w}Элита!"
-    el "Вы дорожите каждым из них, ведь его жизнь неповторима."
-    el "Потеря каждого из них критична."
-    el "А теперь переверните карты и посмотрите."
+        th "This is also your way of leaving your opponent without pants."
+        th "If we played for money..."
+        dreamgirl "Or undress..."
+        "Well, let's not talk about sad things."
+    el "These are your special forces. {w}Elite!"
+    el "You treasure each of them, for their lives are unrepeatable."
+    el "The loss of every one of them is critical."
+    el "Now turn the cards over and look."
     $ VISIBLE = True
     $ alt_hint_poker = True
     if alt_day2_walk == 1:
         $ INVISIBLE = True
     $ show_cards_alt()
     $ renpy.transition(dissolve)
-    "Чего и следовало ожидать, Ульянка перевернула карты Шурика, и задумчиво изучала их."
+    "As you might expect, Ulyanka turned over Shurik's cards and studied them thoughtfully."
     show el angry pioneer at cleft with dspr
-    el "Свои карты!"
-    "Закричал Электроник."
-    el "Свои! А не чужие."
-    us "А это была разведка! Вот!"
-    "По сравнению с непрошибаемым Шуриком, Ульяна являла собой образец неуправляемой стихии."
-    "Вздохнув, Шурик собрал свои карты и, тщательно перемешав, сдал себе ещё шестёрку карт."
+    el "Your cards!"
+    "Electronik yelled."
+    el "Yours! Not someone else's."
+    us "I was just doing recon! There!"
+    "Compared to the impenetrable Shurik, Ulyana was a model of the unruly element."
+    "With a sigh, Shurik gathered up his cards and, shuffling carefully, dealt himself another six cards."
     show el normal pioneer at cleft with dspr
-    "Между тем, Электроник продолжил объяснение:"
-    el "Итак, вы во главе элитных войск."
-    el "Но само сражение ещё впереди. А пока вам надо укрепить порядки."
-    "Окопаться, не иначе."
-    el "А для этого… Необходимо сманивать элиту противника на свою сторону!"
-    us "Сманивать в смысле «красть»?"
-    "В голосе Ульяны слышался неприкрытый восторг."
+    "Meanwhile, Electronik continued his explanation:"
+    el "So you are at the head of the elite troops."
+    el "But the battle itself is yet to come. In the meantime, you need to fortify your lines."
+    "To entrench, that's what I'm saying."
+    el "And to do that... you have to lure the enemy elite to your side!"
+    us "Lure them in as in 'steal'?"
+    "Ulyana's voice had an unconcealed enthusiasm."
     show el upset pioneer at cleft with dspr
-    el "В целом, д-да…"
-    "Ведущего немного смутил эпитет, но крыть было нечем, и он согласился."
+    el "Kind of, y-yes..."
+    "The presenter was a little embarrassed by the epithet, but there was no cover-up, so he agreed."
     show el normal pioneer at cleft with dspr
-    el "В целом. Но не всё так просто."
-    el "Первым ходом вы намечаете себе цель, и пытаетесь её сманить."
-    el "Вы не видите, кто это, поэтому здесь работает удача."
-    us "Мой дедушка — офицер!"
-    "Заявила Ульяна."
+    el "In general. But it's not that simple."
+    el "The first move you make is to set yourself a target, and try to bait it."
+    el "You don't see who it is, so luck works here."
+    us "My grandfather is an officer!"
+    "Declared Ulyana."
     show el smile pioneer at cleft with dspr
-    el "Итак, противник тянется к карте, но и вы не должны дремать!"
-    el "У вас есть две попытки запутать врага, поменяв карты местами!"
+    el "So the enemy is reaching for the card, but you mustn't doze off either!"
+    el "You have two attempts to confuse the enemy by swapping cards!"
     show el serious pioneer at cleft with dspr
-    el "Или можно не менять, если под ударом ненужная вам карта. Просто пропускаете ход, и карта отходит к атакующему."
-    el "Естественно, обороняющийся рано или поздно становится атакующим — и вот тогда может вернуть карту или забрать нужную карту у противника."
+    el "Or you may not change if a card you don't need is under attack. Just skip your turn, and the card goes to the attacker."
+    el "Naturally, the defender sooner or later becomes the attacker - and that's when he can return a card or take the card he needs from his opponent."
     show el grin pioneer at cleft with dspr
-    el "Но от слов к делу. На практике это легче понять, правда?"
-    el "Так что… Играем!"
+    el "But from words to deeds. It's easier to understand in practice, isn't it?"
+    el "So... Let's play!"
 
     hide el with dissolve
-    me "Первый ход твой…"
-    "Я, как мог, разложил карты поудобнее."
-    "И Лена, смутившись ещё больше обычного, потянулась к моим картам…"
+    me "The first move is yours..."
+    "I laid the cards out as comfortably as I could."
+    "And Lena, even more embarrassed than usual, reached for my cards..."
     return
 
 label alt_day2_demo_play_me_defend_1_new:
-    "Но тут её рука застыла на полпути."
-    un "Т-ты будешь…"
-    th "Точно! Я же должен защищать свою карту!"
-    "Я вспомнил, что там говорил Электроник…"
-    th "Чтобы попытаться запутать соперника, можно поменять карты местами — и так два раза. А можно и не менять…"
-    th "Защищать мне эту карту или нет?"
+    "But then her hand froze halfway."
+    un "Y-you'll be..."
+    th "Right! I'm supposed to protect my card!"
+    "I remembered what Electronik was saying there..."
+    th "To try to confuse your opponent, you can switch cards - and so twice. Or you don't have to swap..."
+    th "Should I protect this card or not?"
     return
 
 # ============================================ добавлена одна метка
 label alt_day2_demo_play_me_defend_2_new:
-    th "И Лена может изменить свой выбор, взяв другую карту, а может и не менять."
-    th "Понемногу всё становилось понятно!"
+    th "And Lena may or may not change her choice, taking another card."
+    th "Little by little, things were beginning to make sense!"
     return
 # ============================================ добавлена одна метка
 
 label alt_day2_demo_play_me_select_1_new:
-    me "Теперь моя очередь."
-    th "Я могу вернуть украденную карту или выбрать любую другую…"
+    me "Now it's my turn."
+    th "I can return the stolen card or choose any other..."
     if alt_day2_walk == 1:
-        th "А зная карты противника, легко выбрать нужную…"
-        th "Никогда бы не подумал, что буду жульничать на турнире, но, возможно, как раз это меня и спасёт…"
+        th "And knowing your opponent's cards, it's easy to choose the right one..."
+        th "I never thought I would cheat in a tournament, but maybe that's what will save me..."
     return
 
 label alt_day2_demo_play_rival_defend_new:
-    th "Лена может попробовать защитить свою карту."
-    th "Но если я буду внимательным, то всё равно возьму ту, что выбрал с самого начала…"
+    th "Lena can try to protect her card."
+    th "But if I'm careful, I'll still take the one I picked from the beginning..."
     return
 
 label alt_day2_demo_play_after_loop_new:
     $ show_cards_alt()
     $ renpy.transition(dissolve)
-    th "Получилось!"
+    th "Got it!"
     window auto
     $ ui.jumpsoutofcontext('alt_day2_cards_continue_new')
 
@@ -471,91 +471,91 @@ label alt_day2_cards_continue_new:
         renpy.scene('underlay')
     $ persistent.altCardsDemo_new = True
     play music music_list["my_daily_life"] fadein 5
-    "Электроник, до этого наблюдавший за нами, удовлетворённо кивнул."
-    "Похоже, теперь мы действительно разобрались в его игре."
+    "Electronik, who had been watching us until then, nodded contentedly."
+    "Looks like we've really figured out his game now."
     show el normal pioneer at center with dissolve
-    el "Итак, во время игры противники три раза обмениваются своими бойцами, а потом открывают карты."
-    el "И мы смотрим, чья армия сильнее."
+    el "So, during the game the opponents exchange their fighters three times and then reveal the cards."
+    el "And we see whose army is stronger."
     hide el with dissolve
-    "Электроник отошёл к своему ватману, а Ульяна не выдержала и закричала."
+    "Electronik stepped back to his paper sheet, and Ulyana couldn't stand it and shouted."
     show us laugh pioneer with dissolve
-    us "Моя армия будет самой сильной!"
+    us "My army will be the strongest!"
     show us grin pioneer with dspr
-    us "Давайте уже играть!"
+    us "Let's play already!"
     hide us with dissolve
 
 label alt_day2_tournament_prep_new:
     scene bg int_dining_hall_sunset with dissolve
     show mt normal pioneer with dissolve
-    mt "Давайте-ка мы немного разнообразим игру!"
+    mt "Let's spice the game up a little bit!"
     show el surprise pioneer at left with dissolve
-    el "Что вы имеете в виду?"
+    el "What do you mean by that?"
     show mt laugh pioneer with dspr
-    mt "Я вижу, тут кое-кто очень настроен на победу, так что внесём элемент случайности."
+    mt "I see that someone here is very determined to win, so let's introduce an element of chance."
     hide mt with dissolve
-    "Она достала из кармана несколько бумажек и, быстро нарвав их, написала на них номера, ссыпала в панамку и обнесла присутствующих."
+    "She took some papers out of her pocket and, quickly scrawling them, wrote numbers on them, poured them into her panama hat, and circled around to those present."
     show el sad pioneer with dspr
-    el "Воооот, лишние хлопоты."
-    "Вздохнул парень."
+    el "Oooh, extra trouble."
+    "The guy sighed."
     show mt normal pioneer with dissolve
-    mt "Всё хорошо! {w}Тянем жребий и по нему распределяемся на пары."
-    mt "А то знаю я эти договорные матчи!"
-    "Не прошло и пяти минут, а мы уже разбились по парам."
+    mt "It's okay! {w}Let's draw lots and pair up."
+    mt "I know those match-fixing games of yours!"
+    "Not five minutes later, and we're already paired up."
 
     if persistent.altCardsWon1_new or persistent.altCardsFail_new:
         menu:
-            "Играть самостоятельно":
+            "Play tournament":
                 pass
-            "Победа в финале" if persistent.altCardsWon3_new:
+            "Win in finals" if persistent.altCardsWon3_new:
                 $ alt_day2_detour_1_tour = True                         # Пропускаем 1 тур
                 $ alt_day2_detour_semifinal = True                      # Пропускаем полуфинал
                 $ alt_day2_detour_final = True                          # Пропускаем финал
                 $ alt_day2_tournament_fast_win = True                   # Победа в финале на халяву
                 $ karma += 10
                 menu:
-                    "Против случайного соперника":
+                    "Against random enemy":
                         pass
-                    "Против Лены":
+                    "Against Lena":
                         $ alt_day2_detour_number = 1
-                    "Против Слави":
+                    "Against Slavya":
                         $ alt_day2_detour_number = 2
-                    "Против Алисы":
+                    "Against Alisa":
                         $ alt_day2_detour_number = 3
-                    "Против Мику":
+                    "Against Miku":
                         $ alt_day2_detour_number = 4
-                    "Против Ульяны":
+                    "Against Ulyana":
                         $ alt_day2_detour_number = 5
-                    "Против Шурика":
+                    "Against Shurik":
                         $ alt_day2_detour_number = 6
-                    "Против Жени":
+                    "Against Zhenya":
                         $ alt_day2_detour_number = 7
-            "Поражение в финале" if persistent.altCardsWon2_new:
+            "Lose in finals" if persistent.altCardsWon2_new:
                 $ alt_day2_detour_1_tour = True                         # Пропускаем 1 тур
                 $ alt_day2_detour_semifinal = True                      # Пропускаем полуфинал
                 $ alt_day2_detour_final = True                          # Пропускаем финал
                 $ karma -= 10
                 menu:
-                    "Против случайного соперника":
+                    "Against random enemy":
                         $ alt_day2_detour_number = 0
-                    "Против Лены":
+                    "Against Lena":
                         $ alt_day2_detour_number = 1
-                    "Против Слави":
+                    "Against Slavya":
                         $ alt_day2_detour_number = 2
-                    "Против Алисы":
+                    "Against Alisa":
                         $ alt_day2_detour_number = 3
-                    "Против Мику":
+                    "Against Miku":
                         $ alt_day2_detour_number = 4
-                    "Против Ульяны":
+                    "Against Ulyana":
                         $ alt_day2_detour_number = 5
-                    "Против Шурика":
+                    "Against Shurik":
                         $ alt_day2_detour_number = 6
-                    "Против Жени":
+                    "Against Zhenya":
                         $ alt_day2_detour_number = 7
-            "Поражение в полуфинале" if persistent.altCardsWon1_new:
+            "Lose in semifinals" if persistent.altCardsWon1_new:
                 $ alt_day2_detour_1_tour = True                         # Пропускаем 1 тур
                 $ alt_day2_detour_semifinal = True                      # Пропускаем полуфинал
                 $ karma -= 10
-            "Поражение в первом же коне":
+            "Lose in first round":
                 $ alt_day2_detour_1_tour = True                         # Пропускаем 1 тур
 
  # ---------------------------------------------------------------------------------
@@ -577,98 +577,98 @@ label alt_day2_tournament_tour_1_new:
  # ---------------------------------------------------------------------------------
     scene bg int_dining_hall_sunset with dissolve
     $ renpy.fix_rollback()                                                                  # фиксируем выбор — "откатом" поменять будет нельзя
-    "Рандом послал мне в оппоненты {nw}%(alt_name_my_rival_v)s.{w}"                             # называем своего соперника
+    "Random sent me the opponent in the face of {nw}%(alt_name_my_rival_v)s.{w}"                             # называем своего соперника
 
 # ------------------------------------------------- ДИАЛОГИ
     if alt_my_rival_1_tour.take == 'un':
         show un shy pioneer at cright with dissolve
-        me "И снова добрый вечер."
+        me "Good evening once again."
         show un smile pioneer with dspr
-        "Она смущённо улыбнулась, но ничего не сказала."
+        "She smiled embarrassedly, but said nothing."
 
     elif alt_my_rival_1_tour.take == 'sl':
         show sl smile2 pioneer at cright with dissolve
-        sl "Знаешь, я не очень хороша в картах."
-        me "Да я вообще ничего про эту игру не знаю."
-        "Славя улыбнулась мне и села напротив."
+        sl "You know, I'm not very good at cards."
+        me "I don't know anything about this game at all."
+        "Slavya smiled at me and sat across from me."
 
     elif alt_my_rival_1_tour.take == 'dv':
         show dv grin pioneer2 at cright with dissolve
-        dv "Ну что, готов к сокрушительному поражению?"
-        "Усмехнулась она, садясь на противоположное место."
+        dv "So, ready for a crushing defeat?"
+        "She grinned, sitting down in the opposite seat."
         if herc or loki:
-            me "А как же. {w}Я принесу на твою могилку два гладиолуса."
+            me "Of course. {w} I'll bring two gladioluses to your grave."
         else:
-            me "Алис, может, всё-таки не надо?.."
-            dv "Надо, Сёма, надо."
+            me "Alisa, maybe we shouldn't...?"
+            dv "We have to, Syoma, we have to."
 
     elif alt_my_rival_1_tour.take == 'mi':
         show mi smile pioneer at cright with dissolve
         if ('music_club' in list_voyage_7dl):
-            mi "И снова здравствуй, Сенечка."
+            mi "Hello again, Senechka."
         else:
-            mi "Ой, привет, Семён!"
+            mi "Oh, hello, Semyon!"
         if loki:
-            me "Ну привет, Мику."
+            me "Well, hello, Miku."
         elif herc:
-            me "И тебе не хворать."
+            me "And good day to you, too."
         else:
-            me "Привет."
+            me "Hello."
         show mi laugh pioneer with dspr
-        mi "Как здорово, что ты достался мне в противники! Я очень хотела, чтобы это был ты!"
-        "Я немного опешил."
-        me "Зачем?"
+        mi "How great that I got you as my opponent! I really wanted it to be you!"
+        "I was a little taken aback."
+        me "Why?"
         show mi grin pioneer with dspr
-        mi "Ну как же, как же!"
-        "Воскликнула Мику."
+        mi "Well, well, well!"
+        "Exclaimed Miku."
         if ('music_club' in list_voyage_7dl):
             show mi smile pioneer with dspr
-            mi "Ты же новый человек в лагере, а мы с тобой ещё толком не поговорили друг с другом!"
-            th "Так вот она о чём."
-            "Сказать по правде, я бы с радостью променял карточную игру на беседу с Мику."
-            "Она может и болтушка, но болтушка красивая."
-            "Главное умело фильтровать поток её слов и вычленять самое главное."
-            "А там глядишь и увижу в ней ещё что-то."
-            "Однако…"
-            me "Давай после игры, ладно?"
-            me "Раз уж взялись за гуж… — и далее по тексту."
+            mi "You're the new man at camp, and you and I haven't really talked to each other yet!"
+            th "So that's what she means."
+            "To tell you the truth, I'd gladly trade a card game for a conversation with Miku."
+            "She may be a chatterbox, but she's a beautiful chatterbox."
+            "The main thing is to be able to filter out the flow of her words and pick out the main thing."
+            "And then I'll see something else in her."
+            "However..."
+            me "Let's do it after the game, okay?"
+            me "Now that we're in the game... and so on."
             show mi happy pioneer with dspr
-            mi "Мы можем побеседовать в процессе."
-            "Продолжала настаивать хафу."
+            mi "We can have a conversation in the process."
+            "Continued to insist hafu."
             show mi smile pioneer with dspr
-            mi "Как говорит мой Па — ничто не мешает совместить приятное с полезным!"
-            "Я бы не назвал турнир «полезным»."
-            me "По рукам."
+            mi "As my Pa says - nothing prevents you from combining useful things with pleasure!"
+            "I wouldn't call the tournament 'useful'."
+            me "Deal."
         else:
             show mi laugh pioneer with dspr
-            mi "Ты же новый человек в лагере, а мы ещё толком не знакомы!"
-            "Не переставая болтать, она села за стол и сложила руки."
-            th "Эта игра будет о-о-очень долгой."
+            mi "You're the new person at camp, and we haven't really gotten to know each other yet!"
+            "Without stopping to chat, she sat down at the table and folded her arms."
+            th "This game is going to be oh-so-long."
             if dr:
-                dreamgirl "Ты дрищ, а значит, должен страдать."
-                th "Катись к чёрту."
+                dreamgirl "You're a wimp, so you have to suffer."
+                th "Go to hell."
 
     elif alt_my_rival_1_tour.take == 'us':
         stop music fadeout 2
         show us laugh pioneer at cright with dissolve
-        us "Готов поддаваться?"
+        us "Ready to give in?"
         play music music_7dl["carefree"] fadein 1
-        me "И не мечтай."
+        me "Don't dream of it."
         show us calml pioneer with dspr
-        us "И не надо! Но играть будем по моим правилам!"
-        me "Это по каким это?"
-        us "Увидишь!"
+        us "And don't! But we'll play by my rules!"
+        me "What rules is that?"
+        us "You'll see!"
 
     elif alt_my_rival_1_tour.take == 'sh':
         show sh normal pioneer at cright with dissolve
-        sh "Ну что, пусть победит сильнейший?"
-        "Я молча пожал ему руку."
+        sh "Well, may the best man win?"
+        "I silently shook his hand."
 
     elif alt_my_rival_1_tour.take == 'mz':
         show mz normal glasses pioneer at cright with dissolve
-        mz "Я твой противник."
-        "Скрипнула она, присаживаясь напротив."
-        "Я молча кивнул в ответ."
+        mz "I am your opponent."
+        "She squeaked, taking a seat across from me."
+        "I nodded silently in response."
 # ------------------------------------------------- /ДИАЛОГИ
 
 
@@ -679,7 +679,7 @@ label alt_day2_participate_new:
 
     if not alt_day2_detour_1_tour:                                                  # если НЕ пропуск 1 тура
         scene bg int_dining_hall_sunset with dissolve
-        "Пока суд да дело, я решил разузнать, какая диспозиция сложилась на игровом поле."
+        "While this was going on, I decided to find out what the disposition was on the field of play."
         $ alt_mstt = 9
         call show_tournament_table                                                  # показываем турнирную таблицу — ПУСТУЮ
 
@@ -694,14 +694,14 @@ label alt_day2_participate_new:
             call show_tournament_table                                                  # переход по метке — вызов очередной фишки
             extend " %(gambler_upper)s"                                                 # выводим в окно имя верхнего игрока
             call show_tournament_table                                                  # переход по метке — вызов очередной фишки
-            extend " и %(gambler_lower)s."                                              # выводим в окно имя нижего игрока
+            extend " and %(gambler_lower)s."                                              # выводим в окно имя нижего игрока
             if must_taunt != None:                                                      # если таунт есть
                 "%(must_taunt)s"                                                        # выводим его
 
             if alt_table_no == 1 and alt_table_no != places_my_table[2]:
-                "С первым столом разобрались, кто-то из них сегодня не дойдёт до финала."
+                "The first table is dealt with, one of them won't make it to the finals tonight."
             elif alt_table_no == 2 and places_my_table[2] == 1:
-                "Со вторым столом разобрались, кто-то из них сегодня не дойдёт до финала."
+                "The second table is dealt with, one of them won't make it to the finals tonight."
 
         if alt_table_no != places_my_table[2]:                                                       # если номер стола — НЕ свой
             $ alt_day2_gamblers_1_tour[2*alt_table_no - renpy.random.choice([1,2])].winner = True    # тогда один из игроков (рандомно) — победитель в этапе
@@ -711,11 +711,11 @@ label alt_day2_participate_new:
         $ alt_day2_gamblers_1_tour[6].winner = False                                                 # его соперник в первом коне проигрывает
         $ alt_day2_gamblers_1_tour[7].winner = True                                                  # а он сам выигрывает в первом коне
     if not alt_day2_detour_1_tour:                                                                   # если НЕ пропуск 1 тура
-        "Таким нехитрым образом удалось немного разобраться с тем, кто и против кого играет."
-        "Что ж…"
+        "In this uncomplicated way it was possible to sort out a little bit about who is playing against whom."
+        "Well..."
         if alt_day2_dv_ultim == 1:
-            "Пусть мне повезёт, а одна рыжая зазнайка утрётся!"
-        "Я кивнул, сигнализируя о готовности."
+            "May I get lucky, and one red-headed snooty doesn't!"
+        "I nodded, signaling my readiness."
 
     if alt_day2_detour_1_tour and not alt_day2_detour_semifinal:                # если пропуск 1 тура и не пропуск полуфинала
         jump alt_day2_participate_fail_end_new                                  # переход на  поражение в 1 туре
@@ -814,146 +814,146 @@ label alt_day2_participate_fail_end_new:
         stop music fadeout 2
         if alt_day2_dv_ultim == 1:
             show un angry2 pioneer at center with dissolve
-            un "Ты поддался… Ты чёртов жулик, ты поддался…"
+            un "You gave in... You damned crook, you gave in..."
             play music music_list["you_lost_me"] fadein 2
-            "О чем это она? Ещё и жуликом обозвала."
+            "What is she even talking about? Calling me a crook too."
             if alt_day2_walk == 1:
-                th "Впрочем, она не так уж и далека от истины."
-            me "Лена, извини, но…"
-            un "Не говори ничего. Я знаю, о чём ты спорил с этой рыжей."
-            un "И я знаю — что на кону!"
+                th "She's not that far from the truth, though."
+            me "Lena, I'm sorry, but..."
+            un "Don't say anything. I know what you were arguing about with that redhead."
+            un "And I know - what's at stake!"
             show un sad pioneer with dspr
-            un "Ты не понимаешь, что никому такая победа не нужна? А тебя завтра… на весь лагерь…"
-            me "А ты правда думаешь, что мне не плевать? Пусть говорит, что хочет. Я сделал так, как считал правильным."
+            un "Don't you understand that no one wants such a victory? And you tomorrow... for the whole camp..."
+            me "Do you really think I care? Let him say what he wants. I did what I thought was right."
         else:
             show un angry2 pioneer with dspr
-            un "Что ты наделал?"
+            un "What have you done?"
             play music music_list["you_lost_me"] fadein 2
-            "Она приподнялась было над столом и тут же упала обратно."
-            un "Зачем? Кому нужна такая победа…"
-            me "Мне?"
-            th "Она такая симпатичная, когда сердится."
+            "She lifted herself above the table and immediately fell back down."
+            un "Why? Who needs such a victory..."
+            me "Me?"
+            th "She's so pretty when she's angry."
         show un angry2 pioneer with dspr
-        "А Лена хлопнула ладонью по столу, да так, что на секунду все смолкли и обернулись на неё."
-        un "Кому нужна такая победа…"
-        "Повторила она."
-        me "Эта победа была нужна мне."
-        "В гробовой тишине произнёс я."
+        "And Lena slammed her palm on the table, so that for a second everyone was silent and turned to her."
+        un "Who needs that kind of victory?"
+        "She repeated."
+        me "That victory was for me."
+        "In the silence of the grave, I said."
         show un serious pioneer with dspr
-        me "Просто для того, чтобы указать кое-кому, что не всё решают угрозы или шантаж."
-        me "Наслаждайся вечером."
+        me "Just to point out to someone that threats or blackmail don't solve everything."
+        me "Enjoy your evening."
         stop music fadeout 3
         hide un with dissolve
-        "Я кивнул и вышел из-за стола, оставляя Лену беззвучно хватать ртом воздух."
+        "I nodded and walked away from the table, leaving Lena silently gulping for air."
         play music music_list["my_daily_life"] fadein 5
 
     elif alt_my_rival_1_tour.take == 'sl':
         show sl smile pioneer with dissolve
-        sl "Семён, если ты захочешь сыграть ещё раз, я не против."
-        "Забавная девочка, готова даже поступиться собственной победой."
-        th "Нет уж, сегодня моя очередь быть благородным."
-        "Я наклонился над столом и произнёс:"
-        me "Желаю тебе удачи в полуфинале!"
-        sl "Но я же просто за компанию играть села!"
-        sl "Я вообще карты не люблю."
-        me "А что поделаешь. {w}Записалась — так играй до конца!"
+        sl "Semyon, if you want to play again, I don't mind."
+        "Funny girl, even willing to sacrifice her own victory."
+        th "No, it's my turn to be noble today."
+        "I leaned over the table and said."
+        me "I wish you luck in the semifinals!"
+        sl "But I just sat down to play for company!"
+        sl "I don't like cards at all."
+        me "What can you do. {w}If you signed up, play to the end."
         show sl sad pioneer with dspr
-        me "К тому же, мне очень хочется, чтобы сегодня ты победила. Сумеешь?"
+        me "Besides, I really want you to win today. Can you do it?"
         show sl normal pioneer with dspr
-        "Славя неуверенно кивнула, а я поднялся и показал ей большой палец."
-        "Чуточку уверенности в себе вне привычной сферы обитания — вот что ей нужно."
+        "Slavya nodded uncertainly, and I stood up and gave her a thumbs-up."
+        "A little self-confidence outside her usual habitat is what she needs."
 
     elif alt_my_rival_1_tour.take == 'dv':
         if alt_day2_dv_ultim == 1:
             show dv grin pioneer2 with dspr
-            dv "Ну что, ты уже приготовился?"
-            "Она упивалась моментом."
+            dv "So, are you prepared?"
+            "She was reveling in the moment."
             if alt_day2_walk == 1:
-                th "Мда, и стоило карты метить, если они мне не помогли?"
+                th "Yeah, and was it worth tagging cards if they didn't help me?"
             else:
                 pass
-            me "К чему?"
-            dv "Как к чему? К рассказу о том, куда смотрел, за что трогал."
-            dv "Очень интересный рассказ будет, чувствую!"
+            me "For what?"
+            dv "For what? To a story about where you looked, what you touched."
+            dv "It's going to be a very interesting story, I feel it!"
             show dv laugh pioneer2 with dspr
-            dv "Но ладно."
-            me "Да?"
-            "Я аж приподнялся на месте."
-            th "Неужели передумала!"
+            dv "But okay."
+            me "Yeah?"
+            "I was a bit of a jerk on the spot."
+            th "Did she really change her mind!"
             show dv smile pioneer2 with dissolve
-            dv "Я расскажу всё в финале, когда меня будут приветствовать как победителя!"
-            "Да, зря надеялся."
-            "Это же Двачевская, в конце-то концов!"
-            th "Ничего хорошего от неё ожидать нельзя."
-        "Я постарался сохранить лицо."
-        "Вежливо встал, наклонил голову, и сказал:"
-        me "Поздравляю тебя с победой."
-        me "И удачи в полуфинале."
-        "Развернулся и ушёл к болельщикам."
-        th "Может быть, удастся затеряться в толпе?"
+            dv "I'll tell them all about it at the finals, when I'll be hailed as the winner!"
+            "Yeah, I got my hopes up for nothing."
+            "It's Dvachevskaya, after all!"
+            th "You can't expect anything good from her."
+        "I tried to save face."
+        "Politely stood up, tilted my head, and said,"
+        me "Congratulations on your victory."
+        me "And good luck in the semifinals."
+        "Turned around and walked away to the fans."
+        th "Might be able to get lost in the crowd."
 
     elif alt_my_rival_1_tour.take == 'mi':
         show mi happy pioneer with dspr
-        mi "Ой, какое счастье! А то мне никогда-никогда не везло в картах, я и решила, что это не моё, а тут попросили, и я согласилась."
-        mi "Я даже не думала, что сумею победить! Сенечка, ты не обижаешься? А то хочешь, переиграем, мне не жалко! Нет, правда-правда не обижаешься?"
+        mi "Oh, what luck! I've never, ever been lucky at cards, so I thought it wasn't my thing, but then I was asked, and I said yes."
+        mi "I didn't even think I could win! Senechka, you're not offended? Or do you want to replay, I do not feel sorry! No, really, really not offended?"
         show mi smile pioneer with dspr
-        mi "Просто я не хочу, чтобы мне было хорошо за счёт других, это плохо, мне всегда Па говорил, что счастья на чужих слезах не построишь."
-        me "Всё в порядке. Ты здорово играешь, поэтому и победила."
-        me "Удачи тебе в полуфинале."
+        mi "I just don't want to feel good at the expense of others, it's bad, Pa always told me that you can't build happiness on other people's tears."
+        me "It's okay. You're playing great, that's why you won."
+        me "Good luck in the semifinals."
         hide mi with dissolve
-        "Пожелал я и, отвернувшись, удалился."
+        "I wished, and turned away, and departed."
 
     elif alt_my_rival_1_tour.take == 'us':
         show us laugh pioneer with dissolve
-        us "Хы! Продул!"
-        "Спасибо, кэп."
-        me "Обязательно орать об этом на всю столовую?"
-        us "Ну конечно же!"
+        us "Hee! Loser!"
+        "Thanks, cap."
+        me "Do you have to yell about it to the whole mess hall?"
+        us "Of course we do!"
         show us grin pioneer with dspr
-        us "А хочешь, ещё сыграем? {w}На просто так."
-        us "Пока остальные тормозят, как раз партию успеем. Ну что?"
-        me "В чём подвох?"
-        us "Подвоха нет."
-        us "Так что, будешь?"
-        me "Спасибо, но нет."
+        us "Do you want to play some more? {w}Just for fun."
+        us "While the others are slowing down, we'll have time for a game. Well?"
+        me "What's the catch?"
+        us "There's no catch."
+        us "So, you want some?"
+        me "Thanks, but no."
         show us dontlike pioneer with dissolve
-        us "Зануда! {w}И что, даже отыграться не хочешь?"
-        us "Неужели не обидно проиграть девчонке?"
-        me "Да мне фиолетово, на самом-то деле."
-        th "Кто там что думает и решает, остаётся его достоянием."
-        "Мудрый совет на все случаи жизни: болтать поменьше."
-        us "Зануда! {w}Зануда."
-        "Кричала она."
+        us "Nerd! {w}Don't you even want to get even?"
+        us "Doesn't it hurt to lose to a girl?"
+        me "I don't give a shit, really."
+        th "Who thinks and decides what there is remains his domain."
+        "Wise advice for all occasions: talk less."
+        us "Nerd! {w}Nerd."
+        "She shouted."
         show us dontlike pioneer at fright with move
-        "А потом резко вскочила и пошла к столику, отведённому под следующую игру."
-        us "Просто боишься проиграть ещё раз! Слабак!"
-        me "Да, возьми меня ещё раз на «слабо», детка."
-        me "Наслаждайся вечером."
+        "And then she jumped up abruptly and went to the table set aside for the next game."
+        us "You're just afraid of losing again! You weakling!"
+        me "Yeah, take me at it again, baby."
+        me "Enjoy your evening."
         stop music fadeout 3
         hide us with dissolve
-        "Я отправился в сторону толпы зрителей. Пришёл мой черёд сменить амплуа."
+        "I headed toward the crowd of spectators. It was my turn to change roles."
         play music music_list["my_daily_life"] fadein 3
 
     elif alt_my_rival_1_tour.take == 'sh':
         show sh normal pioneer with dissolve
-        sh "Это была достойная игра. Спасибо."
+        sh "It was a decent game. Thank you."
         if loki:
-            me "Взаимно."
+            me "Likewise."
         elif herc:
-            "Он протянул мне руку, которую я с достоинством пожал."
+            "He held out his hand to me, which I shook with dignity."
         else:
-            "Мы обменялись рукопожатиями."
-            "Всё же крепкая у него хватка для того, кто тяжелее паяльника ничего не поднимает."
-        sh "А я пошёл дальше громить вражеские порядки."
+            "We shook hands."
+            "He's got a strong grip, though, for someone who can't lift anything heavier than a blowtorch."
+        sh "And I went on to smash the enemy's lines."
 
     elif alt_my_rival_1_tour.take == 'mz':
         show mz normal glasses pioneer with dissolve
-        "Женя пожала плечами и встала из-за стола."
-        mz "Похоже, это будет ещё проще, чем мне казалось."
+        "Zhenya shrugged her shoulders and got up from the table."
+        mz "Looks like this is going to be even easier than I thought."
 # ---------------------------------------------------- \\Диалоги
 
     scene bg int_dining_hall_sunset with dissolve
-    "А ситуация, между тем, складывалась следующая:"
+    "Meanwhile, the situation was as follows:"
     pause(.5)
     call alt_day2_1_tour_analizer                                                   # Вызов анализатора 1 раунда
     $ renpy.block_rollback()                                                          # блокируем роллбак
@@ -975,8 +975,8 @@ label alt_day2_participate_win_end_new:
 # ЕСЛИ Славя, Мику или Шурик и НЕ скип тура — итоги ДО диалогов
     if (alt_my_rival_1_tour.take in ['sl','mi','sh']) and not alt_day2_detour_semifinal:
         scene bg int_dining_hall_sunset with dissolve
-        "Первый тур закончился."
-        "Ситуация, между тем, складывалась следующая:"
+        "The first round was over."
+        "The situation, meanwhile, was as follows:"
         call alt_day2_1_tour_analizer                                                   # вызываем анализатор 1 тура
         $ renpy.block_rollback()                                                          # блокируем роллбак
 # -------------------------------------------------------------------------
@@ -987,454 +987,454 @@ label alt_day2_participate_win_end_new:
 # ---------------------------------------------------- ДИАЛОГИ
     if alt_my_rival_1_tour.take == 'un':
         if alt_day2_rival_win == 0:
-            "У неё не было ничего."
-            "А с тем, что было, я бы постеснялся открывать карты."
+            "She had nothing."
+            "And with what she had, I'd be ashamed to open my cards."
         else:
-            "Лене досталась за эти игры пара-другая хороших карт."
-            "К сожалению, для победы этого оказалось недостаточно."
-        "Бедная девочка."
+            "Lena got a couple or two good cards for these games."
+            "Unfortunately, it wasn't enough to win."
+        "Poor girl."
         show un sad pioneer with dissolve
-        "Она сидела, будто сама не способная поверить в то, что только что произошло."
+        "She sat there as if she herself could not believe what had just happened."
         if lp_un >= 6 and not alt_day2_detour_semifinal:
             menu:
-                "Предложить матч-реванш":
+                "Offer her a redo match":
                     $ karma += 5
                     $ lp_un += 1
-                    me "Неудачная партия."
-                    un "Да…"
-                    me "Может, ещё разок?"
+                    me "Unlucky match."
+                    un "Yes..."
+                    me "How about one more?"
                     show un smile pioneer with dspr
-                    "Лена улыбнулась."
-                    un "Предложение соблазнительное, но я откажусь."
-                    me "Почему?"
+                    "Lena smiled."
+                    un "The offer is tempting, but I'll decline."
+                    me "Why?"
                     show un shy pioneer with dspr
-                    un "Ну…"
+                    un "Well…"
                     pause(0.5)
                     if dr:
-                        me "Ладно, можешь не говорить."
-                        me "Не хочешь — твоё право."
-                        me "Не могу же я тебя заставлять."
+                        me "Okay, you don't have to tell me."
+                        me "If you don't want to, that's your right."
+                        me "I can't force you."
                         show un smile pioneer with dspr
-                        "Лена благодарно улыбнулась."
-                        un "Удачи. Я буду болеть за тебя."
-                        me "Угу…{w} Спасибо."
+                        "Lena smiled appreciatively."
+                        un "Good luck. I'll be rooting for you."
+                        me "Mm-hmm...{w} Thank you."
                     else:
-                        me "Да?…"
-                        th "Прости, Лена, но я чуточку поработаю клещами."
+                        me "Yes?..."
+                        th "I'm sorry, Lena, but I'm going to do a little pincer work."
                         show un sad pioneer with dspr
-                        un "Я не слишком люблю такие игры, и играть в них совсем не умею."
-                        un "Поэтому к победе я не рвусь. Ещё до начала решила для себя — будь что будет."
-                        un "А реванш… {w}Реванш — это не то."
-                        "А на лице явственно читалось — я не хочу больше проигрывать."
-                        me "Право твоё. Настаивать не буду."
+                        un "I'm not too fond of such games, and I don't know how to play them at all."
+                        un "That's why I'm not eager to win. Even before the start I decided for myself - whatever happens."
+                        un "And a rematch... A rematch isn't it."
+                        "And on her face you could clearly read - I don't want to lose anymore."
+                        me "That's your right. I won't insist."
                         show un cry_smile pioneer with dspr
-                        un "Спасибо."
+                        un "Thank you."
                         show un shy pioneer with dspr
-                        un "Лучше я буду болеть за тебя."
+                        un "I'll be rooting for you."
                     hide un with dissolve
-                    "Она встала из-за стола и исчезла за болельщиками."
+                    "She got up from the table and disappeared behind the fans."
                     jump alt_day2_1_tour_end                                                 # В ПОЛУФИНАЛ
-                "Ничего не делать":
+                "Do nothing":
                     pass
         $ lp_un -= 1
         $ lp_dv += 1
-        "Я улыбнулся."
-        me "Спасибо за игру!"
+        "I smiled."
+        me "Thanks for playing!"
         show un shy pioneer with dspr
-        un "Н-не за что."
+        un "O-o-okay."
         hide un with dissolve
-        "Она встала из-за стола и исчезла за болельщиками."
+        "She got up from the table and disappeared behind the fans."
 
 # ====================================================== Пропускаем часть диалога, если "выиграли" 1 тур скипом
         if not alt_day2_detour_semifinal:
-            "А я не мог сдержать ликования."
-            th "Я подебил! То есть я победил."
-            dreamgirl "Ура! {w=.4}У девочки. {w=.4}В игру, которую ни ты, ни она не знаете. {w}Велико достижение."
-            th "Заткнись."
-            th "Я буду радоваться победе так, как буду радоваться только когда раскатаю эту рыжую нахалку!"
-            dreamgirl "Нет, ну ты и правда герой. Спору нет."
-            dreamgirl "Может, следовало дать девочке выиграть? Она и так выглядит не самой счастливой, а ты выбил из-под неё остатки почвы."
-            dreamgirl "И как оно по ощущениям? Стоило того?"
-            th "Я сказал — заткнись."
+            "And I couldn't help cheering."
+            th "I wonneredededereded! I mean I won."
+            dreamgirl "Yay! {w=.4}Against a girl. {w=.4}In a game that neither you nor she knows. {w}Great achievement."
+            th "Shut up."
+            th "I'll rejoice in winning the way I only rejoice when I roll up that redheaded sassy girl!"
+            dreamgirl "No, you really are a hero. No doubt about it."
+            dreamgirl "Maybe you should have let the girl win. She doesn't look the happiest as it is, and you knocked the rest of the ground out from under her."
+            dreamgirl "And how did it feel? Was it worth it?"
+            th "I said shut up."
             show blinking with dissolve
             if herc or loki:
-                "У меня цель — не ободрить каждого сирого, а утереть нос одной рыжей зазнайке!"
-                "Хотя, честно сказать, искушение слить партию просто для того, чтобы посмотреть, как она выполнит свои угрозы, достаточно велико. {w}Нет, ну серьезно!"
+                "My aim is not to encourage every sissy, but to rub the nose of one redheaded arrogant girl!"
+                "Although, frankly, the temptation to lose just to see how she fulfills its threats is great enough. {w}No, seriously!"
                 scene bg ext_square_sunset
                 show prologue_dream
                 with fade
-                "Завтра мы встаём, идём на линейку, а там уже на трибуне, между Ольгой Дмитриевной и Славей, стоит она."
+                "Tomorrow we get up, we go to the lineup, and there she is already on the podium, between Olga Dmitrievna and Slavya."
                 show dv grin pioneer2 behind prologue_dream with diam
-                "И своим вредным голосом говорит — так, мол, и так, некий Семён, приехать в лагерь ещё не успел, как пошёл подглядывать за мной и даже полапал немного."
-                "Да это же реклама такая, что я за неё ещё и приплачивать должен!"
-                "В духе «Сёма едет! Прячьте девок!»."
+                "So and so, she says in a nasty voice, a certain Semyon had not yet arrived at the camp, but he came to spy on me and even groped me a little."
+                "That's the kind of publicity I should be paying for!"
+                "It's like, 'Semen's coming! Girls are hiding!'"
                 hide dv with dissolve
             else:
-                "Даже если девочки внезапно начнут строить мне глазки, я не собираюсь кому-либо из них сливать партию."
-                "Представляю себе, как рыжая стерлядь воплотит свои угрозы."
+                "Even if the girls suddenly start making eyes at me, I'm not going to throw the game to any of them."
+                "I imagine the red-headed bitch will carry out her threats."
                 scene bg ext_square_sunset
                 show prologue_dream
                 with fade
-                "Например, на утренней линейке."
+                "For example, at the morning lineup."
                 show dv grin pioneer behind prologue_dream with dissolve
-                "Выйдет вперёд, самодовольно подмигнёт мне и скажет во всеуслышанье:"
-                dv "{i}Ольга Дмитриевна, разрешите доложить!{/i}"
-                "И далее по тексту."
-                "Коллективный суд, а вместе с ним и позор, мне обеспечен."
-                dreamgirl "А вот правильный перевод твоего словоблудия — я трясусь за свою шкуру."
-                dreamgirl "Волков бояться — в лес не ходить, в курсе?"
-                th "Мне и в городе неплохо живётся."
-                th "А волки пускай достаются охотникам."
+                "She comes forward, smugly winks at me, and says at the top of her voice:"
+                dv "{i}Olga Dmitrievna, may I report?{/i}"
+                "And so on."
+                "A collective trial, and with it, disgrace, is assured for me."
+                dreamgirl "And here's the correct translation of your verbiage: I'm shaking for my skin."
+                dreamgirl "To fear the wolves is not to walk in the woods, you know?"
+                th "I'm just as fine in the city."
+                th "Let the wolves go to the hunters."
         scene bg int_dining_hall_sunset with dissolve
 
     elif alt_my_rival_1_tour.take == 'sl':
-        "Славя резко вскочила и оперлась кулаками о стол."
+        "Slavya jumped up abruptly and propped her fists on the table."
         show sl serious pioneer with dspr
-        sl "А ты серьёзный противник."
-        "Исподлобья процедила она."
+        sl "And you're a serious adversary."
+        "She frowned at me."
         show sl angry pioneer with dspr
-        sl "Напомни мне никогда не недооценивать тебя!"
-        me "Многие, кто недооценили Семёна, горько пожалели об этом!"
-        "Подыграл я."
+        sl "Remind me never to underestimate you!"
+        me "Many who underestimated Semyon bitterly regretted it!"
+        "I played along."
         show sl smile2 pioneer with dspr
-        "Тут она не выдержала и разулыбалась, испортив всю сценку."
-        sl "А партия действительно была интересная!"
+        "Then she couldn't stand it and smiled, spoiling the whole scene."
+        sl "And the round was really interesting!"
         if lp_sl >= 6 and not alt_day2_detour_semifinal:
             menu:
-                "Хочешь ещё разок?":
+                "Wanna go again?":
                     $ karma += 5
                     show sl smile pioneer with dspr
-                    sl "Спасибо"
+                    sl "Thanks"
                     $ lp_sl += 1
                     show sl laugh pioneer with dspr
-                    extend ", но… Нет!"
-                    sl "Давай-ка ты сам покажешь класс!"
-                    "Девочка потрепала меня по плечу и направилась в стан болельщиков."
+                    extend ", but… No!"
+                    sl "Let's see you show some class yourself!"
+                    "The girl patted me on the shoulder and headed for the cheering camp."
                     hide sl with dissolve
                     jump alt_day2_semifinal_new
-                "Ничего не делать":
+                "Do nothing":
                     pass
         else:
             pass
-        "Я улыбнулся."
-        me "Спасибо за игру!"
-        sl "Тебе спасибо!"
+        "I smiled."
+        me "Thanks for the game!"
+        sl "Thank you!"
         hide sl with dissolve
-        "Кивнув мне, она поднялась и отошла к Ольге Дмитриевне, и у них там завязалась оживлённая беседа."
+        "Nodding to me, she got up and walked over to Olga Dmitrievna, and they had a lively conversation there."
 
 # ====================================================== Пропускаем часть диалога, если "выиграли" 1 тур скипом
         if not alt_day2_detour_semifinal:
-            "Что ж, это была трудная схватка, но я победил."
-            th "Идеальное же противостояние — игра, в которой вы оба ничего не понимаете."
-            dreamgirl "Ну да, ну да."
-            "Пробормотал внутренний голос."
-            dreamgirl "Носкиллер рандомный."
-            th "Помолчи. Ты ничего не понимаешь."
-            th "Это вопрос индивидуального престижа. Я буду двигаться к финалу."
+            "Well, it was a hard fight, but I won."
+            th "The perfect confrontation, however, is a game in which you both understand nothing."
+            dreamgirl "Well, yes, well, yes."
+            "Mumbled the inner voice."
+            dreamgirl "Your fit is mid, and you get zero bitches."
+            th "Shut up. You don't understand anything."
+            th "It's a matter of individual prestige. I'll move on to the finale."
             if alt_result_dv_1_tour == 4:                                                       # Дваче в другом полуфинале
-                th "И раскатаю там рыжее хамло!"
+                th "And I'll road roll the ginger boor up there!"
             elif alt_result_dv_1_tour == 3:                                                     # Дваче в 1/2 к Семёну
-                th "И раскатаю там любого!"
+                th "And I'll roll anyone out of out there!"
             elif alt_result_dv_1_tour == 2:                                                     # Дваче слетела в 1 туре
-                th "Чего не скажешь о Алисе. Значит, это будет лёгкая победа."
-            dreamgirl "Надежды… Мечты… Фантазии…"
-            th "Ты что, сомневаешься во мне?!"
-            dreamgirl "Нет-нет-нет, ты что! {w}Я в тебя верю! Я знаю твой потенциал."
-            th "Вот видишь!"
-            dreamgirl "Ты слетишь на полпути."
-            th "Да ну тебя!"
+                th "What can't be said for Alisa. So it's going to be an easy win."
+            dreamgirl "Hopes... Dreams... Fantasies..."
+            th "Are you doubting me?!"
+            dreamgirl "No, no, no, no, what do you mean! {w}I believe in you! I know your potential."
+            th "You see!"
+            dreamgirl "You'll fall off halfway through."
+            th "Come on!"
             if alt_result_dv_1_tour == 4:                                                                # Дваче в другом полуфинале
-                "Может быть, это {i}она{/i} слетит на полпути!"
-                "Вот возьмёт и проиграет."
-                dreamgirl "Надежды… Мечты…"
-                th "Ты повторяешься."
-                dreamgirl "Просто ты слишком нос задираешь. {w}А, как говорят Великие, — настоящий мастер лишён гордыни."
+                "Maybe it's {i}her{/i} who's going to lose halfway through!"
+                "She's going to lose."
+                dreamgirl "Hopes... Dreams..."
+                th "You're repeating yourself."
+                dreamgirl "You're just being too high-minded. {w}And as the Great Ones say, a true master is without pride."
             elif alt_result_dv_1_tour == 3:                                                              # Дваче в 1/2 к Семёну
-                th "Между прочим, у нас сейчас как раз будет шанс стреножить Рыжевскую в полуфинале."
-                dreamgirl "Ну да, это нам, конечно, повезло."
-                dreamgirl "Но лучше приготовься к суровому испытанию — просто так она тебе победу не отдаст!"
+                th "By the way, we're about to have a chance to shackle Redhead in the semifinals."
+                dreamgirl "Yeah, well, we're the lucky ones."
+                dreamgirl "But you'd better get ready for a stern test - she's not just going to give you the win!"
             elif alt_result_dv_1_tour == 2:                                                              # Дваче слетела в 1 туре
-                "Я усмехнулся."
-                th "А даже если и слечу."
-                th "Обращаю твоё внимание, что пока мы тут препирались, Двачевская изволила вылететь в самом первом раунде."
-                "Я снял воображаемую шапку и прижал её к груди."
-                me "Помянем!"
+                "I grinned."
+                th "And even if I do."
+                th "I'll draw your attention to the fact that while we were bickering, Dvachevskaya was out in the very first round."
+                "I took off my imaginary hat and pressed it to my chest."
+                me "Rest in piss!"
                 show dv angry pioneer2 far at left with dissolve
-                "Двачевская оскалилась, но ничего не сказала."
+                "Dvachevskaya grinned, but said nothing."
 
     elif alt_my_rival_1_tour.take == 'dv':
         show dv sad pioneer2 with dspr
-        "Алиска облажалась."
-        "Ха. Ха. Ха."
-        "Её вид — это то, что не купишь ни за какие мастеркарды с визами."
-        "Поистине бесценное зрелище!"
+        "Aliska screwed up."
+        "Ha. Ha. Ha."
+        "Her look is something no MasterCard and Visa can buy."
+        "A truly priceless sight!"
 
 # ====================================================== Пропускаем часть диалога, если "выиграли" 1 тур скипом
         if not alt_day2_detour_semifinal:
             if lp_dv >= 6:
                 menu:
-                    "Ну что, как я тебя?":
+                    "So, how'd you like that, huh?":
                         $ karma += 5
                         if loki or herc:
                             $ lp_dv += 1
                             show dv rage pioneer2 with dspr
-                            "Алиса надулась, набычилась…"
-                            me "Разделал как Рандом черепаху!"
-                            "Не удивлюсь, если она сейчас придумает ещё какую-нибудь гадость, только чтобы уязвить меня."
+                            "Alice sulked, sulked..."
+                            me "Dismembered like Allah screwed the turtle!"
+                            "I wouldn't be surprised if she came up with something else nasty now, just to hurt me."
                             show dv angry pioneer2 with dspr
-                            "Но она меня удивила."
+                            "But she surprised me."
                             show dv laugh pioneer2 with dspr
-                            dv "А ты хорош! Хорош!"
-                            "Расхохоталась она, ткнув меня кулаком в плечо."
-                            dv "Пожалуй, будем считать наше пари закрытым."
-                            th "Уффф."
-                            "Я подавил желание облегчённо вытереть лоб."
+                            dv "You're pretty good! Good!"
+                            "She laughed, poking me in the shoulder with her fist."
+                            dv "I guess we'll consider our wager closed."
+                            th "Phew."
+                            "I suppressed the urge to wipe my forehead in relief."
                             show dv grin pioneer2 with dspr
-                            dv "А то если хочешь, можем ещё на что-нибудь поспорить?"
-                            "Я отшатнулся."
-                            "Но постарался ответить солидно:"
-                            me "Нет. {w}Свою натюрель ты уже поставила на кон."
-                            dreamgirl "Дальше только честь девичья! {w}Ну-ка, скажешь это вслух?"
-                            "Ага, сейчас. У меня и «натюрель»-то вышла дрожащим голосом."
+                            dv "Or if you want, can we bet on something else?"
+                            "I recoiled."
+                            "But tried to answer solidly:"
+                            me "No. {w}You've already put your naturelle on the line."
+                            dreamgirl "Only maiden's honor next! {w}Will you say it out loud?"
+                            "Yeah, right this fucking instant. My 'naturelle' came out in a shaky voice."
                             show dv laugh pioneer2 with dspr
-                            "Алиса снова рассмеялась, увидев мою реакцию, и поднялась."
+                            "Alisa laughed again, seeing my reaction, and stood up."
                             show dv smile pioneer2 with dspr
-                            dv "Удачи тебе."
+                            dv "Good luck to you."
                         else:
-                            "Начал было я, и, чувствуя, как запал иссякает, продолжил уже куда спокойнее:"
-                            me "Кажется, я победил."
-                            dv "Угу."
-                            me "И ты теперь…"
+                            "I began, and, feeling the fervor wane, I continued more calmly:"
+                            me "I think I've won."
+                            dv "Uh-huh."
+                            me "And you are now..."
                             show dv sad pioneer2 with dspr
                             pause(.4)
                             show dv guilty pioneer2 with dissolve
-                            dv "Да…"
-                            dv "Никому я ничего не скажу. {w}Ты победитель."
-                            "Алиса выглядела подавленной и какой-то… Обескураженной, что ли."
-                            "Кажется, её смутил не столько проигрыш, сколько моя на него реакция."
-                            dv "Ладно, бывай."
+                            dv "Yes..."
+                            dv "I won't say anything to anyone. {w}You're the winner."
+                            "Alisa looked depressed and kind of... Baffled, or something."
+                            "It wasn't so much the loss that seemed to embarrass her, but my reaction to it."
+                            dv "Okay, bye."
                         hide dv with dissolve
                         jump alt_day2_1_tour_end
-                    "Партия":
+                    "I guess that's it":
                         hide dv with dissolve
-                        "Алиса кивнула и молча поднялась из-за стола."
+                        "Alisa nodded and silently got up from the table."
                         pass
             else:
                 pass
         if alt_day2_dv_ultim == 1:
-            "Кажется, свою малюсенькую проблему с пари я только что успешно решил."
+            "I think I just successfully solved my little betting problem."
 
     elif alt_my_rival_1_tour.take == 'mi':
         show mi surprise pioneer with dissolve
-        mi "Ой!"
-        "Она прижала руки ко рту."
-        mi "Я что, я проиграла, да? А то я так и не поняла, что тут делать, только таскала у тебя карты и не отдавала тебе свои."
+        mi "Ow!"
+        "She put her hands to her mouth."
+        mi "I what, I lost, didn't I? Because I never figured out what to do here, all I did was snatch cards from you and not give you mine."
         show mi upset pioneer with dspr
-        "Она покачала головой."
-        mi "Какая-то непонятная игра."
+        "She shook her head."
+        mi "Some incomprehensible game."
         show mi smile pioneer with dspr
-        mi "Но всё равно, спасибо, что играл со мной!"
+        mi "But still, thanks for playing with me!"
         if lp_mi >= 6 and not alt_day2_detour_semifinal:
             menu:
-                "Может, ещё?":
+                "Maybe you wanna go for another round?":
                     $ karma += 5
                     $ lp_mi += 1
-                    "Мне понравилось просто сидеть с ней за одним столом."
-                    "Тем более, что на нас всё равно никто не смотрел."
-                    "Внимание зала сфокусировалось на основных действующих лицах сегодняшнего вечера — Алисе и Ульяне."
-                    me "Давай?"
+                    "I enjoyed just sitting at the same table with her."
+                    "Especially since no one was looking at us anyway."
+                    "The attention of the audience was focused on the main actors of tonight - Alisa and Ulyana."
+                    me "Shall we?"
                     show mi shy pioneer with dspr
-                    mi "А разве так можно?"
-                    me "Нет, но… Кому какое дело?"
+                    mi "Is that allowed?"
+                    me "No, but... Who cares?"
                     show el serious pioneer at left with dissolve
                     show mi surprise pioneer with dspr
-                    el "Мне есть дело!"
-                    "Ответил появившийся из ниоткуда Электроник."
-                    el "Ты победил, пожалте за полуфинальный столик!"
+                    el "I care!"
+                    "Electronik, who appeared out of nowhere, replied."
+                    el "You win, you're welcome at the semifinal table!"
                     hide el with dissolve
-                    "Блин."
-                    "Моя улыбка вышла извиняющейся."
-                    me "Тогда увидимся."
-                "Всегда рад":
-                    "Я улыбнулся."
-                    me "Если вдруг захочешь ещё как-нибудь сыграть, обращайся!"
+                    "Shit."
+                    "My smile came out apologetic."
+                    me "See you then."
+                "I'd be right happy to":
+                    "I smiled."
+                    me "If you ever want to play again, come to me!"
             hide mi with dissolve
-            "Мику кивнула и встала из-за стола."
+            "Miku nodded and got up from the table."
         else:
-            "Я улыбнулся."
-            me "Всегда пожалуйста!"
-            mi "Я пойду, ладно? Хочу увидеть, как ты будешь побеждать! Ты же будешь побеждать, правда? Я буду очень-очень за тебя болеть!"
-            "Не в силах сдержать улыбку, я кивнул."
-            me "Конечно же, буду."
-            mi "Тогда удачи тебе дальше!"
+            "I smiled."
+            me "You're welcome!"
+            mi "I'll go, okay? I want to see you win! You're going to win, aren't you? I'll be really, really rooting for you!"
+            "Unable to contain my smile, I nodded."
+            me "Of course I will."
+            mi "Then good luck next time!"
             hide mi with dissolve
-            "Она ушла."
+            "She left."
 
 # ====================================================== Пропускаем часть диалога, если "выиграли" 1 тур скипом
         if not alt_day2_detour_semifinal:
-            "Не могу сказать, что пришлось потрудиться."
-            "По мне, так это было чистое везение."
-            "Хотя, конечно, моя карма и везение — это слова-антонимы."
-            "Я — ходячее олицетворение закона Мэрфи."
-            dreamgirl "Ну да, ну да. {w}А то, что ты вытянул билет даже не на миллион, а на новую жизнь, это мы в расчёт как бы не берём, да?"
-            th "Ты о попадании в лагерь?"
-            th "Я не могу назвать это везением в прямом смысле этого слова."
-            dreamgirl "А как это ещё назвать?"
-            th "Ну… Просто оказался в ненужном месте в ненужное время."
-            dreamgirl "И получил полон рот молодости, лета и сексапильных пионерок."
-            th "Знаешь, я не верю, когда много хорошо. {w}Обязательно где-то должен быть подвох."
-            dreamgirl "И какой в этот раз?"
-            th "Ну, например, может оказаться, что перенос в лагерь является побочным эффектом от попадания под луч космической энергии."
-            th "Или вообще это спецслужбы тестировали прототип телепортатора, и у них что-то сбилось в настройках."
-            dreamgirl "Не знаю, что ты употребляешь, но отсыпь немного."
+            "I can't say I had to work hard."
+            "It sounded like pure luck to me."
+            "Although, of course, my karma and luck are antonyms."
+            "I'm the walking embodiment of Murphy's Law."
+            dreamgirl "Yeah, well, yeah. {w}And the fact that you pulled a ticket not even for a million, but for a new life, we kind of don't take that into account, do we?"
+            th "You mean getting into the camp?"
+            th "I can't call it luck in the literal sense of the word."
+            dreamgirl "What else would you call it?"
+            th "Well... Just being in the wrong place at the wrong time."
+            dreamgirl "And got a mouthful of youth, summer, and sexy pioneers."
+            th "You know, I don't believe when a lot is good. {w}There's got to be a catch somewhere."
+            dreamgirl "And what is it this time?"
+            th "Well, for example, it could be that the transfer to the camp is a side effect of being hit by the cosmic energy beam."
+            th "Or it could even be the secret service testing the teleporter prototype, and something went wrong in their settings."
+            dreamgirl "I don't know what you're consuming, but sprinkle me some."
             if alt_day2_dv_ultim == 1:
-                dreamgirl "К тому же у тебя тут эротическое пари, помнишь?"
+                dreamgirl "Besides, you have an erotic bet here, remember?"
                 if alt_result_dv_1_tour == 4:                                                                   # Дваче в другом полуфинале
-                    th "Помню, помню."
-                    th "Но у этого пари все шансы разрешиться совершенно самостоятельно."
-                    dreamgirl "Надежды вьюношей питают…"
-                    th "Не науки разве?"
-                    dreamgirl "В твоём случае именно надежды."
-                    dreamgirl "Будь уверен, она доберётся до тебя и порвёт на мелкие клочки, а потом исполнит свою угрозу."
-                    th "О, спасибо тебе, мрачный зануда."
+                    th "I remember, I remember."
+                    th "But this bet has every chance of resolving itself completely on its own."
+                    dreamgirl "The hopes of the young men are nurtured..."
+                    th "Aren't they science?"
+                    dreamgirl "In your case it's actually hopes."
+                    dreamgirl "Rest assured, she'll get to you and tear you to shreds and then carry out her threat."
+                    th "Oh, thank you, you gloomy nerd."
                 elif alt_result_dv_1_tour == 3:                                                                 # Дваче в 1/2 к Семёну
-                    th "Забудешь тут."
-                    "Судя по графику, моим противником в полуфинале выступает как раз Двачевская."
-                    dreamgirl "Вот свезло так свезло!"
-                    dreamgirl "Давай сделаем ей больно!"
+                    th "As if I'll be able to forget here."
+                    "Judging by the schedule, my opponent in the semifinals is just Dvachevskaya."
+                    dreamgirl "That's lucky!"
+                    dreamgirl "Let's hurt her!"
                 elif alt_result_dv_1_tour == 2:                                                                 # Дваче слетела в 1 туре
-                    "Это было бы даже смешно."
-                    th "Пари? Какое пари?"
-                    th "Пока мы тут о везении судачили, Алиску вышибли на первом же кону."
-                    "Я снял воображаемую шапку и прижал её к груди."
-                    me "Помянем!"
+                    "That would even be ridiculous."
+                    th "A bet? What bet?"
+                    th "While we were judging our luck here, Aliska got kicked out on the first round."
+                    "I took off my imaginary hat and pressed it to my chest."
+                    me "Rest in piss!"
                     show dv angry pioneer2 far at left with dissolve
-                    "Двачевская оскалилась, но ничего не сказала."
+                    "Dvachevskaya grinned, but said nothing."
 
     elif alt_my_rival_1_tour.take == 'us':
         show us sad pioneer with dspr
-        us "Так нельзя, я только разыгрываться начала!"
-        me "Я тоже. {w}Ты проиграла, я победил. Всё честно."
+        us "You can't do that, I just started playing around!"
+        me "Me too. {w}You lost, I won. All's fair."
         play music music_7dl["genki"] fadein 3
-        us "Переиграем! Только ты теперь поддавайся, слышишь?"
-        us "Я должна победить и забрать главный приз!"
+        us "We'll replay it! Only you give in now, do you hear?"
+        us "I have to win and take the grand prize!"
         show us angry pioneer with dspr
-        us "Ты должен проиграть! Должен! Понял!"
-        "Ещё немного, и начну хохотать в голос, настолько потешно это выглядело."
+        us "You must lose! Must! Got it!"
+        "A little more and I'll start laughing my head off, that's how funny it looked."
 
 # ====================================================== Пропускаем часть диалога, если "выиграли" 1 тур скипом
         if not alt_day2_detour_semifinal:
             if alt_day2_us_escape:
-                us "Ах так! Да я тогда… Я тогда завтра снова сбегу, понял!"
-                us "И чисти тогда свою картошку сам! На весь лагерь!"
-                "А вот эта угроза была уже посерьёзнее, дежурить по столовой одному мне совершенно не улыбалось."
+                us "Oh is that so! Then I'll... I'll run away again tomorrow, got it!"
+                us "And peel your own potatoes then! For the whole camp!"
+                "Now that was a bigger threat, I didn't feel like being on canteen duty alone."
             else:
-                us "Ах так! Тогда я всем расскажу про тебя и Двачевскую!"
+                us "Ah is that so! Then I'll tell everyone about you and Dvachevskaya!"
                 if (alt_day2_dv_ultim == 1) and (loki or herc):
-                    me "Мелкая нахалка, не смей! Это только наш с ней спор, ты только разрубала!"
+                    me "You little brat, don't you dare! It's our bet, you've only been breaking it up!"
                     show us grin pioneer with dspr
-                    "Ульяна только улыбнулась."
+                    "Ulyana only smiled."
                 else:
-                    me "Ты всем расскажешь то, что она обещала рассказать? В случае моего проигрыша?"
-                    "Она кивнула."
+                    me "Are you going to tell everyone what she promised to tell? In case I lose?"
+                    "She nodded."
             if herc or loki:
-                me "А тебе не надо горячего шоколада?"
+                me "Don't you want some hot chocolate?"
                 show us surp1 pioneer with dspr
-                us "Что?"
-                me "Я говорю, можешь делать как хочешь, но ты проиграла."
+                us "What?"
+                me "I say you can do as you want, but you lost."
                 show us dontlike pioneer with dspr
-                me "А карточный долг священен. Всё, брысь отсюда, я к победе иду."
-                "Она надулась, но сделала, как я сказал."
+                me "And card debt is sacred. That's it, get out of here, I'm going to win."
+                "She pouted, but she did as I said."
                 hide us
                 with flash_red
-                "Правда, попутно наступила мне на ногу — пускай."
+                "True, in passing she stepped on my foot - let her."
                 stop music fadeout 3
-                "Я был благодушен и простил ей эту маленькую шалость."
+                "I was feeling generous and forgave her this little prank."
             if dr:
-                me "Ладно"
-                "Я вздохнул."
-                me "Уговорила. Дам тебе ещё один шанс."
+                me "Okay."
+                "I sighed."
+                me "Deal. I'll give you one more chance."
                 show el serious pioneer at left with dissolve
-                "Её крики привлекли внимание Электроника."
-                el "Никаких переигровок!"
-                el "Один матч, игра до двух побед, проигравший выбывает."
-                "Ульяна кинула на Электроника недвусмысленный взгляд, означающий для него грядущие неприятности."
+                "Her screams caught Electronik's attention."
+                el "No rematches!"
+                el "One match, game to two wins, loser eliminated."
+                "Ulyana threw an unmistakable look at Electronik, signifying trouble ahead for him."
                 stop music fadeout 3
-                "Но хотя бы с меня внимание переключила, и я вздохнул с облегчением."
+                "But at least she diverted her attention from me, and I breathed a sigh of relief."
         else:
-            me "Можешь делать как хочешь, но ты проиграла."
-            me "А карточный долг священен. Всё, брысь отсюда, я к победе иду."
-            "Она надулась, но сделала, как я сказал."
+            me "Do as you please, but you lost."
+            me "And card debt is sacred. That's it, get out of here, I'm going to win."
+            "She pouted, but she did as I said."
             hide us
             with flash_red
-            "Правда, попутно наступила мне на ногу — пускай."
+            "True, in passing she stepped on my foot - let her."
             stop music fadeout 3
-            "Я был благодушен и простил ей эту маленькую шалость."
+            "I was feeling generous and forgave her this little prank."
         play music music_list["my_daily_life"] fadein 5
 
     elif alt_my_rival_1_tour.take == 'sh':
-        "Шурику не повезло."
-        "Но, похоже, его больше интересовал сам процесс проверки новых правил и алгоритмов, чем победа."
-        "Настоящий фанатик своего дела."
+        "Shurik was out of luck."
+        "But he seemed more interested in the process of testing new rules and algorithms than in winning."
+        "A true fanatic of his cause."
         show sh normal pioneer with dissolve
-        sh "Ты очень хорошо умеешь приспособиться к новым правилам игры."
-        "Похвалил он."
+        sh "You're very good at adapting to the new rules of the game."
+        "He praised."
         hide sh with dissolve
-        "И, пожав мне руку, удалился."
+        "And, shaking my hand, left."
 
 
 # ====================================================== Пропускаем часть диалога, если "выиграли" 1 тур скипом
         if not alt_day2_detour_semifinal:
-            "Наверное, отправился изобретать очередную дикую штуку или строчить очерк об оной в стенгазету."
-            "Я с удивлением поймал себя на мысли, что нахожу Шурика и Славю очень похожими."
-            "Оба увлечены своим делом, оба дико ответственные."
-            "И оба почти не отдыхают."
-            th "Наверное, стоило бы сдать партию, я раздолбай, я и так способ ляжки потянуть найду, а он, похоже, сейчас уйдёт обратно сидеть в клуб."
-            "Так и лето пройдёт, а он всё будет бледным."
-            dreamgirl "Эй!"
-            th "Что?"
-            dreamgirl "Это у тебя там что за гадость? {w}Совесть? {w}Выброси её немедленно."
-            dreamgirl "Вечно всякую дрянь с пола поднимаешь."
+            "Probably off to invent another wild thing or to write an essay about it in the wall newspaper."
+            "I was surprised to find Shurik and Slavya very much alike."
+            "Both passionate about their work, both wildly responsible."
+            "And both hardly ever rest."
+            th "I probably should've gave in to him, idiot, I'll find a way to stretch my thighs anyway, and he looks like he's about to go back to sit in the club."
+            "That way the summer will go by and he'll still be pale."
+            dreamgirl "Hey!"
+            th "What?"
+            dreamgirl "What's that nasty stuff you've got there? {w}Conscience? {w}Throw it away immediately."
+            dreamgirl "Always picking up crap from the floor."
             if alt_day2_dv_ultim == 1:
-                th "Что такое?"
-                dreamgirl "Напоминаю, что мы не просто так тут штаны просиживаем."
-                dreamgirl "У нас есть одна цель! Показать одной рыжей террористке, чего стоит слово!"
+                th "What is it?"
+                dreamgirl "A reminder that we don't just sit around here sitting around for nothing."
+                dreamgirl "We have one goal! To show one redheaded terrorist what a word is worth!"
                 if alt_result_dv_1_tour == 4:                                                           # Дваче в другом полуфинале
-                    dreamgirl "И особый воспитательный момент несёт то, что мы умоем её в игре по её же правилам!"
-                    th "Если она проиграет за другим столом, то никого мы не умоем."
-                    dreamgirl "Есть подозрение, что такие, как она, так просто не сдаются."
-                    th "Ну, если встретимся в финале, я её обыграю."
-                    dreamgirl "С таким настроем ты никого не обыграешь. {w}Соберись!"
+                    dreamgirl "And the special educational moment is that we'll wash her in the game by her own rules!"
+                    th "If she loses at another table, we won't wash anyone."
+                    dreamgirl "I have a suspicion that people like her don't give up so easily."
+                    th "Well, if we meet in the finals, I'll beat her."
+                    dreamgirl "You can't beat anyone with that attitude. {w}Come on!"
                 elif alt_result_dv_1_tour == 3:                                                         # Дваче в 1/2 к Семёну
-                    th "Ага, прямо сейчас и покажем."
-                    dreamgirl "Здорово! Расправа оказалась куда ближе, чем мне казалось!"
+                    th "Yeah, we'll show her right now."
+                    dreamgirl "Great! The reckoning was a lot closer than I thought it would be!"
                     if alt_day2_us_escape:
-                        dreamgirl "Она просила сделать ей посопротивляться, исполни её просьбу."
+                        dreamgirl "She asked to resist her a bit, go on, fulfill her request."
                 elif alt_result_dv_1_tour == 2:                                                         # Дваче слетела в 1 туре
-                    "Заниматься оценками слов, честно говоря, было уже поздновато."
-                    "Я посмотрел на таблицу участников — Алиса вылетела после первой же партии."
-                    th "Не{w=.3} по{w=.2}вез{w=.3}ло."
-                    th "Покойся с миром, дорогая бандитка."
-                    th "Я отомщу за тебя."
+                    "To be honest, it was a little late for grading words."
+                    "I looked at the table of participants - Alisa was out after the first game."
+                    th "Just {w=.3}your{w=.2} luck."
+                    th "Rest in peace, dear bandit."
+                    th "I will avenge you."
             else:
-                th "Что в этом плохого?"
-                dreamgirl "То, что совесть рождает сомнения, а сомнения ведут к поражению."
-                th "Я в курсе."
-                th "Вот только нужна она мне — победа?"
-                dreamgirl "Ты ещё начни лепетать чепуху про то, что «главное — участие»."
-                "Фыркнул внутренний голос."
-                th "Скажу — на всё воля Рандома."
+                th "What's wrong with that?"
+                dreamgirl "That conscience breeds doubt, and doubt leads to defeat."
+                th "I'm aware of that."
+                th "But do I need to win?"
+                dreamgirl "And next you'll start babbling nonsense about «it's all about participation»."
+                "Snorted the inner voice."
+                th "I'll say it's Allah's will."
 
     elif alt_my_rival_1_tour.take == 'mz':
         show mz normal glasses pioneer with dissolve
-        "Реакция Жужи позабавила."
-        mz "Аллилуйя!"
+        "Beetle's reaction amused me."
+        mz "Hallelujah!"
         show mz angry glasses pioneer far with dspr
         pause(0.5)
         hide mz with moveoutleft
-        "Хлопнув по столу, она поднялась и исчезла."
-        "Наверняка помчалась к своим лучшим друзьям — книгам."
-        "Вот уж кому много не надо для счастья."
+        "With a slam on the table, she got up and disappeared."
+        "She must have rushed off to her best friends, the books."
+        "That's who doesn't need much to be happy."
 
 # ---------------------------------------------------- \\ Диалоги
 
@@ -1444,15 +1444,15 @@ label alt_day2_1_tour_end:
 # ЕСЛИ НЕ Славя, Мику или Шурик ИЛИ при скипе — итоги после диалогов
     if (alt_my_rival_1_tour.take not in ['sl','mi','sh']) or alt_day2_detour_semifinal:
         scene bg int_dining_hall_sunset with dissolve
-        "Первый тур закончился."
-        "Ситуация, между тем, складывалась следующая:"
+        "The first round was over."
+        "The situation, meanwhile, was as follows:"
         call alt_day2_1_tour_analizer                                                     # вызываем анализатор 1 тура
         $ renpy.block_rollback()                                                          # блокируем роллбак
     scene bg int_dining_hall_sunset with dissolve
     stop music fadeout 3
 # -------------------------------------------------------------------------
 
-    "Ладно, это всё лирика."
+    "Anyway, that's all lyricism."
     jump alt_day2_semifinal_new                                             # переход в полуфинал
 
 #-------------------------------------------------------------------------------------------------
@@ -1461,9 +1461,9 @@ label alt_day2_semifinal_new:
     scene bg int_dining_hall_sunset with dissolve
     show el smile pioneer at left with dissolve
     play music music_list["get_to_know_me_better"] fadein 2
-    el "Итак!"
-    "Подал голос Электроник, явно гордящийся своей ролью мастер-церемониймейстера."
-    el "Первый тур окончен, победители встречаются во втором туре!"
+    el "So!"
+    "Electronik, clearly proud of his role as master of ceremonies, spoke up."
+    el "The first round is over, the winners meet in the second round!"
 
     $ alt_tournament_state = "semifinal_start"                                                      # устанавливаем начало полуфинала
 #-------------------------------------------------------------------------------------------------
@@ -1487,20 +1487,20 @@ label alt_day2_semifinal_new:
 
         if alt_my_rival_1_tour.take == 'un':
             hide el with dissolve
-            "Лена скромно стояла в сторонке и следила за событиями турнира."
+            "Lena stood modestly on the sidelines and watched the events of the tournament."
             show un smile2 pioneer far at right with dissolve
-            "При этом на лице её не было ни злости, ни обиды, ни чего-либо в этом духе."
-            "Напротив, она искренне поддерживала меня и остальных ребят."
+            "There was no anger or resentment or anything like that on her face."
+            "On the contrary, she was genuinely supportive of me and the other guys."
             hide un with dissolve
-            "Что ж, убедившись в том, что не обидел её, я немного расслабился."
-    "Между тем, в таблице уже появились имена участников второго тура."
+            "Well, after making sure I didn't offend her, I relaxed a little."
+    "Meanwhile, the names of the participants in the second round have already appeared in the table."
     call show_tournament_table                                                                      # "показали таблицу"
     $ alt_mstt = 0
     if alt_day2_result_tour != 1:                                                                       # если не продули в 1 туре
         $ places_my_table = alt_get_my_table(alt_day2_gamblers_semifinal)                               # Стол Семёна = [место Семёна, место соперника, № их стола]
     else:                                                                                               # продули в 1 туре
         $ alt_table_no = 5
-    "И если верить этой таблице, то в полуфинале встречаются четыре игрока."
+    "And if this table is to be believed, four players meet in the semifinals."
     $ alt_random_box_1 = range(1,len(alt_table_affiliation)+1)                                      # черный ящик — список от 1 до длины представлений столов +1
     while alt_table_no <= 6:                                                                        # перебираем столы от 5 по 6
         $ sitting_at_table,gambler_upper,gambler_lower,must_taunt = alt_declare_tournament_tables(alt_table_no)  #расссадка, игроки, таунты — по номеру стола
@@ -1508,7 +1508,7 @@ label alt_day2_semifinal_new:
         call show_tournament_table
         extend " %(gambler_upper)s"                                                                 # выводим в окно имя верхнего игрока
         call show_tournament_table
-        extend " и %(gambler_lower)s."                                                              # выводим в окно имя нижего игрока
+        extend " and %(gambler_lower)s."                                                              # выводим в окно имя нижего игрока
         if must_taunt != None:                                                                      # если таунт есть
             "%(must_taunt)s"                                                                        # выводим его
         if alt_day2_result_tour != 1:                                                                       # если не продули в 1 туре
@@ -1534,187 +1534,188 @@ label alt_day2_semifinal_new:
 # ---------------------------------------------------- ДИАЛОГИ
     if alt_my_rival_semifinal.take == 'un':
         show un shy pioneer with dspr
-        me "Удачи нам обоим?"
+        me "Good luck to both of us?"
         show un smile pioneer with dspr
         pause(.3)
         show un shy pioneer with dspr
-        un "Д-да…"
-        "Она попыталась улыбнуться, но тут же снова смешалась и смолкла."
+        un "Y-yes..."
+        "She tried to smile, but immediately mingled again and became silent."
 
     elif alt_my_rival_semifinal.take == 'sl':
         show sl smile pioneer with dspr
-        sl "Ух! Не думала, что так далеко зайду!"
-        "Улыбнулась Славя."
-        me "Это не значит, что я теперь буду тебе поддаваться!"
+        sl "Ugh! I didn't think I'd get this far!"
+        "Slavya smiled."
+        me "That doesn't mean I'm going to give in to you now!"
         show sl laugh pioneer with dspr
-        sl "И не надо!"
-        "Рассмеялась девочка."
-        sl "Пускай победит сильнейший!"
+        sl "And don't!"
+        "The girl laughed."
+        sl "May the best win!"
 
     elif alt_my_rival_semifinal.take == 'dv':
-        "Ехидство и озорство во взгляде Алисы не сулило ничего хорошего для меня."
+        "The sneer and mischief in Alisa's gaze did not bode well for me."
         show dv grin pioneer2 with dspr
-        dv "Я придумала новое правило."
-        "Прошептала она, наклонившись ко мне."
-        me "Какое ещё правило?"
-        dv "Если ты меня победишь сейчас, но проиграешь в финале — я всё равно всё всем расскажу."
-        me "Эй, так нечестно!"
+        dv "I made up a new rule."
+        "She whispered, leaning toward me."
+        me "What other rule?"
+        dv "If you beat me now, but lose in the finals, I'll still tell everyone."
+        me "Hey, that's not fair!"
         show dv laugh pioneer2 with dspr
-        dv "Хотя ты не победишь."
-        "Рассмеялась девочка."
-        dv "Тебе конец!"
+        dv "Though you won't win."
+        "The girl laughed."
+        dv "You're finished!"
 
     elif alt_my_rival_semifinal.take == 'mi':
         stop music fadeout 2
         show mi normal pioneer far with dissolve
-        "Рандом послал мне в оппоненты Мику."
+        "RNGesus sent me Miku as an opponent."
         play music music_7dl["tellyourworld"] fadein 3
         show mi normal pioneer with dspr
-        "Пионерка заняла место напротив и спросила."
+        "The pioneer girl took a seat across the street and asked:"
         show mi upset pioneer with dspr
-        mi "Скажи, Сенечка, а какой у тебя размер?"
-        "Я аж поперхнулся воздухом."
-        dreamgirl "Ну, не стесняйся ты так! Девочка {b}хочет{/b} знать!"
-        th "Это не те вещи, которые следует обсуждать на людях."
-        dreamgirl "А где же ещё? Пионерке одиноко и тоскливо, она хочет тепла и ласки."
-        th "Ты вообще о чём-нибудь другом думаешь?"
-        dreamgirl "Думаю, конечно, но об этом интереснее!"
-        me "Да я не…"
+        mi "Say, Senechka, what size are you?"
+        "I gasped for air."
+        dreamgirl "Well, don't be so shy! The girl {b}wants{/b} to know!"
+        th "These are not things that should be discussed in public."
+        dreamgirl "Where else? A pioneer girl is lonely and wants warmth and affection."
+        th "Do you think of anything else at all?"
+        dreamgirl "I do, of course, but this is more interesting!"
+        me "I don't..."
         show mi happy pioneer with dspr
-        mi "Не знаешь? Не страшно. У меня в клубе есть всё необходимое."
-        mi "Снимем мерки после турнира. А когда закончим, можем поиграть на гитарах!"
+        mi "You don't know? That's okay. I have everything I need at the club."
+        mi "We'll take the measurements after the tournament. And when we're done, we can play guitars!"
         if not ('music' in list_joined_clubs_7dl):
             show mi smile pioneer with dspr
-            mi "Ты же умеешь играть, да?"
+            mi "You know how to play, right?"
             show mi grin pioneer with dspr
-            extend " Если нет, я тебя научу!"
-        dreamgirl "Тебе однозначно понравится, соглашайся!"
-        dreamgirl "Она аккуратно возьмёт в одну руку твой гриф, в другую каподастр…"
-        dreamgirl "И поднимет голоску тональность!"
+            extend " If not, I'll teach you!"
+        dreamgirl "You'll definitely like it, go for it!"
+        dreamgirl "She'll gently take your fingerboard in one hand and the kapodaster in the other..."
+        dreamgirl "And raise your voice to a higher pitch!"
         show mi shocked pioneer with dspr
-        mi "Ой, Сенечка, ты вдруг так покраснел. Тебе жарко? Или плохо? Может позвать ме…"
+        mi "Oh, Senechka, you're suddenly so red. Are you hot? Or is it bad? Shall I call nu…"
         show mi scared pioneer with dspr
-        me "Не надо!" with vpunch
-        "Замечательно. Испугал девушку и пустил петуха чуть-ли не на всю столовую."
-        dreamgirl "Лох — это судьба."
-        "Выдохнув, я попробовал ещё раз, уже спокойнее."
+        me "Don't!" with vpunch
+        "Wonderful. Scared the girl and screeched like a rooster all over the canteen."
+        dreamgirl "Being a living failure is your destiny."
+        "After exhaling, I tried again, calmer now."
         show mi surprise pioneer with dspr
-        me "Прости, что накричал. Со мной всё в порядке."
+        me "I'm sorry I yelled. There's nothing wrong with me."
         show mi smile pioneer with dspr
-        mi "Ничего страшного, Сенечка. Я всё понимаю."
-        "Действительно ли понимаешь?"
-        "Повезло, что Мику такая отходчивая."
-        dreamgirl "Просто уточню — ты в самом деле собрался променять юное и мягкое на серое и унылое?"
-        th "А сам как думаешь?"
-        dreamgirl "Какой же ты…" # дегенерат, пиздец просто!
-        me "Если найдёшь меня после турнира, схожу с тобой в клуб."
+        mi "It's okay, Senechka. I understand everything."
+        "Do you really understand?"
+        "I'm lucky Miku is so resilient."
+        dreamgirl "Just to clarify - are you really going to trade in the young and soft for the gray and dull?"
+        th "How do you think?"
+        $renpy.notify('…degenerate, holy fucking shit!')
+        dreamgirl "You really are a…" # дегенерат, пиздец просто!
+        me "If you find me after the tournament, I'll go to the club with you."
         show mi grin pioneer with dspr
-        mi "Отлично! Ты будешь самым красивым на дискотеке!"
-        "Дискотеке? А причём тут дискотека?"
-        dreamgirl "Рубашку тебе пошить по размеру хотят, балбес."
-        th "Почему сразу не сказал, Штирлиц?"
-        dreamgirl "Был слишком далеко от провала."
-        dreamgirl "Главное, сам не облажайся, когда будешь позировать для юной девы голышом."
+        mi "Great! You'll be the prettiest at the disco!"
+        "Disco? What does disco have to do with it?"
+        dreamgirl "They want to make a shirt that fits you, you dummy."
+        th "Why didn't you tell me right away, Stirlitz?"
+        dreamgirl "I was too far from failing."
+        dreamgirl "Just don't screw it up yourself when you pose for the young maiden naked."
         show mi smile pioneer with dspr
         stop music fadeout 2
-        me "Кхм… Давай начнём игру уже."
+        me "Ahem... Let's start the game already."
         play music music_list["get_to_know_me_better"] fadein 3
 
     elif alt_my_rival_semifinal.take == 'us':
         stop music fadeout 2
         show us grin pioneer with dissolve
-        us "Будешь поддаваться, будешь?"
+        us "Will you give in, will you?"
         play music music_list["i_want_to_play"] fadein 1
-        "С улыбкой до ушей она уставилась на меня."
-        us "Я хочу всех победить!"
+        "With a smile up to her ears she stared at me."
+        us "I want to beat everyone!"
         if (alt_day2_dv_ultim == 1) and (loki or herc):
-            me "Не буду."
-            "Я отрицательно покачал головой."
-            me "У нас же спор, помнишь?"
+            me "I won't."
+            "I shook my head in the negative."
+            me "We've had a bet, remember?"
             if loki or herc:
-                extend " Ты разбивала!"
+                extend " You were the witness!"
             show us sad pioneer with dspr
-            us "Спор — это да, но…"
+            us "The bet, yes, but…"
             show us grin pioneer with dspr
-        us "Играть будем по моим правилам!"
-        me "Каким ещё правилам?!"
-        us "Простым!"
-        me "А-а-а! Очень информативно."
-        us "А то!"
+        us "We'll play by my rules!"
+        me "What rules?"
+        us "Simple!"
+        me "Ahhhh! Very informative."
+        us "You bet!"
         show us laugh pioneer with dspr
-        "Вдоволь насладившись моей кислой физиономией, Ульяна начала объяснять."
+        "After enjoying my sour face, Ulyana began to explain."
         show us smile pioneer with dspr
-        us "Всё просто: ты отдаёшь мне хорошие карты, а я тебе — какие захочу."
-        me "А мне с этого какая выгода?"
-        us "Ты поможешь ребёнку выиграть и получишь…"
+        us "It's simple: you give me the good cards, and I'll give you whatever cards I want."
+        me "What's in it for me?"
+        us "You help the kid win and you get..."
         show us normal pioneer with dspr
-        "Ульяна задумалась."
-        "Похоже есть не так много вещей, с которыми мелкая готова расстаться."
-        us "Конфеты. Я дам тебе конфеты. " #(хочется написать «дружбу» или «и дружбу», но в дальнейшем это никак не проявит себя. Досадно.)
-        me "Равноценный обмен…"
+        "Ulyana thought about it."
+        "There don't seem to be many things the little one is willing to part with."
+        us "Candy. I'll give you candy. " #(хочется написать «дружбу» или «и дружбу», но в дальнейшем это никак не проявит себя. Досадно.)
+        me "Equivalent exchange…"
         show us grin pioneer with dspr
-        us "Ну вот, рада, что мы пришли к кон…"
+        us "Well, I'm glad we reached can…"
         show us calml pioneer with dspr
-        extend " кансе…"
+        extend " cunse…"
         show us angry pioneer with dspr
-        extend " кунсекасу…"
+        extend " kunsexxus…"
         if herc:
-            us "Что ты ржёшь?!"
-            me "Тебе лучше не знать."
-            us "А я хочу знать."
-            us "Говори, новичок!"
+            us "What are you laughing at?!"
+            me "You don't want to know."
+            us "I want to know."
+            us "Tell me, rookie!"
             show us smile pioneer with dspr
-            us "Или наутро проснёшься с муравьями под одеялом!"
-            th "Внушительная угроза."
-            me "Ладно, давай на ушко."
+            us "Or you'll wake up in the morning with ants under your blanket!"
+            th "Impressive threat."
+            me "Okay, in your ear."
             show us grin pioneer close with dissolve
-            us "То-то же!"
-            "Ульянка подалась мне навстречу."
-            "И когда между нами остались считанные сантиметры…"
+            us "That's better!"
+            "Ulyanka leaned toward me."
+            "And when only a few centimeters remained between us..."
             with hpunch
             show us surp2 pioneer with dspr
-            us "Ай!"
+            us "Ow!"
             show us angry pioneer with dspr
-            us "Ах ты!…"
-            "Мелкая оказалась не промах: не растерялась и ударила лбом в лоб." with vpunch
-            "Не сильно. Из этого положения у неё не вышло бы иначе."
-            "Несколько секунд мы буравили другу друга взглядом."
+            us "You!…"
+            "The little one was not bad: she did not hesitate to smash my forehead with hers." with vpunch
+            "Not hard. She wouldn't have it any other way."
+            "We stared at each other for a few seconds."
             show us laugh pioneer with dspr
-            "А потом оба не удержались и засмеялись."
-            me "Ладно, давай играть уже, а то на нас вожатая косится."
-            us "А муравьёв всё равно жди."
-            th "Надеюсь, что она всё же шутит. Или забудет."
+            "And then we both couldn't help but laugh."
+            me "Come on, let's play already, the counselor is staring at us."
+            us "Expect ants anyway."
+            th "I hope she's kidding. Or she'll forget."
         else:
-            me "Консенсусу."
+            me "Consensus."
             show us dontlike pioneer with dspr
-            me "Не пытайся в сложные слова, рано тебе ещё."
-            "И почему люди считают, что использование сложных слов делает их умнее в глазах других?"
+            me "Don't use complicated words, it's too early for you."
+            "And why do people think that using compound words makes them smarter in the eyes of others?"
             show us upset pioneer with dspr
-            us "Бу-бу-бу. Вредина."
-            me "Давай играть уже."
+            us "Boo-boo-boo. Naughty."
+            me "Let's play already."
 
     elif alt_my_rival_semifinal.take == 'sh':
         show sh normal pioneer with dissolve
-        sh "Это будет достойная схватка."
-        "Кивнул он."
-        me "Не думай, что я буду тебе поддаваться."
+        sh "It'll be a decent fight."
+        "He nodded."
+        me "Don't think I'm going to give in to you."
         show sh smile pioneer with dspr
-        sh "И ты тоже не надейся!"
-        me "Тогда к оружию!"
+        sh "And don't you get your hopes up either!"
+        me "Then to arms!"
 
     elif alt_my_rival_semifinal.take == 'mz':
-        "Серьёзно, как Жужа победить-то умудрилась, с таким отношением к игре?"
+        "Seriously, how did she manage to win, with that attitude to the game?"
         show mz normal glasses pioneer with dissolve
-        mz "Слушай. Как там тебя."
-        "Начала она."
-        me "Семён."
-        mz "А, вот. Семён."
-        mz "Семён, хочешь, я скажу, что ты победил, и пойду уже?"
-        me "А так разве можно?"
-        mt "Нет, нельзя! Играйте давайте!"
-        "Крикнула со стороны болельщиков вожатая."
+        mz "Listen. What was your name."
+        "She began."
+        me "Semyon."
+        mz "Yeah, right. Semyon."
+        mz "Semyon, do you want me to say you won and go?"
+        me "Is that allowed?"
+        mt "No, you can't! Play on!"
+        "The squad leader shouted from the side of the fans."
         show mz angry glasses pioneer with dspr
-        "Чертыхнувшись, Женя отказалась от своих планов."
+        "Cursing, Zhenya abandoned her plans."
 # ---------------------------------------------------- /ДИАЛОГИ
 
 # ----------------------------------------------------------------------------------------------------
@@ -1820,37 +1821,37 @@ label alt_day2_semifinal_fail_end_new:
         stop music fadeout 2
         if alt_day2_dv_ultim == 1:
             show un serious pioneer at center with dissolve
-            un "И зачем ты это сделал?"
+            un "And why did you do that?"
             play music music_7dl["areyouabully"] fadein 3
-            "Спросила она, смотря на меня с явно выраженной неприязнью."
-            me "Извини?"
-            un "Думаешь, я не слышала о вашем с Алисой маленьком «пари»?"
-            un "Так и выигрывал бы!"
+            "She asked, looking at me with obvious dislike."
+            me "Excuse me?"
+            un "You think I haven't heard about your little 'bet' with Alisa?"
+            un "You should've won!"
             if alt_day2_walk == 1:
-                th "Да я и планировал. Даже карты пометил. Но…"
-            th "Как-то не срослось."
-            me "Да что теперь-то говорить? Я проиграл, ты победила. Удачного вечера."
-            "Тем более, что мы не ведём переговоров с террористами."
+                th "Yeah, I was planning to. I even marked the cards. But..."
+            th "It didn't work out."
+            me "What can I say now? I lost, you won. Have a good evening."
+            "Especially since we don't negotiate with terrorists."
         else:
             show un angry pioneer with dissolve
-            un "Ты поддался, да?"
+            un "You gave in, didn't you?"
             play music music_7dl["areyouabully"] fadein 3
-            "Лена наклонила голову набок и сверлила меня неприязненным взглядом."
-            un "Вместо того, чтобы нормально играть, ты устроил поддавки."
-            me "Тебе показалось."
-            "Усмехнулся я."
-        un "Прошу разрешить нам сыграть ещё раз!"
-        "В наступившей тишине попросила Лена."
-        un "Мой соперник поддавался."
+            "Lena tilted her head sideways and glared at me with a distasteful look."
+            un "Instead of playing normally, you were playing a giveaway."
+            me "You imagined it."
+            "I grinned."
+        un "Please allow us to play again!"
+        "In the ensuing silence, Lena asked."
+        un "My opponent was giving in."
         show dv grin pioneer2 far at fleft with dissolve
-        dv "Поддавался — значит, сам дурак."
-        "Фыркнула Алиса."
-        "Ну да, она-то знает, что на кону."
+        dv "If he gave in, he's the fool."
+        "Alisa snorted."
+        "Yeah, well, she knows what's at stake."
         show un angry2 pioneer with dspr
-        un "А ты бы вообще молчала! Это всё из-за тебя! Снова!"
+        un "And you should keep quiet! It's all because of you! Again!"
         stop music fadeout 3
         show un sad pioneer with dspr
-        "Она спрятала лицо в ладонях, а я поднялся из-за стола, чувствуя себя ракетной ступенью, что вывела на орбиту очередной шаттл."
+        "She hid her face in her palms, and I rose from the table, feeling like a rocket stage that had launched another shuttle into orbit."
         hide dv
         hide un
         with dissolve
@@ -1859,112 +1860,112 @@ label alt_day2_semifinal_fail_end_new:
 
     elif alt_my_rival_semifinal.take == 'sl':
         show sl normal pioneer with dissolve
-        sl "И снова меня заставляют заниматься непонятными вещами."
-        me "Прости?"
-        th "Заговаривается, что ли?"
+        sl "Once again I'm being forced to do things I don't understand."
+        me "Excuse me?"
+        th "Is she rambling or something?"
         show sl serious pioneer with dspr
-        "Славя отмахнулась."
-        sl "Не обращай внимания, просто мысли вслух."
-        me "Ясно. Что ж, тогда удачи тебе в финале!"
-        sl "Точно."
+        "Slavya brushed it off."
+        sl "Don't mind me, just thinking out loud."
+        me "I see. Well, good luck in the finals, then!"
+        sl "Right."
         show sl sad pioneer with dissolve
-        sl "Зачем я вообще играть согласилась?"
-        me "Не любишь карты?"
-        sl "Нет. Я другие игры люблю."
-        "Она сморщилась, будто съела нечто кислое."
-        "А я поднялся — меня ждала волнительная роль болельщика за финалистов."
+        sl "Why did I even agree to play?"
+        me "You don't like cards?"
+        sl "No. I like other games."
+        "She wrinkled her nose like she'd eaten something sour."
+        "And I went up - I had the excitement of rooting for the finalists waiting for me."
 
     elif alt_my_rival_semifinal.take == 'dv':
         if alt_day2_dv_ultim == 1:
             show dv grin pioneer2 with dspr
-            dv "Как думаешь, будет лучше, если я сама с трибуны объявлю?"
-            "Алиса злорадствовала так, будто я был её кровный враг с традициями пяти колен."
-            dv "Или лучше вытащить тебя на трибуну вместе с собой?"
+            dv "Do you think it would be better if I announced it myself from the podium?"
+            "Alisa gloated like I was her blood enemy with the five knees tradition."
+            dv "Or would it be better to get you to the podium with me?"
             if alt_day2_walk == 1:
-                th "Лучше объясни мне, откуда ты знаешь {i}мой собственный{/i} крап."
-            me "Не получится."
+                th "You better explain to me how the hell do you know {i}my{/i} markings."
+            me "It won't work."
             show dv surprise pioneer2 with dspr
-            dv "Почему?"
-            me "Потому что, если ты вытащишь меня на трибуны, никто в жизни не поверит, что мне хватило сил справиться с тобой и — что ты там говорила?"
+            dv "Why?"
+            me "Because if you get me out on stage, no one would ever believe that I had the strength to handle you and - what were you saying?"
             show dv laugh pioneer2 with dspr
-            dv "Да. Ну…"
-            "Ей пришла в голову мысль."
-            dv "Я скажу, что ты меня связал."
-            me "Колготками!"
-        "Алиса весело расхохоталась, а я поднялся."
-        "Господи, почему все стервы такие рыжие?"
-        "Неужели у меня где-то написано «издеваться сюда»?"
-        me "Играй. Тебя финал ждёт."
-        me "А если проиграешь, то стыд тебе и позор."
-        "Развернулся и ушёл к болельщикам."
+            dv "Yes. Well..."
+            "The thought occurred to her."
+            dv "I'll say you tied me up."
+            me "With tights!"
+        "Alisa laughed merrily, and I got up."
+        "God, why are all bitches so redheaded?"
+        "Do I really have 'mock here' written somewhere?"
+        me "Go play. You've got the finals waiting for you."
+        me "And if you lose, shame on you."
+        "I turned around and left for the fans."
 
     elif alt_my_rival_semifinal.take == 'mi':
         show mi happy pioneer with dspr
-        mi "Ура! Я снова побеждаю!"
-        mi "Да я, да я… Я супер-Мику!"
-        me "О господи, где вы откопали это чудо?"
-        "Пробормотал я."
+        mi "Yay! I'm winning again!"
+        mi "I'm, I'm... I'm super-Miku!"
+        me "Oh my God, where did you dig up this miracle?"
+        "I mumbled."
         show mi smile pioneer with dspr
-        mi "Я хочу отметить свою победу каким-нибудь очень хорошим делом или даже поступком, но мне что-то ничего в голову не приходит, может быть, ты, Сенечка, что-нибудь посоветуешь?"
-        "Человек-пулемёт."
-        th "Временами нами неминуемо на кон были выкинуты карты, да масти не те…"
-        th "Солнышко, милая, ну хватит уже трещать, я же ничего плохого не сделал тебе, за что ты меня тут расстреливаешь!"
-        me "Не знаю."
-        "Угрюмо ответил я."
-        "Поражение меня несколько подкосило."
+        mi "I want to celebrate my victory with some very good thing or even a deed, but I can't think of anything, maybe you, Senechka, can give me some advice?"
+        "Machine-gun girl."
+        th "At times we inevitably had cards thrown on the line, but the suits were wrong..."
+        th "Honey, honey, stop yapping, I didn't do anything wrong to you, why are you shooting me up here!"
+        me "I don't know."
+        "Sullenly I replied."
+        "Defeat's got me a little rattled."
         show mi happy pioneer with dspr
-        mi "Ой, а я знаю, кажется! Да! Мне только что идея в голову пришла! Я…"
+        mi "Oh, I know, I think! Yes! I just had an idea! I'll..."
         show mi happy pioneer far with dissolve
-        "Она забралась на стол."
-        mi "Я вам спою!"
-        "Она набрала в грудь воздуха, и…"
+        "She climbed up on the table."
+        mi "I'll sing to you!"
+        "She took a breath, and..."
         show dv angry pioneer2 at cleft with easeinleft
         show mt angry pioneer at cright with easeinright
         with vpunch
-        "Неизвестно откуда взявшиеся Ольга и Алиса, взревев в унисон, ринулись стаскивать её на пол."
-        "Усмехнувшись, я встал из-за стола и отошёл к болельщикам."
+        "Unbeknownst to me, Olga and Alisa, roaring in unison, rushed to drag her to the floor."
+        "With a grin, I got up from the table and walked away to the fans."
 
     elif alt_my_rival_semifinal.take == 'us':
         if (alt_day2_dv_ultim == 1) and (loki or herc):
             show us laugh pioneer with dissolve
-            us "Ура-ура-ура, прекрасная игра! Красив я и умён, и ловок, и силён!"
-            "Прокричала она."
-            me "Ты ещё фляк сделай от радости."
-            th "Почему ей так нравится факт, что теперь меня освистают на весь лагерь?"
-            me "Не знал, что твоим кумиром является Винни Пух со своими кричалками."
-            us "А как же!"
+            us "Hooray-hooray-hooray, it's a beautiful game! I'm handsome and smart and agile and strong!"
+            "She shouted."
+            me "Do a flip flop out of joy."
+            th "Why does she like the fact that now I'm getting booed by the whole camp?"
+            me "I didn't know your idol was Winnie the Pooh and his shouting."
+            us "What about it!"
             if alt_day2_us_escape:
-                us "У меня и медведь есть!"
-                "Она показала язык."
-                us "Но не узнать лучшее в мире приведение… стыд и срам!"
+                us "I've got a bear, too!"
+                "She showed her tongue."
+                us "But not recognizing the best ghost in the world... shame on you!"
         hide us with dissolve
-        "Я поморщился и встал."
-        us "Неудачникам привет."
-        "Крикнула она мне в спину."
-        "А я не среагировал. Привык."
+        "I grimaced and stood up."
+        us "Hello to losers."
+        "She shouted at my back."
+        "And I didn't react. Got used to it."
 
     elif alt_my_rival_semifinal.take == 'sh':
         show sh normal pioneer with dissolve
-        sh "Жаль, что так быстро всё закончилось."
-        "С достоинством кивнул Шурик."
-        sh "Идеально, если бы нам дали партий десять с одной колоды, чтобы можно было вычислить логику."
-        me "И сидеть до утра?"
-        me "Я-то не против, да кто ж нам позволит."
-        "Я кивнул и поднялся из-за стола."
+        sh "It's a shame it ended so quickly."
+        "With dignity Shurik nodded."
+        sh "It would be idael, if we'd been given ten games with the same deck so we could figure out the logic."
+        me "And sit here till morning?"
+        me "I don't mind, but who's going to let us."
+        "I nodded and got up from the table."
 
     elif alt_my_rival_semifinal.take == 'mz':
         show mz normal glasses pioneer with dissolve
-        mz "Упс."
-        "Пробормотала она себе под нос."
-        mz "Специально же карты не открывала. Здесь вообще как-нибудь проиграть возможно?"
-        me "Как видишь."
-        "Сказал я и встал из-за стола."
+        mz "Oops."
+        "She muttered to herself."
+        mz "I didn't open the cards on purpose. Is it even possible to lose here?"
+        me "As you can see."
+        "I said and got up from the table."
 # ---------------------------------------------------- \\ Диалоги
 
 label alt_day2_semifinal_detour:
     pause(.5)
     scene bg int_dining_hall_sunset with dissolve
-    "В полуфинале был такой расклад:"
+    "In the semifinals it was like this:"
 #-------------------------------------------------------------------------------------------------
     call alt_day2_semifinal_analizer                                                  # анализ полуфинала
     $ renpy.block_rollback()                                                          # блокируем роллбак
@@ -1987,55 +1988,55 @@ label alt_day2_semifinal_win_end_new:
 # ---------------------------------------------------- ДИАЛОГИ
     if alt_my_rival_semifinal.take == 'un':
         stop music fadeout 2
-        "Лена старалась изо всех сил."
+        "Lena tried her best."
         play music music_list["lets_be_friends"]
-        "Видно было, что ей понравилось то, как её восприняли всерьёз."
-        "Жаль только, что иногда даже старания изо всех сил решительно недостаточно."
+        "One could see that she liked the way she was taken seriously."
+        "It's just a pity that sometimes even trying your best is decidedly not enough."
         show un sad pioneer with dissolve
-        un "Досадно. У меня почти получилось."
-        "Вот они злобятся, и кричат, и ножками мотылькают, и невдомёк им, почему окружающим так смешно."
-        me "Хочешь реванш?"
+        un "That's a shame. I almost made it."
+        "Now they're angry, and they're screaming, and they're flicking their feet, and they don't know why the people around them are so funny."
+        me "Do you want a rematch?"
         show un normal pioneer with dspr
-        un "Нееет, реванш — это не то."
-        "Вздохнула она."
+        un "Nooo, rematch wouldn't be good."
+        "She sighed."
         if alt_day2_walk == 1:
-            th "Это ничего, знала бы ты, за счёт чего я тебя обыграл…"
-        me "То есть всё нормально?"
-        "Она кивнула."
-        "Что она ещё могла сделать?"
-        th "А она азартная."
-        "Отметил я для себя."
-        th "То есть, в случае чего, её можно взять на слаб{b}о{/b}?"
-        "Кого-то она мне напомнила этой своей импульсивностью."
-        "И когда я понял кого именно, то долго тряс головой, отгоняя глупые мысли."
+            th "That's nothing, if you only knew what I beat you with..."
+        me "So it's okay?"
+        "She nodded."
+        "What else could she have done?"
+        th "And she's a gambler."
+        "I noted to myself."
+        th "So, if anything, you can dare her?"
+        "She reminded me of someone with her impulsiveness."
+        "And when I realized who it was, I shook my head for a long time, driving away foolish thoughts."
         show un shy pioneer with dspr
-        un "Почему ты смотришь так странно?"
-        th "Да нет, быть не может."
-        "Это просто я надышался запахов из столовой, и меня разбирает галлюцинациями."
+        un "Why are you looking so strange?"
+        th "No, it can't be."
+        "It's just that I've been inhaling the smells from the canteen, and I'm hallucinating."
         show un shocked pioneer with dspr
-        me "Двачевскую!"
-        "Алиса покосилась на меня — мол, кто поминает имя моё всуе — но промолчала."
+        me "Dvachevskaya!"
+        "Alisa looked at me - trying to say something like 'who's speaking my name in vain' - but didn't say anything."
         hide un with dissolve
-        "А я, не объясняя ничего больше, отправился за стол местных небожителей."
+        "And I, without explaining anything else, went to the table of the local celestials."
         stop music fadeout 2
-        th "Меня ждёт финал!"
-        "Ребята за соседними столами тоже время даром не теряли."
+        th "I'm in for the finale!"
+        "The guys at the neighboring tables weren't wasting any time either."
         play music music_list["get_to_know_me_better"] fadein 2
 
     elif alt_my_rival_semifinal.take == 'sl':
         show sl smile2 pioneer with dspr
-        "Славя тихонько вздохнула и улыбнулась."
-        "Я не очень понимал, чем вызвана её позитивная реакция, но обрадовался, что не обидел своей победой девушку."
+        "Slavya sighed softly and smiled."
+        "I didn't really understand what caused her positive reaction, but I was glad that I hadn't offended the girl with my victory."
         show sl normal pioneer with dspr
-        "Она легко поднялась со стула и кивнула мне:"
-        sl "Не успел приехать, а уже первое место занял."
-        sl "Так вот и становятся легендами!"
-        me "Так я же ещё ничего не занимал…"
+        "She rose easily from her chair and nodded to me:"
+        sl "You just got here, but already won first place."
+        sl "That's how legends become legends!"
+        me "I haven't won anything yet..."
         show sl laugh pioneer with dspr
-        sl "Только не говори мне, что ты не нацелен на победу!"
+        sl "Don't tell me you're not aiming to win!"
         hide sl with dissolve
-        "Она отошла к болельщикам."
-        "А я пошёл к столу финалистов, между делом оценивая получившуюся ситуацию."
+        "She went back to the fans."
+        "And I went to the table of finalists, assessing the situation in between."
 
     elif alt_my_rival_semifinal.take == 'dv':
         show dv surprise pioneer2 with dissolve
@@ -2044,123 +2045,123 @@ label alt_day2_semifinal_win_end_new:
             play music music_list["that_s_our_madhouse"] fadein 3
         else:
             play music music_list["glimmering_coals"] fadein 3
-        th "Итак, Гагарин долетался, Пушкин дописался."
-        th "Выиграл!!!"
+        th "So, Gagarin flew, Pushkin finished."
+        th "Won!!!"
         show dv sad pioneer2 with dspr
-        th "А рыжая облажалась."
-        "Я поднялся из-за стола и бросил пренебрежительный взгляд на несчастную Алису."
-        "Кажется, она чувствовала себя совершенно не в своей тарелке."
-        "Теперь мой путь лежит к горним высям, где мне оппонентами выступят сами боги!"
-        th "А не всякие самодовольные гадины, считающие, что меня можно запугать или запутать."
+        th "And the redhead screwed up."
+        "I got up from the table and cast a dismissive glance at poor Alisa."
+        "She seemed to feel completely out of place."
+        "Now I'm on my way to the lofty heights, where the gods themselves will be my opponents!"
+        th "Not any self-righteous creeps who think I can be intimidated or confused."
         if herc or loki:
-            "Я подмигнул Двачевской."
-            me "Поздравляю!"
-            dv "Что?"
-            me "С позорным поражением тебя!"
+            "I winked at Dvachevskaya."
+            me "Congratulations!"
+            dv "What?"
+            me "Happy shameful defeat to you!"
             $ lp_dv += 1
             show dv rage pioneer2 with dspr
-            "По-моему, она меня всё-таки обругала матом."
-            "Не могу сказать — её перекосило так, что я расхохотался."
-            th "Ладно, на сегодня с неё хватит."
+            "I think she did swear at me."
+            "I can't tell - she got so twisted that I laughed."
+            th "Okay, she's done for the day."
         else:
-            "Я молча встал и направился к столу финалистов."
-            "У меня нет времени на детсадовскую возню с неудачниками."
-        "Я пошёл к столу финалистов, между делом оценивая текущую ситуацию."
+            "I stood up in silence and headed for the finalists' table."
+            "I don't have time for kindergarten fiddling with losers."
+        "I went to the finalists' table, assessing the current situation in between."
 
     elif alt_my_rival_semifinal.take == 'mi':
         show mi sad pioneer with dspr
-        "Мику однозначно расстроилась из-за проигрыша."
-        "Похоже, она начала худо-бедно разбираться в правилах — и тут на тебе."
+        "Miku was definitely upset about losing."
+        "Looks like she was just starting to get the hang of the rules, and there you go."
         "Humiliating Defeat."
-        "Наткнулась на меня."
+        "Bumped into me."
 
         show mi serious pioneer with dspr
-        mi "В следующий раз победа будет моя!"
+        mi "Next time the victory will be mine!"
 
         show mi serious pioneer far with dspr
         show mi serious pioneer far at left with move
         hide mi with moveoutleft
 
-        "Она вздёрнула нос к потолку и, поднявшись, гордо удалилась, занимая место среди проигравших."
+        "She turned her nose up at the ceiling and, rising, proudly withdrew, taking her place among the losers."
 
         show mi grin pioneer far at fleft with moveinleft
-        "Правда, немного подпортила картинку, обернувшись и показав мне язык."
+        "Although, she spoiled the picture a little by turning around and showing me her tongue."
 
         show mi smile pioneer far with dspr
         pause(0.3)
         hide mi with moveoutleft
 
-        "Культурный человек, наследие эпохи…"
-        me "Спасибо за игру!"
-        "Ребята за соседними столами тоже время даром не теряли."
-        "Игра сложилась весьма занятно."
+        "A cultured man, a legacy of an era..."
+        me "Thanks for the game!"
+        "The guys at the neighboring tables didn't waste any time either."
+        "The game turned out to be quite entertaining."
 
     elif alt_my_rival_semifinal.take == 'us':
         show us dontlike pioneer with dissolve
-        "Выиграть у Ульяны оказалось легче, чем…"
-        "Чем пережить последствия этой победы…"
+        "Winning against Ulyana was easier than..."
+        "Than to live through the consequences of this victory..."
         play music music_list["awakening_power"] fadein 1
         show us angry pioneer with dspr
         pause(0.3)
-        "Потому что она вдруг перегнулась через стол и принялась колотить меня своими маленькими кулачками."
-        "И довольно сильно!" with vpunch
-        us "Ты ведь обещал проиграть!" with hpunch
-        "Она была так обижена, будто я её предал!"
-        us "Обещал! Я ведь тебя просила!" with vpunch
-        "Интересно, она понимает, что только что призналась в жульничестве?" with hpunch
+        "Because she suddenly leaned over the table and started pounding me with her little fists."
+        "And quite strongly!" with vpunch
+        us "You promised to lose!" with hpunch
+        "She was so offended, like I betrayed her!"
+        us "You promised! I asked you!" with vpunch
+        "I wonder if she realizes she just admitted to cheating?" with hpunch
         if alt_day2_walk == 1:
-            th "Впрочем, я и сам жульничал, но…"
-        me "Ничего я не обещал!"
-        "С трудом, но мне удалось вставить пару слов в перерыве между ударами…"
-        "И мне было не ясно только одно…"
-        th "Почему меня никто не спасает?!!" with vpunch
-        th "Где Ольга Дмитриевна, когда она так нужна?!" with hpunch
-        "Но, кажется, всем было настолько весело наблюдать, как меня убивают, что никто и не думал прекращать развлечение…"
+            th "However, I, myself, was cheating, but..."
+        me "I didn't promise anything!"
+        "With difficulty I managed to get a few words in between strikes..."
+        "And the only thing that wasn't clear to me..."
+        th "Why isn't anyone saving me?!!" with vpunch
+        th "Where is Olga Dmitrievna when you need her?!" with hpunch
+        "But everyone seemed to be having so much fun watching me get killed that no one thought to stop the fun..."
         stop music fadeout 6
-        "Наконец поставив сотый синяк на моих руках и голове, Ульяна немного запыхалась и перестала меня бить." with vpunch
+        "Finally, after putting the hundredth bruise on my arms and head, Ulyana panted a little and stopped beating me." with vpunch
         show us dontlike pioneer with dspr
-        "Но она всё ещё была недовольна…"
+        "But she was still dissatisfied…"
         play music music_list["i_want_to_play"] fadein 2
-        "И это ещё мягко сказано…"
+        "And that's putting it mildly…"
         show us angry pioneer with dspr
-        us "У-у-у!"
-        "Она свирепо топнула ножкой." with vpunch
-        us "Ладно-ладно!"
-        us "Я это тебе ещё припомню."
+        us "AUUUGH!"
+        "She stomped her foot fiercely." with vpunch
+        us "All right, all right!"
+        us "I'll remember that!"
         hide us with moveoutleft
-        "И с этими словами она резко развернулась и пошла в зал."
-        "У меня появилась пара минут на то, чтобы привести себя в порядок и уточнить ситуацию в плей-офф."
+        "And with those words, she abruptly turned around and went into the hall."
+        "I had a couple of minutes to clean myself up and clarify the playoff situation."
 
     elif alt_my_rival_semifinal.take == 'sh':
         show sh normal pioneer with dissolve
-        "Шурик кивнул мне и поднялся."
-        "Не знаю, впечатлил его мой навык игры, в которую я играю сегодня первый раз в жизни, или нет."
-        "Так или иначе, он достаточно равнодушно отнёсся к поражению."
+        "Shurik nodded at me and stood up."
+        "I don't know if he was impressed with my skill at the game I was playing today for the first time in my life or not."
+        "Anyway, he was indifferent enough to lose."
         if not ('cyber' in list_joined_clubs_7dl) and ('cyber' in list_voyage_7dl):
             show sh smile pioneer with dspr
-            sh "Насчёт клуба кибернетиков, если вдруг что…"
-            "Я кивнул."
+            sh "About the cybernetics club, if anything..."
+            "I nodded."
         hide sh with dissolve
         if not ('cyber' in list_joined_clubs_7dl) and ('cyber' in list_voyage_7dl):
-            "Но давайте насчёт кибернетики позже, а пока посмотрим, что там у других пионеров творится."
+            "But let's talk about cybernetics later, but in the meantime let's see what the other pioneers are up to."
         else:
-            "А я покамест решил посмотреть, что там у других пионеров творится."
+            "In the meantime, I decided to see what the other pioneers were up to."
 
     elif alt_my_rival_semifinal.take == 'mz':
         show mz normal glasses pioneer with dissolve
-        "Реакция Жужи меня позабавила."
-        "Сначала она бросила карты на стол и спрятала лицо в ладонях."
-        "А затем вскинула руки вверх и рявкнула:"
+        "Zhenya's reaction amused me."
+        "First she threw the cards on the table and hid her face in her hands."
+        "And then she threw her hands up in the air and barked:"
         show mz laugh glasses pioneer with dspr
-        mz "Аллилуйя!" with vpunch
+        mz "Hallelujah!" with vpunch
 
         show mz normal glasses pioneer far with dissolve
         pause(0.25)
         show mz normal glasses pioneer far at fleft with move
         hide mz with moveoutleft
 
-        "После чего телепортировалась из столовой."
-        "А я же решил узнать, как там дела у соседей."
+        "And then she teleported out of the canteen."
+        "And I decided to see how the neighbors were doing."
 # ---------------------------------------------------- \\ Диалоги
 
 #-------------------------------------------------------------------------------------------------
@@ -2194,38 +2195,38 @@ label alt_day2_final_new:
 
     # ================================================ пересаживаемся за финальный стол.
     show el smile pioneer at left with dissolve
-    el "Полуфиналы завершены, победители встречаются в финале!"
+    el "The semifinals are over, the winners meet in the finals!"
     hide el with dissolve
     $ alt_mstt = 2
     call show_tournament_table                                                                  # показать таблицу — итоги полуфинала
 # ----------------------------------------------------------------------------------------------------
 label alt_day2_final_choice_new:
     if alt_rival_final.take == 'me':                                                            # Семён прошел в финал
-        "Я уверенно двигаюсь к победе, следующая моя жертва уже видна на горизонте."
+        "I'm moving steadily toward victory, my next victim is already in sight."
 
 # ---------------------------------------------------- ДИАЛОГИ
         if alt_my_rival_final.take == 'un':
-            "Прости, Лена. Ничего личного."
+            "I'm sorry, Lena. It's nothing personal."
         elif alt_my_rival_final.take == 'sl':
-            "Славя. Ну, она всё равно без души играет, так что я ей только доброе дело сделаю."
+            "Slavya. Well, she's playing soullessly anyway, so I'll only do her good."
         elif alt_my_rival_final.take == 'dv':
-            "Алиса, ага."
-            me "Алиса, а Алиса."
-            dv "Чего?"
-            me "Тебе конец."
-            "Она расхохоталась."
+            "Alisa, aha."
+            me "Alisa, hey, Alisa."
+            dv "What?"
+            me "You're finished."
+            "She laughed."
         elif alt_my_rival_final.take == 'mi':
-            "Мику."
-            "Как галантный парень я склонен сдать эту партию, чтобы сделать девушке приятное."
-            "Но как игрок я чувствую запах победы, поэтому никакой пощады!"
+            "Miku."
+            "As a gallant fellow, I'm inclined to give up this game to make a girl feel good."
+            "But as a player I can smell victory, so no mercy!"
         elif alt_my_rival_final.take == 'us':
-            "Мелкая? Блин, кто-нибудь, объясните мне внятно: какого чёрта это мелкое недоразумение забыло в финале?"
+            "The kid? Man, somebody explain to me clearly: what the hell did that little misunderstanding forget in the finale?"
         elif alt_my_rival_final.take == 'sh':
-            "Шурик? Хм. Это будет интересный бой."
+            "Shurik? Hmm. It's going to be an interesting fight."
         elif alt_my_rival_final.take == 'mz':
-            "Жужелица."
-            "Может быть, и скрипит о том, что играть не хочет, но — блин, она же в финале!"
-            "Придётся потрудиться."
+            "Beetlewoman."
+            "Might squeak about not wanting to play, but - geez, she's in the finals!"
+            "It's going to take some work."
 # ---------------------------------------------------- /ДИАЛОГИ
 
         if alt_day2_detour_final:                                                                  # если пропуск финала
@@ -2233,7 +2234,7 @@ label alt_day2_final_choice_new:
             pause(1.0)
             if not alt_day2_tournament_fast_win:                                                   # Если НЕ победа в финале
                 $ alt_day2_result_tour = 21                                                         # Семён проиграл в финале
-                "Похоже, у меня не было ни шанса."
+                "Looks like I didn't stand a chance."
                 call alt_day2_summary_poker_round
                 jump alt_day2_final_fail_end_new                                                    # на поражение в финале
             elif alt_day2_tournament_fast_win:                                                      # если победа в финале
@@ -2247,17 +2248,17 @@ label alt_day2_final_choice_new:
         $ alt_name_rival_final = alt_rival_final.name['i']                                     # Получаем имя финалиста — кому Семён проиграл
         if alt_day2_result_tour == 1:                                                           # Если продул в 1 туре
             if alt_rival_final.take == alt_my_rival_1_tour.take:                                # соперник в 1 туре и финале тот же
-                "В финал выходит мой соперник в первом коне — %(alt_name_rival_final)s{nw}"
+                "My rival from the first round reaches the finals — %(alt_name_rival_final)s{nw}"
             else:
                 if alt_my_rival_1_tour.take == 'sh':
-                    "Шурик, мой удачливый соперник, в полуфинале проиграл."
+                    "Shurik, my lucky opponent, lost in the semifinals."
                 else:
                     $ alt_name_rival_1_tour = alt_my_rival_1_tour.name['i']
-                    "%(alt_name_rival_1_tour)s, отправившая меня в компанию болельщиков, сама проиграла в полуфинале."
-                "А в финал выходит %(alt_name_rival_final)s{nw}"
+                    "%(alt_name_rival_1_tour)s, who sent me to the company of fans, herself lost in the semifinals."
+                "And to the finals comes %(alt_name_rival_final)s{nw}"
         else:
-            "Так как я сдулся и проиграл, в финал отправляется %(alt_name_rival_final)s{nw}"
-        extend ", где встретит{nw}"
+            "Since I was deflated and lost, the first finalist is %(alt_name_rival_final)s{nw}"
+        extend ", where they will meet{nw}"
 # ---------------------------------------------------
         if alt_my_rival_semifinal == None:                                                                        # Если каким-то образом второй финалист не назначен (может быть и такое)
             $ alt_my_rival_semifinal = alt_day2_gamblers_final[1-alt_day2_gamblers_final.index(alt_rival_final)]  # Это НЕ тот, кому Семён проиграл
@@ -2265,28 +2266,28 @@ label alt_day2_final_choice_new:
 
 # ---------------------------------------------------- ДИАЛОГИ
         if alt_my_rival_final.take == 'un':
-            extend " Лену и попытается обыграть её."
+            extend " Lena and will try to beat her."
         elif alt_my_rival_final.take == 'sl':
-            extend " Славю и докажет всем, что блондинка — это диагноз."
+            extend " Slavya and will prove to everyone that blonde is a diagnosis."
         elif alt_my_rival_final.take == 'dv':
             if alt_rival_final.take == 'us':
-                extend "… Алису? Так они с самого начала это планировали?!"
+                extend "… Alisa? Did they plan this from the start?!"
             else:
-                extend " Алису и попробует уцелеть в этой схватке."
+                extend " Alisa and try to survive this fight."
         elif alt_my_rival_final.take == 'mi':
-            extend " Мику. {w}Не думаю, что там будет много проблем. Хотя японка и добралась до финала."
+            extend " Miku. {w}I don't think there will be many problems there. Although the Japanese girl did make it to the finals.."
         elif alt_my_rival_final.take == 'us':
             if alt_rival_final.take == 'dv':
-                extend " Ульянку."
-                "Смешно, но, похоже, рыжие в самом деле попросту разметали этот турнир по брёвнышку, как и хотели."
+                extend " Ulyana."
+                "It's funny, but it looks like the redheads really did simply trash this tournament like they wanted to."
             else:
-                extend " Ульяну и попробует выжить после встречи с ней."
+                extend " Ulyana and will try to survive after meeting her."
         elif alt_my_rival_final.take == 'sh':
-            extend " Шурика и попробует доказать, что мозги в карточной игре не решают."
+            extend " Shurik and will try to prove that brains are completely unneeded in a card game."
         elif alt_my_rival_final.take == 'mz':
-            extend " Женю."
-            "Что ещё можно про сказать про оппонентку Ульянки?"
-            "Во. Жужелица."
+            extend " Zhenya."
+            "What else can you say about her?"
+            "Right. Beetlewoman."
 # ---------------------------------------------------- /ДИАЛОГИ
         scene bg int_dining_hall_sunset with joff_r
         $ alt_day2_gamblers_final[renpy.random.choice([0,1])].winner = True                                    #  один из игроков (рандомно) — победитель в финале
@@ -2294,14 +2295,14 @@ label alt_day2_final_choice_new:
         call alt_day2_final_analizer
 
         if (alt_day2_dv_ultim == 1):
-            "Что ж, теперь можно подвести итоги."
-            "Спор я закономерно продул — с моей удачей надеяться было глупо. Задним умом теперь уж я понял, нужно было заранее узнать, во что мы будем играть."
-            th "Это же не игра, а простое подбрасывание монетки! Случайно раздали карты, случайно выбираешь, какую из них забрать у противника."
+            "Well, now we can sum it up."
+            "The bet was a natural failure - it was foolish to hope with my luck. In hindsight, I should have known in advance what we were going to play."
+            "It's not a game, it's just a coin flip! Randomly handed out cards, randomly choosing which one to take from your opponent."
             if (alt_day2_walk == 1) and (alt_my_rival_final.take != 'dv'):
-                dreamgirl "Да ты же карты пометил, дубина! Как ты вообще с таким раскладом умудрился продуть?!"
-                th "Критический промах."
+                dreamgirl "You marked the cards, you idiot! How did you even manage to lose with that?!"
+                th "It was a misinput."
             else:
-                "В общем, в поражении я не виноват. Вот."
+                "Anyway, the defeat was not my fault. Here."
         $ renpy.block_rollback()                                                                                # блокируем роллбак
         stop music fadeout 2
         jump alt_day2_prepare_transition_to_supper
@@ -2348,32 +2349,32 @@ label alt_day2_final_start_new:
 # Палим Семёна с крапом карт
     if alt_day2_walk == 1 and INVISIBLE:                                    # Если Сёма мухлевал И ЕГО ещё не поймали, его таки в финале МОГУТ спалить
         if alt_my_rival_final.take == 'dv':                               # палит Алиса
-            "Но прежде, чем всё началось, Алиса с подозрением оглядела карты, которыми мы играли."
-            th "Неужели…"
-            "По спине пробежал холодок…"
-            "А она слегка перегнулась через стол и, лукаво улыбаясь, спросила шёпотом — так, что слышать её мог только я…"
+            "But before it started, Alisa looked suspiciously at the cards we were playing."
+            th "No way..."
+            "A chill ran down my spine..."
+            "And she leaned slightly over the table and, smiling slyly, asked in a whisper - so that only I could hear her..."
             show dv smile pioneer2 with dissolve
-            dv "Так ты все карты пометил, да?"
-            dv "Предусмотрительный…"
-            th "Она знала, что я жульничал!!!"
-            "Я покраснел."
-            th "Если сейчас она встанет и скажет всем…"
-            th "Это будет ужасно!!!"
-            th "Невыносимо!!!"
-            th "Кошмарно!!!"
-            "Но Алиса, кажется, и не думала выдавать меня…"
-            "Она улыбалась!"
-            dv "Надеялся и меня так обыграть?"
-            "И я, проклиная свою честность, тоже шёпотом, ответил:"
-            me "Да…"
-            "Она фыркнула, впрочем, совсем беззлобно."
-            dv "Даже не мечтай…"
-            "Незаметно для зрителей она достала из кармана совершенно новую колоду карт и поменяла её местами с помеченной мной…"
-            dv "Играть будем моими!"
+            dv "So you've marked all the cards, have you?"
+            dv "Prudent..."
+            th "She knew I cheated!!!"
+            "I blushed."
+            th "If she gets up now and tells everybody..."
+            th "That would be terrible!!!"
+            th "Unbearable!!!"
+            th "Horrible!!!"
+            "But Alisa didn't seem to think of giving me away..."
+            "She was smiling!"
+            dv "Were you hoping to beat me like that, too?"
+            "And I, cursing my honesty, also in a whisper, answered:"
+            me "Yes..."
+            "She snorted, however, without any anger."
+            dv "Don't even dream..."
+            "Unnoticed by the audience, she took a brand new deck of cards out of her pocket and swapped it with the one I had marked..."
+            dv "We'll play with mine!"
             show dv laugh pioneer2 with dissolve
-            "Она довольно улыбнулась."
-            dv "Я тоже предусмотрительная…"
-            "Игра началась."
+            "She smiled contentedly."
+            dv "I'm prudent, too..."
+            "Game on."
             $ INVISIBLE = False
 # ------------------------------------------------------------------------------------------------------------------------------
 
@@ -2391,17 +2392,17 @@ label alt_day2_final_re_game:                                                   
 
 # ****************   НОВЫЕ  СОПЕРНИКИ   ******************************************
         if alt_my_rival_final.take == 'un':
-            rival = CardGameRivalWiseUsual(un_avatar_set, u"Лена", alt_day2_gambler_behavior, alt_day2_gambler_skill)
+            rival = CardGameRivalWiseUsual(un_avatar_set, u"Lena", alt_day2_gambler_behavior, alt_day2_gambler_skill)
         elif alt_my_rival_final.take == 'sl':
-            rival = CardGameRivalWiseUsual(sl_avatar_set, u"Славя", alt_day2_gambler_behavior, alt_day2_gambler_skill)
+            rival = CardGameRivalWiseUsual(sl_avatar_set, u"Slavya", alt_day2_gambler_behavior, alt_day2_gambler_skill)
         elif alt_my_rival_final.take == 'dv':
-            rival = CardGameRivalWiseUsual(dv_avatar_set, u"Алиса", alt_day2_gambler_behavior, alt_day2_gambler_skill)
+            rival = CardGameRivalWiseUsual(dv_avatar_set, u"Alisa", alt_day2_gambler_behavior, alt_day2_gambler_skill)
         elif alt_my_rival_final.take == 'mi':
-            rival = CardGameRivalWiseUsual(mi_avatar_set, u"Мику", alt_day2_gambler_behavior, alt_day2_gambler_skill)
+            rival = CardGameRivalWiseUsual(mi_avatar_set, u"Miku", alt_day2_gambler_behavior, alt_day2_gambler_skill)
         elif alt_my_rival_final.take == 'us':
-            rival = CardGameRivalWiseUsual(us_avatar_set, u"Ульяна", alt_day2_gambler_behavior, alt_day2_gambler_skill) # К финалу Ульянка уже и играть научиться должна бы
+            rival = CardGameRivalWiseUsual(us_avatar_set, u"Ulyana", alt_day2_gambler_behavior, alt_day2_gambler_skill) # К финалу Ульянка уже и играть научиться должна бы
         elif alt_my_rival_final.take == 'sh':
-            rival = CardGameRivalWiseUsual(sh_avatar_set, u"Шурик", alt_day2_gambler_behavior, alt_day2_gambler_skill)
+            rival = CardGameRivalWiseUsual(sh_avatar_set, u"Shurik", alt_day2_gambler_behavior, alt_day2_gambler_skill)
         elif alt_my_rival_final.take == 'mz':
             rival = CardGameRivalWiseUsual(mz_avatar_set, alt_day2_gambler_behavior, alt_day2_gambler_skill)           # Женя играет рандомно, как в классике
 # ************************************************************************************
@@ -2422,7 +2423,7 @@ label alt_day2_final_fail_end_new:
     $ alt_tournament_state = "final_end"                                    # устанавливаем конец финала
 
     if not alt_day2_detour_final:                                           # если НЕ пропуск финала
-        "Похоже, у меня не было ни шанса."
+        "Seems like I didn't stand a chance."
         call alt_day2_summary_poker_round
 
     scene
@@ -2435,41 +2436,41 @@ label alt_day2_final_fail_end_new:
         $ lp_un += 1
         stop music fadeout 2
         show un surprise pioneer with dissolve
-        "Кажется, Лена ещё не до конца поняла, что именно сейчас произошло."
+        "Lena doesn't seem to have fully understood exactly what just happened."
         play music music_7dl["take_my_hand"] fadein 3
-        "А произошло рождение легенды, +50 к опыту, новый уровень и разблокировка уверенности в себе!"
+        "And there was the birth of a legend, +50 to experience, a new level, and the unlocking of self-confidence!"
         show un cry_smile pioneer with dspr
-        "Лена смотрела на меня долго, неотрывно, и у неё тряслись руки."
-        "Я молчу, она молчит, а вокруг как будто выросла некая отталкивающая стенка, защищающая нас — но лишь пока мы вместе."
-        "Как будто два человека, каждый из которых неполон в одиночестве, вместе намного сильнее, чем если просто сложить их характеристики."
-        "Я не могу сказать сейчас, поддавался ли я или играл в полную силу, но просто прийти сюда уже было хорошей идеей, сторицей окупившейся этими мгновениями."
-        dreamgirl "Не влюбись в неё, барин, вы знакомы меньше суток."
-        "Я пожал плечами."
-        th "Ну и что?"
-        "Ведь поют же все вокруг о любви с первого взгляда, почему бы и мне не пасть жертвой этого волшебного явления?"
-        "Ну ладно, но просто признаться себе в том, что она мне нравится, я могу?"
-        "Просто лицо, фигура и манера поведения."
-        th "Возможно, у неё килограммовые тараканы там, и она только с виду няша-скромняша, глазки в пол, ресничками бяк-бяк."
-        th "Но я-то об этом не знаю, правда?"
-        th "А значит, буду наслаждаться неведением."
-        th "Ибо оно и есть истинное блаженство."
-        "Не знать плохого о любимых, не понимать смысл текста красивой песни на японском, не думать об удобрениях для клубники и яблонь, не понимать, что красивая шубка означает смерть животного."
-        "Здесь и сейчас — на малую долю секунды — просто влюбиться, пасть жертвой ситуации, настроения и атмосферы."
+        "Lena looked at me for a long, steady moment, and her hands were shaking."
+        "I am silent, she is silent, and it is as if a kind of repulsive wall has grown around us, protecting us - but only as long as we are together."
+        "It's as if two people, each incomplete when alone, are much stronger together than if you just put their characteristics together."
+        "I can't tell now if I was giving in or playing hard to get, but just coming here was already a good idea, a hundredfold paid off by these moments."
+        dreamgirl "Don't fall in love with her, chief, you've known her less than twenty-four hours."
+        "I shrugged it off."
+        th "So what?"
+        "I mean, everyone sings about love at first sight, why shouldn't I fall victim to this magical phenomenon?"
+        "All right, but can I just admit to myself that I like her?"
+        "Just her face, her figure, and her demeanor."
+        th "Maybe she's got pound roaches in there, and she only looks like a coy girl, eyes to the floor, eyelashes bang-bang-bang."
+        th "But I don't know that, do I?"
+        th "So I'll enjoy the ignorance."
+        th "For that is true bliss."
+        "Not knowing bad things about loved ones, not understanding the meaning of the lyrics of a beautiful song in Japanese, not thinking about fertilizer for strawberries and apple trees, not understanding that a beautiful coat means the death of an animal."
+        "Here and now - for a small fraction of a second - just to fall in love, to fall prey to the situation, the mood and the atmosphere."
         with fade
-        "И отпустить мгновение, потому что пора просыпаться и идти на работу."
-        me "Поздравляю с победой."
-        "Улыбнулся я."
+        "And let go of the moment, because it's time to wake up and go to work."
+        me "Congratulations on your victory."
+        "I smiled."
         show un shy pioneer with dspr
-        un "С-спасибо…"
-        "Её имя уже внесли в список победителей, и завтра, скорее всего, заставят поднимать флаг, как самую активную участницу."
-        "Ведь нельзя же занять первое место, не принимая активного участия."
-        "Правда?"
-        "Ох, мои соболезнования."
+        un "T-thanks…"
+        "They've already put her name on the list of winners, and tomorrow they'll probably make her raise the flag as the most active participant."
+        "After all, you can't get first place without actively participating."
+        "Isn't that right?"
+        "Oh, my condolences."
         if alt_day2_dv_ultim == 1:
-            th "Хотя это, наверное, мне соболезновать надо?"
-            dreamgirl "Намекаешь на двачевские инсинуации? Не дрейфь, она умылась, не дойдя и до финала, постесняется."
-            "Будто подтверждая мои слова, Алиса, что всю партию следила за нами, казалось, забыв дышать, вздрогнула и отвела глаза."
-            "Похоже, да, не хватит ей пороху довести свою гадость до логического завершения."
+            th "Although I'm probably the one who should be sympathetic?"
+            dreamgirl "Are you talking about Dvachevskaya's insinuations? Don't drift, she's washed up before she even reached the finale, shame on her."
+            "As if to confirm my words, Alisa, who had been watching us the whole game, seemingly forgetting to breathe, flinched and looked away."
+            "Looks like she doesn't have the guts to bring her nastiness to its logical conclusion."
         stop music fadeout 3
 
     elif alt_my_rival_final.take == 'sl':
@@ -2477,338 +2478,338 @@ label alt_day2_final_fail_end_new:
         $ karma += 10
         stop music fadeout 3
         show sl sad pioneer with dspr
-        "Славя застонала и уронила голову на сложенные руки."
+        "Slavya groaned and dropped her head on her folded arms."
         play music music_list["forest_maiden"] fadein 5
-        sl "Вы хотя бы пытались, ребята?"
-        me "Я — старался!"
-        sl "Семен, пожалуйста."
+        sl "Have you guys even tried?"
+        me "I - did my best!"
+        sl "Semyon, please."
         show sl serious pioneer with dspr
-        "Она нахмурилась."
-        sl "Хуже меня нет игрока в карты, а я заняла… Ах, зачем я вообще согласилась!"
-        me "Но мы же…"
-        sl "Вам что, и правда было настолько всё равно, что вы даже поленились немного постараться?"
+        "She frowned."
+        sl "There's no worse card player than me, and I took... Ah, why did I even agree to this!"
+        me "But we were..."
+        sl "Did you really not care so much that you were too lazy to even try a little?"
         show sl sad pioneer with dspr
-        sl "Я очень, очень расстроена."
-        sl "Если вы и на завтрашних танцах будете такими же активными, я пойму намёк, и до конца смены развлекайте себя сами."
+        sl "I'm very, very disappointed."
+        sl "If you're going to be as active at tomorrow's dance, I'll take the hint, and you can entertain yourselves for the rest of the shift."
         show mt laugh pioneer at left with dissolve
-        mt "Что это у нас, а?"
-        mt "Демарш победителя? Ну, наконец-то! {w}Я уже было подумала, что ты оживший экспонент мадам Тюссо." # "экспонент" — так задумано или меняем на "экспонат"? ## полагаю, трудно случайно вместо "экспонат" написать "экспонент"
+        mt "What have we got here, huh?"
+        mt "Winner's demarche? Well, finally! {w}I was beginning to think you were a living Madame Tussauds exhibit." # "экспонент" — так задумано или меняем на "экспонат"? ## полагаю, трудно случайно вместо "экспонат" написать "экспонент" ### не пацаны, в английском оно так не работает
         show sl angry pioneer with dspr
-        sl "Ольга Дмитриевна, я серьёзно, а вы!"
+        sl "Olga Dmitrievna, I'm serious, and you!"
         show mt normal pioneer with dspr
-        mt "Славя, просто наслаждайся победой, хорошо? {w}Я знаю твоё отношение к карточным играм, и если бы у меня была возможность поставить кого-нибудь вместо тебя, я бы так и поступила."
+        mt "Slavya, just enjoy winning, okay? {w}I know your attitude toward card games, and if I had the chance to put someone else in your place, I would."
         hide mt with moveoutleft
-        "Ольга сочувственно повздыхала, подмигнула ей и скрылась на кухне."
-        "Похоже, слова о призе имели под собой кое-какое обоснование!"
+        "Olga sighed sympathetically, winked at her, and disappeared into the kitchen."
+        "Looks like the words about the prize had some justification!"
 
     elif alt_my_rival_final.take == 'dv':
         $ lp_dv = lp_dv/2
         stop music fadeout 2
         if loki or herc:
-            "Проиграть было забавно."
+            "It was fun to lose."
             play music music_list["you_lost_me"]
-            "С любой из сторон, как ни крути, я оказывался в выигрыше — в случае победы мне удастся немного заткнуть Двачевскую."
-            dreamgirl "Ровно до того момента, пока она не созреет для новой шалости."
-            th "Этого достаточно."
-            "А в случае поражения она устроит мне пиар-акцию в духе «Сёма едет, прячьте тёлок.»"
-            "Так что я от всей души пожелал удачи сопернице."
-            "И приготовился к шоу."
+            "On either side, no matter how you look at it, I've got the upper hand - if I win, I'll be able to shut Dvachevskaya up a bit."
+            dreamgirl "Exactly until she's ripe for another prank."
+            th "That's enough."
+            "And if I lose, she'll give me a PR stunt in the spirit of «Syoma's coming, hide the women»."
+            "So I wished my opponent good luck from the bottom of my heart."
+            "And got ready for the show."
         else:
-            th "Я слил."
-            th "Я облажался."
+            th "I blew it."
+            th "I screwed up."
             play music music_list["you_lost_me"]
-            th "Как всегда…"
+            th "Like always…"
             if alt_day2_walk == 1:                                                 # была лишняя проверка
-                th "Несмотря даже на то, что я пометил карты."
-            "Появилось это противное чувство, что сейчас на меня начнут показывать пальцем и шептаться «Смотрите, это он! Да, он! Он облажался.»"
-            "Я двинулся прочь от стола, не поднимая ни на кого глаз."
-            "Особенно — на Алису."
-            "Её взгляд буквально жёг мне спину."
+                th "Even after I marked the cards."
+            "I got that nasty feeling that they were going to point and whisper at me - «Look, it's him! Yes, that's him! He screwed up.»"
+            "I moved away from the table without raising my eyes to anyone."
+            "Especially not at Alisa."
+            "Her gaze literally burned my back."
         if alt_day2_dv_ultim == 1:                                                 # Спорил
-            th "Я проиграл пари."
+            th "I lost the bet."
             if loki or herc:
-                "Теперь ждём завтрашнего дня и наслаждаемся бесплатной рекламой?"
+                "Now we wait until tomorrow and enjoy the free advertising?"
             else:
-                "Теперь мне… {w}Крышка? Кранты? Конец?"
-                th "Может, сбежать из лагеря, пока не поздно?"
+                "Now I'm... {w} Screwed? Done for? Fucked?"
+                th "Should I escape from the camp before it's too late?"
         else:                                                                       # НЕ спорил
             if alt_day2_dv_ultim == 2:                                              # Если лапал
-                "И теперь, если она расскажет всем, что я её лапал — это же правдой будет, да?"
-                "Как говорил мой батя в трудных ситуациях — не упс, а йопс."
+                "And now if she tells everyone that I groped her, it'll be true, right?"
+                "As my dad used to say in difficult situations - not oops, but yops."
             else:                                                                   # НЕ лапал
-                "Хотя я не спорил с Двачевской, она теперь вполне может рассказать всем то, что она напридумывала на крыльце."
-                "И ей поверят. Как обычно верят любому победителю."
+                "Although I didn't argue with Dvachevskaya, she may well now tell everyone what she made up on the porch."
+                "And they'll believe her. As they usually believe any winner."
 
-        "Алиса победила, и все наперебой принялись её поздравлять."
-        "Электроник взмахнул руками, ознаменовав окончание турнира, и дописал в таблицу её имя."
-        th "Алиса выиграла…"
+        "Alisa won, and everyone congratulated her."
+        "Electronik waved his hands, signaling the end of the tournament, and added her name to the table."
+        th "Alisa won..."
         if alt_day2_dv_ultim == 1:
-            th "А я проиграл и турнир, и пари…"
+            th "And I lost both the tournament and the bet..."
         else:
-            th "А я проиграл… Как и всегда, впрочем."
-        th "Что же будет?!"
+            th "And I lost... As always, though."
+        th "What will happen?!"
         show dv normal pioneer2 at fleft with dissolve
-        "Я посмотрел на Алису. Казалось, на её лице не было и следа радости…"
+        "I looked at Alisa. There didn't seem to be a trace of joy on her face..."
         if alt_day2_dv_ultim == 2:
-            "Алиса встала из-за стола и, ощутимо заставляя себя…"
+            "Alisa got up from the table and, perceptibly forcing herself…"
             show mt normal pioneer at fright with dissolve
-            "Направилась к вожатой! Да! Момент истины!"
+            "Headed for the counselor! Yes! The moment of truth!"
             show dv normal pioneer2 at fleft with moveinleft
-            th "Хватит ли девочке пороху?"
-            "Внутри меня всё трепетало в предвкушении."
-            "Я подвинулся поближе, пытаясь расслышать подробности"
-            "Но она говорила шёпотом, и я ничего не мог расслышать…"
+            th "Will the girl have enough balls?"
+            "Everything inside me trembled in anticipation."
+            "I moved closer, trying to hear the details."
+            "But she was whispering, and I could hear nothing..."
             show dv guilty pioneer2 at cright
             show mt normal pioneer at fright
             with dissolve
-            "Она краснела всё сильнее, и я буквально мог читать по губам."
-            "…руками…"
-            "…прямо за грудь…"
-            "…и под юбку…"
-            me "Двачевская, у тебя такая пылкая фантазия!"
-            "Подвёл черту их шептанью я."
+            "She blushed more and more, and I could literally read her lips."
+            "…hands…"
+            "…right on the chest…"
+            "…and under the skirt…"
+            me "Dvachevskaya, you have such a fervent imagination!"
+            "I drew the line at their whispering."
             show dv sad pioneer2 at left
             show mt normal pioneer at right
             with dissolve
-            me "Может, вслух расскажешь? Мне тоже охота послушать."
+            me "Why don't you tell me aloud? I'd like to hear it too."
             stop music fadeout 3
-            "А Ольга Дмитриевна спокойно посмотрела на меня и сказала:"
-            mt "Алиса говорит, что игрок из тебя аховый."
+            "And Olga Dmitrievna calmly looked at me and said:"
+            mt "Alice says you're a hell of a player."
             show mt smile pioneer at right with dspr
-            mt "По-моему, всё верно."
+            mt "I think that's about right."
             hide dv
             hide mt
             with dissolve
-            "Я расхохотался и освободил столик."
-            "Кто бы сомневался. Не такой реакции от меня ждала Алиска, совсем не такой."
+            "I laughed and cleared the table."
+            "You bet I did. That's not the reaction Aliska was expecting from me, not at all."
         else:
-            "С равнодушием, лениво бросив на меня прищуренный взгляд, Алиса…"
+            "With indifference, lazily casting a squinted glance at me, Alisa…"
             show mt normal pioneer at fright with dissolve
-            "Пошла прямо к Ольге Дмитриевне, стоявшей всё это время среди зрителей!"
+            "Went straight to Olga Dmitrievna, who was standing among the audience the whole time!"
             show dv normal pioneer2 at fleft with dspr:
                 xalign 0.1
                 linear 3.0 xalign 0.7
             if loki:
-                th "Неужели скажет?"
+                th "Will she really say?"
             elif herc:
-                th "Таки решила рассказать свою байку?"
+                th "So she decided to tell her story?"
             if dr:
-                th "Она в самом деле расскажет?!"
+                th "She's really going to tell?!"
             if not alt_day2_dv_ultim:
                 if loki:
-                    th "Я же не стал с ней спорить."
+                    th "I didn't bet with her."
                 elif herc:
-                    th "До чего ж упёртая."
-                    dreamgirl "Никого не напоминает?"
+                    th "How stubborn she is."
+                    dreamgirl "Reminds you of anyone?"
             if dr:
-                "Всё во мне словно перевернулось."
-                "Я бросился вслед за ней…"
-                "Но было уже поздно…"
+                "It was as if everything in me was turned upside down."
+                "I rushed after her..."
+                "But it was too late..."
             elif herc:
-                "Я поудобнее уселся и стал ждать развязки."
-                dreamgirl "Не боишься?"
-                th "Ничуть."
-                th "Если вожатая поверит в эту чушь, я в ней разочаруюсь."
+                "I sat back comfortably and waited for the denouement."
+                dreamgirl "Not afraid?"
+                th "Not at all."
+                th "If the counselor believes this nonsense, I'll be disappointed in her."
             show dv smile pioneer2 at cright
             show mt normal pioneer at fright
             with dissolve
-            "Алиса стояла рядом с Ольгой Дмитриевной и что-то горячо шептала ей на ухо, весьма лукаво поглядывая на меня."
+            "Alisa stood next to Olga Dmitrievna and whispered something hotly in her ear, looking at me rather slyly."
             if dr:
-                "Этого я не мог допустить!"
-                "С громким криком…"
-                me "Это неправда!"
-                me "Всё, что она говорит обо мне — НЕ-ПРАВ-ДА!"
+                "I couldn't let that happen!"
+                "With a loud scream..."
+                me "It's not true!"
+                me "Everything she says about me is NOT TRUE!"
                 show dv smile pioneer2 at left
                 show mt normal pioneer at right
                 with dissolve
-                "Я подбежал к ним."
+                "I ran up to them."
                 stop music fadeout 3
-                "А Ольга Дмитриевна спокойно посмотрела на меня и сказала:"
-                mt "А по-моему, всё верно."
+                "And Olga Dmitrievna calmly looked at me and said:"
+                mt "I think it's true."
                 show mt smile pioneer at right with dspr
-                mt "Ты совсем не умеешь играть в карты."
-                "Такого позора я ещё никогда не испытывал."
+                mt "You don't know how to play cards at all."
+                "This is the most embarrassing thing I've ever experienced."
             elif herc:
-                "Я усмехнулся рыжей в ответ."
-                me "Давай-давай."
+                "I grinned back at the redhead."
+                me "Go ahead."
                 show dv sad pioneer2 at cright with dspr
                 pause(0.3)
                 show dv normal pioneer2 at cright with dissolve
-                "Не думаю, что Двачевская умеет читать по губам, но она поняла насколько безразличны мне её потуги."
-                th "Поздновато ты это поняла."
-                dreamgirl "Подлей маслица в огонь."
-                th "Каким образом?"
-                "В воображении возникло по меньшей мере пять способов вогнать Двачевскую в краску."
-                "И все пять — неприличные жесты."
-                "Делать это я не стану, но мысль об этом меня позабавила."
-                th "Спасибо."
-                dreamgirl "К вашим услугам."
-                "Ольга посмотрела на меня и спокойно сказала:"
-                mt "Ну да, всё верно, не умеет играть."
-                mt "Но похоже, его это не слишком заботит."
+                "I don't think Dvachevskaya can read lips, but she realized how indifferent I was to her exertions."
+                th "It's a little late for that."
+                dreamgirl "Put some oil on the fire."
+                th "In what way?"
+                "I can think of at least five ways to make Dvachevsky blush."
+                "And all five were indecent gestures."
+                "I won't do it, but the thought of it amused me."
+                th "Thank you."
+                dreamgirl "At your service."
+                "Olga looked at me and calmly said:"
+                mt "Well yes, that's right, he can't play."
+                mt "But he doesn't seem to care too much."
                 stop music fadeout 3
-                "Я едва не расхохотался."
-                "Сдрейфила!"
+                "I almost laughed."
+                "She didn't have enough courage after all!"
             elif loki:
                 show dv normal pioneer2 at cright with dissolve
-                "Я старался держать лицо и не терять достоинства, ожидая развязки."
-                "Не верю, что квалифицированный педагог, вроде нашей вожатой, поверит в эту нелепую чушь."
-                "Тем более из уст Двачевской."
-                "Если поверит, я в ней немного разочаруюсь."
-                "А Двачевской я это припомню."
-                "Наконец, Ольга спокойно сказала:"
-                mt "Ну да, всё верно."
-                mt "Он совсем не умеет играть в карты."
+                "I tried to keep my face and not lose my dignity, waiting for the denouement."
+                "I don't believe a qualified educator like our counselor would believe this ridiculous nonsense."
+                "Especially from the mouth of Dvachevskaya."
+                "If she does, I'm a little disappointed in her."
+                "And I'll remind Dvachevskaya of that."
+                "Finally, Olga said quietly:"
+                mt "Well, yes, that's right."
+                mt "He doesn't know how to play cards at all."
                 stop music fadeout 3
-                "Рыжая не смогла и пошла на попятную."
-                "Я не скрывал улыбки."
+                "The redhead couldn't make it and went backwards."
+                "I wasn't hiding a smile."
 
     elif alt_my_rival_final.take == 'mi':
         stop music fadeout 3
         show mi happy pioneer with dspr
         $ lp_mi += 1
         $ karma += 10
-        mi "Да! Да! Вы понимаете это?! Это снова я, и я снова на коне!"
+        mi "Yes! Yes! Do you understand that?! It's me again, and I'm back on the horse!"
         play music music_7dl["ourfirstmet"] fadein 3
-        mi "У меня не было никаких сомнений в том, что я приду и всех победю!"
-        mi "И я пришла и победила."
-        mi "Да я, да я… Я супер-Мику!"
-        me "Очаровательное чудовище."
-        "Пробормотал я."
+        mi "I had no doubt in my mind that I would come and beat everyone!"
+        mi "And I came and I won."
+        mi "I'm, I'm... I'm super-Miku!"
+        me "Charming monster."
+        "I mumbled."
         show mi smile pioneer with dspr
-        mi "Я не так часто выхожу из клуба, потому что всем постоянно что-то надо, все куда-то спешат и говорят мне «потом поговорим!»."
-        mi "А я не хочу потом, я сейчас хочу! И сейчас, пока я победитель, вы все должны меня слушать и не ругаться, что я много болтаю!"
-        th "Дефицит внимания, ласки, тепла и заботы… А я ещё себя хикикомори считал."
-        me "А кричать-то зачем?"
+        mi "I don't get out of the club that often, because everyone always has something to do, everyone is in a hurry and tells me «we'll talk later!»."
+        mi "And I don't want later, I want now! And now, while I'm a winner, you all have to listen to me and not swear that I talk too much!"
+        th "Deficiency of attention, affection, warmth and care... And I thought I was a hikikomori."
+        me "What's with the yelling?"
         stop music fadeout 3
-        "Оказаться в финале для меня уже было изрядным достижением, поэтому я не особо расстраивался насчёт проигрыша."
+        "For me to be in the finals was already an achievement, so I wasn't too upset about losing."
         play music music_7dl["tender_song"] fadein 3
-        "А Мику вдруг воздела к небу пальчик."
+        "And Miku suddenly raised a finger to the sky."
         show mi happy pioneer with dspr
-        mi "Ой, а я знаю, кажется! Да! Мне только что идея в голову пришла! Я…"
+        mi "Oh, I know, I think! Yes! I just had an idea! I…"
         show mi happy pioneer far with dissolve
-        "Она забралась на стол."
-        mi "Я вам спою!"
-        "Она набрала в грудь воздуха, и…"
+        "She climbed up on the table."
+        mi "I'll sing to you!"
+        "She took a breath, and..."
         show dv angry pioneer2 at cleft with easeinleft
         show mt angry pioneer at cright with easeinright
         with vpunch
-        "Неизвестно откуда взявшиеся Ольга и Алиса, взревев в унисон, ринулись было стаскивать её на пол."
-        "Но где там!"
+        "Unbeknownst to me, Olga and Alisa, roaring in unison, rushed to drag her to the floor."
+        "But how could they!"
         show mi laugh pioneer far at fleft with diam
-        "Стол для игры финалистов был большой, не чета узеньким, за которым мы квалифицировались."
-        "Поэтому маленькая, юркая японочка успешно прыгала между руками загребущими и голосила во всю силу своих развитых лёгких."
-        "Пела она о чём-то своём, на лунном наречии, которое я даже под градусом считал зубодробительным, а потому и не пытался вслушиваться."
-        "Куда интереснее было слушать голос."
-        "И смеяться над тем, как тут и там в такт пению раздаются хлопки."
-        "Чаще ловящих Мику Алисы и Ольги Дмитриевны, но и из благодарной публики тоже шла своя доля оваций."
-        mi "Ла-ла, ла-ла-ла-ла, ла-ла-ла, ла-ла-ла-ла!"
-        "Вопила она, бегая по столам, стульям и демонстрируя нам не только высокий уровень игры в карты, но и недюжинную подготовку по части паркура."
-        "Я бы поставил на японку и не прогадал."
-        "У неё вся жизнь такая."
-        "Суетная, бегательно-прыгательная на сцене, и выступления не по три форматных минутки, а полноценные концерты на несколько часов."
+        "The finalists' game table was big, not unlike the narrow one at which we qualified."
+        "So the little, scrawny little Jap successfully jumped between raking hands and sang at the top of her developed lungs."
+        "She sang about something of her own, in a lunar accent that even when I was drunk I found tongue-shattering, so I didn't try to comprehend."
+        "It was much more interesting to listen to the voice."
+        "And laughing at the clapping here and there in time with the singing."
+        "More often from Alisa and Olga Dmitrievna who were trying to catch Miku, but there was a share of applause from the appreciative audience, too."
+        mi "La-la, la-la-la-la, la-la-la, la-la-la-la!"
+        "She howled, running around tables, chairs, and showing us not only her high level of card playing, but also her outstanding parkour training."
+        "I'd bet on the Japanese girl and I wouldn't miss it."
+        "That's her whole life."
+        "Fidgety, running and jumping on stage, and performing not three minutes at a time, but full-blown concerts of several hours."
         hide mt
         hide dv
         with dissolve
-        "Так что ещё минут пять — и обе ловчих свалились рядом со столами, а она всё продолжала и продолжала петь, делая в воздухе странные, стригущие движения пальцами."
-        "Отчего-то от таких движений, да ещё в исполнении ультрамаринового маникюра, неприятно-холодно ёкало в животе."
+        "So for another five minutes, both catchers plopped down next to the tables, and she kept singing on and on, making strange, shearling motions with her fingers in the air."
+        "Somehow such movements, and even more so in the execution of the ultramarine manicure, made an unpleasantly cold tickle in my stomach."
         show mi normal pioneer far at center with easeinleft
         with fade
-        "Но всё когда-нибудь кончается."
+        "But it all comes to an end sometime."
         show mi smile pioneer with dissolve
-        "Кончилась и долгоиграющая песенка японской старлетки, и она, подойдя по столу с моей стороны, протянула мне руку."
-        "И я, как истинный джентльмен, принял её и помог девочке спуститься."
+        "The long-playing song of the Japanese starlet also ended, and she, coming up the table at my side, held out her hand to me."
+        "And I, like a true gentleman, accepted it and helped the girl down."
         show mi happy pioneer close with dspr
-        mi "Спасибо! Ты мой герой!"
+        mi "Thank you! You're my hero!"
         show mt rage pioneer at fleft with dissolve
-        mt "Ну, Хацунэ!"
-        "Мику на миг прижалась ко мне всем телом, а затем убежала от криков разъярённой вожатой."
+        mt "Well, Hatsune!"
+        "Miku clung to me with her whole body for a moment, and then ran away from the screams of the furious squad leader."
         hide mi with flash
 
     elif alt_my_rival_final.take == 'us':
         $ lp_us += 1
         stop music fadeout 2
-        "Как известно, в карты везёт новичкам и дурачкам."
+        "As you know, it's the beginners and the fools who get lucky at cards."
         play music music_7dl["genki"] fadein 3
-        "Так как мы все здесь новички, мы были в равных условиях."
-        "Но кое-кому перепало на один шанс больше!"
-        "И все догадываются, о ком речь, и почему ему больше досталось!"
+        "Since we're all new here, we were on equal footing."
+        "But someone got one more chance!"
+        "And everyone knows who it is, and why he got more!"
         show us normal pioneer with dissolve
-        "Эти пустые, стеклянные голубые глаза очень странно смотрятся в обрамлении алой чёлки."
-        "Косица пшеничного цвета, как у Слави, этому ребёнку подошла куда бы больше."
-        "Такая вот несостоявшаяся блондинка."
+        "Those empty, glassy blue eyes look very strange framed by scarlet bangs."
+        "A wheat-colored braid, like Slavya's, would suit this child much better."
+        "Such an incomplete blonde."
         show us laugh pioneer with dspr
-        us "Ура! Я победила!"
-        "Она вскочила на стул!"
-        us "Я победила! И теперь суперприз мой! {w}Моооооой!"
-        me "Твой, твой. Ты только слезь со стула, а то брякнешься ещё."
-        "Да где там."
-        "Ульянка начала подпрыгивать на опасно скрипящем стуле и скандировать:"
-        us "Приз! Приз! Приз!"
-        me "Успокойся, а?"
+        us "Yay! I won!"
+        "She jumped up on the chair!"
+        us "I won! And now the super prize is mine! {w}Miiiiiiiiiiine!"
+        me "Yours, yours. Just get off the chair or you'll fall over."
+        "No way."
+        "Ulyanka started bouncing on the dangerously squeaky chair and chanting:"
+        us "Prize! Prize! Prize!"
+        me "Calm down, will you?"
         show us grin pioneer with dspr
-        us "Ты просто завидуешь, что у меня будет приз, а у тебя нет!"
-        "Понятия не имею, о каком призе она говорит."
-        "Вообще, пойду-ка я, пока чего не случилось."
+        us "You're just jealous that I'll have the prize and you won't!"
+        "I have no idea what prize she's talking about."
+        "Actually, I'd better go before something happens."
         hide us with dissolve
         scene
         call show_tournament_table
-        "А в самом центре таблицы огромными красными буквами значилось имя."
-        el "Победитель — Ульяна!"
-        "Все стали кричать «поздравляем, поздравляем»!"
+        "And in the very center of the table, in huge red letters, was the name."
+        el "The winner is Ulyana!"
+        "Everyone began to shout «congratulations, congratulations»!"
         scene bg int_dining_hall_sunset
         show us grin pioneer
         with dissolve
-        "Но Ульяна отмахнулась. {w}Её интересовало другое:"
-        us "А где призы?"
+        "But Ulyana brushed it off. {w}She was interested in other things:"
+        us "Where are the prizes?"
 
     elif alt_my_rival_final.take == 'sh':
         show sh normal pioneer with dissolve
 
-        "Чествование Шурика выглядело неловко и натянуто."
+        "Honoring Shurik looked awkward and strained."
 
         show sh serious pioneer far with dissolve
         pause(0.25)
         show sh serious pioneer far at fright with move
         hide sh with moveoutright
 
-        "Он встал, поклонился и вышел из столовой, не дожидаясь даже, когда его имя внесут в таблицу лидеров."
+        "He stood up, bowed, and walked out of the canteen without even waiting for his name to be put on the leaderboard."
 
         show mi shocked pioneer far at center with dspr
-        mi "Кошмарный человек."
-        "Заметила Мику."
+        mi "Nightmarish man."
+        "Noticed Miku."
 
         show mi upset pioneer far with dspr
-        mi "Совершенно далёк от публичности."
+        mi "Totally far from publicity."
 
         show un normal pioneer far at left with dspr
         show mi upset pioneer far at right with move
-        un "У него другие достоинства."
+        un "He has other merits."
 
         show us smile pioneer far at fleft with moveinleft
-        us "Да? Ну-ка подробнее, пожалуйста, о достоинствах, а то я не расслышала."
+        us "Yes? Please elaborate on the merits, because I didn't hear you."
 
         show mi surprise pioneer far at fright
         show un serious pioneer far at center
         with move
-        un "Тебе бы только о похабностях слушать."
+        un "All you want to hear about is lewdness."
 
         show sl serious pioneer far at cleft with dspr
         show un serious pioneer far at cright with move
-        sl "Лена, а ты бы сама немного думала, что говоришь в присутствии ребёнка."
+        sl "Lena, and you yourself should think a little bit about what you say in the presence of the child."
 
         show un surprise pioneer far
         show us dontlike pioneer far
         show mi dontlike pioneer far
         with dspr
-        us "Эй, мне уже четырнадцать!" #us "Эй, мне уже двадцать девять!"
-        mi "Эй, мне уже шестнадцать!"
+        us "Hey, I'm already fourteen!" #us "Эй, мне уже двадцать девять!"
+        mi "Hey, I'm already sixteen!"
 
-        un "Э…"
-        sl "Да-да, ты тут о достоинствах Шурика разглагольствовала."
+        un "Uh…"
+        sl "Yes, yes, you were ranting about Shurik's merits."
 
         show dv surprise pioneer2 far at center with dspr
-        dv "Девочки, а что это вы тут обсуждаете, и без меня?"
+        dv "Girls, what are you discussing here, and without me?"
 
         show mi cry_smile pioneer far:
             xcenter 0.86
@@ -2819,8 +2820,8 @@ label alt_day2_final_fail_end_new:
         show us surp1 pioneer far:
             xcenter 0.10
         with move
-        un "Ой, Двачевская, потеряйся! Кошмарище лесное, додумалась новичка сиськами запугивать."
-        me "Эй, я всё ещё здесь!"
+        un "Oh, Dvachevskaya, get lost! You forest nightmare, you thought of scaring the newcomer with your tits."
+        me "Hey, I'm still here!"
 
         show mi rage pioneer far
         show un rage pioneer far
@@ -2828,7 +2829,7 @@ label alt_day2_final_fail_end_new:
         show sl angry pioneer far
         show us angry pioneer far
         with dspr
-        all "Заткнись!" with vpunch
+        all "SHUT UP!" with vpunch
 
         show mi smile pioneer far
         show un shy pioneer far
@@ -2836,7 +2837,7 @@ label alt_day2_final_fail_end_new:
         show sl shy pioneer far
         show us normal pioneer far
         with dspr
-        "Я и заткнулся."
+        "So I did."
 
         show mi laugh pioneer far
         show un laugh pioneer far
@@ -2844,25 +2845,26 @@ label alt_day2_final_fail_end_new:
         show sl laugh pioneer far
         show us laugh pioneer far
         with dspr
-        "Что мне ещё оставалось." #Сёма, какой же ты дегенерат, пиздец просто!
+        $renpy.notify("Syoma, you're such a degenerate, it's fucked up!")
+        "What else was there for me to do." #Сёма, какой же ты дегенерат, пиздец просто!
 
     elif alt_my_rival_final.take == 'mz':
         show mz normal glasses pioneer with dissolve
-        "Жужелица встала."
-        "Окинула всех диковатым взглядом."
-        mz "Всё, что ли? Больше жертв не будет?"
+        "The Beetle stood up."
+        "She gave everyone a wild look."
+        mz "Is that it? No more victims?"
         play sound sfx_7dl["highfive"]
         pause(1)
         play sound sfx_7dl["highfive"]
         pause(1)
-        "В полной тишине спросила она."
+        "In complete silence she asked."
         play sound sfx_7dl["highfive"]
         pause(1)
         play sound sfx_7dl["highfive"]
         show el smile pioneer at left with dissolve
-        "Только Электроник продолжал хлопать."
-        mz "Ну ладно. Я пойду тогда."
-        el "Ура, да здравствует победитель!"
+        "Only Electronik kept clapping."
+        mz "All right. I'll go then."
+        el "Hurrah for the winner!"
 
         show mz normal glasses pioneer far with dissolve
         pause(0.25)
@@ -2870,9 +2872,9 @@ label alt_day2_final_fail_end_new:
         hide mz with moveoutleft
 
         play sound sfx_7dl["highfive"]
-        "Закричал Сыроежкин ей вслед."
-        "По-моему, это всё-таки любовь."
-        sh "Эл, всё, она ушла. Успокойся."
+        "Shouted Syroezhkin after her."
+        "I think it's love after all."
+        sh "El, that's it, she's gone. Calm down."
 # ---------------------------------------------------- \\ Диалоги
     stop music fadeout 3
     jump alt_day2_prepare_transition_to_supper                        # пошли ужинать
@@ -2904,299 +2906,300 @@ label alt_day2_final_win_end_new:
 # ---------------------------------------------------- ДИАЛОГИ
     if alt_my_rival_final.take == 'un':
         show un shy pioneer with dissolve
-        un "К-кажется, в-всё."
+        un "W-well, I g-guess that's it."
         play music music_7dl["take_my_hand"] fadein 3
-        me "Что?"
+        me "What?"
         show un sad pioneer with dspr
-        un "Н-ну… Ты выиграл. П-поздравляю."
-        "Пробормотала она."
-        "Её с трудом можно было разобрать за шумом толпы, а она всё продолжала и продолжала говорить…"
-        "Будь моя воля, я бы, наверное, попросил её говорить громче."
-        th "Но где там."
-        th "Это же означает неминуемое сближение."
+        un "U-uh… You won. C-congratulations."
+        "She mumbled."
+        "You could hardly make her out over the noise of the crowd, and she just kept on and on..."
+        "If it were up to me, I'd probably ask her to speak louder."
+        th "But how could I."
+        th "That means imminent convergence."
         scene bg int_dining_hall_sunset with dissolve
-        "Не слушая больше то, что она мне говорит, я поднялся."
-        "И пошёл к доске, где Электроник уже писал моё имя."
+        "Not listening any more to what she was telling me, I got up."
+        "And went to the blackboard, where Electronik had already written my name."
         scene
         call show_tournament_table
-        "Моё!"
+        "Mine!"
         if alt_day2_dv_ultim in (1, 2):
-            th "И пусть только рыжая стерлядь попробует что-нибудь там вякнуть."
+            th "And let the red-headed vulture try to yap something there."
         scene bg int_dining_hall_sunset with dissolve
         if alt_day2_dv_ultim == 2:
             show dv shy pioneer2 with dissolve
-            "Поймав мой взгляд, она покраснела как маков цвет."
-            "А я, склонив голову набок, изобразил пантомиму под названием «натягиваю резиновую перчатку»."
+            "Catching my gaze, she blushed like a poppy."
+            "And I, with my head bowed to the side, performed a pantomime called «pulling on a rubber glove»."
             show dv shocked pioneer2 with dspr
-            "И красноречиво так пошевелил пальцами."
-            "Алисе аж плохо стало."
-            th "Или это она подумала, что я не перчатку надеваю, а… Фу, какая она испорченная."
+            "And wiggled my fingers eloquently."
+            "Alisa felt sick to her stomach."
+            th "Or maybe she thought I wasn't putting on a glove, but... Ew, she's so spoiled."
         else:
-            "Лена потерялась где-то на заднем плане, а я неотрывно чувствовал чей-то взгляд лопатками."
+            "Lena was lost somewhere in the background, and I could feel someone's gaze unremittingly on my shoulder blades."
             show dv smile pioneer2 with dspr
             play sound sfx_punch_medium
-            dv "Поздравляю!" with vpunch
-            "Поэтому почти ожидал хлопка между лопаток."
-            "Видимо, Двачевская так приветствует всех, кто ей интересен."
+            dv "Congratulations!" with vpunch
+            "So I almost expected a clap between the shoulder blades."
+            "Apparently, this is how Dvachevskaya greets everyone she's interested in."
         hide dv with dissolve
 
     elif alt_my_rival_final.take == 'sl':
         $ lp_sl += 1
         show sl smile pioneer with dspr
-        "Я победил?"
+        "I won?"
         play music music_7dl["please_reprise"] fadein 3
-        "Победил?!"
-        me "Да!"
-        "Бросив над головой карты, рявкнул я:"
-        me "Я — победитель!!!" with vpunch
+        "Won?!"
+        me "YES!"
+        "Throwing the cards over my head, I barked:"
+        me "I'm the winner!!!" with vpunch
         show sl smile2 pioneer with dspr
-        "Почему-то здесь и сейчас хотелось вести себя так, как душа лежит."
-        "Не так, как правила того требуют, или «что же люди скажут»."
-        "Это её влияние. Её."
-        "А ведь мы знакомы меньше суток."
-        "Но уже сейчас искренность проявлений чувств становится одной из самых важных добродетелей."
-        sl "Да!"
-        "Звонко произнесла она."
-        "Её глаза сияли."
-        sl "Ты победитель турнира."
-        sl "Ты — победитель."
-        "Как в боксе, она стоит рядом со мной."
-        "Хватает меня за запястье."
-        "И тянет к небу поднятой рукой."
+        "For some reason, here and now, I wanted to act the way I felt."
+        "Not the way the rules demanded, and without being stopped by «what would people say»."
+        "It's her influence. Her."
+        "We've known each other less than 24 hours."
+        "But already the sincerity of feelings is becoming one of the most important virtues."
+        sl "Yes!"
+        "She said with a ringing voice."
+        "Her eyes shone."
+        sl "You are the winner of the tournament."
+        sl "You - are the winner."
+        "Like in boxing, she's standing next to me."
+        "Grabbing my wrist."
+        "And pulls me to the sky with her hand up."
         show sl happy pioneer with dspr
-        sl "Се-{w=.3}мён! Се-{w=.3}мён!"
-        "Скандирует она."
-        "Трудно бороться с чувством сюрреалистичности происходящего."
-        "Как будто бы я попал в какую-нибудь космическую оперу или ещё какой-то пафосный жанр."
-        th "Но эти люди не умеют стесняться честного слова и честного чувства."
-        "Они кричат вместе с ней."
-        "Смотрят на меня."
-        "Мои пятнадцать минут славы."
-        dreamgirl "Пятнадцать минут Слави?"
-        "А я расхохотался."
-        th "Да! Да, чёрт возьми. Именно так."
-        "К нам протолкалась Ольга Дмитриевна."
+        sl "Sem-{w=.3}yon! Sem-{w=.3}yon!"
+        "She's chanting."
+        "It's hard to fight the feeling of the surrealness of what's going on."
+        "It's like I'm caught up in some space opera or some other pathological genre."
+        th "But these people don't know how to shy away from honest words and honest feelings."
+        "They scream along with it."
+        "They look at me."
+        "My fifteen minutes of fame."
+        $renpy.notify('This is a pun on how Slavya/Glory are only different in 1 letter in Russian')
+        dreamgirl "Fifteen minutes of Glory?"
+        "And I laughed."
+        th "Yes! Hell yes! That's right."
+        "Olga Dmitrievna pushed her way over to us."
         show mt normal pioneer at left with dissolve
-        mt "Не уходи никуда после ужина, будет вручение призов."
+        mt "Don't go anywhere after dinner, there will be a prize giving."
         show sl normal pioneer with dspr
-        dv "Поздравляю!"
-        "Из-за спины я услышал голос, который слышать бы очень не хотел."
-        "Судя по сузившимся глазам Слави, не я один."
-        "Но я обернулся."
+        dv "Congratulations!"
+        "From behind me I heard a voice I really didn't want to hear."
+        "Judging by Slavya's narrowed eyes, I wasn't the only one."
+        "But I turned around."
         hide mt
         hide sl
         with dissolve
         show dv smile pioneer2 at cright with dissolve
         if alt_day2_dv_ultim == 1:
-            dv "Ты победил в споре и турнире."
+            dv "You won the bet and the tournament."
         else:
-            dv "Молоток!"
+            dv "Good job!"
         hide dv with dissolve
-        "Она ткнула меня кулаком в плечо и, развернувшись, растворилась в толпе."
+        "She poked me in the shoulder with her fist and, turning around, disappeared into the crowd."
 
     elif alt_my_rival_final.take == 'dv':
         $ lp_dv += 1
-        th "Я выиграл!"
+        th "I won!"
         play music music_7dl["sheiscool"] fadein 3
-        th "Выиграл?"
-        th "Выиграл!!!"
+        th "Won?"
+        th "Won!!!"
         show dv normal pioneer2 with dspr
-        "Ещё несколько часов назад я не мог и представить себя таким счастливым!"
-        "Я победно смотрел на Алису, ещё не веря до конца в свою удачу…"
-        "А вокруг уже все поздравляли меня с победой, и Электроник писал моё имя в своей таблице!"
+        "Just a few hours ago, I couldn't have imagined myself so happy!"
+        "I looked at Alisa triumphantly, not yet believing my good fortune..."
+        "And everyone around me was already congratulating me on my victory, and Electronik was writing my name on his chart!"
         scene
         call show_tournament_table
-        th "Моё имя!!!"
-        th "Я выиграл турнир!"
+        th "My name!!!"
+        th "I won the tournament!"
         scene bg int_dining_hall_sunset with dissolve
-        "Словно и не было этих часов переживаний и напряжения…"
-        "Я стал лёгким как пёрышко…"
-        "Я как будто научился летать!"
+        "As if those hours of worry and tension had never happened..."
+        "I was as light as a feather..."
+        "It's like I've learned to fly!"
         if alt_day2_dv_ultim == 1:
-            th "Я выиграл пари!!!"
+            th "I won the bet!!!"
         if alt_day2_dv_ultim == 2:
             show dv shy pioneer2 with dissolve
-            "Алиса была готова на месте провалиться — до такой степени она покраснела."
-            "Поймав её взгляд, я подмигнул, сделав препохабнейшую морду лица."
+            "Alisa was ready to fall apart on the spot - so red she was."
+            "Catching her gaze, I winked, making the most preposterous face."
             show dv rage pioneer2 with dspr
-            "Её перекосило."
-            "А я расхохотался."
-            "Вечер сегодня определённо мой!"
+            "She got all twisted up."
+            "And I laughed."
+            "Tonight is definitely my night!"
         else:
             show dv smile pioneer2 with dissolve
-            "А Алиса наконец поднялась со своего места и, проходя мимо меня, хлопнула по плечу."
-            dv "Поздравляю!"
-            "И от этих слов мне стало так радостно!"
-            th "Я победил Алису!!!"
+            "And Alisa finally got up from her seat and clapped me on the shoulder as she walked past me."
+            dv "Congratulations!"
+            "And those words made me so happy!"
+            th "I beat Alisa!!!"
         hide dv with dissolve
 
     elif alt_my_rival_final.take == 'mi':
         $ lp_mi += 2
         $ alt_day2_mi_snap = True
         show mi smile pioneer with dspr
-        mi "Ты и правда победил! Ты молодец!"
+        mi "You really won! You did great!"
         play music music_7dl["tellyourworld"] fadein 3
-        "Воскликнула она."
+        "She exclaimed."
         show mi normal pioneer with dspr
-        mi "Только не думай, что тебе это поможет!"
-        "Строго сказала девочка."
-        mi "В следующий раз я тебя обязательно обыграю!"
-        "Конечно. Сколько угодно. Но — в следующий раз."
-        "А сейчас…"
-        "В таблице красовалось моё имя, выведенное толстым красным маркером."
-        "Мику схватила меня за руку и потащила за собой."
-        me "Эй!"
-        mi "Да быстрее же ты!"
-        "Ничего не понимая, я поспешил за ней."
-        me "И что?"
-        "Мы остановились у доски, и девочка кому-то замахала."
-        mi "Дядя Боря-сенсей! Мы здесь!"
+        mi "Just don't think it's going to help you!"
+        "Sternly said the girl."
+        mi "Next time I'll be sure to beat you!"
+        "Sure. As much as you like. But - next time."
+        "And now..."
+        "The table showed my name in thick red marker."
+        "Miku grabbed my arm and dragged me along."
+        me "Hey!"
+        mi "Hurry up!"
+        "Not understanding anything, I hurried after her."
+        me "And what?"
+        "We stopped at the blackboard, and the girl waved to someone."
+        mi "Uncle Borya-sensei! We're here!"
         if ('sport_area' in list_voyage_7dl):
-            th "Что ей может понадобиться от Саныча?"
-            "С любопытством подумал я."
+            th "What could she possibly want from Sanich?"
+            "With curiosity I thought."
         show ba normal uniform at cleft behind mi # Здесь не надо meet поставить? ## "знакомство" уже состоялось к этому моменту либо при посещении спортплощадки, либо по завершению обхода на экстраде заочно
         show mi smile pioneer at right
         with dissolve
-        ba "Да, мал{b}а{/b}я, чего звала?"
-        mi "У вас ещё есть кадры?"
+        ba "Yeah, kid, what did you call for?"
+        mi "Do you have any more shots?"
         show ba smile uniform with dspr
-        ba "Для тебя, мал{b}а{/b}я, сколько влезет."
-        "Из ниоткуда в его руках появился жёсткий коричневый чехол для фотоаппарата, а оттуда…"
-        "Старый добрый «компакт-автомат», плёночный."
-        "Я чуть было не сказал «раритет», но видно было, что машинка рабочая."
-        ba "Только без вспышки сегодня, так что становитесь как-нибудь, где посветлее."
-        "Мику улыбнулась и развернула кипучую деятельность, тормоша всех и переставляя."
-        "В результате полотнище таблицы было снято и перенесено поближе к окошку, где Шурик и Электроник держали его нарастяг."
+        ba "For you, kiddo, as many as you want."
+        "Out of nowhere a hard brown camera case appeared in his hands, and from there..."
+        "A good old «compact machine», a film one."
+        "I almost said «rarity», but you could tell it was a working machine."
+        ba "Only no flash today, so get someplace a little brighter."
+        "Miku smiled and turned on the boiling activity, bracing everyone and rearranging."
+        "As a result, the table cloth was removed and moved closer to the window, where Shurik and Electronik held it stretched."
         scene bg int_dining_hall_sunset with dissolve
         with dissolve
         scene
         call show_tournament_table
-        "Мику встала рядом."
+        "Miku stood up next to me."
         show mi normal pioneer at cleft with dissolve
-        "Ещё ближе."
-        "Ещё чуточку."
+        "A little closer."
+        "Just a little bit more."
         show mi dontlike pioneer with dspr
-        mi "Сень!"
-        "Наконец не выдержала она."
-        mi "Я же с тобой фотографируюсь! А ну, быстро обними девушку."
-        me "Но я…"
-        "Я вздохнул."
-        th "Я не помню, когда я последний раз так фотографировался с кем-то."
-        th "Я не умею никого обнимать для фото…"
+        mi "Senya!"
+        "Finally she couldn't stand it."
+        mi "I'm taking a picture with you! Come on, give the girl a quick hug."
+        me "But I..."
+        "I sighed."
+        th "I can't remember the last time I took a picture with someone like that."
+        th "I don't know how to hug anybody for a picture..."
         show mi normal pioneer with dspr
-        mi "Смелее же, ну!"
-        "Она нетерпеливо пошевелила плечиком."
+        mi "Come on, be more courageous!"
+        "She moved her shoulder impatiently."
         scene cg d2_mi_me_polaroid_7dl
         with dissolve
-        "И я, вздохнув, положил ей на плечо руку."
-        "Неловко — как и чувствовал себя — неловко."
-        "Свисающая кисть, нечувствительные пальцы."
-        "Как фотографировался бы с другом, а не с девушкой."
-        "До меня слишком поздно дошло, что девушку надо обнимать за талию, а не вот так."
-        "Но… поздно!"
+        "And I, with a sigh, put my hand on her shoulder."
+        "Awkward - just as I felt - awkward."
+        "Dangling hand, insensitive fingers."
+        "Like taking a picture with a friend instead of a girl."
+        "It came to me too late that a girl should be hugged by the waist, not like this."
+        "But... too late!"
         play sound sfx_7dl["snap"]
         scene
         $ renpy.show("cg d2_mi_me_polaroid_7dl", what = Sepia("cg d2_mi_me_polaroid_7dl"))
         show PolaroidFrame_7dl
         with flash
         pause(3)
-        me "Сыыыр."
-        "Запоздало опомнился я."
+        me "Cheeeeese."
+        "Belatedly I came to my senses."
         scene bg int_dining_hall_sunset
         show mi laugh pioneer at cleft
         with dissolve
-        mi "Хи-хи-хи."
-        mi "Сенечка, ты чудо."
+        mi "Hee-hee-hee."
+        mi "Senechka, you're a miracle."
         hide mi with moveoutleft
-        "Она рассмеялась и убежала."
+        "She giggled and ran away."
 
     elif alt_my_rival_final.take == 'us':
         $ lp_us -= 1
-        th "Я выиграл!"
-        th "Выиграл?"
-        th "Выиграл!!!"
+        th "I won!"
+        th "Won?"
+        th "Won!!!"
         play music music_7dl["genki"] fadein 3
-        "Бац!" with vpunch
+        "Bang!" with vpunch
         with flash_red
         show us calml pioneer with dissolve
-        us "И ничего ты не выиграл!"
-        "Она хмуро смотрела на меня снизу вверх."
-        us "Ты играл неправильно, переигрываем!"
-        me "Что это значит, «неправильно»?"
+        us "And you didn't win anything!"
+        "She looked up at me with a frown."
+        us "You didn't play it right, we're replaying it!"
+        me "What does that mean, «didn't play right»?"
         show us dontlike pioneer with dspr
-        me "Я выиграл турнир! {w}Как я могу играть неправильно?"
-        us "Молча! Ты жульничал!"
-        "Она топнула ногой."
-        us "Ты неправильно играл и жульничал!"
+        me "I won the tournament! {w}How can I play wrong?"
+        us "Silently! You cheated!"
+        "She stomped her foot."
+        us "You played wrong and cheated!"
         if alt_day2_walk == 1:
-            th "Неужели про крап узнала? Но как?"
-            th "Если она сейчас всем про него раcскажет, меня линчуют на ближайшей осине."
-        us "Ты плохо мне поддавался."
-        "А. Ну, это меняло всё дело."
+            th "Did she find out about the marking? But how?"
+            th "If she tells everyone about it now, I'll be lynched on the nearest aspen tree."
+        us "You didn't give in to me very well."
+        "Ah. Well, that made all the difference."
         hide us with dissolve
-        "Я расхохотался и отошёл."
+        "I laughed and walked away."
         show dv smile pioneer2 with dissolve
-        "А Алиса наконец поднялась со своего места и, проходя мимо меня, хлопнула по плечу."
-        dv "Поздравляю!"
-        "И от этих слов мне стало так радостно!"
-        th "Я победил!!!"
+        "And Alisa finally got up from her seat and clapped me on the shoulder as she walked past me."
+        dv "Congratulations!"
+        "And those words made me so happy!"
+        th "I won!!!"
         hide dv with dissolve
 
     elif alt_my_rival_final.take == 'sh':
         stop ambience
         show sh rage pioneer with dissolve
-        sh "Значит, победил?"
+        sh "So, won?"
         play music music_7dl["dead_silence"] fadein 3
-        "Медленно произнёс он."
-        "Он так странно стоял, что я никак не мог разглядеть его глаз из-за бликов на очках."
+        "Slowly he said."
+        "He was standing so strangely, there was no way I could make out his eyes because of the glare on his glasses."
         show sh serious pioneer with dspr
-        "Да и сама его поза…"
-        "Почему-то вдруг вспомнился персонаж Элайджи Вуда из «Города Грехов»."
-        "Вроде бы, ничего такого сверхъестественного не делал, но тревогу внушал примерно так же — одним появлением на экране."
-        "И Шурик заставлял меня тревожиться."
-        sh "То есть думаешь, что можно просто так прийти и выиграть мой турнир?"
+        "Yes, and his very pose..."
+        "For some reason it reminded me of the character of Elijah Wood from «City of Sins»."
+        "He didn't seem to do anything supernatural, but he made me anxious in the same way, just by appearing on the screen."
+        "And Shurik made me anxious."
+        sh "So you think you can just show up and win my tournament?"
         scene black
         show sh rage pioneer close
         with diam
-        sh "Да кто ты такой вообще?"
-        sh "Ведёшь себя, будто тебе уже давно не семнадцать лет."
+        sh "Who are you, anyway?"
+        sh "You act like you're not seventeen years old anymore."
         show sh rage pioneer close with dspr
-        sh "А может быть, ты…"
+        sh "Maybe, you are…"
         scene
         $ renpy.show("bg int_dining_hall_sunset", what = Noir("bg int_dining_hall_sunset"))
         show sh rage pioneer close with dspr:
             xalign .5 yalign .7 zoom 0.7
             ease 0.3 yalign .4 zoom 1.25
-        "Он сделал резкий шаг в мою сторону и протянул руку."
-        mt "Шурик!"
+        "He took a sharp step in my direction and held out his hand."
+        mt "Shurik!"
         stop music fadeout 3
         play ambience ambience_dining_hall_full fadein 5
         show blinking
         scene bg int_dining_hall_sunset with dissolve
         with diam
         show sh upset pioneer with dissolve
-        "Наваждение момента исчезло, Шурик из зловещей фигуры превратился обратно в обычного, чуть рассеянного, парня."
-        "Серые, давящие стены уступили место красноватому свету катящегося на закат светила."
-        "И самое главное —"
-        "Ведь я же победитель!"
+        "The obsession of the moment vanished, Shurik transformed from a sinister figure back into an ordinary, slightly distracted, guy."
+        "The gray, crushing walls gave way to the reddish light of the rolling sunset."
+        "And most importantly -"
+        "After all, I'm a winner!"
         hide sh with dissolve
         scene
         call show_tournament_table
-        "Электроник внёс моё имя в список победителей."
-        el "А после ужина…"
+        "Electronik put my name on the list of winners."
+        el "And after supper..."
         scene bg int_dining_hall_sunset with dissolve
-        "Ольга Дмитриевна заткнула ему рот рукой."
-        th "Правильно, пусть будет сюрпризом. А для спойлерщиков в аду отдельный котёл стоит."
+        "Olga Dmitrievna gagged him with her hand."
+        th "Right, let it be a surprise. And there's a separate cauldron in hell for those who spoil."
 
     elif alt_my_rival_final.take == 'mz':
-        "Реакция Жужелицы была обескураживающей."
-        "Её не было."
-        "Но меня это не смущало."
-        "Самое главное, что я победил!"
-        "Остальные пусть думают и делают что хотят."
-        "Даже Алиса."
-        "Сейчас-то ей никто не поверит."
-        "И это, пожалуй, радует больше всего."
+        "Beetle's reaction was discouraging."
+        "There wasn't any."
+        "But it didn't embarrass me."
+        "The important thing is that I won!"
+        "Let the others think and do what they want."
+        "Even Alisa."
+        "No one will believe her now."
+        "And that's probably what makes me happiest."
 # ---------------------------------------------------- \\ Диалоги
 
     stop music fadeout 3
@@ -3215,23 +3218,23 @@ label alt_day2_stipulation_new:
         alt_spr_my_riv_1 = " ".join(alt_spr_rival)
         renpy.show(alt_spr_my_riv_1,[alt_pos_my_rival])
         renpy.transition(dspr)
-    alt_nick_my_rival "Кто первый ходит?"
+    alt_nick_my_rival "Who goes first?"
 
     $ alt_whose_first_move = renpy.random.choice(['rival', 'player'])
     pause(1)
     if alt_tournament_state == "1_round_start":                             # если первый тур
-        "Я достал из нагрудного кармана пятирублёвую монетку — очень надеюсь, что ни у кого не возникнет вопросов касательно номинала — и подбросил её в воздух."
-        "Сомнительная честь сделать первый ход выпала"
+        "I took a five-ruble coin out of my breast pocket - I really hope no one has any questions about the denomination - and tossed it in the air."
+        "The dubious honor of making the first move fell to"
     elif alt_tournament_state == "semifinal_start":                         # если полуфинал
-        "Я снова подбросил монетку в воздух."
-        "В этот раз не повезло"
+        "I flipped a coin in the air again."
+        "No luck this time -"
     elif alt_tournament_state == "final_start":                             # если финал
-        "В третий раз закинул он невод… В смысле, подбросил монетку."
-        "Похоже, первому ходить придётся"
+        "For the third time he threw in the net... I mean, he flipped a coin."
+        "Looks like the first move is"
     if alt_whose_first_move == 'rival':
         extend " %(alt_name_my_rival_d)s."
     elif alt_whose_first_move == 'player':
-        extend " мне."
+        extend " me."
 
     return
 
@@ -3259,7 +3262,7 @@ label alt_day2_one_play_draw_new:
     window auto
     $ show_cards_alt()
     $ renpy.transition(dissolve)
-    el "Ничья! Играйте ещё раз."
+    el "Draw! Play again."
     if alt_tournament_state == "1_round_start":                             # если первый тур
         jump alt_day2_1_tour_re_game                                        # играем первый тур
     elif alt_tournament_state == "semifinal_start":                         # если полуфинал
@@ -3274,50 +3277,50 @@ label alt_day2_checking_scores:
     if alt_day2_my_win == alt_day2_rival_win:                                                   # если счёт равный
         if alt_day2_game_played_out == 0:                                                       # ещё не играли (0:0)
             if alt_day2_gamblers_final[0].take == 'me':                                         # если 1-й игрок — Семён
-                $ alt_day2_upper_gambler_name = "Семёном"
+                $ alt_day2_upper_gambler_name = "Semyon"
                 $ alt_day2_bottom_gambler_name = alt_name_my_rival_t
             else:
                 $ alt_day2_upper_gambler_name = alt_name_my_rival_t
-                $ alt_day2_bottom_gambler_name = "Семёном"
+                $ alt_day2_bottom_gambler_name = "Semyon"
             show el normal pioneer far at left with dissolve
-            el "До начала финальной игры между %(alt_day2_upper_gambler_name)s и %(alt_day2_bottom_gambler_name)s осталась минута, счёт по-прежнему ноль-ноль."
-            "Электроник комментировал игру, как умел."
+            el "Less than a minute left until the final game between %(alt_day2_upper_gambler_name)s and %(alt_day2_bottom_gambler_name)s, the score is still 0-0."
+            "Electronik commented on the game as best he could."
             hide el with dissolve
             return
         else:                                                                                   # если 1:1
             call alt_day2_current_game_end_compare_hands                                        # сравнение комбинаций по итогам игры
             show el serious pioneer far at left with dspr
-            el "Итак, по итогам двух игр у нас пока ничья; победитель определится в решающей игре."
-            el "А кто будет ходить первым — сейчас разыграем, и поможет нам в этом портативный генератор случайных чисел."
-            "Электроник выудил из кармана монету."
-            el "Орёл? Решка?"
+            el "So, at the end of the two games we have a draw so far; the winner will be determined in the decisive game."
+            el "And who will go first - now we'll play, and the portable random number generator will help us in this."
+            "Electronik took a coin out of his pocket."
+            el "Heads? Tails?"
             menu:
-                "Орёл":
+                "Heads":
                     $ alt_whose_first_move_choice = 1
-                "Решка":
+                "Tails":
                     $ alt_whose_first_move_choice = 0
             $ alt_whose_first_move_random = renpy.random.choice([0, 1])
             if alt_whose_first_move_random == 0:
-                "Эл подбросил монетку, выпала решка."
+                "El flipped a coin, tails came out."
             else:
-                "Подброшенная монета упала орлом."
+                "The tossed coin fell on heads."
             $ renpy.block_rollback()                                                                # блокируем роллбак
             if alt_whose_first_move_choice == alt_whose_first_move_random:
-                if alt_name_my_rival_i == "Шурик":
-                    el "Надо же, угадал. Первым ходить будет Шурик{nw}"
+                if alt_name_my_rival_i == "Shurik":
+                    el "Guessed right. Shurik will be the first one to go{nw}"
                 else:
-                    el "Надо же, угадал. Первой ходить будет %(alt_name_my_rival_i)s{nw}"
+                    el "Guessed right. The first one to go will be %(alt_name_my_rival_i)s{nw}"
                 if alt_whose_first_move == 'player':
-                    extend ", как и в первой игре."
+                    extend ", like in the first round."
                 else:
-                    extend ", как и во второй игре."
+                    extend ", like in the second round."
                 $ alt_whose_first_move = 'rival'
             else:
-                el "Мимо. Так что первый ход — твой{nw}"
+                el "Missed. So the first move is yours{nw}"
                 if alt_whose_first_move == 'player':
-                    extend ", как и во второй игре."
+                    extend ", like in the second round."
                 else:
-                    extend ", как и в первой игре."
+                    extend ", like in the first round."
                 $ alt_whose_first_move = 'player'
             scene bg int_dining_hall_sunset with dissolve
             jump alt_day2_transition_to_game
@@ -3326,16 +3329,16 @@ label alt_day2_checking_scores:
         if alt_day2_game_played_out == 1:                                                       # по итогам первой игры
             show el normal pioneer far at left with dspr
             if alt_whose_first_move == 'rival':                                                 # если первым ходил соперник
-                el "Семён, теперь первым будешь ходить ты."
+                el "Semyon, you get the first move now."
                 $ alt_whose_first_move = 'player'                                               # то первым ходит Семён
             else:                                                                               # если ходил Семён
-                el "Право первого хода переходит к %(alt_name_my_rival_d)s."
+                el "The right of the first move passes to %(alt_name_my_rival_d)s."
                 $ alt_whose_first_move = 'rival'                                                # то первым ходит соперник
             scene bg int_dining_hall_sunset with dissolve
             jump alt_day2_transition_to_game                                                    # переход к игре
         else:                                                                                   # по итогам тура
             show el normal pioneer far at left with dspr
-            el "Семён выигрывает у %(alt_name_my_rival_r)s со счётом %(alt_day2_my_win)d-%(alt_day2_rival_win)d."
+            el "Semyon wins against %(alt_name_my_rival_r)s with the score of %(alt_day2_my_win)d-%(alt_day2_rival_win)d."
             scene bg int_dining_hall_sunset with dissolve
             if alt_tournament_state == "final_start":                                           # если финал
                 jump alt_day2_final_win_end_new                                                 # победа в финале
@@ -3348,16 +3351,16 @@ label alt_day2_checking_scores:
         if alt_day2_game_played_out == 1:                                                       # по итогам первой игры
             show el normal pioneer far at left with dspr
             if alt_whose_first_move == 'rival':                                                 # если первым ходил соперник
-                el "В следующей игре первым будет ходить Семён."
+                el "In the next round, Semyon will be the first to go."
                 $ alt_whose_first_move = 'player'                                               # то первым ходит Семён
             else:                                                                               # если ходил Семён
-                el "%(alt_name_my_rival_i)s, теперь первый ход — твой."
+                el "%(alt_name_my_rival_i)s, you get the first move now."
                 $ alt_whose_first_move = 'rival'                                                # то первым ходит соперник
             scene bg int_dining_hall_sunset with dissolve
             jump alt_day2_transition_to_game                                                    # переход к игре
         else:                                                                                   # по итогам тура
             show el normal pioneer far at left with dissolve
-            el "%(alt_name_my_rival_i)s одерживает победу со счётом %(alt_day2_rival_win)d-%(alt_day2_my_win)d."
+            el "%(alt_name_my_rival_i)s wins, the current score is %(alt_day2_rival_win)d-%(alt_day2_my_win)d."
             scene bg int_dining_hall_sunset with dissolve
             if alt_tournament_state == "final_start":                                           # если финал
                 jump alt_day2_final_fail_end_new                                                # поражение в финале
@@ -3420,14 +3423,14 @@ label alt_day2_current_game_ending_dialogs:
             if alt_day2_gambler_behavior != 'succumb':          # если не "поддавки"
                 $ alt_day2_gambler_skill += 1                     # увеличиваем навык
 
-            "Видимо, скилл удачи у Лены прокачан ещё ниже, чем у меня."
+            "Apparently, Lena's luck skill is even lower than mine."
             show un smile pioneer at cright with dissolve
-            "Но, похоже, её это не слишком расстраивает."
-            un "Молодец."
-            "Похвалила Лена."
-            me "Спасибо."
+            "But she doesn't seem to be too upset about it."
+            un "Good job."
+            "Praised Lena."
+            me "Thank you."
             show un shy pioneer at cright with dspr
-            "И через секунду залилась краской."
+            "And a second later she was blushing."
 
 
         elif alt_day2_current_rout_status == 2:                 # если Семён отыгрался
@@ -3435,12 +3438,12 @@ label alt_day2_current_game_ending_dialogs:
                 $ alt_day2_gambler_skill += 1                     # увеличиваем навык
 
             show un shy pioneer at cright with dissolve
-            "Взгляд Лены метался от меня и до лежащих на столе карт, и так несколько раз."
-            "Она явно хотела что-то сказать, но не могла перебороть смущение."
-            "Не понимаю, что могло вогнать эту, пару минут назад серьёзную, девочку в краску."
-            dreamgirl "Идиот."
-            "Буркнуло подсознание."
-            "В любом случае, тянуть из Лены слова клещами я не стану."
+            "Lena's gaze wandered from me to the cards on the table, and so on several times."
+            "She obviously wanted to say something, but she couldn't get over her embarrassment."
+            "I don't know what could have put this, a couple of minutes ago, serious, girl in a blush."
+            dreamgirl "Idiot."
+            "Subconscious muttered."
+            "Anyway, I'm not going to force words out of Lena."
 
 
         elif alt_day2_current_rout_status == 3:                 # и она выиграла первый раз
@@ -3448,20 +3451,20 @@ label alt_day2_current_game_ending_dialogs:
                 $ alt_day2_gambler_skill += 1                     # увеличиваем навык
 
             if alt_day2_gambler_behavior == 'succumb':
-                "Мда. Я показал явно не лучший уровень игры. И Лена явно это заметила."
+                "Yeah. I obviously didn't play my best. And Lena obviously noticed that."
                 show un serious pioneer at cright with dissolve
-                "Её осуждающий взгляд пробудил во мне неясное чувство вины."
-                "Будто я виноват в том, что проиграл."
-                dreamgirl "Ещё как виноват."
-                dreamgirl "Девочка поддавалась тебе, но ты всё равно облажался."
-                th "Доказательства?"
-                dreamgirl "Налицо."
-                "Неясно ответил внутренний голос и замолчал."
+                "Her judgmental gaze awakened in me a vague sense of guilt."
+                "As if it were my fault for losing."
+                dreamgirl "Yes, it was."
+                dreamgirl "The girl gave in to you, but you screwed up anyway."
+                th "Evidence?"
+                dreamgirl "Right there on her face."
+                "Unclearly answered the inner voice and fell silent."
             else:
-                "Лена оказалась серьёзным противником, спрятавшим пару тузов в рукаве."
+                "Lena proved to be a serious adversary, hiding a couple of aces up her sleeve."
                 show un shy pioneer at cright with dissolve
-                "Не ожидал от неё такого упорства."
-                "Видимо, она и сама была удивлена."
+                "I didn't expect her to be so stubborn."
+                "Apparently, she was surprised herself."
 
 
         elif alt_day2_current_rout_status == 4:                 # и она отыгралась
@@ -3470,22 +3473,22 @@ label alt_day2_current_game_ending_dialogs:
 
             if alt_day2_gambler_behavior == 'succumb':          # если "поддавки"
                 show un sad pioneer at cright with dissolve
-                "Сама Лена не слишком радовалась маленькой победе — наоборот, она глядела на меня так, словно провинилась в чём-то."
-                dreamgirl "Не будь дубом и приободри."
-                th "Без тебя знаю."
-                me "Молодец, Лен. Хорошо сыграла."
+                "Lena herself wasn't too happy about the little victory - on the contrary, she looked at me as if she was guilty of something."
+                dreamgirl "Don't be an oaf and cheer up."
+                th "I know without you."
+                me "Well done, Len. Well played."
                 show un shy pioneer at cright with dspr
-                un "С-спасибо."
-                "Голос у девочки взволнованный, она не верила в то, что произошло."
-                "Потому и вздрогнула, когда Электроник громко произнёс её имя."
+                un "T-thank you."
+                "The girl's voice was agitated; she couldn't believe what had happened."
+                "That's why she flinched when Electronik said her name loudly."
             else:
-                "Похоже, Лена не намерена сдаваться."
+                "It looks like Lena has no intention of giving up."
                 show un smile pioneer at cright with dissolve
-                un "Не надейся на лёгкую победу."
-                "Только что она сидела, смутившись, а теперь ещё подзадоривает меня!"
-                "Вот что азарт с людьми делает."
+                un "Don't expect an easy victory."
+                "Just now she was sitting there embarrassed, and now she's cheering me on!"
+                "That's what gambling does to people."
                 show un shy pioneer at cright with dspr
-                "Впрочем, эффект оказался недолгим."
+                "The effect, however, was short-lived."
 
 # Славя
     elif alt_spr_my_rival == 'sl':
@@ -3493,17 +3496,17 @@ label alt_day2_current_game_ending_dialogs:
             $ alt_day2_gambler_skill += 1                     # увеличиваем навык
 
             show sl smile pioneer at cright with dissolve
-            "Похоже, что Славя нисколько не огорчена поражением."
-            sl "Всё-таки карты не моё."
-            me "Тебе просто не повезло, вот и всё."
+            "Slavya doesn't seem the least bit saddened by the defeat."
+            sl "Cards aren't my thing after all."
+            me "You're just unlucky, that's all."
             show sl laugh pioneer at cright with dspr
-            sl "Дело не в везении, я правда не умею!"
+            sl "It's not about luck, I really don't know how!"
             show sl smile2 pioneer at cright with dspr
-            sl "Много раз пробовала, всё без толку."
-            sl "Не понимаю я смысла этой глупой игры."
-            me "Так зачем играешь?"
+            sl "I've tried it many times, but it's no use."
+            sl "I don't understand the point of this stupid game."
+            me "So why do you play?"
             show sl smile pioneer at cright with dspr
-            sl "Лагерное мероприятие, Семён. Все обязаны присутствовать."
+            sl "Camp event, Semyon. Everyone is obligated to attend."
 
 
 
@@ -3514,16 +3517,16 @@ label alt_day2_current_game_ending_dialogs:
             $ alt_day2_gambler_skill += 1                     # увеличиваем навык
 
             show sl smile pioneer at cright with dissolve
-            sl "Ведь можешь же, когда захочешь!"
-            me "Мне просто повезло."
+            sl "See, you can do it when you want!"
+            me "I just got lucky."
             show sl normal pioneer at cright with dspr
-            "Славя явно хотела услышать от меня большего, но я не знал, что тут ещё добавить."
-            sl "Вот сейчас и узнаем — везение или талант."
-            th "Второе, однозначно."
-            th "Талантливый неудачник."
-            "Славя словно услышала мои мысли и постаралась приободрить меня."
+            "Slavya obviously wanted to hear more from me, but I didn't know what else to add here."
+            sl "Now we'll see if it's luck or talent."
+            th "The second, unequivocally."
+            th "Talented loser."
+            "It was as if Slavya had heard my thoughts and tried to cheer me up."
             show sl happy pioneer at cright with dspr
-            sl "Выше нос!"
+            sl "Cheer up!"
 
 
 
@@ -3531,28 +3534,28 @@ label alt_day2_current_game_ending_dialogs:
 
 
             show sl surprise pioneer at cright with dissolve
-            me "Что-то не так?"
+            me "Is something wrong?"
             show sl normal pioneer at cright with dspr
-            sl "Нет, просто…"
-            sl "Я не очень хорошо играю в карты."
-            me "Насколько «не очень»?"
+            sl "No, it's just..."
+            sl "I'm not very good at cards."
+            me "How very is your 'not good'?"
             show sl sad pioneer at cright with dspr
-            sl "Много раз пробовала, всё без толку."
-            sl "Не понимаю я смысла этой глупой игры."
-            "А мне казалось, что хуже меня игрока здесь нет."
-            "Активистка преуспела во многом, кроме азартных игр."
-            "Но даже она смогла меня обыграть."
+            sl "I've tried it many times, but it's no use."
+            sl "I don't understand the point of this stupid game."
+            "I thought I was the worst player here."
+            "The activist has succeeded in many things, except gambling."
+            "But even she could beat me."
 
         elif alt_day2_current_rout_status == 4:                 # и она отыгралась
 
             show sl angry pioneer at cright with dissolve
-            sl "Ты нарочно, да?"
-            "А я, стараясь сохранить невозмутимое выражение лица, ответил:"
-            me "Нисколько."
-            sl "Неправда! Ты же знаешь, что я…"
+            sl "You did it on purpose, didn't you?"
+            "And I, trying to keep a nonchalant expression on my face, replied:"
+            me "Not at all."
+            sl "That's not true! You know that I..."
             pause(1)
             show sl normal pioneer at cright with dspr
-            sl "Ладно, не важно."
+            sl "Okay, never mind."
 
 # Алиса
     elif alt_spr_my_rival == 'dv':
@@ -3560,47 +3563,47 @@ label alt_day2_current_game_ending_dialogs:
             $ alt_day2_gambler_skill += 1                     # увеличиваем навык
 
             show dv surprise pioneer2 at cright with dissolve
-            "Рыжая находилась в лёгком шоке."
-            "Что тут скажешь — я умею удивлять.{w} Особенно себя."
-            me "Мадмуазель готова пасть на колени и рыдать от поражения?"
+            "The redhead was in mild shock."
+            "What can I say, I know how to surprise. Especially myself."
+            me "Is Mademoiselle ready to fall to her knees and weep from defeat?"
             show dv smile pioneer2 at cright with dspr
-            "Моя реплика вывела Алису из оцепенения и раззадорила."
-            dv "Ещё чего!"
+            "My line brought Alisa out of her stupor and stirred her up."
+            dv "No way!"
             show dv angry pioneer2 at cright with dspr
-            dv "Мадмуазель готова съездить кавалеру по физиономии."
-            "Я едва не расхохотался."
+            dv "Mademoiselle is ready to punch a cavalier in the face."
+            "I almost laughed."
 
         elif alt_day2_current_rout_status == 2:                 # если Семён отыгрался
             $ alt_day2_gambler_skill += 1                     # увеличиваем навык
             $ alt_day2_gambler_behavior = 'gamble'          # и начинает рисковать
 
             show dv guilty pioneer2 at cright with dissolve
-            "Приятно видеть, как маска надменности спадает с лица Двачевской."
-            "Я даже говорить ничего не стал — молча подобрал эту самую маску и примерил на себя."
+            "It's nice to see the mask of arrogance falling from Dvachevskaya's face."
+            "I didn't even say anything - I silently picked up that very mask and tried it on myself."
             show dv angry pioneer2 at cright with dspr
-            "Алисе это не понравилось, Алиса сжала кулаки."
+            "Alisa didn't like it, Alisa clenched her fists."
             if herc or loki:
-                "А мне плевать."
-                "Угрозы Двачевской меня не пугают."
-                "Я с вызовом продолжил глядеть на рыжую."
+                "I don't care."
+                "Dvachevskaya's threats don't scare me."
+                "I continued to stare at the redhead with defiance."
                 pause(1)
                 show dv guilty pioneer2 at cright with dspr
-                "Победителем в гляделки стал я."
-                "Алиса разжала кулаки и отвела взгляд."
+                "The winner of the staring contest was me."
+                "Alisa unclenched her fists and looked away."
                 if herc:
-                    "Мне даже стало немного стыдно за то, что, кажется, обидел девушку."
-                    "Но не настолько, чтобы торопиться извиняться."
-                    "Алиса должна сама понять, что сделала не так."
+                    "I even felt a little embarrassed that I seemed to have offended the girl."
+                    "But not enough to rush to apologize."
+                    "Alisa has to figure out for herself what she did wrong."
 
                 elif loki:
-                    dreamgirl "Ну вот, обидел девочку."
-                    th "Она заслужила, ибо нефиг."
+                    dreamgirl "There you go, you hurt the girl."
+                    th "She deserved it."
 
             else:
-                "Я поднял руки в примирительном жесте."
-                me "Тише-тише, я просто пошутил."
-                dv "Ещё одна такая шутка…"
-                me "Понял, не дурак."
+                "I raised my hands in a conciliatory gesture."
+                me "Hush, hush, I was just kidding."
+                dv "Another one of those jokes..."
+                me "Got it, not stupid."
 
 
 
@@ -3609,36 +3612,36 @@ label alt_day2_current_game_ending_dialogs:
             $ alt_day2_gambler_behavior = 'defense'              # садится в оборону
 
             show dv grin pioneer2 at cright with dissolve
-            "Алиса с ехидной усмешкой глядела на меня."
-            "Наверняка радуется, что получила подтверждение своим словам."
-            "И это бесит."
-            me "Не рановато празднуешь победу, Двачевская?"
+            "Alisa looked at me with a sneering grin."
+            "I bet she's glad she got a confirmation of her words."
+            "And it's infuriating."
+            me "Aren't you celebrating your victory a little early, Dvachevskaya?"
             show dv laugh pioneer2 at cright with dspr
-            dv "По-моему — нет."
-            "Я уже собрался плюнуть ядом в рыжую, как услышал реплику внутреннего голоса."
-            dreamgirl "Балда, она же специально провоцирует тебя, а ты ведёшься!"
-            dreamgirl "Если хочешь утереть нос Двачевской, тебе нужно сохранять спокойствие."
-            th "В этом есть смысл."
+            dv "I don't think so."
+            "I was about to spit venom at the redhead when I heard my inner voice retort."
+            dreamgirl "You fool, she's provoking you on purpose, and you're falling for it!"
+            dreamgirl "If you want to rub Dvachevskaya's nose in it, you need to stay calm."
+            th "That makes sense."
             show dv normal pioneer2 at cright with dspr
-            "Алиса как-то разочарованно хмыкнула — явно ждала другой реакции."
-            th "А вот фиг тебе."
+            "Alisa gave a sort of disappointed sniffle - clearly she was expecting a different reaction."
+            th "But no way."
 
         elif alt_day2_current_rout_status == 4:                 # и она отыгралась
             $ alt_day2_gambler_behavior = 'gamble'          # и начинает рисковать
 
             show dv laugh pioneer2 at cright with dissolve
-            "Дваче чертовски довольна собой."
-            me "Чего лыбу давишь?"
+            "DvaChe is pretty damn pleased with herself."
+            me "Why are you grinning?"
             show dv grin pioneer2 at cright with dspr
-            dv "А нельзя?"
-            dreamgirl "Можно!"
-            th "Ты вообще на чьей стороне?"
-            dreamgirl "Своей собственной."
-            dreamgirl "А ты, балбес, не понял, что девочка заигрывает с тобой."
-            th "Двачевская? Заигрывает?"
-            th "Никогда не поверю. Не тот типаж."
-            dreamgirl "Пф… Больно ты в них разбираешься."
-            "Фыркнул внутренний голос и смолк."
+            dv "Can't I?"
+            dreamgirl "You can!"
+            th "Whose side are you on anyway?"
+            dreamgirl "My own."
+            dreamgirl "And you, you fool, didn't realize the girl was flirting with you."
+            th "Dvachevskaya? Flirting?"
+            th "I'll never believe it. Wrong type."
+            dreamgirl "Pfft... As if you know too much about them."
+            "The inner voice snorted and went quiet."
 
 # Мику
     elif alt_spr_my_rival == 'mi':
@@ -3648,129 +3651,129 @@ label alt_day2_current_game_ending_dialogs:
 
             stop music fadeout 2
             show mi smile pioneer at cright with dissolve
-            mi "Молодец, Сенечка. Ты хорошо играешь."
+            mi "Well done, Senechka. You play well."
             play music music_7dl["what_am_i_doing_here"] fadein 1
-            me "Это всё везение."
+            me "It's all luck."
             show mi shocked pioneer at cright with dspr
-            mi "Правда? А я решила, что ты — опытный игрок."
-            "Если у Мику такая тактика — наносить каждым словом удар по моей самооценке — у неё это получилось."
-            dreamgirl "Можно подумать, она у тебя была."
+            mi "Really? And I thought you were an experienced player."
+            "If that's Miku's tactic - to hit my self-esteem with every word - she's succeeded."
+            dreamgirl "You'd think you had self-esteem."
             show mi sad pioneer at cright with dspr
-            mi "А мне вот совсем не везёт в карты."
-            mi "Я не умею в них играть! Не понимаю!{w} Или просто глупая."
-            me "Ты не глупая."
-            "Хотя мы не так хорошо знакомы, чтобы я мог это утверждать."
-            dreamgirl "Так узнай её {i}поближе{/i}."
-            "По спине аж мурашки прошли."
-            "Закравшиеся в голос внутреннего пошляка интонации напомнили о нашей очаровательной медсестре."
+            mi "I have no luck at all at cards."
+            mi "I don't know how to play them! I don't understand!{w} Or I'm just stupid."
+            mi "You're not stupid."
+            "Though I don't know you well enough to say so."
+            dreamgirl "So get to know her {i}closer{/i}."
+            "It sent shivers down my spine."
+            "The intonations that crept into the voice of the inner scrooge reminded me of our charming nurse."
 
-            me "Просто у каждого человека что-то получается лучше, чем у другого."
+            me "It's just that each person is better at something than the other."
             if loki:
-                me "Я не понаслышке знаю, что научиться играть даже на одном инструменте непросто, а ты смогла сразу на нескольких."
-                me "Это не просто талант, это упорный труд."
-                me "Глупые такого не умеют."
-                me "Как правило они…"
-                "Слова комом застряли в горле."
-                mi "Как правило — что?"
-                me "Трудности их быстро ломают."
-                th "Порой ещё и физически."
-                me "Они застревают на одном месте и найдут тысячу оправданий, чтобы ныть о несбывшемся вместо хотя бы одной причины двигаться вперёд, к своей мечте."
-                dreamgirl "Прямо как?.."
-                th "Прямо как я."
+                me "I know firsthand that learning to play even one instrument is not easy, but you are able to play several at once."
+                me "It's not just talent, it's hard work."
+                me "Stupid people can't do that."
+                me "As a rule they..."
+                "The words stick in my throat."
+                mi "As a rule - they what?"
+                me "Difficulties break them quickly."
+                th "Sometimes even physically."
+                me "They get stuck in one place and find a thousand excuses to whine about the unfulfilled instead of at least one reason to move forward to their dreams."
+                dreamgirl "Just like...?"
+                th "Just like me."
             elif herc:
-                me "Например у меня не сложилось с музыкой."
-                th "Зато во владении холодным и огнестрельным оружием я преуспел."
-                me "А у тебя получилось."
-                me "Талант то или упорство — не суть."
-                me "Глупые такого не умеют."
+                me "For example, I didn't do well with music."
+                th "But I excelled in the use of knives and firearms."
+                me "But you succeeded."
+                me "Talent or persistence, it doesn't matter."
+                me "Stupid people can't do that."
             elif dr:
-                me "Азартные игры не твоё. Только и всего."
+                me "Gambling is not your thing. That's all."
 
-            mi "Наверное, ты прав."
+            mi "You're probably right."
             show mi smile pioneer at cright with dspr
-            mi "Нет, так и есть!"
+            mi "No, that's how it is!"
             show mi smile pioneer at cright with dspr
-            mi "Вот уж кто действительно умеет играть в карты, так это Алиса."
-            "Двачевская-то?"
+            mi "The one who really knows how to play cards is Alisa."
+            "Dvachevskaya?"
 
             scene bg ext_dining_hall_near_day
             show dv smile pioneer2
             show prologue_dream
             with flash
 
-            "Нисколько не сомневался."
-            "Человек с такой самодовольной миной не стал бы предлагать пари, будучи не уверенным в победе."
+            "I didn't doubt it at all."
+            "A man with such a smug face wouldn't offer a wager if he wasn't sure of winning."
             if (alt_day2_dv_ultim != 1) and (alt_day2_walk == 1):
-                dreamgirl "А что ж ты тогда спорить-то не стал, шулер?"
+                dreamgirl "Why didn't you bet then, cheater?"
 
             scene bg int_dining_hall_sunset
             show mi shy pioneer at cright
             with flash
 
             show mi normal pioneer at cright with dspr
-            mi "Мы с ней как-то играли, и я проиграла шесть раз подряд!"
+            mi "We played with her once, and I lost six times in a row!"
 
             menu:
-                "Спросить про игру":
+                "Ask her about that incident":
 
                     $ lp_mi += 1
 
-                    me "Ты и в карты? С Двачевской?"
-                    me "Ты, как там по вашему… камикадзе?!"
+                    me "You, and cards? With Dvachevskaya?"
+                    me "You're, what do you call it... a kamikaze?!"
                     show mi laugh pioneer at cright with dspr
-                    mi "Скажешь тоже! Оно само как-то так вышло!"
-                    "Видимо это норма, что у женщин «оно» всегда само."
+                    mi "You say that too! It just came out on its own somehow!"
+                    "Apparently it's the norm with women that 'it' always comes out on its own."
                     show mi normal pioneer at cright with dspr
-                    mi "Я тогда сидела в клубе и расписывала ноты одной из моих песен для пианино."
-                    mi "Очень красиво получилось. По-моему, даже лучше, чем в оригинале. Мелодичнее, эмоциональнее!"
+                    mi "I was sitting in a club at the time, painting the notes of one of my songs for the piano."
+                    mi "It was very beautiful. I think it was even better than the original. More melodic, more emotional!"
                     show mi smile pioneer at cright with dspr
-                    mi "Так вот, точно помню, что то была среда!"
+                    mi "Well, I remember exactly that it was Wednesday!"
                     show mi surprise pioneer at cright with dspr
-                    mi "Хотя нет, меня в тот день Ульяна…"
-                    "Я уже начал жалеть, что решил поддержать диалог, перешедший в монолог, когда Мику сама вернулась к теме."
+                    mi "Although, no, that day Ulyana..."
+                    "I was beginning to regret my decision to keep the dialogue going into a monologue, when Miku herself returned to the subject."
                     show mi normal pioneer at cright with dspr
-                    mi "В общем, неважно!"
+                    mi "Anyway, never mind!"
 
                     scene bg int_musclub_day
                     show prologue_dream
                     with flash
 
-                    mi "Я уже почти закончила с песней…"
-                    mi "…как вдруг в клуб ворвалась взъерошенная Алиса!"
+                    mi "I was almost done with the song..."
+                    mi "...when suddenly a disheveled Alisa burst into the club!"
 
                     play sound sfx_open_door_strong
                     with vpunch
                     show dv scared pioneer2 far at center behind prologue_dream
                     with moveinright
 
-                    dv "{i}Если Шляпа зайдёт — меня тут нет!{/i}"
+                    dv "{i}If the Hat comes in, I'm not here!{/i}"
 
                     hide dv with moveoutleft
                     play sound sfx_close_door_clubs_nextroom
                     with vpunch
 
-                    mi "И спряталась в подсобке."
+                    mi "And hid in the back room."
 
                     scene bg int_dining_hall_sunset
                     show mi shocked pioneer at cright
                     with fade
 
-                    mi "Я сначала перепугалась: что такого сделала Алиса, чтобы настолько сильно испугаться вожатой?"
+                    mi "At first I was frightened: what had Alisa done to be so frightened of the counselor?"
                     show mi happy pioneer at cright with dspr
-                    mi "Ольга Дмитриевна же не злая. Она строгая, но добрая."
-                    "Мику — прямо сама наивность."
-                    dreamgirl "Воспользуешься?"
-                    th "У тебя, смотрю, всё сплошные хиханьки да хаханьки, да всё об одном."
-                    dreamgirl "О добром, вечном."
+                    mi "Olga Dmitrievna is not evil. She is strict, but kind."
+                    "Miku is just as naive as she is."
+                    dreamgirl "Will you take advantage?"
+                    th "You're all giggles and laughs and all about one thing."
+                    dreamgirl "All about the good, the eternal."
                     show mi dontlike pioneer at cright with dspr
-                    mi "В общем, Алиса меня напугала."
+                    mi "Anyway, Alisa scared me."
                     show mi upset pioneer at cright with dspr
-                    mi "Я замерла и всё прислушивалась: вдруг действительно кто-то идёт?"
+                    mi "I froze and kept listening: what if someone is really coming?"
                     show mi normal pioneer at cright with dspr
-                    mi "Минут десять так сидела, пока Алиса не решила выбраться из укрытия."
+                    mi "Sat like that for ten minutes until Alisa decided to come out of hiding."
                     show mi laugh pioneer at cright with dspr
-                    mi "Ты бы видел её лицо!"
-                    me "Представляю…"
+                    mi "You should have seen her face!"
+                    me "Yeah, I can imagine..."
 
                     scene bg int_musclub_day
                     show prologue_dream
@@ -3779,46 +3782,46 @@ label alt_day2_current_game_ending_dialogs:
                     show dv surprise pioneer2 at fleft behind prologue_dream with dissolve
                     show dv normal pioneer2 at fleft behind prologue_dream with dspr
 
-                    mi "Когда Алисочка собралась уходить, я её спросила:"
+                    mi "When Alisochka was about to leave, I asked her:"
                     show dv normal pioneer2 at cright behind prologue_dream with move
-                    mi "{i}Ой, Алиса, а что ты натворила? Зачем Ольге-сан тебя искать?{/i}"
+                    mi "{i}Oh, Alisa, what have you done? Why would Olga-san be looking for you?{/i}"
                     show dv smile pioneer2 at cright behind prologue_dream with dspr
-                    mi "В ответ она просто отмахнулась, представляешь!"
-                    mi "Сказала, что потом как-нибудь расскажет, что у неё дело какое-то незаконченное."
-                    "Ставлю на то, что Двачевская тупо отмазывалась."
-                    "Болтливость Мику отталкивает людей."
-                    mi "{i}А что за дело? Срочное? Могу я…{/i}"
+                    mi "She just waved it off, you know!"
+                    mi "Said she was going to tell me sometime later, that she had some unfinished business."
+                    "My money's on Dvachevskaya bluntly talking her way out of it."
+                    "Miku's talkativeness puts people off."
+                    mi "{i}What's the case? Urgent? May I…{/i}"
                     show dv laugh pioneer2 at cright behind prologue_dream with dspr
-                    dv "{i}Нет. Это секрет!{/i}"
-                    mi "{i}Ну Алиса-а-а! Мне же интересно. Ну расскажи!{/i}"
+                    dv "{i}No. It's a secret!{/i}"
+                    mi "{i}Come on, Alisa-a-a! I'm curious. Tell me about it!{/i}"
                     show dv grin pioneer2 at cright behind prologue_dream with dspr
-                    dv "{i}А давай пари?{/i}"
-                    dv "{i}Выиграешь у меня, и я расскажу, что за дело.{/i}"
-                    mi "И достала карты."
-                    mi "{i}Ой, а я не умею. То есть я никогда не пробовала, поэтому…{/i}"
+                    dv "{i}Wanna bet?{/i}"
+                    dv "{i}You win against me, and I'll tell you what that was.{/i}"
+                    mi "And pulled out the cards."
+                    mi "{i}Oh, I don't know how. I mean, I've never tried it, so…{/i}"
                     show dv smile pioneer2 at cright behind prologue_dream with dspr
-                    dv "{i}Не страшно!{/i}"
+                    dv "{i}That's okay!{/i}"
                     show dv laugh pioneer2 at cright behind prologue_dream with dspr
-                    dv "{i}Не хочешь — научим. Не можешь — заставим!{/i}"
+                    dv "{i}If you don't want to, we'll teach you. If you can't, we'll make you!{/i}"
 
                     scene bg int_dining_hall_sunset
                     show mi smile pioneer at cright
                     with flash2
 
-                    mi "Вот такая вот история."
+                    mi "And that's the story."
                     show mi smile pioneer at cright with dspr
-                    mi "Алиса пыталась меня по ходу игры научить, но я так ничего и не поняла!"
-                    me "Ясно."
+                    mi "Alisa tried to teach me during the game, but I never understood anything!"
+                    me "I see."
                     $ lp_dv += 1
-                    me "А Двачевская — не такая вредина, какой выглядит."
+                    me "And Dvachevskaya is not as bad as she looks."
                     stop music fadeout 3
-                    mi "Алисочка очень хорошая. Просто её нужно получше узнать."
+                    mi "Alisochka is very good. You just need to get to know her better."
 
-                "Игнорировать":
+                "Ignore her":
 
                     $ lp_mi -= 1
                     stop music fadeout 3
-                    me "Ясно."
+                    me "I see."
                     show mi sad pioneer at cright with dspr
                     pause(1)
                     hide mi with dissolve
@@ -3833,72 +3836,72 @@ label alt_day2_current_game_ending_dialogs:
             $ alt_day2_gambler_skill += 1                     # увеличиваем навык
 
             show mi smile pioneer at cright with dissolve
-            "Мику нисколько не расстроилась из-за проигрыша."
-            mi "Молодец, Сенечка, хорошо отбился."
+            "Miku wasn't the least bit upset about losing."
+            mi "Well done, Senechka, well fought back."
             show mi upset pioneer at cright with dspr
-            mi "Так, раз ты выиграл, теперь нас ждёт финальный раунд, верно?"
-            "Уточнила Мику."
+            mi "So, since you won, now the final round awaits us, right?"
+            "Clarified Miku."
             show mi laugh pioneer at cright with dspr
-            mi "Пускай мы товарищи, но поддаваться я не буду!"
-            "Услышав впервые, я не придал этому особого значения и пропустил мимо ушей, однако…" # Возможен исход, при котором здесь "Сенечка" упоминается впервые. Лучше убрать эту строку вообще. ## Нет, здесь Семён отыгрался, значит, первый раз должна была выиграть Мику (см. alt_day2_current_rout_status == 3). Там Сенечка упоминается 2 раза.
-            me "Мику, а почему «Сенечка»?"
+            mi "We may be comrades, but I won't give in!"
+            "The first time I heard it, I didn't think much of it and let it pass me by, but..." # Возможен исход, при котором здесь "Сенечка" упоминается впервые. Лучше убрать эту строку вообще. ## Нет, здесь Семён отыгрался, значит, первый раз должна была выиграть Мику (см. alt_day2_current_rout_status == 3). Там Сенечка упоминается 2 раза.
+            me "Miku, why «Senechka»?"
             show mi shocked pioneer at cright with dspr
-            mi "А?"
+            mi "Huh?"
             show mi shy pioneer at cright with dspr
-            "Изменение цвета лица обнаружено."
-            "Не думал, что простым вопросом получится смутить нашу японку."
+            "Face color change detected."
+            "I didn't think a simple question could embarrass our Japanese girl."
             show mi happy pioneer at cright with dspr
-            mi "Потому что Семён слишком грубо и официально, а Сенечка звучит приятно."
+            mi "Because Semyon is too rude and formal, and Senechka sounds nice."
 
         elif alt_day2_current_rout_status == 3:                 # и она выиграла первый раз
             show mi shy pioneer at cright with dissolve
-            mi "Я победила?"
-            me "Да."
+            mi "Did I win?"
+            me "Yes."
             show mi happy pioneer at cright with dspr
-            mi "Ура!"
+            mi "Yay!"
             show mi smile pioneer at cright with dspr
-            mi "Сенечка, ты только не переживай — в поражении нет ничего плохого."
-            mi "Я тоже до конца не поняла, как играть в эту игру. Можно сказать, что мне повезло."
-            me "Угу."
+            mi "Senechka, don't worry - there's nothing wrong with losing."
+            mi "I didn't understand how to play this game until the end, either. You could say I got lucky."
+            me "Uh-huh."
             show mi sad pioneer at cright with dspr
-            mi "Ты всё-таки расстроился. Не переживай, поражение — тоже опыт."
+            mi "You were upset after all. Don't worry, losing is also an experience."
             show mi smile pioneer at cright with dspr
-            mi "Но я понимаю тебя. Я тоже расстроилась, когда проиграла Алисе в карты."
-            th "Мику играла с Алисой в карты?"
-            dreamgirl "А ты думал, что весь мир вертится вокруг тебя, и обитатели лагеря только и ждут, когда Его Величество появится на горизонте?"
-            dreamgirl "У каждого своя жизнь, своя история, и она не начинается с твоим появлением, не обрывается с твоим уходом."
-            dreamgirl "Нужна ли она тебе — вопрос важный, но отдельный."
+            mi "But I understand you. I was upset too when I lost to Alisa at cards."
+            th "Miku played cards with Alisa?"
+            dreamgirl "And you thought the whole world revolved around you, and the campers were just waiting for His Majesty to show up on the horizon?"
+            dreamgirl "Everyone has their own life, their own story, and it doesn't begin with your arrival, it doesn't end with your departure."
+            dreamgirl "Whether you need it is an important question, but a separate one."
             show mi serious pioneer at cright with dspr
-            th "Тебе не кажется, что ты до черта умничаешь?"
-            dreamgirl "Из нас двоих только я использую мозги по их прямому назначению."
-            dreamgirl "А раз в нашем дуэте роль костыля для душевного инвалида выпала мне, вот тебе ещё один совет — хватит болтать с самим собой и поговори уже с девушкой."
+            th "Don't you think you're being too much of a smartass?"
+            dreamgirl "Of the two of us, I'm the only one who uses the brain for its intended purpose."
+            dreamgirl "And since I'm the crutch for the mentally handicapped in this duo, here's some more advice for you: stop talking to yourself and talk to a girl."
             show mi normal pioneer at cright with dspr
-            mi "Сенечка, всё хорошо? У тебя глаз дёргается."
-            me "В порядке. Давай дальше."
+            mi "Senechka, are you okay? Your eye is twitching."
+            me "I'm fine. Keep going."
 
         elif alt_day2_current_rout_status == 4:                 # и она отыгралась
             show mi surprise pioneer at cright with dissolve
-            "Хафу долго всматривалась в карты и не могла понять очевидного."
-            "К нам даже подошёл Электроник, утвердительно кивнув ей."
+            "Hafu stared at the cards for a long time and couldn't understand the obvious."
+            "Even Electronik came up to us, nodding affirmatively at her."
             show mi normal pioneer at cright with dspr
-            mi "Я победила?"
-            me "Да."
+            mi "Did I win?"
+            me "Yes."
             show mi happy pioneer at cright with dspr
-            mi "Ура!"
+            mi "Yay!"
 
             if alt_result_dv_1_tour > 2 and alt_result_dv_semifinal > 2:
                 show mi laugh pioneer at cright with dspr
-                mi "Алиса! Вот видишь, я умею играть! Я смогла отыграться!"
-                "Рыжая бестия за соседним столом аж покраснела."
-                "На месте Алисы я бы не залился краской, а сделал вид, что не знаю Мику."
+                mi "Alisa! See, I know how to play! I was able to win back!"
+                "The redhead at the next table blushed."
+                "If I were Alisa, I wouldn't blush and instead would pretend I didn't know Miku."
 
             show mi grin pioneer at cright with dspr
-            mi "Ну держись, Сенечка! Сейчас я выиграю тебя!" # "Выиграю тебя" — так задумано или меняем на "обыграю"? ## задумано
+            mi "Hold on, Senechka! I'm going to win you!" # "Выиграю тебя" — так задумано или меняем на "обыграю"? ## задумано
             show mi smile pioneer at cright with dspr
-            me "Ага, удачи."
-            dreamgirl "Зря, она тебе понадобится."
-            th "Сомневаешься в моих способностях?"
-            dreamgirl "Я всё-таки одну голову с тобой делю. Так что не сомневаюсь — знаю."
+            me "Yeah, good luck."
+            dreamgirl "Oh please, you'll need it yourself."
+            th "You doubt my abilities?"
+            dreamgirl "I do share a head with you, after all. So I don't doubt - I know."
 
 # Ульяна
     elif alt_spr_my_rival == 'us':
@@ -3906,76 +3909,76 @@ label alt_day2_current_game_ending_dialogs:
             $ alt_day2_gambler_skill += 1                     # увеличиваем навык
 
             show us angry pioneer at cright with dissolve
-            us "Почему ты не поддался мне?!"
-            me "С чего бы это?"
-            us "С того, что я ребёнок, а ты взрослый! Ты должен поддаваться!"
-            me "С точки зрения закона я тоже все ещё ребёнок."
-            dreamgirl "Почти встретивший третий десяток ребёнок."
-            th "Цыц!"
-            "Однако рыжую нужно как-то успокоить."
-            "У неё аж венка на лбу набухла. Того гляди запрыгнет на стол и начнёт колотить меня."
+            us "Why didn't you give in to me?!"
+            me "Why should I?"
+            us "Because I'm a kid and you're an adult! You have to give in!"
+            me "Legally speaking, I'm still a child, too."
+            dreamgirl "Almost turning 30 as a child."
+            th "Shush!"
+            "However, the redhead needs some kind of reassurance."
+            "She's got a wreath on her forehead. Almost as if she's about to jump up on the table and start beating me."
             if herc:
-                dreamgirl "А ты её «хоп!» — в медвежий захват — и броском назад!"
-                th "Меня не для того учили, чтобы детей избивать!"
-                th "Захвата за большой палец будет более чем достаточно…"
-            me "Успокойся, это только первый раунд."
-            me "У тебя ещё будет возможность отыграться, а с моей удачей шансы весьма высоки."
+                dreamgirl "And you 'oop!' - into the bear's grip - and throw her back!"
+                th "I wasn't trained to beat up children!"
+                th "A thumb grip will be more than enough..."
+            me "Calm down, it's only the first round."
+            me "You'll still have a chance to win it back, and with my luck the odds are pretty good."
             show us dontlike pioneer at cright with dspr
-            us "Смотри у меня, а не то…"
+            us "Watch out, or else..."
             if herc or loki:
-                me "Не то что?"
-                dreamgirl "Сколопендру тебе в штаны запустит, вот что."
-                th "Мне так страшно, что уже поджилки трясутся."
+                me "Else what?"
+                dreamgirl "A scolopendra in your pants, that's what."
+                th "I'm so scared I'm shaking already."
             else:
-                me "Не то что?.."
-                "Я старался добавить в голос побольше уверенности, но получалось откровенно слабо."
-                dreamgirl "Да брось, ты в самом деле перепугался мелкой девки?"
-                dreamgirl "Ну засунет тебе сколопендру в штаны, и что? Смертельно?"
-                th "Всегда ожидай худшее, чтобы радоваться лучшему."
+                me "Else what?.."
+                "I tried to add more confidence to my voice, but it was frankly weak."
+                dreamgirl "Come on, are you really scared of a little girl?"
+                Dreamgirl "So she shoves a scolopendra down your pants, so what? Deadly?"
+                th "Always expect the worst so you can rejoice in the best."
             show us grin pioneer at cright with dspr
             if (counter_sl_7dl == 0) and dr:
-                us "А то снова оболью!"
+                us "Or I'll douse you again!"
             else:
-                us "Узнаешь!"
-            us "Если не отдашь мне все лучшие карты, что у тебя есть."
-            me "Идёт."
-            dreamgirl "Серьёзно?"
+                us "You'll see!"
+            us "If you don't give me all the best cards you have."
+            me "Deal."
+            dreamgirl "Really?"
             if loki:
-                th "Может быть."
+                th "Perhaps."
             elif herc:
-                th "Посмотрю на её поведение."
+                th "That depends on her acting."
             else:
-                th "Рандом нам судья."
+                th "Random is our judge."
 
         elif alt_day2_current_rout_status == 2:                 # если Семён отыгрался
             $ alt_day2_gambler_skill += 1                     # увеличиваем навык
 
             show us dontlike pioneer at cright with dissolve
-            us "Нечестно!"
+            us "Not fair!"
             if loki:
-                "Соблазн вернуть шпильку оказался слишком велик."
-                me "Ну ты же сама говорила, что игра простенькая и только дурак не поймёт."
+                "The temptation to return the taunt was too great."
+                me "Well, you said yourself that the game is simple and only a fool wouldn't understand it."
                 show us angry pioneer at cright with dspr
-                "О да, вздувшаяся венка на лбу рыжей стала бальзамом на душу."
-                "А как только мелкая поколотит меня, возможно, ногами, он мне потребуется ещё и для тела."
-                "К счастью, меня спас вовремя подавший голос Электроник."
+                "Oh yes, the swollen vein on the redhead's forehead was a balm to my soul."
+                "And once the little one has beaten me, probably with her feet, I'll need it for my body, too."
+                "Luckily, I was saved by the timely voice of Electronik."
             elif herc:
-                me "Не всё в мире измеряется честностью."
-                us "{i}Не всё в мире измеряется честностью.{/i}"
-                "Передразнила Ульяна."
+                me "Not everything in the world is measured by honesty."
+                us "{i}Not everything in the world is measured by honesty.{/i}"
+                "Ulyana mockingly repeated."
                 show us grin pioneer at cright with dspr
-                us "Жди честного таракана под подушкой."
+                us "Expect an honest cockroach under the pillow."
             elif dr:
-                th "Я выиграл по воле Рандома, а понятие честности к нему не применимо."
-                dreamgirl "Скажи это вслух — и получишь заслуженный удар по коленке или таракана в суп."
-                th "Вот поэтому я лучше промолчу."
-                "Ульяна угрожала тараканами под подушкой или подкараулить и облить из ведра с водой."
-                "Я молча кивал изредка поддакивая."
+                th "I won by the will of Random, and the concept of honesty does not apply to it."
+                dreamgirl "Say that out loud, and you'll get a well-deserved kick in the knee or a cockroach in your soup."
+                th "That's why I'd rather not say anything."
+                "Ulyana threatened to put cockroaches under my pillow, or to snoop and douse me with a bucket of water."
+                "I nodded silently, nodding occasionally."
                 show us normal pioneer at cright with dspr
-                "В конце концов рыжая сменила гнев на милость."
+                "In the end, the redhead changed from anger to mercy."
                 show us grin pioneer at cright with dspr
-                "Но, если я каким-то образом выиграю ещё и в финальном раунде, меня ждёт…{w=0.5} что-то нехорошее."
-                "Такие вот дела."
+                "But if I somehow win in the final round as well, something…{w=0.5} wicked will be waiting for me."
+                "That's the way it is."
             elif d3:
                 me "А ты задонатила на победу?"
                 us "Чего, это как?"
@@ -3998,39 +4001,39 @@ label alt_day2_current_game_ending_dialogs:
         elif alt_day2_current_rout_status == 3:                 # и она выиграла первый раз
 
             show us surp1 pioneer at cright with dissolve
-            us "Вот это да! А я и не думала, что такое бывает!"
-            me "Какое такое?"
-            us "Ну как? Как можно так плохо играть? Игра же простенькая!"
+            us "Wow! I didn't know this could happen!"
+            me "What is this?"
+            us "How? How can you play so badly? It's a simple game!"
             show us laugh pioneer at cright with dspr
-            us "Только такой зануда, как ты, не поймёт."
-            th "Зараза мелкая!"
+            us "Only a nerd like you wouldn't understand."
+            th "You little bugger!"
 
             if (counter_sl_7dl >= 1) or dr:
-                "И ведь как мне хотелось ответить что-то токсичное, но ведь глупо это, обижаться на ребёнка, правда?"
-                dreamgirl "Внешность бывает обманчива. Взгляни на неё и себя и сравни."
-                dreamgirl "Разница в возрасте несущественная."
-                th "Ты на что это намекаешь?"
-                "Внутренний голос ответил молчанием."
+                "And how I wanted to respond with something toxic, but it's silly to be offended by a child, isn't it?"
+                dreamgirl "Appearances can be deceiving. Look at her and yourself and compare."
+                dreamgirl "The age difference is insignificant."
+                th "What are you implying?"
+                "The inner voice answered with silence."
 
             else:
 
                 if loki:
-                    me "Может, тебя ещё раз водичкой окатить? Пыл поумерить?"
+                    me "Maybe I should give you another splash of water. To calm your fervor?"
                     show us grin pioneer at cright with dspr
-                    us "А ты попробуй догони!"
-                    me "Я возьму не скоростью, а хитростью."
+                    us "And you try to catch up!"
+                    me "I won't take the speed, I'll take the cunning."
                     show us smile pioneer at cright with dspr
-                    me "Вот будешь одна в домике, я тихонько подкрадусь сзади, и…"
+                    me "Once you're alone in the cabin, I'll sneak up behind you and…"
 
                 elif herc:
-                    me "С витамином «Р» знакома?"
+                    me "Familiar with vitamin «Р»?"
                     show us smile pioneer at cright with dspr
-                    us "Нет! А что это?"
-                    me "Продолжай в том же духе…"
-                    "Рука легла на пряжку ремня."
-                    me "…узнаешь."
+                    us "No! What's that?"
+                    me "Keep it up..."
+                    "My hand rested on the belt buckle."
+                    me "...and you'll find out."
                     show us grin pioneer at cright with dspr
-                    us "Хорошо!"
+                    us "Okay!"
 
 
 
@@ -4038,11 +4041,11 @@ label alt_day2_current_game_ending_dialogs:
         elif alt_day2_current_rout_status == 4:                 # и она отыгралась
 
             show us grin pioneer at cright with dissolve
-            us "Молодец, Сёмка. Ты на пути к исправлению!"
-            "Похвалила Ульянка."
-            dreamgirl "Ты всё-таки дурак."
-            th "Ну, может, оно и к лучшему."
-            dreamgirl "Просто напомню: игра ещё не закончена."
+            us "Well done, Syomka. You're on the road to correction!"
+            "Praised Ulyanka."
+            dreamgirl "You're a fool after all."
+            th "Well, maybe it's for the best."
+            dreamgirl "Just a reminder: the game isn't over yet."
 
 # Шурик
     elif alt_spr_my_rival == 'sh':
@@ -4061,64 +4064,64 @@ label alt_day2_current_game_ending_dialogs:
         if alt_day2_current_rout_status == 1:                   # если Семён выиграл первый раз
 
             show sh surprise pioneer at cright with dissolve
-            sh "Недооценил я тебя."
-            me "Ну спасибо."
+            sh "I underestimated you."
+            me "Well, thank you."
             show sh smile pioneer at cright with dspr
-            sh "Даже при моей достаточной высокой вероятности победить тебе выпали карты, которые меня разгромили."
-            "Он что, пытался высчитать, какие у меня карты?"
-            "Рандом не щадит таких."
+            sh "Even with my sufficiently high probability of winning, you were dealt cards that defeated me."
+            "Was he trying to figure out what cards I had?"
+            "Random doesn't spare those."
             show sh serious pioneer at cright with dspr
-            "Шурик протянул мне руку в знак уважения."
+            "Shurik extended his hand to me as a sign of respect."
             if herc:
-                "Я ответил."
+                "I answered."
                 show sh upset pioneer at cright with dspr
-                "Когда пионер слегка поморщился, я понял, что немного перестарался."
-                "Ещё подумает, что пытаюсь вывести его из игры."
-                dreamgirl "А ты «не»?"
-                th "Да какой в этом смысл? Мы же не в покер на деньги играем."
+                "When the pioneer grimaced a little, I knew I'd overdone it a little."
+                "He'll think I'm trying to take him out of the game."
+                dreamgirl "And you aren't?"
+                th "What's the point of that? It's not like we're playing poker for money."
             elif loki:
-                "Я всегда брезгливо относился к рукопожатиям и не стал отвечать."
+                "I've always been squeamish about handshakes and didn't respond."
                 show sh normal pioneer at cright with dspr
-                "Кибернетик на это лишь хмыкнул и пожал плечами."
+                "The cyberneticist just sniggered and shrugged his shoulders."
             else:
-                "Я неуверенно взял его за руку и поморщился."
+                "I tentatively took his hand and grimaced."
                 show sh smile pioneer at cright with flash_red
-                th "Словно в тисках сжали."
-                th "Он это специально, не иначе."
-                dreamgirl "Нет, просто ты дрищ."
+                th "It's like being squeezed in a vise."
+                th "He did it on purpose, no other way."
+                dreamgirl "No, you're just a wimp."
 
 
         elif alt_day2_current_rout_status == 2:                 # если Семён отыгрался
 
             show sh serious pioneer at cright with dissolve
-            sh "Недооценил я тебя."
-            th "Не только ты."
-            me "Ну спасибо."
-            sh "Даже при моей достаточной высокой вероятности победить тебе выпали карты, которые меня разгромили."
-            "Шурик протянул мне руку в знак уважения."
+            sh "I underestimated you."
+            th "You're not the only one."
+            me "Well, thank you."
+            sh "Even with my rather high probability of winning you got cards that defeated me."
+            "Shurik extended his hand to me as a sign of respect."
             if herc:
-                "Я ответил."
+                "I answered."
                 show sh upset pioneer at cright with dspr
-                "Когда пионер слегка поморщился, я понял, что немного перестарался."
-                "Ещё подумает, что пытаюсь вывести его из игры."
-                dreamgirl "А ты «не»?"
-                th "А ты вообще помалкивай, предатель! Я тебе слова не давал."
-                dreamgirl "Больно мне нужно твоё разрешение."
-                dreamgirl "Впрочем, сейчас посмотрим, что это было: удача или ты действительно что-то умеешь."
+                "When the pioneer grimaced a little, I knew I'd overdone it a little."
+                "He'll think I'm trying to take him out of the game."
+                dreamgirl "And you're not?"
+                th "And you keep your mouth shut at all, traitor! I didn't give you a word."
+                dreamgirl "As if need your permission."
+                dreamgirl "Well, let's see if it was luck or if you really know how to do something."
             elif loki:
-                "Я всегда брезгливо относился к рукопожатиям и не стал отвечать."
+                "I've always been squeamish about handshakes and didn't respond."
                 show sh normal pioneer at cright with dspr
-                "Кибернетик на это лишь хмыкнул и пожал плечами."
-                dreamgirl "К победе по чужим головам?"
-                th "Не думаю. Он настроен серьёзнее и имеет все шансы победить."
-                dreamgirl "Значит, сдался."
-                th "Нет. Просто так не проиграю — пусть выцарапывает себе победу."
+                "The cyberneticist just sniggered and shrugged his shoulders."
+                dreamgirl "To victory over other people's heads?"
+                th "I don't think so. He's more serious and has every chance of winning."
+                dreamgirl "So you've given up."
+                th "No. I just won't lose that way - let him scratch out a win for himself."
             else:
-                "Я неуверенно взял его за руку и поморщился."
+                "I tentatively took his hand and grimaced."
                 show sh upset pioneer at cright with flash_red
-                th "Словно в тисках сжали!"
-                "Уж что-что, а это я умею — при 99% шансе вытянуть несчастливый билет."
-                "Мои мучения в турнире могли уже закончиться."
+                th "It's like being squeezed in a vise!"
+                "That's something I know how to do, with a 99%% chance of drawing an unlucky ticket."
+                "My torture in the tournament could have been over by now."
 
 
 
@@ -4128,111 +4131,111 @@ label alt_day2_current_game_ending_dialogs:
         elif alt_day2_current_rout_status == 3:                 # и он выиграл первый раз
 
             show sh normal pioneer at cright with dissolve
-            sh "Хм, а ведь сработало…"
-            me "Что?"
+            sh "Hmm, it worked..."
+            me "What?"
             show sh surprise pioneer at cright with dspr
-            sh "А?"
+            sh "Ah?"
             show sh normal pioneer at cright with dspr
-            sh "Да я попробовал применить формулы расчёта вероятности более выигрышной комбинации у противника в покере к этой игре."
-            sh "Пришлось, конечно, кое-что поправить, но и полученного результата хватило понять, что карты у тебя не лучше."
-            "Он что, просто высчитал это? Увидев не больше половины?"
-            dreamgirl "Будь с ним осторожен. Он не так прост, как кажется."
-            th "Я уже заметил. Ты очень полезен."
-            th "Лучше бы подсказал, как против такого играть."
-            dreamgirl "Собрался выигрывать?"
-            th "Есть другие варианты?"
-            th "Встать из-за стола и просто уйти мне не дадут. А поддаваться глупо."
-            dreamgirl "У тебя всё равно нет шансов."
-            th "Рандом мне судья, а не ты."
+            sh "Yes, I tried to apply the formulas for calculating the probability of a better poker hand to this game."
+            sh "I had to make some adjustments, of course, but the result was enough to show that your cards weren't any better."
+            "Did he just calculate it? Seeing no more than half?"
+            dreamgirl "Be careful with him. He's not as simple as he seems."
+            th "I've already noticed. You're very helpful."
+            th "You'd better tell me how to play against one of those."
+            dreamgirl "Are you going to win?"
+            th "Any other options?"
+            th "They won't let me get up from the table and just walk away. And giving in is stupid."
+            dreamgirl "You haven't got a chance anyway."
+            th "Random is my judge, not you."
 
         elif alt_day2_current_rout_status == 4:                 # и он отыгрался
 
             show sh smile pioneer at cright with dissolve
-            sh "Хм, а ведь сработало…"
-            me "Да что ты всё считаешь-то?"
+            sh "Hmm, it worked..."
+            me "Why do you keep counting?"
             show sh upset pioneer at cright with dspr
-            sh "А?"
+            sh "Ah?"
             show sh normal pioneer at cright with dspr
-            sh "Да я пробую применить формулы расчёта вероятности более выигрышной комбинации у противника в покере к этой игре."
-            sh "Приходится, конечно, кое-что править, но и при таких условиях результат даёт представление о твоих картах."
-            "Не видя и половины, он предсказывает весь набор?"
-            "Не верю. Мистика какая-то."
-            dreamgirl "Кто бы говорил…"
+            sh "Yes, I'm trying to apply the formulas for calculating the probability of a better poker hand to this game."
+            sh "I have to correct some things, of course, but even under these conditions the result gives an idea of your cards."
+            "Without even seeing half, he predicts the whole set?"
+            "I don't believe it. It's kind of mystical."
+            dreamgirl "Who's to say..."
 
 # Женя
     elif alt_spr_my_rival == 'mz': # Ей скилл не повышается, потому что foolplay? ## Ну ды
         show mz normal glasses pioneer at cright with dissolve
         if alt_day2_current_rout_status == 1:                   # если Семён выиграл первый раз
 
-            "Жужа даже бровью не повела."
-            "Эмоциональный штиль. «Покерфейс»."
-            "Даже досадно немного. Могла бы изобразить хоть подобие разочарования."
-            mz "Что?"
-            me "Жень, а как ты сюда вообще попала?"
-            me "По тебе заметно, что ты не в восторге."
+            "Buzzer didn't even move an eyebrow."
+            "Emotional doldrums. «Pokerface»."
+            "It's a little disappointing. You could have at least made a semblance of disappointment."
+            mz "What?"
+            me "Zhenya, how did you get here in the first place?"
+            me "You don't look very happy."
             show mz angry glasses pioneer with dspr
-            mz "Сюда — это куда? В лагерь? В библиотеку? Турнир? Мир?"
-            mz "Задавай конкретные вопросы, если хочешь получить конкретный ответ."
-            "Тяжелый человек."
+            mz "Here - where to? To the camp? To the library? Tournament? The world?"
+            mz "Ask specific questions if you want a specific answer."
+            "Hard man."
             if herc or loki:
-                "И почему мне так часто встречаются именно такие?"
-                dreamgirl "Подобное притягивает подобное?"
-                me "Если у меня найдётся время, я зайду к тебе на чашечку чая, и мы поговорим о чём угодно."
-                me "О вождях пролетариата, о полёте на Марс или «Мартине Идене» Лондона."
+                "And why do I meet so many of these people?"
+                dreamgirl "Like attracts like?"
+                me "If I have time, I'll come over for a cup of tea, and we can talk about anything."
+                me "About the leaders of the proletariat, or going to Mars, or London's «Martin Eden»."
                 show mz rage glasses pioneer with dspr
-                me "Да хоть свои детские фото, где ты в пелёнках, покажи."
-                me "А пока мне интересно третье."
-                me "Сделай одолжение простому смертному и поведай свой секрет."
-                "Я ожидал от Жужелицы всякого: что она вскочит и даст мне по морде, что она заорёт на весь зал."
-                "Да даже, что она пожалуется вожатой и потребует отпустить её в медпункт, так как она получила психологическую травму, и ей теперь требуется отдых."
+                me "Hell, you can show me your baby pictures of you in diapers."
+                me "In the meantime, I'm interested in the third one."
+                me "Do a mere mortal a favor and tell me your secret."
+                "I expected all sorts of things from the Bug: that she'd jump up and punch me in the face, that she'd yell at the whole room."
+                "Yes, even that she would complain to the squad leader and demand to be released to the infirmary because she was psychologically traumatized and now needs rest."
                 show mz laugh glasses pioneer with dspr
                 pause(.5)
                 show mz normal glasses pioneer with dspr
-                "А она улыбнулась."
-                "Всего на миг, но я готов поклясться, что видел это."
-                dreamgirl "Чудеса!.. Ой, чудеса!.."
-                mz "Вожатая."
-                mz "Пришла и отчеканила: отрядное мероприятие, присутствуют все, возражения не принимаются."
-                me "Ох уж эта Ольга Лен…{w=0.3} Дмитриевна."
+                "And she smiled."
+                "Only for a moment, but I could have sworn I saw it."
+                dreamgirl "Miracles...! Oh, miracles!..."
+                mz "The counselor."
+                mz "Came and mouthed: squad event, all have to be present, no objections accepted."
+                me "Oh, that Olga Len...{w=0.3} Dmitrievna."
             else:
-                me "Неважно."
-                "Буркнул я."
+                me "Never mind."
+                "I mumbled."
                 show mz normal glasses pioneer with dspr
-                "До чего ж вредный человек."
-                "У Жени проблем в общении побольше, чем у меня."
-                dreamgirl "А ты попробуй раскрутить её на разговор."
-                dreamgirl "Вдруг узнаешь её с другой стороны."
-                dreamgirl "А потом она позовёт тебя на чай в библиотеку, а там, среди стеллажей, книги посыплются с полок под громкие сто…"
-                th "Нет!" with vpunch
+                "What a mean person."
+                "Zhenya has more trouble communicating than I do."
+                dreamgirl "Try to get her to talk to you."
+                dreamgirl "See if you can get to know her from a different angle."
+                dreamgirl "And then she'll call you to tea at the library, and there, among the shelves, books will fall off the shelves to the sound of a loud moani..."
+                th "No!" with vpunch
                 show mz bukal glasses pioneer with dspr
-                mz "Псих."
-                "Фыркнула Женя."
-                dreamgirl "Если ты думаешь, то что затрещина поможет избавиться от меня, очень ошибаешься."
-                th "Бла-бла-бла! Я тебя не слы-ышу-у-у!"
-                dreamgirl "Идиот…"
+                mz "Psycho."
+                "Zhenya snorted."
+                dreamgirl "If you think that a slap will get rid of me, you're very wrong."
+                th "Blah, blah, blah! I can't hear you!"
+                dreamgirl "Idiot..."
 
         elif alt_day2_current_rout_status == 2:                 # если Семён отыгрался
 
             show mz normal glasses pioneer with dissolve
-            mz "Продолжай в том же духе."
-            "Если б это от меня зависело."
-            me "Ничего не обещаю, но постараюсь."
-            mz "Угу, постарайся."
+            mz "Keep up the good work."
+            "If it were up to me."
+            me "No promises, but I'll try."
+            mz "Uh-huh, you'll try."
             hide mz with dissolve
 
         elif alt_day2_current_rout_status == 3:                 # и она выиграла первый раз
 
             show mz bukal glasses pioneer at cright with dissolve
-            "Сама победительница первого раунда устало вздохнула."
-            "Если ей настолько не интересно, зачем вообще соглашалась?"
-            "Могла же прикрыться занятостью в библиотеке перед вожатой."
-            mz "У меня что-то на лице?"
-            "Вяло спросила она."
-            th "Скорее — отсутствие."
-            "Подумал я, отвечая:"
-            me "Нет, я просто задумался."
+            "The winner of the first round herself sighed wearily."
+            "If she's that uninterested, why did she even agree to it?"
+            "Couldn't she have covered up her busyness in the library in front of the counselor?"
+            mz "Is there something on my face?"
+            "Languidly she asked."
+            th "More like an absence."
+            "Thought I, answering:"
+            me "No, I was just thinking."
             show mz normal glasses pioneer at cright with dspr
-            mz "Ясно."
+            mz "I see."
 
 
         elif alt_day2_current_rout_status == 4:                 # и она отыгралась
@@ -4240,37 +4243,37 @@ label alt_day2_current_game_ending_dialogs:
 
             show mz bukal glasses pioneer at cright with dspr
             if herc or loki:
-                "Женя сокрушенно выдохнула."
+                "Zhenya sighed sadly."
             else:
-                "У жужелицы было такое лицо, словно оно впитало в себя все муки мира."
+                "Her face was as if it had absorbed all the torment of the world."
 
-            mz "Сделай одолжение — не облажайся в следующем раунде."
-            me "Если б это от меня зависело."
-            mz "От кого ещё это может зависеть?"
-            mz "Только не говори глупости вроде «бога»."
-            "Пренебрежение, чуть ли не с ненавистью в голосе."
-            "Истинная коммунистка!"
-            th "Или это что-то личное?"
-            me "И в мыслях не было."
-            th "Рандом — он не бог. Он выше."
+            mz "Do me a favor - don't screw up the next round."
+            me "If it were up to me."
+            mz "Who else could it depend on?"
+            mz "Just don't say stupid things like «god»."
+            "Disdain, almost with hatred in her voice."
+            "A true communist!"
+            th "Or is it something personal?"
+            me "I wouldn't dream of it."
+            th "Random isn't a god. He's higher than that."
             show mz angry glasses pioneer at cright with dspr
-            mz "Вот и славно."
+            mz "Great."
 
     show el normal pioneer far at left with dissolve
     if alt_day2_current_rout_status == 1:
-        el "В этой игре победил Семён, счёт 1-0 в его пользу."
+        el "This game was won by Semyon, the score is 1-0 in his favor."
     elif alt_day2_current_rout_status == 3:
         if alt_spr_my_rival == 'sh':                            # Шурик
-            el "В этой игре победил Шурик, счёт 1-0 в его пользу."
+            el "In this game Shurik won, the score is 1-0 in his favor."
         else:
-            el "В этой игре %(alt_name_my_rival_i)s побеждает и ведёт в партии со счётом 1-0."
+            el "In this game %(alt_name_my_rival_i)s won, leading the match with the score of 1-0."
     elif alt_day2_current_rout_status == 2:
-        el "Семён выигрывает и сравнивает счёт в раунде."
+        el "Semyon wins and evens the score in the match."
     elif alt_day2_current_rout_status == 4:
         if alt_spr_my_rival == 'sh':                            # Шурик
-            el "Шурик выигрывает и сравнивает счёт в раунде."
+            el "Shurik wins and evens the score in the match."
         else:
-            el "%(alt_name_my_rival_i)s победила и сравняла счёт в партии."
+            el "%(alt_name_my_rival_i)s wins and evens the score in the match."
     return
 
 #-----------------------------------------------------------------------------------
@@ -4367,28 +4370,28 @@ label alt_day2_final_analizer:
     call show_tournament_table                                                          # показываем исходное положение, сортируем игроков
     $ alt_take_tournament_winner = alt_day2_gamblers_final[0].take                      # Ник победителя
     if alt_take_tournament_winner == "me":
-        $ alt_name_tournament_winner = "Семёна"
+        $ alt_name_tournament_winner = "Semyon"
     else:
         $ alt_name_tournament_winner = alt_day2_gamblers_final[0].name['v']             #  Получаем имя победителя турнира
 
     $ alt_take_tournament_loser = alt_day2_gamblers_final[1].take                       # Ник проигравшего
     if alt_take_tournament_loser == "me":
-        $ alt_name_tournament_loser = "Семёну"
+        $ alt_name_tournament_loser = "Semyon"
     else:
         $ alt_name_tournament_loser = alt_day2_gamblers_final[1].name['d']              #  Получаем имя проигравшего в финале
 
     if alt_take_tournament_loser in ['me','sh']:
-        $ alt_pronomen_final_loser = "он"
+        $ alt_pronomen_final_loser = "he"
     else:
-        $ alt_pronomen_final_loser = "она"
+        $ alt_pronomen_final_loser = "she"
 
     $ winner_remark, loser_remark = alt_declare_results_final(alt_take_tournament_winner, alt_take_tournament_loser) # вызываем функцию на финал — фразы победителя, проигравшего — по их никам.
 
     show el normal pioneer at cleft with dissolve
-    el "Итак, турнир окончен."
-    "Вспомнил о своих обязанностях организатор."
+    el "So, the tournament is over."
+    "The organizer remembered his duties."
     $ alt_mstt = 0
-    el "Поздравляем нашего победителя — %(alt_name_tournament_winner)s!"
+    el "Congratulations to our winner — %(alt_name_tournament_winner)s!"
     play sound sfx_concert_applause
     call show_tournament_table                                                          # двигаем победителя
     pause(0.2)
@@ -4404,7 +4407,7 @@ label alt_day2_final_analizer:
         $ a_c_i += 1                                                                # увеличиваем счетчик фраз
 
     $ alt_mstt += 1
-    el "А вот %(alt_name_tournament_loser)s сегодня немного не повезло; тем не менее, %(alt_pronomen_final_loser)s занимает почётное второе место."
+    el "And %(alt_name_tournament_loser)s wasn't as lucky today; nevertheless, %(alt_pronomen_final_loser)s takes honorable second place."
     call show_tournament_table                                                      # прячем проигравшего
     pause(0.2)
 

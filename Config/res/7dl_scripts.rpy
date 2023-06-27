@@ -59,51 +59,51 @@ init 3 python: # Операции с войс каналами
 
     def make_names_unknown_7dl():
         global store
-        meet('al',u"Сердитый мальчик")
-        meet('ase',u"Девочка")
-        meet('ba',u"Физрук")
-        meet('bb',u"Начальник лагеря")
-        meet('cs',u"Медсестра")
-        meet('dn',u"Кудрявый")
+        meet('al',u"Angry boy")
+        meet('ase',u"Girl")
+        meet('ba',u"Gym teacher")
+        meet('bb',u"Camp leader")
+        meet('cs',u"Nurse")
+        meet('dn',u"Curly")
         meet('dreamgirl',u"…")
-        meet('dv',u"Рыжая")
-        meet('el',u"Кудрявый")
-        meet('ka',u"Вожатая 2 отряда")
-        meet('me',u"Семён")
-        meet('mi',u"Японка")
-        meet('mt',u"Вожатая")
-        meet('mz',u"Девушка в очках")
-        meet('pi',u"Пионер")
-        meet('sak',u"Пожилой японец")
-        meet('sh',u"Очкарик")
-        meet('sl',u"Блондинка")
-        meet('tn',u"Странный мальчик")
-        meet('un',u"Грустная девочка")
-        meet('us',u"Мелкая")
-        meet('uv',u"Кошкодевочка")
-        meet('voice',u"Голос")
+        meet('dv',u"RedHead")
+        meet('el',u"Curly")
+        meet('ka',u"Leader of 2nd squad")
+        meet('me',u"Semyon")
+        meet('mi',u"Japanese girl")
+        meet('mt',u"Squad leader")
+        meet('mz',u"Girl in glasses")
+        meet('pi',u"Pioneer")
+        meet('sak',u"Old japanese")
+        meet('sh',u"Nerd")
+        meet('sl',u"Blonde")
+        meet('tn',u"Strange boy")
+        meet('un',u"Sad girl")
+        meet('us',u"Little one")
+        meet('uv',u"Catgirl")
+        meet('voice',u"Voice")
 
     def make_names_known_7dl():
         global store
-        meet('al',u"Алька")
-        meet('ase',u"Алиса")
-        meet('ba',u"Саныч")
-        meet('bb',u"Алексей Максимыч")
-        meet('cs',u"Виола")
-        meet('dn',u"Даня")
-        meet('dv',u"Алиса")
-        meet('el',u"Электроник")
-        meet('ka',u"Катюшка")
-        meet('mi',u"Мику")
-        meet('mt',u"Ольга Дмитриевна")
-        meet('mz',u"Женя")
-        meet('sak',u"Сакишита Чихиро")
-        meet('sh',u"Шурик")
-        meet('sl',u"Славя")
-        meet('tn',u"Тоник")
-        meet('un',u"Лена")
-        meet('us',u"Ульяна")
-        meet('uv',u"Юля")
+        meet('al',u"Alka")
+        meet('ase',u"Alisa")
+        meet('ba',u"Sanich")
+        meet('bb',u"Aleksei Maksimovich")
+        meet('cs',u"Viola")
+        meet('dn',u"Danya")
+        meet('dv',u"Alisa")
+        meet('el',u"Electronik")
+        meet('ka',u"Katushka")
+        meet('mi',u"Miku")
+        meet('mt',u"Olga Dmitrievna")
+        meet('mz',u"Zhenya")
+        meet('sak',u"Sakishita Chihiro")
+        meet('sh',u"Shurik")
+        meet('sl',u"Slavya")
+        meet('tn',u"Tonik")
+        meet('un',u"Lena")
+        meet('us',u"Ulyana")
+        meet('uv',u"Yulya")
 
     def reset_names_to_default():
         global store
@@ -174,16 +174,16 @@ init -5 python: # Заставки и названия глав
     def alt_chapter0():
         global save_name
         if alt_hotfix_no != "":
-            save_name = (u"7ДЛ v.%s.%s: пролог. %s") % (alt_release_no, alt_hotfix_no, plthr)
+            save_name = (u"7DS v.%s.%s: Prologue. %s") % (alt_release_no, alt_hotfix_no, plthr)
         else:
-            save_name = (u"7ДЛ v.%s: пролог. %s") % (alt_release_no, plthr)
+            save_name = (u"7DS v.%s: Prologue. %s") % (alt_release_no, plthr)
 
     def alt_chapter(alt_day_number, alt_chapter_name):
         global save_name
         if alt_hotfix_no != "":
-            sdn = (u"7ДЛ v.%s.%s: День %d") % (alt_release_no, alt_hotfix_no, alt_day_number)
+            sdn = (u"7DS v.%s.%s: Day %d") % (alt_release_no, alt_hotfix_no, alt_day_number)
         else:
-            sdn = (u"7ДЛ v.%s: День %d") % (alt_release_no, alt_day_number)
+            sdn = (u"7DS v.%s: Day %d") % (alt_release_no, alt_day_number)
         save_name = ((sdn) + (u" — ")) + (alt_chapter_name)
         if not persistent.chapter_off_7dl:
             _window_hide()
@@ -369,7 +369,7 @@ init -5 python: # Заставки и названия глав
                 renpy.show("owl")
                 renpy.pause(0.3)
 
-            dn = (u"7ДЛ: День %d") % (alt_day_number)
+            dn = (u"7DS: Day %d") % (alt_day_number)
             if persistent.sprite_time == "prolog":
                 renpy.show('day_num', what=Text(dn, style=style.alt_days,xcenter=0.5215,ycenter=0.25))
                 renpy.show('day_text', what=Text(alt_chapter_name, style=style.alt_chapters,xcenter=0.5215,ycenter=0.35,xmaximum=720))
@@ -392,9 +392,9 @@ init -5 python: # Заставки и названия глав
     def alt_save_name(alt_day_number, alt_chapter_name):
         global save_name
         if alt_hotfix_no != "":
-            sdn = (u"7ДЛ v.%s.%s: День %d") % (alt_release_no, alt_hotfix_no, alt_day_number)
+            sdn = (u"7DS v.%s.%s: Day %d") % (alt_release_no, alt_hotfix_no, alt_day_number)
         else:
-            sdn = (u"7ДЛ v.%s: День %d") % (alt_release_no, alt_day_number)
+            sdn = (u"7DS v.%s: Day %d") % (alt_release_no, alt_day_number)
         save_name = ((sdn) + (u" — ")) + (alt_chapter_name)
 
 init -1001 python: # Дополнительные звуковые каналы
@@ -1074,7 +1074,7 @@ screen replay_preferences:
                 grid 1 21:
                     xfill True
                     spacing 15
-                    textbutton "Выйти из повтора":
+                    textbutton "Exit the replay":
                         style "log_button"
                         text_style "settings_header"
                         xalign 0.5
@@ -1683,642 +1683,642 @@ init python:
             self.cur_value = []
 
     # Объекты всех переменных
-    sdl_var_b_d1_el_foll = sdl_Bool('alt_day1_el_followed', "Сбежал от Алисы")
-    sdl_var_b_d1_sl_met  = sdl_Bool('alt_day1_sl_met', "Знаком со Славей")
-    sdl_var_b_d1_us_shot = sdl_Bool('alt_day1_us_shotted', "Пнул мячик")
-    sdl_var_b_d1_un_talk = sdl_Bool('alt_day1_un_talk', "Подошёл к Лене вечером в 1 дне")
+    sdl_var_b_d1_el_foll = sdl_Bool('alt_day1_el_followed', "Escaped from Alisa")
+    sdl_var_b_d1_sl_met  = sdl_Bool('alt_day1_sl_met', "Met Slavya")
+    sdl_var_b_d1_us_shot = sdl_Bool('alt_day1_us_shotted', "Kicked the ball")
+    sdl_var_b_d1_un_talk = sdl_Bool('alt_day1_un_talk', "Approached Lena on day 1 evening.")
     # ====================
-    sdl_var_b_d2_dv_chas = sdl_Bool('alt_day2_dv_chased', "Бегал от Алисы после турнира")
-    sdl_var_b_d2_dv_hous = sdl_Bool('alt_day2_dv_us_house_visited', "Посетил на обходе дом Алисы и Ульяны")
-    sdl_var_b_d2_me_mini = sdl_Bool('alt_day2_minijack', "Добыл миниджек")
-    sdl_var_b_d2_mi_met  = sdl_Bool('alt_day2_mi_met', "Знаком с Мику")
-    sdl_var_b_d2_mi_snap = sdl_Bool('alt_day2_mi_snap', "Сфотографировался с Мику")
-    sdl_var_b_d2_mt_help = sdl_Bool('alt_day2_mt_help', "Помог Ольге с путёвками")
-    sdl_var_b_d2_sl_chas = sdl_Bool('alt_day2_sl_chased', "Пытался проследить за Славей после турнира")
-    sdl_var_b_d2_sh_met  = sdl_Bool('alt_day2_sh_met', "Знаком с Шуриком")
-    sdl_var_b_d2_us_dubs = sdl_Bool('alt_day2_us_dubstep', "Устроил мини-дискотеку")
-    sdl_var_b_d2_us_shen = sdl_Bool('alt_day2_us_shenan', "Устроил Ульяне трюк со стаканом")
-    sdl_var_b_d2_us_esca = sdl_Bool('alt_day2_us_escape', "Сбежал с Ульяной")
+    sdl_var_b_d2_dv_chas = sdl_Bool('alt_day2_dv_chased', "Was chased by Alisa after tournament")
+    sdl_var_b_d2_dv_hous = sdl_Bool('alt_day2_dv_us_house_visited', "Visited Ulyana and Alisa's cabin on detour")
+    sdl_var_b_d2_me_mini = sdl_Bool('alt_day2_minijack', "Obtained minijack")
+    sdl_var_b_d2_mi_met  = sdl_Bool('alt_day2_mi_met', "Met Miku")
+    sdl_var_b_d2_mi_snap = sdl_Bool('alt_day2_mi_snap', "Took a picture with Miku")
+    sdl_var_b_d2_mt_help = sdl_Bool('alt_day2_mt_help', "Helped Olga with vouchers")
+    sdl_var_b_d2_sl_chas = sdl_Bool('alt_day2_sl_chased', "Tried to follow Slavya after tournament")
+    sdl_var_b_d2_sh_met  = sdl_Bool('alt_day2_sh_met', "Met Shurik")
+    sdl_var_b_d2_us_dubs = sdl_Bool('alt_day2_us_dubstep', "Had a mini-disco")
+    sdl_var_b_d2_us_shen = sdl_Bool('alt_day2_us_shenan', "Did a little glass-trolling on Ulyana")
+    sdl_var_b_d2_us_esca = sdl_Bool('alt_day2_us_escape', "Escaped with Ulyana")
     # ====================
-    sdl_var_b_d3_me_duty = sdl_Bool('alt_day3_duty', "Назначен дежурным на 3 день")
-    sdl_var_b_d3_me_tec2 = sdl_Bool('alt_day3_technoquest2', "Согласился помочь кибернетикам на крыше")
-    sdl_var_b_d3_mi_reje = sdl_Bool('alt_day3_mi_rejected', "Отказал Мику в танцах")
-    sdl_var_b_d3_sl_invi = sdl_Bool('alt_day3_sl_invite', "Славя попросила помочь с организацией танцев")
-    sdl_var_b_d3_sl_bath = sdl_Bool('alt_day3_sl_bath_voy', "Подглядывал за Славей в бане")
-    sdl_var_b_d3_un_fz_walk    = sdl_Bool('alt_day3_un_fz_walk', "Прогулялся с Леной вместо дискотеки")
-    sdl_var_b_d3_un_fz_stories = sdl_Bool('alt_day3_un_fz_stories', "Рассказывал истории с компанией Ульяны")
-    sdl_var_b_d3_un_fz_transit = sdl_Bool('alt_day3_un_fz_neu_transit', "Танцевал с Леной, френдзоня её")
+    sdl_var_b_d3_me_duty = sdl_Bool('alt_day3_duty', "Assigned to duty on day 3")
+    sdl_var_b_d3_me_tec2 = sdl_Bool('alt_day3_technoquest2', "Agreed to help the cybernetics on the roof")
+    sdl_var_b_d3_mi_reje = sdl_Bool('alt_day3_mi_rejected', "Refused to dance with Miku")
+    sdl_var_b_d3_sl_invi = sdl_Bool('alt_day3_sl_invite', "Slavya asked for help with dances")
+    sdl_var_b_d3_sl_bath = sdl_Bool('alt_day3_sl_bath_voy', "Peeped on Slavya in the bathhouse")
+    sdl_var_b_d3_un_fz_walk    = sdl_Bool('alt_day3_un_fz_walk', "Walked with Lena instead of disco")
+    sdl_var_b_d3_un_fz_stories = sdl_Bool('alt_day3_un_fz_stories', "Told stories with Ulyana's company")
+    sdl_var_b_d3_un_fz_transit = sdl_Bool('alt_day3_un_fz_neu_transit', "Danced with Lena, friendzoning her")
     # ====================
-    sdl_var_b_d4_mi_7dl_savi = sdl_Bool('alt_day4_mi_7dl_ev_savior', "Не оставил Мику спать одну в музклубе")
-    sdl_var_b_d5_mi_7dl_voye = sdl_Bool('alt_day5_mi_7dl_voyeur', "Подглядывал за Мику в бане")
-    sdl_var_b_d5_mi_7dl_kiss = sdl_Bool('alt_day5_mi_7dl_kiss', "Поцеловал Мику на костре")
-    sdl_var_b_d6_mi_7dl_left = sdl_Bool('alt_day6_mi_7dl_left', "Мику уехала")
+    sdl_var_b_d4_mi_7dl_savi = sdl_Bool('alt_day4_mi_7dl_ev_savior', "Didn't leave Miku sleeping in the mus. club")
+    sdl_var_b_d5_mi_7dl_voye = sdl_Bool('alt_day5_mi_7dl_voyeur', "Peeped on Miku in the bathhouse")
+    sdl_var_b_d5_mi_7dl_kiss = sdl_Bool('alt_day5_mi_7dl_kiss', "Kissed Miku on the hike")
+    sdl_var_b_d6_mi_7dl_left = sdl_Bool('alt_day6_mi_7dl_left', "Miku left")
     # ====================
-    sdl_var_b_d4_mi_dj_hedg    = sdl_Bool('alt_day4_mi_dj_hedg', "Поймал хыщника")
-    sdl_var_b_d4_mi_dj_sl_blac = sdl_Bool('alt_day4_mi_dj_blackmailed', "Славя напомнила про подглядывание в бане")
-    sdl_var_b_d4_mi_dj_sl_repe = sdl_Bool('alt_day4_mi_dj_sl_repet', "Обедал со Славей")
-    sdl_var_b_d4_mi_dj_reas    = sdl_Bool('alt_day4_mi_dj_reasons', "Пытался найти причины плохого самочувствия Мику")
-    sdl_var_b_d5_mi_dj_dv_blad = sdl_Bool('alt_day5_mi_dj_dv_blade', "Вернул бритву Алисе")
-    sdl_var_b_d5_mi_dj_dv_kiss = sdl_Bool('alt_day5_mi_dj_dv_kissing', "Получил поцелуй от Алисы")
-    sdl_var_b_d5_mi_dj_hent    = sdl_Bool('alt_day5_mi_dj_hentai_done', "Был хентай вечером 5 дня")
-    sdl_var_b_d6_mi_dj_walk    = sdl_Bool('alt_day6_mi_dj_walkman', "Подарил плеер Мику")
-    sdl_var_b_d6_mi_dj_sl_evil = sdl_Bool('alt_day6_mi_dj_sl_evil', "Разозлил Славю")
-    sdl_var_b_d6_mi_dj_un_evil = sdl_Bool('alt_day6_mi_dj_un_evil', "Разозлил Лену")
-    sdl_var_b_d6_mi_dj_mi_reje = sdl_Bool('alt_day6_mi_dj_rejected', "Мику отказалась танцевать")
-    sdl_var_b_d6_mi_dj_me_evil = sdl_Bool('alt_day6_mi_dj_me_evil', "Пытался бороться со страхом")
-    sdl_var_b_d6_mi_dj_hent    = sdl_Bool('alt_day6_mi_dj_hentai2', "Был хентай вечером 6 дня")
+    sdl_var_b_d4_mi_dj_hedg    = sdl_Bool('alt_day4_mi_dj_hedg', "Caught the predator")
+    sdl_var_b_d4_mi_dj_sl_blac = sdl_Bool('alt_day4_mi_dj_blackmailed', "Slavya reminded of peeping")
+    sdl_var_b_d4_mi_dj_sl_repe = sdl_Bool('alt_day4_mi_dj_sl_repet', "Dinner with Slavya")
+    sdl_var_b_d4_mi_dj_reas    = sdl_Bool('alt_day4_mi_dj_reasons', "Tried to find reasons for Miku's ill health")
+    sdl_var_b_d5_mi_dj_dv_blad = sdl_Bool('alt_day5_mi_dj_dv_blade', "Returned the razor to Alisa")
+    sdl_var_b_d5_mi_dj_dv_kiss = sdl_Bool('alt_day5_mi_dj_dv_kissing', "Got a kiss from Alisa")
+    sdl_var_b_d5_mi_dj_hent    = sdl_Bool('alt_day5_mi_dj_hentai_done', "Hentai on day 5 evening")
+    sdl_var_b_d6_mi_dj_walk    = sdl_Bool('alt_day6_mi_dj_walkman', "Gave player to Miku")
+    sdl_var_b_d6_mi_dj_sl_evil = sdl_Bool('alt_day6_mi_dj_sl_evil', "Pissed off Slavya")
+    sdl_var_b_d6_mi_dj_un_evil = sdl_Bool('alt_day6_mi_dj_un_evil', "Pissed off Lena")
+    sdl_var_b_d6_mi_dj_mi_reje = sdl_Bool('alt_day6_mi_dj_rejected', "Miku refused to dance.")
+    sdl_var_b_d6_mi_dj_me_evil = sdl_Bool('alt_day6_mi_dj_me_evil', "Tried to fight the fear")
+    sdl_var_b_d6_mi_dj_hent    = sdl_Bool('alt_day6_mi_dj_hentai2', "Hentai on day 6 evening")
     # ====================
-    sdl_var_b_d4_dv_7dl_extr    = sdl_Bool('alt_day4_dv_7dl_extra_key', "Отцепил себе ключик")
-    sdl_var_b_d4_dv_7dl_ba_conv = sdl_Bool('alt_day4_dv_7dl_ba_conv', "Поздоровался с Санычем")
-    sdl_var_b_d4_dv_7dl_cs_help = sdl_Bool('alt_day4_dv_7dl_help_cs', "Согласился помочь Виоле")
-    sdl_var_b_d4_dv_7dl_port    = sdl_Bool('alt_day4_dv_7dl_portwine', "Добыл бутылку портвейна")
-    sdl_var_b_d4_dv_7dl_hent    = sdl_Bool('alt_day4_dv_7dl_hentai_done', "Был хентай в медпункте")
-    sdl_var_b_d6_dv_7dl_tran    = sdl_Bool('alt_day6_dv_7dl_transit', "Флаг транзита")
+    sdl_var_b_d4_dv_7dl_extr    = sdl_Bool('alt_day4_dv_7dl_extra_key', "Took a key for yourself")
+    sdl_var_b_d4_dv_7dl_ba_conv = sdl_Bool('alt_day4_dv_7dl_ba_conv', "Greeted Sanich")
+    sdl_var_b_d4_dv_7dl_cs_help = sdl_Bool('alt_day4_dv_7dl_help_cs', "Agreed to help Viola")
+    sdl_var_b_d4_dv_7dl_port    = sdl_Bool('alt_day4_dv_7dl_portwine', "Got a bottle of port.")
+    sdl_var_b_d4_dv_7dl_hent    = sdl_Bool('alt_day4_dv_7dl_hentai_done', "Hentai at the infirmary")
+    sdl_var_b_d6_dv_7dl_tran    = sdl_Bool('alt_day6_dv_7dl_transit', "Transit flag")
     # ====================
-    sdl_var_b_d6_dv_dj_bett    = sdl_Bool('alt_day6_dv_dj_bet', "Поспорил с Алисой")
-    sdl_var_b_d6_dv_dj_secr    = sdl_Bool('alt_day6_dv_dj_secret', "Узнал правду про Алису")
-    sdl_var_b_d6_dv_dj_dvrn    = sdl_Bool('alt_day6_dv_dj_dv_run', "Решил догнать Алису")
+    sdl_var_b_d6_dv_dj_bett    = sdl_Bool('alt_day6_dv_dj_bet', "Bet with Alisa")
+    sdl_var_b_d6_dv_dj_secr    = sdl_Bool('alt_day6_dv_dj_secret', "Learned the truth about Alisa")
+    sdl_var_b_d6_dv_dj_dvrn    = sdl_Bool('alt_day6_dv_dj_dv_run', "Decided to run after Alisa")
     # ====================
-    sdl_var_b_d4_sl_7dl_work    = sdl_Bool('alt_day4_sl_7dl_workout', "Вышел на пробежку утром 4 дня")
-    sdl_var_b_d4_sl_7dl_help    = sdl_Bool('alt_day4_sl_7dl_help1', "Согласился таскать колонки")
-    sdl_var_b_d4_sl_7dl_rend    = sdl_Bool('alt_day4_sl_7dl_herc_rendezvous', "Договорился о свидании со Славей")
-    sdl_var_b_d4_sl_7dl_appl    = sdl_Bool('alt_day4_sl_7dl_herc_appletree', "Ходил с Ульянкой за яблоками")
-    sdl_var_b_d5_sl_7dl_work    = sdl_Bool('alt_day5_sl_7dl_workout', "Вышел на пробежку утром 5 дня")
-    sdl_var_b_d5_sl_7dl_true    = sdl_Bool('alt_day5_sl_7dl_loki_true', "Поговорил со Славей о правде")
-    sdl_var_b_d5_sl_7dl_defe    = sdl_Bool('alt_day5_sl_7dl_defend', "Заступился за Ульянку перед Ольгой")
-    sdl_var_b_d5_sl_7dl_olro    = sdl_Bool('alt_day5_sl_7dl_olroad', "Принял помощь Ульяны с Леной")
-    sdl_var_b_d5_sl_7dl_hent    = sdl_Bool('alt_day5_sl_7dl_hentai_done', "Был хентай вечером 5 дня")
-    sdl_var_b_d5_sl_7dl_sick    = sdl_Bool('alt_day5_sl_7dl_herc_sick', "Простудился в 5 день")
-    sdl_var_b_d6_sl_7dl_forg    = sdl_Bool('alt_day6_sl_7dl_forgive', "Простил Славю")
-    sdl_var_b_d6_sl_7dl_hent    = sdl_Bool('alt_day6_sl_7dl_hentai_done', "Был хентай вечером 6 дня")
-    sdl_var_b_d6_sl_7dl_squa    = sdl_Bool('alt_day6_sl_7dl_square', "Пошёл на площадь")
+    sdl_var_b_d4_sl_7dl_work    = sdl_Bool('alt_day4_sl_7dl_workout', "Day 4 morning jogging")
+    sdl_var_b_d4_sl_7dl_help    = sdl_Bool('alt_day4_sl_7dl_help1', "Helped with the speakers")
+    sdl_var_b_d4_sl_7dl_rend    = sdl_Bool('alt_day4_sl_7dl_herc_rendezvous', "Agreed upon a date")
+    sdl_var_b_d4_sl_7dl_appl    = sdl_Bool('alt_day4_sl_7dl_herc_appletree', "Went with Ulyana")
+    sdl_var_b_d5_sl_7dl_work    = sdl_Bool('alt_day5_sl_7dl_workout', "Day 5 morning jogging")
+    sdl_var_b_d5_sl_7dl_true    = sdl_Bool('alt_day5_sl_7dl_loki_true', "Talked to Slavya about truth")
+    sdl_var_b_d5_sl_7dl_defe    = sdl_Bool('alt_day5_sl_7dl_defend', "Saved Ulyana from Olga")
+    sdl_var_b_d5_sl_7dl_olro    = sdl_Bool('alt_day5_sl_7dl_olroad', "Accepted Ulyana's help")
+    sdl_var_b_d5_sl_7dl_hent    = sdl_Bool('alt_day5_sl_7dl_hentai_done', "Day 5 hentai")
+    sdl_var_b_d5_sl_7dl_sick    = sdl_Bool('alt_day5_sl_7dl_herc_sick', "Caught a cold on day 5")
+    sdl_var_b_d6_sl_7dl_forg    = sdl_Bool('alt_day6_sl_7dl_forgive', "Forgave Slavya")
+    sdl_var_b_d6_sl_7dl_hent    = sdl_Bool('alt_day6_sl_7dl_hentai_done', "Day 6 evening hentai")
+    sdl_var_b_d6_sl_7dl_squa    = sdl_Bool('alt_day6_sl_7dl_square', "Went to the square")
     # ====================
-    sdl_var_b_d4_sl_cl_tuti    = sdl_Bool('alt_day4_sl_cl_tut_iz', "Не пошёл смотреть на гуделку")
-    sdl_var_b_d4_sl_cl_left    = sdl_Bool('alt_day4_sl_cl_tut_lf', "Славя с Леной ушли на поиски без нас")
-    sdl_var_b_d4_sl_cl_un_reje = sdl_Bool('alt_day4_sl_cl_un_rej', "Выступил против участия Лены в поисках")
-    sdl_var_b_d5_sl_cl_hent    = sdl_Bool('alt_day5_sl_cl_hentai_done', "Был хентай вечером 5 дня")
-    sdl_var_b_d6_sl_cl_shir    = sdl_Bool('alt_day6_sl_cl_shirt', "Решил принарядиться к дискотеке")
-    sdl_var_b_d6_sl_cl_hent    = sdl_Bool('alt_day6_sl_cl_hentai_done', "Был хентай в медпункте")
-    sdl_var_b_d7_sl_cl_code    = sdl_Bool('alt_day7_sl_cl_code', "Нашёл бумажку с кодом")
+    sdl_var_b_d4_sl_cl_tuti    = sdl_Bool('alt_day4_sl_cl_tut_iz', "Didn't go to look at the buzzer")
+    sdl_var_b_d4_sl_cl_left    = sdl_Bool('alt_day4_sl_cl_tut_lf', "Slavya and Lena went on a search alone")
+    sdl_var_b_d4_sl_cl_un_reje = sdl_Bool('alt_day4_sl_cl_un_rej', "Opposed Lena's participation in the search")
+    sdl_var_b_d5_sl_cl_hent    = sdl_Bool('alt_day5_sl_cl_hentai_done', "Hentai on day 5 evening")
+    sdl_var_b_d6_sl_cl_shir    = sdl_Bool('alt_day6_sl_cl_shirt', "Decided to dress up for the disco")
+    sdl_var_b_d6_sl_cl_hent    = sdl_Bool('alt_day6_sl_cl_hentai_done', "Hentai at the infirmary")
+    sdl_var_b_d7_sl_cl_code    = sdl_Bool('alt_day7_sl_cl_code', "Found a piece of paper with a code on it")
     # ====================
-    sdl_var_b_d4_un_7dl_sear    = sdl_Bool('alt_day4_un_7dl_morning_searching', "Отпросился с линейки искать Лену")
-    sdl_var_b_d4_un_7dl_hent    = sdl_Bool('alt_day4_un_7dl_hen1', "Был хентай на 4 день")
-    sdl_var_b_d4_un_7dl_duck    = sdl_Bool('alt_day4_un_7dl_ducks', "Обучал шестой отряд «Танцу маленьких утят»")
-    sdl_var_b_d4_un_7dl_ba_aler = sdl_Bool('alt_day4_un_7dl_ba_alerted', "Саныч спалил целующимися на корте")
-    sdl_var_b_d4_un_7dl_expl    = sdl_Bool('alt_day4_un_7dl_dv_us_explosives', "Не помешал рыжим делать взрывчатку")
+    sdl_var_b_d4_un_7dl_sear    = sdl_Bool('alt_day4_un_7dl_morning_searching', "Left the lineup to look for Lena")
+    sdl_var_b_d4_un_7dl_hent    = sdl_Bool('alt_day4_un_7dl_hen1', "Hentai on day 4")
+    sdl_var_b_d4_un_7dl_duck    = sdl_Bool('alt_day4_un_7dl_ducks', "Trained squad 6 to dance «The Birdie Song»")
+    sdl_var_b_d4_un_7dl_ba_aler = sdl_Bool('alt_day4_un_7dl_ba_alerted', "Sanich spotted kissing on the court")
+    sdl_var_b_d4_un_7dl_expl    = sdl_Bool('alt_day4_un_7dl_dv_us_explosives', "Didn't stop the redheads from making explosives")
     # ====================
-    sdl_var_b_d4_un_fz_old_road = sdl_Bool('alt_day4_un_fz_old_road', "Случайно вышел на Дорогу")
-    sdl_var_b_d4_un_fz_us_run   = sdl_Bool('alt_day4_un_fz_us_run', "Побежал за Ульяной из столовой")
-    sdl_var_b_d5_un_fz_us_break = sdl_Bool('alt_day5_un_fz_us_breakfast', "Завтракал утром 5 дня с Ульяной")
-    sdl_var_b_d5_un_fz_un_run   = sdl_Bool('alt_day5_un_fz_un_run', "Побежал за Леной со свечки")
-    sdl_var_b_d5_un_fz_old_camp = sdl_Bool('alt_day5_un_fz_old_camp', "Сходил в старый лагерь")
+    sdl_var_b_d4_un_fz_old_road = sdl_Bool('alt_day4_un_fz_old_road', "Accidentally went out on The Road")
+    sdl_var_b_d4_un_fz_us_run   = sdl_Bool('alt_day4_un_fz_us_run', "Ran after Ulyana")
+    sdl_var_b_d5_un_fz_us_break = sdl_Bool('alt_day5_un_fz_us_breakfast', "Breakfast with Ulyana on day 5")
+    sdl_var_b_d5_un_fz_un_run   = sdl_Bool('alt_day5_un_fz_un_run', "Ran from candle after Lena")
+    sdl_var_b_d5_un_fz_old_camp = sdl_Bool('alt_day5_un_fz_old_camp', "Went to the old camp.")
     # ====================
-    sdl_var_b_d6_un_fz_hent     = sdl_Bool('alt_day6_un_fz_hentai', "Был хентай с Леной")
+    sdl_var_b_d6_un_fz_hent     = sdl_Bool('alt_day6_un_fz_hentai', "Hentai with Lena")
     # ====================
-    sdl_var_b_d6_us_7dl_help    = sdl_Bool('alt_day6_us_7dl_help', "Не бросил Ульянку и принёс шорты")
+    sdl_var_b_d6_us_7dl_help    = sdl_Bool('alt_day6_us_7dl_help', "Brought the shorts")
     # ====================
-    sdl_var_b_d6_us_7dl_px_sl_join  = sdl_Bool('alt_day6_us_7dl_px_sl_join', "Славя согласилась присоединиться к поискам")
+    sdl_var_b_d6_us_7dl_px_sl_join  = sdl_Bool('alt_day6_us_7dl_px_sl_join', "Slavya agreed to join the search")
     # ====================
-    sdl_var_b_d4_me_neu_voll    = sdl_Bool('alt_day4_me_neu_volley', "Уговорил вожатую сыграть в волейбол")
-    sdl_var_b_d4_me_neu_mi_song = sdl_Bool('alt_day4_me_neu_mi_songs', "Готовил с Мику песни к костру")
-    sdl_var_b_d4_me_neu_mt_volo = sdl_Bool('alt_day4_me_neu_mt_volonteer', "Задолжал Ольге велосипед")
-    sdl_var_b_d4_me_neu_mt_diar = sdl_Bool('alt_day4_me_neu_mt_diary', "Прочитал первую часть дневника Ольги")
-    sdl_var_b_d4_me_neu_us_debt = sdl_Bool('alt_day4_me_neu_us_debt', "Заглянул к кибернетикам после обеда")
-    sdl_var_b_d4_me_neu_cs_debt = sdl_Bool('alt_day4_me_neu_cs_debt', "Провёл вечер в компании двух дам")
-    sdl_var_b_d4_me_neu_mz_news = sdl_Bool('alt_day4_me_neu_mz_newspaper', "Помог починить полку в библиотеке")
-    sdl_var_b_d5_me_neu_sprt    = sdl_Bool('alt_day5_me_neu_sport', "Был разыгран добрым дедушкой Санычем")
-    sdl_var_b_d5_me_neu_nwpp    = sdl_Bool('alt_day5_me_neu_nwsppr', "Посетил библиотеку в тихий час")
-    sdl_var_b_d5_me_neu_pota    = sdl_Bool('alt_day5_me_neu_potato', "Получил поручение нести мешок картошки")
-    sdl_var_b_d5_me_neu_cesc    = sdl_Bool('alt_day5_me_neu_candle_escape', "Сбежал со свечки")
-    sdl_var_b_d5_me_neu_cybr    = sdl_Bool('alt_day5_me_neu_clubs_cyber', "Прятал эротический клад")
-    sdl_var_b_d5_me_neu_sl_voye = sdl_Bool('alt_day5_me_neu_sl_voyeur', "Подглядывал за Славей в озере")
-    sdl_var_b_d5_me_neu_mt_diar = sdl_Bool('alt_day5_me_neu_mt_diary', "Прочитал вторую часть дневника Ольги")
-    sdl_var_b_d5_me_neu_mt_hent = sdl_Bool('alt_day5_me_neu_mt_hentai', "Был хентай вечером 5 дня")
-    sdl_var_b_d5_me_neu_us_stor = sdl_Bool('alt_day5_me_neu_us_stores', "Получил еду для рыжих")
-    sdl_var_b_d5_me_neu_us_pota = sdl_Bool('alt_day5_me_neu_us_potato', "Поделился с Ульяной картошкой")
+    sdl_var_b_d4_me_neu_voll    = sdl_Bool('alt_day4_me_neu_volley', "Convinced the squad leader to play volleyball")
+    sdl_var_b_d4_me_neu_mi_song = sdl_Bool('alt_day4_me_neu_mi_songs', "Prepared songs for the fire with Miku")
+    sdl_var_b_d4_me_neu_mt_volo = sdl_Bool('alt_day4_me_neu_mt_volonteer', "Broke Olga's bicycle")
+    sdl_var_b_d4_me_neu_mt_diar = sdl_Bool('alt_day4_me_neu_mt_diary', "Read the first part of Olga's diary")
+    sdl_var_b_d4_me_neu_us_debt = sdl_Bool('alt_day4_me_neu_us_debt', "Visited cybernetics in the afternoon")
+    sdl_var_b_d4_me_neu_cs_debt = sdl_Bool('alt_day4_me_neu_cs_debt', "Evening in the company of two ladies")
+    sdl_var_b_d4_me_neu_mz_news = sdl_Bool('alt_day4_me_neu_mz_newspaper', "Helped fix a shelf in the library")
+    sdl_var_b_d5_me_neu_sprt    = sdl_Bool('alt_day5_me_neu_sport', "Was trolled by Sanich")
+    sdl_var_b_d5_me_neu_nwpp    = sdl_Bool('alt_day5_me_neu_nwsppr', "Visited the library during quiet time")
+    sdl_var_b_d5_me_neu_pota    = sdl_Bool('alt_day5_me_neu_potato', "Got an assignment to carry a sack of potatoes")
+    sdl_var_b_d5_me_neu_cesc    = sdl_Bool('alt_day5_me_neu_candle_escape', "Ran from the candle")
+    sdl_var_b_d5_me_neu_cybr    = sdl_Bool('alt_day5_me_neu_clubs_cyber', "Tried to hide an erotic treasure trove")
+    sdl_var_b_d5_me_neu_sl_voye = sdl_Bool('alt_day5_me_neu_sl_voyeur', "Peeped on Slavya at the lake")
+    sdl_var_b_d5_me_neu_mt_diar = sdl_Bool('alt_day5_me_neu_mt_diary', "Read the second part of Olga's diary")
+    sdl_var_b_d5_me_neu_mt_hent = sdl_Bool('alt_day5_me_neu_mt_hentai', "Hentai at day 5 evening")
+    sdl_var_b_d5_me_neu_us_stor = sdl_Bool('alt_day5_me_neu_us_stores', "Got food for the redheads")
+    sdl_var_b_d5_me_neu_us_pota = sdl_Bool('alt_day5_me_neu_us_potato', "Shared potatoes with Ulyana")
     ##############################
-    sdl_var_i_mi_lpp = sdl_Int('lp_mi', "ЛП Мику", 25)
-    sdl_var_i_dv_lpp = sdl_Int('lp_dv', "ЛП Алисы", 25)
-    sdl_var_i_sl_lpp = sdl_Int('lp_sl', "ЛП Слави", 25)
-    sdl_var_i_un_lpp = sdl_Int('lp_un', "ЛП Лены", 25)
-    sdl_var_i_us_lpp = sdl_Int('lp_us', "ЛП Ульяны", 15)
-    sdl_var_i_mi_7dl = sdl_Int('counter_mi_7dl', "Мику-7дл", 2)
-    sdl_var_i_dv_7dl = sdl_Int('counter_dv_7dl', "Алиса-7дл", 4)
-    sdl_var_i_sl_7dl = sdl_Int('counter_sl_7dl', "Славя-7дл", 5)
-    sdl_var_i_sl_clt = sdl_Int('counter_sl_cl',  "Славя-Классик", 7)
-    sdl_var_i_un_7dl = sdl_Int('counter_un_7dl', "Лена-7дл", 6)
-    sdl_var_i_un_fzd = sdl_Int('counter_un_fz',  "Лена-ФЗ", 4)
-    sdl_var_i_un_fzd_un = sdl_Int('counter_un_fz_un_route',     "ФЗ. Очки Лены", 9)
-    sdl_var_i_un_fzd_ol = sdl_Int('counter_un_fz_old_road',     "ФЗ. Очки Дороги", 9)
-    sdl_var_i_un_fzd_dv = sdl_Int('counter_un_fz_dv_fake_date', "ФЗ. Очки Алисы", 3)
-    sdl_var_i_un_fzd_mt = sdl_Int('counter_un_fz_mt_transit',   "ФЗ. Очки Ольги", 3)
-    sdl_var_i_un_fzd_dream_un = sdl_Int('counter_un_fz_dream_un',   "ФЗ. Сны с Леной", 3)
-    sdl_var_i_un_fzd_dream_ol = sdl_Int('counter_un_fz_dream_road', "ФЗ. Сны с Дорогой", 3)
-    sdl_var_i_me_neu_answ = sdl_Int('counter_me_neu_answers',  "Очки ответов", 3)
-    sdl_var_i_mt_7dl = sdl_Int('counter_mt_7dl', "Ольга-7дл", 16)
-    sdl_var_i_us_7dl = sdl_Int('counter_us_7dl', "Ульяна-7дл", 8)
-    sdl_var_i_us_7dl_pxs = sdl_Int('counter_us_7dl_px',  "Ульяна-Огоньки", 3)
-    sdl_var_i_karma  = sdl_Int('karma', "Карма", 300)
-    sdl_var_i_sl_sp  = sdl_Int('alt_sp', "Воля", 14)
-    sdl_var_i_mi_spt = sdl_Int('alt_spt', "Princess-поинты", 10)
-    sdl_var_i_mi_hpt = sdl_Int('alt_hpt', "Human-поинты", 10)
+    sdl_var_i_mi_lpp = sdl_Int('lp_mi', "Miku points", 25)
+    sdl_var_i_dv_lpp = sdl_Int('lp_dv', "Alisa points", 25)
+    sdl_var_i_sl_lpp = sdl_Int('lp_sl', "Slavya points", 25)
+    sdl_var_i_un_lpp = sdl_Int('lp_un', "Lena points", 25)
+    sdl_var_i_us_lpp = sdl_Int('lp_us', "Ulyana points", 15)
+    sdl_var_i_mi_7dl = sdl_Int('counter_mi_7dl', "Miku-7DS", 2)
+    sdl_var_i_dv_7dl = sdl_Int('counter_dv_7dl', "Alisa-7DS", 4)
+    sdl_var_i_sl_7dl = sdl_Int('counter_sl_7dl', "Slavya-7DS", 5)
+    sdl_var_i_sl_clt = sdl_Int('counter_sl_cl',  "Slavya-Classic", 7)
+    sdl_var_i_un_7dl = sdl_Int('counter_un_7dl', "Lena-7DS", 6)
+    sdl_var_i_un_fzd = sdl_Int('counter_un_fz',  "Lena-FZ", 4)
+    sdl_var_i_un_fzd_un = sdl_Int('counter_un_fz_un_route',     "FZ. Lena points", 9)
+    sdl_var_i_un_fzd_ol = sdl_Int('counter_un_fz_old_road',     "FZ. The Road points", 9)
+    sdl_var_i_un_fzd_dv = sdl_Int('counter_un_fz_dv_fake_date', "FZ. Alisa points", 3)
+    sdl_var_i_un_fzd_mt = sdl_Int('counter_un_fz_mt_transit',   "FZ. Olga points", 3)
+    sdl_var_i_un_fzd_dream_un = sdl_Int('counter_un_fz_dream_un',   "FZ. Dreams about Lena", 3)
+    sdl_var_i_un_fzd_dream_ol = sdl_Int('counter_un_fz_dream_road', "FZ. Dreams about The Road", 3)
+    sdl_var_i_me_neu_answ = sdl_Int('counter_me_neu_answers',  "Answers points", 3)
+    sdl_var_i_mt_7dl = sdl_Int('counter_mt_7dl', "Olga-7DS", 16)
+    sdl_var_i_us_7dl = sdl_Int('counter_us_7dl', "Ulyana-7DS", 8)
+    sdl_var_i_us_7dl_pxs = sdl_Int('counter_us_7dl_px',  "Ulyana-Flares", 3)
+    sdl_var_i_karma  = sdl_Int('karma', "Karma", 300)
+    sdl_var_i_sl_sp  = sdl_Int('alt_sp', "Will", 14)
+    sdl_var_i_mi_spt = sdl_Int('alt_spt', "Princess-points", 10)
+    sdl_var_i_mi_hpt = sdl_Int('alt_hpt', "Human-points", 10)
     ##############################
     sdl_var_e_d1_cofr    = sdl_Enum(
-                                'alt_day1_cofront_sl_dv', "Конфликт Слави и Алисы",
+                                'alt_day1_cofront_sl_dv', "Conflict between Slavya and Alisa",
                                 (
-                                    (1, "Закрыл собой Славю"),
-                                    (2, "Отговорил Алису")
+                                    (1, "Covered Slavya"),
+                                    (2, "Dissuaded Alisa")
                                 )
                               )
     sdl_var_e_d1_un      = sdl_Enum(
-                                'alt_day1_un', "Лена в 1 день",
+                                'alt_day1_un', "Lena at day 1",
                                 (
-                                    (0, "Не подходил к Лене"),
-                                    (1, "Поговорил с Леной"),
-                                    (2, "Попросил Лену задержаться"),
-                                    (3, "Попросил Лену рассказать о лагере"),
-                                    (4, "Позвал Лену прогуляться по лагерю")
+                                    (0, "Didn't approach"),
+                                    (1, "Talked to Lena"),
+                                    (2, "Asked Lena to stay a bit longer"),
+                                    (3, "Asked Lena to tell you about the camp"),
+                                    (4, "Asked Lena to walk around the camp")
                                 )
                               )
     sdl_var_e_d1_sl_key  = sdl_Enum(
-                                'alt_day1_sl_keys_took', "Ключи Слави",
+                                'alt_day1_sl_keys_took', "Slavya's keys",
                                 (
-                                    (0, "Ключей нет"),
-                                    (1, "Оставил ключи себе"),
-                                    (2, "Отдал ключи вожатой"),
-                                    (3, "Оставил ключи себе, у Слави новая связка")
+                                    (0, "No keys"),
+                                    (1, "Grabbed keys for yourself"),
+                                    (2, "Returned keys to the counselor"),
+                                    (3, "Grabbed keys for yourself, Slavya has a new bundle")
                                 )
                               )
     # ====================
-    sdl_var_e_d2_brf     = sdl_Enum('alt_day2_bf', "Завтрак во 2 день",
+    sdl_var_e_d2_brf     = sdl_Enum('alt_day2_bf', "Day 2 breakfast",
                                 (
-                                    ('me', "Один"),
-                                    ('sl', "Со Славей"),
-                                    ('un', "С Леной"),
-                                    ('dv_us', "С рыжими")
+                                    ('me', "Alone"),
+                                    ('sl', "With Slavya"),
+                                    ('un', "With Lena"),
+                                    ('dv_us', "With redheads")
                                 )
                               )
-    sdl_var_e_d2_conv    = sdl_Enum('alt_day2_convoy', "Обход лагеря",
+    sdl_var_e_d2_conv    = sdl_Enum('alt_day2_convoy', "Detour",
                                 (
-                                    ('me', "Один"),
-                                    ('dv', "С Алисой"),
-                                    ('dv_prep', "Алиса — договаривался"),
-                                    ('dv_rej', "Алиса — пришёл поздно"),
-                                    ('sl', "Со Славей"),
-                                    ('sl_prep', "Славя — договаривался"),
-                                    ('un', "С Леной")
+                                    ('me', "Alone"),
+                                    ('dv', "With Alisa"),
+                                    ('dv_prep', "Alisa — arranged"),
+                                    ('dv_rej', "Alisa — came late"),
+                                    ('sl', "With Slavya"),
+                                    ('sl_prep', "Slavya — arranged"),
+                                    ('un', "With Lena")
                                 )
                               )
     sdl_var_e_d2_mi_kumu = sdl_Enum(
-                                'alt_day2_mi_kumuhimo', "Кумухимо Мику",
+                                'alt_day2_mi_kumuhimo', "Miku's kumuhimo",
                                 (
-                                    (0, "Не находил"),
-                                    (1, "Нашёл"),
-                                    (2, "Вернул Мику")
+                                    (0, "Didn't find"),
+                                    (1, "Found"),
+                                    (2, "Returned to Miku")
                                 )
                               )
     sdl_var_e_d2_walk    = sdl_Enum(
-                                'alt_day2_walk', "Ходил за картами",
+                                'alt_day2_walk', "Went for the cards",
                                 (
-                                    (0, "Один"),
-                                    (1, "Один. Пометил карты"),
-                                    (2, "Со Славей")
+                                    (0, "Alone"),
+                                    (1, "Alone. Marked the cards"),
+                                    (2, "With Slavya")
                                 )
                               )
     sdl_var_e_d2_dv_ulti = sdl_Enum(
-                                'alt_day2_dv_ultim', "Ультиматум Алисы",
+                                'alt_day2_dv_ultim', "Ultimatum",
                                 (
-                                    (0, "Не спорил"),
-                                    (1, "Спорил"),
-                                    (2, "Лапал Алису")
+                                    (0, "No bet"),
+                                    (1, "Bet"),
+                                    (2, "My lawyer advised me not to finish this choice")
                                 )
                               )
     sdl_var_e_d2_us_cake = sdl_Enum(
-                                'alt_day2_us_cake', "Торт Ульяны",
+                                'alt_day2_us_cake', "Ulyana's cake",
                                 (
-                                    (0, "Не бежал за Ульяной"),
-                                    (1, "Побежал за Ульяной"),
-                                    (2, "Догнал Ульяну")
+                                    (0, "Didn't chased the child"),
+                                    (1, "Chased the child"),
+                                    (2, "Caught the child")
                                 )
                               )
-    sdl_var_e_d2_date    = sdl_Enum('alt_day2_date', "Свидание на 2 день",
+    sdl_var_e_d2_date    = sdl_Enum('alt_day2_date', "Day 2 date",
                                 (
-                                    ('', "Ни с кем"),
-                                    ('mi', "Мику"),
-                                    ('dv', "Алиса"),
-                                    ('sl', "Славя"),
-                                    ('un', "Лена"),
-                                    ('un_fz', "Лена. Френдзона"),
-                                    ('mt', "Ольга"),
-                                    ('us', "Ульяна")
+                                    ('', "No one"),
+                                    ('mi', "Miku"),
+                                    ('dv', "Alisa"),
+                                    ('sl', "Slavya"),
+                                    ('un', "Lena"),
+                                    ('un_fz', "Lena. Friendzone"),
+                                    ('mt', "Olga"),
+                                    ('us', "Ulyana")
                                 )
                               )
     sdl_var_e_d2_mi_date = sdl_Enum(
-                                'alt_day2_mi_date', "Вечер с Мику на пляже",
+                                'alt_day2_mi_date', "An evening with Miku on the beach",
                                 (
-                                    (0, "Не виделся с Мику"),
-                                    (1, "Поговорил с Мику"),
-                                    (2, "Отшил Мику"),
-                                    (3, "Выслушал истерику Мику")
+                                    (0, "Haven't seen Miku"),
+                                    (1, "Talked to Miku"),
+                                    (2, "Dropped Miku"),
+                                    (3, "Listened to Miku's hysteria")
                                 )
                               )
     # ====================
-    sdl_var_e_d3_date    = sdl_Enum('alt_day3_date', "Свидание на 3 день",
+    sdl_var_e_d3_date    = sdl_Enum('alt_day3_date', "Day 3 date",
                                 (
-                                    ('', "Ни с кем"),
-                                    ('mi', "Мику"),
-                                    ('dv', "Алиса"),
-                                    ('sl', "Славя"),
-                                    ('un', "Лена")
+                                    ('', "No one"),
+                                    ('mi', "Miku"),
+                                    ('dv', "Alisa"),
+                                    ('sl', "Slavya"),
+                                    ('un', "Lena")
                                 )
                               )
-    sdl_var_e_d3_us_bugs = sdl_Enum('alt_day3_us_bugs', "Жуки Ульяны",
+    sdl_var_e_d3_us_bugs = sdl_Enum('alt_day3_us_bugs', "Ulyana's bugs",
                                 (
-                                    (0, "Не собирал жуков"),
-                                    (1, "Помог набрать жуков"),
-                                    (2, "Пригрозил рассказать вожатой")
+                                    (0, "Didn't collect the bugs"),
+                                    (1, "Helped collect the bugs"),
+                                    (2, "Threatened to tell the counselor")
                                 )
                               )
-    sdl_var_e_d3_dv_guit = sdl_Enum('alt_day3_dv_guitar', "Мини-концерт Алисы",
+    sdl_var_e_d3_dv_guit = sdl_Enum('alt_day3_dv_guitar', "Alisa's mini-concert",
                                 (
-                                    (0, "Не встречал Алису днём на эстраде"),
-                                    (1, "Встретил Алису днём на эстраде"),
-                                    (2, "Обещал прийти вечером"),
-                                    (3, "Пришёл вечером")
+                                    (0, "Haven't met Alisa on the stage at daytime"),
+                                    (1, "Met Alisa on the stage at daytime"),
+                                    (2, "Promised to come"),
+                                    (3, "Came")
                                 )
                               )
-    sdl_var_e_d3_un_medh = sdl_Enum('alt_day3_un_med_help', "Помощь в медпункте",
+    sdl_var_e_d3_un_medh = sdl_Enum('alt_day3_un_med_help', "Help at the infirmary",
                                 (
-                                    (0, "Виола не просила о помощи"),
-                                    (1, "Согласился помочь в медпункте"),
-                                    (2, "Отказался помогать в медпункте")
+                                    (0, "Viola didn't ask for help"),
+                                    (1, "Agreed to help"),
+                                    (2, "Refused to help")
                                 )
                               )
-    sdl_var_e_d3_dj      = sdl_Enum('alt_day3_dj', "Выбор диджея",
+    sdl_var_e_d3_dj      = sdl_Enum('alt_day3_dj', "DJ choice",
                                 (
-                                    ('', "Не назначен"),
-                                    ('mi', "Мику"),
-                                    ('dv', "Алиса")
+                                    ('', "No one"),
+                                    ('mi', "Miku"),
+                                    ('dv', "Alisa")
                                 )
                               )
-    sdl_var_e_d3_me_tec1 = sdl_Enum('alt_day3_technoquest1', "Техноквест 1",
+    sdl_var_e_d3_me_tec1 = sdl_Enum('alt_day3_technoquest1', "Technoquest 1",
                                 (
-                                    (0, "Не помогал кибернетикам"),
-                                    (1, "Помог убраться в кладовке"),
-                                    (2, "Раздобыл лестницу")
+                                    (0, "Didn't help the cybernetics"),
+                                    (1, "Cleaned the storeroom"),
+                                    (2, "Got the ladder")
                                 )
                               )
-    sdl_var_e_d3_un_fz_work = sdl_Enum('alt_day3_un_fz_work', "Подготовка к дискотеке",
+    sdl_var_e_d3_un_fz_work = sdl_Enum('alt_day3_un_fz_work', "Preparations for the disco",
                                 (
-                                    ('dv', "С Алисой"),
-                                    ('sl', "Со Славей"),
-                                    ('un', "С Леной")
+                                    ('dv', "With Alisa"),
+                                    ('sl', "With Slavya"),
+                                    ('un', "With Lena")
                                 )
                               )
-    sdl_var_e_d3_me_dan1 = sdl_Enum('alt_day3_dancing1', "Первый танец в 3 день",
+    sdl_var_e_d3_me_dan1 = sdl_Enum('alt_day3_dancing1', "First dance at day 3",
                                 (
-                                    ('me_1', "Ни с кем не танцевал"),
-                                    ('mi_1', "С Мику"),
-                                    ('dv_1', "С Алисой-ДЖ"),
-                                    ('sl_1', "Со Славей"),
-                                    ('un_1', "С Леной"),
-                                    ('un_fz', "С Леной-ФЗ")
+                                    ('me_1', "With nobody"),
+                                    ('mi_1', "With Miku"),
+                                    ('dv_1', "With Alisa-DJ"),
+                                    ('sl_1', "With Slavya"),
+                                    ('un_1', "With Lena"),
+                                    ('un_fz', "With Lena-FZ")
                                 )
                               )
-    sdl_var_e_d3_me_dan2 = sdl_Enum('alt_day3_dancing2', "Второй танец в 3 день",
+    sdl_var_e_d3_me_dan2 = sdl_Enum('alt_day3_dancing2', "Second dance at day 3",
                                 (
-                                    ('',      "Не было второго танца"),
-                                    ('me_2',  "Ни с кем не танцевал"),
-                                    ('mi_2',  "С Мику"),
-                                    ('mi_12', "С Мику, повторно"),
-                                    ('dv_2',  "С Алисой-ДЖ"),
-                                    ('dv_12', "С Алисой-ДЖ, повторно"),
-                                    ('dv_0',  "С Алисой, не вышло"),
-                                    ('sl_2',  "Со Славей"),
-                                    ('sl_12', "Со Славей, повторно"),
-                                    ('un_2',  "С Леной"),
-                                    ('un_12', "С Леной, повторно"),
-                                    ('un_0',  "С Леной, не вышло")
+                                    ('',      "No second dance"),
+                                    ('me_2',  "With nobody"),
+                                    ('mi_2',  "With Miku"),
+                                    ('mi_12', "With Miku, again"),
+                                    ('dv_2',  "With Alisa-DJ"),
+                                    ('dv_12', "With Alisa-DJ, again"),
+                                    ('dv_0',  "With Alisa, fail"),
+                                    ('sl_2',  "With Slavya"),
+                                    ('sl_12', "With Slavya, again"),
+                                    ('un_2',  "With Lena"),
+                                    ('un_12', "With Lena, again"),
+                                    ('un_0',  "With Lena, fail")
                                 )
                               )
-    sdl_var_e_d3_me_stri = sdl_Enum('alt_day3_un_strip_pool_sp', "Карты на раздевание (Семён)",
+    sdl_var_e_d3_me_stri = sdl_Enum('alt_day3_un_strip_pool_sp', "Strip cards (Semyon)",
                                 (
-                                    (5, "Не играл / Не раздевался"),
-                                    (4, "Проиграл 1 раз (рубашка)"),
-                                    (3, "Проиграл 2 раза (обувь)"),
-                                    (2, "Проиграл 3 раза (шорты)"),
-                                    (1, "Проиграл 4 раза (трусы)"),
-                                    (0, "Полностью разделся и проиграл")
+                                    (5, "Didn't play / Didn't strip"),
+                                    (4, "Lost 1 time (Shirt)"),
+                                    (3, "Lost 2 times (Shoes)"),
+                                    (2, "Lost 3 times (Shorts)"),
+                                    (1, "Lost 4 times (Pants)"),
+                                    (0, "Completely stripped and lost")
                                 )
                               )
-    sdl_var_e_d3_un_stri = sdl_Enum('alt_day3_un_strip_pool_un', "Карты на раздевание (Лена)",
+    sdl_var_e_d3_un_stri = sdl_Enum('alt_day3_un_strip_pool_un', "Strip cards (Lena)",
                                 (
-                                    (5, "Не играл / Не раздевал Лену"),
-                                    (4, "Выиграл 1 раз (туфельки)"),
-                                    (3, "Выиграл 2 раза (платье)"),
-                                    (2, "Выиграл 3 раза (лифчик)"),
-                                    (1, "Выиграл 4 раза (трусики)"),
-                                    (0, "Полностью раздел и обыграл Лену")
-                                )
-                              )
-    # ====================
-    sdl_var_e_d3_mi_7dl_dono = sdl_Enum('alt_day3_mi_7dl_donor', "Поездка в город",
-                                (
-                                    (0, "Поехал в город без Мику"),
-                                    (1, "Поехал в город вместе с Мику"),
-                                    (2, "Мику решила стать донором")
+                                    (5, "Didn't play / Didn't strip Lena"),
+                                    (4, "Won 1 time (Shoes)"),
+                                    (3, "Won 2 times (Dress)"),
+                                    (2, "Won 3 times (Bra)"),
+                                    (1, "Won 4 times (Panties)"),
+                                    (0, "Completely stripped and beat Lena")
                                 )
                               )
     # ====================
-    sdl_var_e_d5_mi_dj_voye = sdl_Enum('alt_day5_mi_dj_voyeur', "Поиски Мику в душевых",
+    sdl_var_e_d3_mi_7dl_dono = sdl_Enum('alt_day3_mi_7dl_donor', "Trip",
                                 (
-                                    (2, "Выбрал кабинку Алисы"),
-                                    (3, "Выбрал кабинку Слави"),
-                                    (4, "Выбрал кабинку Мику")
-                                )
-                              )
-    sdl_var_e_d5_mi_dj_apol = sdl_Enum('alt_day5_mi_dj_apology', "Извинения перед Мику",
-                                (
-                                    (0, "Не нашёл Мику / Не угадал с песней"),
-                                    (1, "Выбрал любимую песню Мику"),
-                                    (2, "Порезал себе руку"),
-                                    (3, "Попытался извиниться перед Мику")
-                                )
-                              )
-    sdl_var_e_d6_mi_dj_feed = sdl_Enum('alt_day6_mi_dj_feed', "Ужин в 6 день",
-                                (
-                                    ('', "Ужинал нормально"),
-                                    ('sl', "Накормила Славя"),
-                                    ('un', "Накормила Лена")
-                                )
-                              )
-    sdl_var_e_d6_mi_dj_cata = sdl_Enum('alt_day6_mi_dj_catapult', "Катапульта",
-                                (
-                                    (0, "Не было катапульты"),
-                                    (1, "Выбрал остаться"),
-                                    (2, "Попытался свалить")
+                                    (0, "Went without Miku"),
+                                    (1, "Went with Miku"),
+                                    (2, "Miku decided to become a donor")
                                 )
                               )
     # ====================
-    sdl_var_e_d4_dv_7dl_medi = sdl_Enum('alt_day4_dv_7dl_medication', "Лекарства для Алисы",
+    sdl_var_e_d5_mi_dj_voye = sdl_Enum('alt_day5_mi_dj_voyeur', "Search for Miku in the showers",
                                 (
-                                    (0, "Не искал лекарств"),
-                                    (1, "Достал таблетки у Ольги"),
-                                    (2, "Залез в медпункт")
+                                    (2, "Alisa"),
+                                    (3, "Slavya"),
+                                    (4, "Miku")
                                 )
                               )
-    sdl_var_e_d4_dv_7dl_vodk = sdl_Enum('alt_day4_dv_7dl_vodka', "Водка",
+    sdl_var_e_d5_mi_dj_apol = sdl_Enum('alt_day5_mi_dj_apology', "Apology to Miku",
                                 (
-                                    (0, "Не лазили в медпункт"),
-                                    (1, "Забрали водку себе"),
-                                    (2, "Выпили водку")
+                                    (0, "Didn't find Miku / Didn't guess the song"),
+                                    (1, "Picked Miku's favorite song"),
+                                    (2, "Cut yourself"),
+                                    (3, "Tried to apologize to Miku")
                                 )
                               )
-    sdl_var_e_d6_dv_7dl_rout = sdl_Enum('alt_day6_dv_7dl_route', "Выбор 6 дня",
+    sdl_var_e_d6_mi_dj_feed = sdl_Enum('alt_day6_mi_dj_feed', "Day 6 supper",
                                 (
-                                    ('sl', "Подождал Алису (ивент Слави)"),
-                                    ('un', "Сходил переодеться (ивент Лены)")
+                                    ('', "Regular supper"),
+                                    ('sl', "Fed by Slavya"),
+                                    ('un', "Fed by Lena")
                                 )
                               )
-    sdl_var_e_d6_dv_7dl_danc = sdl_Enum('alt_day6_dv_7dl_dance', "Танец в 6 день",
+    sdl_var_e_d6_mi_dj_cata = sdl_Enum('alt_day6_mi_dj_catapult', "Catapult",
                                 (
-                                    ('dv', "С Алисой"),
-                                    ('sl', "Со Славей"),
-                                    ('un', "С Леной"),
-                                    ('mt', "С Ольгой")
-                                )
-                              )
-    sdl_var_e_d6_dv_7dl_hent = sdl_Enum('alt_day6_dv_7dl_hentai', "Хентай-флаги",
-                                (
-                                    (  0, "Нет ключей; нет алкоголя; не здоровался с Санычем"),
-                                    (  1, "Нет ключей; нет алкоголя; здоровался с Санычем"),
-                                    ( 10, "Нет ключей; есть алкоголь; не здоровался с Санычем"),
-                                    ( 11, "Нет ключей; есть алкоголь; здоровался с Санычем"),
-                                    (100, "Есть ключи; нет алкоголя; не здоровался с Санычем"),
-                                    (101, "Есть ключи; нет алкоголя; здоровался с Санычем"),
-                                    (110, "Есть ключи; есть алкоголь; не здоровался с Санычем"),
-                                    (111, "Есть ключи; есть алкоголь; здоровался с Санычем")
-                                )
-                              )
-    sdl_var_e_d7_dv_7dl_chec = sdl_Enum('alt_day7_dv_7dl_check', "С кем провёл последний день",
-                                (
-                                    ('dv_1', "С Алисой"),
-                                    ('dv_2', "С Алисой. Подарил плеер с записью"),
-                                    ('dv_0', "С Алисой. Разошлись"),
-                                    ('sl', "Со Славей"),
-                                    ('un', "С Леной"),
-                                    ('mt', "С Ольгой")
+                                    (0, "No catapult"),
+                                    (1, "Chose to stay"),
+                                    (2, "Tried to escape")
                                 )
                               )
     # ====================
-    sdl_var_e_d5_dv_dj_mapp = sdl_Enum('alt_day5_dv_dj_map', "Куда пошли во время тихого часа",
+    sdl_var_e_d4_dv_7dl_medi = sdl_Enum('alt_day4_dv_7dl_medication', "Medications for Alisa",
                                 (
-                                    ('dv', "К Алисе"),
-                                    ('us', "К Ульяне"),
-                                    ('un', "К Лене"),
-                                    ('mi', "К Мику"),
-                                    ('cyber', "К кибернетикам")
+                                    (0, "Wasn't looking for medications"),
+                                    (1, "Stole pills from Olga"),
+                                    (2, "Broke into the infirmary")
                                 )
                               )
-    sdl_var_e_d5_dv_dj_sljr = sdl_Enum('alt_day5_dv_dj_sl_jeer', "Участвовали в конфликте со Славей",
+    sdl_var_e_d4_dv_7dl_vodk = sdl_Enum('alt_day4_dv_7dl_vodka', "Vodka",
                                 (
-                                    (0, "Не участвовали"),
-                                    (1, "Запугали"),
-                                    (2, "Предупредили")
+                                    (0, "Didn't break into the infirmary"),
+                                    (1, "Snatched vodka for later"),
+                                    (2, "Consumed vodka")
                                 )
                               )
-    sdl_var_e_d6_dv_dj_ends = sdl_Enum('alt_dv_dj_ends', "К какой концовке идём",
+    sdl_var_e_d6_dv_7dl_rout = sdl_Enum('alt_day6_dv_7dl_route', "Day 6 choice",
                                 (
-                                    ('true', "Истинная"),
-                                    ('good', "Хорошая"),
-                                    ('rej', "Реджект"),
-                                    ('neu', "Нейтральная"),
-                                    ('bad', "Плохая")
+                                    ('sl', "Waited for Alisa (Slavya event)"),
+                                    ('un', "Went to change (Lena event)")
                                 )
                               )
-    # ====================
-    sdl_var_e_d4_sl_cl_solo = sdl_Enum('alt_day4_sl_cl_lf_solo', "Поиски Шурика",
+    sdl_var_e_d6_dv_7dl_danc = sdl_Enum('alt_day6_dv_7dl_dance', "Day 6 dance",
                                 (
-                                    (0, "Отправился с Леной и Славей"),
-                                    (1, "Отправился один"),
-                                    (2, "Отправился один, но неудачно"),
-                                    (3, "Отправился один, но наткнулся на девочек")
+                                    ('dv', "With Alisa"),
+                                    ('sl', "With Slavya"),
+                                    ('un', "With Lena"),
+                                    ('mt', "With Olga")
                                 )
                               )
-    sdl_var_e_d6_sl_cl_arc  = sdl_Enum('alt_day6_sl_cl_arc', "Сюжетная арка 6 дня",
+    sdl_var_e_d6_dv_7dl_hent = sdl_Enum('alt_day6_dv_7dl_hentai', "Hentai-flags",
                                 (
-                                    ('sh', "Арка Шурика"),
-                                    ('pi', "Арка Пирата")
+                                    (  0, "No keys; no alcohol; didn't greet Sanich"),
+                                    (  1, "No keys; no alcohol; greeted Sanich"),
+                                    ( 10, "No keys; had alcohol; didn't greet Sanich"),
+                                    ( 11, "No keys; had alcohol; greeted Sanich"),
+                                    (100, "Had keys; no alcohol; didn't greet Sanich"),
+                                    (101, "Had keys; no alcohol; greeted Sanich"),
+                                    (110, "Had keys; had alcohol; didn't greet Sanich"),
+                                    (111, "Had keys; had alcohol; greeted Sanich")
                                 )
                               )
-    # ====================
-    sdl_var_e_d4_un_7dl_calm = sdl_Enum('alt_day4_un_7dl_calm', "Кто пришёл на стоянку поговорить",
+    sdl_var_e_d7_dv_7dl_chec = sdl_Enum('alt_day7_dv_7dl_check', "Last day",
                                 (
-                                    ('', "Не сбегал на стоянку"),
-                                    ('un', "Лена"),
-                                    ('dv', "Алиса")
-                                )
-                              )
-    sdl_var_e_d5_un_7dl_wash = sdl_Enum('alt_day5_un_7dl_washing', "Мытьё после уборки костровой",
-                                (
-                                    ('', "Не убирал костровую"),
-                                    ('me', "Мылся сам"),
-                                    ('sl_un', "Мыли Славя с Леной")
+                                    ('dv_1', "With Alisa"),
+                                    ('dv_2', "With Alisa. Gave player with a recording"),
+                                    ('dv_0', "With Alisa. Broke up"),
+                                    ('sl', "With Slavya"),
+                                    ('un', "With Lena"),
+                                    ('mt', "With Olga")
                                 )
                               )
     # ====================
-    sdl_var_e_d4_un_fz_morn = sdl_Enum('alt_day4_un_fz_morning_event', "Утренний ивент 4 дня",
+    sdl_var_e_d5_dv_dj_mapp = sdl_Enum('alt_day5_dv_dj_map', "Went during quiet time",
                                 (
-                                    ('un', "Помогал в стенгазете"),
-                                    ('mt', "Помогал Ольге"),
-                                    ('dv', "Сбежал с Алисой")
+                                    ('dv', "To Alisa"),
+                                    ('us', "To Ulyana"),
+                                    ('un', "To Lena"),
+                                    ('mi', "To Miku"),
+                                    ('cyber', "To Cybernetics")
                                 )
                               )
-    sdl_var_e_d4_un_fz_even = sdl_Enum('alt_day4_un_fz_un_evening', "Вечером после пьянки",
+    sdl_var_e_d5_dv_dj_sljr = sdl_Enum('alt_day5_dv_dj_sl_jeer', "Conflict with Slavya",
                                 (
-                                    ('sleep', "Уложил Лену спать"),
-                                    ('walk', "Решил проветриться")
+                                    (0, "Didn't participated"),
+                                    (1, "Scared"),
+                                    (2, "Warned")
                                 )
                               )
-    sdl_var_e_d6_un_fz_map1 = sdl_Enum('alt_day6_un_fz_map1_quest', "Куда пошёл утром 6 дня",
+    sdl_var_e_d6_dv_dj_ends = sdl_Enum('alt_dv_dj_ends', "Ending",
                                 (
-                                    ('musclub', "Музклуб"),
-                                    ('boatstation', "Причал"),
-                                    ('playground', "Спортплозадка"),
-                                    ('dv_house', "Домик Алисы")
-                                )
-                              )
-    sdl_var_e_d6_un_fz_map2 = sdl_Enum('alt_day6_un_fz_map2_quest', "Куда ещё пошёл утром 6 дня",
-                                (
-                                    ('beach', "Пляж"),
-                                    ('dinner_hall', "Столовая"),
-                                    ('busstation', "Стоянка")
+                                    ('true', "True"),
+                                    ('good', "Good"),
+                                    ('rej', "Reject"),
+                                    ('neu', "Neutral"),
+                                    ('bad', "Bad")
                                 )
                               )
     # ====================
-    sdl_var_e_d4_me_neu_date = sdl_Enum('alt_day4_me_neu_date', "Свидание утром 4 дня",
+    sdl_var_e_d4_sl_cl_solo = sdl_Enum('alt_day4_sl_cl_lf_solo', "Search for Shurik",
                                 (
-                                    ('', "Ни с кем"),
-                                    ('mi', "Мику"),
-                                    ('dv', "Алиса"),
-                                    ('sl', "Славя"),
-                                    ('un', "Лена"),
-                                    ('mt', "Ольга"),
-                                    ('us', "Ульяна")
+                                    (0, "With Lena and Slavya"),
+                                    (1, "Alone"),
+                                    (2, "Alone, no luck"),
+                                    (3, "Alone, stumbled upon girls")
                                 )
                               )
-    sdl_var_e_d4_me_neu_tran = sdl_Enum('alt_day4_me_neu_transit', "Транзит Одиночки",
+    sdl_var_e_d6_sl_cl_arc  = sdl_Enum('alt_day6_sl_cl_arc', "Day 6 branch",
                                 (
-                                    ('', "Не был на руте Одиночки"),
-                                    ('un_7dl', "Лена-7ДЛ"),
-                                    ('sl_cl', "Славя-Классик")
-                                )
-                              )
-    sdl_var_e_d5_me_neu_mapi = sdl_Enum('alt_day5_me_neu_map_ivent', "Прогулка вечером 5 дня",
-                                (
-                                    ('', "Не был"),
-                                    ('dv', "Домик Алисы"),
-                                    ('medic', "Медпункт"),
-                                    ('boat', "Пирс"),
-                                    ('beach', "Пляж")
-                                )
-                              )
-    sdl_var_e_d5_me_neu_cand = sdl_Enum('alt_day5_me_neu_candle', "Свечка",
-                                (
-                                    (1, "Пошёл домой спать"),
-                                    (2, "Отправлен на свечку"),
-                                    (3, "Назначен ответственным за игротеку"),
-                                    (4, "Получил поручение присматривать за гвардейцами")
-                                )
-                              )
-    sdl_var_e_d5_me_neu_mt_voye = sdl_Enum('alt_day5_me_neu_mt_voyeur', "Пляж с Ольгой",
-                                (
-                                    (0, "Не был на пляже с Ольгой"),
-                                    (1, "Был с Ольгой на пляже"),
-                                    (2, "Подглядывал за переодевающейся Ольгой")
+                                    ('sh', "Shurik's branch"),
+                                    ('pi', "Pirate's branch")
                                 )
                               )
     # ====================
-    sdl_var_e_d6_us_7dl_mi_frie = sdl_Enum('alt_day6_us_7dl_mi_friends', "Ветка Мику",
+    sdl_var_e_d4_un_7dl_calm = sdl_Enum('alt_day4_un_7dl_calm', "Who came to the bus stop to talk",
                                 (
-                                    (0, "Не завтракал с Мику"),
-                                    (1, "Завтракал с Мику"),
-                                    (2, "Согласился помочь Мику"),
-                                    (3, "Сблизился с Мику")
+                                    ('', "Didn't go to the bus stop"),
+                                    ('un', "Lena"),
+                                    ('dv', "Alisa")
                                 )
                               )
-    sdl_var_e_d6_us_7dl_sl_frie = sdl_Enum('alt_day6_us_7dl_sl_friends', "Ветка Слави",
+    sdl_var_e_d5_un_7dl_wash = sdl_Enum('alt_day5_un_7dl_washing', "Washing after cleaning the fire glade",
                                 (
-                                    (0, "Не завтракал со Славей"),
-                                    (1, "Завтракал со Славей"),
-                                    (2, "Согласился помочь на складе")
+                                    ('', "Didn't clean the fire glade"),
+                                    ('me', "Bathed by yourself"),
+                                    ('sl_un', "Bathed with Lena and Slavya")
                                 )
                               )
-    sdl_var_e_d6_us_7dl_un_frie = sdl_Enum('alt_day6_us_7dl_un_friends', "Ветка Лены",
+    # ====================
+    sdl_var_e_d4_un_fz_morn = sdl_Enum('alt_day4_un_fz_morning_event', "Day 4 morning event",
                                 (
-                                    (0, "Не договаривался с Леной о танце"),
-                                    (2, "Договорился с Леной о танце"),
-                                    (3, "Сблизился с Леной")
+                                    ('un', "Helped at newspaper"),
+                                    ('mt', "Helped Olga"),
+                                    ('dv', "Ran away with Alisa")
+                                )
+                              )
+    sdl_var_e_d4_un_fz_even = sdl_Enum('alt_day4_un_fz_un_evening', "Evening after Tea Party",
+                                (
+                                    ('sleep', "Put Lena to bed"),
+                                    ('walk', "Decided to walk")
+                                )
+                              )
+    sdl_var_e_d6_un_fz_map1 = sdl_Enum('alt_day6_un_fz_map1_quest', "On day 6 went to",
+                                (
+                                    ('musclub', "Mus. club"),
+                                    ('boatstation', "Pier"),
+                                    ('playground', "Sports ground"),
+                                    ('dv_house', "Alisa's cabin")
+                                )
+                              )
+    sdl_var_e_d6_un_fz_map2 = sdl_Enum('alt_day6_un_fz_map2_quest', "On day 6 went to",
+                                (
+                                    ('beach', "The beach"),
+                                    ('dinner_hall', "Canteen"),
+                                    ('busstation', "Bus stop")
+                                )
+                              )
+    # ====================
+    sdl_var_e_d4_me_neu_date = sdl_Enum('alt_day4_me_neu_date', "Day 4 date",
+                                (
+                                    ('', "Nobody"),
+                                    ('mi', "Miku"),
+                                    ('dv', "Alisa"),
+                                    ('sl', "Slavya"),
+                                    ('un', "Lena"),
+                                    ('mt', "Olga"),
+                                    ('us', "Ulyana")
+                                )
+                              )
+    sdl_var_e_d4_me_neu_tran = sdl_Enum('alt_day4_me_neu_transit', "Loner transit",
+                                (
+                                    ('', "Wasn't on loner route"),
+                                    ('un_7dl', "Lena-7DS"),
+                                    ('sl_cl', "Slavya-Classic")
+                                )
+                              )
+    sdl_var_e_d5_me_neu_mapi = sdl_Enum('alt_day5_me_neu_map_ivent', "Day 5 evening walk",
+                                (
+                                    ('', "No walk"),
+                                    ('dv', "Alisa's cabin"),
+                                    ('medic', "Infirmary"),
+                                    ('boat', "Pier"),
+                                    ('beach', "Beach")
+                                )
+                              )
+    sdl_var_e_d5_me_neu_cand = sdl_Enum('alt_day5_me_neu_candle', "Candle",
+                                (
+                                    (1, "Went home to sleep."),
+                                    (2, "Sent to the candle"),
+                                    (3, "In charge of the toy library"),
+                                    (4, "Received an assignment to look after the guardsmen")
+                                )
+                              )
+    sdl_var_e_d5_me_neu_mt_voye = sdl_Enum('alt_day5_me_neu_mt_voyeur', "Beach with Olga",
+                                (
+                                    (0, "Wasn't on the beach with Olga"),
+                                    (1, "Was on the beach with Olga"),
+                                    (2, "Peeped on Olga")
+                                )
+                              )
+    # ====================
+    sdl_var_e_d6_us_7dl_mi_frie = sdl_Enum('alt_day6_us_7dl_mi_friends', "Miku branch",
+                                (
+                                    (0, "No breakfast with Miku"),
+                                    (1, "Breakfast with Miku"),
+                                    (2, "Agreed to help Miku"),
+                                    (3, "Got close with Miku")
+                                )
+                              )
+    sdl_var_e_d6_us_7dl_sl_frie = sdl_Enum('alt_day6_us_7dl_sl_friends', "Slavya branch",
+                                (
+                                    (0, "No breakfast with Slavya"),
+                                    (1, "Breakfast with Slavya"),
+                                    (2, "Agreed to help at the warehouse")
+                                )
+                              )
+    sdl_var_e_d6_us_7dl_un_frie = sdl_Enum('alt_day6_us_7dl_un_friends', "Lena branch",
+                                (
+                                    (0, "Didn't arrange a dance with Lena"),
+                                    (2, "Arranged a dance with Lena"),
+                                    (3, "Got close with Lena")
                                 )
                               )
     ##############################
     sdl_var_l_d1_sl = sdl_List(
-                                'list_slavya_7dl', "Экскурсия со Славей",
+                                'list_slavya_7dl', "Excursion with Slavya",
                                 [
-                                  ('clubs'      , "Клубы"),
-                                  ('aidstation' , "Медпункт"),
-                                  ('sports'     , "Спортплощадка"),
-                                  ('estrade'    , "Эстрада")
+                                  ('clubs'      , "Clubs"),
+                                  ('aidstation' , "Infirmary"),
+                                  ('sports'     , "Sports"),
+                                  ('estrade'    , "Stage")
                                 ],
                                 2
                               )
     sdl_var_l_d2_voya = sdl_List(
-                                'list_voyage_7dl', "Обход",
+                                'list_voyage_7dl', "Detour",
                                 [
-                                  ('library'    , "Библиотека"),
-                                  ('cyber'  , "Клубы"),
-                                  ('medic'      , "Медпункт"),
-                                  ('music_club' , "Музклуб"),
-                                  ('sport_area' , "Спортплощадка"),
-                                  ('cleaning_dv', "Уборка площади с Алисой"),
-                                  ('cleaning_sl', "Уборка площади со Славей"),
-                                  ('cleaning_un', "Уборка площади с Леной")
+                                  ('library'    , "Library"),
+                                  ('cyber'  , "Clubs"),
+                                  ('medic'      , "Infirmary"),
+                                  ('music_club' , "Mus. club"),
+                                  ('sport_area' , "Sports"),
+                                  ('cleaning_dv', "Square cleaning with Alisa"),
+                                  ('cleaning_sl', "Square cleaning with Slavya"),
+                                  ('cleaning_un', "Square cleaning with Lena")
                                 ],
                                 4
                               )
     sdl_var_l_d2_jclu = sdl_List(
-                                'list_joined_clubs_7dl', "Записывался в кружки",
+                                'list_joined_clubs_7dl', "Signed up for",
                                 [
-                                  ('badmin', "Бадминтон"),
-                                  ('volley', "Волейбол"),
-                                  ('cyber' , "Кибернетика"),
-                                  ('music' , "Музкружок"),
-                                  ('nwsppr', "Стенгазета"),
-                                  ('soccer', "Футбол")
+                                  ('badmin', "Badminton"),
+                                  ('volley', "Volleyball"),
+                                  ('cyber' , "Cybernetic"),
+                                  ('music' , "Mus. club"),
+                                  ('nwsppr', "Newspaper"),
+                                  ('soccer', "Football")
                                 ],
                                 4
                               )
     sdl_var_l_d2_club = sdl_List(
-                                'list_clubs_7dl', "Записан в кружки",
+                                'list_clubs_7dl', "Approved for",
                                 [
-                                  ('badmin', "Бадминтон"),
-                                  ('volley', "Волейбол"),
-                                  ('cyber' , "Кибернетика"),
-                                  ('music' , "Музкружок"),
-                                  ('nwsppr', "Стенгазета"),
-                                  ('soccer', "Футбол")
+                                  ('badmin', "Badminton"),
+                                  ('volley', "Volleyball"),
+                                  ('cyber' , "Cybernetic"),
+                                  ('music' , "Mus. club"),
+                                  ('nwsppr', "Newspaper"),
+                                  ('soccer', "Football")
                                 ],
                                 2
                               )
     # ====================
     sdl_var_l_d5_mi_dj_sear = sdl_List(
-                                'list_mi_search_7dl', "Поиски Мику",
+                                'list_mi_search_7dl', "Search for Miku",
                                 [
-                                  ('musclub' , "Музклуб"),
-                                  ('entrance', "Стоянка"),
-                                  ('estrade' , "Эстрада"),
-                                  ('home'    , "Дом Мику"),
-                                  ('clubs'   , "Радиорубка")
+                                  ('musclub' , "Mus. club"),
+                                  ('entrance', "Bus stop"),
+                                  ('estrade' , "Stage"),
+                                  ('home'    , "Miku's cabin"),
+                                  ('clubs'   , "Radio room")
                                 ],
                                 5
                               )
@@ -2344,14 +2344,14 @@ init python:
 screen sdl_replay_vars(vars): # Экран переменных
     add "sdl_repl_screen_var"
 
-    text "Настройка переменных":
+    text "Int settings":
         style "sdl_repl_font_var_big"
         bold True
         underline True
         xalign 0.5
 
     # Bool
-    text "Флаги":
+    text "Flags":
         style "sdl_repl_font_var_medium"
         bold True
         xalign 0.105
@@ -2390,7 +2390,7 @@ screen sdl_replay_vars(vars): # Экран переменных
             unscrollable "hide"
 
     # Int
-    text "Поинты":
+    text "Points":
         style "sdl_repl_font_var_medium"
         bold True
         xalign 0.365
@@ -2462,7 +2462,7 @@ screen sdl_replay_vars(vars): # Экран переменных
             unscrollable "hide"
 
     # Enum
-    text "Перечисления":
+    text "Conditions":
         style "sdl_repl_font_var_medium"
         bold True
         xalign 0.635
@@ -2523,7 +2523,7 @@ screen sdl_replay_vars(vars): # Экран переменных
             unscrollable "hide"
 
     # List
-    text "Списки":
+    text "Lists":
         style "sdl_repl_font_var_medium"
         bold True
         xalign 0.895

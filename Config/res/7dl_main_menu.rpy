@@ -73,7 +73,7 @@ transform left_menu_7dl(xal, yal):
 screen alt_changelog:
     modal True
     add get_image_7dl("gui/menu_elem/changelog_bg.png")
-    text "{size=35}{u}Список изменений в версии 0.50:{/u}{/size}\n- написана ветка «ответов» для 4-5 дней рута Семёна-Одиночки (требует собранного пазла для выхода);\n- добавлено 16 новых ивентов в «обычный» 5 день рута Семёна-Одиночки;\n- добавлено 6 новых иллюстраций и 3 набора спрайтов персонажей;\n- в руте Славя-7дл ветка Герка приведена в соответствие актуальному концепту, также изменения коснулись концовки «Тьма и неон»;\n- в ачивлисте концовки рута Ульяна-Огоньки перенесены в рут Ульяна-7дл; фактически игровой процесс при этом не изменится;\n- множество прочих менее масштабных изменений, весь список {a=https://vk.com/@bl_7dl-spisok-izmenenii-obnovleniya-050}здесь{/a}.\n\nЧтобы быть в курсе последних новостей, вступайте в нашу {a=https://vk.com/bl_7dl}группу ВКонтакте{/a} или в {a=https://t.me/sevendaysofbeer}телеграм-канал{/a}\n\nСтраница со схемами и гайдами для прохождения {a=https://vk.com/page-128046483_52527656}здесь{/a}":
+    text "{size=35}{u}General information regarding translation:{/u}{/size}\n\n\nThis is a first test version of the translation,\n it was made by using online translator then fixed manually.\nWe also added notifications for local stuff and jokes.\nMost of it was proofread and fixed to an acceptable state\nBut please remember that there could be any kind of errors.\nIf you found one or have any questions, please leave them on:\n{a=https://steamcommunity.com/sharedfiles/filedetails/?id=441054187&searchtext=}workshop page{/a} or {a=https://discord.com/invite/qd8drECDHp}discord{/a}\n\n{u}Useful links{/u}\n{a=https://steamcommunity.com/workshop/filedetails/discussion/441054187/3762229949257518764/}Steam topic{/a}\n{a=https://boosty.to/7dlla}Boosty{/a}\n{a=https://docs.google.com/document/d/1BxW93oXhYJpLn3iIav-kqxKscjxRQaqBnubuMYNniLU/edit?usp=sharing}FAQ{/a}\n{a=https://docs.google.com/document/d/1IiImL_c2R-CSoffJdtRp5ePF3yxZ-xuMQJhHcCbkz8E/edit?usp=sharing}Guides{/a}":
         text_align 0.5
         xcenter 0.5
         ycenter 0.5
@@ -90,93 +90,93 @@ screen alt_changelog:
         action [Hide("alt_changelog", transition=Dissolve(0.5))]
 
 screen settings_widget_lp_on_7dl():
-    text "Включить виджет для" xpos 0.653 ypos 0.6:
+    text "Enable widget for" xpos 0.653 ypos 0.6:
         style "alt_settings_text"
-    text "отображения прогресса и" xpos 0.653 ypos 0.646:
+    text "progress monitoring" xpos 0.653 ypos 0.646:
         style "alt_settings_text"
-    text "информации по моду (в" xpos 0.653 ypos 0.692:
+    text "and mod information" xpos 0.653 ypos 0.692:
         style "alt_settings_text"
-    text "т.ч. очков отношений)." xpos 0.653 ypos 0.738:
+    text "(Girls' points included)." xpos 0.653 ypos 0.738:
         style "alt_settings_text"
 
 screen settings_widget_lp_off_7dl():
-    text "Выключить виджет для" xpos 0.653 ypos 0.6:
+    text "Disable widget for" xpos 0.653 ypos 0.6:
         style "alt_settings_text"
-    text "отображения прогресса и" xpos 0.653 ypos 0.646:
+    text "progress monitoring" xpos 0.653 ypos 0.646:
         style "alt_settings_text"
-    text "информации по моду (в" xpos 0.653 ypos 0.692:
+    text "and mod information" xpos 0.653 ypos 0.692:
         style "alt_settings_text"
-    text "т.ч. очков отношений)." xpos 0.653 ypos 0.738:
+    text "(Girls' points included)." xpos 0.653 ypos 0.738:
         style "alt_settings_text"
 
 screen settings_widget_music_on_7dl():
-    text "Включить виджет для" xpos 0.653 ypos 0.6:
+    text "Enable widget for" xpos 0.653 ypos 0.6:
         style "alt_settings_text"
-    text "отображения музыки, иг-" xpos 0.653 ypos 0.646:
+    text "music that plays" xpos 0.653 ypos 0.646:
         style "alt_settings_text"
-    text "рающей в данный момент." xpos 0.653 ypos 0.692:
+    text "right now." xpos 0.653 ypos 0.692:
         style "alt_settings_text"
 
 screen settings_widget_music_off_7dl():
-    text "Выключить виджет для" xpos 0.653 ypos 0.6:
+    text "Disable widget for" xpos 0.653 ypos 0.6:
         style "alt_settings_text"
-    text "отображения музыки, иг-" xpos 0.653 ypos 0.646:
+    text "music that plays" xpos 0.653 ypos 0.646:
         style "alt_settings_text"
-    text "рающей в данный момент." xpos 0.653 ypos 0.692:
+    text "right now." xpos 0.653 ypos 0.692:
         style "alt_settings_text"
 
 screen settings_hentai_graphics_on_7dl():
-    text "Включить 18+ арты и" xpos 0.653 ypos 0.6:
+    text "Enable 18+ visuals and" xpos 0.653 ypos 0.6:
         style "alt_settings_text"
-    text "убрать цензуру со спрай-" xpos 0.653 ypos 0.646:
+    text "remove sprite censorship." xpos 0.653 ypos 0.646:
         style "alt_settings_text"
-    text "тов. Доступно не для" xpos 0.653 ypos 0.692:
+    text "Available for all" xpos 0.653 ypos 0.692:
         style "alt_settings_text"
-    text "всех сцен." xpos 0.653 ypos 0.738:
+    text "current scenes." xpos 0.653 ypos 0.738:
         style "alt_settings_text"
 
 screen settings_hentai_graphics_off_7dl():
-    text "Выключить 18+ арты и" xpos 0.653 ypos 0.6:
+    text "Disable 18+ visuals and" xpos 0.653 ypos 0.6:
         style "alt_settings_text"
-    text "добавить цензуру на" xpos 0.653 ypos 0.646:
+    text "add censorship to" xpos 0.653 ypos 0.646:
         style "alt_settings_text"
-    text "спрайты." xpos 0.653 ypos 0.692:
+    text "sprites." xpos 0.653 ypos 0.692:
         style "alt_settings_text"
 
 screen settings_chapter_on_7dl():
-    text "Включить заставки в" xpos 0.653 ypos 0.6:
+    text "Enable splashcreen at" xpos 0.653 ypos 0.6:
         style "alt_settings_text"
-    text "начале глав." xpos 0.653 ypos 0.646:
+    text "label start." xpos 0.653 ypos 0.646:
         style "alt_settings_text"
 
 screen settings_chapter_off_7dl():
-    text "Выключить заставки в" xpos 0.653 ypos 0.6:
+    text "Disable splashscreen at" xpos 0.653 ypos 0.6:
         style "alt_settings_text"
-    text "начале глав." xpos 0.653 ypos 0.646:
+    text "label start." xpos 0.653 ypos 0.646:
         style "alt_settings_text"
 
 screen settings_achv_sprite_emo_on_7dl():
-    text "Включить смену эмоций" xpos 0.653 ypos 0.6:
+    text "Enable character's emotions" xpos 0.653 ypos 0.6:
         style "alt_settings_text"
-    text "персонажей в ачивлисте." xpos 0.653 ypos 0.646:
+    text "in the achievelist." xpos 0.653 ypos 0.646:
         style "alt_settings_text"
 
 screen settings_achv_sprite_emo_off_7dl():
-    text "Выключить смену эмоций" xpos 0.653 ypos 0.6:
+    text "Disable character's emotions" xpos 0.653 ypos 0.6:
         style "alt_settings_text"
-    text "персонажей в ачивлисте." xpos 0.653 ypos 0.646:
+    text "in the achievelist." xpos 0.653 ypos 0.646:
         style "alt_settings_text"
 
 screen settings_thoughts_tilde_on_7dl():
-    text "Переключить оформление" xpos 0.653 ypos 0.6:
+    text "Change thoughts design" xpos 0.653 ypos 0.6:
         style "alt_settings_text"
-    text "мыслей героя на тильды." xpos 0.653 ypos 0.646:
+    text "to tilde" xpos 0.653 ypos 0.646:
         style "alt_settings_text"
 
 screen settings_thoughts_tilde_off_7dl():
-    text "Переключить оформление" xpos 0.653 ypos 0.6:
+    text "Change thoughts design" xpos 0.653 ypos 0.6:
         style "alt_settings_text"
-    text "мыслей героя на кавычки." xpos 0.653 ypos 0.646:
+    text "to quotations." xpos 0.653 ypos 0.646:
         style "alt_settings_text"
 
 screen menu_7dl():
@@ -196,25 +196,25 @@ screen menu_7dl():
             auto get_image_7dl("gui/menu_main/mt_menu_%s.png")
         elif persistent.waifu_7dl == 'uv':
             auto get_image_7dl("gui/menu_main/uv_menu_%s.png")
-        hotspot (170, 511, 299, 33):
+        hotspot (168, 507, 248, 37):
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
             action [Hide("menu_7dl", transition=Dissolve(0.2)), Hide("settings_7dl", transition=Dissolve(0.2)), Hide("contacts_7dl", transition=Dissolve(0.2)), Hide("media_7dl", transition=Dissolve(0.2)), Stop('music', fadeout=2), SetField(sdl_mus_engine, "is_active", False), Jump("start_7dl")]
-        hotspot (170, 558, 243, 39):
+        hotspot (168, 558, 187, 47):
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
             action [Show("settings_7dl", transition=Dissolve(0.2))]
-        hotspot (170, 617, 293, 38):
+        hotspot (168, 613, 323, 37):
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
             action [Hide("menu_7dl", transition=Dissolve(0.2)), Hide("settings_7dl", transition=Dissolve(0.2)), Hide("contacts_7dl", transition=Dissolve(0.2)), Hide("media_7dl", transition=Dissolve(0.2)), Jump("sdl_achvlist_main")]
-        hotspot (170, 670, 221, 33):
+        hotspot (168, 666, 197, 36):
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
             action [Show("contacts_7dl", transition=Dissolve(0.2))]
-        hotspot (170, 723, 190, 33):
+        hotspot (168, 719, 148, 37):
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
             action [Hide("menu_7dl", transition=Dissolve(0.2)), Hide("settings_7dl", transition=Dissolve(0.2)), Hide("contacts_7dl", transition=Dissolve(0.2)), Hide("media_7dl", transition=Dissolve(0.2)), Jump("alt_stories_start")]
-        hotspot (170, 776, 143, 33):
+        hotspot (168, 772, 140, 37):
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
             action [Show("media_7dl", transition=Dissolve(0.2))]
-        hotspot (170, 823, 137, 39):
+        hotspot (168, 824, 225, 39):
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
             action [Hide("menu_7dl", transition=Dissolve(0.2)), Hide("settings_7dl", transition=Dissolve(0.2)), Hide("contacts_7dl", transition=Dissolve(0.2)), Hide("media_7dl", transition=Dissolve(0.2)), Function(alt_exit), MainMenu(confirm=False)]
 
@@ -291,7 +291,7 @@ screen settings_7dl():
     tag menu
     add get_image_7dl("gui/menu_elem/settings/settings_bg.png")
     if not persistent.lp_widget_7dl:
-        textbutton "Виджет (ЛП): выкл." xpos 0.65 ypos 0.255:
+        textbutton "Widget (LP): off." xpos 0.65 ypos 0.255:
             style "log_button"
             text_style "alt_settings_textbutton"
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
@@ -299,7 +299,7 @@ screen settings_7dl():
             unhovered [Hide("settings_widget_lp_on_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'lp_widget_7dl', True), Hide("settings_widget_lp_on_7dl", transition=Dissolve(0.2)), Show("settings_widget_lp_off_7dl", transition=Dissolve(0.2))]
     else:
-        textbutton "Виджет (ЛП): вкл." xpos 0.65 ypos 0.255:
+        textbutton "Widget (LP): on." xpos 0.65 ypos 0.255:
             style "log_button"
             text_style "alt_settings_textbutton"
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
@@ -307,7 +307,7 @@ screen settings_7dl():
             unhovered [Hide("settings_widget_lp_off_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'lp_widget_7dl', False), Hide("settings_widget_lp_off_7dl", transition=Dissolve(0.2)), Show("settings_widget_lp_on_7dl", transition=Dissolve(0.2))]
     if not persistent.music_widget_7dl:
-        textbutton "Виджет (музыка): выкл." xpos 0.65 ypos 0.3:
+        textbutton "Widget (music): off." xpos 0.65 ypos 0.3:
             style "log_button"
             text_style "alt_settings_textbutton"
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
@@ -315,7 +315,7 @@ screen settings_7dl():
             unhovered [Hide("settings_widget_music_on_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'music_widget_7dl', True), Hide("settings_widget_music_on_7dl", transition=Dissolve(0.2)), Show("settings_widget_music_off_7dl", transition=Dissolve(0.2))]
     else:
-        textbutton "Виджет (музыка): вкл." xpos 0.65 ypos 0.3:
+        textbutton "Widget (Music): on." xpos 0.65 ypos 0.3:
             style "log_button"
             text_style "alt_settings_textbutton"
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
@@ -323,7 +323,7 @@ screen settings_7dl():
             unhovered [Hide("settings_widget_music_off_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'music_widget_7dl', False), Hide("settings_widget_music_off_7dl", transition=Dissolve(0.2)), Show("settings_widget_music_on_7dl", transition=Dissolve(0.2))]
     if not persistent.thoughts_tilde_7dl:
-        textbutton "Мысли героя: кавычки" xpos 0.65 ypos 0.347:
+        textbutton "Thoughts: quotations" xpos 0.65 ypos 0.347:
             style "log_button"
             text_style "alt_settings_textbutton"
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
@@ -331,7 +331,7 @@ screen settings_7dl():
             unhovered [Hide("settings_thoughts_tilde_on_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'thoughts_tilde_7dl',True), Hide("settings_thoughts_tilde_on_7dl", transition=Dissolve(0.2)), Show("settings_thoughts_tilde_off_7dl", transition=Dissolve(0.2))]
     else:
-        textbutton "Мысли героя: тильды" xpos 0.65 ypos 0.347:
+        textbutton "Thoughts: tilde" xpos 0.65 ypos 0.347:
             style "log_button"
             text_style "alt_settings_textbutton"
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
@@ -339,7 +339,7 @@ screen settings_7dl():
             unhovered [Hide("settings_thoughts_tilde_off_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'thoughts_tilde_7dl',False), Hide("settings_thoughts_tilde_off_7dl", transition=Dissolve(0.2)), Show("settings_thoughts_tilde_on_7dl", transition=Dissolve(0.2))]
     if not persistent.hentai_graphics_7dl:
-        textbutton "Х-графика: выкл." xpos 0.65 ypos 0.392:
+        textbutton "Hentai-content: Off." xpos 0.65 ypos 0.392:
             style "log_button"
             text_style "alt_settings_textbutton"
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
@@ -347,7 +347,7 @@ screen settings_7dl():
             unhovered [Hide("settings_hentai_graphics_on_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'hentai_graphics_7dl',True), Hide("settings_hentai_graphics_on_7dl", transition=Dissolve(0.2)), Show("settings_hentai_graphics_off_7dl", transition=Dissolve(0.2))]
     else:
-        textbutton "Х-графика: вкл." xpos 0.65 ypos 0.392:
+        textbutton "Hentai-content: on." xpos 0.65 ypos 0.392:
             style "log_button"
             text_style "alt_settings_textbutton"
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
@@ -355,7 +355,7 @@ screen settings_7dl():
             unhovered [Hide("settings_hentai_graphics_off_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'hentai_graphics_7dl',False), Hide("settings_hentai_graphics_off_7dl", transition=Dissolve(0.2)), Show("settings_hentai_graphics_on_7dl", transition=Dissolve(0.2))]
     if not persistent.chapter_off_7dl:
-        textbutton "Заставки: вкл." xpos 0.65 ypos 0.438:
+        textbutton "Splashcreen: on." xpos 0.65 ypos 0.438:
             style "log_button"
             text_style "alt_settings_textbutton"
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
@@ -363,7 +363,7 @@ screen settings_7dl():
             unhovered [Hide("settings_chapter_off_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'chapter_off_7dl',True), Hide("settings_chapter_off_7dl", transition=Dissolve(0.2)), Show("settings_chapter_on_7dl", transition=Dissolve(0.2))]
     else:
-        textbutton "Заставки: выкл." xpos 0.65 ypos 0.438:
+        textbutton "Splashcreen: off." xpos 0.65 ypos 0.438:
             style "log_button"
             text_style "alt_settings_textbutton"
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
@@ -371,7 +371,7 @@ screen settings_7dl():
             unhovered [Hide("settings_chapter_on_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'chapter_off_7dl',False), Hide("settings_chapter_on_7dl", transition=Dissolve(0.2)), Show("settings_chapter_off_7dl", transition=Dissolve(0.2))]
     if not persistent.achv_sprite_emo_7dl:
-        textbutton "Эмоции (ачивлист): выкл." xpos 0.65 ypos 0.483:
+        textbutton "Emotions (Achievelist): off." xpos 0.65 ypos 0.483:
             style "log_button"
             text_style "alt_settings_textbutton"
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
@@ -379,7 +379,7 @@ screen settings_7dl():
             unhovered [Hide("settings_achv_sprite_emo_on_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'achv_sprite_emo_7dl',True), Hide("settings_achv_sprite_emo_on_7dl", transition=Dissolve(0.2)), Show("settings_achv_sprite_emo_off_7dl", transition=Dissolve(0.2))]
     else:
-        textbutton "Эмоции (ачивлист): вкл." xpos 0.65 ypos 0.483:
+        textbutton "Emotions (Achievelist): on." xpos 0.65 ypos 0.483:
             style "log_button"
             text_style "alt_settings_textbutton"
             hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
@@ -416,7 +416,7 @@ label main_menu_7dl:
     stop sound
     stop sound_loop
 
-    $ plthr = u"Меню"
+    $ plthr = u"Menu"
     call alt_vars
     $ renpy.block_rollback()
     $ day_time()
@@ -479,10 +479,10 @@ label alt_7dl_titles:
     show alt_credits alt_credits_text:
         xalign 0.5
         ypos 1.0
-        linear 40.0 ypos -4.5
-    $ renpy.pause(40, hard = True)
+        linear 50.0 ypos -5.5
+    $ renpy.pause(48, hard = True)
     stop music fadeout 5
-    show alt_credits "КОНЕЦ":
+    show alt_credits "The End":
         xcenter 0.5
         ycenter 0.5
     with dissolve2

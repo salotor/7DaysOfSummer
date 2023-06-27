@@ -1,5 +1,5 @@
 ﻿label alt_day5_me_neu_map_evening:
-    $ alt_chapter(5, u"Одиночка. Вечерняя прогулка.")
+    $ alt_chapter(5, u"Loner. Evening walk.")
     $ disable_all_zones_alt2()
     $ disable_all_chibi_alt2()
 

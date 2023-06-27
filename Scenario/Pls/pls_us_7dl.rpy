@@ -2,7 +2,7 @@
     call alt_day6_us_7dl_vars
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(6, u"Ульяна. 7ДЛ. Утро")
+    $ alt_chapter(6, u"Ulyana. 7DS. Morning")
     if counter_us_7dl_px == 3:
         call alt_day6_us_7dl_px_begin
     else:
@@ -17,7 +17,7 @@
         pause(1)
         $ persistent.sprite_time = "day"
         $ day_time()
-        $ alt_chapter(6, u"Ульяна. 7ДЛ. День")
+        $ alt_chapter(6, u"Ulyana. 7DS. Day")
         call alt_day6_us_7dl_px_dinner
         pause(1)
         call alt_day6_us_7dl_px_party_un
@@ -27,7 +27,7 @@
         else:
             call alt_day6_us_7dl_px_far_gate
         pause(1)
-        $ alt_chapter(6, u"Ульяна. 7ДЛ. Концерт")
+        $ alt_chapter(6, u"Ulyana. 7DS. Concert")
         call alt_day6_us_7dl_concert
         pause(1)
     else:
@@ -46,7 +46,7 @@
         pause(1)
         $ persistent.sprite_time = "day"
         $ day_time()
-        $ alt_chapter(6, u"Ульяна. 7ДЛ. День")
+        $ alt_chapter(6, u"Ulyana. 7DS. Day")
         call alt_day6_us_7dl_dinner
         pause(1)
         if (alt_day6_us_7dl_mi_friends == 2) or (alt_day6_us_7dl_sl_friends == 2):
@@ -61,17 +61,17 @@
             if alt_day6_us_7dl_help:
                 call alt_day6_us_7dl_ghost
                 pause(1)
-                $ alt_chapter(6, u"Ульяна. 7ДЛ. Ррромантика")
+                $ alt_chapter(6, u"Ulyana. 7DS. Rrrromantic")
                 call alt_day6_us_7dl_rendezvous
             else:
                 call alt_day6_us_7dl_fiasco
                 pause(1)
-                $ alt_chapter(6, u"Ульяна. 7ДЛ. Концерт")
+                $ alt_chapter(6, u"Ulyana. 7DS. Concert")
                 call alt_day6_us_7dl_concert
         pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(6, u"Ульяна. 7ДЛ. Вечер")
+    $ alt_chapter(6, u"Ulyana. 7DS. Evening")
     call alt_day6_us_7dl_supper
     pause(1)
     $ persistent.sprite_time = "sunset"
@@ -126,7 +126,7 @@ label alt_day7_us_7dl_start:
             $ routetag = "us_7dl"
         else:
             $ routetag = "us_7dl_bad"
-    $ alt_chapter(7, u"Ульяна. 7ДЛ. Утро")
+    $ alt_chapter(7, u"Ulyana. 7DS. Morning")
     call alt_day7_us_7dl_begin
     pause(1)
     if counter_us_7dl_px == 3:
@@ -137,7 +137,7 @@ label alt_day7_us_7dl_start:
         if alt_day6_us_7dl_px_sl_join:
             $ persistent.sprite_time = "day"
             $ day_time()
-            $ alt_chapter(7, u"Ульяна. 7ДЛ. Автобус")
+            $ alt_chapter(7, u"Ulyana. 7DS. Bus")
             call alt_day7_us_7dl_px_bus
             pause(1)
             if alt_day7_us_7dl_px_escaped:
@@ -145,7 +145,7 @@ label alt_day7_us_7dl_start:
                 pause(1)
                 $ persistent.sprite_time = "prolog"
                 $ prolog_time()
-                $ alt_chapter(7, u"Ульяна. 7ДЛ. Сказка")
+                $ alt_chapter(7, u"Ulyana. 7DS. Fairy tale")
                 call alt_day7_us_7dl_px_true
                 return
             else:
@@ -156,7 +156,7 @@ label alt_day7_us_7dl_start:
             call alt_day7_us_7dl_px_mourning
         $ persistent.sprite_time = "prolog"
         $ prolog_time()
-        $ alt_chapter(7, u"Ульяна. 7ДЛ. Эпилог")
+        $ alt_chapter(7, u"Ulyana. 7DS. Epilogue")
         call alt_day7_us_7dl_px_good
     else:
         call alt_day7_us_7dl_breakfast
@@ -176,7 +176,7 @@ label alt_day7_us_7dl_start:
         pause(1)
         $ persistent.sprite_time = "day"
         $ day_time()
-        $ alt_chapter(7, u"Ульяна. 7ДЛ. Отъезд")
+        $ alt_chapter(7, u"Ulyana. 7DS. Departure")
         call alt_day7_us_7dl_leaving
         $ persistent.sprite_time = "prolog"
         $ prolog_time()
@@ -185,11 +185,11 @@ label alt_day7_us_7dl_start:
             pause(1)
             return
         if (persistent.us_7dl_tran_un or persistent.us_7dl_tran_mi) and persistent.us_7dl_px_good and (counter_us_7dl_px >= 1) and alt_day6_us_7dl_help:
-            $ alt_chapter(7, u"Ульяна. Спасибо.")
+            $ alt_chapter(7, u"Ulyana. Thank you.")
             call alt_day7_us_7dl_true
             pause(1)
             return
-        $ alt_chapter(7, u"Ульяна. 7ДЛ. Эпилог")
+        $ alt_chapter(7, u"Ulyana. 7DS. Epilogue")
         call alt_day7_us_7dl_wakeup
         if alt_day6_us_7dl_help:
             call alt_day7_us_7dl_good

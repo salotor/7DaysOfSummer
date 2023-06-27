@@ -6,7 +6,7 @@ init python:
     # Сброс перзистентов
     def sdl_achv_clear_persistents_ask(achv_arr):
         layout.yesno_screen(
-            "Сбросить полученные концовки в этом разделе?",
+            "Reset endings in this section?",
             yes = [Function(sdl_achv_clear_persistents, achv_arr), Play("sound", sdl_achv_clear)],
             no  = NullAction()
             )

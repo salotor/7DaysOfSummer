@@ -6,7 +6,7 @@
     call alt_day4_sl_7dl_vars
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(4, u"Славя. 7ДЛ. Утро")
+    $ alt_chapter(4, u"Slavya. 7DS. Morning")
     pause(1)
     call alt_day4_sl_7dl_begin
     pause(1)
@@ -18,12 +18,12 @@
         pause(1)
         $ persistent.sprite_time = "day"
         $ day_time()
-        $ alt_chapter(4, u"Славя. 7ДЛ. День")
+        $ alt_chapter(4, u"Slavya. 7DS. Day")
         call alt_day4_sl_7dl_loki_day
         pause(1)
         $ persistent.sprite_time = "sunset"
         $ sunset_time()
-        $ alt_chapter(4, u"Славя. 7ДЛ. Вечер")
+        $ alt_chapter(4, u"Slavya. 7DS. Evening")
         call alt_day4_sl_7dl_loki_evening
     elif herc:
         $ routetag = "sl7dl_herc"
@@ -31,24 +31,24 @@
         pause(1)
         $ persistent.sprite_time = "day"
         $ day_time()
-        $ alt_chapter(4, u"Славя. 7ДЛ. День")
+        $ alt_chapter(4, u"Slavya. 7DS. Day")
         call alt_day4_sl_7dl_herc_day
         pause(1)
         $ persistent.sprite_time = "sunset"
         $ sunset_time()
-        $ alt_chapter(4, u"Славя. 7ДЛ. Вечер")
+        $ alt_chapter(4, u"Slavya. 7DS. Evening")
         call alt_day4_sl_7dl_herc_evening
     else:
         call alt_day4_sl_7dl_morning
         pause(1)
         $ persistent.sprite_time = "day"
         $ day_time()
-        $ alt_chapter(4, u"Славя. 7ДЛ. День")
+        $ alt_chapter(4, u"Slavya. 7DS. Day")
         call alt_day4_sl_7dl_day
         pause(1)
         $ persistent.sprite_time = "sunset"
         $ sunset_time()
-        $ alt_chapter(4, u"Славя. 7ДЛ. Вечер")
+        $ alt_chapter(4, u"Slavya. 7DS. Evening")
         call alt_day4_sl_7dl_evening
     pause(1)
     call alt_day4_sl_7dl_sundown
@@ -64,7 +64,7 @@ label alt_day5_sl_7dl_start:
     call alt_day5_sl_7dl_vars
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(5, u"Славя. 7ДЛ. Утро")
+    $ alt_chapter(5, u"Slavya. 7DS. Morning")
     pause(1)
     call alt_day5_sl_7dl_begin
     pause(1)
@@ -80,38 +80,38 @@ label alt_day5_sl_7dl_start:
         call alt_day5_sl_7dl_candle_loki
         $ persistent.sprite_time = "day"
         $ day_time()
-        $ alt_chapter(5, u"Славя. 7ДЛ. День")
+        $ alt_chapter(5, u"Slavya. 7DS. Day")
         call alt_day5_sl_7dl_loki_day
         pause(1)
         $ persistent.sprite_time = "sunset"
         $ sunset_time()
-        $ alt_chapter(5, u"Славя. 7ДЛ. Вечер")
+        $ alt_chapter(5, u"Slavya. 7DS. Evening")
         call alt_day5_sl_7dl_loki_evening
     elif herc:
         call alt_day5_sl_7dl_candle_herc
         $ persistent.sprite_time = "day"
         $ day_time()
-        $ alt_chapter(5, u"Славя. 7ДЛ. День")
+        $ alt_chapter(5, u"Slavya. 7DS. Day")
         call alt_day5_sl_7dl_herc_day
         pause(1)
         $ persistent.sprite_time = "sunset"
         $ sunset_time()
-        $ alt_chapter(5, u"Славя. 7ДЛ. Вечер")
+        $ alt_chapter(5, u"Slavya. 7DS. Evening")
         call alt_day5_sl_7dl_herc_evening
         pause(1)
     else:
         call alt_day5_sl_7dl_candle_dr
         $ persistent.sprite_time = "day"
         $ day_time()
-        $ alt_chapter(5, u"Славя. 7ДЛ. День")
+        $ alt_chapter(5, u"Slavya. 7DS. Day")
         call alt_day5_sl_7dl_day
         pause(1)
         $ persistent.sprite_time = "sunset"
         $ sunset_time()
-        $ alt_chapter(5, u"Славя. 7ДЛ. Вечер")
+        $ alt_chapter(5, u"Slavya. 7DS. Evening")
         call alt_day5_sl_7dl_evening
     pause(1)
-    $ alt_chapter(5, u"Славя. 7ДЛ. Костёр")
+    $ alt_chapter(5, u"Slavya. 7DS. Campfire")
     call alt_day5_sl_7dl_campfire
     pause(1)
     $ persistent.sprite_time = "night"
@@ -137,7 +137,7 @@ label alt_day6_sl_7dl_start:
     call alt_day6_sl_7dl_vars
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(6, u"Славя. 7ДЛ. Утро")
+    $ alt_chapter(6, u"Slavya. 7DS. Morning")
     pause(1)
     call alt_day6_sl_7dl_begin
     pause(1)
@@ -152,7 +152,7 @@ label alt_day6_sl_7dl_start:
         pause(1)
         $ persistent.sprite_time = "day"
         $ day_time()
-        $ alt_chapter(6, u"Славя. 7ДЛ. День")
+        $ alt_chapter(6, u"Slavya. 7DS. Day")
         call alt_day6_sl_7dl_loki_day
         pause(1)
         call alt_day6_sl_7dl_loki_evening
@@ -165,7 +165,7 @@ label alt_day6_sl_7dl_start:
         pause(1)
         $ persistent.sprite_time = "day"
         $ day_time()
-        $ alt_chapter(6, u"Славя. 7ДЛ. День")
+        $ alt_chapter(6, u"Slavya. 7DS. Day")
         if alt_day6_sl_7dl_square:
             call alt_day6_sl_7dl_herc_day_alt
             pause(1)
@@ -183,7 +183,7 @@ label alt_day6_sl_7dl_start:
         pause(1)
         $ persistent.sprite_time = "day"
         $ day_time()
-        $ alt_chapter(6, u"Славя. 7ДЛ. День")
+        $ alt_chapter(6, u"Slavya. 7DS. Day")
         if alt_day5_sl_7dl_olroad:
             call alt_day6_sl_7dl_dr_day_olroad
             pause(1)
@@ -203,7 +203,7 @@ label alt_day6_sl_7dl_start:
         return
     if (herc or loki) or alt_day5_sl_7dl_olroad:
         $ routetag = "sl7dl_dress"
-    $ alt_chapter(6, u"Славя. 7ДЛ. Дискотека")
+    $ alt_chapter(6, u"Slavya. 7DS. Disco")
     if loki:
         call alt_day6_sl_7dl_loki_disco
     elif herc:
@@ -244,7 +244,7 @@ label alt_day7_sl_7dl_start:
     call alt_day7_sl_7dl_vars
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(7, u"Славя. 7ДЛ. Утро")
+    $ alt_chapter(7, u"Slavya. 7DS. Morning")
     pause(1)
     if alt_day6_sl_7dl_hentai_done:
         if loki:
@@ -268,7 +268,7 @@ label alt_day7_sl_7dl_start:
     pause(1)
     $ persistent.sprite_time = "day"
     $ day_time()
-    $ alt_chapter(7, u"Славя. 7ДЛ. Отъезд")
+    $ alt_chapter(7, u"Slavya. 7DS. Departure")
     call alt_day7_sl_7dl_leaving
     pause(1)
     $ persistent.sprite_time = "sunset"
@@ -282,7 +282,7 @@ label alt_day7_sl_7dl_start:
             $ routetag = "sl7dlgood"
     else:
         $ routetag = "sl7dlbad"
-    $ alt_chapter(7, u"Славя. 7ДЛ. Эпилог")
+    $ alt_chapter(7, u"Slavya. 7DS. Epilogue")
     if alt_day7_sl_7dl_story_end:
         call alt_day7_sl_7dl_shard
     elif lp_sl >= 20:

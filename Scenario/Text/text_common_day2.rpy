@@ -1,312 +1,312 @@
 ﻿label alt_day2_begin:
     scene black
     play ambience ambience_int_cabin_day fadein 3
-    "Проснулся я от скрипа…"
-    "Меланхоличного такого, протяяяяяжного."
-    "Какой может издавать только лениво потягивающаяся девушка."
-    "Ну что я, дурак, упускать такую возможность?"
-    "Разумеется, я тут же повернулся, не вылезая из-под одеяла, и приподнял его так, чтобы образовалась маааааленькая дырочка."
-    "Удалось увидеть не очень много."
-    "Но и того, что удалось, хватило с лихвой!"
-    mt "Семён, если будешь так сопеть, я решу, что у тебя сердечный приступ."
-    "Усмехнулась вожатая, не глядя в мою сторону."
-    "Приступ или нет, но видеть девушку в одних трусиках и пионерской рубашке, застёгнутой на две пуговицы — это, простите, кого хочешь до приступа доведёт."
-    "Она сидела нога на ногу на кровати и опять что-то старательно заносила в ежедневник."
-    mt "До подъёма ещё полчаса, спи пока."
-    mt "Или…"
-    "На краткий миг я увидел на лице Ольги Дмитриевны точно такую же усмешку, какой меня одарила вчера Виола."
-    mt "Ты будешь подниматься?"
-    "Горестно вздохнув по безвозвратно почившей утренней эротике, я отвернулся и смежил веки."
+    "I woke up from a creak…"
+    "You know, a really melancholic one, really streeeetchy."
+    "The one that you can only hear from a lazily stretching girl."
+    "And I couldn't be a fool, missing this opportunity, could I?"
+    "Of course, I immediately turned around, without getting out from under the blanket, and lifted it so that a smaaaaaall hole formed."
+    "Didn't manage to see a lot."
+    "But what I did see was more than enough for me!"
+    mt "Semyon, if you keep sniffing like that, I'll think you're having a heart attack."
+    "The squad leader smiled, without even looking in my direction."
+    "Heart attack or not, but seeing a girl only in panties and a pioneer shirt fastened with two buttons — excuse me, that'll get anyone a stroke."
+    "She sat cross-legged on the bed and, again, diligently recorded something into her diary."
+    mt "Sleep, you still have half an hour before getting up."
+    mt "Unless…"
+    "For a brief moment I saw the exact same smile that Viola bestowed upon me on Olga's face."
+    mt "You're getting up?"
+    "Woefully sighing over the irretrievably deceased morning eroticism, I turned away and closed my eyelids.."
     play sound sfx_7dl["mpbt"]
     pause(1)
     scene bg int_house_of_mt_sunset
     with blind_l
     play music music_list["my_daily_life"]
-    "Солнце било мне прямо в лицо, и я расчихался от этого."
+    "The sun was shining directly into my face, forcing me to sneeze."
     stop sound
-    "По мне, так замечательное пробуждение!"
-    th "…похоже, я всё-таки уснул."
-    th "Эх, такую сцену проморгал!"
+    "Wonderful awakening, if you ask me!"
+    th "…seems like I fell asleep."
+    th "Damn, missed such a scene!"
     if alt_day_binder != 1:
-        "Конечно, всё относительно, но вчера, например, я открыл глаза в незнакомом автобусе."
-        "Будто этого было недостаточно, я спал в зимней одежде, сидя на солнцепёке. Мало удивительного в том, как я себя потом чувствовал."
+        "Of course, everything is relative, but yesterday, for example, I opened my eyes in an unfamiliar bus."
+        "As if that wasn't enough, I slept in my winter clothes, sitting in the sun. Nothing wonderful in how I felt afterwards."
     else:
-        "Уж всяко получше, чем стыковка лоб в лоб — в буквальном смысле этого слова."
-        "А потом в качестве зарядки для мозга – вербальная атака от неугомонной японки."
-    "Я потянулся на простыне и блаженно застонал — выспаться удалось на славу!"
-    "Здесь же… Ну, не знаю."
-    "Комната как комната. По сравнению со вчерашним, изменений минимум."
-    "Я внимательно оглядел место, где спала вожатая:"
+        "Anything is better than head-to-head docking - in the literal sense of the word."
+        "And then, as a morning excercise for the brain - a verbal attack from a restless Japanese girl."
+    "I stretched on the sheet and groaned blissfully - I managed to sleep well!"
+    "Here… I don't know."
+    "Room that looks like a room. There aren't that many changes comparing to yesterday."
+    "I carefully looked around squad leader's bed:"
     scene bg int_house_of_mt_sunset:
         zoom 1.0 xalign 0.5 yalign 0.5
         linear 4.0 zoom 2.0 xalign 0.8 yalign 0.6
-    "Ольга Батьковна уже умотала по своим вожатским делам, и это дало мне пару минут на то, чтобы провести очередную рекогносцировку."
-    "Абы как брошенное покрывало, носки на спинке в изголовье, а на спинке в ногах огромный, большой, прекрасный и крайне объёмистый предмет женского белья."
-    "Значит, вот к чему должен стремиться порядочный пионер?"
+    "Olga Dmitrievna already ran off with her leader affairs, giving me a couple minutes to conduct another reconnaisance mission."
+    "Jauntily tossed blanket, socks on the back at the head, and on the other side - a huge, large, beautiful and extremely voluminous item of lingerie."
+    "So, that's what a true pioneer should strive for?"
     with fade
-    "Интересно, она тут сама убирает? Или заставляет пионеров?"
-    "Не хотелось бы оказаться в роли вечно дежурного по домику."
+    "I wonder if she cleans here herself? Or makes the pioneers?"
+    "Wouldn't want to be in the role of always on duty in the house."
     scene bg int_house_of_mt_sunset at zenterleft
     with dissolve
-    "С другой стороны, заставлять девушку, с которой не состоишь в отношениях — ни родственных, ни семейных — убирать за собой… Как-то не очень."
-    "Ладно, пора вставать. Я спустил ногу на пол…"
+    "On the other hand, forcing a girl with whom you are not in a relationship to clean up after yourself… Doesn't feel right."
+    "Anyways, time to get up. I lowered a leg onto the floor…"
     show mt normal pioneer far with dissolve
-    extend " И тут же убрал её под одеяло — в комнату вошла Ольга Дмитриевна."
-    mt "Проснись и пой, Семён!"
-    mt "Утро за бортом прекрасное, синоптики грозятся тридцатью градусами воздуха в течение дня, так что грех залёживаться в кровати долго."
-    mt "У нас здесь очень строгий распорядок, одобренный лучшими специалистами. Сон не менее восьми часов, свежий воздух и массовые мероприятия — всё, чтобы ты как следует набрался сил!"
-    me "Подъём в восемь?"
-    "Я не скрывал ужаса."
-    mt "А что не так? {w}Нормальное время. Как раз по холодку прогуляешься, умоешься, потом зарядка, линейка — и уже завтракать можно."
-    mt "Мы тебе заскучать не дадим, это я обещаю."
-    "Вот уж действительно."
-    mt "Это тебе."
-    "Она бросила мне на кровать свёрток."
-    "Судя по специфическому запаху детского мыла, мне только что с барского плеча ссудили банные принадлежности."
-    mt "Поднимайся давай."
+    extend " And immediately put it back under the covers - Olga Dmitrievna entered the room."
+    mt "Rise and shine, Semyon!"
+    mt "Overboard morning is beautiful, weather forecasters threaten us with 30 degrees during the day, so it's a sin to lie in bed for too long."
+    mt "We have a very strict routine here, approved by the best specialists. Sleep for at least eight hours, fresh air and mass events - everything for you to properly gain strength!"
+    me "Waking up at eight?"
+    "I couldn't hide the horror in my voice."
+    mt "What's wrong with that? {w}Normal time. Take a walk in the chilly morning, wash up, exercise, attend the lineup — and you're practically at the breakfast."
+    mt "You won't go bored, I promise."
+    "Of course."
+    mt "That's yours."
+    "She threw a bundle on my bed."
+    "Judging by the specific smell of baby soap, I have just been loaned bath accessories."
+    mt "Come on, get up."
     hide mt with dissolve
-    "Она скрылась за дверью, и я уже начал было подниматься…"
+    "She disappeared behind the door, and I was already starting to get up…"
     show mt smile  pioneer far with dissolve
-    extend " Как она снова появилась."
+    extend " As she reappeared again."
     if alt_day_binder != 1:
-        mt "Да, чуть не забыла: твои старые вещи я отнесла в прачечную, вечером вернут чистыми и глажеными. Всё равно не по погоде."
-        me "А что…"
+        mt "Oh, I almost forgot: I took your old clothes to the laundry, they will be returned clean and ironed in the evening. They don't fit the weather anyways."
+        me "What am…"
         if herc or loki or (dr and (counter_sl_7dl >= 1)):
-            mt "Славя уже принесла форму."
-            mt "Откроешь шкаф, там на плечиках висит комплект."
-            me "Да нет, я…"
-            mt "Если ты о содержимом карманов — оно в том же шкафу."
+            mt "Slavya already brought your uniform."
+            mt "Check the closet, the set is hanging there."
+            me "Well no, I'm…"
+            mt "If you're talking about the contents of the pockets - it's in the same closet."
         else:
-            mt "Если ты о содержимом карманов — оно в шкафу."
+            mt "If you're talking about the contents of the pockets - everything is in the closet."
     else:
-        mt "Да, чтоб ты знал – твои старые вещи, мокрые, я у Слави забрала и отправила их в стирку."
-        mt "Пальто в шкафу, если что."
-        mt "Содержимое карманов в тумбочке."
-    "Кажется, понятие частной собственности здесь отметают как буржуазный предрассудок."
+        mt "Oh yeah, just so you know - I already retrieved your old wet clothes from Slavya and sent them to the laundry."
+        mt "The coat is in the closet."
+        mt "Contents of the pockets are in the nightstand."
+    "It seems that the concept of private property is dismissed here as a bourgeois prejudice."
     hide mt
-    "Она выпорхнула из комнаты, дав наконец мне возможность одеться."
+    "She fluttered out of the room, finally giving me the opportunity to get dressed."
     if dr and (counter_sl_7dl == 0) and (alt_day_binder != 1):
-        "К счастью, меня уже вчера экипировали, так что я немного привык к своему дурацкому внешнему виду."
-        "Проблему вызвал разве что галстук, но я завязал его простым двойным узлом и на этом успокоился."
+        "Luckily, I was already geared up yesterday, so I got used to my stupid appearance a little."
+        "It was only the tie causing problems, but I tied it with a simple double knot and calmed down on that."
     else:
-        "В рубашечку с коротким рукавом и короткие штанишки? Ощути себя карапузом, называется."
-        "Форма была новехонькая, шорты не расхожены, рубашка скрипит от крахмала, галстук переливается кумачом."
+        "A short sleeve shirt and short pants? Feel yourself like a toddler, heh."
+        "The uniform was brand new, the shorts were not loose, the shirt creaked with starch, the tie shimmered with red."
         if alt_day_binder != 1:
-            th "Я сейчас надену это и превращусь в плохую копию Электроника."
-            th "У него хотя бы лицо такое, что все вопросы насчёт дееспособности пропадают."
-            th "А что делать мне с моей унылой физиономией? Может, ну его?"
-            dreamgirl "Ну? Точно! Давайте обмотаемся простынёй с захлёстом и будем ходить как римские патриции."
-            dreamgirl "Или просто в труселях отправимся щеголять на улицу?"
-            dreamgirl "Вчера приобщал к дениму, сегодня к Кельвину Кляйну — даёшь нарпросвет!"
-            "Спустя пять минут прикидывания вариантов я понял, что альтернативой всему прочему будет разве что поход на улицу в одном из купальников Ольги Дмитриевны. Пуркуа бы да не па?"
-            "Я взял рубашку в руки и на миг зажмурился от целой россыпи солнечных зайчиков, скакнувших от золочёных пуговиц."
-            "На ощупь… Ммм… У меня вообще аллергия на синтетику, и я дико потею и чешусь, если долго ношу синтетические вещи — уже развились кое-какие тактильные навыки."
-            "Так вот, на ощупь это был чистый хлопок, безо всякой полиэстерной дряни."
-            th "Вещь! У меня, помнится, были две такие рубашки, с золочёными пуговицами — парадно-выходная, и со скромными пластмассовыми кружочками — обычная."
-            "Не думаю, что местные порядки сильно отличаются, во всяком случае, ни на ком встреченном мне золотые пуговицы углядеть не удалось."
-            "А значит что? Значит, Ольга Дмитриевна надо мной здорово подшутила."
-            "Пионерский лагерь с детьми-пионерами и вожатой-троллем."
-            "Восхитительное сочетание."
-            "Рубашка была приятно прохладной, а короткие штанишки оказались удивительно впору."
-            "Галстук, помнится, меня учили вязать. Сейчас я…"
-            "Лёгким движением руки…"
-            "Спутанный бесформенный ком полетел на незастеленную кровать."
-            me "Да и хрен с тобой!"
-            "Я застелил постель, перевесив хитрый кумачовый узел на спинку кровати, и вышел из домика."
+            th "Yeah, right, I'll put this on and immediately turn into a defective copy of Electronik."
+            th "At least he has such a face that makes all questions about his efficiency disappear."
+            th "What am I supposed to do with my sad face? Give up?"
+            dreamgirl "Well? Right! Let's wrap ourselves in a lap sheet and walk around like Roman patricians."
+            dreamgirl "Or just flaunt your underwear on the streets?"
+            dreamgirl "Yesterday you introduced people to denim, today to Calvin Klein — glory to public education!"
+            "After five minutes of considering my options, I realized that the alternative to everything else would be to go outside in one of Olga Dmitrievna's swimsuits. Why not, actually?"
+            "I took the shirt in my hands and closed my eyes for a moment from a whole scattering of sunbeams jumping from gilded buttons."
+            "Touching it… Hmm… I am generally allergic to synthetics, and I sweat wildly and itch if I wear synthetic things for a long time - some tactile skills have already developed."
+            "Well, to the touch it was pure cotton, without any polyester garbage."
+            th "Nice! I remember that I had two such shirts, with gilded buttons - a parade-out, and with modest plastic circles - an ordinary one."
+            "I don’t think that local customs are very different, in any case, I couldn’t see gold buttons on anyone I met."
+            "What does it mean? Olga Dmitrievna played a big joke on me."
+            "Pioneer camp with pioneer children and a troll on the position of squad leader."
+            "Spectacular combination."
+            "The shirt was pleasantly cool, and the short pants were surprisingly fitting."
+            "I was taught how to tie a tie. Now I'll…"
+            "With a single careful motion…"
+            "A tangled shapeless lump flew onto an unmade bed."
+            me "Screw you!"
+            "I made the bed, hanging the cunning red knot on the back of the bed, and left the house."
         else:
-            "Вчера у меня не слишком много альтернатив было форме – благодаря рыжей террористке, я промок до нитки."
-            th "А сегодня…"
-            th "Ага, сегодня я тоже лишён выбора."
-            "Я вздохнул и стал надевать форму."
-            "Рубашку, правда, вожатая подменила с повседневной на парадную, с позолоченными пуговицами."
-            "Ну да я не привередливый, и так пойду."
-            "Непокорный галстук не захотел завязываться, поэтому я с удовольствием попрощался с ним и вышел на улицу."
+            "Yesterday I didn’t have too many alternatives to uniform - thanks to the red terrorist, I got completely soaked."
+            th "And today…"
+            th "Yup, no choice today either."
+            "I sighed and began dressing."
+            "True, the counselor changed the shirt from a daily one to formal, with gilded buttons."
+            "I'm not picky, that'll do."
+            "The recalcitrant tie did not want to be tied, so I gladly said goodbye to him and went outside."
     play sound sfx_open_dooor_campus_1
     pause(2)
     play sound sfx_close_door_campus_1
     scene bg ext_house_of_mt_sunset
     show mt smile pioneer
     with fade
-    "Ольга Дмитриевна уже ждала меня за дверью."
+    "Olga Dmitrievna was already waiting for me at the door."
     if alt_day_binder != 1:
-        mt "Смотри, там умывальники. Умоешься, а потом иди на площадь."
+        mt "Look, the washbasins are there. Wash up, and then go to the square."
     else:
-        mt "Не забыл ещё, где умывальники? Двигай туда, а потом на площадь."
-    me "Площадь? Зачем?"
-    mt "За-{w=0.2}ряд-{w=0.2}ка!"
-    mt "Зарядка необходима. Пионер всегда должен хорошо выглядеть и быть в форме!"
-    me "Эм… Ну, как скажете."
+        mt "Remember where the washbasins are? Go there, and then to the square."
+    me "Square? Why?"
+    mt "Mor-{w=0.2}ning {w=0.2}ex-{w=0.2}er-{w=0.2}cise!"
+    mt "Exercising is necessary. A pioneer must always look good and be in shape!"
+    me "Uhh… Whatever you say."
     hide mt with dissolve
     stop ambience
     scene bg ext_houses_sunset with dissolve
-    "Я пожал плечами и поплёлся в сторону умывальников, лопатками чувствуя её изучающий взгляд."
-    "Она явно непроста. И что-то знает. Надо только раскрутить её на разговор. Но как?"
+    "I shrugged my shoulders and trudged towards the washbasins, feeling her scrutinizing gaze with my shoulder blades."
+    "She clearly knows something. You just need to spin her up into a conversation. But how?"
     if dr and (counter_sl_7dl == 0) and (alt_day_binder != 1):
-        mt "Семён, что за кошмар у тебя на шее?"
+        mt "Semyon, what is that abomination on your neck?"
         show mt normal pioneer with dspr
-        me "Э… Галстук?"
+        me "Uh… A tie?"
     else:
-        mt "Семён! А где твой галстук?"
-        me "В комнате. Я на себя эту удавку добровольно не надену."
-        mt "Семён, надо. Без галстука тебя никуда не пустят."
+        mt "Semyon! Where's your tie?"
+        me "In the room. I'm not voluntarily putting on this noose."
+        mt "Semyon, you have to. They won't let you in without a tie."
         scene bg ext_house_of_mt_sunset at zenterleft
         show mt normal pioneer
         with pushleft
-        "Я остановился и развернулся."
-        me "Что, даже в умывальники не пустят?"
+        "I stopped and turned around."
+        me "Even to the washbasins?"
         show mt laugh pioneer with dspr
-        mt "Ну уж на завтрак точно."
-    mt "Ты что же, не умеешь повязывать галстук?"
-    me "Как-то вот не приходилось раньше."
+        mt "Into the canteen - definitely."
+    mt "You don't know how to tie a tie?"
+    me "Somehow I didn't have to before."
     show mt surprise pioneer with dspr
-    "Я заметил странный взгляд, которым она одарила меня, и поспешил продолжить."
-    me "На застёжках носили!"
+    "I noticed the strange look she gave me and hastened to continue."
+    me "Always wore ones with clasps!"
     show mt normal pioneer with dspr
-    "Она кивнула."
-    mt "Это ничего, я тебя научу."
-    mt "После умывания жду тебя здесь, тогда на зарядку вместе пойдём."
-    me "Жду с нетерпением."
-    "Я подпустил в голос немного яда."
+    "She nodded."
+    mt "It's okay, I'll teach you."
+    mt "Go wash up, I'll wait for you here, then we'll go for exercises together."
+    me "Looking forward to it."
+    "I let in a little poison into my voice."
     scene bg ext_houses_sunset with dissolve
-    mt "Ты что, из-за одежды злишься?"
-    mt "Я, как вожатая, не могла оставить её грязной. Не самой же мне её стирать!"
-    "Я ничего не ответил и свернул за ближайшим домиком — там уже начиналась тропинка в сторону садистского аттракциона с ледяной водой и шаткими раковинами."
+    mt "Are you angry because of the clothes?"
+    mt "I, as the squad leader, couldn't just leave them dirty. Don't tell me I was supposed to wash them myself!"
+    "I did not answer and turned behind the closest house - there was the path in the direction of a sadistic attraction with ice water and wobbly sinks."
     if alt_day1_cofront_sl_dv == 1:
-        sl "Физкульт-привет!"
-        "Раздался из-за спины знакомый голос."
-        me "Доброе…"
+        sl "Hello!"
+        "A familiar voice came from behind."
+        me "Morning…"
         show sl smile sport with dspr
-        "Настороженно ответил я."
-        th "Выглядит подозрительно довольной жизнью."
+        "I answered cautiously."
+        th "She looks suspiciously content with life."
         if alt_day1_sl_keys_took == 2:
-            th "Неужели Ольга ещё не отдала ей связку вкупе с профилактическими нравоучениями?"
+            th "Olga still hasn't given her the keys back along with a preventive lecture?"
         else:
-            th "Неужели до сих пор не обнаружила пропажу ключей?"
-        sl "Чем занимаешься?"
-        "Я красноречиво дёрнул плечом, на котором висело полотенце."
-        me "Челюсть драить иду."
-        sl "Не хочешь вместе со мной побегать? А то в одиночку скучно!"
-        th "Снова началось…"
-        "Мы еле-еле расквитались вчера, а она снова пытается сделать меня должником."
-        "Вроде как красивая девушка снизошла до совместных занятий, и теперь я должен чувствовать себя обязанным."
-        me "Спасибо, но нет."
-        "Как мог вежливо ответил я."
-        sl "Жаль! Вместе веселее."
-        me "Прости, спорт — не мой конёк."
-        sl "А, ну ладно!"
-        sl "До встречи на площади тогда!"
+            th "Haven't found the missing keys yet?"
+        sl "What's up?"
+        "I eloquently jerked my shoulder, from which the towel hung."
+        me "Going jaw scrubbing."
+        sl "Would you like to run with me? Since it's boring alone!"
+        th "Not again…"
+        "We barely got even yesterday, and she's trying to put me into debt again."
+        "It seems like a beautiful girl has condescended to co-working, and now I should feel obligated."
+        me "No, thanks."
+        "I answered as politely as possible."
+        sl "Shame! It's more fun together."
+        me "Sorry, sport just isn't my thing."
+        sl "Oh, okay then!"
+        sl "See you at the square then!"
         hide sl with easeoutleft
-        "И она куда-то убежала."
-        "Мне сразу же стало комфортнее и спокойнее."
-        "Чует моё сердце подвох за этим красивым фасадом, ох так-таки и чует!"
+        "And she ran off to somewhere."
+        "I immediately felt more comfortable and relaxed."
+        "There's something wrong behind her beautiful facade, I can feel it!"
     scene bg ext_washstand_day with dissolve
-    "Честно сказать, я так и не понял, в чём прикол умывания ледяной водой что утром, что вечером, когда ты окунаешь разгорячённые конечности в лёд, и твои дыхательные пути принимают размер геометрической точки."
-    "Но на моей памяти никто ни разу не простыл таким образом."
-    "Наверное, строители лагерей знали что-то, чего не знал я."
-    "Ольга Дмитриевна, кажется, тоже знала что-то эдакое, так как я уже на полном серьёзе прикидывал, каково это будет — мыть здесь вечером ноги."
+    "To be honest, I still don’t understand what’s the point of washing with ice water in the morning and in the evening, when you dip your hot limbs into ice, and your airways take on the size of a geometric point."
+    "But as far as I know, no one has ever caught a cold in this way."
+    "I guess the camp builders knew something I didn't."
+    "Olga Dmitrievna, it seems, also knew something, since I was already seriously wondering what it would be like to wash my feet here in the evening."
     show blink
     pause(3)
     scene bg ext_washstand_day
     with dissolve
-    "Так. Стоп."
-    "Какие ноги ещё? Я же уезжать отсюда собрался!"
-    dreamgirl "Ну-ну. Теперь-то, с одеждой в стирке, сам обряженный как записной клоун, разве что без накладного носа, уйдёшь ты очень далеко и добьёшься очень многого."
-    dreamgirl "Потом окажется, что транспортное сообщение здесь отсутствует, а до ближайшего населённого пункта полтыщи километров."
-    "Придётся смириться, хотя бы на этот день. А уж там дайте только добраться до одежды!"
+    "Wait. Hold up."
+    "What legs? I was planning on leaving here!"
+    dreamgirl "Uh-huh. Especially now, with clothes in laundry, dressed up like a textbook clown, except perhaps without the nose, you'll go very far and definitely achieve a lot."
+    dreamgirl "Then it will turn out that there is no transport connection here, and it's half a thousand kilometers to the nearest settlement."
+    "We'll have to put up with it, at least for this day. And then, just get to the clothes!"
     if alt_day_binder != 1:
-        "Картина ожидаемая: несколько раковин-фонтанчиков на отшибе, чтобы пионеры не устраивали внеочередной день Нептуна, ряд кранов по центру для умывающихся и параллельный ряд для всех желающих смочить ноги."
+        "The view was expected: several sink-fountains in the outskirts so that the pioneers do not arrange an unprompted day of Neptune, a row of taps in the center for those who wash themselves and a parallel row for everyone who wants to wet their feet."
     else:
-        "Со вчерашнего дня изменилось ровным счётом ничего: несколько раковин-фонтанчиков на отшибе, чтобы пионеры не устраивали внеочередной день Нептуна, ряд кранов по центру для умывающихся и параллельный ряд для всех желающих смочить ноги."
+        "Nothing changed since yesterday: several sink-fountains in the outskirts so that the pioneers do not arrange an unprompted day of Neptune, a row of taps in the center for those who wash themselves and a parallel row for everyone who wants to wet their feet."
     scene bg ext_washstand2_day at zentercenter
     with dissolve2
     play sound sfx_open_water_sink
     pause(1)
     play sound_loop sfx_water_sink_stream
-    "Я повернул вентиль, заранее приготовившись к тому, что вода будет холодной, и… Вода в сложенные ковшиком ладони хлынула не холодная, а ледяная!"
-    me "А-а-а-а-а!" with hpunch
-    "Я щедро плеснул льдом в лицо и опять заорал."
-    "От обжигающе холодной воды перехватило дыхание, а зубы будто сами заскрипели."
-    "Зато я добился эффекта — мир вокруг будто протёрли влажной тряпочкой, картинка приобрела контрастность и некую, недоступную до этого, глубину и чёткость."
-    "То, что льётся из-под крана у меня в квартире, и рядом не стоит с этим кошмаром!"
-    "Стараясь двигаться как можно быстрее, я достал из свёртка мыло и быстро-быстро намылил ладони, затем лицо — на контрасте с водой прикосновения казались горячими."
-    "Теперь несколько мгновений, и…"
-    me "А-а-а-а!" with vpunch
-    "Это была всего одна горсть, а надо три. Хотя бы."
-    "Пальцы уже ощутимо сводило от холода."
-    th "Да хотя бы ещё одну!"
-    me "А-а-а-ап!" with hpunch
-    "От холода опять перехватило дыхание."
-    "Вот он, наглядный образчик того, как сильно партия любит подрастающее поколение. Всё для детей! И холодную воду."
-    "Стуча зубами, я забрался в свёрток и достал оттуда зубную щётку, а несколько мгновений спустя — и круглую пластмассовую баночку с зубным порошком."
-    me "Порошок! Я уже очень давно не видел ничего подобного."
-    "То, что продаётся сейчас в косметике, безусловно, близко по составу. Но вот этот запах…"
-    "Чем дальше, тем больше я верил в то, что этот лагерь — действительно пионерский."
-    "Зачерпнув щёткой немного, я отправил абразив в рот, стараясь не думать о том, во что выльется полоскание после чистки."
-    "От ледяной воды зубы свело, а кое-где и откровенно заболело."
-    th "Ничего, с порошком все проблемы исчезнут только в путь."
+    "I turned the valve, having prepared in advance for the fact that the water would be cold, and… The water that poured down wasn't cold, it was practically frozen!"
+    me "A-a-a-a-a!" with hpunch
+    "I generously splashed my face with ice and yelled again."
+    "The scalding cold water took my breath away, and my teeth seemed to creak on their own."
+    "But I achieved the effect - the world around seemed to be wiped with a damp cloth, the picture acquired contrast and some depth and clarity that was inaccessible before."
+    "Whatever's pouring from the tap in my apartment doesn't hold a candle to this nightmare!"
+    "Trying to move as quickly as possible, I took out soap from the package and quickly lathered my palms, then my face - in contrast to the water, the touch seemed hot."
+    "A few moments later, and…"
+    me "A-a-a-a!" with vpunch
+    "It was only one handful, and you need three. At least."
+    "Fingers already palpably cramped from the cold."
+    th "At least one more!"
+    me "A-a-a-agh!" with hpunch
+    "The cold took my breath away again."
+    "Here it is, a clear example of how much the party loves the younger generation. Everything for kids! Especially cold water."
+    "With my teeth chattering, I reached into the package and took out a toothbrush, and a few moments later, a round plastic jar of toothpowder."
+    me "Powder! I haven't seen anything like this in a very long time."
+    "What is sold now in cosmetics, of course, is close in composition. But this smell…"
+    "The further I got, the more I believed that this camp truly was a pioneer one."
+    "Scooping up a little with a brush, I sent the abrasive into my mouth, trying not to think about what the rinse would turn into after brushing.."
+    "From the ice water the teeth got crumpled, and frankly, in some places it actually hurt."
+    th "Whatever, with the powder all problems will disappear on the way."
     stop sound_loop
     play sound sfx_close_water_sink
     pause(1)
     scene bg ext_house_of_mt_sunset at zentercenter
     show mt smile sport
     with fade
-    "Забросив банные принадлежности в домик, я вопросительно посмотрел на вожатую."
-    "Она уже переоделась в некое подобие спортивной формы, а вот мне, похоже, так и придётся как придурку весь день ходить в рубашке с золотыми пуговицами."
-    mt "Готов к зарядке?"
-    "Весело спросила она."
-    me "Э… Нет?"
-    mt "Побежали!"
-    "Она бросилась в сторону площади, и мне ничего не оставалось, как двигаться вслед за ней."
+    "Throwing bath accessories into the house, I looked inquiringly at the squad leader."
+    "She has already changed into some kind of sports uniform, but it looks like I will have to walk like a dumbass all day in a shirt with gold buttons."
+    mt "Ready to exercise?"
+    "She joyfully asked."
+    me "Uh... No?"
+    mt "Start running!"
+    "She rushed towards the square, and I had no choice but to follow her."
     scene bg ext_square_sunset with dissolve
-    "На площади уже было многолюдно. Мой отряд собрался здесь практически в полном составе, были видны и какие-то совершенно незнакомые ребята. Хотя тип построения я узнал сразу."
-    "Толпа против лидера, обычный порядок выполнения массовой зарядки."
-    "И кто будет руководить?"
-    "Не Ольга же."
+    "The square was already crowded. My squad almost fully gathered here, some completely unfamiliar guys were also visible. Although I immediately recognized the formation type."
+    "Crowd against a leader, the usual for mass exercising."
+    "Who would be the leader?"
+    "Definitely not Olga."
     show sl smile sport with dissolve
-    "Ответ пробежал мимо меня, сверкая обнажёнными загорелыми икрами."
-    "Она прошла толпу насквозь и встала перед нами, ноги на ширине плеч, ладони по швам."
-    th "Активисточка, кто ж ещё."
-    "Она с секунду изучала собравшихся, кивнула мне, встретившись взглядом, и воздела правую руку в пионерском салюте:"
-    sl "Физкульт-привет!"
-    "Толпа пробормотала что-то нестройное в ответ и подровнялась. Зарядка началась."
-    "Та самая зарядка, которой я занимался почти двадцать лет назад… Практически без изменений."
-    "Я разрешил телу самому вспоминать все махи с поворотами, а сам между делом искал знакомые лица."
-    "Славя делала зарядку с упоением, наслаждаясь самим движением, радуясь солнцу и новому дню."
+    "The answer ran past me, flashing bare tanned calves."
+    "She walked through the crowd and stood in front of us, feet shoulder-width apart, palms at her sides."
+    th "Our activist, who else."
+    "She studied the audience for a second, nodded to me, meeting my eyes, and raised her right hand in a pioneer salute:"
+    sl "Good morning!"
+    "The crowd muttered something incoherent in response and straightened up. Morning exercise started."
+    "The same exercise I did roughly 20 years ago… Practically without any changes."
+    "I allowed my body to remember all the swings with turns, and in the meantime I was looking for familiar faces."
+    "Slavya rapturously exercised, enjoying the movements themselves, rejoicing in the sun and new day."
     hide sl
     show un normal sport far at cleft
     with dissolve
-    "Лена размахивала руками сдержанно и вообще держалась поодаль. Ожидаемое поведение."
+    "Lena waved her hands with restraint and generally kept aloof. Expected behaviour."
     hide un
     show us smile sport at fright
     with dissolve
-    "Ульянка, напротив, делала упражнения с такой силой и скоростью, что, казалось, скоро взлетит от вращательных движений."
+    "Ulyana, on the other hand, exercised with such speed and vigor, that it seemed like she was going to fly straight up."
     show us grin sport with dspr
-    "Увидев, что я на неё смотрю, она на секунду остановилась и показала язык."
+    "Seeing that I was looking at her, she stopped for a second and stuck out her tongue."
     hide us
     show dv sad sport at left
     with dissolve
-    "Алиса откровенно не выспалась: на каждый мах руками она отвечала одним стабильным зевком."
+    "Alisa frankly did not get enough sleep: for each swing of her hands, she answered with one stable yawn."
     if alt_day1_me_d3_dv_feed:
-        "Не иначе, всю ночь пила кефир!"
+        "No doubt, she drank kefir all night!"
     elif (alt_day_binder != 1) and (counter_sl_7dl < 2):
-        "Наверное, не поверила на слово? Вернулась проверить, как там дела в столовой?"
+        "Perhaps didn't believe me? Came back to check how things were going in the canteen?"
     show dv normal sport with dspr
-    "Перехватив мой взгляд, она приветственно мотнула подбородком и снова ушла в себя."
+    "Catching my eye, she shook her chin in greeting and retreated into herself."
     hide dv with dspr
-    th "Ничего необычного на самом деле."
-    "Думал я, размахивая конечностями, наклоняясь в разные стороны и крутя тазом."
-    th "Все упражнения знакомы, делать несложно… И почему люди так не любят зарядку?"
-    "Меня можно было понять, во мне говорила эйфория."
-    "Я честно ожидал, что моя дистония сейчас разыграется, отморозит пальцы, закружит голову и затемнит глаза, однако организм оказался молодой и крепкий."
-    "Можно было сказать, что он выполнял упражнения с удовольствием."
-    "Хотя не уверен, что это то самое удовольствие, которое мне захочется повторить."
-    "После приседаний желающие убежали на пробежку, а несколько минут спустя ко мне подошла Ольга Дмитриевна."
-    "Она уже успела переодеться для линейки."
+    th "Nothing unusual, honestly."
+    "I thought, waving my limbs, leaning in different directions and twisting my pelvis."
+    th "All exercises are familiar, easy to do… Why don't people like exercising?"
+    "I could be understood, euphoria was speaking in me."
+    "I honestly expected that my dystonia would now break out, freeze my fingers, dizzy and darken my eyes, but the body turned out to be young and strong."
+    "You could say that it did the exercises with pleasure."
+    "Although I'm not sure if it's a pleasure I'd like to repeat."
+    "After the sit-ups, those who wished ran away for a run, and a few minutes later Olga Dmitrievna approached me."
+    "She already changed for the lineup."
     show mt smile pioneer with moveinleft
-    mt "Ну и как тебе начало нового дня?"
-    me "Видали и получше."
-    mt "Да ладно, не ворчи. Тебе здесь понравится, просто дай нам шанс и не обращай внимания на всяких хулиганов."
-    th "Можно подумать, кого-то интересует моё мнение."
+    mt "How do you like the start of a new day?"
+    me "Seen better ones."
+    mt "Oh, don't freak out. You'll love it here, just give us a chance and don't mind any bullies."
+    th "As if anyone asked me."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -315,205 +315,205 @@
 label alt_day2_lineup:
     scene bg ext_square_sunset with dissolve
     play music music_list["get_to_know_me_better"] fadein 5
-    "Кто-то взял меня под локоток."
+    "Someone took me by the elbow."
     scene bg ext_square_sunset at zenterright
     show sl smile pioneer at cright
     with dissolve
-    "Славя. И каким-то немыслимым образом уже переодевшаяся."
-    sl "Пошли."
-    me "Куда?"
+    "Slavya. Who has already inexplicably changed."
+    sl "Let's go."
+    me "Where?"
     show sl laugh pioneer with dspr
-    sl "Что значит «куда»?"
-    sl "Строиться пора, сейчас же линейка и нам надо занять наше место."
-    me "А чем тебе не нравится это место?"
-    sl "Тем, что оно не наше, конечно!"
+    sl "What do you mean «where»?"
+    sl "Time for the lineup, we need to take our place."
+    me "And why is this place bad?"
+    sl "Because it's not ours!"
     scene cg d2_lineup
     with dissolve
-    "Она отвела меня на несколько метров правее, почти к самой трибуне, и вытянулась во фрунт. Поневоле я последовал её примеру, встав в шеренгу рядом с ней."
-    "Попытавшись на секунду представить себя настоящим пионером, я потерпел сокрушительное поражение — сознание буксовало и отказывалось видеть меня в постоянном галстуке и рубашечке."
-    "Да я даже в офисе из-за этого работал дай Рандом если год жизни — не мог заставить себя снять свитер."
-    "Это не считая того, что я староват для пионерии."
-    "Волей-неволей мысли переключились на куда более приятные материи."
-    "Я покосился на замершую рядом Славю."
-    "Эта девочка… Она уже успела переодеться, однако я помню, как на ней сидела её чёрная форма с белым кантом."
-    "Да и обычная форма, если уж на то пошло."
-    "Думаю, обряди её в тулуп, и картинка всё равно будет самая интересная."
-    "Я немного замечтался, представляя Славю, облачённую в длинную приталенную шубку с капюшоном, и тут меня аккуратно ткнули в бок."
-    sl "Не спи, наш выход."
-    me "Что?! Какой ещё выход?!"
-    sl "Пошли."
-    "Я буквально чувствовал, как на мне сфокусировались взгляды всех окружающих. От этого в горле пересохло, а ноги стали деревянными."
-    "Толпа сама по себе штука довольно скверная, а вот оказаться в фокусе её внимания…"
+    "She took me a few meters to the right, almost to the very podium, and stretched out into the front. Involuntarily, I followed her example, standing in a line next to her."
+    "Having tried for a second to imagine myself as a real pioneer, I suffered a crushing defeat - my mind slipped and refused to see me in a permanent tie and shirt."
+    "God, even when I worked in the office — I couldn't bring myself to take my sweater off."
+    "This is not counting the fact that I'm too old to be one."
+    "Willy-nilly, thoughts switched to much more pleasant matters."
+    "I glanced sideways at Slavya, who was standing next to me."
+    "This girl… She had already changed, but I remember her wearing her black uniform with white piping."
+    "And her usual uniform, for that matter."
+    "Hell, you could probably dress her in a coat and she'd still look great."
+    "I was daydreaming a little, imagining Slavya, dressed in a long fitted fur coat with a hood, and then I was gently poked in the side."
+    sl "Wake up, our turn."
+    me "What?! What turn?!"
+    sl "Let's go."
+    "I literally felt the eyes of everyone around focus on me. It made my throat dry, and my legs became wooden."
+    "The crowd itself is a pretty bad thing, but to be in the focus of its attention…"
     scene bg ext_square_sunset at zentercenter
     show sl normal pioneer at cright
     show mt normal  pioneer at cleft
     with dissolve
-    "К счастью, Славю такие вещи не заботили совершенно. Она отвела меня под трибуну и оставила там, а сама вышла в центр площади, где на флагштоке уже висел спущенный флаг."
-    mt "Я хочу представить вам нового члена нашей дружной семьи."
-    "Голос Ольги Дмитриевны, профессионально поставленный, разносился по площади безо всякой техники, перекрывая все шумы."
-    mt "Семён!"
-    "Кажется, я покраснел."
+    "Fortunately, Slavya did not care about such things at all. She took me under the podium and left me there, and she herself went to the center of the square, where a lowered flag was already hanging on the flagpole."
+    mt "I want to introduce you to a new member of our friendly family."
+    "Olga Dmitrievna's voice, professionally staged, carried over the square without any equipment, blocking all the noise."
+    mt "Semyon!"
+    "I think I blushed."
     show sl serious pioneer with dspr
-    "Или побледнел."
-    "Не знаю точно. Но что-то с моим лицом однозначно произошло, так как Славя кинула встревоженный взгляд через плечо."
-    mt "Семён только вчера прибыл в лагерь, и ему, как самому последнему гостю, больше всего внимания. Поэтому сегодня он поднимает флаг вместе со Славей."
-    "Я стоял, не в силах ни шевельнуться, ни даже вздохнуть как следует. Меня в буквальном смысле слова парализовало."
+    "Or paled."
+    "I don't know exactly. But something definitely happened to my face, as Slavya threw an alarmed look over her shoulder."
+    mt "Semyon arrived at the camp only yesterday, and as the last guest, he receives the most attention. Therefore, today he raises the flag with Slavya."
+    "I stood there, unable to move or even breathe properly. I was literally paralyzed."
     show mt normal  pioneer at cleft with dspr
-    mt "Ну что же ты, иди."
+    mt "What's wrong, go."
     show sl normal pioneer at cright with dspr
-    "Я продолжал стоять, совершенно отморозившись."
-    ml "Он не хочет!"
-    "Донёсся крик из толпы. Мальчишеский голос, вряд ли кто-то из моих знакомых."
-    ml "Давайте я вместо него."
-    mt "Никаких замещений не будет. Просто Семёну нужно чуть больше времени."
-    "Это да. Насчёт времени."
-    "А лучше — провалиться отсюда так, чтобы никто-никто не нашёл."
-    "Господи, они же все смотрят!"
-    "Они что, не понимают, что я так с места не сдвинусь?! Отвернитесь!"
+    "I continued to stand, completely frostbitten."
+    ml "He doesn't want to!"
+    "There was a cry from the crowd. Boyish voice, hardly anyone I know."
+    ml "Let me do it instead of him."
+    mt "There will be no substitutions. Semyon just needs a little more time."
+    "That's true. About the time, I mean."
+    "Vanishing so that nobody could find me would be even better."
+    "Lord almighty, they're all staring!"
+    "Don't they understand that I wouldn't move?! Turn around!"
     hide mt with fade
-    "К счастью, способность дышать ко мне уже вернулась, а вслед за ней и способность двигаться. Я сделал два шага к флагштоку."
-    sl "Давай, ты до половины поднимай, а потом я."
+    "Fortunately, the ability to breathe has already returned to me, and after it the ability to move. I took two steps to the flagpole."
+    sl "Come on, you raise it halfway, and then I'll continue."
     show sl smile2 pioneer at cright with dspr
-    "Славя ободряюще улыбнулась мне."
-    "Я почувствовал острый приступ благодарности и какой-то нежности к этой девочке."
-    dreamgirl "Это называется стокгольмский синдром. И в обычной жизни ты сбежал бы от неё через полчаса знакомства."
-    "И всё-таки не хотелось вести себя по-свински с человеком, который поддерживает тебя просто потому… Да потому что может это сделать!"
-    "Поэтому я заткнул своего внутреннего скептика и взялся за стальной трос."
-    me "Хорошо."
-    "Промазанные солидолом колёса запели, прокручиваясь, и трос пошёл вверх, вознося алое полотнище, всё выше и выше, вынуждая поднимать голову вслед за ним, пока в поле зрения не остались лишь небо да флаг."
+    "Slavya reassuringly smiled at me."
+    "I felt a sharp attack of gratitude and some kind of tenderness for this girl."
+    dreamgirl "It's called Stockholm syndrome. And in ordinary life, you would run away after half an hour of knowing her."
+    "And yet, I didn’t want to behave like a pig with a person who supports you simply because… Because she just can!"
+    "So I shut up my inner skeptic and took hold of the steel cable."
+    me "Alright."
+    "The grease-coated wheels sang, spinning, and the cable went up, lifting the scarlet cloth, higher and higher, forcing you to raise your head after it, until only the sky and the flag remained in sight."
     hide sl with moveoutright
-    "Я отошёл в сторону — мы добрались до середины мачты — и подъём продолжился."
-    "Это волшебство флага, когда он поднимается, за ним смотрят все. Даже те, кто его недолюбливает или откровенно не уважает."
-    "Я видел как задирается нос Двачевской, как Ульянка поднимает подбородок, даже отряд, откуда был последний выкрик — все единодушно провожали взглядом поднимающееся знамя."
-    "И наконец верхняя точка."
+    "I stepped aside - we got to the middle of the mast - and the ascent continued."
+    "This is the magic of the flag: when it goes up, everyone is watching. Even those who don't like it or frankly do not respect."
+    "I saw how Dvachevskaya's nose turned up, how Ulyanka raised her chin, even the squad from which the last shout came - all unanimously followed the rising banner with their eyes."
+    "And, finally, the peak."
     play sound sfx_7dl["eat_horn"] fadein 1
-    "Будто ожидая этого, жестяной рупор заиграл сигнал горна, священный для любого голодного пионера."
+    "As if anticipating this, the tin horn blared the horn call sacred to any hungry pioneer."
     play ambience ambience_camp_center_evening fadein 1
-    "Пионеры одновременно сделали «напра…», и, дождавшись отмашки Ольги, организованным строем поотрядно двинулись питаться."
-    "Я было направился вслед за ними…"
-    mt "А вас, Семён, я попрошу остаться."
+    "Pioneers simultaneously turned right, and, after receiving Olga's go-ahead, moved in an organized formation towards food."
+    "I almost followed them, but…"
+    mt "And you, Semyon, I will ask you to stay."
     scene bg ext_square_sunset at enterleft
     show sl smile2 pioneer at right with moveinright
     show mt normal pioneer at cleft with dspr
-    th "Без сюрпризов нельзя, конечно."
+    th "Can't have a day without surprises."
     stop music fadeout 3
-    "Меня всё ещё немного шатало после пережитого кошмара, но я мужественно делал вид, что всё в порядке."
-    "Хотя со Славей, похоже, это не сработало. Она озадаченно посмотрела на меня и негромко спросила:"
-    sl "Ольга Дмитриевна, может быть, на попозже…"
-    mt "Никаких «попозже» быть не может, и так уйму времени упустил."
-    sl "Но он же на ногах еле стоит, давайте я его к врачу отведу?"
-    mt "Заодно и к врачу сходит."
-    "Отрезала Ольга."
-    mt "В любом случае, обход необходим, пионер должен знать территорию!"
-    "Достав из кармана какую-то разлинованную бумажку, вожатая протянула её мне."
+    "I was still a little shaky after that nightmare, but I courageously pretended that everything was fine."
+    "Although it didn't seem to work on Slavya. She looked at me puzzled and asked in a low voice:"
+    sl "Olga Dmitrievna, maybe later…"
+    mt "No «laters», he already lost a lot of time."
+    sl "But he can barely stand on his feet, let me take him to the nurse?"
+    mt "He'll get there on the way."
+    "Olga cut her off."
+    mt "In any case, getting to know the camp is required!"
+    "Taking out a lined piece of paper from her pocket, the squad leader handed it to me."
     menu:
-        "Славя, составишь компанию?" if counter_sl_7dl == 2:
+        "Slavya, will you accompany me?" if counter_sl_7dl == 2:
             $ lp_sl += 1
             $ karma += 10
             $ counter_sl_7dl = 3
             show sl grin pioneer with dissolve
-            "Славя подмигнула мне."
-            sl "Почему нет? {w}Начнём сразу с доктора."
-            me "Э… Да. С него."
-            sl "Ольга Дмитриевна?"
-            "Вожатая подозрительно осмотрела нас обоих, после чего медленно кивнула."
-            mt "Если хочешь стать добровольным сопровождающим — мешать не стану."
-            mt "Но от уборки площади тебя это не освобождает."
+            "Slavya winked at me."
+            sl "Why not? {w}We'll start with the nurse."
+            me "Uh… yeah. The nurse."
+            sl "Olga Dmitrievna?"
+            "The squad leader suspiciously eyed us both, then slowly nodded."
+            mt "If you want to voluntarily escort him — I won't interfere."
+            mt "But this does not exempt you from cleaning the square."
             show sl happy pioneer with dspr
-            sl "Ничего, Семён мне поможет. Ведь правда?"
-            "Сделка «уборка площади за компанию прекрасной сопровождающей» показалась мне достаточно справедливой."
-            sl "Тогда давайте сюда бегунок, у меня он будет сохраннее."
-            "Пришлось стерпеть и это."
-            "Красота требует жертв!"
-        "И что это?" if loki:
-            me "Наряд на погрузку картошки?"
-            "Я сложил руки на груди — нервы потихоньку приходили в порядок."
-            me "Или вы мне уже придумали работу?"
+            sl "It's okay, Semyon will help me. Isn't that right?"
+            "The «clean up square in exchange for a beautiful girl accompanying you» deal looked fair enough to me."
+            sl "Then give me the checklist, it'll be safer with me."
+            "This, too, had to be accepted."
+            "Beauty requires sacrifices!"
+        "And what the hell is this?" if loki:
+            me "A notice for a potato unloading shift?"
+            "I folded my arms on my chest - the nerves slowly calmed down."
+            me "Or have you already found me a job?"
             show mt smile pioneer with dspr
-            mt "Работу по лагерю гулять, да."
-            "Она развернула бумажку:"
-            mt "Смотри, здесь несколько позиций, которые тебе нужно заполнить."
-            me "А где позиция «пойти спать в домик?»"
-            mt "После обеда появится. А продолжишь хамить — будешь его накрывать, понял?"
-            "Я пожал плечами и нехотя забрал бумажку."
+            mt "Walking around the camp, yeah."
+            "She unfolded the paper:"
+            mt "Look, there are several lines that you need to fill.."
+            me "Where's the «go back to sleep» line?"
+            mt "Will show up after lunch. And if you keep being rude, you'll have to cook said lunch, understood?"
+            "I shrugged my shoulders and reluctantly took the paper."
             $ lp_dv += 2
             $ lp_us += 1
             $ karma -= 15
-            "За спиной прыснули на два голоса, а когда я обернулся посмотреть — что-то мелькнуло по направлению к столовой."
-            "Что-то… рыжее."
-        "Пройти и получить подписи. Ясно" if not loki:
+            "Two voices burst out behind me, and when I turned to look, something flashed in the direction of the canteen."
+            "Something… red."
+        "Visit and get the signatures. Got that" if not loki:
             $ lp_sl += 1
-            sl "Так тебе ничего объяснять не придётся?"
+            sl "Oh, so you don't need an explanation?"
             show sl smile pioneer with dspr
-            "Обрадовалась девушка."
-            me "Да я в целом не имбецил, кое-что понимаю."
-            "Опыт поездок в разные лагеря всё-таки здорово расширяет кругозор в этом плане."
-            mt "Позиций четыре, но, разумеется, мест куда больше."
-            mt "Ты должен разобраться с тем, что для тебя важнее всего, так как не сможешь заниматься сразу всем."
-            "Я покосился в сторону Слави."
+            "The girl was delighted."
+            me "Yeah, generally I'm not an imbecile, I understand a few things."
+            "The experience of traveling to different camps quite nicely broadened the horizons in this regard."
+            mt "There are four lines, but, of course, there are much more places."
+            mt "You have to figure out what is most important to you, because you can’t do everything at once."
+            "I glanced towards Slavya."
             show mt laugh pioneer with dspr
-            mt "Славя тоже не всем занимается."
+            mt "No, she doesn't do everything, despite how that looks."
             show sl smile2 pioneer with dspr
-            sl "Честно сказать, я вообще почти не хожу в кружки — не успеваю."
-        "Не было печали…":
+            sl "To be honest, I almost don’t go to clubs at all - I just don’t have time."
+        "Everything was going so well…":
             show sl sad pioneer with dspr
-            sl "Всё ещё плохо?"
-            "Славя кинула косой взгляд на вожатую."
-            me "От этого не умирают."
-            mt "Вот именно! {w}Разгуляешься, всё лучше будет."
-            "Я был готов поспорить, что эти двое в моё отсутствие отлично ладят."
-            "А я почему-то стал камнем преткновения."
-            mt "И не надо на меня коситься, Феоктистова — если так беспокоишься, можешь попробовать проводить его лично."
+            sl "Still feeling under the weather?"
+            "Slavya threw a sidelong glance at Olga."
+            me "Nobody has ever died from this."
+            mt "That's right! {w}Walk around, you'll get better."
+            "I was willing to bet that these two get along great in my absence."
+            "And for some reason I became their stumbling block."
+            mt "Feoktistova, stop looking at me like that — if you're that worried, you can personally accompany him."
             show sl serious pioneer with dspr
-            sl "Вы же знаете, что у меня нет на это времени…"
+            sl "You know that I don't have the time for that…"
             show mt laugh pioneer with dspr
-            mt "Да? Ну тогда, решай, что тебе важнее — сопельки новичку подтирать или делать что-то действительно важное."
-            sl "Я…"
-            "Она задумалась."
+            mt "Yeah? Then you better decide what's more important — wiping newcomer's snot or doing something actually important."
+            sl "I…"
+            "She pondered."
             $ lp_dv += 1
-        "Разрешите вопрос по существу?" if herc:
+        "Can I ask a question?" if herc:
             $ karma += 20
-            "Ольга кивнула:"
-            mt "Что?"
-            me "Мне нужно именно записаться или просто посмотреть территорию?"
-            mt "Я хочу, чтобы ты куда-нибудь записался!"
+            "Olga nodded:"
+            mt "Yeah?"
+            me "Do I need to sign up anywhere, or do I just need to see everything on the territory?"
+            mt "I want you to sign up!"
             if lp_sl >= 5:
-                me "А если я хочу помогать Славе?"
-                mt "Значит, будешь помогать Славе!"
+                me "And if I want to help Slavya?"
+                mt "Then you'll be helping Slavya!"
                 show mt laugh pioneer with dspr
-                sl "Но замечу, как отлыниваешь — запишу в кружок макраме, так и знай."
+                sl "But if I’ll notice you shirking - I’ll write you off to a macrame club, just so you know."
             else:
-                mt "Просто так слоняться по территории я тебе не разрешаю!"
-                "Я не собирался вообще сколько бы то ни было находиться на территории сверх необходимого."
-                "Но им-то об этом знать не обязательно, правда?"
+                mt "I'm not just letting you walk around the territory for no reason!"
+                "I had no intention of being on the territory beyond what was necessary."
+                "But they didn't have to know that, did they?"
     if counter_sl_7dl != 3:
         show mt normal pioneer at center with dspr
-        mt "Ещё один момент: один не ходи — дольше проходишь."
-        mt "Или давай тебе провожатого назначу?"
-        mt "Электроник, ну-ка иди сюда."
+        mt "One more thing: don't go alone - you'll walk longer."
+        mt "Or should I get you a guide?"
+        mt "Electronik, come over here."
         if alt_day_binder != 1:
-            me "Ааааа!"
-            "Я схватился за голову."
-            th "Только не этого гриба опять!"
+            me "Aaaaagh!"
+            "I grabbed my head."
+            th "Not this guy again!"
         show el normal pioneer at fleft behind mt with dissolve
-        el "Да, Ольга Дмитриевна?"
-        "Он протянул руку, на которую я не обратил внимания."
-        mt "Проводишь Семёна по лагерю?"
+        el "Yes, Olga Dmitrievna?"
+        "He held his hand out, which I successfully ignored."
+        mt "Will you guide Semyon across the camp?"
         show el smile pioneer far with dspr
-        el "Легко! Вчера про…{w=.5}{nw}"
-        me "Можно, я решу сам, с кем пойду?"
-        "Крайне вежливо попросил я."
-        me "Пожалуйста."
+        el "Sure thing! Yesterday I…{w=.5}{nw}"
+        me "Can I please decide on my guide myself?"
+        "I asked very politely."
+        me "Please."
         show mt surprise pioneer with dspr
-        mt "Ладно, как скажешь. Если сумеешь кого-нибудь уговорить — хорошо."
-        mt "А то давай Электроника?"
-        me "Нет!"
+        mt "Fine, if you say so. If you manage to convince anyone else - so be it."
+        mt "Or maybe you'll do fine with Electronik?"
+        me "No!"
         show mt smile pioneer with dspr
-        mt "Ладно, тогда иди с кем договоришься."
-    mt "И не забудь заглянуть в библиотеку — посмотришь, как рисует наша художница."
-    me "Это ещё зачем?"
-    mt "Пионер должен развивать чувство прекрасного."
-    "Я пожал плечами и направился в сторону столовой."
+        mt "Alright, alright, go with whoever you manage to convince."
+    mt "Oh and don't forget to visit the library - take a look at our resident artist."
+    me "Why would I do that?"
+    mt "A pioneer must develop a sense of beauty."
+    "I shrugged and headed towards the canteen."
     stop sound fadeout 3
     stop music fadeout 3
     stop ambience fadeout 6
@@ -524,99 +524,99 @@ label alt_day2_bf:
     play ambience ambience_dining_hall_full fadein 3
     play music music_list["everyday_theme"] fadein 5
     scene bg int_dining_hall_people_sunset_7dl with fade
-    "Завтрак ничем не отличался от ужина."
-    "Разве что пионеры гудели ощутимо тише и сидели заметно кучнее."
+    "Breakfast isn't any different from supper."
+    "Although the pioneers buzzed noticeably quieter and sat noticeably more crowded."
     if alt_day_binder == 1:
-        "По соседству с рыжими я заметил и вчерашнюю вежливую девушку."
-        "Она перехватила мой взгляд и разулыбалась."
-        "Ладно, пускай улыбается, главное, чтобы болтать не начала."
-    "Я огляделся в поисках свободного места."
-    "За столами нашего отряда таких мест было три: рядом со Славей, напротив Лены и в уголке у окна."
+        "Near the redheads, I noticed yesterday's polite girl."
+        "She met my stare and smiled."
+        "Fine, let her smile, as long as she doesn't start talking."
+    "I looked for a free spot."
+    "There were three such places at the tables of our squad: next to Slavya, opposite of Lena and in the corner by the window."
     if alt_day_binder == 1:
-        "Ну и по соседству с рыжими. Хотя я этот вариант не рассматривал."
+        "And also near the redheads. I didn't consider this option, period."
     menu:
-        "Сесть со Славей":
+        "Sit with Slavya":
             play music music_list["she_is_kind"] fadein 3
             $ alt_day2_bf = 'sl'
             $ lp_sl += 1
             scene bg int_dining_hall_people_sunset_7dl at zenterright
             show sl normal pioneer
             with dissolve
-            "Я приметил парочку свободных мест рядом и вопросительно посмотрел на Славю."
+            "I noticed a couple of empty seats nearby and looked inquiringly at Slavya."
             show sl smile pioneer with dspr
-            "Девочка улыбнулась и кивнула."
-            "Вот и славно. Приятно, когда понимают с полувзгляда."
-            "Пришлось на секунду отлучиться, чтобы прогнать покушающихся пионеров, и через пять минут мы расселись у окна."
-            "Завтрак как завтрак. Каша геркулесовая, клееобразная… Сладкая! Пара кусков белого хлеба, масло, колбаса плюс какао."
-            "Мгновенно отодвинув тарелку в сторону, я сунул нос в стакан."
-            th "Настоящее советское какао! Это же…"
-            "И через секунду со вздохом разочарования отставил стакан."
-            th "Эти… Эти… Я не знаю даже, какой эпитет подобрать! Они испортили толковый какао сгущёнкой! Ну что за люди!"
+            "The girl smiled and nodded."
+            "Alrighty then. Feels nice when you're understood at a glance."
+            "We had to leave for a second to drive away the attempting pioneers, and five minutes later we sat down at the window."
+            "Breakfast like breakfast. Herculean porridge, gluetinous… Sweet! A couple of slices of white bread, butter, sausage plus cocoa."
+            "Immediately setting the plate aside I glued my eyes to the glass."
+            th "Real soviet cocoa! It's…"
+            "And a second later, with a sigh of disappointment, I put down the glass."
+            th "These… These… I don't even know which words to use! They screwed cocoa up by adding condensed milk! What the hell, man!"
             show sl smile2 pioneer with dspr
-            "Славя, искоса наблюдающая за моими эволюциями, втихомолку хихикнула, разглядев бездну разочарования на моём лице."
-            sl "Запретили у нас его. После того как несколько человек аллергию получили. Вот его и разводят."
-            "Ну да. Как будто таким образом как-то уберут аллерген."
-            "Какао есть какао: у тебя либо есть на него аллергия, либо нет. Причём здесь сгущёнка вообще?"
-            "Я не стал делиться умозаключениями со Славей, уткнувшись в тарелку с кашей, тем более, что её уже была почти пуста, а мне ещё хотелось задать ряд вопросов."
+            "Slavya, who was watching my evolution from the sidelines, giggled quietly, seeing the abyss of disappointment on my face."
+            sl "We banned it. After several people got allergies. That's why they dilute it now."
+            "Uh-huh. As if that'll remove the allergen."
+            "Cocoa is cocoa: you're either allergic to it, or you aren't. How the hell does condensed milk relate to this?"
+            "I did not share my conclusions with Slavya, burying myself in a plate of porridge, especially since hers was already almost empty, and I also wanted to ask a number of questions."
             show sl normal pioneer with dspr
-            sl "Как тебе первая ночь на новом месте?"
-            "Облизав ложку, спросила девочка."
-            "Я спешно проглотил ком каши."
-            me "Ничего не помню, очень болит голова…"
-            "Усмехнулся я."
-            me "Но неплохо, наверное — воздух, природа, люди…"
-            sl "По тебе было заметно. Ты вчера был какой-то измождённый. А сегодня, вон, уже и румянец на щеках появился, не стыдно в люди вывести."
-            me "Ты собираешься выводить меня в люди?"
+            sl "How's your first night?"
+            "She asked, licking the spoon."
+            "I hastily swallowed a lump of porridge."
+            me "Don't remember anything, head hurts…"
+            "I smirked."
+            me "But it probably was fine - fresh air, nature, people…"
+            sl "Yeah, I could see that. Yesterday you looked exhausted. And today a blush has already appeared on the cheeks, definitely not a shame to show you to people."
+            me "You were going to show me to people?"
             show sl laugh pioneer with flash
-            "Не поверил ушам я, а Славя рассмеялась:"
+            "I did not believe my ears, and Slavya laughed:"
             if (counter_sl_7dl <= 2):
-                sl "А чем тебе обход — не выход в свет?"
-                me "Я думал о каком-нибудь мероприятии…"
+                sl "Running around with a checklist doesn't count?"
+                me "I was thinking more like an event of sorts…"
                 show sl smile2 pioneer with dspr
-                sl "Какой-нибудь раут? Бал?"
-                sl "Кстати, завтра будут танцы, и…"
+                sl "Some sort of rout? Ball?"
+                sl "Actually, tomorrow there will be disco, and…"
             else:
-                sl "Разумеется, собираюсь! Хотя бы до площади тебя провожу, там выберем, куда тебе идти в первую очередь. А мне ещё надо будет там прибраться."
-                "Она немного помолчала, смакуя богомерзкое какао."
-                "Я тоже погрузился в какие-то свои размышления."
+                sl "Of course I was going to! At least I'll take you to the square, and then we'll choose where to go first. And I still have to clean up there."
+                "She was silent for a while, savoring the ungodly cocoa."
+                "I also fell into my thoughts."
                 scene black with fade2
-                sl "…танцы! Но у нас тут мало мальчиков, и на медленные танцы редко приглашают." with hpunch
+                sl "…dancing! But we don't have many boys here, and slow dances are rare." with hpunch
                 scene bg int_dining_hall_people_sunset_7dl at zenterright
                 show sl shy pioneer
                 show unblink
                 with dissolve
-                "Кажется, она что-то говорила!"
+                "Huh, she was saying something!"
 
-            "Славя опустила глаза, быстро подняла на меня, и опять опустила."
-            sl "Может… Ты…"
-            "Я уже говорил про непосредственную Славю, спортивную, целеустремлённую…"
-            "А теперь мне выпала уникальная возможность познакомиться со Славей… Даже не знаю.{w} Кокетничающей?"
+            "Slavya lowered her eyes, then quickly looked at me, then lowered them back."
+            sl "Maybe… You…"
+            "I have already spoken about the direct Slavya, athletic, purposeful…"
+            "And now I have a unique opportunity to meet Slavya… I don't even know.{w} Flirty?"
             if counter_sl_7dl > 1:
-                "Только не так, как раньше."
-            th "Ну и правильно. Что она, робот, что ли?"
+                "Just not like before."
+            th "That's true. What is she, a robot or something?"
             if herc or loki:
-                me "Ещё раз. Когда танцы?"
+                me "Alright. When's the ball?"
                 if (counter_sl_7dl <= 2):
-                    sl "Завтра!"
+                    sl "Tomorrow!"
                 else:
-                    sl "Я же говорю, завтра!"
+                    sl "I'm telling you, tomorrow!"
 
-                me "Вот и всё. {w}Можешь считать, что приглашена — танец со мной ты застолбила."
-                "Я немного подумал."
-                me "Но только медленный! Я этих ваших парных быстрых танцев не разумею!"
-                sl "Медленный, да."
+                me "That's it. {w}Consider yourself invited - you did ask for a dance with me."
+                "I thought for a bit."
+                me "But only a slow one! I don't get these paired fast dances of yourself!"
+                sl "A slow one, yeah."
             else:
-                me "Не слишком люблю танцы. Да и танцую я…"
-                sl "И всё равно приходи! Будет весело, вот увидишь."
-                me "Ладно… Я… Я подумаю."
-                "Я снова смутился и отвернулся под её испытующим взглядом."
-            "Остатки завтрака прошли быстро, скомкано и молчаливо."
-        "Сесть одному":
+                me "I don't like dancing too much. And my dancing skills are…"
+                sl "Come along anyways! It'll be fun, you'll see."
+                me "Okay… I… I'll think."
+                "I was embarrassed again and turned away under her searching gaze."
+            "The rest of breakfast passed quickly, crumpled and silent."
+        "Sit alone":
             scene
             $ renpy.show("bg int_dining_hall_people_sunset_7dl", at_list = [zentercenter], what = Noir("bg int_dining_hall_people_sunset_7dl", brightness = -0.4, saturation = -0.4))
             $ alt_day2_bf = 'me'
-            "Я поел в самые сжатые сроки. Некогда рассиживаться, пора осмотреть это место!"
-        "Рискнуть и сесть с рыжими" if alt_day_binder == 1:
+            "I ate in the shortest amount of time. There is no time to waste, gotta explore this place!"
+        "Take the risk and sit with redheads" if alt_day_binder == 1:
             $ alt_day2_bf = 'dv_us'
             play music music_list["i_want_to_play"] fadein 1
             $ lp_dv += 1
@@ -626,143 +626,143 @@ label alt_day2_bf:
             show us smile pioneer at cleft
             with blind_l
             if alt_day1_me_d3_us_robbed:
-                "Ульянка подмигнула мне и расплылась в приветливой улыбке:"
-                us "Привет, новичок!"
-            "Я опасливо покосился на неё и прикрыл тарелку локтем."
-            "Мда, чувствую, обзаведусь я здесь парой-тройкой приятных привычек."
+                "Ulyanka winked at me and broke into a friendly smile:"
+                us "Hey, newbie!"
+            "I cautiously glanced at her and covered the plate with my elbow."
+            "Hmm, I feel like I'll get a couple of good habits here."
             $ renpy.show("bg int_dining_hall_people_sunset_7dl", at_list = [enterright], what = Noon("bg int_dining_hall_people_sunset_7dl"))
             show us smile pioneer at left with moveinleft
             show dv grin pioneer2 at right
             with dissolve
-            "Алиса вскочила — та вежливая девочка, с которой я надеялся поесть, ушла."
-            "И уселась так, что я оказался окружён с обоих сторон."
-            dv "Чё такой серьёзный?"
-            "Рыжие синхронно пихнули меня локтями и рассмеялись, когда я издал сдавленный стон."
+            "Alisa jumped up - that polite girl with whom I had hoped to eat has left."
+            "And sat down, surrounding me from the other side."
+            dv "Why so serious?"
+            "The redheads simultaneously nudged me and laughed as I let out a strangled moan."
             show us grin pioneer with dspr
-            us "Ты, вроде, не очень большой тормоз."
-            us "Хочешь с нами?"
-            me "С вами?"
-            "Я знал обеих безобразниц меньше суток, но и этого времени мне хватило, чтобы догадаться."
-            "От них стоило держаться подальше."
+            us "You seem smart enough."
+            us "Wanna come with us?"
+            me "With you?"
+            "I knew both of them for less than a day, but this time was enough for me to guess."
+            "Definitely should stay away from them."
             show dv laugh pioneer2 with dspr
-            dv "Да у него не получится — кишка тонка!"
-            me "Извини?"
-            dv "Думаешь, не видела, как ты вчера с активисткой сяськался у столовой?"
-            dv "А потом в столовую пошли…"
+            dv "Nah, he won't do - he doesn't have any guts after all!"
+            me "Excuse me?"
+            dv "You think I didn't see how you hung out with an activist at the canteen yesterday?"
+            dv "And then you went in…"
             show dv shocked pioneer2 with dspr
-            dv "Неужели вы там…"
-            me "Перестань."
+            dv "Did you…"
+            me "Stop."
             if alt_day1_me_d3_dv_feed:
-                me "Если ты вдруг забыла, после этих, как ты сказала, «сяськаний», я тебе покушать принёс!"
+                me "In case you suddenly forgot, after this, as you said, 'hunging out', I brought you something to eat!"
                 show dv grin pioneer2 with dspr
-                dv "А ты опасен!"
+                dv "Damn, you're dangerous!"
                 show us laugh pioneer with dspr
-                us "Слышала это?"
+                us "You hear that?"
                 show us surp1 pioneer with dspr
-                "Она прижала нос и гнусавым тоном прогундела:"
-                us "Как ты сказала, если ты вдруг забыла принести покушать!"
+                "She covered her nose and mocked me in a nasal tone:"
+                us "As you said, if you suddenly forgot to bring food!"
             else:
                 show dv grin pioneer with dspr
-                dv "Нельзя, ты что! Как же ты тогда побежишь Оленьке Митривне жалиться, как тебя девочки обидели, бякой обозвали."
-            me "Вы наиздевались?"
-            "Вежливо спросил я."
+                dv "No way! How can you run to Olga Dmitrievna to complain then, how the girls offended you, called you bad words."
+            me "Are you done?"
+            "I asked politely."
             show us normal pioneer with dissolve
-            us "А что такое?"
-            me "Да так."
-            "Я крутнул тарелку по столу — в ней оставалось ещё половина порции."
-            me "Если вдруг нет, то я вам её поровну на голову надену."
+            us "Why do you ask?"
+            me "No reason."
+            "I twisted the plate on the table - there was still half the portion left in it."
+            me "In case you aren't, I'll split this plate between both of your heads."
             play sound sfx_punch_medium
             with vpunch
-            dv "Он неплох!"
-            "Заключила Алиса."
-            dv "Хоть и лоховат."
-            us "Ничего, я с ним поработаю."
-            "Они поднялись и оставили меня одного."
+            dv "Oh, he's pretty good!"
+            "Alisa concluded."
+            dv "Although a bit dumb."
+            us "That's alright, I'll work on him."
+            "They got up and left me alone."
             hide us
             hide dv
             with flash
-            "Оставляя меня одного."
-            "С текущей по спине кашей."
-            "Мерзавки."
-            "Какое, всё-таки, счастье, что я мстительная тварь!"
-            "Не увернулась ни одна мерзавка!"
-        "Сесть с Леной":
+            "Left me alone."
+            "With porridge dripping down my neck."
+            "Little shits."
+            "How fortunate it is, that I'm a vengeful son of a bitch!"
+            "Not a single bastard dodged!"
+        "Sit with Lena":
             play music music_7dl["take_my_hand"] fadein 1
             $ lp_un += 1
             $ alt_day2_bf = 'un'
             if alt_day1_un != 0:
-                "После вчерашней беседы я полагал, что не стал Лене уж совсем противен."
-                "Во всяком случае, мне хотелось бы на это надеяться."
+                "After yesterday's conversation, I thought that Lena was not completely disgusted with me."
+                "Or well, I hoped it was that way."
             else:
-                "Вчера не хватило духу подойти и поздороваться — скажу как на духу."
-                "Может быть, сегодня получится что-нибудь."
-            "Я занял столик и стал ловить момент."
+                "Yesterday I didn’t have the courage to come up and say hello - I tell you what."
+                "Maybe I'll work something out today."
+            "I occupied a table and began waiting for an opportune moment."
 
             show un normal pioneer at center
             with dissolve
-            "Место напротив неё пустовало, так что я решил, что ничего дурного не будет в том, что я подсяду."
-            me "Можно?"
-            "Она, не отрываясь от еды, утвердительно кивнула."
+            "The seat across from her was empty, so I figured nothing bad would happen if I sat down."
+            me "May I?"
+            "She nodded without looking up from her meal."
             if lp_un < 2:
                 show un normal pioneer with dissolve
-                "Иллюзия пренебрежения сложилась полная."
-                "Я на всякий случай даже посмотрел руку на просвет — не стал ли вдруг прозрачным."
-                "Ничего такого."
-                me "Приятного аппетита?"
-                "Ещё один кивок."
+                "Complete illusion of neglect."
+                "Just in case, I even looked at my hand in the light - what if it suddenly became transparent?"
+                "Didn't seem like it."
+                me "Bon appetit?"
+                "Another nod."
             else:
                 show un shy pioneer with dissolve
-                "Щёки её при этом вспыхнули."
-                me "Приятного аппетита?"
+                "Her cheeks lit up at the same time."
+                me "Bon appetit?"
                 show un smile pioneer with dissolve
-                un "Спасибо. И тебе."
-                me "Как спалось?"
-                un "Ээээ… Отлично."
+                un "Thank you. You too."
+                me "How was your sleep?"
+                un "Uhhh… Wonderful."
                 show un shy pioneer with dissolve
-                "Она смутилась ещё раз, и я постарался не думать, что тому могло послужить причиной."
-                me "Мне, вот, тоже отлично."
-            "Я не стал набирать много, ограничился парой бутербродов и чашкой с мерзким какао."
-            "Болтать мне такой завтрак не мешал."
+                "She got embarrassed again, and I tried not to think what could be the reason for this."
+                me "I've had a great sleep too."
+            "I didn't get a lot, limited myself to a couple of sandwiches and a cup of nasty cocoa."
+            "Such a breakfast didn't stop me from talking."
             show un normal pioneer with dspr
-            "Собственно, я не столько ел, сколько глазел."
-            "Было в Лене что-то такое, заставляющее если не восторгаться, то хотя бы… Да я даже не знаю. Улыбаться ей, наверное."
-            "Этот забитый взгляд, эта скромность, перерастающая в ледяное отчуждение…"
-            "Я видел, как она смотрит на людей таким взглядом. В нём нет ничего — {w}одна зелёная пустота."
-            "Знакомый взгляд. Знакомое дискретное поведение, когда с близкими мы веселы и игривы, а на улице изображаем собой морду щитка высокого напряжения."
+            "Actually, I didn't eat so much as I stared."
+            "There was something in Lena that made you, if not admire, then at least… I don't know. Smile at her, I guess."
+            "This downtrodden look, this modesty, growing into an icy alienation…"
+            "I've seen her look at people with that look. It doesn't have anything — {w}only green emptiness."
+            "A familiar look. Familiar discrete behavior, when we are cheerful and playful with loved ones, and on the street we represent the front of a high-voltage shield."
             show un shy pioneer with dspr
-            un "Ты так смотришь…"
-            "Она испытующе заглянула мне в глаза, однако тут же залилась румянцем."
-            "Её взгляд смущённо запрыгал по стенкам, столу, тарелкам — чему угодно, лишь бы не возвращаться ко мне."
-            me "Как?"
-            "Она пошевелила пальцами, подбирая определение."
-            un "Странно…"
-            me "У меня мало знакомых здесь. Вернее, почти нет. Только имена…{w} А впрочем, я пока не готов обсуждать эту тему."
+            un "You look like…"
+            "She looked inquisitively into my eyes, but immediately blushed."
+            "Her gaze jumped embarrassedly along the walls, the table, the plates - anything, as long as it wasn't me."
+            me "Like?"
+            "She wiggled her fingers, searching for a definition."
+            un "Strange…"
+            me "I have very few friends here. Or rather, almost none. Only names…{w} However, I'm not ready to discuss this topic yet."
             show un surprise pioneer with dspr
-            un "Почему?"
-            me "Что почему?"
-            un "Почему сейчас обсудить не хочешь?"
-            me "Тяжёлая тема для завтрака."
+            un "Why?"
+            me "What do you mean why?"
+            un "Why don't you want to discuss it?"
+            me "Too heavy of a topic for breakfast."
             show un smile pioneer with dspr
-            "Я улыбнулся."
-            me "Давай обсудим что-нибудь другое."
-            me "Например, тебя."
+            "I smiled."
+            me "Let's discuss something else."
+            me "For example, {i}you{/i}."
             show un shy pioneer with dspr
-            "Лена недоумённо посмотрела на меня."
-            un "Меня? А что во мне обсуждать?"
-            me "А что, прямо-таки и нечего?"
-            "В ответ она опять смутилась и спряталась за чашкой с какао."
-            "Давно ли было так, что ты сам сидел по ту сторону баррикад и мысленно материл тех, кто неспособен прочитать элементарный невербальный знак «Отвянь»!"
-            "А теперь ты сам! Лезешь! И навязываешься! Да что с тобой такое?!"
-            un "…и что ты хочешь узнать?"
-            "Наконец она поняла, что просто так я от неё не отстану, и решила, что проще нахалу дать, что он просит, чем объяснить, почему нет."
-            me "Ох, прости. Ты не обязана отвечать на такие вопросы. Тем более, что мы и знаем друг друга всего ничего…"
+            "Lena looked at me in bewilderment."
+            un "Me? What's there to discuss about me?"
+            me "What, there really isn't anything?"
+            "In response, she got embarrassed again and hid behind a cup of cocoa."
+            "How long ago was it that you yourself sat on the other side of the barricades and mentally cursed those who are unable to read an elementary non-verbal sign «Screw off»!"
+            "And now you! Yourself! Impose on her! The hell's wrong with you?!"
+            un "…and what do you want to know?"
+            "Finally, she realized that I wouldn’t leave her just like that, and decided that it’s easier to give the impudent what he asks for, rather than to explain why not."
+            me "Oh, sorry. You don't have to answer such questions. Especially since we practically don't know each other…"
             show un normal pioneer at center
             with dspr
-            un "Да н-нет… Всё…"
-            "Она составила недоеденный завтрак на поднос и поднялась."
+            un "Well, n-no… Everything's…"
+            "She put her half-eaten breakfast on a tray and got up."
             show un shy pioneer with dspr
-            un "Мне надо идти. Увидимся."
-            me "Пока…"
+            un "I need to go. See you."
+            me "See you…"
             hide un
             with dissolve
     stop music fadeout 3
@@ -778,87 +778,87 @@ label alt_day2_un_guide:
     $ alt_day2_convoy = 'un'
     if herc:
         if alt_day2_bf == 'un':
-            "Она закончила завтрак раньше меня, и мне пришлось здорово поторопиться, чтобы догнать её."
-            "В конце концов, я её кое о чём вчера спросил…"
-            "И хотелось бы услышать ответ!"
-        "Позавтракав, девочка брела куда-то, задумчиво глядя себе под ноги, и мне пришлось топать громче обычного, чтобы не напугать её."
+            "She finished breakfast before me, and I had to hurry up a lot to catch up with her."
+            "After all, I did ask her yesterday…"
+            "And I definitely wanted to hear an answer!"
+        "After breakfast, the girl was wandering to somewhere, looking thoughtfully at her feet, and I had to stomp louder than usual so as not to frighten her."
         show un normal pioneer with dissolve
         if alt_day2_bf == 'un':
-            me "Слушай, прости, если я что-то не то сказал там на завтраке."
-            me "Я понимаю, что навязчив и приставуч. Сам не люблю таких людей, если уж на то пошло. Просто…"
-            un "Ты не навязчив."
-            me "Правда? А мне показалось…"
-            un "Всё хорошо. Просто я и правда не знаю, что о себе рассказать."
+            me "Look, I'm sorry if I said something wrong there at breakfast."
+            me "I understand that I'm intrusive and clingy. I don't like people like that myself, if it comes to that. It's just…"
+            un "You're not intrusive."
+            me "Really? It looked like…"
+            un "It's okay. I just don't really know what to say about myself."
         else:
-            me "Привет!"
-            un "Д-доброе утро."
-        "Сегодня она выглядела куда более уверенной, чем вчера. Во всяком случае, вчерашнего выражения необъяснимого страха в её глазах я разглядеть не смог."
-        "А это значит…"
-        me "Я насчёт вчерашнего своего предложения."
-        me "Ты как, надумала что-нибудь?"
-        "Она кивнула."
-        un "Да, думаю, я сумею показать тебе лагерь."
+            me "Hello!"
+            un "G-good morning."
+        "Today she looked much more confident than yesterday. In any case, I failed to see yesterday's expression of inexplicable fear in her eyes."
+        "And that means…"
+        me "I'm here about my yesterday's offer."
+        me "Did you make a decision?"
+        "She nodded."
+        un "Yes, I think I can show you around the camp."
     elif loki:
-        "Я сидел на стальных перилах крылечка столовой и ждал Лену."
-        th "Она же вчера обещала подумать. Вдруг согласится? Чем чёрт не шутит."
+        "I sat on the steel railing of canteen's porch and waited for Lena."
+        th "She promised to think about my offer. Maybe she will agree? You never know."
         show un normal pioneer far with dissolve
-        "Наконец открылась дверь, и из помещения столовой вышла она."
-        "Я поспешил спрыгнуть со своего насеста и подошёл."
+        "Finally the door opened and she stepped out."
+        "I hurried to jump off my perch and approached her."
         if alt_day2_bf == 'un':
             show un normal pioneer with dissolve
-            me "Слушай, прости, если я глупостей на завтраке наговорил."
-            me "Сам не знаю, что на меня нашло. Давай попробуем ещё раз, и в этот раз я постараюсь быть менее назойливым."
+            me "Look, I'm sorry if I said something stupid at breakfast."
+            me "I don't know what came over me. Let's try again, and this time I'll try to be less pushy."
             show un smile pioneer with dspr
-            un "Ты не назойлив."
-            me "Правда? А мне показалось…"
-            un "Правда."
+            un "You aren't pushy."
+            me "Really? I thought…"
+            un "Really."
         else:
             show un normal pioneer with dissolve
-            me "Здравствуй, красавица!"
-            "Улыбнулся я."
+            me "Hello, beautiful!"
+            "I smiled."
             show un shy pioneer with dspr
-            un "Д-доброе утро."
-        "Сегодня она выглядела куда более уверенной, чем вчера. Во всяком случае, безразличный холод, здорово меня вчера напугавший, как будто исчез."
-        "А это значит…"
-        me "Надумала чего-нибудь за ночь?"
+            un "G-good morning."
+        "Today she looked much more confident than yesterday. In any case, the indifferent cold, which frightened me so much yesterday, seemed to have disappeared.."
+        "And that means…"
+        me "Did you think about my proposal?"
         show un grin pioneer close with dspr
-        "Она опустила глаза на несколько секунд, а когда подняла их…"
+        "She lowered her eyes for a few seconds, and when she raised them…"
         show un smile3 pioneer close with dspr
-        "Там больше не было ни стеснения, ни нерешительности."
-        "Она встала рядом со мной и нашла рукой мою руку."
+        "They had no more shyness or indecisiveness."
+        "She stood next to me and found my hand with hers."
         show un smile2 pioneer close with dspr
-        un "День какой сегодня замечательный."
-        "От резкой перемены в поведении девушки я на несколько секунд потерялся, и она нетерпеливо потянула меня за руку."
+        un "What a nice day today."
+        "I was lost for a few seconds at the sudden change in the girl's behavior, and she impatiently pulled my hand."
         show un laugh pioneer close with dspr
-        un "Пошли!"
+        un "Let's go!"
     else:
-        "Лена нашла меня сама после завтрака."
+        "After breakfast Lena found me on her own."
         show un normal pioneer with dissolve
-        me "Привет!"
-        "Улыбнулся я."
-        "Она ничего не ответила и несколько секунд пристально вглядывалась мне в лицо. Почти как Славя вчера."
-        "И когда я уже начал нервничать, она вдруг каким-то очень взрослым голосом спросила:"
-        un "Т-ты вчера серьёзно…"
+        me "Hello!"
+        "I smiled."
+        "She didn't reply, but stared intently into my face for a few seconds. Almost like Slavya yesterday."
+        "And when I was already starting to get nervous, she suddenly asked in a very adult voice:"
+        un "Y-yesterday, w-were you serious…"
         show un shy pioneer with dspr
-        "Она не договорила."
-        "Серьёзно — что? Приехал? Пригласил прогулять меня по лагерю? Ударился ногой?"
-        "Терпеть не могу недосказанности."
-        "Она ждала ответа, краснея всё больше."
-        "А я и сам чувствовал себя не легче."
-        "Не знаю, что на меня нашло — то ли пьяный ночной воздух, то ли хорошее настроение…"
-        "Чтобы вот так запросто позвать девушку на импровизированное, но всё же свидание…"
-        "Лена стояла и ждала ответа, а у меня вдруг опять воздух в лёгких закончился, просто весь ушёл на то, чтобы остудить пылающие щёки."
-        "И сил даже кивнуть не хватало."
+        "She hasn't finished the thought."
+        "Seriously - what? I arrived? Invited you to walk around the camp? Hit my foot?"
+        "I can't stand unfinished thoughts."
+        "She was waiting for an answer, blushing more and more."
+        "And I wasn't feeling any better myself."
+        "I don’t know what came over me - either the drunken night air, or a good mood…"
+        "To simply invite a girl to an improvised date, but a date after all…"
+        "Lena stood and waited for an answer, and suddenly I ran out of air in my lungs once more, it all just went to cool my flaming cheeks."
+        "I didn't even have any strength to nod."
         hide un with dissolve
-        "Лена тихонько вздохнула и развернувшись, почти ушла, когда мой столбняк наконец прекратился."
-        me "Да."
-        "Глядя ей в спину тихо сказал я."
-        me "Мне трудно общаться глаза в глаза, но я и правда хочу, чтобы ты составила мне компанию."
+        "Lena sighed softly and turned around, almost left, when my suddenly stupor finally ended."
+        me "Yes."
+        "I quietly said, looking at her back."
+        me "It's hard for me to communicate face to face, but I really want you to keep me company."
         show un grin pioneer with dissolve
-        "Она замерла в дверях."
-        un "Тогда пошли."
-        "Сказала она и вышла на улицу."
-        "На меня она вполне ожидаемо не обернулась."
+        "She stopped at the door."
+        un "Then let's go."
+        "Said she and went outside."
+        "As expected, she didn't even look at me."
         hide un with dissolve
     stop sound_loop fadeout 7
     stop music fadeout 3
@@ -872,265 +872,265 @@ label alt_day2_convoy:
     play music music_list["so_good_to_be_careless"] fadein 1
     play ambience ambience_camp_center_evening fadein 5
     if alt_day2_un_rej_convoy:
-        "После неудачной попытки найти себе провожатого я подумал, что терять мне всё равно нечего, потому без особых раздумий выбрал, с кем пойду."
-        "Очевидная кандидатура…"
+        "After an unsuccessful attempt to find a guide, I thought that I still had nothing to lose, so without much thought I chose who I would go with."
+        "The obvious choice…"
     else:
-        "Я задумался о том, кого можно было бы привлечь в качестве гида."
+        "I thought about who could be taken as a guide."
         if alt_day_binder == 1:
-            "Совершенно очевидно, что ни Ульяна, ни та девушка (кстати, надо бы с ней всё-таки познакомиться!) из медпункта в качестве провожатых не подходили."
-            "И кто тогда?"
+            "It is quite obvious that neither Ulyana nor that girl from infirmary (by the way, I still need to meet her!) weren't suitable for this role."
+            "Who would it be then?"
         else:
-            "Вчерашняя экскурсия с Электроником мне абсолютно ничего не дала в плане знакомства с лагерем."
+            "Yesterday's tour with Electronik was completely useless in terms of getting to know the camp."
     menu:
-        "Славя":
+        "Slavya":
             if alt_day2_un_rej_convoy:
-                "Получив обоснованный отказ, я решил попытать счастья со Славей."
+                "Having received a reasonable refusal, I decided to try my luck with Slavya."
             else:
-                "Немного подумав, я остановился на Славе."
-            "В конце концов, она тут активистка, всё должна знать."
+                "After a little thought, I settled on Slavya."
+            "After all, she's the activist here, she probably knows a lot."
             if alt_day1_sl_keys_took == 1:
-                "Заодно и ключики ей отдам, всё равно впустую карман тянут."
+                "And I can hand over her keys while I'm at it."
             scene bg ext_dining_hall_near_day with fade
-            "Я перехватил девочку на выходе из столовой."
+            "I intercepted the girl exiting the canteen."
             show sl normal pioneer
-            me "Привет ещё раз!"
-            sl "Привет!"
-            me "Славя, ты сейчас не слишком занята?"
-            sl "Прямо сейчас — нет. А что такое?"
-            me "Не хочешь погулять по лагерю? Покажешь новичку, где здесь всё?"
+            me "Hello again!"
+            sl "Hey!"
+            me "Slavya, are you currently busy?"
+            sl "Right now - no, not really. What did you want?"
+            me "Do you want to walk around the camp? Show the new guy where everything is?"
             if lp_sl >= 5:
                 $ lp_sl += 1
                 $ lp_un -= 1
                 $ lp_dv -= 1
                 show sl sad pioneer with dspr
-                sl "Понимаешь… Есть небольшая загвоздка."
-                "Славя загрустила."
-                sl "Я бы с огромным удовольствием, но мне нужно прибраться на площади."
-                me "А… И ты там долго будешь убираться?"
-                "Славя пожала плечами."
-                sl "Я не хочу убираться быстро, я хочу убираться на совесть."
-                sl "Так что как закончу…"
-                "Извинившись ещё раз, она пошла в сторону площади, оставляя меня в одиночестве."
+                sl "You see… There's a small problem."
+                "Slavya suddenly got sad."
+                sl "I would love to, but I still have to clean up the square."
+                me "Oh… How long will it take?"
+                "She shrugged."
+                sl "I don't want to get out fast, I want it to be done right."
+                sl "So as soon as I'm done…"
+                "After apologizing again, she walked towards the square, leaving me alone."
                 hide sl with dissolve
-                "Других кандидатур на примете не было."
-                "Придётся действовать вразрез с волей вожатой и идти на обход в одиночестве."
-                "О да, сольные действия — это мой конёк."
+                "There were no other candidates."
+                "Well, I'll have to go against squad leader's wishes and go alone after all."
+                "Oh yeah, solo action is my forte."
                 $ alt_day2_convoy = 'sl_prep'
             elif alt_day2_un_rej_convoy:
                 show sl normal pioneer with dspr
-                sl "Отказала, да?"
-                "Понимающе кивнула девушка."
-                "Я покраснел."
-                sl "Ну да, Лена у нас нелюдимый ребёнок."
-                "Немного подумав, она тряхнула чёлкой:"
-                sl "Сём, если хочешь, чтобы я побыстрее тебе помогла, придётся и тебе мне помочь на площади."
-                me "Так и знал!"
-                me "Нет бы, хоть кто-нибудь сказал: «Да! Конечно! Побежали! Никаких подводных камней!»"
+                sl "She rejected you, yeah?"
+                "The girl nodded understandingly."
+                "I blushed."
+                sl "Well, Lena is our unsociable child, after all."
+                "After a little thought she shook her bangs:"
+                sl "Sem, if you want me to help you faster, you have to also help me out in the square."
+                me "Knew it!"
+                me "But nooo, if only anyone would say: «Yeah! Of course! Let's go! No caveats here!»"
                 show sl laugh pioneer with dspr
-                sl "Ты чего возмущаешься? Если не хочешь, не помогай."
+                sl "Why are you complaining? Don't help if you don't want to."
                 $ alt_day2_convoy = 'sl_prep'
             else:
-                sl "Извини, но я не могу."
-                me "Да?"
-                "Я не скрывал огорчения."
-                me "А почему?"
-                sl "Ольга Дмитриевна попросила помочь с вечерними мероприятиями."
-                me "Вот как? Что ж, очень жаль."
-                me "Тогда увидимся?."
-                "Она помахала рукой и убежала по направлению к домику вожатой."
+                sl "Sorry, I can't."
+                me "Yeah?"
+                "I wasn't hiding my grief."
+                me "But why?"
+                sl "Olga Dmitrievna asked me to help with evening events."
+                me "Really? Well, that's quite unfortunate."
+                me "See you soon?"
+                "She waved her hand and ran away towards the squad leader's house."
                 $ alt_day2_convoy = 'me'
-        "Алиса":
+        "Alisa":
             if dr:
                 $ lp_dv += 1
-            "Я прикидывал варианты, отбрасывая один за другим, пока к собственному удивлению не остановился…{w} На Алисе!"
+            "I was scrolling through my options, dropping them one after another, before deciding on…{w} Alisa!"
             if alt_day1_me_d3_dv_feed:
-                "В конце концов, у неё передо мной должок."
+                "She does owe me."
             elif alt_day1_cofront_sl_dv == 2:
-                "Мне вчера показалось, что несмотря на всю свою задиристость, она не такая уж и плохая девочка."
-            th "В конце концов, это просто прогулка по лагерю."
-            th "Ничего такого особо страшного не может случиться. Ведь верно?"
-            "От последнего вопроса стало особенно неуютно."
-            "Но раз уж взялся за гуж…"
+                "Yesterday it seemed to me that despite all her cockiness, she wasn't such a bad girl."
+            th "After wall, it's just a simple walk in the camp."
+            th "Nothing strange could happen. Right? Right?"
+            "That last question made me especially uncomfortable."
+            "But since I took up the tug…"
             scene bg ext_dining_hall_near_day with fade
             if alt_day2_un_rej_convoy:
-                "Получив обоснованный отказ, я решил попытать счастья с Алисой."
+                "Having received a reasonable refusal, I decided to try my luck with Alisa."
             elif alt_day2_bf == 'dv_us':
-                "Тем более, на завтраке мне сказала, что я «не безнадёжен»."
-                "Не знаю, комплиментом это считать или оскорблением, но то, что мне не объявляли бойкот — это однозначно."
-                "Я вышел на крылечко в поисках рыжей молнии."
+                "Besides, she just told me on breakfast that I'm «not completely hopeless»."
+                "I don’t know if this is a compliment or an insult, but the fact that she didn't completely ignore me is unequivocal."
+                "I went out onto the porch searching for the red lightning bolt."
             else:
-                "Я не стал беспокоить девочку-пожар во время завтрака — по себе знаю, когда я голоден, не влезай — убью."
-                "Поэтому я быстренько закончил завтрак и, ковыряя зубочисткой в зубах, занял наблюдательный пост на крылечке."
-            "И вскоре показалась она! Явно куда-то спешащая, сердито зыркающая по сторонам."
+                "I didn't dare disturb the blazing girl during breakfast - I know by myself that when I'm hungry, I shouldn't be trifled with - I'd kill on sight."
+                "So I quickly finished breakfast and, picking my teeth with a toothpick, took up an observation post on the porch."
+            "And soon she showed up! Obviously hurrying somewhere, angrily looking around."
             show dv normal pioneer2 with dissolve
-            "Обычно рядом с ней вечно крутится эта мелкая, поэтому сейчас самый лучший шанс!"
-            "Я спрыгнул с поручня и поравнялся со спешащей куда-то Алисой."
+            "Usually she has that kid orbiting her, so now is the best chance!"
+            "I jumped off the handrail and caught up with Alisa."
             if herc:
-                me "Привет, рыжая!"
+                me "Hey, redhead!"
                 show dv angry pioneer2 with dspr
-                dv "Что ты сказал?!"
-                me "О, пардон. Извиняюсь. Был неправ, оправдаю, исправлю и докажу."
-                me "Не нравится быть рыжей — могу назвать как-нибудь иначе? Как насчёт Алисочки? Лисы Алисы? Ещё варианты?"
+                dv "The hell did you just say?!"
+                me "Oh, pardon me. I'm sorry. I was wrong, I will justify, correct and prove."
+                me "Don't like being a redhead - how about I can call you something else? How about Alisochka? Lisa-Alisa? Any other options?"
                 show dv normal pioneer2 with dspr
-                dv "Чё надо?"
-                "Она уже остыла и была готова к конструктивному диалогу."
-                me "Алисочка! Ты моя единственная надежда! Спаси меня, не дай погибнуть во цвете лет!"
-                "Заголосил я так, что проходящие мимо пионеры испуганно шарахнулись в стороны."
-                dv "Хватит паясничать! Что тебе нужно?"
-                me "Я хотел бы, если ты конечно не занята, пригласить тебя на небольшое рандеву по территории этого богоугодного заведения!"
+                dv "What do you want?"
+                "She had already cooled down and was ready for constructive dialogue."
+                me "Alisochka! You are my only hope! Save me, don't let me die in my prime!"
+                "I shouted so that the pioneers passing by scaredly shied away."
+                dv "Stop fooling around! What exactly do you want?"
+                me "I would like to, if you are not too busy, invite you to a small rendezvous on the territory of this charitable institution!"
                 show dv angry pioneer2 with dspr
-                dv "Чё?"
+                dv "Cuh?"
             elif loki:
-                me "Доброе утро, красотка!"
+                me "Good morning, beauty!"
                 show dv angry pioneer2 with dspr
-                dv "Отвали."
-                me "Здрасьте, приехали."
-                me "Такая красивая девушка — и такая злая.{w} Разве можно быть такой злой?"
-                me "Может, в организме эндорфинов не хватает? Так ты скажи — я сейчас в столовой конфет и наворую. Хочешь?"
-                "Она упорно молчала и продолжала двигаться с неотвратимостью локомотива."
-                me "А не хочешь конфет — хочешь, апельсинов?"
-                me "Или могу свой компот за обедом отдать? Мне не жалко!"
+                dv "Fuck off."
+                me "Hold up."
+                me "Such a beautiful girl - and so angry.{w} How can you be this mad?"
+                me "Maybe there's a lack of endorphins in your organism? Just tell me - I'll rob canteen of sweets. Do you want me to?"
+                "She was stubbornly silent and continued to move with the inevitability of a locomotive."
+                me "If you don't want sweets - maybe oranges?"
+                me "Or I could give you my kompot at dinner? I don't mind!"
                 show dv smile pioneer2 with dspr
-                "Двачевская изо всех сил старалась не улыбнуться…{w} Получалось не очень."
-                dv "Вот чего пристал, а?"
-                "Гроза ещё не миновала, но злобный взгляд исподлобья сменился обычным насмешливым, и в воздухе уже не пахло озоном."
-                me "Я хочу пригласить тебя на свидание."
-                "Она встала как вкопанная… покраснела?!"
-                "Теперь я видел всё!"
+                "Dvachevskaya was trying her hardest not to smile…{w} It wasn't working out well."
+                dv "Why are you bothering me, huh?"
+                "The storm had not yet passed, but the evil look from under her brows has been replaced by the usual mocking one, and the air no longer smelled of ozone."
+                me "I want to invite you to a date."
+                "She immediately stopped and… blushed?!"
+                "Well, now I've seen everything!"
                 show dv shy pioneer2 with dspr
-                dv "Какое свидание ещё, что ты несёшь…"
-                me "Хорошо-хорошо, не совсем свидание. Скорее, на прогулку."
-                dv "Чё?"
+                dv "What date, what the hell are you talking about…"
+                me "Okay, okay, not really a date. More like a walk."
+                dv "Guh?"
             else:
-                me "Привет."
-                "Она промолчала."
-                me "Алиса…"
-                dv "Что."
-                "Невыносимо ровным голосом сказала она."
-                "И это Двачевская?!"
-                me "Можно тебя о чём-то попросить?"
-                dv "Нет."
-                "Вот и вся беседа."
-                "Я немного помолчал."
-                me "И всё-таки… Алис…"
+                me "Hey."
+                "She didn't say anything."
+                me "Alisa…"
+                dv "What."
+                "She said in an unbearably calm voice."
+                "And this, this is Dvachevskaya?!"
+                me "Can I ask you about something?"
+                dv "No."
+                "Well, I guess that's it folks."
+                "I held my silence for a while."
+                me "Even though… Ali…"
                 show dv rage pioneer2 with dspr
-                "Она остановилась и сгребла меня за грудки."
-                dv "Я что-то непонятно сказала?"
-                "Прошипела она не своим голосом."
-                me "В-всё… п-понятно…"
-                "Я ожидал всего. {w}Кроме такой вот вспышки ярости."
+                "She stopped and grabbed me by the collar."
+                dv "Did I stutter?"
+                "She hissed in a voice that wasn't her own."
+                me "E-everything's… c-clear…"
+                "I expected anything. {w}Anything except this fit of rage."
                 if alt_day1_me_d3_dv_feed:
                     show dv rage pioneer2 close with dissolve
-                    me "Я думал, мы друзья."
-                    "С обидой бросил я в удаляющуюся спину."
+                    me "I thought we were friends."
+                    "I spoke to her back with resentment."
                     show dv angry pioneer2 with dspr
-                    dv "Друзья? C какой это радости?"
-                    me "Мне нужна помощь."
-                    dv "Какая?"
-                    "Я покачал головой."
+                    dv "Friends? How did that happen?"
+                    me "I need help."
+                    dv "Help?"
+                    "I shook my head."
                 elif alt_day1_cofront_sl_dv == 2:
                     show dv rage pioneer2 close with dissolve
-                    me "Странно, я думал, ты своих в беде не бросаешь."
+                    me "Strange, I thought you didn't leave 'your' people behind when they got into trouble."
                     show dv normal pioneer2 with dspr
-                    dv "Да какой ты «свой»?"
-                    me "Пускай, не своих… Но я вчера сделал доброе дело!"
-                    dv "Какое?"
-                    me "Сэкономил тебе время, чтобы ты в столовую не ла…"
-                    "Мне тут же заткнули рот ладонью. Договорить я не успел."
+                    dv "And how the hell are you «mine»?"
+                    me "Well, technically not yours… But I did a good deed yesterday!"
+                    dv "Which one?"
+                    me "Saved your time, so you wouldn't have to break into the cant…"
+                    "She immediately shut my mouth with a hand, so I didn't get to finish."
                     show dv angry pioneer2 with dspr
-                    "Алиса сверкнула глазами:"
-                    dv "Ты совсем трудный, да? Давай ещё погромче покричи, а то не весь лагерь ещё слышал."
-                    "Я пожал плечами."
+                    "Alisa threatened me with her eyes:"
+                    dv "You're going to create that many problems, huh? Go on, shout even louder, so that the entire camp gets to hear it."
+                    "I shrugged."
                     show dv normal pioneer2 with dspr
-                    dv "Ладно. Убедил. Что тебе нужно?"
+                    dv "Alright. You got me. What do you want?"
                 else:
                     $ alt_day2_convoy = 'me'
                     return
-            me "Погулять по лагерю, говорю. Мне тут бегунок дали. Не хочешь вместе со мной прогуляться?"
+            me "Take a walk around the camp, I'm telling you. I got the checklist. Want to accompany me?"
             show dv laugh pioneer2 with dspr
-            dv "За ручку, что ли, отвести?"
-            me "За ручку? А можно?"
+            dv "What, do I get to handhold you?"
+            me "Handholding? Would you?"
             show dv normal pioneer2
-            dv "Нет!"
-            "Отрезала она."
-            dv "Всё равно я сейчас занята."
-            me "Так я могу тебе помочь. Я помогу тебе, ты поможешь мне. Пионэры должны помогать друг другу."
-            dv "Иди ты… Пионэр."
-            "Ну я и пошёл…"
+            dv "No!"
+            "She cut me off."
+            dv "Anyways, I'm busy right now."
+            me "I could help you. You know, I help you, you help me. Pioneers should help each other."
+            dv "Oh, fuck you… Pioneer."
+            "And so I went…"
             if lp_dv >= 3:
                 $ lp_dv += 1
                 $ lp_sl -= 1
                 $ lp_un -= 1
                 hide dv with dissolve
-                "А в спину прилетело:"
-                dv "Через пятнадцать минут. У музыкального клуба. Не опаздывай."
+                "And then I heard:"
+                dv "Musical club. In fifteen minutes. Don't be late."
                 $ alt_day2_convoy = 'dv_prep'
             elif alt_day2_un_rej_convoy:
                 $ lp_dv += 1
                 hide dv with moveoutleft
-                dv "Ладно. Стой."
+                dv "Fine. Hold up."
                 show dv normal pioneer2 with dspr
-                dv "Поможешь мне кое-что, потом дела. Годится?"
-                "Я кивнул, пряча довольную улыбку."
-                dv "Тогда жду в верхней части лагеря, у музклуба."
+                dv "You'll help me, then I'll help you. Good enough?"
+                "I nodded, hiding a satisfied smile."
+                dv "Then I'll be waiting for you at the northern part of the camp, near the music club."
                 hide dv with dissolve
                 $ alt_day2_convoy = 'dv_prep'
             else:
-                "Чувствуя себя оплёванным, я развернулся и ушёл."
+                "Feeling spat upon, I turned around and left."
                 if dr and (counter_sl_7dl == 0):
-                    "Мало она меня вчера облила, она ещё и сегодня издевается."
+                    "As if she didn't have enough fun dousing me yesterday, she also had to mock me now."
                 else:
-                    "Что я не так сделал-то?"
-                "Рыжая стерва."
+                    "What did I do wrong?"
+                "Red bitch."
                 $ alt_day2_convoy = 'me'
-        "Лена" if not alt_day2_un_rej_convoy:
-            "Ещё после вчерашней нашей беседы Лена никак не шла у меня из головы."
-            "Я посчитал, что совместная прогулка по лагерю — это довольно неплохая возможность узнать друг друга чуть получше."
-            "Поискав глазами в толпе пионеров, я наконец нашёл знакомое лицо и на мгновенно ослабших ногах подошёл к ней."
+        "Lena" if not alt_day2_un_rej_convoy:
+            "After our conversation yesterday, Lena did not go out of my head."
+            "I thought that walking around the camp together is a pretty good opportunity to get to know each other a little better."
+            "Looking through the crowd of pioneers, I finally found the familiar face and, on instantly weakening legs, approached her."
             scene bg ext_dining_hall_near_day with fade
             show un normal pioneer at center with dissolve
             if alt_day2_bf == 'un':
-                me "Извини за испорченный завтрак."
-                un "Что?"
-                me "Ты не доела, ушла. Я подумал, может, это из-за расспросов моих дурацких."
-                un "Не дурацких."
-                me "Правда? Просто я подумал, что это я чем-то тебя обидел."
-                un "Всё хорошо."
+                me "Sorry for ruining your breakfast."
+                un "What?"
+                me "You didn't finish eating and left. I thought maybe it was because of my stupid questions."
+                un "They weren't stupid."
+                me "Really? I just thought I somehow offended you."
+                un "It's all good."
             else:
-                me "Привет!"
-                un "Д-доброе утро."
-                me "Доброе утро…"
-            "Не сказать чтобы во взгляде у неё была какая-то враждебность. Скорее, холодок."
+                me "Hello!"
+                un "G-good morning."
+                me "Good morning…"
+            "I wouldn't say that there was some kind of hostility in her eyes. It was more like coldness."
             if herc or loki:
-                "Лёгкая, но чётко выраженная неприязнь, которой лично я не вижу никаких объяснений."
+                "A slight but clearly expressed distaste, for which I personally do not see any explanation."
             elif dr and (counter_sl_7dl == 0):
-                "Сто процентов, ей эта рыжая рассказала, как вчера меня облила, и теперь Лена меня презирает."
+                "I'm telling you, that redhead told her how she doused me yesterday, and now Lena despises me."
             show un normal pioneer at center with dspr
-            "Не зная как с этим бороться, я решил идти окольным путём."
+            "Not knowing how to deal with it, I decided to take a detour."
             if alt_day2_bf != 'un':
-                me "Лен, можно на пару слов?"
-                "Лена молча кивнула."
-                "Она не отвела взгляд и смотрела мне прямо в глаза, так, что даже стало немного неуютно."
-            me "Скажи, ты не слишком занята? Просто у меня тут бегунок… Надо сходить по лагерю… Подписи… Собрать."
-            "Она внимательно меня слушала."
-            me "Если тебе не трудно… Не могла бы ты… Помочь?"
-            un "Как?"
-            "Конечно, с моей колокольни оценивать трудно, но я оказался совершенно не готов к такой Лене. Она… подавляла."
-            me "Что-то случилось? Я чем-то тебя обидел?"
-            un "Нет, ты здесь ни при чём. Так о какой помощи ты говорил?"
-            "Я вдруг представил себе картину, как эта неулыбчивая девочка ведёт меня куда-то и там что-то показывает.{w} И всё это делает с видом великомученицы."
-            th "Нет уж."
-            me "Ни о какой. Извини, пожалуйста."
-            "Она пожала плечами и проводила меня взглядом."
-            th "Вот и поговорили."
+                me "Lena, can I have you for a few words?"
+                "She silently nodded."
+                "She didn't look away and looked me straight in the eyes, so that it even became a little uncomfortable."
+            me "Are you busy? I just got this checklist… Gotta go around the camp… Collect… Signatures."
+            "She attentively listened to me."
+            me "If you wouldn't mind… Could you… Help me?"
+            un "How?"
+            "Of course, evaluating things from my spot was quite difficulty, but I definitely wasn't prepared for this Lena. She… was oppressing me."
+            me "Did something happen? Have I offended you somehow?"
+            un "No, it's not about you. So what kind of help were you talking about?"
+            "I suddenly imagined a picture of this unsmiling girl leading me somewhere and showing me something.{w} All while looking like a martyr."
+            th "Hell no."
+            me "About none. I'm sorry."
+            "She shrugged and followed me with her eyes."
+            th "Oh well."
             hide un with dissolve
             $ alt_day2_un_rej_convoy = True
             jump alt_day2_convoy
-        "Я сам":
+        "I'll go alone":
             scene
             $ renpy.show("bg ext_dining_hall_near_day", at_list = [zentercenter], what = Noir("bg ext_dining_hall_near_day", brightness = -0.4, saturation = -0.4))
-            "Что я, маленький, что ли?"
-            "Сам прекрасно справлюсь."
+            "What am I, a kid?"
+            "I'll manage on my own."
             $ alt_day2_convoy = 'me'
     stop music fadeout 3
     stop ambience fadeout 6
@@ -1149,30 +1149,30 @@ label alt_day2_sl_guide:
     pause(1)
     scene bg ext_square_day with dissolve
     play music music_list["everyday_theme"] fadein 3
-    "Завтрак завершился быстро, а там и минуты не прошло, как я оказался припахан к общественно полезным работам."
-    dreamgirl "Держись Слави!"
-    "Передразнил внутренний голос."
-    dreamgirl "Не пропадёёёёшь!"
-    th "Да ладно, это просто уборка площади."
-    dreamgirl "Не барское это дело!"
-    "Так или иначе, мы двигались в сторону площади."
-    me "Кхе-кхе!"
-    "Прочистил горло я, и Славя, вздрогнув, пришла в себя:"
+    "Breakfast ended quickly, and not even a minute passed before I found myself plowed into socially useful work."
+    dreamgirl "Stay closer to Slavya!"
+    "The inner voice mocked me."
+    dreamgirl "You'll be just fineeee with her!"
+    th "Oh come on, it's just cleaning up the square."
+    dreamgirl "Yeah, and it ain't your business!"
+    "Either way, we were heading towards the square."
+    me "Ahem-ahem!"
+    "I cleared my throat, and Slavya, shuddering, came to her senses:"
     show sl normal pioneer with dissolve
-    sl "Ой, ты ещё здесь? Прости, задумалась."
-    me "Ничего."
-    "Вернул ей шпильку я."
+    sl "Oh, you're still here? Sorry, I got lost in thoughts."
+    me "It's okay."
+    "I returned back her joke."
     show sl smile pioneer with dspr
-    sl "А ты злопамятный, да?"
-    me "Да нет. Просто память у меня хорошая."
-    me "Так ты меня сюда зачем привела?"
-    sl "Работа! Нам надо разобраться с площадью, пока грязи ещё немного."
-    me "Зачем?"
-    sl "Танцы же! Неужели тебе будет приятно танцевать на грязной площади?"
-    me "Вообще, я рассчитывал, что это будет какой-нибудь клуб или помещение."
-    "Пляски под открытым небом мне не могли привидеться и в страшных кошмарах."
-    sl "Начали, времени в обрез!"
-    "Славя вручила мне в руки метёлку, а сама заспешила на противоположную сторону площади."
+    sl "You're vindictive, aren't you?"
+    me "Not really. I just have a good memory."
+    me "So why did you bring me here?"
+    sl "Work! We need to deal with it fast, while there isn't that much dirt."
+    me "Why?"
+    sl "Disco! Would you want to dance on a dirty square?"
+    me "Honestly I expected that it would happen in a club, or in any other building."
+    "Dancing under open air couldn't be imagined even in my most horrendous nightmares."
+    sl "Get to work, we don't have much time!"
+    "Slavya handed me a broom, and hurried to the opposite side of the square."
     $ alt_day2_convoy = 'sl'
     $ list_voyage_7dl.append('cleaning_sl')
     stop music fadeout 3
@@ -1183,109 +1183,109 @@ label alt_day2_sl_guide:
 label alt_day2_event_music_club1:
     scene bg ext_musclub_day with fade
     if ('library' in list_voyage_7dl) and ('medic' in list_voyage_7dl):
-        "Вряд ли меня ожидает какой-либо сюрприз со стороны местного художественного руководителя."
-        "Хотя после пмс-нутой библиотекарши и вамп-медсестры я ничему уже не удивлюсь."
+        "I wouldn't expect any surprises from the local art director."
+        "Although after meeting the PMS-stricken librarian and luxurious vampiric nurse I wouldn't be surprised by anything."
     elif ('medic' in list_voyage_7dl):
-        "Вряд ли меня ожидает какой-либо сюрприз со стороны местного художественного руководителя."
-        "Хотя после роскошной вамп-медсестры я уже ничему не удивлюсь."
+        "I wouldn't expect any surprises from the local art director."
+        "Although after meeting the luxurious vampiric nurse I wouldn't be surprised by anything."
     elif ('library' in list_voyage_7dl):
-        "Как и библиотека, клуб музыкантов стоял на отшибе."
-        "Только в отличие от библиотеки, которую берегли от лагерных шумов, здесь, скорее, речь шла о защите лагеря."
-        "Я вспомнил свои первые репетиции и поёжился, воочию представив человек двадцать, которые пришли, заняли места и разыгрываются."
-        "Вряд ли меня ожидает какой-либо сюрприз со стороны местного художественного руководителя."
-        "Хотя после пмс-нутой библиотекарши я уже ничему не удивлюсь."
+        "Like the library, the music club was on the outskirts of the camp."
+        "Except unlike the library, which was protected from the camp noises, this was done to protect the camp instead."
+        "I remembered my first rehearsals and shivered, personally imagining how twenty people would come, take their places and start playing."
+        "I wouldn't expect any surprises from the local art director."
+        "Although after meeting the PMS-stricken librarian I wouldn't be surprised by anything."
     if (counter_sl_cl == 1) and len(list_voyage_7dl) == 0:
-        "Решив прислушаться к совету Слави, я отправился к наиболее близкой цели обхода."
+        "Deciding to heed Slavya's advice, I went to the closest place."
         if alt_day_binder != 1:
-            "Епархии некой Мику."
-            "Как я понимал, это была та самая японская красотка, с которой я за сутки умудрился не пересечься ни разу."
+            "Diocese of someone named Miku."
+            "As I understood, it was the same Japanese beauty with whom I managed to not cross paths even once in a day."
     if not (alt_day2_convoy == 'dv'):
-        "При первом взгляде на здание создавалось впечатление какой-то лёгкости."
-        "Может, это из-за того, что половину дома занимала огромная терраса, может, из-за того, что две стороны из четырёх в «закрытой» половине были забраны окнами во всю стену."
-        "Я подумал, что вот здесь было бы очень неплохо задержаться ненадолго."
-        "Хотя бы посидеть на терраске."
+        "At first glance, the building gave the impression of some kind of lightness."
+        "Maybe it's because half of the house was occupied by a huge terrace, maybe because two sides of the four in the «closed» half were taken by windows covering the entire wall."
+        "I thought that it would be very nice to stay here for a while."
+        "At least sit on the terrace."
     if (alt_day2_convoy == 'dv_prep'):
         if len(list_voyage_7dl) == 0:
             show dv smile pioneer2 at center with dissolve
-            "Алиса уже была здесь."
-            dv "Ты быстро. Ладно, за дело."
+            "Alisa already was here."
+            dv "You're quick. Alright, let's go."
         elif len(list_voyage_7dl) == 1:
-            "Алиса сидела на веранде, вся как-то съёжившись, безнадёжно глядя в пол."
+            "Alisa was sitting on the veranda, somehow cringing, looking hopelessly at the floor."
             show dv cry pioneer2 at center with dissolve
-            "И сердце кольнуло какой-то острой нежностью и подзабытым уже чувством раскаяния."
-            "Я зашёл по ступеням на террасу и тихонько сел рядом."
+            "And my heart stung with some sharp tenderness and a forgotten feeling of remorse."
+            "I went up the steps and quietly sat down beside her."
             if herc:
-                me "Прости меня, пожалуйста. Я опоздал."
-                "Выражение её глаз, какое-то будто побитое, тут же сменилось на уже привычную высокомерность… Ну а там и до злости было рукой подать."
+                me "Please, forgive me. I'm late."
+                "The expression of her eyes, as if beaten, immediately changed to the already familiar arrogance... And well, from there it was a stone's throw to anger."
                 show dv angry pioneer2
-                dv "Где тебя носит вообще!"
-                dv "Тебя только за смертью посылать!"
-                "Вот такой Алиса нравилась мне гораздо больше."
-                me "Искал, где находится музыкальный клуб."
+                dv "Where the hell even were you!"
+                dv "The only thing you can be sent for is death!"
+                "I liked Alisa more wheh she was like this."
+                me "I was looking for the music club."
             elif loki:
-                me "Привет, красотка. Вот я наконец тебя и нашёл."
+                me "Hello, handsome. Finally found you."
                 show dv grin pioneer2
-                dv "Да уж, ты не торопился."
-                dv "Выспаться-то успел?"
+                dv "Yeah, you weren't in a hurry."
+                dv "Got some sleep?"
                 show dv angry pioneer2
-                dv "Где тебя носит вообще!"
-                dv "Я тут сижу, жду его как последняя дура, а он ходит непонятно где."
-                "Вот такой Алиса нравилась мне гораздо больше."
-                me "Я же говорю… Я искал тебя. Вот и нашёл."
+                dv "Where the hell even were you!"
+                dv "Here I am, sitting here, waiting for him like an idiot, and he's walking somewhere else."
+                "I liked Alisa more when she was like this."
+                me "I'm telling you… I was looking for you. And so I did find you."
             else:
-                me "Прости, я опоздал."
+                me "Sorry, I'm late."
                 show dv normal pioneer2
-                dv "Это ничего."
-                dv "Я уже поняла, что ты тормоз."
-                me "Тормоз?!"
+                dv "It's okay."
+                dv "I already figured out that you're a retard."
+                me "Retard?!"
                 show dv angry pioneer2
-                dv "Да ещё какой!"
+                dv "Damn straight!"
                 show dv rage pioneer2
-                dv "Где тебя носит вообще!"
-                dv "Где, я тебе внятным русским языком сказала, буду ждать?!"
-                "Вот такой Алиса нравилась мне гораздо больше."
-                me "У клуба…"
-                dv "Когда?"
-                me "Через пятнадцать минут… Алис, ну, прости. Ладно?"
+                dv "Where the hell even were you!"
+                dv "Where, I told you in intelligible Russian, did I say would wait for you?!"
+                "I liked Alisa more when she was like this."
+                me "Near the club…"
+                dv "When?"
+                me "In fifteen minutes… Alisa, please, forgive me. Okay?"
             show dv normal pioneer2
-            "Я заискивающе заглянул ей в глаза, и она не выдержала и фыркнула, успокаиваясь."
+            "I looked ingratiatingly into her eyes, and she, not being able to stand it, snorted, calming down."
             if dr:
-                dv "Что с тобой, тормозом, поделаешь."
-            dv "Ладно, за дело."
+                dv "Oh well, what can you do with a dumbass like this."
+            dv "Alright, let's go."
         else:
-            "В назначенной Алисой точке никого не было."
-            "Я поднялся на террасу в поисках девочки, и моё внимание привлёк клочок бумажки, придавленный скамейкой."
-            "Я наклонился и поднял бумажку."
-            "На ней вычурным девичьим почерком было написано одно слово."
-            "{b}ПРИДУРОК{/b}"
+            "There was no one on the rendez-vous point Alisa designated."
+            "I went up to the terrace in search of the girl, and my attention was drawn to a piece of paper pressed down by a bench."
+            "I leaned over and picked it up."
+            "There was a single word written on it in a pretentious girlish handwriting."
+            "{b}JERK{/b}"
             $ lp_dv -= 5
             $ alt_day2_convoy = 'dv_rej'
-            "Ммммда. Похоже, с Алиской не срослось."
-            dreamgirl "Вау! И как ты догадался?!"
+            "Oopsie. Looks like we couldn't work it out with Alisa."
+            dreamgirl "Whoa! How'd you figure that one out, genius?!"
             return
-        dv "Надо отнести вот это."
-        "Она постучала ногой по стальному коробу с прозрачной верхней панелью, стоящему рядом с ней."
-        dv "К летней эстраде. Справишься?"
+        dv "We need to move this..."
+        "She tapped a steel box with a transparent top panel next to her."
+        dv "To the stage. Can you do it?"
         if herc:
-            me "Легко."
-            "Я прикинул вес."
-            me "Тележку бы… А впрочем, ладно. Тебе не горит?"
+            me "Easy."
+            "I estimated its weight."
+            me "A cart would be nice… Anyways, it's ok. Are you in a hurry?"
             show dv laugh pioneer2
-            dv "Сегодня хотелось бы закончить."
-            me "Закончишь."
+            dv "I'd like it to be done by today."
+            me "Will do."
         else:
-            "Один бы я его точно не уволок. Удивительно, как Алиса вообще смогла его поднять."
-            "Приняв решение, я направился к домику вожатой — кажется, там был некий намёк на тележку."
-            dv "Ты куда?"
-            me "Я сейчас!"
+            "Alone I definitely wouldn't be able to carry it. It's surprising she could even lift it herself."
+            "Having made a decision, I decided to quickly head to squad leader's house - there was something like a cart there."
+            dv "Where are you going?"
+            me "Wait for me!"
             with fade2
-            "Вернувшись с тележкой, я сгрузил туда чёртов усилок и поднялся, приняв вес на руки."
-            me "Веди!"
+            "When I returned with the cart, I loaded the damn amp into it and got up, taking the weight with my hands."
+            me "Lead the way!"
         scene bg ext_stage_normal_day with clock_r
-        "Спустя пятнадцать минут мучений, пыхтений и обливаний потом, я наконец сгрузил проклятый усилитель на сцену."
+        "After fifteen minutes of torment, chugging and sweating, I finally unloaded the damn amp onto the stage."
         show dv smile pioneer2 with dissolve
-        dv "Вот и хорошо."
-        dv "Пошли, что ли?"
+        dv "Great."
+        dv "Let's go, yeah?"
         $ alt_day2_convoy = 'dv'
         with fade
     stop ambience fadeout 6
@@ -1293,54 +1293,54 @@ label alt_day2_event_music_club1:
 
 label alt_day2_inmusic:
     if (alt_day2_convoy == 'un'):
-        "Лена поцарапалась в дверь, тихо повернула ручку и зашла."
-        "Я последовал вслед за ней."
+        "Lena scratched at the door, quietly turned the knob and went in."
+        "I followed her."
     elif (alt_day2_convoy == 'sl'):
         play sound sfx_knock_door2
-        "С оттяжкой постучав, Славя толкнула дверь и зашла."
-        "Я направился за ней."
+        "Knocking with a delay, Slavya pushed the door and went in.."
+        "I followed her."
     elif (alt_day2_convoy == 'dv'):
-        "Мы вернулись к тому, с чего начали."
-        "Не утруждая себя стуком, Алиса повернула дверную ручку и зашла."
+        "We came back to the starting point."
+        "Without bothering with knocking, Alisa turned the doorknob and entered."
     else:
-        "Поднявшись по двум скрипучим ступеням, я прошёл к двери, ведущей в «закрытую» часть, и постучал."
+        "Climbing up two creaking steps, I went to the door leading to the «closed» part, and knocked."
         play sound sfx_knock_door2
         pause(1)
         if (alt_day2_convoy == 'dv_rej'):
-            "Изнутри не доносилось ни единого звука. Я выждал несколько секунд и повернул ручку."
+            "Not a single sound came from within. I waited a few seconds and turned the knob."
         else:
-            "Изнутри не доносилось ни единого звука. Я постучал ещё раз и…"
+            "Not a single sound came from within. I waited a few seconds and…"
             show dv surprise pioneer2 with easeinbottom
             with vpunch
             play music music_list["that_s_our_madhouse"] fadein 2
-            "Столкнулся в дверях с Двачевской."
-            "Бам."
-            "Я был немного выше ростом, поэтому ей досталось сильнее. Охнув, я поспешил подхватить Алису и отвести к стоящей неподалёку лавочке."
+            "Collided with Dvachevskaya at the door."
+            "Bang."
+            "I was a little taller, so she got hit harder. Sighing, I hurried to pick up Alisa and take her to a nearby bench.."
             show dv angry pioneer2 with dissolve
-            dv "Смотри куда прёшь, ты!"
-            "Зашипела она, отняв руку ото лба."
-            "Промеж глаз у неё наливалась явно различимая шишка. {w}Судя по её взгляду, я обзавёлся ровно таким же украшением."
-            me "Пошли."
-            "Я протянул ей руку."
-            dv "Что? Куда?"
-            me "Холодное приложим. Ты же не хочешь ходить с шишкой на лбу до конца смены?"
-            dv "Это всё ты виноват! Если бы ты хоть немного…"
-            me "Да я постучал вообще-то. Ты что там делала вообще?"
+            dv "Watch where you're going, you!"
+            "She hissed, removing her hand from her forehead."
+            "Between the eyes she had a clearly distinguishable bump. {w}Judging by where she was looking I obtained the exact same decoration."
+            me "Come."
+            "I offered her my hand."
+            dv "What? Where?"
+            me "We need to apply something cold to it. You don't want to walk around with a bump on your forehead until the end of your shift, do you?"
+            dv "It's all your fault! If you would…"
+            me "Mind you, I knocked. What were you even doing there?"
             show dv sad pioneer2 with dissolve
-            "Показалось, или мне удалось смутить нашу бой-бабу? {w}Хм… Что-то интересное. {w}Связанное либо с руководителем клуба (я гнусно захихикал, представив себе Алису, крутящую роман с престарелым музыкантом), либо с музыкой."
-            "С инструментами."
-            dv "Не твоё дело."
-            "Она хотела было встать и уйти, но мне же уже интересно стало!"
-            "Я удержал её за руку."
-            me "Алиса, не будь вражиной. Расскажи, в чём дело?"
+            "Did it seem like it, or have I managed to embarrass our boy-woman? {w}Hm… Interesting. {w}It's either connected to the club manager (I giggled wickedly as I pictured Alisa having an affair with an elderly musician) or the music.."
+            "To instruments."
+            dv "Not your business."
+            "She wanted to get up and leave, but I already started wondering!"
+            "I grabbed her hand."
+            me "Alisa, don't be an enemy. Please tell me, what's up?"
             show dv normal pioneer2
-            "Она удивлённо посмотрела на мою руку, так, будто это было некое экзотическое насекомое, и, осторожно освободившись, встала."
-            dv "Это. {w=.4}Не твоё. {w=.3}Дело."
-            "Раздельно произнесла она."
+            "She looked at my hand in surprise, as if it were some kind of exotic insect, and, carefully freeing herself, stood up."
+            dv "That's. {w=.4}Not. {w=.2} Your. {w=.3}Business."
+            "She said distinctly."
             hide dv with dissolve
             stop music fadeout 6
-            "И ушла."
-            "Ну и ладно. Я подошёл к двери, ведущей в клуб, и повернул ручку."
+            "And left."
+            "Oh well. I went up to the door and turned the knob."
     pause(1)
     play sound sfx_open_door_2
     pause(1)
@@ -1348,328 +1348,329 @@ label alt_day2_inmusic:
     play ambience ambience_music_club_day fadein 1
     play music music_7dl["what_am_i_doing_here"] fadein 1
     pause(1)
-    "Я огляделся и понял, что мне здесь нравится."
-    "Просторное помещение, портреты Баха, Шуберта и Листа в рамочках на стенах, рояль, пюпитр под вокалиста, микрофон — здесь явно пели и делали это с удовольствием."
-    "Мой взгляд переместился дальше — от пылящейся в углу барабанной установки к «Музиме» со снятыми струнами, тумбочке с магнитофоном, от которого вёл к колонке толстый шнур."
-    "Несколько полочек с музыкальной литературой и замерший в крайнем положении метроном."
-    "Я уже хотел было подойти к роялю и наиграть что-нибудь легкомысленное, как вдруг мой взгляд наткнулся на…"
+    "I looked around and realized that I like it here."
+    "A spacious room, framed portraits of Bach, Schubert and Liszt on the walls, a piano, a music stand for a vocalist, a microphone - people obviously sang here and did it with pleasure."
+    "My gaze shifted further - from the drum set gathering dust in the corner to «Musima» without strings, table with a tape recorder, from which a thick cord led to the speaker."
+    "Several shelves with musical literature and a metronome frozen in an end position."
+    "I was about to go up to the piano and play something frivolous, when suddenly my eyes stumbled upon…"
     scene cg d2_miku_piano2 with dissolve
     if (alt_day2_convoy == 'sl'):
-        "Славя сдавленно хихикнула."
-    "Под роялем была девушка!"
+        "Slavya giggled."
+    "There was a girl under it!"
     if alt_day_binder == 1:
-        "Та самая, с которой и началось моё знакомство с лагерем!"
-    "Она почти полностью спряталась под роялем, выставив наружу лишь стройные ножки."
-    "Кажется, она что-то обронила, и оно укатилось под инструмент."
-    "Я проследил за направлением её взгляда. Губная гармошка."
-    "Девушка тянулась к гармошке, выгнувшись всем телом, однако всё равно немного не доставала, и ей приходилось все дальше и дальше забираться под рояль."
-    "Не знаю, как ей, а мне лично было бы страхово. Если вдруг у этой дуры подломятся ножки… Нет, я не могу на это смотреть!"
-    dreamgirl "А я зато — могу!"
-    dreamgirl "Ты гляди, они ж в полосочку!"
-    "Я обогнул рояль и, нагнувшись, поднял гармошку, вручив её хозяйке."
+        "The same one with which my acquaintance with the camp began!"
+    "She almost completely hid under the piano, exposing only slender legs."
+    "Seemed like she dropped something, and that something rolled under the instrument."
+    "I followed the direction of her gaze. Harmonica."
+    "The girl reached for the harmonica, arching her whole body, but still couldn't get it, and she had to get further and further under the piano."
+    "I don’t know about her, but I personally would be scared. If this massive beast suddenly gives in and collapses… No, I can't look at this!"
+    dreamgirl "I can thought!"
+    dreamgirl "Check this out, striped panties!"
+    "I went around the piano and, bending down, picked up the harmonica, handing it to the owner."
     scene cg d2_miku_piano with dissolve
     play sound sfx_piano_head_bump
     with vpunch
     pause(1)
-    "Она попыталась разогнуться, совсем забыв, где находится, и стукнулась о лакированное брюхо рояля."
-    mi "Ой!"
+    "She tried to straighten up, completely forgetting where she was, and hit the lacquered belly of the piano."
+    mi "Ouch!"
     scene bg int_musclub_day with dissolve
-    "Я отвёл глаза, притворившись, что только что пришёл — а вовсе не стоял и бесцеремонно пялился на…"
-    "Она сдала задом и опять прогнулась эдак… эдак…"
-    "Да она что, специально, что ли!"
+    "I averted my eyes, pretending that I had just arrived - and definitely wasn't standing and unceremoniously staring at…"
+    "She backed away and once more bent over like… like…"
+    "Is she for real right now!"
     if (alt_day2_convoy == 'un'):
         show un smile pioneer at right with dissolve
-        "Стоящая прямо за моей спиной Лена тихо хихикнула, наблюдая за тем, как полыхают мои уши."
+        "Standing right behind me, Lena giggled softly as she watched my ears flare up."
         if ('medic' in list_voyage_7dl):
-            "Совсем как в медпункте, она явно наслаждалась ситуациями, в которых я выгляжу идиотом."
+            "Just like in the infirmary, she obviously enjoyed situations in which I looked like an idiot."
     elif (alt_day2_convoy == 'sl'):
         show sl smile pioneer at right with dissolve
-        "Стоящая рядом Славя втихомолку улыбалась в кулачок."
-        "И не в последнюю очередь — от того, как смущался я!"
+        "Standing nearby, Slavya secretly smiled into her fist."
+        "And last but not least - from how embarrassed I was!"
     elif (alt_day2_convoy == 'dv'):
         show dv laugh pioneer2 at right with dissolve
-        dv "Эй! Эй! Секи!"
-        "Она чуть ли не пальцем указала на выглядывающие из-под короткой юбочки…"
-        "Двачевская оказалась в своём репертуаре — она прыснула и отошла чуть в сторонку — понаблюдать за тем, как я буду выпутываться из ситуации."
+        dv "Hey! Hey! Whip her!"
+        "She pointed with her finger at what peeked out from under short skirt.…"
+        "Dvachevskaya turned out to be in her repertoire - she burst out laughing and moved a little to the side - to watch how I would get out of the situation."
         show dv normal pioneer2 with dspr
     play sound sfx_brass_drop
-    "Я задел локтем крайне неудачно лежащий тромбон — судя по многочисленным замятинам на раструбе, не я первый, — и инструмент с грохотом повалился на пол, от удара разлетевшись надвое."
+    "I hit a very unfortunately positioned trombone with my elbow - judging by the numerous dents on the trumpet, I was not the first - and the instrument fell to the floor with a loud smash, splitting in two from the impact."
     show mi serious pioneer with dissolve
 
-    mi "Да ничего, его постоянно роняют."
+    mi "It's alright, people keep dropping it."
     show mi normal pioneer with dspr
-    "Если она постоянно сидит под роялем — оно, в общем, и неудивительно."
+    "If she's constantly under the piano - well, that's not surprising."
     if persistent.alt_binder:
         if alt_day_binder != 1:
             if persistent.mi_dj_true:
-                "Она, наконец, распрямилась, и я с трудом удержал восторженный вздох."
-                th "Это же… Это…"
-                th "Так, стоп. Откуда виляние хвостом и почему она мне так знакома?"
-                th "То есть я, конечно, помню, что она на меня вчера глазела, но и только-то!"
-                th "А здесь полностью складывается впечатление давнего знакомства."
-                th "Я хорошо знал всего одну азиаточку — и это явно была не она."
-                me "Здравствуй."
-                "От души улыбнулся я — ей и улыбалось так, честно, искренне, как старому знакомому."
+                "She finally straightened up, and I could hardly hold back an enthusiastic sigh."
+                th "Wait… She's…"
+                th "Hold the goddamn phone. Why am I waggling my tail and how do I know her?"
+                th "I mean, of course I remember that she stared at me yesterday, but that's all there is!"
+                th "And here I had an impression of an old acquaintance."
+                th "I knew only one asian closely - and it sure as hell wasn't her."
+                me "Greetings."
+                "I smiled heartily - and she smiled so, honestly, sincerely, like an old acquaintance."
             elif persistent.mi_dj_bad:
-                "Наши взгляды пересеклись — и я с трудом подавил желания спрятаться под скамейку."
-                "Почему-то вдруг встало перед глазами Пулково, подламывающиеся шасси…"
-                "Да и в её глазах плеснуло подзабытой болью."
-                mi "Скажи… Почему ты кажешься мне таким знакомым?"
-                mi "Я вчера тебя изо всех сил пыталась вспомнить, но у меня не получилось."
-                "Она по-птичьи склонила голову на бок."
-                "Я пожал плечами."
+                "Our eyes crossed - and I barely managed to suppress the desire to hide under a bench."
+                "For some reason I saw Pulkovo, breaking undercarriage…"
+                "And even in her eyes there was a splash of a half-forgotten pain."
+                mi "Tell me… Why do I feel like I know you?"
+                mi "I tried so hard to remember you yesterday, but I couldn't."
+                "She tilted her head to the side, like a bird."
+                "I shrugged."
             elif persistent.mi_dj_good_jap:
-                th "О, а вот и знакомое лицо."
-                "Я не очень хорошо запоминал имена, но лица помнил хорошо."
-                "И это лицо я совершенно определённо где-то видел."
-                "И мы совершенно определённо общались!"
-                me "Привет! Узнала?"
-                mi "Прости?"
-                "Девочка склонила голову набок, разглядывая меня."
-                mi "Я где-то тебя видела, да… Ты в Саппоро никогда не бывал? Ай, что я глупости спрашиваю, с чего бы тебе бывать в Саппоро, тем более там, где мы могли бы встретиться?"
-                me "Не то чтобы бывал…"
-                "Протянул я."
-    me "А я с маршрутным листом."
+                th "Oh, here's a familiar face."
+                "I wasn't good with names, but faces were a completely different story."
+                "And I definitely saw this face somewhere else."
+                "And we definitely were acquainted!"
+                me "Hey! Remember me?"
+                mi "I'm sorry?"
+                "The girl tilted her head to the side, looking at me."
+                mi "I've seen you somewhere, yeah… Have you ever been to Sapporo? Ah, what am I even asking, why would you be in Sapporo, especially where we could meet?"
+                me "Well, not like I ever was there…"
+                "I said, contemplating."
+    me "I came here with a checklist."
     if alt_day2_convoy not in ('dv', 'sl', 'un'):
         $ lp_mi += 1
-        mi "Ты без сопровождающего?"
-        "Рассеянно поинтересовалась она."
-        me "Э…"
-        me "Да вот, один решил сходить."
-    "Я протянул ей листок."
+        mi "Are you without a guide?"
+        "She absentmindedly asked."
+        me "Uh…"
+        me "Yeah, decided to go alone."
+    "I handed her the paper."
     if not (persistent.mi_dj_true or persistent.mi_dj_good_jap):
-        me "То есть, я хотел сказать, привет."
-        "После сеанса вуайеризма мысли были несколько разрозненны."
+        me "I mean, I wanted to say, hello."
+        "After unintentional voyeurism my thoughts were in disarray."
     if alt_day_binder == 1:
         if alt_day1_me_d3_chase:
-            mi "Ой, это вы…"
-            "Начала было она."
-            me "Так, никаких «выканий»."
-            mi "Но я…"
-            me "Никаких!"
-            mi "…же…"
-            me "«Выканий»."
+            mi "Ou, that's You."
+            "She started."
+            $renpy.notify('In Russian language you (1 person) and you (2+ persons) are different words, second variant could be also used as a polite pronoun.')
+            me "Uh, No «You's»."
+            mi "But I…"
+            me "No."
+            mi "...mean..."
+            me "«You's»."
             show mi smile pioneer with dspr
-            mi "Как скажете… {w}Ой, то есть, как скажешь."
-        me "Теперь-то ты скажешь мне, как тебя зовут?"
+            mi "As You say... {w}Oi, I mean, as you say."
+        me "So, will you finally tell me your name?"
         show mi laugh pioneer with dspr
-        mi "А ты настойчивый."
+        mi "You're persistent, aren't you."
         show mi normal pioneer with dspr
-        mi "Но мужчина представляется первым, помнишь?"
-        me "Прости. {w}Моё имя Семён."
-        mi "Очень приятно! {w}А я — Мику!"
+        mi "But the man should introduce himself first, remember?"
+        me "Sorry. {w}I'm Semyon."
+        mi "Nice to meet you! {w}And my name is Miku!"
     else:
-        mi "Ты Семён?"
-        "Она подошла ко мне и, подняв половинки тромбона, уложила инструмент на старое место."
-        "При этом она нагнулась, и я ещё раз увидел…"
-        "Вот опять же кто-нибудь уронит!"
-        mi "Привет! Меня Мику зовут!"
-    $ meet('mi','Мику')
+        mi "You're Semyon?"
+        "She came up to me and, picking up the halves of the trombone, put the instrument back in its old place."
+        "All while bending over, once more showing me…"
+        "Ugh, someone will drop it again!"
+        mi "Hey! I'm Miku!"
+    $ meet('mi','Miku')
     $ alt_day2_mi_met = True
-    me "Мику?"
+    me "Miku?"
     show mi smile pioneer with dspr
-    mi "Да."
+    mi "Yeah."
     show mi serious pioneer with dspr
-    "Она на секунду нахмурилась."
+    "She frowned for a second."
     show mi normal pioneer with dspr
-    mi "Никто почему-то не верит в то, что это моё настоящее имя! У меня мама из Японии, а папа — Русский Инженер!"
-    "Она произнесла последние два слова с явно выраженной заглавной буквы, и я невольно улыбнулся её забавной гордости."
-    "Гордиться тем, что твой папа — инженер… {w}Это дорогого стоит."
-    "Почему-то в голову вдруг полезли анекдоты о нищих инженерах и грабителях, которые вместо того, чтобы отбирать деньги у таких трудяг, наоборот, ссуживают их трёшкой."
-    "Я молчал, чувствуя себя немного неловко из-за того, что подглядывал, однако девочку, похоже, это совершенно не заботило."
+    mi "For some reason, nobody believes that it's my real name! My mom's from Japan, and my dad is a Russian Engineer!"
+    "She uttered the last two words with a distinctly pronounced capital letter, and I involuntarily smiled at her pride."
+    "Being proud of your dad being an engineer… {w}That's worth a lot."
+    "For some reason, anecdotes about impoverished engineers and robbers suddenly came into my head, who, instead of taking money from such hard workers, on the contrary, lent them three rubles."
+    "I was silent, feeling a bit embarrassed about peeping, but the girl didn't seem to care at all."
     show mi happy pioneer with dspr
-    mi "А здесь мой музыкальный клуб!"
-    "Она с уже знакомой забавной гордостью обвела помещение рукой и улыбнулась."
-    "Я наконец собрался с мыслями."
-    me "Тихо, спокойно."
-    "Она с энтузиазмом кивнула, а два неимоверно длинных хвоста аквамариновых волос, поплывшие вслед за движением головы, на долю секунды ввели меня в некий транс. Засмотрелся."
-    "Довольно необычный цвет волос, тонкая изящная шея и фигура девочки-подростка. Если у меня и были сомнения относительно её японского происхождения, после осмотра они отпали — и имя «Мику» уже не казалось фантастическим."
+    mi "And this is my music club!"
+    "She waved her hand around the room with her already familiar amusing pride and smiled."
+    "I finally collected myself."
+    me "Alright, calm down."
+    "She nodded enthusiastically, and two incredibly long ponytails of aquamarine hair that floated following the movement of my head put me in a kind of trance for a split second. I kept staring."
+    "A rather unusual hair color, a thin graceful neck and a figure of a teenage girl. If I had any doubts about her Japanese origin, after examination, they disappeared - and the name «Miku» wasn't looking all that fantastic anymore."
     show mi smile pioneer with dspr
-    "Наконец она соизволила обратить внимание на бумажку, которую я всё это время протягивал ей."
-    mi "Так тебя тоже с бегунком послали?"
+    "Finally, she deigned to pay attention to the piece of paper that I had been holding out to her all this time."
+    mi "Oh, were you sent with a checklist too?"
     show mi happy pioneer with dspr
-    "Она так кавайно сложила ладошки у щеки, что я не выдержал и опять заулыбался."
-    dreamgirl "«Кавайно»? Семён, ты только что сказал «кавайно»?!"
-    dreamgirl "Может, тебе на улицу пора? {w=.3}Голову, например, в умывальничке остудить. {w=.3}Да ты сам посмотри, что она с тобой делает!"
-    mi "Это они так над новенькими издеваются."
-    th "Нееее, это ТЫ над новенькими издеваешься."
-    mi "Сейчас подпишу."
+    "She folded her hands so kawaii on her cheek that I couldn't hold myself back and smiled again."
+    dreamgirl "«Kawaii»? Semyon, did you just say «kawaii»?!"
+    dreamgirl "Maybe you should go out and touch grass? {w=.3}Take a shower immediately, maybe? {w=.3}Look at what she's doing to you!"
+    mi "That's how they bully newcomers."
+    th "Naaah, it's YOU who's bullying newcomers."
+    mi "I'll sign it."
     show mi shy pioneer with dspr
-    "Она превратилась в небольшой смерч, откидывающий всё в сторону."
-    mi "Ты проходи."
-    mi "Я сейчас."
-    "И нагнулась ещё раз!"
-    "Не знаю, какие цели она преследовала, но методы их достижения она использовала самые бесчестные!"
-    "Улыбнувшись одними шальными глазами, она наконец подписала мой несчастный листок."
-    mi "Я почти всё время здесь. Ты заходи…"
-    mi "Даже если не хочешь записываться. А если хочешь…"
+    "She turned into a small tornado, throwing everything aside."
+    mi "Come in."
+    mi "I'll be right there."
+    "And bent over again!"
+    "I don’t know what goals she pursued, but she used the most dishonest methods to achieve them!"
+    "Smiling with her eyes, she finally signed my unfortunate sheet."
+    mi "I'm here almost all the time. Come in…"
+    mi "Even if you don't want to sign up. And if you do…"
     show mi smile pioneer with dspr
-    "Она посмотрела на меня."
-    mi "Мы всегда рады! Ой, то есть, я!"
+    "She looked at me."
+    mi "We're always glad to see you! Oh, I mean, I'm glad!"
     if (alt_day2_convoy == 'un'):
         show un smile pioneer at right with dissolve
-        un "Я люблю музыку… Но у меня к ней нет таланта."
-        "Она вздохнула."
-        un "А у тебя как?"
+        un "I love music… But I'm not talented enough for it."
+        "She sighed."
+        un "And you?"
     elif (alt_day2_convoy == 'sl'):
         show sl smile pioneer at right with dissolve
-        sl "Музыка — это так здорово! Жаль, у меня никогда не было достаточно времени заняться ей всерьёз."
-        "Она посмотрела в мою сторону."
-        sl "А у тебя как? Лежит душа к музыке?"
+        sl "Music is so great! Too bad I never had enough time to take it seriously."
+        "She glanced in my direction."
+        sl "How do you feel about it? Do you like music?"
     elif (alt_day2_convoy == 'dv'):
         show dv normal pioneer2 at right with dissolve
-        dv "Пффф… Вступишь сюда, тебя потом нормативами завалят."
-        dv "Будешь вместо музыки арпеджио и гаммы восьмушками гонять."
+        dv "Pffft. Yeah, you'll sign up here, and then you'll be practically buried in work."
+        dv "Instead of music you'll be constantly rehearsing arpeggios and hymns in 1/8ths."
         show mi sad pioneer with dspr
-        mi "Это неправда! Я всегда говорю, что в музыке главное творчество, а не техника!"
-        dv "Ну-ну."
-        dv "Решать тебе, короче."
+        mi "That's not true! I always say that it's all about the creativity, and not technique!"
+        dv "Uh-huh."
+        dv "Either way, it's your decision."
     menu:
-        "Записаться в кружок":
+        "Sign up":
             $ list_joined_clubs_7dl.append('music')
             $ lp_mi += 1
-            "И я в который раз за последние две минуты улыбнулся. Не мог не улыбаться."
-            me "Почему бы и нет. Давай, запишусь. Правда, я уже очень давно не играл."
+            "And I smiled for the umpteenth time in the last two minutes. Couldn't help but smile."
+            me "Why not. Sure, I'll sign up. Although, I haven't played in a long time."
             show mi happy pioneer with dspr
-            mi "Прекрасно-прекрасно!"
-            "Она захлопала в ладоши."
-            mi "Сейчас только найду журнал…"
+            mi "Great!"
+            "She clapped her hands."
+            mi "Let me just find the list…"
             play sound sfx_brass_drop
             with vpunch
-            "Она бросилась назад мимо рояля, по пути повалив одиноко стоящую бочку, достала с полки журнал и протянула его мне."
-            mi "Вот здесь распишись, пожалуйста. На чём ты будешь играть?"
-            me "Я, вообще, по медно-духовым."
-            "Покосившись на тромбон, я дёрнул плечом."
-            me "И на гитаре немного."
+            "She rushed back past the piano, knocking over a lone barrel along the way, took the book from the shelf and handed it to me."
+            mi "Sign here, please. What would you like to play?"
+            me "Generally speaking, I'm quite familiar with brass and wind instruments."
+            "Looking sideways at the trombone, I jerked my shoulder."
+            me "And I can play guitar a little."
             show mi smile pioneer with dspr
-            mi "Прекрасно! Просто прекрасно!"
-            mi "Сыграешь на чём-нибудь?"
+            mi "Wonderful! Absolutely amazing!"
+            mi "Could you play something?"
             if herc:
-                me "Как-нибудь в другой раз."
+                me "Maybe next time."
             else:
-                me "Если мундштук достанешь."
+                me "If you'll get me a mouthpiece."
             show mi happy pioneer with dspr
-            mi "А ты правда умеешь?"
-            "Мику непонятно чему обрадовалась."
+            mi "Do you really know how to play?"
+            "Miku was inexplicably happy."
             if herc:
-                me "Как будто мне есть резон врать."
+                me "As if I have any reasons to lie."
             else:
-                me "Мы все учились понемногу… Достанешь мундштук — попробую что-нибудь слабать."
-            "Очевидно было, что ничего серьёзного я из себя выжать не смогу, но…"
+                me "We all learned little by little… Get me a mouthpiece — I'll try to do something."
+            "It was obvious that I couldn't squeeze anything serious out of myself, but…"
             if loki:
-                "Возможно, это шанс снова начать играть, не захлёбываясь от боли в слипшихся альвеолах?"
+                "Perhaps this is a chance to start playing again, without choking on pain in glued alveoli?"
             show mi smile pioneer with dspr
             if not herc:
-                mi "Обязательно достану! Мне только на склад надо будет сходить, кажется, они были там."
-            mi "Если хочешь, ты приходи после обеда, я постараюсь успеть, будем тогда играть вместе!"
-            mi "Я здесь постоянно одна. Или хочешь, я тебя научу ещё на чём-нибудь играть? На скрипке? На флейте? Я на всём умею, правда-правда."
+                mi "I'll get it for sure! I just have to go to the warehouse, I think they were there."
+            mi "If you want, you can come after dinner, I'll try to be on time, then we'll play together!"
+            mi "I'm here alone all the time. Or do you want me to teach you something else to play? Violin? Flute? I can do everything, it's true."
             show mi sad pioneer with dspr
-            "Она вздохнула."
-            mi "Правда, флейты у нас нет, но ты же не хочешь на флейте?"
-        "Не записываться":
-            me "Может быть, в другой раз."
+            "She sighed."
+            mi "Well, we don't really have a flute, but you didn't want it anyways, yeah?"
+        "Don't sign up":
+            me "Maybe next time."
     show mi normal pioneer with dspr
-    th "Тебе бы рэп читать, девочка-оркестр. Вся широкоштанная эстрада с тобой и рядом не стояла."
+    th "You should rap, one-girl-orchestra. The whole wide-shouldered stage doesn't hold up a candle to you."
     if len(list_voyage_7dl) < 3:
-        "Я был склонен списать её странные выходки на смущение первой встречи."
-        "Но она выглядела несколько расстроенной — насколько я мог судить, зная её без году неделю."
-        me "Это не будет нескромным, если я спрошу — что-то случилось?"
+        "I was inclined to attribute her strange antics to the embarrassment of the first meeting."
+        "But she looked somewhat upset - as far as I could tell, having known her for a week without a year."
+        me "Would it be immodest of me if I ask - did anything happen?"
         show mi normal pioneer with dspr
-        mi "Что? Нет. Ничего. Просто я потеряла кое-что, никак не могу найти, и немного огорчена из-за этого!"
-        me "Что именно?"
-        mi "Ну… Если вкратце, то браслет-косичку. Она для меня довольно много значит."
-        me "Кумухимо?"
+        mi "What? No. Nothing. It's just that I've lost something, I can't find it, and I'm a little upset about it!"
+        me "What specifically?"
+        mi "Well… In short, a braided bracelet. She means a lot to me."
+        me "Kumihimo?"
         show mi shy pioneer with dspr
-        mi "А ты и такие вещи знаешь?"
-        "Как-то по-новому посмотрела на меня японка."
-        mi "Да, его. Ты что-то знаешь?"
-        "Я покачал головой:"
-        me "Нет, но все девочки вяжут себе фенечки."
-        me "А раз ты японская девочка — ты вяжешь себе япону фенечку."
+        mi "You even know things like that?"
+        "Somehow she looked at me in new light."
+        mi "Yeah. You know something?"
+        "I shook my head:"
+        me "No, but all girls knit their own baubles."
+        me "And since you are a Japanese girl, you knit yourself a Japanese bauble."
         show mi upset pioneer with dspr
-        mi "Ты… Ты дразнишься!"
-        me "Только что заметила?"
-        "Я и не подумал скрывать улыбку."
-        mi "Так нельзя, нечестно и вообще — мы знакомы десять минут!"
-        me "Прости. Обещаю, если увижу где-нибудь твой браслет — обязательно передам."
-        me "Скажи хотя бы — где ты его последний раз видела?"
+        mi "You… You're teasing me!"
+        me "Oh did you just find that out?"
+        "I didn't even think about hiding my smile."
+        mi "You can't do it, that's dishonest and actually - we’ve barely known each other for ten minutes!"
+        me "Sorry. I promise, if I see your bracelet somewhere, I will definitely return it."
+        me "Can you at least tell me where you last saw it?"
         show mi normal pioneer with dspr
-        mi "Дома надевала. Потом на пляж ходила. То есть, не на пляж, на лодки! Я думала взять лодку и покататься немного, раз никто не приходит."
-        mi "Но Ольга Дмитриевна-сан велела мне сидеть в клубе и ждать новичка — и чтобы обязательно записала его в кружок!"
+        mi "I wore it at home. Then I went to the beach. That is, not to the beach, to the the boats! I was thinking of taking a boat and going for a bit since no one ever comes."
+        mi "But Olga Dmitrievna-san ordered me to sit in the club and wait for a newcomer - and to be sure to enroll him in a club!"
         if 'music' in list_joined_clubs_7dl:
-            mi "Очень хорошо, кстати, что ты записался!"
-            "Ну кто бы сомневался."
+            mi "It's great that you signed up by the way!"
+            "Who would've guessed."
         else:
-            mi "Кстати, не передумал ещё? Может, всё-таки хочешь записаться?"
-            "Её настойчивость умиляла, но раз уж я твёрдо решил не записываться…"
-        mi "Так что я сейчас сижу здесь и скучаю, ко мне никто не заходит, я думала уже, что и ты не придёшь, и мне просто из вредности не дали на лодке покататься!"
-        "Мику снова уносило не в те степи, но главное я уяснил — если я хочу помочь ей в поисках, можно посмотреть у неё рядом с домиком и на пристани."
-        me "Я всё понял, спасибо!"
-        "Вежливо попрощался я."
-        me "Увидимся ещё, да?"
+            mi "Have you changed your mind yet? About signing up, I mean?"
+            "Her persistence was touching, but since I firmly decided not to sign up…"
+        mi "So here I am, sitting here, all bored, no one comes to me, I already thought that you wouldn’t come either, and they just didn’t let me ride a boat out of spite!"
+        "Miku was again carried away to the wrong steppes, but I understood the main thing - if I want to help her in her search, you can look next to her house and on the pier."
+        me "Got that, thanks!"
+        "I politely said goodbye."
+        me "We'll meet again, right?"
         show mi smile pioneer with dspr
-        mi "Конечно!"
-        "Воскликнула Мику и, тут же забыв обо мне, схватила с пульта нотную тетрадку — у гения случилось вдохновение."
+        mi "Of course!"
+        "Miku exclaimed and, immediately forgetting about me, grabbed a music notebook - the genius had an inspiration."
         $ set_chibi_alt1('boat_station_alt1', '?')
     else:
         show mi smile pioneer with dspr
-        me "Я пойду. Пока."
-        mi "До скорой встречи!"
-        "Крикнула девочка, и, мгновенно забыв обо мне, что-то застрочила на нотном стане."
+        me "I should go. Bye."
+        mi "See you soon!"
+        "The girl shouted, and, instantly forgetting about me, started scribbling something."
     stop ambience fadeout 2
     play sound sfx_close_door_1
     scene bg ext_musclub_day with fade
     pause(1)
     play ambience ambience_camp_center_day fadein 2
     if (alt_day2_convoy == 'un'):
-        me "Не могу сказать, что мне нравится {b}вся{/b} художественный руководитель."
-        me "Но те части, с которыми я познакомился…"
+        me "I can't say that I like {b}the entire{/b} art director."
+        me "But the parts that I have seen…"
         show un laugh pioneer with dspr
-        un "Мику — моя соседка по домику. Так что если будешь заходить, заодно и с ней поболтаешь."
-        "Она снова рассмеялась, видимо, вспомнив выражение моей физиономии в ходе лицезрения того, что я не должен был лицезреть."
-        me "А в домике она так же сидит?"
+        un "Miku is my roommate. So if you ever come in, at the same time you'll be able to chat with her."
+        "She laughed again, apparently remembering the expression on my face in the course of contemplating what I should not have seen."
+        me "Does she sit at the house like she sits here?"
         show un laugh pioneer with dspr
-        un "Нет, только здесь."
-        "Я усмехнулся и прикинул, куда двигаться дальше."
+        un "No, only here."
+        "I smirked and figured out where to go next."
     elif (alt_day2_convoy == 'sl'):
-        me "Не знаю как насчёт прочего лагеря, но ваш худрук — это что-то с чем-то!"
+        me "I don't know about the rest of the camp, but your art director is something else!"
         show sl shy pioneer with dspr
-        sl "Да, Мику немного эксцентричная. Но пойми и её — она одна в полузнакомой стране."
-        "С её внешностью она в любой стране не пропадёт…"
-        me "Да нет, она мне понравилась."
-        me "Во всяком случае, те места, которые я видел."
+        sl "Yeah, Miku is a bit eccentric. But please understand her too - she is alone in a semi-familiar country."
+        "With her looks she definitely wouldn't get lost anywhere…"
+        me "Nah, I mean, I like her."
+        me "The parts that I've seen, anyways."
         show sl laugh pioneer with dspr
-        sl "Поближе узнаешь, поймёшь, какой хороший она человечек."
-        th "Да куда уж ближе-то. Разве что изнутри."
-        "Я усмехнулся и развернул карту."
+        sl "If you get closer to her, you'll know how good she is."
+        th "How closer could we get? Directly in each other's insides?"
+        "I chuckled and unfolded the map."
     elif (alt_day2_convoy == 'dv'):
-        me "В иных домах дорогих гостей встречают хлебом-солью…"
+        me "In other houses, dear guests are greeted with bread and salt…"
         show dv grin pioneer2 with dspr
-        dv "Тут, видишь, тоже булками встретили!"
-        me "Пошли дальше."
+        dv "Yeah, and here you got greeted with buns!"
+        me "Let's keep going."
         show dv laugh pioneer2 with dspr
-        dv "Ладно, не спорю, это и правда было пошловато."
-        "Я усмехнулся и прикинул, куда двигаться дальше."
+        dv "Right, not going to lie, that was pretty vulgar."
+        "I smirked and planned my next move."
         show dv normal pioneer2 with dspr
     else:
-        "Художественный руководитель обескуражила, обезоружила и сбила с толку. Что-что, а впечатление произвести эта девочка умеет."
-        "Я мог сказать совершенно точно, что мне она — понравилась!"
-        "Ладно, с музыкой закончили."
+        "The art director discouraged, disarmed and confused me. If anything, but this girl knows how to make an impression."
+        "I could say for sure that I liked her!"
+        "Right, we're done with music."
     if ('medic' in list_voyage_7dl) and (alt_day_binder != 1):
-        "К медсестре-вамп и Электронику добавилась девочка-пулемёт."
+        "Our list of interesting people, consisting of vampiric nurse and Electronik, got expanded with a machine gun girl."
     elif (alt_day_binder != 1) or ('library' in list_voyage_7dl):
-        "К Электронику добавилась девочка-пулемёт. Что дальше?"
-    "Мне здесь определённо начинает нравиться!"
-    "Явно не так, как…"
-    "В голове отчётливо щёлкнуло, и некий голос, который я затруднился бы опознать как внутренний — уж больно неприятно звучал — поинтересовался:"
-    dreamgirl "Как где?"
-    th "Как в старой жизни!"
-    "Солнце будто протопило насквозь корочку льда, которой я покрылся, и вплотную подбиралось к замёрзшему сердцу."
-    "Отчего-то вдруг захотелось беспричинно рассмеяться, распахнуть руки и обнять весь мир."
-    "То самое счастье, о существовании которого я успел забыть — вот оно, ешь его ложками, забирай!"
-    "Я смутился собственной истовости и вернулся с небес на землю."
-    "Никакого смеха и объятий. Несолидно."
-    "К тому же, у меня ещё дела."
+        "List of interesting people, currently consisting of Electronik, got expanded with a machine gun girl. What's next?"
+    "I definitely like it more here!"
+    "Not like in…"
+    "There was a distinct click in my head, and a certain voice, which I would have difficulty identifying as internal - as it sounded painfully unpleasant - asked:"
+    dreamgirl "Like where?"
+    th "Like in my past life!"
+    "The sun seemed to melt through the crust of ice, which covered me, and came close to the frozen heart."
+    "For some reason, I suddenly wanted to laugh for no reason, open my arms and hug the whole world."
+    "The same happiness, the existence of which I managed to forget - here it is, eat it with a spoon, take it!"
+    "I was embarrassed by my own vehemence and returned from heavens to earth."
+    "No laughs or hugs."
+    "Anyways, I still have unfinished business."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -1679,371 +1680,371 @@ label alt_day2_event_clubs1:
     if not alt_replay_on:
         if been_there_alt1() > 1:
             scene bg ext_clubs_day with fade
-            th "Нет уж, хватит! Больше никакой кибернетики на сегодня!"
+            th "Nope, nah, nuh-uh, that's enough! No more cybernetics for today!"
             return
     scene bg ext_clubs_day with fade
     play music music_list["eat_some_trouble"] fadein 2
-    "Приоритетным зданием по списку значились клубы."
+    "One of the prioritized buildings on the list were clubs."
     if (alt_day_binder != 1):
         if counter_sl_7dl >= 1:
-            th "Клубы… Не то ли пафосное здание, которое мы со Славей встретили при входе?"
+            th "Clubs… Wait, is that the same pretentious building I saw at the entrance with Slavya?"
         else:
-            th "Что-то знакомое… Не тот ли домик у ворот, где Ульянка бегала с саранчой?"
-            th "Он!"
-    th "Пойду к кибернетикам."
-    th "Может, сумею у них разжиться какими-нибудь наушниками."
-    "Без музыки бродить было скучновато, а сволочной силикон отказывался держаться в ухе."
+            th "Something familiar… Wait, isn't that the house where I saw Ulyana with that locust?"
+            th "Right, that's it!"
+    th "I decided to visit our cybernetics."
+    th "Maybe I can grab some headphones from them."
+    "Wandering without music was pretty boring, and the damned silicone refused to stay in my ear."
     if counter_sl_7dl >= 1 and loki:
-        "В крайнем случае хотя бы штекер уворую и через усилитель послушаю."
+        "Worst case, at least I’ll steal a connecting cable and listen through an amplifier."
     else:
-        "Несколько минут спустя я остановился у здания клубов и невольно улыбнулся, ещё раз вспомнив ту самую саранчу."
-        "Впрочем, по сравнению с инопланетной дрянью в тарелке саранча выглядела довольно безобидно."
-    "На дверях клуба висела табличка с расписаниями занятий, которую кто-то уже успел — и я даже догадываюсь, кто, — порвать пополам."
-    "Разобрать можно было только «шашки» — следующая строчка располагалась по линии надрыва и восстановлению не подлежала."
-    "Здание клуба не внушало доверия ни внешним обшарпанным видом, ни забранными кое-где решётками окнами."
-    "Хотя количество тянущихся сюда кабелей, проводов и труб поневоле заставляло проникнуться величием."
-    "Не иначе, тут либо ракету строят, либо прототип реактора холодного синтеза."
-    "Я покачал головой и сделал было шаг вперёд, однако взгляд привлекло объявление, висящее поверх расписания работ."
-    "Там было только одно слово: «Занято», и я на секундочку засомневался, стоит ли вообще беспокоить таких вот занятых людей."
-    "Но маршрутный лист недвусмысленно указывал первой же позицией эти клубы. Делать нечего, пришлось заходить."
-    "Ступив на первую ступеньку, я понял, что выводы о качестве здания были преждевременными — доски крыльца не скрипели, двери выглядели обшарпанными, но надёжными, а на перилах, закрытый, висел большой навесной замок."
+        "A few minutes later, I stopped at the clubhouse and smiled involuntarily, once again remembering that same locust."
+        "Although, if you would compare it to that alien horror, the locust almost seemed harmless."
+    "There was a sign on the door of the club with class schedules, which someone had already managed - and I can even guess who - to tear in half."
+    "The only thing you could figure out was «checkers» — the next line was located along the tear line and could not be restored."
+    "The club building did not inspire confidence neither with its shabby external appearance nor the windows garnished with metal bars in some places."
+    "Although the number of cables, wires and pipes stretching towards here was awe-inspiring."
+    "They're either building a rocket, or a cold fusion reactor."
+    "I shook my head and took a step forward, but my eyes were drawn to an announcement hung over the work schedule."
+    "It was simple: «Do not disturb», and so I doubted for a second whether it was worth bothering such busy people at all."
+    "But the checklist clearly indicated these clubs as the first position. Oh well, what could happen."
+    "Stepping on the first step, I realized that the conclusions about the quality of the building were premature - the porch boards did not creak, the doors looked shabby, but reliable, and on the railing hung a large closed padlock."
     if alt_day2_convoy not in ('dv', 'sl', 'un'):
-        "Подёргав дверь, я зашёл в помещение."
+        "After rattling the door for a bit, I entered."
     else:
-        "Дверь оказалась не заперта, и мы вошли."
+        "The door wasn't locked, so we entered."
     play sound sfx_open_door_clubs
     stop ambience fadeout 2
     scene bg int_clubs_male_day with dissolve
     play ambience ambience_clubs_inside_day fadein 1
-    "Что ж, что-то в этом духе я и рассчитывал встретить."
-    "Бардак, который гений способный, но ленивый всегда зовёт «творческим беспорядком»."
-    "Повсюду в изобилии валялись провода, катушки, самодельные платы и переключатели."
-    "На столе стояла какая-то хитрая бандура, названия которой я не знал, однако судя по застывшей в секторе ноль дрожащей проволочной стрелке, это был какой-то измерительный прибор."
-    th "Может, осциллограф?"
-    th "А кто его знает — я в этом не силён."
-    "Хозяев нигде видно не было."
+    "Well, I expected something like this."
+    "A mess that a capable, but lazy, genius always calls «creative mess»."
+    "Wires, coils, makeshift boards and switches lay everywhere in abundance."
+    "There was some kind of peculiar machinery on the table, the name of which I did not know, but judging by the trembling wire arrow frozen in sector zero, it was some kind of measuring device."
+    th "Oscillograph?"
+    th "Who knows - it's not my forte anyways."
+    "The owners were nowhere to be seen."
     if (alt_day2_convoy == 'un'):
         show un normal pioneer with dspr
         if loki:
-            "Но это не так уж и важно."
-            "Меня больше интересовали какие-нибудь наушники или, на худой конец, просто вход на три миллиметра, а там я уже как-нибудь сам…"
+            "Well, that doesn't matter anyways."
+            "I was more interested in some kind of headphones or, at worst, just a 3.5mm jack, and I'd figure something out myself…"
         if ('library' in list_voyage_7dl):
-            un "Шурик всё ещё в библиотеке."
+            un "Shurik is still in the library."
             if 'nwsppr' in list_joined_clubs_7dl:
-                me "Постой! Так говоря, что будет {i}у себя{/i}, Шурик имел в виду клуб?"
-                "Лена кивнула."
-                me "Хм… Выглядит логично. Его вполне может заинтересовать кибернетика."
+                me "Hold on! So by saying that he'll be {i}at the usual place{/i}, Shurik meant the club?"
+                "Lena nodded."
+                me "Hm… Makes sense. He definitely could be interested in cybernetics."
         else:
-            un "Опять Шурик где-то гуляет…"
-            "Задумчиво сказала Лена."
-            me "Шурик? Какой Шурик?"
-            un "Он здесь старший. И в стенгазете."
-            un "Наверное, он там сейчас."
+            un "Shurik's gone somewhere again…"
+            "Thoughtfully said Lena."
+            me "Shurik? Who's Shurik?"
+            un "He's responsible here. And in the newspaper."
+            un "He's probably there right now."
     elif (alt_day2_convoy == 'sl'):
         show sl smile2 pioneer with dspr
         if ('library' in list_voyage_7dl):
-            sl "Похоже, что Шурик все ещё в библиотеке."
-            me "А причём здесь Шурик?"
+            sl "Looks like Shurik is still in the library."
+            me "And how does he relate to this?"
             show sl smile2 pioneer with dspr
-            sl "Так он же глава кружка кибернетики."
+            sl "Well, he's the head of cybernetics club."
             if 'nwsppr' in list_joined_clubs_7dl:
-                me "Так говоря, что будет {i}у себя{/i}, Шурик имел в виду клуб?"
-                sl "Да!"
-            sl "Он и Серёжа постоянно мечутся туда-сюда между клубом и библиотекой."
+                me "So by saying that he'll be {i}at the usual place{/i}, Shurik meant the club?"
+                sl "Yeah!"
+            sl "He and Electronik always circulate between library and here."
             show sl smile pioneer with dspr
-            me "Вот как."
+            me "Oh, so that's how it is."
         else:
-            me "Здесь так и принято оставлять дверь нараспашку и исчезать?"
-            sl "Да это Шурик. Его нельзя винить — всё-таки приходится работать на два кружка сразу."
+            me "Is it customary here to leave the door wide open and disappear?"
+            sl "It's just Shurik. Can't blame him — he's working in two clubs at the same time."
             show sl normal pioneer with dspr
-            me "Шурик? Какой Шурик?"
-            sl "Старший кружка кибернетики."
-            sl "И стенгазету ведёт. Наверное, он вместе с Серёжей в библиотеке сейчас."
-            me "Ясно."
+            me "Shurik? Who's Shurik?"
+            sl "Head of cybernetics club."
+            sl "And he also works on the newspaper. Electronik and him are probably in the library right now."
+            me "I see."
         if counter_sl_cl != 0:
-            me "Так, что там со светомузыкой?"
+            me "Alright, where's our light show requisite?"
             show sl normal pioneer with dspr
-            sl "Не беспокойся на этот счёт, я сама всё проверю."
-            me "Нет уж, извольте!"
-            sl "Ох, ну ладно."
+            sl "Don't worry about it, I'll check everything myself."
+            me "Oh, please!"
+            sl "Ugh, fine."
             show sl shy pioneer with dspr
-            "Кажется, Славе было не очень приятно вспоминать о демонстрации своего промаха."
-            "Несмотря даже на то, что я её как мог прикрыл."
-            "То ли дело я — отряхнулся и поскакал дальше."
-            "Она отошла к шкафу и, поискав на связке, отделила полукруглый ключик, которым открыла хранилище техники."
-            sl "Дело-то плёвое."
-            sl "Нужно вытащить гирлянду и включить в розетку."
-            me "А цвет важен?"
+            "It seems that Slavya was not very pleased with remembering the demonstration of her mistake."
+            "Even though I tried to cover her up as best as I could."
+            "She's not me — I could just dust myself and gallop on."
+            "She went to the closet and, looking for a bunch, separated the semicircular key with which she opened the storage of equipment.."
+            sl "Easy thing."
+            sl "You just need to take the garland out and plug it in."
+            me "Does the color matter?"
             show sl laugh pioneer with dspr
-            sl "Нет! Мы лампочки сами красим — зелёнкой и марганцовкой, кажется."
-            sl "У мальчиков надо спросить точнее."
+            sl "Nope! We paint the light bulbs ourselves - with iodine and potassium permanganate, if I recall correctly."
+            sl "If you want specifics you'll have to ask the boys."
             hide sl with fade
-            "Она включила гирлянду в розетку, и одна из лампочек, тут же вспыхнув, погасла насовсем."
-            "Остальные, хозяйственно запущенные через стартер для лампы дневного света, изображали из себя светомузыку."
-            "Вернее, это мне так показалось сначала — что остальные: на самом деле, отсутствовали четыре лампочки."
-            "Славя их выкрутила и хозяйственно убрала в мешок."
+            "She plugged the garland into the outlet, and one of the bulbs, immediately flashing, went out for good."
+            "The rest, economically launched through a starter for a fluorescent lamp, pretended to be a light show."
+            "Or rather, it seemed so to me at first: in fact, four light bulbs were missing."
+            "Slavya unscrewed them and put them away in a bag."
             show sl normal pioneer with dspr
-            sl "Вот и всё."
-            sl "А теперь самая приятная часть работы: мы попытаемся сложить всё это дело обратно."
-            th "Мне показалось, или в её голосе и правда прозвучал сарказм?"
-            "Не показалось."
-            "Однажды мне довелось поработать укладчиком — просто посмотреть, что это такое, ничего серьёзного."
-            "И тот процесс очень походил на то, что мы делали сейчас — нужно было сложить чуть ли не километровую дуру с лампочками в относительно небольшой мешок."
-            "И только присутствие рядом со мной одной очень правильной во всех отношениях девочки позволило мне держать себя в руках."
-            "Ни единое матерное слово не сорвалось с моих уст."
-            "А хотелось!"
+            sl "That's all there was."
+            sl "And now the most pleasant part of the work: we will try to put this whole thing back."
+            th "Am I mistaken, or did her voice actually sound sarcastically?"
+            "Nope, wasn't mistaken."
+            "Once I happened to work as a packer - just to see what it is, nothing serious."
+            "And that process was very similar to what we were doing now - it was necessary to put almost a kilometer long cable with light bulbs into a relatively small bag."
+            "And only the presence of one, very correct in all aspects, girl right next to me allowed me to control myself."
+            "Not a single swear word left my mouth."
+            "But I really wanted to!"
             with fade2
-            "Но если долго мучиться — что-нибудь получится."
-            "Мы справились и с этой нелёгкой задачей и расселись за столом перевести дух."
-            me "Хозяев так и нет."
-            "Вяло сказал я."
+            "But if you suffer for a long time, something will work out."
+            "We finished this difficult task and sat down at the table trying to take a breather."
+            me "Owners still aren't here."
+            "I said lazily."
     elif (alt_day2_convoy == 'dv'):
         show dv angry pioneer2 with dspr
         if ('library' in list_voyage_7dl):
-            dv "Очкарик, похоже, поселился в библиотеке."
+            dv "The four-eyed seemingly settled in the library."
         else:
-            dv "Ну и где этот очкарик?"
-        me "Кто?"
-        dv "Этот. Как его… Шурик."
+            dv "And where the hell is this four-eyed?"
+        me "Who?"
+        dv "That one, what's his name… Shurik."
         if ('library' in list_voyage_7dl):
-            me "Так это Шурик здесь заправляет?"
-            dv "А кто ж ещё?"
-            me "Хм… Выглядит логично. Его вполне может заинтересовать кибернетика."
+            me "Oh, he's the chief here?"
+            dv "Who else?"
+            me "Hm… Yeah, makes sense. He definitely could be interested in cybernetics."
             if 'nwsppr' in list_joined_clubs_7dl:
-                me "Постой! Так говоря, что будет {i}у себя{/i}, Шурик имел в виду клуб?"
-                "Алиса хмуро кивнула."
+                me "Hold on! So by saying that he'll be {i}at the usual place{/i}, Shurik meant the club?"
+                "Alisa grimly nodded."
         else:
-            dv "Очкастый такой. Узнаешь его, он один здесь их носит."
-            dv "Похоже, опять в библиотеке ошивается."
+            dv "He literally wears glasses. You can't mistake him for anyone else, he's the only one who does."
+            dv "He's probably still stuck in the library."
     else:
         if ('library' in list_voyage_7dl):
             if 'nwsppr' in list_joined_clubs_7dl:
-                "Судя по записи в бегунке, мне нужен Шурик. Так вот, что он имел ввиду, говоря {i}у себя{/i}."
+                "According to what was in the checklist I was looking for Shurik. So that's what he meant by {i}the usual place{/i}."
             else:
-                "Судя по записи в бегунке, мне нужен Шурик. Выходит, он и здесь за главного."
+                "According to what was in the checklist I was looking for Shurik. Turns out he's also the chief here."
         else:
-            "Судя по записи в бегунке, мне нужен Александр, руководитель кружка кибернетики."
-    "Хотя времени на обход лагеря было мало, я решил всё-таки дождаться, чтобы мне поставили автограф в обходном листе."
+            "According to the checklist, the man I was searching for was Alexander, head of cybernetics club."
+    "Although there was not enough time to go around the camp, I decided to wait so I could get an autograph on the list."
     if loki:
-        "А до той поры можно было и поискать то, что меня интересует."
+        "And until then, I could look around for what I was interested in."
         $ alt_day2_minijack = True
         if alt_day2_convoy not in ('dv', 'sl', 'un'):
-            "Скоренько убедившись в том, что никто не помешает мне вести археологические раскопки, я снял со шкафа картонную коробку."
-            "Поиски не заняли много времени — пользуясь законом Мэрфи, я вытряхнул содержимое на стол и, в полном соответствии с правилом, искомый штекер был обнаружен на самом верху кучи."
-            "К сожалению, это был просто трёхмиллиметровый штекер с куском провода — никаких глупостей, вроде присоединённых к нему наушников, не наблюдалось."
-            th "Спасибо и на этом."
-            "Отложив штекер в сторонку, я смахнул хлам со стола обратно в коробку и водрузил её на место — на шкафу."
+            "Quickly convinced that no one would interfere with my archaeological excavations, I removed a cardboard box from the cabinet."
+            "The search did not take long - using Murphy's law, I shook out the contents on the table and, in full accordance with the rule, the plug I was looking for was found at the very top of the pile."
+            "Unfortunately, it was just a three-millimeter plug with a piece of wire - no nonsense, like headphones attached to it, was observed."
+            th "Thanks for that, at least."
+            "Putting the plug aside, I swept the junk from the table back into the box and set it back in place - on the cabinet."
         elif (alt_day2_convoy == 'un'):
-            "К сожалению, обе пары наушников, которые я обнаружил — одни с оторванным напрочь левым «ухом», вторые без держащей дужки — не подошли."
-            "Зато удалось раздобыть миниджек, а это значит, что стоит лишь мне добраться хоть до какого-нибудь усилителя…"
-            "Лена молча наблюдала за моими раскопками, стараясь не вмешиваться."
+            "Unfortunately both pairs of headphones I have found — one 'pair' had the left «ear» completely torn off, second pair didn't have a holding bow — wouldn't fit my needs."
+            "But I managed to get a minijack, which means that the moment I get to any semblance of an amplifier…"
+            "Lena silently watched my excavations, trying not to interfere."
         elif (alt_day2_convoy == 'dv'):
-            me "Алиска!"
+            me "Alisa!"
             show dv normal pioneer2 at center
-            dv "Чего тебе?"
-            me "Что такое миниджек знаешь?"
-            dv "Чего?"
-            me "Папа на три с половиной!"
-            dv "Что-то такое знакомое…"
-            "Она призадумалась."
-            me "Короче, оно мне надо. Давай поищем!"
-            dv "А тебе зачем?"
-            me "Надо! Ну, поможешь, нет?"
+            dv "What do you want?"
+            me "You know what's a mini-jack?"
+            dv "Huh?"
+            me "Male plug, 3.5mm!"
+            dv "Something familiar…"
+            "She got lost in thought."
+            me "Either way, I need it. Let's search!"
+            dv "Why do you need it?"
+            me "I just do! Will you help?"
             show dv smile pioneer2 with dspr
-            dv "Уговорил! Но чтоб потом рассказал, зачем тебе."
-            me "И даже покажу!"
-            "Несколько минут поисков дали нам две пары наушников — сломанные, несколько моновыходов и, наконец, один вменяемый миниджек с небольшим запасом провода."
-            me "Бинго!"
-            "Я поднял штекер над головой."
+            dv "Fine! You can explain why later."
+            me "I'll even show you!"
+            "A few minutes of searching gave us two pairs of headphones - broken ones, several mono outputs and, finally, one sane mini-jack with a small supply of wire."
+            me "Bingo!"
+            "I lifted it above my head."
             show dv normal pioneer2 with dspr
         elif (alt_day2_convoy == 'sl'):
             show sl angry pioneer with dspr
-            sl "Эй, что ты делаешь?"
-            "Рассерженно спросила Славя."
-            sl "Зачем ты без спроса туда залез?"
-            me "Мне нужен штекер. Если найду, я у владельцев спрошу. Но пока их нет, надо же мне чем-то заняться!"
+            sl "Hey, what are you doing?"
+            "Slavya asked angrily."
+            sl "Why are you rummaging there without permission?"
+            me "I need a plug. If I find it, I'll ask the owners. But while they're gone, I need to do something!"
             show sl dontlike pioneer with dspr
-            "Славя не нашла контраргумента, поэтому замолчала, пристально следя за мной."
-            "Наконец я нашёл искомое — и вовремя."
+            "Slavya couldn't find a counterargument, so she fell silent, closely following me."
+            "Finally I found what I was searching for - and right on time too."
             show sl normal pioneer with dspr
     else:
         if alt_day2_convoy in ('dv', 'sl', 'un'):
-            me "И как долго его может не быть?"
+            me "For how long can he be gone?"
             if (alt_day2_convoy == 'un'):
                 show un normal pioneer with dspr
-                un "Да кто ж его знает. Но вряд ли долго — он бы помещение закрыл, у Ольги Дмитриевны с этим строго."
+                un "Who knows. But it's unlikely to be a long time - he would have to close the room up, Olga Dmitrievna has strict policies regarding that."
             elif (alt_day2_convoy == 'sl'):
                 show sl normal pioneer with dspr
-                sl "Шурика-то? Да минут двадцать, не больше, он постоянно клуб запирает — так, будто здесь хранится что-то…"
-                "Она оборвала себя."
-                me "Что?"
+                sl "Shurik? About twenty minutes, no more, he constantly locks the club - as if something is stored here…"
+                "She suddenly stopped."
+                me "What?"
                 show sl shy pioneer with dspr
-                sl "Не суть. Просто что-то важное для него."
+                sl "Don't mind it. Something really important to him."
                 show sl normal pioneer with dspr
             elif (alt_day2_convoy == 'dv'):
                 show dv normal pioneer2 with dspr
-                dv "А я знаю? Я с этими придурками не общаюсь."
-                me "Твоя помощь неоценима."
-                "Съязвил я."
-                "Алиса только кивнула. Кажется, этим её не проймёшь."
-        "Следующие пять минут я машинально разглядывал содержимое многочисленных полок. Наконец, томительное ожидание было прервано."
+                dv "How should I know? I don't talk to these idiots."
+                me "You're very helpful."
+                "I exclaimed sarcastically."
+                "Alisa just nodded. Can't get her with that, I guess."
+        "For the next five minutes, I looked at the contents of the numerous shelves. Finally, the agonizing wait was interrupted."
     show sh normal pioneer at right with dissolve
     if ('library' in list_voyage_7dl):
-        "За спиной раздался стук шагов, и в комнату зашёл Шурик."
+        "Behind I heard the sounds of footsteps, and then Shurik entered the room."
         if alt_day2_convoy in ('dv', 'sl', 'un'):
-            sh "А что вы тут делаете?"
+            sh "What are you two doing here?"
         else:
-            sh "А что ты тут делаешь?"
-        "Он поправил очки на переносице своим фирменным жестом."
-        me "Что-что… Бегунок у меня, помнишь?"
+            sh "What are you doing here?"
+        "He adjusted his glasses on the bridge of his nose with his trademark gesture."
+        me "What-what… The checklist, remember?"
     else:
-        "За спиной раздался стук шагов, и в комнату зашёл парень, очень похожий на Александра Демьяненко."
-        $ meet('sh','Шурик')
+        "I heard the sounds of footsteps, and then a guy very similar to Alexander Demyanenko entered the room."
+        $ meet('sh','Shurik')
         $ alt_day2_sh_met = True
-        sh "Привет. Новенький. Семён?"
-        "Он поправил очки на переносице."
-        "Я кивнул."
+        sh "Hello. Newbie. Semyon?"
+        "He adjusted his glasses."
+        "I nodded."
         if alt_day2_convoy in ('dv', 'sl', 'un'):
-            me "Привет. А ты, должно быть, Шурик?"
+            me "Hey. You must be Shurik?"
         else:
-            me "Привет. А ты, должно быть, Александр?"
-        "Он кивнул, протягивая мне руку."
-        "Пожатие у него было крепкое, но какое-то будто отстранённое."
-        sh "Ты за подписью в обходной?"
-        "Догадался он."
-        me "Угу."
+            me "Hey. You must be Alexander?"
+        "He nodded, holding out his hand."
+        "His grip was firm, but also somehow distant."
+        sh "You're here because of the checklist?"
+        "He figured out."
+        me "Mhm."
     if loki:
-        "Я спрятал штекер с куском провода в карман, стараясь делать это незаметно."
+        "I hid the plug with a piece of wire in my pocket, trying to do it discreetly."
         if (alt_day2_convoy == 'sl'):
             show sl serious pioneer with dspr
-            extend " И не обращая внимания на рассерженный взгляд Слави."
-            "К счастью, она не стала меня выдавать."
+            extend " While trying to ignore Slavya's angry stare."
+            "Luckily, she didn't betray me."
             show sl normal pioneer with dspr
-        me "Так что, подпишешь?"
-        sh "Что ж… Давай."
+        me "So, will you sign it?"
+        sh "Well… Give it here."
     else:
-        "Я вовремя вспомнил, что хотел разжиться здесь кое-чем ещё."
+        "I timely remembered that I wanted to get a hold of something else here."
         menu:
-            "Спросить о штекере":
+            "Ask him about the plug":
                 $ alt_day2_minijack = True
-                me "А ещё провод у тебя спросить хотел."
-                sh "Провод? Какой провод?"
-                me "Папа на три с половиной миллиметра."
-                "Он подошёл к столу, где в изобилии были разбросаны какие-то шнуры, платы и конденсаторы, и, с минуту покопавшись, вручил мне угловой штекер."
-                sh "Такой подойдёт?"
-                me "Более чем."
-                "Обрадовался я."
-                me "Спасибо."
-                th "Теперь он подпишет бегунок, и мы расстанемся почти друзьями."
-                me "А бегунок подпишешь?"
-                sh "Давай."
-            "Не спрашивать":
-                me "Подпишешь?"
-                sh "Давай."
-    "Забрав бумажку, он некоторое время вертел её в руках, будто не зная, что с ней делать."
-    "Я уже было хотел подать ему ручку, когда он отложил бумажку в сторону и строго посмотрел на меня."
+                me "I wanted to ask you about a cable."
+                sh "Cable? What cable?"
+                me "Male cable, 3.5mm."
+                "He went to the table, where some cords, boards and capacitors were scattered in abundance, and, after rummaging for a minute, handed me an angled plug."
+                sh "Good enough?"
+                me "Yeah."
+                "I rejoiced."
+                me "Thanks."
+                th "Now he will sign on the checklist, and we will part almost as friends.."
+                me "Will you sign the checklist?"
+                sh "Yeah."
+            "Don't ask":
+                me "Will you sign it?"
+                sh "Give it here already."
+    "Taking the paper, he turned it over in his hands for a while, as if not knowing what to do with it."
+    "I was about to give him a pen when he put the paper aside and looked sternly at me."
     show sh serious pioneer at right with dissolve
-    sh "Скажи, Семён."
+    sh "Tell me, Semyon."
     if 'nwsppr' in list_joined_clubs_7dl:
-        sh "Может, кроме газеты, ещё и к нам запишешься? {w}Знаю-знаю, слишком настойчив, но подумай!"
+        sh "Maybe, in addition to the newspaper, you will also sign up with us? {w}I know, I know, I'm too insistent, but think about it!"
     else:
-        sh "Ты как насчёт того, чтобы записаться к нам?"
+        sh "How about signing up with us?"
     if (alt_day2_convoy == 'sl'):
         show sl normal pioneer with dspr
-        sl "Шурик, давай о всех вступлениях позже? Нам надо просто обойти лагерь."
-        sh "Это не займет много времени."
-        th "Сказал, как отрезал."
+        sl "Shurik, can't these introductions wait until later? We just need to go around the camp."
+        sh "It won't take long."
+        th "Here we go again."
     elif (alt_day2_convoy == 'dv'):
         show dv angry pioneer2 with dspr
-        dv "Конечно! Сейчас оба и вступим! Будет у вас четыре Шурика."
-        dv "Ты правда думаешь, что мы сюда пришли в ваш бардак записываться?"
+        dv "Of course! Now let's both join! And then we'll have Shuriks."
+        dv "Do you really think that we came here to sign up in your mess?"
         show sh normal pioneer with dspr
-        sh "А зачем?"
-        "Он поправил очки."
+        sh "Then why are you here?"
+        "He adjusted glasses."
         show dv laugh pioneer2 with dspr
-        dv "Обходной лист, балда!"
+        dv "The checklist, you moron!"
         show dv normal pioneer2 with dspr
         show sh serious pioneer with dspr
-        sh "У балды есть имя."
-        sh "Шурик."
+        sh "Said moron has a name."
+        sh "Shurik."
     elif (alt_day2_convoy == 'un'):
-        un "Шурик… Мы за другим…"
+        un "Shurik… We're here for a different reason…"
     menu:
-        "А почему бы и нет":
+        "Why not":
             $ list_joined_clubs_7dl.append('cyber')
             if (alt_day2_convoy == 'dv'):
                 show dv laugh pioneer2 with dspr
-                "Алиса прыснула."
-                dv "Ты серьёзно?"
-                me "Ну да, почему бы и нет?"
+                "Alisa snorted."
+                dv "You serious?"
+                me "Well yeah, why not?"
                 show dv normal pioneer2 with dspr
-                dv "Ну-ну."
-                "Судя по голосу, Двачевская была несколько разочарована моим решением."
+                dv "Uh-huh."
+                "Judging by her voice, Dvachevskaya was somewhat disappointed with my decision."
                 $ lp_dv -=1
-            me "Правда, я ничего толком не умею…"
+            me "Although I don't really know anything…"
             show sh smile pioneer with dspr
-            sh "Это ничего, опыт — дело наживное."
-            "Он открыл ящик стола и вытащил оттуда огромную амбарную книгу, на которой трафаретом было написано «КЛУБЫ», и, пролистав несколько страниц, нашёл, наконец, нужную."
-            sh "Сейчас мы тебя запишем…"
-            sh "Готово!"
-            "Он пожал мне руку."
-            sh "Добро пожаловать в ряды кибернетиков!"
-        "Да знаешь…":
-            "Я замялся."
+            sh "That's okay, experience can always be acquired."
+            "He opened a desk drawer and pulled out a huge book on which «CLUBS» was written in stencil, and, after flipping through a few pages, found the required one."
+            sh "Now we just write you in…"
+            sh "Done!"
+            "He shook my hand."
+            sh "Welcome to the club, cybernetic!"
+        "You know…":
+            "I hesitated."
             if 'nwsppr' in list_joined_clubs_7dl:
-                "После тёплого приёма, устроенного мне Шуриком в редакторской, дела с ним вести не хотелось совершенно."
+                "After the warm welcome that Shurik gave me in the editorial room, I didn’t want to have anything in common with him, at all."
             else:
-                "Тратить время, просиживая штаны в компании оголтелых технарей в то время, как на улице бушует лето… Не хотелось."
-            "Лучше уж книжку почитать интересную."
-            "Всё же обижать его однозначным отказом было страшно — а ну как подписывать откажется?"
-            "Мне вдруг пришло в голову, что именно таким образом и вырастает самая махровая бюрократия, когда ради ничего не значащей подписи люди дают тебе право вертеть ими как заблагорассудится."
-            "Поэтому я ответил максимально нейтрально."
-            me "Слушай, ты меня, конечно, извини, но я не могу."
+                "Wasting time, sitting in the company of frenzied techies, while the summer is raging outside… Don't really want to."
+            "It'd be better to read an interesting book."
+            "Still, it was scary to offend him with an unambiguous refusal - what if he refuses to sign?"
+            "It suddenly occurred to me that this is how bureaucracy grows, when for the sake of a meaningless signature people give you the right to twirl them as you please."
+            "So I gave the most neutral answer."
+            me "Listen, I'm sorry, of course, but I can't."
             if len(list_joined_clubs_7dl) >= 1:
                 if ('nwsppr' in list_joined_clubs_7dl) and ('music' in list_joined_clubs_7dl):
-                    me "Я уже записался в стенгазету. Да и к Мику тоже."
+                    me "I have already signed up for the newspaper. And I signed up with Miku too."
                 elif 'nwsppr' in list_joined_clubs_7dl:
-                    me "Я уже записался в стенгазету."
+                    me "I have already signed up for the newspaper."
                 elif 'music' in list_joined_clubs_7dl:
-                    me "Я уже записался у Мику в клубе."
+                    me "I have already signed up with Miku."
                 elif 'soccer' in list_joined_clubs_7dl:
-                    me "Я уже записался, и физрук меня прибьёт, если узнает, что я предпочёл ваш кружок футболу."
+                    me "I've already signed up, and PE teacher would probably decimate me, if he ever found out that I preferred your club to football."
                 elif ('volley' in list_joined_clubs_7dl) and (alt_day2_convoy == 'sl'):
-                    me "Я уже записался, и физрук меня прибьёт, если узнает, что я предпочёл ваш кружок волейболу. Да и Славя не оценит."
+                    me "I've already signed up, and PE teacher would probably decimate me, if he ever found out that I preferred your club to volleyball. Slavya probably also wouldn't like that."
                 elif 'volley' in list_joined_clubs_7dl:
-                    me "Я уже записался, и физрук меня прибьёт, если узнает, что я предпочёл ваш кружок волейболу."
+                    me "I've already signed up, and PE teacher would probably decimate me, if he ever found out that I preferred your club to volleyball."
                 elif 'badmin' in list_joined_clubs_7dl:
-                    me "Я уже записался, и физрук меня прибьёт, если узнает, что я предпочёл ваш кружок бадминтону."
+                    me "I've already signed up, and PE teacher would probably decimate me, if he ever found out that I preferred your club to badminton."
             else:
-                me "Я никуда не записался ещё, и не хочу. {w=0.2}Для начала в лагере осмотрюсь."
-                sh "Думаешь?"
-                me "Уверен. У меня первый день сегодня, куда спешить?"
-                me "Времени вагон, подумать успею."
-                sh "Ну как знаешь."
-    "Я неловко кивнул на бумажку."
-    me "Я пойду?"
-    sh "Да."
-    "Шурик подписал маршрутный лист и отдал мне."
+                me "I haven't signed up anywhere yet, and I don't think I want to. {w=0.2}I'd rather take a look around camp first."
+                sh "You think?"
+                me "Definitely. It's my first day anyways, what's the rush?"
+                me "There's still a lot of time, I'll think about it."
+                sh "As you wish."
+    "I awkwardly nodded at the paper."
+    me "Can I go?"
+    sh "Yes."
+    "Shurik signed on the list and gave it to me."
     if 'cyber' in list_joined_clubs_7dl:
-        sh "Закончишь с делами по лагерю, заходи — покажем, обучим, выделим место. До скорого!"
-        me "Пока!"
-        "Я помахал рукой и вышел."
+        sh "Come in when you're done - we will show you, we will teach you, we will give you a place. See you later!"
+        me "See you!"
+        "I waved to him and left."
     elif len(list_joined_clubs_7dl) >= 1:
-        sh "Жаль, что ты уже записался, у нас очень интересно!"
+        sh "It's a pity that you have already signed up, it's very interesting here, you know!"
     else:
-        sh "Обязательно запишись в наш кружок, когда закончишь с обходом! Мы всегда рады новым членам!"
-        "А в голове в такт его последним словам зазвучало «Союз нерушимый республик свободных…», и я поспешил освободить помещение."
+        sh "Be sure to sign up for our club when you're done! We always welcome new members!"
+        "And in my head to the beat of his last words sounded the Soviet anthem, so I hurriedly vacated the premises."
     play sound sfx_open_door_clubs_2
     pause(1)
     scene bg ext_clubs_day with dissolve
     play ambience ambience_camp_center_day fadein 2
     if 'cyber' in list_joined_clubs_7dl:
-        "Вряд ли я смогу здесь собрать зарядку для своего телефона или хотя бы USB вход для плеера. Но вдруг чему полезному научусь?"
+        "It is unlikely that I will be able to make a charger for my phone here, or at least a USB input for the player. But maybe I'll learn something useful?"
     else:
-        th "Какие здесь все хитрые! Все норовят заманить к себе неофита."
-        "Если бы не проявленные чудеса дипломатии, так и пришлось бы вступать…"
+        th "How cunning! Everyone is trying to lure in a new initiate."
+        "If not for the wonders of diplomacy, I'd have to sign up for sure…"
     stop music fadeout 2
-    th "Кстати, что мне ещё осталось?"
+    th "Alright, what's left?"
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -2053,18 +2054,18 @@ label alt_day2_event_camp_entrance1:
     if not alt_replay_on:
         if been_there_alt1() > 1:
             scene bg ext_camp_entrance_day
-            th "Я снова здесь. Автобуса снова нет."
-            th "Скучно, пошли обратно."
+            th "I'm back here. There's still no bus."
+            th "Boring, let's go back."
             return
     scene bg ext_camp_entrance_day with fade
-    th "Пусто."
-    "Давно известно, что самые крепкие стены — это их отсутствие."
-    "Казалось бы, чего проще — просто взять и пойти по этому шоссе. Но стоит лишь всплыть одному малюсенькому факту, и предприятие из авантюры превращается в фарс."
-    "Факту того, что отсюда до ближайшей самой захудалой деревни несколько сотен километров по трассам вторичных направлений. Сбежать отсюда? Я так не думаю."
-    "Откуда я это знаю?"
-    "А знаю и всё."
-    th "Похоже, выхода у меня и правда нет. Придётся ждать автобуса."
-    "Или не буду, и просто начну наконец наслаждаться нежданными летними каникулами!"
+    th "Still empty."
+    "It has long been known that the strongest walls are actually the absence of said walls."
+    "It would seem that it's really easy - just go along this highway. But as soon as one tiny fact emerges, this enterprise turns from an adventure into a farce."
+    "The fact that from here to the nearest most seedy village you would have to go several hundred kilometers along the routes of secondary directions. Getting out of here? I don't think so."
+    "How do I know that?"
+    "I just do."
+    th "It looks like I really have no choice. Gotta wait for the bus."
+    "Or I actually don't have to wait for it, and I better start enjoying this unprompted summer vacation!"
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -2074,64 +2075,64 @@ label alt_day2_event_dv_us_house1:
     if not alt_replay_on:
         if been_there_alt1() > 1:
             scene bg ext_house_of_dv_day with dspr
-            "Этот домик отличался от других — он был будто вырублен, ни одной плавной линии, все строгие, прямые, рубленные."
-            "И на стекле входной двери кто-то развесил весёлого Роджера. Даже не задумываясь, могу сказать — кто."
-            "Хотя здесь делать определённо нечего."
+            "This house was different from the others - it seemed to be cut down, not a single smooth line, everything was strict, straight, chopped."
+            "And on the glass of the front door someone hung a Jolly Roger. I don't even need to think who would that be."
+            "Doesn't seem like there's anything to do here."
             return
     scene bg ext_houses_day with fade
-    "Раскиданные как попало домики-бочки вызывали ощущение хаотичности, хотя при ближайшем просмотре становилось ясно, что здесь работал ландшафтный дизайнер."
-    "Только человек с опытом и практикой может так удачно встроить здания в заведомо неровную поверхность, почти не потревожив вековые сосны."
-    "Кое-где корни прорывались из-под земли и походили на кровеносные сосуды, пронзающие землю."
-    "Почти как у меня дома… Летом… Тогда, когда я последний раз выбирался дальше магазина."
-    "Из соседнего домика выбрался какой-то лохматый пионер с воспалёнными глазами."
-    "Я сам такие вижу каждый белый день. Ничего, это лечится — {w}простейшим перекусыванием локального кабеля."
-    th "Вопрос лишь в том, где это чудо малолетнее умудрилось раздобыть столько интернета?!"
-    "Я отвернулся, застеснявшись слишком пристального взгляда."
-    "И тут же зацепился взглядом за один домик, выделявшийся на фоне остальных."
+    "The scattered barrel houses evoked a sense of chaos, although on closer inspection it became clear that a landscape designer definitely worked here."
+    "Only a person with experience and practice can so successfully build buildings into a deliberately uneven surface, almost without disturbing the centuries-old pines."
+    "In some places, roots broke out of the ground and looked like blood vessels piercing the ground."
+    "Just like back home… In summer… Back when I used to go to places beyond the local store."
+    "Some shaggy pioneer with inflamed eyes got out of a neighboring house."
+    "I myself see these every day. No worries, it's curable {w}with the simplest biting of a local cable."
+    th "The only question is where this miracle of a minor managed to get so much Internet?!"
+    "I turned away, being too embarrassed to look closely."
+    "And then one house, which stood out from the rest, caught my eye."
     scene bg ext_house_of_dv_day with dissolve
-    th "Пиратский флаг, тяжёлые ботинки на прибалконнике. Дайте угадаю…"
+    th "Pirate flag, heavy boots on the porch. Let me guess…"
     if (alt_day2_convoy == 'un'):
-        un "А здесь Алиса живёт… С Ульяной."
+        un "Alisa lives here… With Ulyana."
     elif (alt_day2_convoy == 'sl'):
         show sl smile pioneer with dissolve
-        sl "Думаю, ты уже догадался, кто здесь живёт?"
-        "Улыбнулась Славя."
-        "Отож."
+        sl "I think you've already guessed who lives here?"
+        "Slavya smiled."
+        "Of course."
     elif (alt_day2_convoy == 'dv'):
         show dv normal pioneer2 with dissolve
-        dv "Как тебе мой домик?"
-        me "Кошмар!"
-        "Честно ответил я."
-    pi "Я бы туда не ходил."
-    th "Я бы тоже."
-    me "Я и не собирался…"
+        dv "How'd you like my house?"
+        me "Horrible!"
+        "I honestly replied."
+    pi "I wouldn't go there."
+    th "Me too."
+    me "I wasn't going to…"
     if (alt_day2_convoy == 'dv'):
-        "Пионер удивительным образом оказался рядом и опасливо покосился на Алису."
+        "The pioneer miraculously turned out to be nearby and cautiously glanced at Alisa.."
     else:
-        "Пионер удивительным образом оказался рядом и смотрел на меня ничего не выражающим взглядом."
-    "Совсем ребёнок, возрастом, наверное, с Ульянку. Невысокий, но с копной длинных нечёсаных волос."
-    pi "Там Алиска с Ульянкой живут."
+        "The pioneer miraculously turned out to be nearby and gave me a blank stare."
+    "Just a kid, probably the age of Ulyana. Short, but with a mop of long unkempt hair."
+    pi "Alisa and Ulyana live there."
     if alt_day_binder != 1 and (counter_sl_7dl < 2):
-        "Хм. Логично — коль скоро они вчера вдвоём пошли взламывать столовую."
+        "Hm. Well, that makes sense, considering they both were trying to break into canteen last night."
     if (alt_day2_convoy == 'dv'):
-        dv "Да, а теперь свободен."
-        "Она выписала звонкого щелобана пионеру и тот, потирая лоб, со всем возможным достоинством поспешно удалился."
+        dv "Alright, get out of here now."
+        "She resoundingly flicked the kid, who, rubbing his forehead, has hurriedly left with all possible dignity."
         if alt_day1_us_shotted:
-            th "Удивлён, что Алиса не в курсе относительно моих вчерашних подвигов."
-        "Я покосился на рыжую, а она нетерпеливо переступила с ноги на ногу."
-        dv "Мы идём?"
+            th "I'm surprised she isn't aware of my accomplishments from yesterday."
+        "I glanced at the redhead, and she impatiently shifted from foot to foot."
+        dv "Are we leaving?"
         scene bg ext_houses_day with dissolve
     else:
-        me "Так. Стоп. ОНИ ВМЕСТЕ ЖИВУТ?!"
-        th "Если две бестии объединят усилия, мне конец."
-        th "Нет уж, сюда я больше ни ногой."
+        me "Alright. Hold on. THEY LIVE TOGETHER?!"
+        th "If both beasts join forces - I'm done for."
+        th "Nope, I'm not coming back here, never."
         scene bg ext_houses_day with dissolve
-        "Я обернулся было к пионеру, но он уже куда-то исчез."
-        th "В общем, некая брутальность во внешнем облике домика более чем объяснима."
-    th "Хм. А глаза у пионера были красные. Где я ещё мог видеть такие?"
-    "Внезапно вдруг вспомнились сумерки{w} и красноглазые интернетчики."
-    "Я огляделся, но ничего больше не привлекло моего внимания."
-    th "Интересно, кого ещё я здесь встречу?"
+        "I turned to the pioneer, but he had already disappeared somewhere."
+        th "All in all, certain brutality in the appearance of this house was more than understandable."
+    th "Hm. Еhe pioneer's eyes were red. Where else could I see such eyes?"
+    "Suddenly twilight came to mind.{w} And red-eyed internet addicts."
+    "I looked around but nothing else caught my attention."
+    th "I wonder, who else am I going to meet here?"
     $ alt_day2_dv_us_house_visited = True
     stop music fadeout 3
     stop ambience fadeout 6
@@ -2140,8 +2141,8 @@ label alt_day2_event_dv_us_house1:
 
 label alt_day2_event_dining_hall1:
     scene bg map_alt1 with dspr
-    "Что там Ольга Дмитриевна говорила про распорядок? Если так охота есть, проще попросить Славю или Ольгу же."
-    "Они же девочки, у них всегда есть какая-нибудь печенька."
+    "What did Olga Dmitrievna say about schedule? If I want to eat that much, it’s easier to ask Slavya or Olga."
+    "They're girls after all. They probably would have some snacks."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -2152,295 +2153,295 @@ label alt_day2_event_sport_area1:
     play ambience ambience_soccer_play_background fadein 2
     play music music_list["went_fishing_caught_a_girl"] fadein 2
     if alt_day_binder != 1:
-        "Четверть часа неспешного шествования — и я вышел на уже знакомое футбольное поле."
-    "Сейчас, когда я располагал всем временем в мире, я позволил себе оглядеться внимательнее."
-    "Оказывается, здесь всё было чуть сложнее, чем поле со скамеечками и полтора турника."
-    "Нет, само поле, турники и брусья никуда не делись, однако дьявол в деталях, и в этот раз взгляду открылись новые подробности."
-    "Во-первых, огороженный сетчатый корт, одинаково подходящий как для бадминтона, так и большого тенниса."
-    "Чуть дальше можно было углядеть волейбольную площадку, на которой разминались какие-то незнакомые мне девочки."
-    "Над местностью доминировала громада крытого спортзала для всех желающих побегать в дождь или зимой, рядом были кирпичные закуточки душевых и, разумеется, «МЖ»."
-    "Поле оккупировали какие-то мальчишки из младших отрядов с вездесущей Ульянкой во главе, на корте упруго швыряли волан — значит, тоже мелкие."
-    "Постояв немного и поискав глазами физрука, я не нашёл последнего и остановился в задумчивости."
-    "Нет, на футболе он явно быть не может — игра стихийная."
-    "В бадминтон тренировать королевишен? Сомневаюсь."
-    "Волейбол? Кстати, возможно, но я там не вижу никого…"
+        "A quarter of an hour spent leisurely marching - and I came out to the already familiar football field."
+    "Now that I had all the time in the world, I allowed myself to take a closer look."
+    "It turns out that everything here was a little more complicated than a field with benches and one and a half metal bars."
+    "No, the field itself, horizontal bars and bars have not gone away, but the devil is in the details, and this time new details have opened up to the eye."
+    "First off, a fenced net court, equally suitable for both badminton and tennis."
+    "A little further was a volleyball court, on which some girls I didn’t know were warming up."
+    "The area was dominated by the vastness of an indoor gym for everyone who wanted to run in the rain or in winter, there were brick corners of showers nearby and, of course, toilets."
+    "The field was occupied by some boys from the younger squads with the ubiquitous Ulyanka at the head, a shuttlecock was elastically thrown on the court - which means they also were from younger squads."
+    "After standing for a while, looking for the PE teacher, I had to start thinking, since he definitely wasn't anywhere near my sights."
+    "Obviously he's not at football, game's too spontaneous."
+    "Training queens in badminton? Doubt it."
+    "Volleyball? Maybe, but I don't see anyone there…"
     if counter_sl_7dl == 3:
         show sl normal pioneer with dspr
-        sl "Опять Борис Александрович сачкует."
-        me "Ты и такие слова знаешь?"
+        sl "Boris Alexandrovich is lazing off again."
+        me "Whoa, you know words like that?"
         show sl laugh pioneer with dspr
-        sl "Я же не в консервной банке росла. {w}К слову о банках… Кажется, я знаю, где можно найти физрука."
-        sl "Пошли."
-        "Она схватила меня за руку и потащила за собой."
+        sl "I didn't grow up in a tin can. {w}Actually speaking of cans… I think I know where I can find him."
+        sl "Let's go."
+        "She grabbed my hand and dragged me away."
     else:
         if ((alt_day1_sl_keys_took == 1) or (counter_sl_cl != 0)) and (alt_day2_convoy == 'sl'):
-            us "Эй!"
-            me "Чего тебе?"
+            us "Hey!"
+            me "What do you want?"
             if counter_sl_cl != 0:
                 show us grin sport with dissolve
-                us "Получили взбучку от Ольги Дмитриевны?"
+                us "Got reamed by Olga Dmitrievna?"
                 show sl normal pioneer at right with dissolve
-                me "А ты откуда знаешь?"
-                "Прищурился я."
-                us "Гы!"
+                me "And how do you know?"
+                "I squinted."
+                us "HEH!"
                 hide us with moveoutleft
-                "Ульяна показала нам язык, умильно улыбнулась и убежала."
+                "Ulyana stuck out her tongue, cutely smiled and ran off."
                 show sl sad pioneer with dspr
-                sl "Теперь весь лагерь будет в курсе."
-                me "Это так страшно?"
-                sl "Не очень. Просто мне немного стыдно."
-                "Из-за такой мелочи и стыдно?"
+                sl "Now the entire camp's going to know."
+                me "Is that bad?"
+                sl "Not really. I'm just a little ashamed."
+                "Ashamed because of such a small thing?"
             else:
                 show us sad sport with dissolve
-                us "Вы в курсе, что вас Ольга Дмитриевна искала?"
+                us "You know Olga Dmitrievna was looking for you?"
                 show sl normal pioneer at right with dissolve
-                sl "Нет."
-                "Осторожно ответила Славя."
-                sl "А в чём дело?"
+                sl "No."
+                "Cautiously responded Slavya."
+                sl "What's up?"
                 show us grin sport with dissolve
-                us "А я знаю? {w}Сходите да спросите!"
-                us "Вроде бы, на площади была последний раз."
+                us "How should I know? {w}Go and ask her!"
+                us "If I remember correctly she was at the square last time I saw her."
                 hide us with dissolve
-                "Ульянка сбегала к кустам и выудила оттуда мячик."
-                me "Я бы сначала подпись у физрука взял… Где он, кстати?"
-            sl "Пошли, дядя Боря в крытом постоянно."
+                "Ulyanka ran to the bushes and fished out a ball."
+                me "I'd first get a signature from PE teacher… Where is he, anyways?"
+            sl "Let's go, uncle Borya always stays indoors."
         else:
             if alt_day1_us_shotted:
                 play sound sfx_soccer_ball_kick
-                extend " Я резко нагнулся, пропуская мяч мимо!"
-                "С футбольного поля полувосторженно, полузлобно донеслось:"
-                us "Гггггааааад!"
+                extend " I sharply bent, letting a ball pass over me!"
+                "From the football field half enthusiastically, half viciously came:"
+                us "You ssssssssod!"
                 show us angry sport at cleft with dspr
-                me "Посылочка от Улечки?"
-                "Раскланялся я, сходил к обочине и вернул мяч в игру."
-                me "Ульянка!"
+                me "Special delivery?"
+                "I bowed, went to the curb and returned the ball to the game."
+                me "Ulyana!"
                 show us dontlike sport at cleft with dspr
-                us "Чего тебе?"
-                "Хмуро отозвалась она."
+                us "What?"
+                "She murmured."
             else:
-                "С футбольного поля донеслось озорное:"
+                "From the football field came a mischievous:"
                 play sound sfx_soccer_ball_kick
-                us "Новичок, лови!"
+                us "Newbie, catch!"
                 if dr:
-                    "Но было поздно."
-                    "Мяч достиг своей цели." with hpunch
+                    "But it was already too late."
+                    "The ball reached its target." with hpunch
                     with flash_red
-                    "Я согнулся пополам, пытаясь сделать вдох."
-                    "Как вообще не упал — загадка."
+                    "I bent over, trying to take a breath."
+                    "How did I even stay up is a mystery."
                     show us sad sport at cleft with dissolve
-                    us "Эй, ты живой?"
-                    me "От… вянь."
+                    us "Hey, are you alive?"
+                    me "Get… lost."
                     show us upset sport at cleft with dspr
-                    us "Ну вот, я о нём беспокоюсь, а он огрызается."
-                    me "Засунь своё беспокойство знаешь куда…"
+                    us "Oh well, I'm worried about him, and he's snapping at me."
+                    me "Shove your worries up your…"
                     show us grin sport at cleft with dspr
-                    us "Куда?"
-                    "Как же хотелось сказать это вслух!"
-                    "Перед глазами все ещё плясали «зайчики», но я таки смог восстановить дыхание и выпрямиться."
-                    me "Ульянка!"
+                    us "Where?"
+                    "Oh how I wanted to actually say it!"
+                    "The «stars» were still dancing before my eyes, but I finally managed to restore my breath and straighten up."
+                    me "Ulyana!"
                     show us smile sport at cleft with dspr
-                    us "Да-да?!"
+                    us "Yes-yes?!"
                 else:
-                    "Я насилу увернулся от летящего в меня мяча."
-                    "Ещё чуть-чуть, и мячик вышиб бы из меня дух."
+                    "I barely dodged the ball flying at me."
+                    "A little more, and I would've had the breath knocked out of me."
                     show us smile sport at cleft with dissolve
-                    me "Мелкая, ты совсем обалдела?!"
-                    us "Да ладно тебе. Подумаешь, мяч."
+                    me "Kid, are you sane?!"
+                    us "Oh come on. It's just a ball."
                     show us laugh sport at cleft with dspr
-                    me "Кого-то явно мало пороли ремнём."
+                    me "Someone definitely didn't get enough belt in their childhood."
                     show us grin sport at cleft with dspr
-                    us "Меня-то?"
-                    "Осклабилось это рыжее чудовище."
-                    us "Меня нельзя пороть. Я девочка!"
-                    dreamgirl "Плохая девочка. А плохих девочек надо наказывать!"
-                    th "Как ты умудряешься всё опошлить?"
-                    "Замечание внутреннего голоса отбило всяческое желание воздать мелкой по заслугам."
-                    me "Рыжая!"
+                    us "Who, me?"
+                    "This red monster grinned."
+                    us "I can't be spanked. I'm a girl!"
+                    dreamgirl "A bad girl. And bad girls have to be punished!"
+                    th "How do you even manage to pervert everything you touch?"
+                    "The remark of the inner voice repulsed all desire to deal with the petty child."
+                    me "Redhair!"
                     show us smile sport at cleft with dspr
-                    us "Чего?"
-            me "А где физрук или его ИО?"
+                    us "What?"
+            me "Where is the PE teacher, or his replacement?"
             show us normal sport with dspr
-            us "Имя-отчество?"
-            me "Исполняющий обязанности. Так где?"
+            us "Name, last name?"
+            me "Anyone works. So where is he?"
             show us smile sport with dspr
-            us "Спит, наверное. Поищи его в крытом, он иногда там на матах спит."
+            us "Asleep, probably. Look for him indoors, he sometimes sleeps on mats there."
             hide us with dissolve
-            "Я для разнообразия решил прислушаться к информации и двинулся в сторону спортклуба. Дверь на хорошо смазанных петлях беззвучно отошла в сторону…"
+            "For a change, I decided to listen to the information and moved towards the sports club. The door, on its well-oiled hinges, silently moved aside…"
     play sound sfx_open_door_clubs fadein 0
     scene bg int_sporthall_day_7dl with dissolve
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
     play music music_list["went_fishing_caught_a_girl"] fadein 5
     if ((alt_day1_sl_keys_took == 1) or (counter_sl_cl != 0) or (counter_sl_7dl == 3)) and (alt_day2_convoy == 'sl'):
-        "Славя была права!"
+        "Slavya was right!"
     else:
-        "Ульянка была права!"
-    "В дальнем углу, щурясь от бьющего в лицо солнца, нагло спал физрук!"
-    "Я присмотрелся к бегунку — Борис Александрович — подошёл к спящему и аккуратно потрогал его за плечо."
-    $ meet('ba','Саныч')
-    me "Борис Александрович!"
-    ba "Мммм… Отвянь."
-    me "Борис Александрович!"
-    ba "Отлезь от меня, я сказал!"
-    "Не просыпаясь, сказал он и, повернувшись на бок, опять засопел."
-    th "И что с ним теперь делать? Меня же без заполненного листа вожатая, небось, и в домик обратно не пустит, оставит ночевать под кустом сирени на шезлонге. Романтично, спору нет, но приятного мало."
-    "Я задумчиво посмотрел на пожарный щит, видимый отсюда. На нём висело коническое пожарное ведро."
-    th "Если набрать в него водички…"
+        "Ulyana was right!"
+    "In the far corner, squinting from the sun shining, the PE teacher was brazenly sleeping!"
+    "I re-read the checklist — Boris Alexandrovich — came closer to the sleepyhead and tugged him on his shoulder."
+    $ meet('ba','Sanich')
+    me "Boris Alexandrovich!"
+    ba "Mmmmm… Get lost."
+    me "Boris Alexandrovich!"
+    ba "Get off me!"
+    "Without even waking up he turned to the other side and started sniffing again."
+    th "And what am I supposed to do with him now? Squad leader probably wouldn't let me back into the house without a filled checklist, might even leave me to spend the night on the chairs amidst lilac bushes. That'd be romantic, no doubt, but wouldn't be very pleasant."
+    "I looked thoughtfully at the fire shield, visible from here. On it hung a conical fire bucket."
+    th "If I get some water…"
     if loki and (counter_sl_7dl == 0):
-        th "Тогда можно будет устроить ещё одно внеочередное купание для аборигенов."
+        th "Then it would be possible to arrange another extraordinary bathing for the natives."
     else:
-        th "Тогда можно устроить армейскую побудку!"
-    "И когда я уж почти решился, за спиной заскрипели маты, и человек, от которого зависела моя весёлая и сытная жизнь, спустил ноги на пол."
-    "Спросонья он выглядел очень угрюмым и неприветливым, несмотря даже на то, что внешне он был той самой классической внешности, на которую вешаются девчонки — прямой арийский нос, голубые с ледком глаза и подбородок-наковальня."
-    "Икона тестостерона."
+        th "Then I could arrange a military wake-up call!"
+    "And when I had almost made up my mind, mats creaked behind my back, and the person, on whom my cheerful and satisfying life depended, put his feet on the floor."
+    "Waking up, he looked very gloomy and unfriendly, despite the fact that outwardly he was the same classic appearance that girls hung themselves on — straight Aryan nose, icy blue eyes and an anvil for a chin."
+    "True icon of testosterone."
     show ba normal uniform with dissolve
-    ba "Привет, пионер. Чё пришёл?"
-    "Прогудел он."
-    me "Я… Вот… Бегунок."
-    "Я протянул ему бумажку, которую физрук, поморщившись от отвращения, взял в руки."
+    ba "Hey, pioneer. Whatchu want?"
+    "He hooted."
+    me "I… Here… Checklist."
+    "I handed him a piece of paper, which the PE teacher, grimacing in disgust, picked up."
     show ba em1 uniform with dspr
-    ba "И чё ты мне принёс?"
-    "Он скомкал бумажку и отбросил её."
-    ba "Подпишу я её, дальше-то что?"
-    me "Что?"
-    ba "Во, видел?"
-    "Телосложением физрук относился к эндоморфам, то бишь, выглядел скорее толстым, чем накачанным — но лишь до той поры, пока не напрягал мышцы."
-    "На руке его вздулся бицепс размером, наверное, с мою голову."
-    ba "Вот к чему надо стремиться. А не к подписанию всяких бумажек."
-    me "За смену вы из меня всё равно качка не сделаете."
-    ba "Не сделаю. Но начало пол{b}о{/b}жу!"
-    "В последнем слове он сделал ударение на второй слог."
+    ba "The hell did you bring me?"
+    "He crumpled the paper and tossed it away."
+    ba "I'll sign it, and then what?"
+    me "What?"
+    ba "Here, see this?"
+    "The physical education teacher belonged to endomorphs in physique, that is, he looked more fat than pumped up - but only until he strained his muscles."
+    "His biceps with the size of my head suddenly swole up on his arm."
+    ba "That's what you should strive for. Not for paper signing."
+    me "You won't make a bodybuilder out of me in a single shift."
+    ba "I won't. But I'll begin!"
+    "In the last word, he stressed the second syllable."
     if (alt_day2_convoy == 'un'):
-        ba "Чтобы хотя бы эта бадминтонщица тебе не предпочла кого покрепче."
-        me "Может, она сама решит?"
+        ba "So that at least this badminton player didn't prefer someone stronger to you."
+        me "Maybe she can decide that herself?"
         show un shy pioneer at right
         un "…"
-        "Над бедной девочкой издеваются все, кому не лень."
-        ba "А решит она, что если ты шланг, то из тебя только огород поливать и можно. Мужик должен быть крепким!"
+        "The poor girl is bullied by everyone who wants to do so."
+        ba "And she'll decide that if you are a hose, then you can only water the garden from you. Man must be stout!"
         show un normal pioneer at right
-        me "Кто бы спорил. Мужик постоянно всем вокруг всё должен."
+        me "Who would argue with that. A man always must."
     elif (alt_day2_convoy == 'sl'):
-        ba "Чтобы быть достойным нашей умницы-красавицы."
-        ba "А то что за позорище, если она тебя на ручках поборет?"
+        ba "So that you'll be worthy of our clever beauty."
+        ba "And what a disgrace it would be if she beats you on the bars?"
         show sl shy pioneer  at right
-        sl "Борис Александрович, если вы хотите отпугнуть ещё одного пионера…"
-        th "Интересно, «побороть на ручках» имеет отношение к армрестлингу?"
+        sl "Boris Alexandrovich, if you want to scare away another pioneer…"
+        th "I wonder, does «beating me on the bars» relate somehow to armwrestling?"
         show ba smile uniform with dspr
-        ba "Ни в коем случае, мал{b}а{/b}я. А что нагнул немного — так это для его же пользы."
+        ba "No way, kid. As for me bending him over — that's for his own good."
         show sl normal pioneer  at right
-        me "Если вы закончили торговаться за меня…"
-        "С намёком протянул я."
-        "Физрук посмотрел на меня так, будто видит впервые в жизни."
+        me "If you're done haggling for me…"
+        "I started hinting at something."
+        "PE teacher looked at me as if it was his first time seeing me in his life."
     elif (alt_day2_convoy == 'dv'):
-        ba "Чтобы рыжая эта на тебя положиться смогла."
+        ba "So that this redhead can rely on you."
         show dv smile pioneer2 at right with dspr
-        dv "Положиться?"
-        me "По-моему, для последнего грузоподъёмность не критична."
+        dv "Rely?"
+        me "In my opinion, for the latter, the carrying capacity is not critical."
         show dv laugh pioneer2 with dspr
-        dv "Вот и я про что."
-        "Физрук устал слушать нашу пикировку и прочистил горло."
+        dv "That's what I'm talking about."
+        "He got tired of listening to us and cleared his throat."
         show dv normal pioneer2 with dspr
-    ba "Ты сейчас дрищ. А значит, с тобой надо работать. Верно разумею?"
-    me "Верно."
-    "Сухо ответил я. Мне неприятны были оценки этого типа."
-    ba "Ты обиделся, что ли? Не обижайся."
-    ba "Давай лучше запишем тебя куда-нибудь. Куда хочешь?"
+    ba "You are a wimp now. And that I need to work with you. I understood correctly?"
+    me "Right."
+    "I answered dryly. I didn't like this guy's ratings."
+    ba "Are you offended? Don't be."
+    ba "Let's get you signed up somewhere. You want anywhere in particular?"
     show ba normal uniform with dspr
-    me "Подпишите бегунок сначала, а там посмотрим…"
-    ba "Ладно."
-    "Он нагнулся, поднял с пола скомканный лист и что-то там начеркал."
-    ba "Держи."
-    "Я забрал лист."
-    ba "Итак, у нас есть футбол, волейбол и бадминтон. Что выбираешь?"
+    me "Sign the checklist first, and then we'll see…"
+    ba "Alright."
+    "He bent down, picked up a crumpled sheet from the floor and drew something there."
+    ba "Here you go."
+    "I took the paper."
+    ba "So we have football, volleyball and badminton. What's your choice?"
     if (alt_day2_convoy == 'un'):
-        un "М-мы можем вместе играть."
-        "Предложила Лена."
-        me "Вместе?"
+        un "W-we can play together."
+        "Lena offered."
+        me "Together?"
         show un shy pioneer at right with dissolve
-        un "В бадминтон."
+        un "Badminton."
     elif (alt_day2_convoy == 'sl'):
-        sl "Давай к нам в волейбол!"
-        sl "У нас мальчиков нет, но ты же не против женского коллектива?"
-        "Вообще-то, против. Плавали, знаем, что это за гадюшник."
-        th "Но там же Славя…"
+        sl "Join us for volleyball!"
+        sl "We don't have any guys, but you wouldn't mind a female team?"
+        "Actually I would mind. I know what kind of a shithole that could be."
+        th "But Slavya's there…"
     else:
-        "Можно к Ульянке пойти мячик попинать."
+        "I could join Ulyana in her ball kicking escapades."
     menu:
-        "Футбол":
-            me "Мячик попинаю."
-            ba "Вот дело! Мужик!"
+        "Football":
+            me "I'll kick the ball around."
+            ba "Very nice! A man!"
             $ lp_us += 1
             $ list_joined_clubs_7dl.append('soccer')
-        "Волейбол":
-            me "Люблю рядом с сеткой прыгать."
-            ba "У нас там одни девочки. Но ты тоже неплохо впишешься."
+        "Volleyball":
+            me "I like jumping near nets."
+            ba "Only girls are there. Although, you'll fit right in."
             if (alt_day2_convoy == 'sl'):
-                "Там Славя играет. Всё ближе к ней буду."
+                "Slavya's there too. I'll be closer to her there."
                 $ lp_sl += 1
             $ list_joined_clubs_7dl.append('volley')
-        "Бадминтон":
-            "Спортом заниматься я не собирался. Но эта стокилограммовая туша смотрела на меня, и, кажется, готовилась сожрать!"
-            me "Бадминтон."
+        "Badminton":
+            "I wasn't going to do sports. But this carcass, weighing 100kgs, looked at me, and, it seems like, he was preparing to devour me whole!"
+            me "Badminton."
             show ba smile uniform with dspr
-            ba "Бха-ха-ха!"
-            "Захохотал тренер. И неожиданно оборвал себя."
-            ba "Ты чё, серьёзно?"
-            me "Не всем же прошибать головами стены."
+            ba "Bwa-ha-ha!"
+            "Coach laughed, and suddenly stopped."
+            ba "You serious?"
+            me "Not everyone gets to break through walls with their head."
             if (alt_day2_convoy == 'un'):
-                "Он кинул взгляд на Лену."
-                ba "Понятно. Ничего удивительного."
-                ba "Пионер! Увижу, как целуетесь на корте — заставлю бегать. {w}По двадцать кругов. Понял?"
-                "Я пожал плечами, даже не оборачиваясь, зная уже, что Лена опять покраснела и стоит в немом ступоре."
+                "He glanced at Lena."
+                ba "I see. Nothing surprising here."
+                ba "Pioneer! If I see you kissing on the court - you'll be running. {w}Twenty laps. Got that?"
+                "I shrugged my shoulders without even turning around, already knowing that Lena had blushed again and was standing in a dumb stupor."
                 $ lp_un += 1
             $ list_joined_clubs_7dl.append('badmin')
-        "Ничего":
-            me "Нарды."
-            "Ответил я и вышел из спортзала."
+        "Nothing":
+            me "Backgammon."
+            "I answered and left the building."
     scene bg ext_playground_day with fade
     play ambience ambience_camp_center_day fadein 2
     if (alt_day2_convoy == 'un'):
-        me "Физрук у вас, конечно…"
+        me "This guy is definitely something else…"
         show un smile pioneer
-        un "Дядь Боря хороший, просто считает, что все должны быть хорошо развиты."
-        "Она немного покраснела."
-        me "«Хорошо развит» — это гармоничная мускулатура. А то, что он хочет, называется качкизмом."
+        un "Uncle Boris is a good guy, simply believes that everyone should be well developed."
+        "She blushed a bit."
+        me "«Well developed» — is harmonious muscles. What he wants is hypertrophia."
         show un laugh pioneer
-        un "Я бы посмотрела на тебя накачанного!"
-        "Я бы тоже. Но время не терпит, пора двигаться дальше."
+        un "I'd look at you with muscles!"
+        "So would I. Time, unfortunately, doesn't wait, so we have to keep going."
     elif (alt_day2_convoy == 'sl'):
         show sl smile pioneer with dissolve
         if (counter_sl_7dl == 3):
-            me "Физрук, конечно…"
-            sl "Не обращай внимания на его поведение."
-            sl "Зато под его руководством сборные по футболу и волейболу несколько раз первые места брали!"
-            me "Да ну?"
+            me "This guy is something else…"
+            sl "Ignore his behaviour."
+            sl "But under his leadership, the football and volleyball teams took the first places several times!"
+            me "Really?"
             show sl smile pioneer with dspr
-            sl "Да, в прошлом году в первой смене взяли золото на «Играх-88»!"
-            "Год я в голове отметил на будущее, а вслух продолжил:"
-        me "Красавец-мужчина, а?"
-        "Я с вызовом посмотрел на Славю, однако она просто безмятежно улыбнулась в ответ."
+            sl "Yes, last year first shift took gold in «Games-88»!"
+            "I noted the year in my head for the future, and continued aloud:"
+        me "Handsome man, huh?"
+        "I looked at Slavya with a challenge, but she just smiled serenely in response."
         show sl laugh pioneer
-        sl "Да, Борис Александрович очень эффектен. Но мне несколько другой типаж нравится."
-        "Интересно, какой это?"
-        me "Расскажешь?"
+        sl "Yes, Boris Alexandrovich is very eccentric. But I like a slightly different type."
+        "I wonder what type is that?"
+        me "Will you tell me?"
         show sl laugh pioneer with dspr
-        sl "Нет. Это секрет."
-        "Секрет так секрет. Я улыбнулся и прикинул, куда идти дальше."
+        sl "Nope. It's a secret."
+        "Secret is a secret. I smiled and thought about my next destination."
     elif (alt_day2_convoy == 'dv'):
-        me "На вашего медведя сто процентов все девки вешаются."
+        me "I bet all the girls hang themselves on that bear."
         show dv smile pioneer2
-        dv "А как же! Такой видный мужчинка, с такими банками. Почему бы и не повисеть?"
-        me "Ха-ха-ха. А ты? Висишь?"
+        dv "How else would it be! Such a prominent man, with such cans. Why not to hang on him?"
+        me "Ha-ha-ha. And you? Hanging on him?"
         show dv laugh pioneer2 with dspr
-        dv "Конечно, вишу. Сейчас дождёмся его выхода — вместе повиснем."
-        "Я усмехнулся и прикинул, куда двигаться дальше."
+        dv "Of course, yeah. Wait for him to come out and we'll both be hanging."
+        "I smirked and thought about my next destination."
     else:
-        "Насилу сбежав от медведя и избежав пары десятков отжиманий, я позволил себе перевести дух."
-        "Да они что, кадры по принципу «максимальный троллинг» набирают?!"
+        "After barely escaping from that bear and avoiding a couple of dozen push-ups, I allowed myself to take a breath."
+        "Do they just hire people with their only criteria being «maximum trolling»?!"
         if ('medic' in list_voyage_7dl):
-            "Сначала Виола, теперь это чудо…"
-        me "Надо убираться отсюда."
-        "Осталось решить, куда дальше."
+            "First Viola, now this guy…"
+        me "I need to get out of here."
+        "Where to though?"
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -2452,49 +2453,49 @@ label alt_day2_event_beach1:
     $ alt_day2_beach_seen = True
     pause(1)
     play ambience ambience_lake_shore_day fadein 1
-    "Пляж был гораздо шире, больше и красивее, чем на карте."
-    "Серебристый песок лишь слегка блестел на солнце, на водную же гладь залива смотреть было решительно невозможно — глаза начинали слезиться."
-    "Увидев пляж, я сразу же захотел окунуться — день был жаркий."
-    "Я начал сбрасывать рубашку…"
+    "The beach was much wider, bigger and prettier than on the map."
+    "The silvery sand only slightly shone in the sun, but it was decidedly impossible to look at the watery surface of the bay - the eyes began to water.."
+    "Seeing the beach, I immediately wanted to take a dip - the day was hot."
+    "I started taking the shirt off…"
     if (alt_day2_convoy == 'sl'):
         show sl serious pioneer with dissolve
-        sl "Семён, ты что делать собрался?"
-        me "Я хотел бы…"
+        sl "Semyon, what are you doing?"
+        me "I would like to…"
         show sl smile pioneer with dspr
-        sl "Я понимаю, что хочется, но давай мы сначала закончим с делами? Хорошо?"
+        sl "I understand that you want to, but let's finish the detour first, shall we? Okay?"
         show sl smile2 pioneer with dspr
-        sl "А к обеду как раз вода прогреется! Сходим искупаемся!"
-        "Вздохнув, я согласился."
-        "Ссориться с очаровательной провожатой в мои планы не входило."
+        sl "The water will warm up by noon! Let's go then!"
+        "Sighing, I agreed."
+        "Quarrelling with my charming guide definitely wasn't in my plans."
     else:
         show mt smile swim2 with dissolve
-        mt "Привет."
-        th "Так вот куда она отправилась… {w}работать!"
+        mt "Hey."
+        th "That's where she went… {w}to work!"
         show mt grin swim2 with dspr
-        mt "Я смотрю, ты уже обошёл весь лагерь и со всеми перезнакомился?!"
-        "Она язвительно улыбалась."
-        th "А купальник ей идёт."
-        me "Да вот, знакомлюсь потихоньку."
+        mt "I see you have already walked around the entire camp and got to know everyone?!"
+        "She wryly smiled."
+        th "That swimsuit fits her."
+        me "Yeah, getting to know people, slowly."
         show mt normal swim2 with dissolve
-        "Ольга Дмитриевна недоверчиво покачала головой."
-        mt "Ну-ну! И уже готов мне показать бегунок?"
-        "И не давая мне вставить ни слова, продолжила:"
+        "Olga Dmitrievna incredulously shook her head."
+        mt "Of course! And you're ready to present your checklist?"
+        "And without letting me put in a word, she continued:"
         show mt angry swim2 with dissolve
-        mt "Пока со всеми не познакомишься — о пляже можешь и не мечтать!"
-        "Видимо, это было её окончательное решение…"
-        "Чёрт! Вода так изумительно переливалась на солнце, а мягкие волны прямо манили к себе!"
-        "Я вспомнил, что никогда раньше не был на море…"
-        th "Хотя, конечно, никакое это не море."
-        me "Я только разик окунусь — и сразу же дальше с бегунком пойду!"
-        me "Обещаю!"
+        mt "Don't even dream about the beach until you meet everyone!"
+        "Apparently it was her final decision…"
+        "Crap! The water shimmered so amazingly in the sun, and the soft waves directly beckoned me!"
+        "I remembered that I not once had been to a sea…"
+        th "Although this isn't even a sea."
+        me "I'll just dip once - and immediately go ahead with the list!"
+        me "Promise!"
         show mt smile swim2 with dspr
-        mt "И {w=0.2}не {w=0.2}меч{w=0.2}тай!"
+        mt "Don't {w=0.2}even {w=0.2}dream{w=0.2} of it!"
         hide mt with dissolve
-        "И, улыбнувшись, вожатая пошла к воде!"
-        th "Да что за лагерь здесь такой? Исправительный, что ли?!"
-        me "Как хоть река называется?"
-        "Крикнул я."
-        "Вожатая только отмахнулась."
+        "And, smiling, she went to the water!"
+        th "What kind of camp is this? Corrective, right?!"
+        me "Can you at least tell me the river's name?"
+        "I yelled."
+        "She just waved."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -2504,17 +2505,17 @@ label alt_day2_event_me_mt_house1:
     if not alt_replay_on:
         if been_there_alt1() > 1:
             scene bg ext_houses_day with fade
-            th "И что я здесь забыл?"
+            th "What am I doing here?"
             stop music fadeout 3
             stop ambience fadeout 6
             with fade
             return
     scene bg ext_house_of_mt_day with fade
-    "Я вышел к домику, которому предстояло стать моим на эти несколько дней, и остановился…"
-    "Спать совершенно не хотелось."
-    th "Какого чёрта? Солнце, чистый воздух — нужно брать, пока дают!"
-    th "Пусть меня и отправили с бегунком, но я же могу просто погулять!"
-    th "Что ж, похожу ещё по лагерю!"
+    "I came to the house that was to be mine for these few days, and stopped…"
+    "Didn't want to sleep. At all."
+    th "What the heck? The sun, clean air - take it while you can!"
+    th "I may have been sent with a checklist, but I can just walk around, right?"
+    th "Guess I'll go do that then!"
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -2523,16 +2524,16 @@ label alt_day2_event_me_mt_house1:
 label alt_day2_event_library1:
     scene bg ext_library_day with fade
     if alt_day2_convoy not in ('dv', 'sl', 'un'):
-        "Прикинув, что до библиотеки отсюда ближе всего, я развернулся к ней."
+        "Estimating that the library is the closest from here, I turned there."
     else:
-        "Прикинув, что до библиотеки отсюда ближе всего, мы развернулись к ней."
-    "Дорожка к храму знаний напоминала мне о моём городе, о бесславной борьбе городских властей с плохим асфальтом."
-    "Уж и так они его перекладывали, и эдак."
-    "Мысль о том, чтобы перестать пилить половину стоимости покрытия, почему-то ни в чью голову не пришла."
-    "Так что они в итоге махнули рукой и заказали у гранитного завода плитку. Да-да. Плиту. У завода. По цене за квадратный метр раз эдак в дцать выше асфальтового покрытия. Чем закончилась история, думаю, все в курсе."
-    "Но здесь плитка была ещё новенькая, не успела ещё вытереться и треснуть тут и там, поэтому идти по ней было сплошное удовольствие. Вскоре моему взгляду открылось небольшое деревянное здание на отшибе, куда не долетают звуки жизни лагеря."
-    "Рядом с ним стояла кирпичная пожарная сторожка на случай, если в библиотеке вдруг случится пожар… Но на моей памяти ещё ни одну библиотеку это не спасло."
-    "Поймав себя на мысли, что уже несколько минут топчусь на пороге, я толкнул дверь и зашёл в храм знаний."
+        "Estimating that the library is the closest from here, we turned there."
+    "The path to the temple of knowledge reminded me of my city, of the inglorious struggle of the city authorities with bad asphalt."
+    "And so they kept relaying it this and that way."
+    "For some reason, the idea of not pocketing half the budget didn't occur to anyone."
+    "So they ended up giving up and ordering tiles from the granite factory. Yes. Tiles. At the factory. At a price about twenty times higher (per square meter) than the asphalt pavement. How the story ended, I think everyone knows."
+    "But here the tiling was still brand new, didn't have the time to wipe off and crack here and there, so it was a real pleasure to walk on it. Soon a small wooden building in the outskirts opened up to my eyes, where the sounds of camp life didn't reach."
+    "There was a brick firehouse next to it in case a fire suddenly broke out in the library… Although I don't think this has saved a single library before."
+    "Catching myself thinking that I had been stomping on the doorstep for several minutes, I pushed the door and entered the temple of knowledge."
     play sound sfx_knock_door3_dull
     pause(1)
     play sound sfx_open_door_1
@@ -2541,110 +2542,110 @@ label alt_day2_event_library1:
     pause(1)
     scene bg int_library_day with fade
     play ambience ambience_library_day fadein 1
-    "В храме было тихо, пахло книжной пылью и подсыхающим клеем."
+    "It was quiet, it smelled of book dust and drying glue."
     play music music_list["get_to_know_me_better"] fadein 1
-    "За исключением изобилия советской символики, здесь всё было так, как я привык видеть в библиотеках — пять полок под Большую Советскую Энциклопедию, постеры — или плакаты? — с призывами учиться, учиться и ещё раз учиться…"
-    "Столики со стульями для тех, кому захочется почитать здесь, легкомысленный тюль на окнах, спящая библиотекарша, бюро с читательскими карточками."
-    "Стоп."
-    "Я отмотал назад и развернулся."
+    "With the exception of the abundance of Soviet symbols, everything here was the way I used to see in libraries - five shelves for the Great Soviet Encyclopedia, posters - or placards? - with calls to study, study and study again…"
+    "Tables and chairs for those who want to read here, frivolous tulle on the windows, a sleeping librarian, a bureau with reader cards."
+    "Stop."
+    "I scrolled through my memory back and turned around."
     if alt_day2_convoy not in ('dv', 'sl', 'un'):
-        "Точно, я оказался не один!"
+        "Right, I'm not alone!"
     else:
-        "В библиотеке мы были не одни!"
-    "За столом в позе «я не сплю, работаю с мелкими деталями», безмятежно почивала…{w} Библиотекарша?"
+        "We weren't alone in the library!"
+    "On the desk, assuming the «I'm not sleeping, I'm dealing with small details pose, was sleeping …{w} the librarian?"
     scene cg d2_micu_lib with dissolve2
-    "Да она же дрыхнет как суслик!"
+    "She's fast asleep here!"
     scene bg int_library_day with dissolve
     if (alt_day2_convoy == 'un'):
         show un normal pioneer far at fright with dissolve
         if loki:
-            "Решив не тревожить пока праведный сон работника интеллектуального фронта, я прошёлся вдоль полок."
-            "Какой-то шум привлёк моё внимание, и я двинулся дальше. По мере продвижения шум стал упорядоченее, чуть позже разбился на несколько параллельных партий, пока я не понял, что это — голоса!"
-            "Просто доносятся из какого-то крайне хорошо звукоизолированного помещения!"
-            me "Слышала что-нибудь?"
-            un "Да… Опять Шурик с Серёжей о газете спорят."
-            "Прошептала Лена."
-            me "У вас тут своя газета?"
-            un "Стенгазета. Мы после обеда собираемся. Я — рисую."
-            me "Ух ты, мне сразу захотелось посмотреть!"
+            "Deciding not to disturb the righteous dream of an employee of the intellectual front for now, I walked along the shelves."
+            "A noise caught my attention and I moved on. As we went on, the noise became more orderly, a little later it broke into several parallel parts, until I realized that these were voices!"
+            "Just coming from some extremely well soundproofed room!"
+            me "Did you hear anything?"
+            un "Yes… Shurik and Electronik are arguing about the newspaper again."
+            "Lena whispered."
+            me "You have your own newspaper?"
+            un "Wall newspaper. Meetings are usually after lunch. I'm drawing."
+            me "Whoa, I already want to see!"
         elif herc:
-            "Горячее дыхание опалило ухо, и я плавно забалдел."
-            un "В хранилище редакция стенгазеты."
-            me "Папарацци?"
-            un "Шурик, Даня и Электроник."
-            "Серьезно ответила Лена."
-            un "Они все по организационной части."
-            un "И я рисую."
-            me "Значит, вам нужен собкор? Хм, давайте попробуем. Но ты взамен мне покажешь свои рисунки!"
+            "Hot breath scorched my ear, and I smoothly went crazy."
+            un "Editorial office of the newspaper is in the storage."
+            me "Papparazi?"
+            un "Shurik, Danya and Electronik."
+            "Seriously answered Lena."
+            un "They all deal with organization for the most part."
+            un "I draw."
+            me "So you need a reporter? Well, we could try that. But you have to show your drawings to me!"
             show un smile pioneer far at fright with dspr
-            un "Хорошо."
+            un "Okay."
         else:
-            un "Не хочешь попробовать себя журналистом?"
-            me "Стенгазета?"
-            "Помнится, в далёком-далёком детстве я чем-то таким занимался… Может, тряхнуть стариной?"
-            un "Да… Здесь редакция рядом. Можем сходить. Пошли?"
-            me "А пошли!"
+            un "Want to try being a journalist?"
+            me "Newspaper?"
+            "I remember, in a far, far away childhood, I did something like that… Maybe I should come back to my roots?"
+            un "Yeah… The editorial is nearby. We can visit. Shall we?"
+            me "Eh, let's go!"
     elif (alt_day2_convoy == 'sl'):
         show sl normal pioneer at fright with dissolve
-        sl "Не хочешь записаться в стенгазету? Чай и печенье включены!"
-        me "А что делать надо будет?"
+        sl "Do you want to sign up for the newspaper? Tea and biscuits included!"
+        me "What would I need to do?"
         show sl smile2 pioneer at fright with dspr
-        sl "Работать!"
-        me "Давай хотя бы посмотрим, что за это за зверь такой — стенгазета."
+        sl "Work!"
+        me "Let's at least see what kind of animal this is - a wall newspaper."
     elif (alt_day2_convoy == 'dv'):
         show dv normal pioneer2 at fright with dissolve
-        dv "Сюда мальчишки после обеда бегают."
-        me "Зачем?"
-        dv "Да кто ж его знает. Может, в карты играют."
+        dv "The boys come here after dinner."
+        me "Why?"
+        dv "Who knows? Maybe they're playing cards."
         show dv laugh pioneer2 at fright with dspr
-        dv "Или за грымзой этой ухлёстывают."
-        me "Или чай с печеньками пьют."
-        "Я замер."
-        me "Тихо!"
+        dv "Or court this grouch."
+        me "Or drink tea with biscuits."
+        "I froze up."
+        me "Hush!"
         show dv surprise pioneer2 at fright with dspr
-        dv "Что?"
-        me "Прислушайся."
+        dv "What?"
+        me "Listen closely."
         show dv normal pioneer2 at fright with dspr
-        dv "Кто-то где-то болтает."
-        "Мы переглянулись."
-        me "Пошли!"
+        dv "Someone's talking nearby."
+        "We looked at each other."
+        me "Let's go!"
     else:
-        "Решив не тревожить пока праведный сон работника интеллектуального фронта, я прошёлся вдоль полок."
-        "Какой-то шум привлёк моё внимание, и я двинулся дальше. По мере продвижения шум стал упорядоченее, чуть позже разбился на несколько параллельных партий, пока я не понял, что это — голоса!"
-        "Просто доносятся из какого-то крайне хорошо звукоизолированного помещения!"
-    "Я подошёл к двери — самому тривиальному тёмному прямоугольнику, обитому дерматином, и осторожно потянул за ручку."
+        "Deciding not to disturb the righteous dream of an employee of the intellectual front for now, I walked along the shelves."
+        "A noise caught my attention and I moved on. As we went on, the noise became more orderly, a little later it broke into several parallel parts, until I realized that these were voices!"
+        "Just coming from some extremely well soundproofed room!"
+    "I went to the door - the most trivial dark rectangle, upholstered in leatherette, and carefully pulled the handle."
     play sound sfx_open_dooor_campus_1
     pause(1)
     scene bg int_editorial_day_7dl
     with dissolve
-    "Петли тихо скрипнули, выдавая моё присутствие, и спорящие мгновенно замолчали, обернувшись в мою сторону."
-    me "Здрасьте…"
-    "Несмело поздоровался я."
+    "The hinges creaked softly, revealing my presence, and the arguing people instantly fell silent, turning in my direction."
+    me "Greetings…"
+    "I awkwardly gave my greetings."
     show sh normal pioneer far at center
     show el normal pioneer far at cleft
     with dissolve
-    sh "Ну, заходи, коль пришёл. Да дверь закрой! А то Женька нам головы поснимает за шум в святом месте."
-    "Я плотно прикрыл дверь за спиной и огляделся."
-    "По сути, это было чем-то вроде книгохранилища с возможностью консервации — небольшой закуток с окнами на профилях и доисторическим монстром в роли центрального климатизатора."
-    "«БК», — приглядевшись, прочитал я. Марка известная."
-    "Присутствующие молчаливо ждали моего вступления."
+    sh "Well, come in, if you already came. And close the door! Or Zhenya will take off our heads for the noise in the holy place."
+    "I closed the door tightly behind my back and looked around."
+    "In fact, it was something like a book depository with the possibility of conservation - a small nook with windows on profiles and a prehistoric monster as a central air conditioner."
+    "«BK», — I read, looking closer. Famous brand."
+    "Those present silently awaited my entry."
     if (alt_day2_convoy == 'un'):
         show un smile pioneer at fright with dissolve
-        un "Вот тут мы и…"
-        "Она указала на мольберт, стоящий у окна."
-        un "Моё рабочее место."
+        un "Well, here we are…"
+        "She pointed to the canvas standing near the window."
+        un "My workplace."
     else:
         show un smile pioneer far at fleft with dissolve
-        "Тут уже была Лена, занявшая место в уголке у окна и что-то старательно рисующая. Поймав мой взгляд, она изобразила намёк на улыбку."
-        "Я кивнул ей и обернулся к остальным присутствующим."
+        "Lena also was there, taking a seat in a corner by the window and diligently drawing something. Catching my eye, she showed a hint of a smile."
+        "I nodded and turned around to the others."
     if ('cyber' in list_voyage_7dl):
         if alt_day_binder != 1:
-            "Рядом за большим столом расположились Шурик и Электроник."
+            "Shurik and Elektronik were seated nearby at a large table."
         else:
-            "Рядом за большом столом расположились те самые единственные представители сильного пола в отряде."
-            th "Если я правильно понял, тот, что в очках — это Шурик, значит, его напарника зовут Электроник."
-            th "Его и правда так зовут? Или это что-то типа клички?"
-        me "Привет ещё раз!"
+            "Nearby at a large table were the very only representatives of the stronger sex in the squad."
+            th "If I understand correctly, the one with the glasses is Shurik, so his partner's name is Electronik."
+            th "Is that really his name? Or is it some kind of nickname?"
+        me "Hello again!"
         show sh serious pioneer far with dspr
         if (alt_day2_convoy == 'un'):
             show un normal pioneer at fright with dspr
@@ -2652,22 +2653,22 @@ label alt_day2_event_library1:
             show sl normal pioneer at fright with dissolve
         elif (alt_day2_convoy == 'dv'):
             show dv normal pioneer2 at fright with dissolve
-        sh "Привет."
+        sh "Hello."
     else:
-        "Большую часть помещения занимал стол."
+        "Most of the room was occupied by a table."
         if alt_day_binder != 1:
-            "За ним расположился Электроник и парень, неуловимо походящий на Александра Демьяненко."
-            me "Шурик!"
-            "Вырвалось у меня."
+            "Behind it was Electronik and a guy subtly resembling Alexander Demyanenko."
+            me "Shurik!"
+            "I let out a shout."
         else:
-            "За ним расположились оба представителя сильного пола в отряде – исключая, понятно, меня."
-            "Один здорово напоминал героя книжки Велтистова, тут даже сомневаться не приходилось."
-            "Ну а в другом можно было узнать героя советских комедий."
-            me "Шурик и Электроник?"
-            "Белобрысый молча кивнул."
-        $ meet('sh','Шурик')
+            "Behind it were both representatives of the stronger sex in the squad - excluding, of course, me."
+            "One was very reminiscent of the hero of Veltistov’s book, there was no doubt about it."
+            "And in the other one you could recognize the hero of Soviet comedies."
+            me "Shurik and Electronik?"
+            "The blonde guy nodded."
+        $ meet('sh','Shurik')
         $ alt_day2_sh_met = True
-        $ meet('el','Электроник')
+        $ meet('el','Electronik')
         show sh serious pioneer far with dspr
         if (alt_day2_convoy == 'un'):
             show un normal pioneer at fright with dspr
@@ -2675,94 +2676,94 @@ label alt_day2_event_library1:
             show sl normal pioneer at fright with dissolve
         elif (alt_day2_convoy == 'dv'):
             show dv normal pioneer2 at fright with dissolve
-        sh "Шурик, да. А ты новенький?"
-        me "Зачем спрашиваешь… {w}Будто на линейке не был."
-    sh "И сразу в редакцию стенгазеты? Очень ответственно, молодец. Рассказывай."
-    me "Эээ… А что рассказывать?"
+        sh "Shurik, yeah. Are you new here?"
+        me "Why do you ask… {w}As if you weren't at the lineup."
+    sh "Straight into the editorial office of our newspaper? Very responsible of you, good job. Now, tell us."
+    me "Uhhhh… Tell what?"
     show el normal pioneer far at cleft with dspr
-    el "Новости с полей!"
-    el "Рассказывай, зачем пришёл?"
-    "Они так выжидательно смотрели на меня, что я смутился."
-    me "Я осматривался, услышал ваши голоса, и…"
-    sh "Всё понятно. Ну? Ты посмотрел?"
-    sh "Приобщился? А нам работать пора."
+    el "Field news!"
+    el "Tell us, why are you here?"
+    "They looked at me so expectantly that I got flustered."
+    me "I looked around, heard your voices, and…"
+    sh "Alright. So. You got a good look in?"
+    sh "Took part? And we should get back to work."
     show sh normal pioneer far with dspr
-    "Я призадумался. Журналисты-стенкоры, как правило, обладают хорошим счётом у вожатых и начальства лагеря. {w}Может, это можно как-то использовать?"
+    "I thought about it. Journalists, usually, have a good score with the squad leaders and the authorities of the camp. {w}Maybe I could use that?"
     menu:
-        "Записаться":
-            me "А к вам записаться можно?"
+        "Sign up":
+            me "Can I sign up?"
             $ list_joined_clubs_7dl.append('nwsppr')
             $ lp_un += 1
-            sh "Нет. Мест больше нет."
-            me "Точно нет? Я вижу, вас тут всего полтора землекопа. Кто материал-то собирает?"
-            el "Он прав. Не всем же рисовать. Надо кому-то и поработать в поле."
-            "Шурик задумался."
-            sh "Не думаю, что это хорошая идея."
+            sh "No. We don't have vacant places."
+            me "Are you sure? As far as I can see there's two and a half people here. Who collects news then?"
+            el "He is right. Not everyone can draw. Someone needs to work in the field."
+            "Shurik pondered."
+            sh "I don't think that's a good idea."
             if (alt_day2_convoy == 'un'):
                 if loki:
                     show un serious pioneer far at fright with dspr
-                    un "У нас и правда нехватка корреспондентов."
+                    un "We really don't have enough journalists."
                 elif herc:
                     show un normal pioneer far at fright with dspr
-                    un "Может, дадим ему тестовое задание?"
+                    un "Maybe we can give him a test task?"
             elif (alt_day2_convoy == 'sl'):
                 show sl serious pioneer at fright with dspr
-                sl "Саша, что за новости? Человек хочет поработать и помочь, а ты тут важничаешь!"
-                sl "Давайте вежливее, а не то закрою вашу богадельню."
-                th "Ого! Да Славя, оказывается, пользуется авторитетом!"
+                sl "Sasha, what's wrong with you? A person wants to help you work, and you're putting on airs here!"
+                sl "Be more polite, otherwise I'll close your almshouse."
+                th "Wow! Slavya, it turns out, can use her authority!"
                 show sh upset pioneer far with dspr
-                "Очкарик сник и продолжил уже куда менее уверенно."
+                "The bespectacled guy wilted and continued much less confidently."
             elif (alt_day2_convoy == 'dv'):
-                dv "А у вас тут мило!"
+                dv "It's kinda cute here!"
                 show dv normal pioneer2 far at fright with dspr
-                "Алиса нахально осмотрелась по сторонам."
-                dv "Пожалуй, я теперь знаю, куда я буду приходить вместо тихого часа."
+                "Alisa looked around impudently."
+                dv "I think I know where I'm going to be visiting during quiet hour from now on."
                 show sh scared pioneer far at cright with dspr
-                sh "Что?!"
+                sh "What?!"
                 show dv grin pioneer2 far with dspr
-                dv "Ну а что, вожатая тут не ходит, спрятаться можно. Раздолье."
+                dv "What? Squad leader doesn't come here, there's always somewhere to hide. Great place."
                 show un shy pioneer far at fleft with dspr
-                un "Может, лучше сделать, как они хотят?"
-                "Несмело предложила Лена."
-                sh "Похоже, у нас нет другого выбора."
+                un "Maybe it's better to let them do what they want?"
+                "Hesitantly suggested Lena."
+                sh "Looks like we don't have a choice."
             else:
                 if loki:
                     show un serious pioneer far at fleft with dspr
-                    un "Нам и правда некому работать снаружи."
+                    un "We really don't have anyone collecting info."
                 if herc:
                     show un normal pioneer far at fleft with dspr
-                    un "Может, дадим ему тестовое задание?"
-        "Не записываться":
-            me "Не буду больше вас отвлекать."
-            "Сообщил я."
-            me "Пожалуй, у вас и без меня места не хватает. Арривидерчи!"
+                    un "Maybe we can give him a test task?"
+        "Don't sign up":
+            me "Well, I won't be distracting you any longer."
+            "I told them."
+            me "Looks like you do not have enough space even without me. Arrividerci!"
             play sound sfx_open_dooor_campus_1
             pause(2)
             scene bg int_library_day with dissolve
-            "Помахав рукой, я вышел из хранилища обратно в библиотеку."
-            "И застыл."
+            "I waved and went out of the vault back into the library."
+            "And immediately froze."
             return
-    me "Шурик, я же не буду вам здесь надоедать, помнишь? Я корреспондент, так что буду работать там, снаружи."
+    me "Shurik, I won't bother you here, remember? I am a correspondent, so I will work there, outside."
     show sh surprise pioneer far with dspr
-    "Шурик немного покраснел — видимо, мои слова пришлись не совсем ко двору — однако быстро успокоился и принялся яростно расшвыривать бумажные залежи на столе в поисках непонятно чего."
+    "Shurik blushed a little - apparently, my words were not entirely appropriate - however, he quickly calmed down and began furiously throwing paper piles on the table in search of something incomprehensible."
     show sh normal_smile pioneer far at cright behind un with dissolve
-    sh "Ага!"
-    "В его руке был зажат какой-то листок."
-    sh "Задание!"
-    "Шурик победно посмотрел на меня."
-    sh "Каждую смену отдыхающие устраивают большой концерт в день самодеятельности. Об этом и напишешь."
-    me "О чём?"
-    "Тупо переспросил я."
-    sh "О самодеятельности! Я уже знаю нескольких человек, готовящих номера, но помогать тебе не буду. Напишешь один лист, принесёшь, мы его оформим или перепишем… В зависимости от того, насколько ужасен твой почерк… И вклеим в стенгазету. Будет рубрика «светское». Всё понял?"
-    me "Понял…"
-    sh "Я буду у себя в клубе, если вдруг понадоблюсь. Удачи."
-    "Мне пришло в голову, что очкарик нашёл потрясающий способ отделаться от меня, дав невыполнимое задание."
+    sh "Aha!"
+    "There was a piece of paper in his hand."
+    sh "Your task!"
+    "Shurik looked at me triumphantly."
+    sh "Every session, vacationers arrange a big concert on the day of amateur performances. Write about it."
+    me "About what?"
+    "Dumbfoundedly I asked again."
+    sh "About self-activity! I already know a few people who are preparing, but I won't help you. Write one sheet, bring it to us and we will either issue it or rewrite it… Depending on how terrible your handwriting is… And then we'll paste it into the newspaper. That'll be our «high life» column. You got everything?"
+    me "Got it…"
+    sh "I'll be at the usual place, if you need me. Good luck."
+    "It occurred to me that the four-eyed found an amazing way to get rid of me by giving me an impossible task."
     if (alt_day2_convoy == 'un') and dr:
         show un smile pioneer with dspr
     else:
         show un sad pioneer far with dspr
-    "Лена сочувственно посмотрела на меня, а внутри вместо привычного безразличного всепринятия вдруг появилась некая искра!"
-    "Не знаю, что это, злость, азарт или нежелание быть вытолканным в шею, но я схватил листок и с криком: «Ждите сюжет!» — выскочил из помещения редакции."
+    "Lena looked at me sympathetically, and instead of the usual indifferent acceptance, a certain spark suddenly appeared inside!"
+    "I don’t know what it was, anger, excitement or unwillingness to be pushed into the neck, but I grabbed a piece of paper and shouted: «Wait for the story!» — and jumped out of the room."
     play sound sfx_open_dooor_campus_1
     pause(1)
     scene bg int_library_day with dissolve
@@ -2771,95 +2772,95 @@ label alt_day2_event_library1:
 
 label alt_day2_mz:
     scene bg int_library_day
-    $ meet('mz','Библиотекарша')
-    mz "Ну и кто тут кричит?"
-    "Раздался скрипучий голос."
-    mz "Если это опять чёртов Данька безобразит…"
+    $ meet('mz','Librarian')
+    mz "Who's yelling here?"
+    "I heard a raspy voice."
+    mz "If it's this damn Danya misbehaving again…"
     show mz normal glasses pioneer with moveinleft
-    "Несколько секунд спустя между полками показалась та самая спящая библиотекарша."
-    "Теперь, когда она стояла и вела себя активно, мне удалось рассмотреть её чуть получше."
-    "Тёмные, с отливом, коротко стриженные волосы, забавный вихор на макушке, напоминающий формой вопросительный знак."
-    "Глаза угрожающе-жёлтого цвета, спрятанные за очками с неисчислимым количеством диоптрий."
-    "Добавим сюда предельно сварливое выражение лица, и вот — библиотекарус вульгарис."
-    mz "Кто таков?"
-    "Голос оказался под стать — скрипучий, со сварливыми хозяйскими нотками."
-    mz "Почему в библиотеке без билета? Почему кричим?"
-    "Голос у неё был довольно резкий, а тон совсем не из приятных."
-    me "Я…"
-    mz "Пошли."
-    "Кивнула она мне и, не оборачиваясь, заспешила к своему месту."
-    th "Им всем и правда пофигу, иду ли я за ними, или они настолько уверены в собственной неотразимости?"
-    "Я замер на месте, и тут библиотекарша неприязненно обернулась."
-    mz "Ну что встал, иди давай."
-    "Мы выбрались в основное помещение, где она, не мудрствуя лукаво, протянула мне руку."
-    mz "Давай!"
-    "Я несмело протянул ей руку."
-    mz "Другую давай!"
-    "Психов и правда берут работать в библиотеку?"
-    mz "Ну же!"
-    "Её тон был не слишком дружелюбным, и ждать она явно не собиралась."
-    "Я несмело протянул ей руку, в которой был тот самый бегунок. Библиотекарша забрала листок и развернула его у себя на столе."
-    mz "Угу. Новенький, значит?"
-    "Я промолчал."
-    mz "И тебе нужна моя подпись."
-    th "Нет, я пришёл сюда научиться играть на барабане."
-    mz "Вот."
-    "Она размашисто расписалась и отправила листок по столу в мою сторону."
-    mz "Билет заводить будем?"
-    me "Что?"
+    "A few seconds later, the same sleeping librarian appeared between the shelves."
+    "Now that she was standing and being active, I was able to see her a little better."
+    "Dark, shimmery, short hair, a funny swirl on top, reminiscent of a question mark in shape."
+    "Eyes of a menacing yellow color, hidden behind glasses with an incalculable number of diopters."
+    "Add an extremely grumpy facial expression, and here she is, - the librarian vulgaris."
+    mz "Who are you?"
+    "The voice matched her - creaky, with grumpy master notes."
+    mz "Why are you in the library with no reader card? Why are you screaming?"
+    "Her voice was rather sharp, and her tone was not pleasant at all."
+    me "I…"
+    mz "Come here."
+    "She nodded to me and, without turning around, hurried to her place."
+    th "Do they all either really don't care if I'm following them, or are they so sure of their own irresistibility?"
+    "I froze on the spot, and then the librarian turned around with hostility."
+    mz "Why are you standing there, keep walking."
+    "We got out into the main room, where she, without further ado, extended her hand to me."
+    mz "Give!"
+    "I timidly held out my hand to her."
+    mz "The other hand!"
+    "They really hire psychos in libraries?"
+    mz "Come on!"
+    "Her tone was not very friendly, and she clearly wasn't going to wait."
+    "I timidly held out my hand to her again, now the one with the checklist. The librarian took the paper and unfolded it on her desk."
+    mz "Mhm. Newcomer, huh?"
+    "I kept my silence."
+    mz "And you need my signature."
+    th "No, I'm here to learn drums."
+    mz "Here."
+    "She artistically signed and sent the sheet across the table in my direction."
+    mz "Gonna register a card?"
+    me "What?"
     show mz bukal glasses pioneer with dissolve
-    mz "Читательский билет заводить будем?"
-    "Терпеливо, как умственно отсталому, пояснила она."
-    mz "Книжки брать, почитать. Понимаешь?"
-    me "А… Нет. Не будем."
-    "Мне пришло в голову, что труды по марксизму-ленинизму — несколько не то, чем есть смысл захламлять себе голову в такую погоду."
-    mz "Тогда не смею задерживать."
-    "Не терпящим возражений голосом сказала библиотекарша."
-    "Я заглянул в бегунок ещё раз — подпись стояла напротив графы «Женя Ж.»"
-    $ meet('mz','Женя')
-    me "Меня, кстати, Семён зовут."
+    mz "Will you register for a reader's card?"
+    "Patiently, as if talking to a mentally retarded person, she explained."
+    mz "Borrowing books, reading. Do you get it?"
+    me "Ah… No. Don't need it."
+    "It occurred to me that the works on Marxism-Leninism are somewhat different from what it makes sense to fill your head with in such weather."
+    mz "Then I would rather not delay you."
+    "The librarian said in a voice that brooked no objection."
+    "I looked into the checklist again - the signature opposite the column read «Zhenya Z.»"
+    $ meet('mz','Zhenya')
+    me "I'm Semyon, by the way."
     if ('medic' in list_voyage_7dl):
-        "В этот раз я тормозил немного меньше и представился под конец беседы, а не под дверью."
-    mz "Очень приятно."
-    "Её тон противоречил словам."
+        "This time I processed things faster and introduced myself at the end of the conversation, and not at the door."
+    mz "Nice to meet you."
+    "Her tone contradicted her words."
     hide mz with dissolve
     scene cg d2_micu_lib with dissolve
-    "Она упокоила голову на сложенных руках и засопела."
-    mz "Дверь сразу за тобой."
-    "Не открывая глаз, указала она."
-    mz "Не перепутай."
-    "Пожав плечами, я отправился на улицу. С такими врединами общаться себе дороже. Пусть себе спит дальше."
-    mz "Можешь не пытаться хлопать дверью. Там доводчик."
+    "She rested her head on her folded arms and sniffled."
+    mz "The door is right behind you."
+    "Without opening her eyes, she indicated."
+    mz "Don't mix it up."
+    "Shrugging my shoulders, I went outside. It's better not to communicate with such pests. Let her keep sleeping."
+    mz "Don't bother trying to slam the door. There's a stopgap."
     stop ambience fadeout 1
     stop music fadeout 2
     scene bg ext_library_day with fade
     play ambience ambience_camp_center_day fadein 1
-    "Вздрогнув от того, как удачно вредная библиотекарша угадала моё намерение, я поспешил покинуть это мерзкое заведение."
+    "Startled at how successfully the mischievous librarian guessed my intention, I hurried to leave this vile institution."
     if (alt_day2_convoy == 'un'):
-        me "Брррр, ну и жужелица!"
+        me "Guhhh, what a buzzkill!"
         show un smile pioneer with dissolve
-        un "Женя хорошая… Не знаю, почему она с тобой так обошлась."
-        me "А я знаю почему. Потому что она жужелица, вот почему."
+        un "Zhenya's good… I don't know why she treated you like that."
+        me "I know why though. It's because she's a buzzkill."
         show un laugh pioneer with dspr
-        un "Вот тебе и ответ. Ладно, пошли."
+        un "Well, there's your answer. Alright, let's go."
     elif (alt_day2_convoy == 'sl'):
-        me "Брррр, ну и жужелица!"
-        me "Неужели вот нельзя, чтобы без плевков в душу?"
+        me "Guhhh, what a buzzkill!"
+        me "Can't you just make do without spitting in other people's souls?"
         show sl smile2 pioneer with dissolve
-        sl "Женя хорошая. Не обижай её."
-        me "Я?! Обижай?!"
-        me "Да она сама кого хочешь обидит!"
+        sl "Zhenya is good. Don't bully her."
+        me "Me?! Bully?!"
+        me "She herself can bully anyone she wants!"
         show sl laugh pioneer with dspr
-        sl "Не расстраивайся, дай ей шанс. Что у нас там дальше?"
+        sl "Don't be upset, give her a chance. Alright, what do we have next?"
     elif (alt_day2_convoy == 'dv'):
-        me "Брррр, ну и жужелица!"
+        me "Guhhh, what a buzzkill!"
         show dv smile pioneer2 with dissolve
-        dv "Да, Женька редкостная вредина. Впрочем, ты ей тоже понравился."
-        me "Свят-свят!"
+        dv "Yeah, she's a rare pest. Although it seemed like she liked you?"
+        me "For the love of God, please no!"
         show dv laugh pioneer2 with dspr
-        dv "Пошли! Нам ещё в кучу мест попасть надо."
+        dv "Let's go! We still need to go to a bunch of places."
     else:
-        th "Брррр, ну и жужелица!"
+        th "Guhhh, what a buzzkill!"
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -2869,77 +2870,77 @@ label alt_day2_event_medic_house1:
     if not alt_replay_on:
         if been_there_alt1() > 1:
             scene bg ext_aidpost_day with fade
-            th "Нет, после сеанса обтираний мне здесь ловить явно нечего."
+            th "Nope, I definitely don't have anything else to do here."
             return
     scene bg ext_aidpost_day with fade
     if (alt_day2_convoy == 'sl'):
         show sl serious pioneer
-        sl "Ты так за завтраком ничего и не съел."
-        "Попеняла мне девочка."
-        me "Уж извини, не лезет в меня геркулесовая каша."
-        me "Я скажу умное слово — акклиматизация!"
-        sl "Да ну! Раз уж мимо медпункта идём, давай хоть Виолетте Церновне тебя покажем."
-        "Я ощутил табун километровых мурашек, бегущих у меня между лопаток при звуке этого имени."
-        me "Ээээ… Может, не надо?"
-        sl "Надо!"
-        "Она схватила меня за руку и потащила тропинкой в сторону медпункта."
-        sl "Здоровье знаешь, как важно беречь! Не сберёг смолоду, потом всю жизнь на лекарства работаешь. Так что давай в медпункт и без разговоров."
+        sl "You didn't eat anything at the breakfast."
+        "The girl scolded me."
+        me "Excuse me, can't really stomach oatmeal right now."
+        me "There's a clever word for that - acclimatization!"
+        sl "Oh please! Well, since we're going past the infirmary anyways, let's at least show you to Violetta Cernovna."
+        "I suddenly felt deathly chill from a massive herd of goosebumps running across my back when I heard that name."
+        me "Uhhh… Maybe we shouldn't?"
+        sl "We should!"
+        "She grabbed my hand and dragged me along the path towards the infirmary."
+        sl "You know how important it is to take care of your health! You don't save it from a young age, then you work for medicines all your life. So we're going to the infirmary, stop complaining."
         if alt_day1_us_shotted:
-            "Мы уже почти подошли к медпункту, как вдруг…"
-            dv "Что, новенький, нашёл себе сиделку?"
+            "We almost reached the infirmary, but then…"
+            dv "What, newbie, found yourself a babysitter?"
             show dv normal pioneer2 at right with dspr
-            "Раздался за спиной знакомый хрипловатый голос."
-            "Алиса."
+            "A familiar hoarse voice rang out from behind."
+            "Alisa."
             show sl angry pioneer with dspr
-            sl "Что тебе нужно, Двачевская?"
-            "Неприязненно покосилась Славя."
-            dv "Мне-то? Да сущую безделицу. {w}Наш герой ведь вчера немного напортачил. {w}А за собой не убрал. Некрасиво получилось. {w}Негигиенично."
+            sl "Dvachevskaya, what do you want?"
+            "Slavya squinted with hostility."
+            dv "What do I want? Nothing much. {w}Our hero screwed up a bit yesterday, you know. {w}And didn't clean up after himself. Not a pretty sight. {w}Unhygienic, even."
             if (counter_sl_7dl == 0) and (alt_day_binder != 1):
-                sl "Это ведь вы пытались его облить!"
-                "Славя пыталась урезонить хулиганку, однако та даже не слушала."
-                "Я же стоял в сторонке и, опять удивляясь себе, наслаждался конфликтом. Хотя смутно и подозревал, что мой нос опять на кону."
+                sl "You were the one who tried to pour water on him yesterday!"
+                "Slavya tried to reason with the hooligan, but she didn’t even listen."
+                "I, myself, stood aside and, again surprised at myself, enjoyed the conflict. Although I vaguely suspected that my nose was at stake again."
                 if loki:
-                    dv "Обливания — забыли. Сами виноваты, не надо верить всяким проходимцам. Но вот некрасивая сцена на футбольном поле… Ай-яй-яй."
+                    dv "The showering - we ourselves forgot about it already. Yeah, we're guilty, shouldn't have believed any passing crooks. But the unsightly scene at the football field… Oh, no-no-no."
                 else:
                     show dv surprise pioneer with dspr
-                    dv "Причём здесь обливания?"
-                    "Удивилась Алиса."
+                    dv "What does that have to do with this?"
+                    "Alisa was surprised."
                     show dv smile pioneer with dspr
-                    dv "Я о том, что кто-то вчера устроил Ульяне приступ асфальтовой болезни, из-за чего она полночи ныла. Догадываешься, о ком я?"
+                    dv "I'm talking about the fact that someone yesterday gave Ulyana an acute attack of asphalt disease, due to which she spent half the night whining. Do you catch my drift?"
             else:
-                sl "В столовой Ульяна сама виновата, жаль, её Семён не поймал!"
-                dv "Не поймал? О, так он тебе не рассказал, разве?"
-                "Она недобро прищурилась."
-                dv "Значит, герой не поделился с тобой своими похождениями?"
-                dv "Так он Ульяну вчера в некотором роде поймал."
-                sl "Семён, о чём она говорит?"
-                me "Да так…"
-                "Всегда тяжело признаваться в собственной жестокости."
-                me "Использовал альтернативные методы."
+                sl "In the canteen Ulyana herself is to blame, it’s a pity Semyon didn’t catch her!"
+                dv "Didn't catch? Oh, so he hasn't told you, has he?"
+                "She grimaced."
+                dv "So, our hero hasn't shared his adventures?"
+                dv "Turns out he kind of did catch Ulyana yesterday."
+                sl "Semyon, what is she on about?"
+                me "Well…"
+                "It's always hard to admit your own cruelty."
+                me "I used alternative methods."
             show dv smile pioneer close at right with dspr
-            "Двачевская обогнула не успевшую среагировать Славю и встала прямо передо мной, заглядывая в глаза."
+            "Dvachevskaya came around Slavya, who did not have time to react, and stood right in front of me, looking into my eyes."
             if alt_day_binder != 1:
-                dv "Думаешь, обидел маленькую и сразу герой, да? Догнать не смог, так в спину ударил."
+                dv "You think you offend a kid and immediately become a hero, right? Could not catch up, so hit the back."
             else:
-                dv "Или думаешь большой, сильный и теперь тебе всё можно, да?"
-            "Она говорила спокойным голосом, однако в её глазах так и плясали озорные чертенята, и я понял, что вся эта сцена была задумана единственно с целью подразнить нас."
-            me "А ты её адвокат?"
+                dv "Or do you think that since you're big and strong you're allowed to do anything?"
+            "She spoke in a calm voice, but mischievous imps danced in her eyes, and I realized that this whole scene was conceived solely for the purpose of teasing us."
+            me "Are you her lawyer?"
             if dr:
-                "Очень хотелось отвернуть взгляд в сторону, тем более что для меня было крайне трудно сохранять зрительный контакт с девочкой."
-            me "Пришла взыскивать?"
-            dv "Нет. Я пришла сказать, что если ты не трус, то сегодня около сцены мы обсудим твоё поведение и сделаем оргвыводы."
-            me "А если трус?"
-            dv "Значит, выводы сделаем без тебя. И уверяю, тебе они не понравятся."
-            "Двачевская развернулась и двинулась прочь. Не поворачиваясь, помахала."
-            dv "Адью, новичок. У сцены в шесть. Не опаздывай."
+                "I really wanted to look away, especially since it was extremely difficult for me to maintain eye contact with the girl."
+            me "Came to negotiate?"
+            dv "No. I came to say that if you are not a coward, then today, near the stage, we will discuss your behavior and draw conclusions."
+            me "And if I'm a coward?"
+            dv "Then we'll draw the conclusions without you. Oh, and believe me, you won't like them."
+            "Dvachevskaya turned around and headed off. Without turning, waved."
+            dv "Adieu, newbie. At the stage at six. Don't be late."
             hide dv with dissolve
-            "Рыжая бандитка забивает мне стрелку за то, что я накормил её мелкую подругу газоном. Всё как у людей прям! Главное, чтобы бригаду за собой не приволокла. Один я против нескольких пионеров не выстою."
+            "Red-haired bandit wants a showdown with me because I gave her little friend a taste test of the nearest lawn. Yup, all is as it should be! Hope she doesn't bring an entire gang with her. I definitely won't stand a chance against multiple pioneers alone."
             show sl normal pioneer with dspr
-            sl "Пойдёшь?"
-            me "А как же! Молодость! Когда ещё кулаками-то махать!"
-            "Не говорить же ей, что у меня внутри всё трясёт от нервяка!"
-    "Немного поколебавшись — я прекрасно помнил вчерашний медосмотр с пристрастием — я постучал в деревянную дверь с большим окном в верхней части."
-    cs "Войдите."
+            sl "Will you go?"
+            me "Of course! Youth! When else do you throw hands!"
+            "I can't just tell her that everything inside me is shaking from nervousness!"
+    "After a little hesitation - I remembered yesterday's examination with a fondness - I knocked on a wooden door with a large window at the top."
+    cs "Open."
     stop ambience fadeout 2
     play sound sfx_open_door_1
     pause(1)
@@ -2953,149 +2954,149 @@ label alt_day2_event_medic_house1:
     elif (alt_day2_convoy == 'sl'):
         show sl normal pioneer far at fright
     elif (alt_day2_convoy == 'dv'):
-        "Зная репутацию доктора, Алиса решила немного унять свои бунтарские замашки — даже ненадолго согласилась вернуть форму в порядок."
+        "Aware of nurse's reputation, Alisa decided to calm her rebellious habits a little - she even agreed to fix her uniform for a short time."
         show dv normal pioneer far at fright
-    "Я и вошёл. Что мне ещё оставалось?"
-    "В услугах врача я не нуждался. Собственно, даже вчерашняя моя тихая истерика решилась бы с помощью одного ведра холодной воды."
+    "So I came in. I mean, what else could I do?"
+    "I definitely didn't need any medical services. Actually, even my tantrum from yesterday could be easily solved with the help of a single bucket of cold water."
     if alt_day_binder != 1:
         if loki and (counter_sl_7dl == 0):
-            "К сожалению, свою вчерашнюю квоту я извёл на фронт рыжих, поэтому пришлось работать с тем что есть."
+            "Unfortunately, yesterday my quota has been fully donated to the redheads, so I had to work with what I had."
         elif herc and (counter_sl_7dl == 0):
-            "К счастью, от своего ведра я успешно сбежал… Да ещё и утащил главную зачинщицу."
+            "Thankfully, I managed to escape that bucket yesterday… And stole the main culprit, at that."
         elif dr and (counter_sl_7dl == 0):
-            "Собственно, оное ведро я и получил."
+            "Well, I did get that bucket after all."
     else:
-        "Собственно, оного ведра не досталось, зато прилетело тазиком."
-    me "Эм… Здра…"
+        "Unfortunately, I have managed to avoid that bucket."
+    me "Um… Hel…"
     show cs normal far at center with dissolve
-    "В горле пересохло, и я проглотил окончание слова. Из-за стола в дальней части кабинета встала невысокая, но крайне фигуристая разноцветноглазая девица."
-    "У кого-то другого это выглядело бы как эдакое уродство, наверное. Но здесь… Она почему-то напоминала хищника, пускай даже и калибра домашней кошки, и как и с кошкой, с ней совершенно невозможно было предугадать события."
-    "Она знала это и беззастенчиво этим пользовалась."
-    cs "Ну, здравствуй… пионер."
-    "Если бы эту улыбку попытался воспроизвести я, ухмылка бы получилась препохабнейшая!"
-    me "Здравствуйте, В-виола…"
-    cs "Ты присаживайся."
-    "Я оглядел комнату."
-    cs "На кушеточку."
-    "Я сел."
-    cs "Раздевайся."
-    "Продолжила она ровным тоном."
-    me "Зачем???"
-    cs "Смотреть тебя будем. Вдруг я что-то пропустила вчера."
+    "My throat went dry and I swallowed the end of the word. From behind a table in the back of the room, a short but extremely curvaceous, heterochromatic girl stood up."
+    "For anyone else, it would look like some kind of ugliness, I guess. But here… For some reason, she looked like a predator, even if it was the caliber of a domestic cat, and, like with a cat, it was completely impossible to predict events with her."
+    "She knew that, and shamelessly used it."
+    cs "Well, hello there… pioneer."
+    "If I tried to reproduce this smile, the grin would turn out to be the most obscene!"
+    me "Greetings, V-Viola…"
+    cs "Sit down."
+    "I looked around the room."
+    cs "On the couch."
+    "I sat down."
+    cs "Strip."
+    "She evenly continued."
+    me "Why???"
+    cs "We'll be re-examining you. In case I missed something yesterday."
     show cs smile far with dspr
-    cs "Ну чего ты ждёшь? Не мне же тебя раздевать."
-    "Судя по выражению глаз, мысль её позабавила."
-    me "Эээ… Да я… В общем… Я себя хорошо чувствую!"
-    "Сглотнув, ответил я."
-    me "И лечения мне вашего… Не надо. Вот."
-    cs "Самочувствие не имеет значения."
+    cs "Well, what are you waiting for? For me to undress you?"
+    "Judging by the expression of her eyes, that thought was very amusing."
+    me "Uhh… Well I… Honestly… I feel great!"
+    "I replied, constantly gulping."
+    me "As for your medication… I don't need it. Yeah."
+    cs "Your feelings don't matter."
     show cs shy with dspr
-    cs "Я специально для тебя приготовила {i}индивидуальное{/i}…"
-    "Она произнесла последнее слово так, что оно прозвучало как новая поза из «Камасутры»."
-    cs "…лечение."
+    cs "I have prepared an {i}individual{/i}…"
+    "She said the last word in such a way that it sounded like a new pose from «Kamasutra»."
+    cs "…course, especially for you."
     if (alt_day2_convoy == 'un'):
         show un shy pioneer far at fright
     elif (alt_day2_convoy == 'sl'):
         show sl shy pioneer far at fright
     elif (alt_day2_convoy == 'dv'):
         show dv shy pioneer far at fright
-    me "Да я здо…"
-    cs "Это ты зря."
+    me "I'm perfectly healt…"
+    cs "Don't be like that."
     show cs shy close with dspr
-    "Она сделала ещё один шаг, заходя в личное пространство, а я невольно поёжился от её пристального, почти рентгеновского взгляда."
-    cs "А вдруг у тебя жар?"
-    "Я не успел среагировать, а она уже положила ладонь мне на лоб."
-    "Думаю, говорить о том, что он пылал, было бы излишним."
-    "Я сам сидел, красный как рак, весь покрывшийся мурашками от смешанного испуганно-восторженного ощущения."
-    cs "Вот видишь."
-    "Она убрала пальцы и заговорила нарочито-томным голосом."
-    cs "Ты же весь горишь, пионер. Раздевайся."
-    me "Что?!"
-    cs "Проведём сеанс…"
-    "Растягивая гласные, начала она."
-    cs "…обтираний. Из индивидуального курса."
-    "Она быстро протянула руку и расстегнула мне верхнюю пуговицу на рубашке."
+    "She took another step, entering my personal space, and I involuntarily cringed at her intent, almost x-ray look."
+    cs "What if you're in heat?"
+    "I couldn't even react, and she already put her hand on my forehead."
+    "I think it would be redundant to say that it was on fire."
+    "I myself sat, red as a lobster, all covered with goosebumps from a mixed feeling of fright and enthusiasm."
+    cs "See."
+    "She removed her fingers and spoke in a deliberately languid voice."
+    cs "You're on fire, pioneer. Strip."
+    me "What?!"
+    cs "Let's have a session of…"
+    "She began, stretching every vowel."
+    cs "…rubdowns. From my individual course."
+    "She quickly reached out and undid the top button of my shirt."
     if (alt_day2_convoy == 'un'):
         show un laugh pioneer far at fright
-        "Я услышал тихий смешок и обернулся."
-        "Лена, которая должна была оказывать мне моральную поддержку, стояла и вероломно хихикала!"
-        "В её глазах я не заметил ни злости, ни смущения, ни чего-либо в этом духе."
-        cs "Мотай на ус, пионерка. С ними только так и можно."
-        "Напутственно произнесла Виола."
-        un "Я учту это, доктор."
+        "I heard a soft laugh and turned around."
+        "Lena, who was supposed to give me moral support, stood and giggled treacherously!"
+        "In her eyes, I did not notice any anger, or embarrassment, or anything like that."
+        cs "Remember that, pioneer. That's the only way you can deal with them."
+        "Viola said partingly."
+        un "I'll keep that in mind, doctor."
     elif (alt_day2_convoy == 'sl'):
         show sl tender pioneer far at fright
-        sl "С-семён, я тебя на улице подожду, ладно?"
+        sl "S-semyon, I'll wait for you outside, alright?"
         show cs smile close at center with dspr
-        cs "Сиди, пионерка. А ну как пригодишься?"
-        sl "Зачем?!"
-        cs "Кто ж его знает. Вдруг меня мало окажется, и потребуется новая рука."
-        th "ЧТО?!"
+        cs "Sit down, pioneer. Maybe you'll become useful in time?"
+        sl "Why?!"
+        cs "Who knows. Maybe I won't be enough, and we'll need extra hands."
+        th "WHAT?!"
     elif (alt_day2_convoy == 'dv'):
         show dv surprise pioneer far at fright
-        dv "Вы это… если собираетесь пуститься во все тяжкие…"
-        dv "Может, я пойду тогда?"
+        dv "You uhh… if you're gonna go all out, then…"
+        dv "Can I just leave?"
         show cs smile close at center with dspr
-        cs "Куда ты пойдёшь? Ты тоже раздевайся."
-        dv "Зачем?!"
-        cs "Чтобы не забрызгать одежду."
-        dv "ЧТО?!"
-        cs "Во время обтираний."
-    me "Да я вообще… Я вообще вот!"
-    "Прячась за бумажку, затараторил я."
-    me "Меня с маршрутным листом послали."
+        cs "Where are you going? Strip too."
+        dv "Why?!"
+        cs "To avoid any splashes on your clothes."
+        dv "WHAT?!"
+        cs "During rubdowns."
+    me "Actually I'm… I'm, here!"
+    "I mumbled, while hiding behind the paper."
+    me "I was sent with the checklist."
     show cs smile close at center with dspr
-    cs "Но ведь можно же и полечиться, да?"
+    cs "But that wouldn't stop you from taking care of your health, would it?"
     show cs grin close at center with dspr
     show cs smile close at center with dspr
-    "Подмигнув мне, она придвинулась ещё ближе, так, что наши колени почти соприкасались, и… {w}Выхватив бегунок у меня из пальцев, поднесла к глазам."
+    "Winking at me, she moved even closer, so that our knees were almost touching, and… {w}Grabbed the list from my hands, bringing it closer to her eyes."
     hide cs with diam
-    "Повертев листок в руках, она развернулась и пошла к столу. Ну а я… А что я, собственно? Позволил себе дышать, вот что! Впрочем, ненадолго."
+    "Twirling the paper in her hands she turned around and went to the table. And I… What could I do? Allowed myself to breathe, that's what! Although it didn't last long."
     play music music_list["two_glasses_of_melancholy"]
     scene cg d5_cs
     with dissolve
-    "Ручка у неловкой медсестры оказалась очень скользкая и упала на пол."
-    "Всплеснув руками, та наклонилась её поднять, по дороге прогнувшись так…"
-    "Что я опять забыл, как дышать, и на секундочку поверил в аниме, где у возбуждённого героя кровь носом идёт."
-    th "Да тут не носом, тут я не знаю как!"
-    "Чиркнув ручкой, Виола вернула мне листок и, легонько развернув, направила к выходу."
-    cs "Заходи почаще… пионер. И полечиться, и так… В гости."
-    "Она бархатисто рассмеялась, а меня опять всего перетряхнуло."
+    "The pen of the awkward nurse was very slippery and fell to the floor."
+    "Clasping her hands, she bent down to pick it up, bending along the way like…"
+    "Like I forgot how to breathe again, and for a moment recalled animes where the aroused characters get nosebleeds."
+    th "I don't even know how to breathe here at this point, with my nose, mouth?!"
+    "Viola returned the sheet back to me, and lightly directed me towards the exit."
+    cs "Come back often… pioneer. To take care of your health, and, you know… Just to visit."
+    "She velvety laughed, and I shuddered again."
     play sound sfx_close_door_1
     scene bg ext_aidpost_day with fade
     play ambience ambience_camp_center_day fadein 2
     if (alt_day2_convoy == 'un'):
-        me "Это вот что сейчас такое было?!"
+        me "What the hell was that?!"
         show un smile pioneer
-        un "А мне показалось, что тебе понравилось."
-        "Я такой Лену ещё ни разу не видел — она веселилась от души."
-        me "По-моему, меня только что чуть не съели."
+        un "And I thought you liked it."
+        "I have never seen Lena like this - she had fun with all her heart."
+        me "I think I almost got eaten."
         show un laugh pioneer
-        un "Целиком не съели бы. Тапочки оставили."
-        "Я усмехнулся и прикинул, куда двигаться дальше."
+        un "You wouldn't be eaten whole. She'd leave your slippers intact."
+        "I smiled and figured out where to go next."
     elif (alt_day2_convoy == 'sl'):
-        me "Это у вас тут такие доктора работают?"
+        me "So that's the doctors working here?"
         show sl shy pioneer
-        sl "Не держи зла на Виолетту Церновну. У неё очень тяжёлый пост…"
-        "От которого она явно получает кучу удовольствия."
-        me "Вот, значит, куда ты меня привела."
-        me "Меня там чуть не съели."
+        sl "Don't be angry with Violetta Cernovna. She has a very difficult post…"
+        "Which she seems to be enjoying a ton."
+        me "Oh so that's where you brought me."
+        me "I almost got eaten there."
         show sl laugh pioneer
-        sl "Не съели бы. Ты большой."
-        "Я усмехнулся и прикинул, куда двигаться дальше."
+        sl "You wouldn't have. You're a big guy."
+        "I smiled and figured out where to go next."
     elif (alt_day2_convoy == 'dv'):
-        me "Ты видела ЭТО?"
+        me "Have you seen THAT?"
         show dv smile pioneer2 with dissolve
-        dv "Что? Спектакль «Пионер Семён в роли Валдайской девственницы»?"
-        "Улыбнулась Алиса, перевязывая рубашку."
-        me "Рррр…"
+        dv "What? Performance «Pioneer Semyon in the role of the Valdai virgin»?"
+        "Alisa smiled, re-tying her shirt."
+        me "Grrr…"
         show dv laugh pioneer2
-        dv "Ой, подумаешь… Покусились на невинность."
-        "Я усмехнулся и прикинул, куда двигаться дальше."
+        dv "Oh, please… Just a bit of encroaching on innocence."
+        "I smiled and figured out where to go next."
     else:
-        "Вырвавшись из адского дома, я позволил себе перевести дыхание и утереть пот со лба. Это же не медсестра, это же воплощённая пионерская фантазия какая-то!"
-        "Я обернулся и с умным лицом произнёс в закрытую дверь:"
-        me "А меня зовут Семён."
+        "Escaping from the hellish house, I allowed myself to catch my breath and wipe the sweat from my forehead. This is not a nurse, this is some kind of embodied pioneer fantasy!"
+        "I turned around and with a 'smart' face said through the closed door:"
+        me "And my name is Semyon."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -3103,23 +3104,23 @@ label alt_day2_event_medic_house1:
 
 label alt_day2_event_estrade:
     scene bg ext_stage_big_day_7dl with fade
-    "А дальше двигаться было некуда — я заполнил все графы с подписями."
-    "Хотя они и поехали вкривь и вкось."
+    "And then I didn't have anywhere to go - everything was filled out with signatures."
+    "Even though they were in random places."
     if not ('sport_area' in list_voyage_7dl):
-        "Вместо подписи физрука стояла совсем другая подпись."
-        "Но, полагаю, если я его увижу — узнаю."
-        $ meet('ba','Саныч')
-        "Я повторил ещё раз имя-отчество."
-    "До обеда было ещё немного времени, поэтому я решил прогуляться к эстраде."
+        "Instead of PE teacher's signature there was an entirely different one."
+        "But, if I ever see him, I'll probably recognize him."
+        $ meet('ba','Sanich')
+        "I repeated his name in my head."
+    "There was still a little time before lunch, so I decided to take a walk to the stage."
     if (alt_day2_convoy == 'dv'):
-        "Утренний ценный груз не давал мне покоя."
-        "Это же целый бесхозный усилок!"
+        "Valuable cargo from this morning still haunted me."
+        "That's an entire free amplifier!"
         scene bg ext_stage_near_clear_7dl with dissolve
-        "Я забрался на сцену и устроил беглую ревизию аппаратуре."
+        "I climbed onto the stage and made a cursory revision of the equipment."
     else:
-        "Раз уж я решил осмотреть весь лагерь, грех было бы не увидеть центр местной самодеятельности."
-        "Свежеструганные доски приятно пахли смолой, а тенёк внутри так и манил уйти с солнцепёка."
-        "Осмотревшись — никого вокруг замечено не было — я поднялся на сцену."
+        "Since I decided to inspect the entire camp, it would be a sin not to see the center of local amateur performances."
+        "Freshly planed boards smelled pleasantly of resin, and the shade inside beckoned to leave the sun."
+        "Looking around - nobody was nearby - I went up to the stage."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -3128,30 +3129,30 @@ label alt_day2_event_estrade:
 label alt_day2_dubstep:
     scene bg ext_stage_normal_day with dissolve
     play ambience ambience_camp_center_day fadein 3
-    th "Какие-то пульты, колонки… Неплохая аппаратура! Домой бы такую…"
-    th "Микрофон!"
+    th "Control panels, speakers… Good equipment! I wish I could take it home…"
+    th "Mic!"
     if alt_day2_minijack:
         if (alt_day2_convoy == 'sl'):
-            "Походив немного по сцене, я не смог заставить себя немного похулиганить под испытующим взглядом Слави."
-            th "Пора себя поздравлять, Сёма с длинными ушами?"
-            dreamgirl "На свадьбу-то пригласите?"
-            th "Да идите вы! Славя мне и правда нравится, но о чём-то серьёзном говорить… И потом, она же девочка."
-            th "Гусары, молчать!"
-            th "Я имею в виду, она же несовершеннолетняя."
-            dreamgirl "Сможешь повторить ей это в лицо?"
-            sl "Семён, что ты делаешь?"
-            me "Я хочу сделать одну вещь…"
+            "After walking around the stage for a bit, I couldn't bring myself to act a little under Slavya's searching gaze."
+            th "Time for congratulations, long-eared Semyon?"
+            dreamgirl "Hey, will you invite me to your wedding?"
+            th "Screw you! I really like Slavya, but to talk about anything serious… After all, she's a girl."
+            th "Ugh, quiet!"
+            th "I mean, she's underage."
+            dreamgirl "Can you tell her all of that face to face?"
+            sl "Semyon, what are you doing?"
+            me "I want to do something…"
         play sound sfx_click_1
-        "Я подошёл и щёлкнул тумблером."
+        "I walked up and flipped the switch."
         $ lp_us += 1
-        th "Триста лет на сцене не стоял…"
-        "Я взял несколько нот, слушая акустику пространства, а потом засмеялся и махнул рукой — какого, спрашивается, чёрта?!"
-        "Выключив микрофон, я похлопал по карману, где лежал добытый миниджек с огрызком кабеля, и направился в сторону аппаратуры."
-        "Если в лагере будет дискотека, колонки возьмут отсюда. И полагаю, усилители тоже. Так что всё необходимое здесь есть. А если нет…"
+        th "How long has it been since I last stood on the stage…"
+        "I hit a few notes, listening to the acoustics of space, and then I laughed and waved my hand - what the hell, you ask?!"
+        "Turning off the microphone, I patted my pocket, where the recently obtained minijack was, and headed towards the equipment."
+        "If there will be a disco in the camp, the speakers will be taken from here. And I guess amplifiers too. So everything you need is here. And if not…"
         if (alt_day2_convoy == 'dv'):
-            "Вообще эстрада производила впечатление! Огромная половинка десятиугольника шатром нависала над основной сценой, под самой крышей разместились три юпитера, а на столике у дальней стены стоял оставленный там ещё утром усилитель."
+            "In general, the stage made an impression! A huge half of the decagon hung like a tent over the main stage, three jupiters were placed under the very roof, and on a table near the far wall there was an amplifier we left there in the morning."
         else:
-            "Вообще эстрада производила впечатление! Огромная половинка десятиугольника шатром нависала над основной сценой, под самой крышей разместились три юпитера, а на столике у дальней стены стоял… {w}Бинго! Усилитель!"
+            "In general, the stage made an impression! A huge half of the decagon hung like a tent over the main stage, three jupiters were placed under the very roof, and on a table near the far wall stood… {w}Bingo! An amplifier!"
     stop music fadeout 3
     with fade
     return
@@ -3161,63 +3162,63 @@ label alt_day2_dubstep2:
     if (alt_day2_convoy == 'un'):
         $ lp_un += 1
         show un normal pioneer at fright with dspr
-        un "Что ты собираешься делать?"
-        me "Я думал спеть для прекрасной дамы, но я что-то не в голосе."
+        un "What are you going to do?"
+        me "I thought about singing for a beautiful lady, but my voice seems to be off."
         show un shy pioneer at fright
-        un "Но тогда…"
-        me "Потому я решил сыграть!"
+        un "But then…"
+        me "That's why I decided to play!"
     elif (alt_day2_convoy == 'dv'):
         $ lp_dv += 1
         show dv normal pioneer2 at fright with dspr
-        dv "Эй, что ты делаешь с моим усилком?!"
-        me "Терпение. Сейчас ты всё увидишь."
+        dv "Hey, what are you doing to my amp?!"
+        me "Patience. You'll see everything soon."
         show dv angry pioneer2 at fright with dspr
-        dv "Ну если с ним что-то случится…"
-        me "Расслабься и получай удовольствие!"
-    "Дальше было не просто, дальше было элементарно — штекер в плеер…"
-    "…методом научного тыка подобрать во входе усилка, где пройдёт сигнал…"
-    "…колонки еле слышно загудели, и я добавил громкости."
+        dv "But if anything happens to it…"
+        me "Relax and enjoy!"
+    "Then it wasn't even easy, it was elementary - plug in the player…"
+    "…poke around the amp's inputs to find the signal input…"
+    "…the speakers barely audibly hummed, and I turned up the volume."
     show us smile sport with dissolve
-    us "Эй, а что ты тут делаешь?"
-    "Мелкая егоза, кажется, наигралась досыта и теперь решила подоставать меня."
+    us "Hey, what are you doing here?"
+    "The small demon seemed to have played for long enough and now decided to pester me."
     play sound sfx_7dl["ghmm"]
-    "Я щёлкнул пальцами:"
-    me "Музыку крутить собираюсь."
+    "I snapped my fingers:"
+    me "Going to play music."
     show us laugh2 sport with dspr
-    us "Трали-вали? Завтра же дискотека будет, тогда и наслушаешься."
-    me "Я хочу сегодня. Я меломан."
+    us "But the disco is tomorrow, you'll hear enough then."
+    me "And I want today. I'm a music lover."
     show us grin sport with dspr
-    us "Дурибан ты."
+    us "You're a dumbass."
     $ alt_day2_us_dubstep = True
-    "Она забралась на колонку и, свесившись с неё, тыкала рукой в раструб фазоинвертора."
-    me "Знаешь, что…"
-    "Я выкрутил громкость усилителя на максимум."
-    me "Ты бы это… Отошла. От динамиков."
+    "She climbed onto the speaker and, hanging from it, poked her hand into the socket of the phase inverter."
+    me "You know what…"
+    "I cranked amplifier's volume to the maximum."
+    me "You'd better… Step away. From the speakers."
     show us normal sport with dspr
-    us "А то что?"
-    me "Да ничего. Громко просто."
-    us "Ничего не громко! Я на прошлых танцах у самой колонки была, и ничего!"
-    "И вот как ей объяснить, что бас-гитара какого-нибудь ансамбля и инфразвук, который я готовлю к воспроизведению, из общего имеют разве что… хм."
-    "То, что оба относятся к музыке?"
+    us "Or what?"
+    me "Nothing. It'll just be loud."
+    us "It won't be that loud! Last disco I was directly near speakers, and nothing happened!"
+    "How should I explain to her, that the only thing the bass guitar of some ensemble and the infrasound that I'm preparing to playback have in common… is…"
+    "I don't know, that they're both related to music?"
     stop music fadeout 3
-    "Ну да, действительно, для человека, не испорченного зарубежной электронщиной…"
-    "…воспитанного на пластинках…"
+    "Well, yes, indeed, for a person who is not spoiled by foreign electronics…"
+    "…brought up on vinyls…"
     play music "<to 27.83>" + music_7dl["polyhymnia"] fadein 3
-    "…даже максимальная громкость звука всего лишь доставит лёгкое неудовольствие."
-    "Но у меня свой, совершенно особый сюрпризец!"
+    "…even the maximum volume of the sound will only cause slight displeasure."
+    "But I have a very special surprise coming up!"
     show us dontlike sport with dspr
-    us "Фе-е-е-е!"
-    "Она сморщилась так, будто откусила незрелое яблоко."
-    us "Ты что, классику слушать собрался?"
-    "Она помолчала, слушая вступление."
+    us "Guhhhhh!"
+    "She grimaced as if she had bitten off an unripe apple."
+    us "Are you going to listen to classical music?"
+    "She paused as she listened to the intro."
     show us laugh sport with dspr
-    us "Как низко ты пал."
-    "И правда, из динамиков доносится партия скрипичных, плавно вливающаяся в мужской хор. Судя по выражению лица Ульянки, в её глазах я и правда упал ниже некуда. Впрочем, меня это смущало мало. Гораздо важнее будет то, что начнётся после вступления."
-    me "Слушай-слушай…"
-    "Я читаю надпись «polyhymnia», крутящуюся на экранчике плеера."
-    "Ульянка даже не догадывается."
-    us "Не буду я эту гадость слушать…"
-    "Она уже отвернулась, чтобы уйти, и тут в партию вступил БАС!"
+    us "How low you've fallen."
+    "Indeed, a violin part could be heard from the speakers, smoothly flowing into the male choir. Judging by the expression on Ulyanka's face, in her eyes I really fell below the bottom of the sea. However, this bothered me a little. What's more important is what will happen after the intro."
+    me "Keep listening…"
+    "I read a spinning «polyhymnia» label on the player's screen."
+    "She'll never see this coming."
+    us "I'm not going to listen to this crap…"
+    "She had already turned to leave, and then the bass kicked in!"
     play music "<from 27.83 to 145>" + music_7dl["polyhymnia"]
     scene bg ext_stage_near_clear_7dl:
         linear 0.1 zoom 1.1 xalign 0.5 yalign 0.5
@@ -3229,8 +3230,8 @@ label alt_day2_dubstep2:
         show sl surprise pioneer at fright with easeoutbottom
     elif (alt_day2_convoy == 'dv'):
         show dv surprise pioneer2 at fright with easeoutbottom
-    "Подпрыгнула не Ульянка — подпрыгнул весь мир!"
-    "Знойный, раскалённый воздух советского лагеря всколыхнули вязкие, густые басы музыки, не принадлежащей этому миру."
+    "It wasn't Ulyanka who jumped - the whole world jumped!"
+    "The sultry, red-hot air of the Soviet camp was stirred up by the viscous, thick basses of music that did not belong to this world."
     scene bg ext_stage_near_clear_7dl:
         linear 0.1 zoom 1.1 xalign 0.5 yalign 0.5
     show us surp2 sport with easeoutbottom
@@ -3241,130 +3242,130 @@ label alt_day2_dubstep2:
         show sl surprise pioneer at fright with easeoutbottom
     elif (alt_day2_convoy == 'dv'):
         show dv surprise pioneer2 at fright with easeoutbottom
-    "Мелкая выпучила глаза, и я её понимал — всё-таки живой киловатт отборных басов."
-    "Три минуты самого тщательного причесывания мозгов."
-    "Я закрыл глаза и млел, пока не сыграли последние аккорды трека."
+    "The kid bulged her eyes, and I understood her - after all, she jut got hit by a lively kilowatt of spectacular bass."
+    "Three minutes of the most thorough combing of brains."
+    "I closed my eyes and dreamed until the last chords of the track played."
     stop music fadeout 3
     play ambience ambience_camp_center_day fadein 3
     show us surp1 sport with dspr
-    us "Это что было?"
-    "Она была определённо потрясена."
-    me "Это была тоска моего поколения по заводским гудкам."
-    us "Чё?!"
+    us "What the hell was that?"
+    "She definitely was a little bit shaken up."
+    me "It was my generation's longing for factory horns."
+    us "Eh?!"
     if (alt_day2_convoy == 'un'):
         show un smile pioneer at fright with dspr
-        "А вот Лена, похоже, что-то сумела расслышать, потому что во взгляде её явно светилась заинтересованность."
-        un "Кошмарная музыка."
-        "Только и сказала она."
-        un "Поставь ещё."
+        "But Lena, it seems, managed to hear something, because interest was clearly shining in her eyes."
+        un "Horrible music."
+        "That was her only comment."
+        un "Do you have any more?"
     elif (alt_day2_convoy == 'dv'):
         show dv smile pioneer2 at fright with dspr
-        dv "Сильно. Хотя много лишних шумов."
-        dv "Есть что-нибудь гитарное?"
-        "Я немного подумал."
-        me "Я поищу."
+        dv "Nice. Although too noisy for my taste."
+        dv "You have anything with guitars?"
+        "I thought for a bit."
+        me "Yeah, I'll look."
     elif (alt_day2_convoy == 'sl'):
         show sl smile pioneer at fright with dspr
-        sl "Это была самая странная музыка, которую мне приходилось слышать."
-        me "Там, откуда я родом, под такую музыку танцуют."
-        "Я немного подумал."
-        me "Да вообще, дебилов везде полно."
+        sl "That was the strangest music I've ever heard."
+        me "Where I come from, they dance to this kind of music."
+        "I thought for a bit."
+        me "Honestly, there are plenty of morons everywhere."
     elif (alt_day2_convoy not in ('dv', 'sl', 'un')) and ('music' in list_joined_clubs_7dl):
         $ lp_mi += 1
         show mi happy pioneer at fright with dspr
-        mi "Ух, пробрало до печёнок!"
-        "С восторгом завопила со скамейки незаметно подобравшаяся Мику."
-        me "Мику? Откуда ты здесь?"
+        mi "Whoa, that was great!"
+        "Miku, who quietly crept up God knows when, yelled with delight from the bench."
+        me "Miku? Where did you come from?"
         show mi laugh pioneer with dspr
-        mi "Датчики засекли сейсмическую активность, вот я и пошла посмотреть."
-        me "Ой, прости, я не думал…"
-        mi "Всё хорошо, Сенечка, это странная, но музыка, я поняла."
-    "По лицу Ульяны было ясно, что ничего ей не ясно."
-    me "Музыка будущего, Уля."
-    "Улыбнулся я."
-    me "И от колонок лучше отойди. А то там ещё позабористее вещь дальше."
-    us "Улёт!"
+        mi "The sensors detected seismic activity, so I went to check it out."
+        me "Oh sorry, I didn't think…"
+        mi "It's all right, Semyon, it's strange, but it's still music, I get it."
+    "It was clear from Ulyana's face that nothing was clear to her."
+    me "Music of the future."
+    "I smirked."
+    me "And get away from the speakers. There is an even more poignant thing coming up."
+    us "Cool!"
     show us laugh2 sport with dspr
-    "Восторженно заявила мелкая."
-    us "Ты должен дать мне послушать эту кассету!"
-    me "Кассету? Какую ещё кассету?"
-    us "Ну вот с чего ты сейчас крутил эти свои шумы? Это же не пластинка, у тебя и проигрывателя нет. Ничего не понимаю."
-    me "Вот с этого!"
-    "Я показал ей брусок «волкмена»."
-    me "Четыре гигабайта музыки на все случаи жизни."
-    us "Гигабайта? А сколько это в песнях?"
-    me "Где-то тысяча минут звучания со средним качеством."
-    us "Дай!"
-    "Она протянула руку."
-    me "Нет." with vpunch
-    "Я шлёпнул по протянутой ладони."
-    me "Это, можно сказать, последняя память о моей родине, а ты её забрать хочешь."
-    us "Ну и сиди себе дальше."
+    "Enthusiastically said Ulyana."
+    us "You have to let me listen to this cassette!"
+    me "Cassette? What cassette?"
+    us "The thing from which you were playing your noises right now? It's not a record, you don't have a record player here. I don't get it."
+    me "Oh, this thing!"
+    "I showed her my «walkman»."
+    me "Four gigabytes of music for any situation."
+    us "Gigabytes? How much is that in songs?"
+    me "Around 1000 minutes with average quality."
+    us "Gimme!"
+    "She extended her hand."
+    me "No." with vpunch
+    "I slapped her hand."
+    me "That's kind of my last memory of my homeland, and you want to take it away."
+    us "Oh well."
     show us smile sport with dspr
-    "Она надулась и отвернулась."
-    "Ненадолго. Сразу видно, хоть и шкодливая, но очень лёгкая и отходчивая."
-    us "А включи ещё раз эти свои шумы?"
-    me "Понравилось, что ли?"
-    us "А то!"
-    "Я покрутил ещё несколько электронных треков — их было не очень много, и все проверенные временем. Но, как и любой другой владелец аудиодевайса, очень скоро понял, что настроения для мозговыносящего инфразвука никакого. Тогда может…"
+    "She pouted and turned away."
+    "Not for long. Evidently, although she may be naughty, but she's also very light and easy-going."
+    us "Can you play your noises again?"
+    me "What, you liked them?"
+    us "Yeah!"
+    "I played a few more electronic tracks - there were not very many of them, and all of them were time-tested. But, like any other owner of an audio device, I very soon realized that the mood for brain-blasting infrasound has gone somewhere. Then maybe…"
     play music "<from 17.7 to 56.77>" + music_7dl["splin"] fadein 1
-    "Басы смолкли, их сменил гитарный перебор, в который органично вплёлся голос Саши Васильева."
+    "The bass fell silent, they were replaced by a guitar pick, into which the voice of Sasha Vasilyev organically intertwined."
     if (alt_day2_convoy == 'sl'):
-        "Моё внимание привлекло движение на скамейках, там кто-то сидел. К сожалению, я в очередной раз оказался против солнца, поэтому не мог разглядеть."
-        "Но когда «Сплина» сменили «Скорпионс», а тех Мэнсон, подтверждая шизофреничность моего плейлиста, мой зритель встал и подошёл к сцене."
+        "My attention was drawn to the movement on the benches, someone was sitting there. Unfortunately, once again I was against the sun, so I could not see who exactly."
+        "But when «Splin» changed into «Scorpions», and those in turn changed into Manson, confirming the schizophrenia of my playlist, my viewer stood up and walked to the stage."
         show dv normal pioneer2 at cleft with dissolve
         show sl smile2 pioneer at fright with dspr
-        sl "А вот это уже такое… Приятное."
-        sl "Как романс."
-        "Я улыбнулся."
-        me "В общем, это и есть романс."
-        dv "Ты в курсе, что чужое брать вредно для здоровья?"
+        sl "Well, this is… Pleasant."
+        sl "Like a romance."
+        "I smiled."
+        me "To be honest it is one."
+        dv "You do know that borrowing someone else's things is bad for your health?"
     elif (alt_day2_convoy == 'dv'):
-        "С лица Алисы как будто жидкий воск стекала маска презрения и скептицизма."
-        "Несложно было догадаться, что никакого хорошего вкуса она у меня не ожидала. А тут такой сюрприз."
-        dv "Хорошая музыка."
-        "Нейтральным голосом сообщила Алиса."
-        me "Рад, что тебе понравилось."
-        dv "Ты наслушался?"
-        "Всё тем же нейтральным тоном продолжила она."
+        "A mask of contempt and skepticism dripped from Alisa's face like liquid wax."
+        "It was easy to guess that she did not expect any good taste from me. And here came such a surprise."
+        dv "Good music."
+        "Alisa said in a neutral voice."
+        me "Glad you liked it."
+        dv "Are you done?"
+        "She continued in the same neutral tone."
     elif (alt_day2_convoy == 'un'):
-        "Моё внимание привлекло движение на скамейках, там кто-то сидел. К сожалению, я в очередной раз оказался против солнца, поэтому не мог разглядеть. Но когда «Сплина» сменили «Скорпионс», а тех Мэнсон, подтверждая шизофреничность моего плейлиста, мой зритель встал и подошёл к сцене."
+        "My attention was drawn to the movement on the benches, someone was sitting there. Unfortunately, once again I was against the sun, so I could not see who exactly. But when «Splin» changed into «Scorpions», and those in turn changed into Manson, confirming the schizophrenia of my playlist, my viewer stood up and walked to the stage."
         show dv normal pioneer2 at cleft with dissolve
-        dv "Хорошая музыка."
-        "Нейтральным голосом сообщила Алиса."
-        me "Привет ещё раз."
-        dv "Скажи, а кто тебе разрешил использовать мой усилитель?"
-        "Всё тем же нейтральным тоном продолжила она."
-        me "Раз это ТВОЙ усилитель… Наверное, ты знаешь ответ."
-        "Не остался в долгу я."
+        dv "Good music."
+        "Alisa said in a neutral voice."
+        me "Hello again."
+        dv "Can you explain to me, who let you use my amplifier?"
+        "She continued in the same neutral tone."
+        me "Well, if it's YOUR amplifier… You probably know the answer."
+        "I didn't miss my chances."
     elif ('music' in list_joined_clubs_7dl):
-        "Как оказалось, моя музыка привлекла далеко не одного слушателя."
-        "Из-за эстрады показалась Алиса."
+        "As it turned out, my music attracted more than one listener."
+        "Alisa appeared from behind the stage."
         show dv normal pioneer2 at cleft
         show mi normal pioneer at fright
         with dissolve
-        dv "Ты знаешь, что чужое брать нехорошо?"
+        dv "You know that you shouldn't take other people's things?"
         if alt_day2_convoy not in ('dv_prep', 'dv_rej'):
-            "Поинтересовалась Алиса."
-            me "У вас разве не коллективная собственность?"
-            "Безмятежно улыбнулся я."
-            mi "Алисочка, дай ещё одну песню послушать, пожалуйста! Я о музыке много знаю, но у него все песни мне незнакомые – и такие странные!"
-            dv "Ещё одну – и закончили."
+            "Alisa asked."
+            me "What, we don't have communal property here?"
+            "I serenely smiled."
+            mi "Alisa, please, just one more song! I know a lot about music, but all his songs are unfamiliar to me - and so strange!"
+            dv "Only one more."
     else:
-        "Как оказалось, у нас был и ещё один зритель."
+        "As it turned out, we had another listener."
         show dv normal pioneer2 at cleft behind us with dissolve
-        dv "Чужое трогаем? Как нехорошо."
+        dv "Touching someone else's things? Uh-huh."
     if alt_day2_convoy in ('dv_prep', 'dv_rej'):
-        dv "Я хочу, чтобы ты выключил его. Немедленно."
+        dv "I want you to turn it off. Now."
         show dv normal pioneer2 at left with moveoutleft
-        "Невозможно ровным голосом сказала девочка."
-        "А в чём дело-то?"
-        me "Что не так?"
-        dv "Тебе напомнить? О том, кто и что обещал с утра сделать."
-        "И тут до меня дошло!"
-        "Мы же у музыкального клуба встретиться уговаривались!"
-        me "Прости…"
-        dv "Да плевать я хотела. Усилитель отключи."
+        "The girl said in an impossibly calm voice."
+        "What's wrong?"
+        me "Is something wrong?"
+        dv "Do I need to remind you? About who and what he promised to do in the morning."
+        "And then I realized!"
+        "We were supposed to meet near the music club!"
+        me "Sorry…"
+        dv "I don't care. Turn the amp off."
         $ lp_dv -= 3
         stop music
         if ('music' in list_joined_clubs_7dl):
@@ -3373,83 +3374,83 @@ label alt_day2_dubstep2:
             with dspr
         else:
             show us sad sport with dspr
-        "Я послушно щёлкнул тумблером."
+        "I obediently flipped the switch."
         play sound sfx_7dl["eat_horn"] fadein 1
-        "А там и горн поспел…"
+        "And then the horn rang…"
         if (alt_day2_convoy == 'dv_prep'):
-            "А склероз надо лечить."
+            "Gotta treat my sclerosis."
         stop sound fadeout 3
         stop ambience
         return
-    me "Я уже сворачиваюсь."
-    "Я и в самом деле собрался сворачивать лавочку, когда Алиса неожиданно тихим голосом попросила:"
-    dv "Подожди. Дай дослушать."
-    "Сказать, что она меня удивила, было бы грандиозным преуменьшением! И на этом она останавливаться не собиралась, так как в конце добавила ещё тише:"
-    dv "Пожалуйста…"
-    me "Ладно."
+    me "Yeah, I'm packing up already."
+    "I was actually about to close up shop when Alisa, in a surprisingly low voice, asked:"
+    dv "Wait. Let me listen to the end."
+    "To say she surprised me would be a huge understatement! And she was not going to stop there, because at the end she added even quieter:"
+    dv "Please…"
+    me "Alright."
     stop music fadeout 3
     play sound sfx_7dl["eat_horn"] fadein 1
-    "Я запустил было музыку, когда из рупоров полились сигналы сбора к обеду."
-    me "Пошли."
-    "Я потянул руку к тумблеру."
+    "I started the music when the horn poured out signals for dinner."
+    me "We should go."
+    "I reached towards the switch."
     if (alt_day2_convoy not in ('dv', 'sl', 'un')) and ('music' in list_joined_clubs_7dl):
         show mi smile pioneer with dspr
-        mi "Нет уж, дослушаем!"
-        "Подала голос Мику."
-        "И обе рыжие были категорически с ней согласны."
+        mi "Nuh-uh, we'll listen!"
+        "Miku flared up."
+        "And both redheads categorically agreed with her."
     elif alt_day2_convoy not in ('dv', 'sl', 'un'):
-        "Они обе помотали головой."
-        "Только сейчас я заметил, что Ульянка впала в такой же священный транс, что и её старшая подружка."
+        "They both shook their heads."
+        "Only now I noticed that Ulyanka fell into the same sacred trance as her older friend."
     else:
-        "Головы единодушно отрицательно качнулись."
-        "Удивительно, как они выступают командой против одного меня."
-    th "Сила музыки?"
+        "Heads shook unanimously."
+        "It's amazing how they team up against me."
+    th "Power of music?"
     if (alt_day2_convoy == 'un'):
-        "Я внимательно посмотрел на Лену и получил ободряющий кивок в качестве ответа."
-        "Что ж. Продолжим."
+        "I looked carefully at Lena and received an encouraging nod as an answer."
+        "Oh well. Let's continue."
     elif (alt_day2_convoy == 'sl') and (counter_sl_cl == 1):
         show sl sad pioneer with dspr
-        "Славя выглядела раздосадованной и расстроенной."
-        me "В чём дело?"
-        sl "Дежурство. Забегались, вот про него и забыла."
-        sl "Извини, но мне нужно идти."
-        "Я вспомнил про инцидент в доме вожатой и предложил:"
-        me "Может, я с тобой? Помогу, чем смогу."
-        sl "Да нет, всё в порядке. Увидимся."
+        "Slavya looked annoyed and upset."
+        me "What's wrong?"
+        sl "Canteen duty. We ran all day, so I completely forgot about it."
+        sl "Sorry, but I have to go."
+        "I remembered the incident at the squad leader's house and suggested:"
+        me "Maybe I should go with you? I'll help out however I can."
+        sl "Nah, it's alright. See you."
         hide sl with dissolve
-        "Помахав мне, девушка удалилась, оставляя прерогативу ведущего программы по заявкам."
-        th "Надеюсь, ей не влетит от вожатой за опоздание."
-    "Отзвучали последние аккорды, и на полянку опустилось молчание."
+        "Waving to me, the girl left, leaving the prerogative of the host of request program empty."
+        th "Hope she doesn't get yelled at by squad leader for being late."
+    "The last chords sounded, and silence fell on the clearing."
     stop music fadeout 3
-    me "Надо идти."
-    "Наконец подал голос я."
-    me "На обед опоздаем."
+    me "We should go."
+    "Finally said I."
+    me "We'll be late for dinner."
     show us normal sport with dissolve
-    us "Да."
-    "Ульянка повела плечами, будто сбрасывая оцепенение, и несколько мгновений спустя опять превратилась в девочку-метеор."
+    us "Yes."
+    "Ulyanka shrugged her shoulders, as if throwing off her stupor, and a few moments later she again turned into a meteor girl."
     show us smile sport with dissolve
-    us "Дискотека-дискотека, Семён сделал дискотеку!"
-    me "Дискотека завтра."
-    us "Ну да, сравнил. Что играет там, и то, что играло здесь."
+    us "Disco-disco, Semyon made a disco!"
+    me "That's tomorrow."
+    us "Yeah, sure. Compare what's going to be there, to what happened just now."
     if alt_day2_convoy != 'dv':
         show dv smile pioneer2 at cleft with dspr
-    me "Да брось. На дискотеке музыка не главное!"
-    us "А что главное?"
-    dv "Покривляться в толпе!"
-    "Ответила за меня Алиса."
+    me "C'mon, music isn't the main thing at the disco!"
+    us "What is then?"
+    dv "Making faces in the crowd!"
+    "Alisa responded in my stead."
     if (alt_day2_convoy == 'sl') and alt_day1_us_shotted and ('medic' in list_voyage_7dl):
-        "Некоторое время мы шли бок о бок и молчали."
-        me "Ты сегодня рановато."
-        dv "Ты тоже."
-        me "Я вообще не за этим."
+        "For a while, we just kept walking in silence, side by side."
+        me "You're early today."
+        dv "So are you."
+        me "I didn't come here for that."
         show dv sad pioneer2 at cleft with dspr
-        dv "Я, получается, тоже?"
-        me "Откуда ж мне знать."
-        dv "А что тут знать-то? Ульянка с тебя уже не слазит. А у меня к тебе вообще претензий как-то… Ладно, будем считать, что один косяк с тебя списан."
-        "Она улыбнулась и, хлопнув Ульяну по плечу, умчалась вперёд. И снова, как и тогда, не было в её улыбке ни наглости, ни присущего ей высокомерия. Просто обычная улыбка обычной девочки, которая на несколько секунд забыла о том, что надо носить маску."
+        dv "Well, so did I?"
+        me "How should I know."
+        dv "What should you know here? Ulyana can't get off you now. And I don't really have any complaints about you… Let's just assume we've written off one of your screw-ups."
+        "She smiled and, clapping Ulyana on the shoulder, rushed forward. And again, as then, there was neither impudence nor her inherent arrogance in her smile. Just an ordinary smile of an ordinary girl who for a few seconds forgot to wear a mask.."
         hide dv with dissolve
-        us "Ээээй, меня погоди!"
-        "А мне что, больше всех надо, что ли? Моё пюре без меня не съедят."
+        us "Heeeeey, wait for me!"
+        "I didn't chase them. No need to hurry, they won't eat my potatoes without me."
     stop sound fadeout 3
     stop ambience fadeout 6
     with fade
@@ -3458,21 +3459,21 @@ label alt_day2_dubstep2:
 label alt_day2_phone:
     scene bg ext_stage_normal_day
     play sound sfx_click_1
-    "Выключатель на микрофоне был на том самом месте — привычный ползунок с шестью прощупываемыми точками."
-    me "Оу!"
-    "Я выкрикнул вверх, не включая микрофон, просто, чтобы послушать акустику. Она была — закачаешься!"
-    "Я уже так давно не выступал перед публикой. Чужие взгляды будто опутывают тебя и заставляют задумываться о том, о чём задумываться ни в коем случае нельзя!"
-    "С какой силой должна сократиться икроножная мышца для того, чтобы сделать шаг?"
-    "Как ровно держать голову, чтобы она не дрожала?"
-    "Как часто и как глубоко надо дышать."
-    th "Да какая разница. Надо расслабиться, организм всё куда лучше сознания знает и умеет."
-    "Проблема в том лишь, что на публике в организме очень часто включаются извращённые механизмы, отдающие бразды правления телом сознанию."
+    "The switch on the microphone was in the same place - the usual slider with six palpable points."
+    me "Ho!"
+    "I yelled out without turning on the microphone, just to listen to the acoustics. It was amazing!"
+    "It's been so long since I've performed in front of an audience. Other people's looks seem to entangle you and make you think about what you should never think about.!"
+    "With what force must the calf muscle exert in order to take a step?"
+    "How to keep your head straight so that it does not tremble?"
+    "How often and how deep your breathing should be."
+    th "What's the difference. You need to relax, the body knows everything much better than consciousness."
+    "The only problem is that, in public, perverted mechanisms very often turn on in the body, giving the reins of control of the body to consciousness."
     play sound sfx_7dl["ghmm"]
-    me "Гм…"
-    "Микрофон немного пофонил, но моё покашливание воспроизвёл чисто."
-    th "Советская техника и ламповый звук."
-    "Я усмехнулся и отключил микрофон."
-    "Походив немного по сцене, я спустился и отправился на обед."
+    me "Ghmm…"
+    "The microphone made a little noise, but my cough was reproduced clearly."
+    th "Soviet technology and tube sound."
+    "I chuckled and turned off the mic."
+    "After walking around the stage for a bit, I stepped off and went to lunch."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -3484,42 +3485,42 @@ label alt_day2_sl_hyst:
     with fade
     if ('sport_area' in list_voyage_7dl):
         show us normal sport with dspr
-        us "Медленно же вы!"
-        "Окрикнула нас Ульяна."
-        us "Ольдмитривна уже ушла!"
-        us "Поищите в домике!"
-        "Кивком поблагодарив девочку, мы направились ко мне домой."
+        us "Damn you're slow!"
+        "Ulyana called us."
+        us "Olga Dmitrievna already left!"
+        us "Check her house!"
+        "Thanking the girl with a nod, we headed to my house."
     else:
-        "На площади делать было нечего, мы уже совсем было собрались уходить, как услышали голос."
-        us "Эй, эй! Стойте!"
+        "There was nothing to do on the square, and we were about to leave when we heard a voice."
+        us "Hey, hey! Wait up!"
         play music music_list["i_want_to_play"] fadein 3
         show sl normal pioneer at cleft
         show us normal sport far at cright
         with dissolve
-        us "По-го-ди-те!"
-        "Мы остановились и стали с интересом дожидаться приближения Ульяны."
-        "Зачем бы она ни спешила — вид у неё был крайне озабоченный."
-        me "Годим, годим."
-        me "Чего хотела?"
+        us "Wa-it-for-me!"
+        "We stopped and began to wait with interest for the approach of Ulyana."
+        "Whatever was the reason for her hurrying - she looked extremely concerned."
+        me "Waiting, waiting."
+        me "What did you want?"
         show us laugh sport with dissolve
-        us "Конкретно от тебя — ничего! А вот её Ольдмитривна зовёт!"
-        "Ульяна вытерла лоб."
-        us "Ну? Вы всё услышали?"
-        me "Предположим."
+        us "I didn't want anything from you specifically! But Oldmitrievna is calling her!"
+        "Ulyana wiped her forehead."
+        us "Well? You got that?"
+        me "Kind of."
         show us calml sport with dspr
-        sl "Да."
-        us "Так почему вы здесь ещё? Аллюр три креста!"
+        sl "Yes."
+        us "So why are you still here? Allons-y!"
         hide us with easeoutbottom
-        "Она затопала на нас ногами и унеслась в неизвестном направлении."
-        me "Пойдём узнавать, что там Ольге Дмитриевне нужно?"
-        "Славя кивнула, хотя почему-то нервно сжала пальцы."
-        "Я примерно догадывался, что тому может быть причиной, но…"
-        "Всё по порядку!"
+        "She stamped her feet on us and took off in an unknown direction."
+        me "Let's go see what she wants from us?"
+        "Slavya nodded, although for some reason she clenched her fingers nervously."
+        "I also had a few ideas what could happen, but…"
+        "First things first!"
     stop music fadeout 3
     scene bg ext_house_of_mt_day with dissolve
     play sound sfx_knock_door7_polite
-    "Славя опасливо постучалась."
-    mt "Войдите!"
+    "Slavya cautiously knocked on the door."
+    mt "Come in!"
     play sound sfx_open_door_1
     pause(1)
     play music music_list["she_is_kind"] fadein 3
@@ -3527,35 +3528,35 @@ label alt_day2_sl_hyst:
     scene bg int_house_of_mt_day
     show mt normal pioneer at cleft
     with dissolve
-    mt "О, хорошо, что вдвоём пришли!"
-    mt "Славя, мне нужно, чтобы вы вдвоём до обеда сходили и проверили светомузыку у кибернетиков."
-    sl "Ольга Дмитриевна, тут такая ситуация…"
-    mt "Всё нормально, Борис Александрович после обеда поедет в город, как раз к завтрашним танцам вернётся, если что надо — купит."
-    $ meet('ba','Саныч')
-    mt "А то на прошлых танцах несколько лампочек не горело — непорядок, надо заменять!"
-    mt "Сходите, хорошо? {w}Мне некогда сейчас, убегаю, убегаю!"
+    mt "Oh, how nice that both of you are here!"
+    mt "Slavya, I need the two of you to go down before lunch and check the lights at the cybernetics."
+    sl "Olga Dmitrievna, there's a small problem…"
+    mt "Everything is fine, Boris Alexandrovich will go to the city after dinner, he will return just in time for tomorrow's dances, he'll just buy whatever we need."
+    $ meet('ba','Sanich')
+    mt "Considering last disco a few light bulbs did not burn - it was a mess, they have to be replaced!"
+    mt "Can you do it, okay? {w}I don't really have the time right now, gotta go!"
     show sl serious pioneer at right with dissolve
-    sl "Ольга Дмитриевна, понимаете…"
+    sl "Olga Dmitrievna, you see…"
     show mt laugh pioneer with dspr
-    mt "Даже не проси, никого вам в команду не дам — вдвоём справитесь."
-    sl "Ольга Дмитриевна, у меня ключей нет!"
-    "Наконец, решилась Славя."
-    "Она втянула голову в плечи, опасаясь справедливого разноса."
+    mt "Don't even ask, I won't give you more people - the two of you will be enough."
+    sl "Olga Dmitrievna, I don't have the keys!"
+    "Finally, Slavya decided to come out clean."
+    "She pulled her head into her shoulders, fearing the oncoming judgement."
     play music music_7dl["areyouabully"] fadein 3
     show mt angry pioneer with dspr
-    mt "Что ты сказала, девочка?"
-    "Тихо зверея, начала вожатая."
+    mt "What did you just utter, girl?"
+    "The leader began, quietly getting mad."
     show sl sad pioneer at fright with move
-    sl "Нету ключей. Потеряла."
-    mt "Так, Семён, выйди, потому что зрелище сейчас будет не для слабонервных."
+    sl "I don't have the keys. Lost them."
+    mt "Semyon, get out, because the spectacle now will not be for the faint of heart."
     menu:
-        "Ключи у меня!":
-            "Крикнул я."
-            "Просто невыносимо стало молчать."
-            "Наверное, я и правда ретроград — я не умею смотреть на то, как человека заживо топят ни за что."
-            "Даже если это человек вроде Слави, которая постоянно ластится, и это крайне подозрительно!"
-            "Но подозревать кого-то — это далеко не повод бросать его на съедение осатаневшей вожатой."
-            "Так что я, пожалуй, изображу героя — а вдруг меня выгонят из лагеря и за казённый счёт вернут домой?"
+        "I have the keys!":
+            "I shouted."
+            "I just couldn't bear to keep silence."
+            "I guess I really am a retrograde - I don’t know how to look at how a person is being drowned alive for no reason."
+            "Even if this is a person like Slavya, who is constantly cuddling, and that's extremely suspicious!"
+            "But suspecting someone is far from a reason to throw him to be eaten by a rabid squad leader."
+            "So I, perhaps, will portray a hero - what if they kick me out of the camp and return home at public expense?"
             $ alt_day1_sl_keys_took = 0
             $ alt_day3_duty = True
             $ counter_sl_cl = 1
@@ -3563,84 +3564,84 @@ label alt_day2_sl_hyst:
             show mt shocked pioneer
             show sl surprise pioneer
             with dissolve
-            "Они одновременно начали мне что-то говорить, потом заспешили, перебивая одна другую…"
-            "Кошмар."
-            "Определились бы с очередностью."
-            "Кто будет бить меня первой?"
-            "Я подошёл к тумбочке и, достав оттуда связку, положил её на стол."
+            "They simultaneously started to say something to me, then hurried, interrupting one another…"
+            "Hell."
+            "At least they could decide on the order."
+            "Who's going to start beating me first?"
+            "I went to the bedside table and, taking out a bundle, put it on the table."
             menu:
-                "Вчера, во время ругачки с Алисой обронила":
-                    "Славя посмотрела на меня взглядом, выражающим что угодно, кроме признательности."
-                    "Ничего. Если я немного подгажу рыжей стерве, это будет мне только в радость."
-                    mt "Значит, чуть не ввязалась в драку с Двачевской?"
-                    "Вожатая что-то записала в ежедневник."
-                    mt "Хороша же помощница."
-                    "Взгляд Слави стал совсем беспомощным, и я поспешил продолжить свой бенефис:"
+                "She dropped them yesterday during a fight with Alisa":
+                    "Slavya looked at me with a look expressing anything but gratitude."
+                    "Nothing. If I shit on a little on the red bitch, it will only make me happy."
+                    mt "So, almost got into a fight with Dvachevskaya?"
+                    "Olga wrote something down in her diary."
+                    mt "Damn good helper she is, huh."
+                    "Slavya's gaze became completely helpless, and I hurried to continue my performance:"
                     $ lp_dv -= 2
-                "Вчера, наверное, уронила":
-                    th "Точнее, мы оба знаем, когда и во время чего."
-                    "Но вот что-то не получилось из меня стукача — несмотря даже на то, что Славя сто процентов не гнушалась и такими методами воздействия."
-                    th "Но у меня совершенно другая мораль — несравнимая с твоей."
+                "She probably dropped them yesterday":
+                    th "More precisely, we both know when and during what."
+                    "But something didn’t work out of me as a snitch - despite the fact that Slavya did not shy away from such methods of influence."
+                    th "But I have a completely different morality - incomparable to yours."
                     $ lp_sl += 1
-            me "Я нашёл, а потом — забыл сказать."
+            me "I found them and then forgot to say anything about it."
             show mt angry pioneer with dspr
-            mt "Ах, забыл."
-            "Уперев руки в бока, начала она."
-            mt "Тогда я знаю, что тебе поможет от склероза!"
+            mt "Oh, you forgot."
+            "Putting her hands on her hips, she began."
+            mt "Then I know a surefire way to help you with your sclerosis!"
             show sl serious pioneer with dspr
-            sl "Ольга Дмитриевна, я не думаю…"
-            mt "А следовало бы иногда, глядишь, ума бы добавилось!"
-            sl "Простите…"
-            mt "Если ты недостаточно ответственна, чтобы хранить ключи ото всего в лагере, ты должна сказать мне, и я найду достаточно ответственного!"
+            sl "Olga Dmitrievna, I don't think…"
+            mt "And sometimes you should, maybe you'll get a few more braincells that way!"
+            sl "Apologies…"
+            mt "If you're not responsible enough to hold the keys to everything in the camp, you should tell me and I'll find someone responsible enough!"
             show mt sad pioneer with dspr
-            sl "Простите…"
-            "Ольга с шумом вытянула и втянула воздух сквозь зубы."
-            mt "Семён, ты тоже в курсе, как называется то, что ты сделал."
-            "Я кивнул."
-            mt "Ясно. Феоктистова, начиная с обеда и до конца дня — ты."
-            mt "Персунов — ты завтра весь день."
-            me "Завтра весь день… что?"
-            mt "Дежурство по столовой. {w}А теперь марш отсюда, чтобы я вас больше не видела, у тебя, помнится, надо было что-то заполнить, готов похвастаться?!"
+            sl "Apologies…"
+            "Olga noisily drawn out and drew air through her teeth.."
+            mt "Semyon, you also know what you did and how it's called."
+            "I nodded."
+            mt "Alright, Feoktistova - starting from lunch and until the end of day - you."
+            mt "Persunov - the entire day tomorrow."
+            me "The entire day… what?"
+            mt "Canteen duty. {w}And now get out of my sight, if I recall correctly you had to fill out something, ready to present?!"
             stop music fadeout 3
             play sound sfx_close_door_campus_1
             pause(1)
             scene bg ext_house_of_mt_day with dissolve
             play ambience ambience_camp_center_day
-            "Она кричала что-то ещё, но я уже не слышал этого."
-            "Славяна за руку вытащила меня на улицу и повела за собой."
+            "She kept screaming something else, but I could no longer hear it."
+            "Slavyana pulled me by the hand into the street and led me along."
             show sl shy pioneer with dspr
-            sl "Спасибо тебе, что…"
-            me "Не обольщайся. Я делал это не ради тебя."
+            sl "Thank you for…"
+            me "Don't flatter yourself. I didn't do it for you."
             show sl surprise pioneer with dspr
-            sl "Что?"
-            me "Я всё сказал. Я не хочу никого подставлять или допускать, чтобы моим действием или бездействием кому-то был причинён вред."
-            me "Азимова читала? Законы робототехники."
-            "Славя улыбнулась."
+            sl "What?"
+            me "I said everything. I do not want to set anyone up or allow anyone to be harmed by my action or inaction."
+            me "Have you read Asimov? Laws of Robotics."
+            "Slavya smiled."
             show sl tender pioneer with dspr
-            sl "И всё равно — спасибо. {w}Даже если для тебя это ничего не значит."
-            "Я отмахнулся:"
-            me "Меня не интересуют пафосные речи — нам ещё лагерь обойти надо, помнишь?"
+            sl "Either way - thanks. {w}Even if it doesn't mean anything to you."
+            "I brushed it off:"
+            me "I'm not interested in epic speeches - we still need to go around the camp, remember?"
             show sl smile pioneer with dspr
-            sl "Конечно, помню."
-            me "Так вот, если тебе прямо хочется отплатить бобром за бобро — ты могла бы составить мне компанию, показать, где здесь что."
-            me "Нет, не настаиваю."
-            "Славя улыбнулась и отобрала у меня листок."
+            sl "Yeah, I remember."
+            me "So, if you really want to repay my kindness - you could keep me company."
+            me "No, I'm not insisting."
+            "Slavya smiled and took the sheet from me."
             if not ('music_club' in list_voyage_7dl):
-                sl "Давай в первую очередь пойдём к Мику? Отсюда ближе всего."
+                sl "Let's go to Miku first? It's the closest place to here."
             else:
-                sl "У Мику мы уже были, а отсюда ближе всего библиотека и медпункт."
-                sl "Можем пойти туда, если хочешь."
-        "Промолчать и послушно выйти":
+                sl "We already visited Miku, and the closest places are the library and the infirmary."
+                sl "We could go there, if you want."
+        "Don't say anything and obediently leave":
             $ alt_day1_sl_keys_took = 3
             stop music fadeout 3
             scene bg ext_house_of_mt_day with dissolve
-            "Наверное, в такие вещи лучше и правда не лезть посторонним."
+            "Those uninvolved probably shouldn't interfere with things like that."
             play sound sfx_open_door_2
             show sl sad pioneer with dissolve
-            "Славя вышла через десять минут, расстроенная — зато с новой связкой."
-            sl "Пошли?"
-            "Позвала она."
-            "И я согласно кивнул."
+            "Slavya came out ten minutes later, upset - but with a new key bundle."
+            sl "Let's go?"
+            "She called me."
+            "I nodded."
             $ lp_sl -= 1
     stop music fadeout 4
     stop ambience fadeout 5
@@ -3651,144 +3652,144 @@ label alt_day2_event_square_dunno:
     play ambience ambience_camp_center_day fadein 3
     scene bg ext_square_day
     with fade
-    me "Напомни мне ещё раз, зачем мы сюда пришли?"
+    me "Remind me, why are we back here?"
     show sl smile pioneer with dissolve
-    sl "Я не знаю. Я думала, ты знаешь."
-    "Ясно."
-    "Склероз мы будем лечить. Обязательно."
-    "Я снова развернул карту."
+    sl "I don't know. I thought you knew."
+    "I see."
+    "We will be treating sclerosis. Definitely."
+    "I pulled up the map."
     return
 
 label alt_day2_event_square_1:
     play ambience ambience_camp_center_day fadein 3
     scene bg ext_square_day
     with fade
-    "День вчера был суматошный, на зарядке я наблюдал за девчонками, а на линейке у меня случился полный отвал башни из-за публичного представления. Так что Генду, даром что он был центровой фигурой лагеря, рассмотреть я так и не успел."
-    "Пора навёрстывать упущенное."
-    "Я подошёл к самому постаменту и задумчиво уставился на бронзового деятеля снизу вверх."
-    th "Что ж ты за птица такая, Генда? Кого смещал, побеждал, защищал?"
-    "С такими пижонскими очками ты выглядишь как интеллектуал и интеллигент. Представить тебя в грязном тельнике и бескозырке, с трёхлинеечкой в руках, честно, не получается. Не тот типаж."
-    "Значит, какой-то вдохновитель? Ещё один болтун на броневике? Практика показывает, что именно таким болтунам и ставят памятники."
-    th "И всё равно, что за птица? Я абсолютно не припоминаю никого с такой фамилией, ни в новой, ни в новейшей истории."
-    th "Может, я и правда угодил в параллельную вселенную?"
+    "Yesterday was a hectic day, I watched the girls exercising, and on the lineup I had a complete mental collapse due to my public performance. So Genda, despite the fact that he was the central figure of the camp, haven't had the chance to appear in my sights."
+    "Time to make up for it."
+    "I went up to the pedestal itself and stared thoughtfully at the bronze figure from the bottom."
+    th "What kind of bird are you, Genda? Who were you displacing, defeating, defending?"
+    "With such foppish glasses, you look like an intellectual and an intelligent. Imagining you in a dirty vest and peakless cap, with a rifle in your hands, honestly, does not work. Not your type."
+    "So, some kind of inspirer? Another talker on an armored car? Practice shows that it is to such talkers monuments are usually erected."
+    th "No, seriously, who the hell is this guy? I definitely don't remember anyone with that surname in any period our country's history."
+    th "Did I actually end up in a parallel universe?"
     if len(list_voyage_7dl) > 1:
-        "Здесь было пусто. Никого."
+        "Nobody was here."
         if (alt_day2_convoy == 'sl_prep'):
-            "Похоже, Славя закончила свою уборку и ушла."
+            "Looks like Slavya finished cleaning and left."
             $ alt_day2_convoy = 'me'
         else:
-            "Я пожал плечами и развернул карту."
+            "I shrugged and unfolded the map."
     elif (alt_day2_convoy == 'sl_prep'):
-        sl "Решил мне помочь?"
+        sl "Have you decided to help me?"
         show sl smile pioneer with dspr
-        "Славя подошла ко мне, сверкая белозубой улыбкой."
-        me "Вроде того. Показывай, куда идти, что делать и так далее."
+        "Slavya came up to me, flashing a white-toothed smile."
+        me "Something like that. Show me where to go, what to do, et cetera."
         show sl smile pioneer
-        sl "Сейчас!"
-        "Она сходила к скамейке, куда уже были приставлены несколько метёлок и грабель."
-        sl "Давай, ты слева, а я справа от памятника, и встретимся на той стороне!"
-        me "Хорошо!"
+        sl "Right!"
+        "She went to the bench, where several whisks and a rake were already placed."
+        sl "Alright, you start cleaning the left side and I'll clean the right side of the monument, then we'll meet on the other side!"
+        me "Okay!"
         with fade2
-        "Славя не обманула."
-        "Мы действительно справились быстро: не прошло и получаса, как мы сгрузили последний пакет с мусором в тележку и осмотрели поле боя."
-        sl "Вот и всё. Спасибо тебе огромное."
-        sl "По возможности постараюсь тоже сделать для тебя какое-нибудь доброе дело!"
-        me "Что?"
+        "Slavya didn't lie."
+        "We actually did it quickly: in less than half an hour, we unloaded the last bag of garbage into a cart and looked around the battlefield."
+        sl "And that's all. Thank you very much."
+        sl "I'll try my best to do something for you too!"
+        me "What?"
         show sl shy pioneer with dspr
-        sl "Хочу просто отплатить добром за добро."
-        me "Нет уж, не надо мне таких товарно-денежных отношений."
-        me "Если хочешь сделать для меня что-то хорошее…"
-        "Я задумался."
-        me "А проводи-ка меня по лагерю, коли так."
-        me "Мне крайне пригодится человек, которого я знаю, а он знает тут всё."
+        sl "I just want to repay your kindness."
+        me "No thanks, I don't need such monetary relationships."
+        me "If you want to do something…"
+        "I thought for a bit."
+        me "You can accompany me around the camp."
+        me "It would be extremely useful to have someone I know with me, especially if that someone already knows everything here."
         show sl happy pioneer with dspr
-        sl "С удовольствием! {w}И давай-ка я тебе одну подпись поставлю, что не просто так время потратил."
-        "Она забрала у меня маршрутный лист и расписалась в свободной графе."
-        "Я улыбнулся и прикинул, куда идти дальше…"
+        sl "My pleasure! {w}And let me add in one signature for you, so that your time wouldn't be wasted."
+        "She took my checklist and signed in a free space."
+        "I smiled and figured out where to go next…"
         $ alt_day2_convoy = 'sl'
         $ list_voyage_7dl.append('cleaning_sl')
     else:
-        sl "Привет!"
+        sl "Hey!"
         show sl smile pioneer at center
-        "Славя обошла меня и встала рядом."
+        "Slavya walked around and stood next to me."
         if (alt_day2_convoy not in ('dv', 'un')):
-            sl "Как твои дела? Много уже успел сделать?"
-            me "В целом, прогресс есть…"
-            "Уклончиво ответил я."
-            sl "Поможешь мне убраться? Тут немного, вдвоём быстро справимся."
+            sl "How's it going? Managed to do a lot of things?"
+            me "Well, progress is definitely there…"
+            "I answered evasively."
+            sl "Can you help me clean up? There's not much here, together we'll get through it quickly."
         else:
-            sl "Как ваши дела? Много уже обойти успели?"
-            me "В целом, прогресс есть…"
-            "Уклончиво ответил я."
-            sl "Поможете мне прибраться? Тут немного, втроём мигом справимся."
-            "Она махнула рукой в сторону места под построение. После того, как там постояло несколько десятков пионеров, откуда-то вдруг появились бумажки, фантики и какой-то другой непонятный мусор."
+            sl "How's it going? Visited a lot of places?"
+            me "Well, progress is definitely there…"
+            "I answered evasively."
+            sl "Can you help me clean up? There's not much here, the three of us will get through it quickly."
+            "She waved her hand in the direction of the formation site. After several dozen pioneers stood there, papers, candy wrappers and some other incomprehensible garbage suddenly appeared from somewhere."
         if loki and not (alt_day2_convoy == 'sl_prep'):
-            me "Ага."
-            "Пробормотал я."
+            me "Uh-huh."
+            "I muttered."
             if (alt_day2_convoy == 'dv'):
-                me "А в рот тебе не плюнуть жёванной морковкой?"
+                me "Why don't I spit a chewed carrot in your mouth?"
                 show sl surprise pioneer with dspr
-                sl "Что?!"
-                me "Чтобы мылом пахло."
-                "Всё ещё вполголоса продолжал я."
-                sl "Семён, я не знаю, что я тебе сделала, но…"
-                me "В общем, Славя, я тебе один раз скажу, чтобы потом не повторяться: не царское это дело, метлой махать."
-                me "А посему — ауфвидерзеен."
+                sl "Huh?!"
+                me "So you would smell like soap."
+                "I continued in the same undertone."
+                sl "Semyon, I don't know what I've done to you, but…"
+                me "Slavya, I'll tell you once so I don't have to repeat myself later: waving a broom isn't my business."
+                me "So — auf wiedersehen."
                 $ karma -= 10
                 $ lp_sl -= 1
                 $ lp_dv += 1
             else:
-                me "Извини. Не получится сейчас. Давай после обеда?"
+                me "Sorry. Can't help you right now. Maybe after dinner?"
                 show sl sad pioneer with dspr
-                sl "После обеда я занята."
-                me "Тогда увидимся!"
+                sl "I'll be busy after dinner."
+                me "See ya then!"
             stop music fadeout 4
             stop ambience fadeout 5
             with fade
             return
         elif (alt_day2_convoy == 'un'):
             show un normal pioneer at left with dissolve
-            me "Поможем Славе?"
-            "Спросил я у бесшумно подошедшей Лены."
-            un "Время ещё есть…"
-            "Безразлично произнесла она."
-            un "Главное, чтобы флаг завтра поднимать не заставили."
+            me "Should we help Slavya?"
+            "I asked the silently approaching Lena."
+            un "There's still time…"
+            "She said completely indifferently."
+            un "I hope they don't make us raise the flag tomorrow."
             $ list_voyage_7dl.append('cleaning_un')
         elif (alt_day2_convoy == 'dv'):
             show dv angry pioneer2 at left with dissolve
-            dv "Что? Убираться?! Вот ещё."
-            "Она фыркнула и отвернулась."
-            me "Неправильно заставлять Славю одну трудиться."
-            dv "Да ей от этого сплошное удовольствие."
-            dv "Короче, хочешь убираться — давай. Но меня в это дело не впутывай."
-            dv "Лично {b}я{/b} поднимать флаг не хочу."
-            "Я посмотрел на Алису."
-            "Подумал."
-            "Потом ещё раз посмотрел на Алису."
-            "Вздохнул и вцепился в метлу."
+            dv "What? Cleaning up?! Hell no."
+            "She snorted and turned away."
+            me "It's kind of wrong to force Slavya to work alone."
+            dv "Oh, but she enjoys it."
+            dv "If you want to clean - go ahead. Don't bring me into this."
+            dv "Personally, {b}I{/b} don't want to raise the flag."
+            "I looked at Alisa."
+            "Thought for a bit."
+            "Looked at Alisa again."
+            "Sighed and grabbed the broom."
             $ list_voyage_7dl.append('cleaning_dv')
         else:
             $ list_voyage_7dl.append('cleaning_sl')
-        "Славя не обманула, мы действительно справились быстро, не прошло и получаса, как мы сгрузили последний пакет с мусором в тележку и осмотрели поле боя."
+        "Slavya didn't lie, we actually got over it quickly, not even half an hour passed before we unloaded the last garbage bag onto a cart and examined the battlefield."
         show sl smile2 pioneer with dspr
-        sl "Вот и всё. Спасибо тебе огромное."
+        sl "That seems to be everything. Thank you very much."
         if not herc:
-            th "Не за что, эксплуататор."
+            th "Alright, exploiter."
         else:
-            me "Да не за что."
-        sl "По возможности постараюсь тоже сделать для тебя какое-нибудь доброе дело!"
-        me "Что?"
+            me "My pleasure."
+        sl "I'll try my best to do something good for you too!"
+        me "What?"
         show sl shy pioneer with dspr
-        sl "Хочу просто отплатить добром за добро."
-        "Я задумался."
-        me "Можешь помочь с этим?"
-        "Я достал из кармана бегунок и протянул Славе."
+        sl "I just want to repay your kindness."
+        "I thought for a bit."
+        me "Can you help me with this?"
+        "I took the checklist out of my pocket and handed it to Slavya."
         show sl smile pioneer with dspr
-        sl "Конечно. Могу тебе одну подпись поставить."
-        "Она забрала у меня маршрутный лист и расписалась в свободной графе."
-        sl "Вот."
-        me "Спасибо!"
-        "Я спрятал бумажку с подписью в карман, и прикинул, куда идти дальше…"
+        sl "Of course. I can sign here myself."
+        "She took it and signed in a free space."
+        sl "Here."
+        me "Thanks!"
+        "I put it in my pocket and planned my next move…"
     stop music fadeout 4
     stop ambience fadeout 5
     with fade
@@ -3799,46 +3800,46 @@ label alt_day2_event_boat_station1:
     scene bg ext_boathouse_day with fade
     if not alt_replay_on:
         if been_there_alt1() > 1:
-            th "Я не видел смысла в повторном посещении лодочной станции. Подписи отсюда мне не нужны, а времени всё меньше."
-            "Тем не менее, я не мог не признать — вид отсюда потрясающий."
+            th "I didn't see the point in revisiting the boat station. I don't need any signatures from here, and time is running out."
+            "However, I couldn't help but admit - the view from here is amazing."
             stop ambience fadeout 1
             play ambience ambience_camp_center_day fadein 1
             return
-    "Пристань, пожалуй, одно из самых тихих и красивых мест лагеря."
-    "Я не удивлюсь, если узнаю, что где-нибудь здесь есть какое-нибудь Дерево Влюблённых или Ласточкина Скала — для встреч разнообразных парочек."
-    "Место само поневоле настраивает на романтический лад. Тишина, плеск воды и отблески солнца, сотней зайчиков прыгающего по бору."
-    "Понтонная часть лениво покачивалась рядом с бетонным причалом. {w}При желании можно вообще отвязать пристань и превратить её в плавучий штаб!"
-    "Я присел на край понтона и задумчиво глянул на поверхность воды — где-то за пятьдесят метров была провешена буйковая завеса, чтобы пионеры далеко не заплывали."
-    "А дальше — за прихотливым изгибом, выдающим в нашем водоёме речку, просто слишком широкую, была видна пойма, содержащая в себе два острова."
-    "В узкой части пойму стягивала едва видимая отсюда стальная нитка железной дороги."
-    "Сейчас по ней, кстати, куда-то уже спешил тепловоз, волочащий за собой ряд товарных вагонов, и убаюкивающие синкопы перестука колёс далеко разносились по спокойной воде."
-    "В принципе… Если долго-долго плыть, дальше за буйки, то, возможно, появится способ запрыгнуть в товарняк. Благо, они всегда сбрасывают скорость на болотинке…"
-    "И уехать поездом до ближайшего города, а там прорываться."
-    "Но это в том лишь случае, если мне вдруг кровь из носу понадобится сбежать отсюда."
-    "Над головой лениво перекрикивались чайки, и вода была невозможно холодная, чистая и прозрачная."
-    "К полудню она, понятно, нагреется. Лагерь специально сделали в заводи, чтобы можно было детишек искупать."
-    "Но сейчас я бы не рискнул сунуться в воду."
-    th "Разве что на лодке."
+    "The pier is perhaps one of the quietest and most beautiful places in the camp."
+    "I won’t be surprised if I find out that somewhere here there is some kind of Tree of Lovers or Swallow Rock - for meetings of various couples."
+    "The place involuntarily sets in a romantic mood. Silence, the splash of water and the reflections of the sun, a hundred sunbeams jumping along the forest."
+    "The pontoon part swayed lazily next to the concrete pier. {w}If you wanted, you probably could untie the pier and turn it into a floating headquarters!"
+    "I sat down on the edge of the pontoon and thoughtfully looked at the surface of the water - somewhere fifty meters away a buoy curtain was hung so that the pioneers would not swim far."
+    "And then - behind a whimsical bend that gives out a river in our reservoir, just a wide one, a floodplain containing two islands was visible."
+    "In the narrow part, the floodplain was pulled together by a steel line of the railway, barely visible from here."
+    "Now, by the way, a diesel locomotive was already hurrying somewhere along it, dragging a row of freight cars behind it, and the lulling syncopations of the clatter of wheels carried far across the calm water."
+    "If you think about it… If you swim for a long, long time, further beyond the buoys, then perhaps there will be a way to jump into the freight train. Fortunately, they always slow down in the swampy areas…"
+    "And then you get to leave by train to the closest city."
+    "But that's only if I ever really need to escape from here."
+    "Seagulls were lazily calling to each other, and the water was impossibly cold, clean and transparent."
+    "By noon, it will, of course, warm up. The camp was specially made in the backwater so that the kids could bathe."
+    "But I wouldn't go in right now."
+    th "Maybe on a boat."
     if (alt_day2_convoy not in ('dv', 'sl', 'un')) and ('music' in list_joined_clubs_7dl):
-        "Щурясь от яркого солнца, я заметил странный отсверк на дальнем краю понтонов — там, где были привязаны лодки."
+        "Squinting from the bright sun, I noticed a strange glow on the far edge of the pontoons - where the boats were tied."
         show dn normal pioneer with easeinleft
-        "В это время мимо меня куда-то пробежал какой-то лохматый пионер, примерно ровесник Ульяны."
+        "At this time, some shaggy pioneer, about the same age as Ulyana, ran past me somewhere."
         hide dn with easeoutright
         $ reset_chibi_alt1('boat_station_alt1')
         menu:
-            "Проследить за пионером":
-                "Если я правильно понял, убежал пионер куда-то к площади."
-                "Пойду туда посмотрю."
-            "Проверить понтоны":
+            "Follow the pioneer":
+                "If I understood correctly, the pioneer ran away somewhere to the square."
+                "I'll go check it out."
+            "Check the pontoons":
                 scene
                 $ renpy.show("bg ext_boathouse_day", at_list = [sdl_transform2], what = Noon("bg ext_boathouse_day"))
-                "Я прогулялся туда, где мостки обрывались прямо в воду — рядом на железных цепях были привязаны лодки без уключин и вёсел."
-                "Моё внимание привлёк один предмет, которому не место было здесь."
+                "I took a walk to where the bridges broke right into the water - next to it, boats without oarlocks and oars were tied on iron chains."
+                "My attention was drawn to one object that didn't belong here."
                 with fade
-                "Плетёный браслет."
-                "Красивый. Довольно экзотического плетения, не наше православное макраме, нет."
-                "Тут скорее заведомо под руку плетение, из красивых нешироких лент — вполне вероятно, что шёлковых."
-                "Подняв браслет, я спрятал его в карман."
+                "Braided bracelet."
+                "Beautiful. Exotic weaving, definitely not our orthodox macrame."
+                "Here weaving is more likely to be done by hand, from beautiful narrow ribbons - probably even silky ones."
+                "I grabbed the bracelet and put it in my pocket."
                 $ alt_day2_mi_kumuhimo = 1
     stop music fadeout 3
     stop ambience fadeout 6
@@ -3849,514 +3850,516 @@ label alt_day2_dinner:
     scene
     $ renpy.show("bg ext_square_day", what = Noon("bg ext_square_day"))
     with joff_r
-    th "Забегался. В этом лагере счёт идёт либо на года, либо на секунды."
-    th "Сейчас, пока был занят, и не заметил, как время с завтрака пробежало."
-    th "И это меня ещё от общественных дел отстранили!"
-    "Я с ужасом прикинул, во что мне выльется полноценное принятие в ряды отряда. {w}Но на голодный желудок такие материи обдумывать решительно не хотелось."
-    th "Вовремя же я успел!"
+    th "Hoooh. In this camp time passes either in years, or in seconds."
+    th "Now, while I was busy, I didn't notice how the time had passed since breakfast."
+    th "And I wasn't even involved in public matters!"
+    "I wondered with horror what full-fledged acceptance into the ranks of the squad would result in. {w}But I really didn’t want to think about such matters on an empty stomach."
+    th "Managed to get here in time!"
     if alt_day2_minijack and (alt_day2_convoy not in ('dv_prep', 'dv_rej')):
-        me "А мы всё обесточили?"
-        "Забеспокоился я."
+        me "Did we shut down power?"
+        "I started worrying."
         show dv normal pioneer2 with dspr
-        dv "Не беспокойся, если что, очкарик отключит всё."
-        me "Очкарик?"
+        dv "Relax, four-eyed will turn off everything."
+        me "Four-eyed?"
         show us smile sport at right with dissolve
-        us "Шурик!"
-        "Сообщила Ульяна."
-        us "Неужели не встретил до сих пор?"
+        us "Shurik!"
+        "Ulyana proclamed."
+        us "You still haven't met him?"
         if not alt_day2_sh_met:
-            me "Да нет."
-            us "Его ты точно ни с кем не спутаешь!"
-            $ meet('sh','Шурик')
+            me "Don't think so."
+            us "Well, you won't ever confuse him with anyone!"
+            $ meet('sh','Shurik')
             $ alt_day2_sh_met = True
         else:
-            me "Почему же…"
-        dv "Ну вот и заканчивай плакать, пошли обедать уже."
+            me "I did…"
+        dv "Stop crying then and let's go eat."
     scene bg ext_dining_hall_near_day with fade
     stop music fadeout 3
     show mt smile  pioneer far with dissolve
     play music music_list["get_to_know_me_better"] fadein 1
-    "Ольга Дмитриевна, как и положено вожатой, уже караулила у входа, при этом вид имела подозрительно цветущий и отдохнувший."
-    "Знаем мы… Их работу."
-    "Судя по довольному выражению лица, вкалывает наша Олечка без роздыху то на пляже, то на пристани."
-    "И всё без отрыва от производства. Работа — не бей лежачего, называется."
-    mt "Ну что, Семён, уже познакомился с лагерем?"
-    "Приветливо улыбнулась она."
-    "Я перебрал в памяти всех сегодняшних персонажей."
-    me "Познакомился. Ещё как познакомился!"
-    "Маршрутный лист напоминал уже непонятное буро-коричневое нечто, однако подписи на нём различались достаточно чётко."
-    "Я гордо подал его вожатой, а она взяла…{w=.3} и просто сунула его в карман!"
-    th "Это что же получается! Я же мог всякой фигни там начеркать, и прокатило бы?!"
-    "Ну Ольга Дмитриевна!"
+    "Olga Dmitrievna, as befits the squad leader, was already guarding at the entrance, while looking suspiciously blooming and rested."
+    "Yeah, we know their… Work."
+    "Judging by the contented expression on her face, our Olechka plows without rest either on the beach or on the pier."
+    "And all without a break. Piss easy job, huh?"
+    mt "Well, Semyon, did you already meet everyone in the camp?"
+    "She kindly smiled."
+    "I went over every character I met today."
+    me "Yeah, I met them. I met them alright!"
+    "The checklist resembled an already incomprehensible brown something, however, the signatures on it differed quite clearly."
+    "I proudly presented it to the squad leader, and she…{w=.3} just put it in her pocket!"
+    th "Huh!? You mean I could just scribble some illegible garbage myself and that would work?!"
+    "Oh, Olga Dmitrievna!"
     show mt laugh pioneer with dspr
-    mt "Что, и правда поверил? {w}Видел бы ты своё лицо!"
-    "Посмеиваясь, она развернула бумажку и бегло проглядела подписи."
+    mt "What, did you actually believe me? {w}You should've seen your face!"
+    "Laughing, she unfolded the paper and skimmed through the signatures."
     show mt normal pioneer with dspr
     if len(list_joined_clubs_7dl) > 1:
-        mt "Неплохо ты так пробежался.{w} Но ты точно уверен, что сможешь ходить везде, где записался?"
-        me "А что не так?"
-        mt "Да времени у тебя на всё это не хватит, так что давай не жадничай, выбери что-то одно!"
+        mt "Oh, that's a pretty good run you did.{w} But are you sure you can visit all places where you signed up?"
+        me "Anything wrong with that?"
+        mt "Yeah, you won't have enough time for everything, so don't be greedy, choose one!"
         menu:
-            "А я и в газету, и на музыку успею!" if (alt_day2_convoy == 'un') and ('music' in list_joined_clubs_7dl) and ('nwsppr' in list_joined_clubs_7dl):
-                mt "Уверен?"
+            "I'll have time for music and newspaper!" if (alt_day2_convoy == 'un') and ('music' in list_joined_clubs_7dl) and ('nwsppr' in list_joined_clubs_7dl):
+                mt "Are you sure?"
                 show un normal pioneer at left with dissolve
-                "Стоящая рядом со мной Лена кивнула."
-                un "Должен справиться."
-                mt "В таком случае только музыка и газета."
+                "Lena, who stood next to me, nodded."
+                un "He should manage."
+                mt "In that case I'm leaving music and newspaper."
                 $ list_clubs_7dl = ['music','nwsppr']
-            "Давайте стенгазету" if 'nwsppr' in list_joined_clubs_7dl:
-                me "Буду статьи писать."
-                "Ольга кивнула, проставляя галочку напротив подписи в библиотеке."
+            "Newspaper" if 'nwsppr' in list_joined_clubs_7dl:
+                me "I'll be writing then."
+                "Olga nodded, marking the signature from the library."
                 $ list_clubs_7dl = ['nwsppr']
-            "Давайте футбол, что ли" if 'soccer' in list_joined_clubs_7dl:
-                me "Больше-то заняться всё равно нечем."
-                mt "Футбол так футбол."
-                "Кивнула Ольга, проставляя галочку напротив росписи Саныча."
+            "Football, I guess" if 'soccer' in list_joined_clubs_7dl:
+                me "As if there's anything better to do."
+                mt "Okay then."
+                "Olga nodded, marking Sanich's signature."
                 $ list_clubs_7dl = ['soccer']
-            "Давайте волейбол?" if 'volley' in list_joined_clubs_7dl:
-                me "Останусь в волейбольной секции, пожалуй."
-                mt "Поближе к Славе? {w}Молодец какой."
-                "Кивнула Ольга, проставляя галочку напротив росписи Саныча."
+            "Volleyball?" if 'volley' in list_joined_clubs_7dl:
+                me "I think I'll stay in volleyball club."
+                mt "Closer to Slavya? {w}What a nice guy."
+                "Olga nodded, marking Sanich's signature."
                 $ list_clubs_7dl = ['volley']
-            "Давайте бадминтон?" if 'badmin' in list_joined_clubs_7dl:
-                me "В бадминтон. Воланчики гонять."
-                mt "Немного не мальчишеский спорт, не считаешь?"
-                "Я пожал плечами."
-                me "Мне нравится."
-                mt "Как скажешь."
-                "Кивнула Ольга, проставляя галочку напротив росписи Саныча."
+            "Maybe badminton?" if 'badmin' in list_joined_clubs_7dl:
+                me "Badminton. Gonna toss shuttlecocks."
+                mt "Not a guy's sport, don't you think?"
+                "I shrugged."
+                me "I like it."
+                mt "Whatever you say."
+                "Olga nodded, marking Sanich's signature."
                 $ list_clubs_7dl = ['badmin']
-            "Останусь в музкружке!" if 'music' in list_joined_clubs_7dl:
-                me "Мне там больше всего нравится."
-                mt "Или тебе Мику нравится?.. Всё-всё, молчу."
-                "Ольга поставила галочку напротив подписи Мику."
+            "I'll stay in the music club!" if 'music' in list_joined_clubs_7dl:
+                me "I like it best there."
+                mt "Or you just like Miku?.. Alright, alright, shutting up."
+                "Olga marked Miku's signature."
                 $ list_clubs_7dl = ['music']
-            "Я за кибернетику!" if 'cyber' in list_joined_clubs_7dl:
-                mt "Уверен?"
-                me "Да."
-                mt "Хорошо, оставляем кибернетику."
+            "I'm all for cybernetics!" if 'cyber' in list_joined_clubs_7dl:
+                mt "You sure?"
+                me "Yeah."
+                mt "Alright, then we're leaving cybernetics club."
                 $ list_clubs_7dl = ['cyber']
         if (alt_day2_convoy == 'un') and ('music' in list_clubs_7dl) and ('nwsppr' in list_clubs_7dl):
-            mt "Так и запишем."
+            mt "That's how it is."
         else:
-            mt "Но всё остальное — вычёркиваю!"
-        "Ольга размашисто перечеркнула что-то на листочке и спрятала его в карман."
-        "В этот раз окончательно."
+            mt "Everything else I'm crossing out!"
+        "Olga sweepingly crossed out something on a piece of paper and hid it in her pocket."
+        "For real this time."
         show mt smile pioneer with dspr
-        mt "Всё! {w}Сделал дело — пора обедать!"
-        "Она потеснилась, пропуская меня в столовую."
+        mt "Alright! {w}Since you're done - it's time for dinner!"
+        "She made room to let me into the canteen."
         hide mt with easeoutleft
-        "Я кинулся в столовую, потому её реплику в спину пропустил мимо ушей."
-        "Кажется, было что-то про извинения?"
-        "Понятия не имею."
+        "I rushed in, completely missing her remark at my back."
+        "Something about apologies?"
+        "No idea what that was."
     elif len(list_joined_clubs_7dl) < 1:
-        mt "Что ж ты, сокол, никуда не записался?"
-        me "А вы меня записываться отправили или на обход?"
+        mt "Eh, falcon, why didn't you sign up anywhere?"
+        me "And did you send me to meet the camp, or to sign up?"
         show mt laugh pioneer with dspr
-        mt "А ты непрост! {w}На самом деле я надеялась, что ты найдёшь себе занятие по душе."
-        mt "Но раз ты нигде заниматься не хочешь, придётся твоё свободное время потратить на общественную активность. Ты рад?"
-        me "Очень."
-        "Пробормотал я."
-        "К несчастью, Ольга Дмитриевна была полностью иммунна к сарказму, так как и бровью не повела."
-        "Потеснилась, пропуская меня в столовую."
+        mt "You're pretty good! {w}Honestly I was just hoping that you'd find something to your liking."
+        mt "But since you didn't want to sign up anywhere, you will have to spend your free time on social activities. Are you glad?"
+        me "Very."
+        "I muttered."
+        "Unfortunately, Olga Dmitrievna had complete immunity to sarcasm, so she didn't even care."
+        "She moved aside, letting me into the canteen."
         hide mt with easeoutright
-        mt "У меня на тебя большие планы!"
-        "Бросила она мне в спину."
-        th "Свят-свят!"
+        mt "I've got big plans for you!"
+        "She yelled behind me."
+        th "God, please no!"
     else:
         $ list_clubs_7dl = list_joined_clubs_7dl
-        mt "Смотрю, ты решил делом заняться?"
-        me "Да каким там делом…"
+        mt "I see you've decided to do something?"
+        me "Eh, what something…"
         show mt laugh pioneer with dspr
-        mt "Хоть каким! В столовую шагом арш!"
+        mt "Anything! To the canteen quickly - march!"
     play sound sfx_open_door_1
     pause(1)
     scene bg int_dining_hall_people_day with dissolve
     play ambience ambience_dining_hall_full fadein 3
-    "Кажется, сегодня пионеры были голоднее обычного. Во всяком случае, свободных мест было здорово меньше, чем на завтраке или даже вчерашнем ужине…"
+    "It seems the pioneers were hungrier than usual today. In any case, there were less empty seats than at breakfast or even yesterday's supper…"
     if (alt_day_binder != 1):
-        extend " Том самом, с малазийской кухней."
-    "Рядом с рыжими была пара незанятых мест."
+        extend " That same one, with Malaysian cuisine."
+    "There were a couple of empty seats next to the redheads."
     if (alt_day2_convoy == 'dv'):
-        "И после сегодняшнего мне казалось, что они неплохие девочки. Во всяком случае, сесть рядом можно."
+        "At least after today's events they didn't seem all that bad to me. I probably could sit there."
     else:
-        "Но лучше поголодать недельку, чем рискнуть сесть рядом."
+        "But it's better to starve for a week than to risk sitting next to them."
     if (alt_day_binder == 1) and not 'music_club' in list_voyage_7dl:
-        "И ещё одно место было рядом с девушкой, с которой я уже второй день обещаю себе познакомиться."
-        "У нас постоянно такие странные встречи были."
+        "And one more place was next to the girl which I promise myself to meet for the second day."
+        "We keep having those strange encounters."
     elif 'music_club' in list_voyage_7dl:
-        "Свободное место было ещё и рядом с Мику — кажется, девочка пользовалась определённой репутацией в узких кругах."
-        "Она подняла на меня взгляд и заинтересованно распахнула глаза — враз став похожей на героиню столь популярных у неё на родине аниме."
-        th "Ну вылитая аниме-девочка!"
+        "There was also an empty seat next to Miku - it seems that the girl had a certain reputation in narrow circles."
+        "She looked up at me and opened her eyes with interest - immediately becoming like the heroine of the anime so popular in her homeland."
+        th "Spitting image of an anime girl!"
     else:
-        "Последнее свободное место оставалось рядом с той самой какой-то неизвестной девочкой, походящей на героев аниме — огромные глаза, узкий подбородок, маленький ротик."
-        "Учитывая, что мы так и не познакомились за два дня, я почти всерьёз был готов считать её призраком в форме."
-    "Вопрос лишь в том, с кем сесть — так, чтобы ущерб был минимальным…"
-    $ miku_menu = "С аниме-девочкой"
+        "The last free seat was next to that very unknown girl who looked like an anime character - huge eyes, narrow chin, small mouth."
+        "Considering that we had not met in two days, I was almost seriously ready to consider her a ghost in the uniform."
+    "The only question is where do I sit to minimize the damage…"
+    $ miku_menu = "With the anime girl"
     if 'music_club' in list_voyage_7dl:
-        $ miku_menu = "С Мику"
+        $ miku_menu = "With Miku"
     menu:
         "[miku_menu]":
             $ alt_day2_mi_dinner = 1
-            me "Не возражаешь, если я здесь присяду?"
+            me "Do you mind if I sit here?"
             show mi normal pioneer at center with dissolve
             play music music_7dl["what_am_i_doing_here"] fadein 5
-            mi "Со мной мало кто хочет садиться, так странно. Но ты садись, конечно. Приятного аппетита!"
-            me "Спасибо. И тебе."
+            mi "Few people want to sit with me, it's so strange. But sit down, of course. Enjoy your meal!"
+            me "Thanks. You too."
             if 'music_club' in list_voyage_7dl:
-                "Впрочем, я уже немного запоздал. По части истребления еды Мику не сильно отставала от Ульянки."
+                "However I was already a bit late. Miku somehow managed to rival Ulyana in terms of food destruction speed."
                 menu:
-                    "Улыбнуться":
-                        "Я сел и улыбнулся девочке."
+                    "Smile":
+                        "I sat down and smiled at her."
                         $ karma += 10
                         $ lp_mi += 1
-                        me "Приятного аппетита!"
-                        mi "Спасибо! Я уже заканчиваю, жаль, не посидим долго."
-                        "И правда, у её тарелки уже было видно дно."
-                    "Молча сесть и заткнуться":
-                        "Одарив её взглядом как рублём, я молча сел напротив."
-                        "Долгие занятия аутотренингом давали плоды, и я сумел нивелировать звук её голоса до фонового уровня."
-                        "Это просто белый шум. Просто белый шум."
-                        "Я на берегу моря, тут пахнет рыбой и йодом."
-                    "Вздохнуть":
-                        "Надеюсь, она не будет тут тараторить?"
-                        "В конце концов, должны же и у неё быть лимиты болтливости!"
-                        me "Мику."
-                        mi "Да, Сёмочка, ты чего-то хотел?"
-                        me "Не называй меня Сёмочкой."
-                        mi "Но я просто пытаюсь быть дружелюбной!"
-                        "Захлопала глазами она."
-                        me "Ты поговорку: «Когда я ем, я глух и нем» слышала?"
-                        dreamgirl "…хитёр и быстр, и дьявольски коварчив."
-                        mi "Но ведь молча есть скуууучно!"
-                        "Я только глаза закатил."
+                        me "Bon appetit!"
+                        mi "Thank you! I'm already finishing, sorry, we won't sit long."
+                        "Indeed, I could already see the bottom of her plate."
+                    "Shut up and sit":
+                        "Gracefully giving her a look, I silently sat opposite of her."
+                        "Long sessions of auto-training bore fruit, and I managed to level the sound of her voice to the background level."
+                        "It's just some white noise. Just white noise."
+                        "I'm on the seashore, it smells like fish and iodine."
+                    "Sigh":
+                        "I hope she won't ramble at least here?"
+                        "After all, she must have some limit on her talkativeness!"
+                        me "Miku."
+                        mi "Yes, Semochka, you wanted something?"
+                        me "Don't call me Semochka."
+                        mi "But I'm just trying to be friendly!"
+                        "She started flapping her eyes."
+                        me "Have you ever heard this proverb: «When I'm eating, I'm mute and deaf»?"
+                        dreamgirl "…cunning, fast, and devilishly sly."
+                        mi "But that's boooooring!"
+                        "I only rolled up my eyes."
                         $ lp_mi -= 1
                         $ karma -= 10
-                        "Похоже, она совсем не собиралась затыкаться!"
-                        "Я достал наушники и выкрутил громкость на максимум."
-                        th "Что у нас сегодня в программе?"
-                        th "Ага, господин Дёрст предлагает «break your fucking face tonight»."
-                        "Как по мне, так очень соблазнительное предложение."
-                        "Я ещё немного посмеялся, как она беззвучно шевелит губами — ну чистая рыба!"
-                        "После чего до неё, похоже, дошло, что я её просто не слушаю."
+                        "Looks like she isn't even planning on shutting up!"
+                        "I took out my earplugs and cranked the volume to the max."
+                        th "What's on the menu today?"
+                        th "Aha, monsieur Durst is offering to «break your fucking face tonight»."
+                        "A very enticing proposal indeed."
+                        "I laughed a little more, watching her silently move her lips - she really looked like a fish!"
+                        "After that, it seems to have dawned on her that I simply am not listening to her."
                         show mi upset pioneer with dspr
-                        "Она тут же обиженно поджала нижнюю губку и, собрав приборы со стола, встала и ушла."
+                        "She immediately pursed her lower lip in an offended manner and, having collected the cutlery from the table, got up and left."
+                        stop ambience fadeout 2
                         return
             else:
                 if alt_day_binder == 1:
-                    mi "Вот и снова увиделись, привет!"
-                    "Она улыбнулась."
-                    mi "И прежде чем ты снова убежишь, я — Мику, очень приятно!"
+                    mi "And here we meet again, see!"
+                    "She smiled."
+                    mi "And before you run off again, my name is Miku, nice to meet you!"
                 else:
-                    mi "Я вчера тебя видела. Ты новенький?"
-                    me "Да… Я сегодня ходил с маршрутным листом же, подписи собирал…"
-                    mi "Значит, ко мне в клуб не заглянул. Я Мику."
-                $ meet('mi','Мику')
+                    mi "I saw you yesterday. You're new here, right?"
+                    me "Yes… I was going around with the checklist, collecting signatures…"
+                    mi "Seems like you didn't visit me. I'm Miku."
+                $ meet('mi','Miku')
                 $ alt_day2_mi_met = True
-                "Она протянула руку через стол, и я поспешил ответить на рукопожатие."
+                "She extended her hand over the table, and I hurried to grab it."
                 menu:
-                    "Познакомиться поближе":
+                    "Get to know each other better":
                         $ lp_mi += 1
                         $ karma += 10
-                        me "Очень приятно. А я Семён."
-                        me "У тебя имя такое красивое."
-                        me "Оно чьё? Корея? Япония?"
+                        me "Nice to meet you. And I'm Semyon."
+                        me "You have really beautiful name."
+                        me "Which one is it? Korea? Japan?"
                         show mi smile pioneer with dissolve
-                        mi "Ой, ты первый, кто догадался! А остальные просто не верят."
-                        me "Меня всегда привлекал Восток. И японские девочки — самые красивые."
+                        mi "Oh, you're the first one to guess! Everyone else just doesn't believe me."
+                        me "I have always been attracted to the East. And Japanese girls are the most beautiful."
                         show mi shy pioneer with dspr
-                        mi "Льстец!"
-                        "Я рассмеялся."
-                        me "Ничего не льстец, это объективный факт."
-                        me "Ааааа…"
-                        "Я сделал вид, что догадался."
-                        me "Так это японское имя?"
-                        me "Рад встрече."
-                        mi "Рад-то рад, но в гости так и не зашёл."
-                    "Представиться":
-                        me "Семён."
-                        "Коротко ответил я. Не хватало ещё, чтобы эта азиатка мне на уши присела."
-                        mi "А я знаю."
+                        mi "Flatterer!"
+                        "I laughed."
+                        me "I'm not flattering, that's an objective fact."
+                        me "Aaah…"
+                        "I pretended to just realize it."
+                        me "So it's a japanese name?"
+                        me "Glad to meet you."
+                        mi "You may be glad, but you still didn't visit me."
+                    "Introduce yourself":
+                        me "Semyon."
+                        "I briefly responded. The last thing I need is this Asian woman sitting on my neck."
+                        mi "I know that."
                         show mi laugh pioneer with dspr
-                        "Она рассмеялась."
-                        mi "Я же тебя сегодня ждала в гости."
-                "Она на полсекунды будто зависла — я сам иногда так делаю, если надо срочно «спрыгнуть» с исчерпавшей своё темы."
-                "И встряхнув головой — я засмотрелся игрой света в волосах — она вдруг сказала:"
+                        "She laughed."
+                        mi "I was waiting for you."
+                "She seemed to freeze for half a second - I myself sometimes do this if I need to urgently «get off» from the current topic."
+                "And shaking her head - I stared at the play of light in my hair - she suddenly said:"
             show mi smile pioneer with dspr
-            mi "Пюре хорошо. Люблю забивать туда котлетку или что-нибудь в таком духе. Перемешаешь, посолишь — мммм… Вкусно! Но рыбу — нет! Не люблю. Хотя, говорят, от неё фосфор. Типа как в темноте будешь светиться. Или это для мозга полезно? Я не помню!"
-            mi "Вернее сказать, люблю, но не такую! Ну, то есть, и такую, наверное, тоже. Но они как будто самый невкусный рецепт придумали! Сварить её! С яйцом! Луком! И непонятно чем ещё. Это что, еда?"
-            me "Согласен. Того, кто так портит продукты, надо запереть в доме и кормить этой рыбой целый год."
-            "Оказывается, девочка-пулемёт умеет и разумные вещи говорить. Надо просто отсеивать словесные шумы."
+            mi "Potatoes are good. I like putting a cutlet in there, or something like that. Stir it, salt it up — mmmmm… Tasty! But fish — no! Don't like it. Although they say its rich in phosphorous. Like, you'll glow in the dark. Or is that good for your brain? I don't remember!"
+            mi "I mean, I like it, but not like that! Well, that is, I probably like this one too. But they somehow came up with the most tasteless recipe! Boiling it! With eggs! Onions! And God knows what else. Is that even food?"
+            me "I agree. Anyone who spoils food like this should be locked up in the house and fed with that fish for an entire year."
+            "Turns out the machinegun girl can also say reasonable things. You just need to filter out the rest of her verbal noise."
             if alt_day2_mi_kumuhimo == 1:
                 $ lp_mi += 1
                 $ alt_day2_mi_kumuhimo = 2
-                "Пользуясь заминкой перед следующей очередью, я достал из кармана браслетку и показал ей."
-                me "Твоё?"
+                "Taking advantage of the hitch before the next burst, I took out a bracelet from my pocket and showed it to her."
+                me "Yours?"
                 show mi happy pioneer with dspr
-                mi "Ой, Сенечка, а где ты его нашёл, а я уже подумала, что потеряла его совсем, так расстроилась!"
-                me "Не теряй больше."
-                mi "Не буду."
-                "Она сжала браслет так, что пальцы побелели, а потом удивила:"
-                mi "Огромное тебе спасибо, Семён."
-                "Она выбралась из-за стола и даже попробовала было поклониться, прежде чем до меня дошло."
-                me "Сядь на место!"
-                "Зашипел я."
-                me "У нас так не принято, разве не знаешь?!"
-                mi "Но…"
-                me "Ты же не хочешь отблагодарить меня, заставив чувствовать неловко?"
+                mi "Oh, Senechka, where did you find it, and I already thought that I had lost it completely, I was so upset!"
+                me "Don't lose it."
+                mi "I won't."
+                "She clutched it so hard her fingers turned white, and then amazed me:"
+                mi "Many thanks, Semyon."
+                "She got up from the table and even tried to bow before I realized."
+                me "Sit back!"
+                "I started hissing."
+                me "That's not how we do things here, you know that?!"
+                mi "But…"
+                me "You wouldn't want to embarass me by expressing your gratitude?"
                 show mi upset pioneer with dspr
-                mi "Что? Конечно же, нет!"
-                me "Тогда сядь и ешь!"
-                "Отрезал я."
+                mi "What? Of course not!"
+                me "Then sit back down and eat!"
+                "I cut her off."
                 show mi smile pioneer with dspr
-                "Она захихикала и уселась обратно."
-            mi "Ты злой такой! Вернее, не злой, а сердитый. Это, наверное, от голода. Мне вообще хватит и супа, а тебе побольше надо, конечно."
-            mi "Ты вон какой большой. Хочешь, я тебе ещё пюрешки принесу? А то будешь потом животом рулады выводить. И тебя тогда отправят в медпункт…"
-            "Девочка-пулемёт сделала то, что чуть не заставило меня подавиться, — она замолчала."
-            "Я перевёл потрясённый взгляд с тарелки на неё."
+                "She giggled and returned to her place."
+            mi "You are so evil! Or rather, not evil, but angry. It's probably from hunger. I'll make do with just soup, but you need more, of course."
+            mi "You are so big. Do you want me to bring you more mashed potatoes? Or you'll probably be singing with your stomach. And then they will send you to the infirmary…"
+            "Machine gun girl did what caused me to choke, — she got silent."
+            "I lifted my shocked gaze from the plate to her."
             show mi surprise pioneer at center with dspr
             if alt_day1_un != 0:
-                "Почему-то она сейчас очень напомнила Лену в мои прошлые попытки чуть сблизиться."
+                "Somehow she reminded me of Lena during my past attempts to get to know her."
             show mi shy pioneer at center with dspr
-            mi "От Виолетты ещё ни один юноша не вырывался малой кровью."
+            $renpy.notify('«with little blood» - idiom, means «without making certain sacrifices».')
+            mi "Not a single young man has managed to escape Violetta with little blood."
             if ('medic' in list_voyage_7dl):
-                "Здесь я был вынужден с ней согласиться: после выхода из медпункта я чувствовал себя изнасилованным."
+                "I was forced to agree with her: I felt like I was raped after leaving the infirmary."
             if ('music_club' in list_voyage_7dl):
-                th "Для одинокой девочки, постоянно сидящей под роялем, она подозрительно хорошо информирована."
+                th "For a lonely girl who constantly sits under the piano, she is suspiciously well-informed."
             else:
-                "И откуда девочка, обитающая в музыкальном кружке, столько всего знает?"
+                "How does a girl practically living in music club know so much?"
             show mi upset pioneer at center with dspr
-            mi "Нет, я ни в коем случае не обвиняю нашего доктора в чём-либо, но её эта манера подавать свои мысли двусмысленностями держит даже больных юношей на расстоянии."
-            mi "Она однажды попросила меня одолжить ей магнитофон для чего-то. Знаешь как?"
+            mi "No, in no way am I accusing our doctor of anything, but her way of presenting her thoughts with ambiguities keeps even sick young men at a distance."
+            mi "She once asked me to lend her a tape recorder for something. Do you know how?"
             show mi laugh pioneer at center with dspr
-            mi "Она попросила дать ей мою штучку, куда вставляют всякие круглые вещи, представляешь?"
-            me "Это ещё ничего."
+            mi "She asked me to give her my little thing, where all sorts of round things are inserted, can you imagine?"
+            me "Oh, that's nothing."
             if ('medic' in list_voyage_7dl):
-                me "Мне, вон, сейчас сеанс обтираний хотели провести с таким видом, будто это что-то непристойное."
+                me "Today, she wanted to hold a rubdown session looking at me like it was something obscene."
             else:
-                me "Вчера у меня голова закружилась — так она такой медосмотр устроила, что я вмиг обо всех головных болях забыл."
-            "Мику обладала одной замечательной способностью — я с первых секунд будто знал её всю жизнь."
-            "Какого-то там смущения или запретных тем для нас уже не существовало. Я просто расслабился и наслаждался разговором."
+                me "Yesterday my head was spinning - so she arranged such a medical examination that I instantly forgot about all the headaches."
+            "Miku had one remarkable ability - from the first seconds, it was as if I had known her all my life."
+            "There was no longer any embarrassment or forbidden topics for us. I just relaxed and enjoyed the conversation."
             menu:
-                "Ты можешь рассказать что-нибудь о Лене?":
+                "Can you tell me anything about Lena?":
                     $ lp_un += 1
                     show mi smile pioneer with dspr
-                    mi "Лене?"
-                    "Мику разулыбалась, с нескрываемой симпатией покосившись в сторону скромной девочки — ту с двух сторон обложили рыжие."
-                    mi "Мы с ней соседки по домику."
+                    mi "Lena?"
+                    "Miku smiled, with undisguised sympathy, glancing towards the modest girl - she was surrounded by redheads on both sides."
+                    mi "Yeah, we're roommates."
                     if (alt_day2_convoy == 'un'):
-                        me "Да, я в курсе."
+                        me "Yeah, I know."
                     else:
-                        me "Вот как?"
-                        th "И как они вдвоём уживаются?"
-                        mi "Вожатая сказала, что мы творческие люди и должны общаться тесно, поэтому уживёмся."
-                        "Ответила Мику на невысказанный вопрос."
+                        me "Oh?"
+                        th "How do they even get along?"
+                        mi "The squad leader said that we are creative people and should communicate closely, so we will get along."
+                        "She answered my unspoken question."
                     show mi upset pioneer with dspr
-                    mi "А ты интересуешься — она тебе понравилась, да?"
+                    mi "Why are you interested - you do like her, yes?"
                     menu:
-                        "Это личное":
+                        "It's personal":
                             $ karma += 10
-                            "Отрезал я."
+                            "I firmly said."
                             show mi laugh pioneer with dspr
-                            mi "Я понимаю. Не буду настаивать."
-                            mi "Но я ей передам, что ты интересовался."
-                            "Я только глухо застонал, уже дважды прокляв себя за несдержанность."
-                        "Трудно сказать…":
-                            me "Я только вчера её встретил, откуда я знаю, нравится она или нет?!"
-                            me "Тут время надо."
+                            mi "I understand. I won't insist."
+                            mi "But I'll tell her that you were interested."
+                            "I just groaned muffledly, already twice cursing myself for intemperance."
+                        "Hard to say…":
+                            me "I just met her yesterday, how should I know whether I like her or not?!"
+                            me "I need time for that."
                             show mi smile pioneer with dspr
-                            mi "А мне хватает одного взгляда. Вот, например, на тебя."
-                            me "И?"
-                            mi "Ты симпатичный."
+                            mi "And I only need one look. For example, on you."
+                            me "And?"
+                            mi "You're cute."
                             show mi laugh pioneer with dspr
-                            "Она рассмеялась, глядя на моё огорошенное лицо."
-                "А ты постоянно там в клубе сидишь?" if 'music_club' in list_voyage_7dl:
+                            "She laughed as she looked at my bewildered face."
+                "Do you spend all your time in the club?" if 'music_club' in list_voyage_7dl:
                     $ alt_day2_mi_dinner = 2
                     $ lp_mi += 1
                     show mi sad pioneer with dspr
-                    mi "В целом, да."
-                    "Мику чуть взгрустнула, но через несколько секунд снова улыбалась — видимо, характер у неё был такой, лёгкий и отходчивый."
+                    mi "For the most part, yeah."
+                    "Miku felt a little sad, but after a few seconds she smiled again - apparently, her character was that light and easygoing."
                     show mi normal pioneer with dspr
-                    mi "Зато у меня всегда инструменты под боком! Я как ваш Римский-Корсаков, если к ночи вдруг привидится мелодия, могу быстро пойти и сыграть её."
-                    me "В смысле, на слух сыграть?"
-                    th "Вообще-то это Пушкин так стихи писал…"
-                    mi "Да! У меня неплохой слух, поэтому я напеваю мелодию и одновременно подбираю её на гитаре! Или рояле, или ещё каком-нибудь инструменте! Я на всех умею. Могу и тебя научить, хочешь?"
-                    "Судя по всему, такую низменную вещь, как занесение мелодии на нотный стан, Мику презирала."
+                    mi "But I always have instruments at my side! I'm like your Rimsky-Korsakov, if by the night I suddenly see a melody, I can quickly go and play it."
+                    me "You mean, by ear?"
+                    th "Actually, that's how Pushkin wrote poetry…"
+                    mi "Yes! I have a good ear, so I hum a melody and pick it up on the guitar at the same time! Or the piano, or some other instrument! I can do everything. I can teach you, if you want?"
+                    "Apparently, such a base thing as writing said melody down, was despised by Miku."
                     show mi upset pioneer with dspr
                     if 'music' in list_joined_clubs_7dl:
-                        mi "Ой, извини, ты же уже записался."
-                        mi "На чём, говоришь, играть будешь?"
+                        mi "Oh sorry, you already signed up."
+                        mi "What did you say you will play?"
                         if not ('music' in list_clubs_7dl):
-                            me "Уже ни на чём."
+                            me "Nothing, as it turns out."
                             show mi sad pioneer with dspr
-                            mi "Что? Почему?"
-                            me "Извини, Мику, но с музклубом ничего не выйдет."
-                            "Я вкратце пересказал ей разговор с вожатой у столовой."
+                            mi "What? Why?"
+                            me "Sorry Miku, but it turns out it was not meant to be."
+                            "I briefly recounted to her the conversation with the squad leader at the canteen."
                             show mi cry_smile pioneer with dspr
-                            mi "Ну, ничего не поделаешь."
-                            "И дураку понятно, что Мику было обидно за то, что выбор оказался не в её пользу."
-                            th "Проглотила обиду. Смирилась."
-                            dreamgirl "Отнеслась с пониманием. Не путай."
-                            "Поправил внутренний голос."
+                            mi "Well, nothing you can do."
+                            "Even a fool could understand Miku was offended at the choice not being in her favor."
+                            th "Gulped it down. Coped."
+                            dreamgirl "Treated you with understanding. Don't mix those up."
+                            "The inner voice corrected me."
                             show mi normal pioneer with dspr
                         else:
                             if herc:
-                                mi "На гитаре?"
+                                mi "Guitar?"
                             else:
-                                me "Мне кто-то мундштук обещал, а там…"
-                            me "Как дело пойдёт."
-                            "Уклончиво ответил я."
+                                me "Someone promised me a mouthpiece, and then…"
+                            me "We'll see how it goes."
+                            "I evaded the answer."
                     else:
-                        mi "Ой, прости, я, наверное, выгляжу навязчивой."
-                        me "Да ничего, ничего."
-                        "Я был совсем не против такой навязчивости."
-                "Попрощаться":
-                    me "Очень приятно было поболтать, Мику."
-            me "Пойду я. Набегался сегодня, посплю."
-            mi "До скорой встречи!"
+                        mi "Oh, I'm sorry, I must look intrusive."
+                        me "No, it's okay, it's okay."
+                        "I definitely didn't mind such intrusiveness."
+                "Say goodbyes":
+                    me "It was nice talking to you, Miku."
+            me "I should go. Ran around the entire day, so I want to take a nap."
+            mi "See you soon!"
             stop sound
             stop sound_loop
             stop ambience
             if ('music' in list_clubs_7dl):
-                mi "Не забудь про клуб!"
-                mi "Репетиции начнём сразу, как только придёшь."
+                mi "Don't forget about the club!"
+                mi "We'll start rehearsing as soon as you arrive."
             elif ('music' in list_joined_clubs_7dl) and not ('music' in list_clubs_7dl):
                 show mi smile pioneer with dspr
-                mi "Если передумаешь или ничего не выйдет с другим клубом — заходи в любое время! Всегда буду тебе рада!"
-                "Я коротко кивнул и удалился из столовой."
+                mi "If you change your mind or nothing works out with another club, come in anytime! I will always be glad to see you!"
+                "I nodded briefly and left."
             else:
-                mi "Если что, я здесь всегда, милости прошу в гости!"
-                th "Навязчивость, конечно…"
+                mi "If anything, I'm always here, you're welcome to visit!"
+                th "So obsessive…"
             hide mi with dissolve
             stop music fadeout 3
             stop ambience fadeout 2
             return
-        "С Алисой" if (alt_day2_convoy == 'dv'):
+        "With Alisa" if (alt_day2_convoy == 'dv'):
             if alt_day2_us_dubstep:
                 $ lp_dv += 1
                 $ alt_day2_dv_dinner = True
                 show dv normal pioneer2 at center with dissolve
                 if herc:
-                    me "Привет ещё раз. Можно присесть?"
+                    me "Hello again. May I sit down?"
                 elif loki:
-                    me "Приятного аппетита, красотка. Свободно-присяду?"
+                    me "Bon appetit, beauty. Free here, may I sit?"
                 else:
-                    me "М-можно?"
-                "Она подняла глаза."
-                dv "Ну, если я тебе ещё за день не надоела…"
+                    me "C-can I?"
+                "She looked at me."
+                dv "Well, if you aren't bored of me…"
             else:
-                "Немного подумав, я решил не рисковать."
+                "After some thought, I decided not to risk it."
                 if alt_day1_us_shotted:
-                    "Тем более, что Ульянка так многозначительно на меня поглядывала…"
-                    "Я сел есть один!"
+                    "Moreover, Ulyanka was looking at me so meaningfully…"
+                    "I sat alone!"
                     with dissolve
                 stop music fadeout 3
                 stop ambience fadeout 2
                 return
-        "С Ульяной" if (not alt_day1_us_shotted) and (alt_day2_convoy not in ('dv_prep', 'dv_rej')):
+        "With Ulyana" if (not alt_day1_us_shotted) and (alt_day2_convoy not in ('dv_prep', 'dv_rej')):
             $ lp_us += 1
             show us smile pioneer with dissolve
-            us "Приятнавааппетита!"
-            "Оттарабанила Ульяна, а я подозрительно заглянул в тарелку."
-            "Нет, вроде новой жизни в тарелке не обнаружено."
-            me "Спасибо. И тебе того же."
-            "Алиса фыркнула и отвернулась, делая вид, что в упор меня не замечает."
-    "Хотя от перемещений по лагерю у меня разыгрался зверский аппетит…{w} Увиденное мной в тарелке буквально подкосило!"
-    "Это вот что такое? Нет, я не спорю, к рассольнику ноль претензий, он приготовлен по классическому рецепту Лаврентия Палыча. Но второе! Варённая в какой-то херне с яйцом рыба с пюре? Каждого, кто готовит такое, надо на год запереть в доме и кормить только такой едой!"
+            us "Bonappeetiitteee!"
+            "Ulyana rattled, and I suspiciously looked into the plate."
+            "Nope, no new life has been spotted."
+            me "Thanks. You too."
+            "Alisa snorted and turned away, pretending not to notice me."
+    "Although from moving around the camp I had a brutal appetite…{w} What I saw in the plate literally crippled me!"
+    "What the hell is this? I mean, no arguments about the soup, that's prepared according to a classic recipe. But the other dish! Fish boiled in some horseshit along with an egg and mashed potatoes? Anyone who cooks this should be locked up for a year and fed only with such food!"
     scene cg d1_food_normal with dissolve
-    "Стоит ли удивляться, что обед вызвал у меня вполне объяснимое отсутствие энтузиазма? Суп да компот — разве обед?"
+    "Is it any wonder that dinner gave me an understandable lack of enthusiasm? Soup and kompot - is that even dinner?"
     scene bg int_dining_hall_people_day with dissolve
-    "Впрочем, и из такой ситуации можно найти определённый выход."
-    "Раз уж не поел по-человечески, так хоть посмеюсь."
-    "Мы раньше в лагерях так делали, когда повара готовили откровенный порожняк. Рецепт крайне прост — в пустой стакан из-под компота сливаем жидкое содержимое, не суть важно, суп это или пюре по-больничному."
-    "Докидываем сверху всех на свете приправ в виде той же самой рыбы, кусочков хлеба и остатков супа."
-    "Далее — внимание! — Накрываем стакан тарелкой, и резко переворачиваем получившуюся конструкцию!"
-    "Я тронул локтем Ульяну, задумчиво наблюдающую за моими действиями."
-    me "Уль, спорим а спорим!"
+    "However, there is a way out of this situation as well."
+    "If I can't eat, then I'll at least have my share of fun."
+    "We used to do this in the camps, when the cooks prepared frankly shit food. The disaster recipe is quite simple — pour everything liquid into the empty glass from under the kompot, doesn't matter whether it was soup or liquified potatoes."
+    "We throw on top of all the seasonings in the world in the form of that same fish, slices of bread and leftover soup."
+    "Then — attention! — We cover the glass with a plate, and sharply turn the resulting construct!"
+    "I touched Ulyana with my elbow, who was thoughtfully observing my actions."
+    me "Ulya, let's bet!"
     if alt_day2_dv_dinner:
         show us sad pioneer at left with dissolve
     else:
         show us sad pioneer at center with dissolve
-    us "Чего тебе?"
-    "Грустно спросила уныло копающаяся в тарелке Ульяна. Кажется, ей тоже не слишком по нраву местная кухня."
-    me "Давай поспорим, что ты стакан от тарелки не оторвёшь!"
-    us "Стакан? Как делать нефиг."
-    "Она легко подняла свой стакан с компотом."
-    me "Аааа, от стола любой дурак сумеет. Ты от тарелки попробуй!"
-    "Я поставил «коктейль» на стол и подтолкнул по направлению к девочке."
-    me "Жги! Всё равно сил не хватит!"
-    us "Легко!"
-    "Она протянула руку, схватила стакан покрепче, дернула, и…"
+    us "What do you want?"
+    "Ulyana asked sadly, rummaging through her plate. She doesn't seem to like the local cuisine either."
+    me "Let's bet you won't tear the glass off the plate!"
+    us "A glass? Yeah, that's easy."
+    "She easily raised her glass of kompot."
+    me "Ahhh, from the table any fool would be able to. Try from a plate!"
+    "I placed the «cocktail» on the table and pushed it in her direction."
+    me "Go ahead! You won't have the strength for it anyways!"
+    us "Watch this!"
+    "She reached out her hand, grabbed the glass, tugged, and…"
     play music music_list["glimmering_coals"] fadein 1
     show us angry pioneer with dspr
     if alt_day_binder != 1 and counter_sl_7dl < 2:
-        "В этот день мы поменялись ролями, и от двери уже в голос хохочу я, а из зала слышен самый матерный вопль:"
-    us " {b}СЕМЁЁЁЁООООООН!{/b}"
+        "On this day, we switched roles, and I’m already laughing out loud from the door, and the most obscene cry is heard from the hall:"
+    us " {b}SEEEEMYYYYYOOOOOOOOOON!{/b}"
     stop ambience
     hide us with dissolve
     hide dv with dissolve
     pause(3)
     scene bg ext_dining_hall_near_day with fade
-    "Я проскользнул мимо вожатой, делая вид, что всё хорошо, и только оказавшись на крыльце, позволил себе посмеяться от души. Этот смех сменился истерическим иканием, когда на крыльцо выскочила разъярённая фурия — вся в пюре, рыбе, яичной подливе!"
+    "I slipped past the squad leader, pretending that everything was fine, and only when I was on the porch did I allow myself to laugh heartily. This laughter was replaced by hysterical hiccups when an extremely pissed off fury jumped out onto the porch - all in mashed potatoes, fish, egg sauce!"
     show us dontlike pioneer with dissolve
-    "Сейчас меня будут бить, и очень возможно, ногами. Разумеется, не испытывая ни малейшего желания пасть жертвой маленьких кулачков, я стартанул с места и побежал. В этот раз вёл я, поэтому мы два раза обежали вокруг склада, один раз вокруг библиотеки…"
+    "Now I will be beaten, and very possibly kicked. Of course, not feeling the slightest desire to fall victim to small fists, I started from my place and ran. This time I was ahead, so we ran around the warehouse twice, once around the library.…"
     scene bg ext_warehouse_day_7dl
     play ambience ambience_camp_center_day fadein 5
     if alt_day1_el_followed == 1:
-        "…и мимо того самого лужка, где вчера прятался Электроник, с высоченной травой."
+        "…and past the same meadow where Elektronik was hiding yesterday, with tall grass."
     else:
-        "И мимо какого-то лужка рядом со зданием складов, буквально заросшего высокой травой."
+        "And past some meadow next to the warehouse building, literally overgrown with tall grass."
     show us angry pioneer at cleft with dissolve
     pause(1)
     show us angry pioneer at cright with move
-    "Здесь уже Ульянка не смогла за мной угнаться, она запнулась и полетела бы на землю, если бы я не успел её поймать. Она висела у меня на руках, временами враждебно позыркивая из-за куска рыбы, а я опять не мог сдержать смеха."
-    me "Вот это было весело."
-    us "Ничего и не было."
-    "Пробурчало картофельно-рыбное чудовище, однако поневоле разулыбалось."
+    "Here Ulyanka could not keep up with me, she stumbled and would have flown to the ground if I had not had time to catch her. She hung in my arms, at times glaring hostilely from under of a piece of fish, and again I could not help laughing."
+    me "Now that was fun."
+    us "No it wasn't."
+    "The potato-fish monster grunted, but involuntarily smiled."
     show us smile pioneer at center with dissolve
-    us "А как ты такую штуку со стаканом сделал? Покажи, а?"
-    me "Умоешься, тогда скажу."
+    us "How did you do that glass thing? Show me, ye?"
+    me "Wash up, I'll tell you then."
     show us dontlike pioneer with dspr
-    us "Да тут сразу в душ идти надо!"
-    "Она с омерзением вытерла скользкие руки."
-    me "Пойдём хотя бы лицо и руки тебе отмоем."
+    us "Washing up won't help, I need a full shower!"
+    "She wiped her slippery hands with disgust."
+    me "Let's go at least wash your face and hands."
     stop ambience
     scene bg ext_washstand_day with fade
     $ alt_day2_us_shenan = True
     play music music_list["everyday_theme"] fadein 5
-    "Сочтя себя отомщённым, я решил проявить толику благородства."
+    "Considering myself avenged, I decided to show a bit of nobility."
     play sound sfx_open_water_sink
     pause(1)
     play sound_loop sfx_water_sink_stream
-    "Я отвёл Ульянку на умывальники и добрых полчаса оттирал пятна, вычесывал волосы и контролировал процесс в целом."
+    "I took Ulyanka to the washbasins and for a good half an hour rubbed off the stains, combed out her hair and controlled the process as a whole.."
     stop sound_loop
     play sound sfx_close_water_sink
     scene bg ext_houses_day with dissolve
     show us shy2 pioneer
-    "Мы закончили, когда по лагерю уже был объявлен тихий час."
-    me "Теперь можно и баю?"
+    "We finished when the camp had already announced a quiet hour."
+    me "Now we probably can take a nap?"
     show us surp3 pioneer with dspr
-    us "С ума сошел? Сейчас же самое купальное время!"
-    "Возмутилась Ульянка, вся красная от холодной воды."
-    me "Мало тебе было водных процедур, да?"
-    us "Ничего ты не понимаешь! Это процедуры, а там купание!"
+    us "You crazy? It's the best time for swimming!"
+    "Ulyanka was indignant, all red from cold water."
+    me "Didn't have enough water procedures?"
+    us "You don't get anything! This is water procedures, and that's swimming!"
     scene bg ext_house_of_dv_day with fade
     show us normal pioneer
     $ alt_day2_dv_us_house_visited = True
-    "Мы шли вдоль домиков, и уже почти добрались до того, который указала Ульянка — не полукруглого, а эдакого трапециевидного, с весёлым Роджером на двери, когда нам навстречу попалась Ольга Дмитриевна."
+    "We walked along the houses, and had almost reached the one indicated by Ulyanka - not semicircular, but a kind of trapezoidal one, with a Jolly Roger on the door, when Olga Dmitrievna came across us."
     show mt angry  pioneer at right
-    "Сказать, что она была зла — это ничего не сказать."
-    mt "Семён!"
-    "Уткнув руки в бока начала она."
-    mt "Это что же получается, нам одной Ульянки мало?"
-    mt "Ладно она, маленькая, ей играть надо. Но ты-то, ты!"
-    me "А чё сразу я."
-    "Я почти как в детстве потупился и ушёл в несознанку."
+    "To say she was angry was an understatement."
+    mt "Semyon!"
+    "Putting her hands to the sides she began."
+    mt "What's this, we already have Ulyana?"
+    mt "I understand her, she's young, she wants to play. But you, you!"
+    me "Why me."
+    "I looked down, almost like when I was a child, and shut down."
     show mt rage  pioneer at right
-    mt "Мне пионеры уже доложили о твоих упражнениях со стаканом. И знаешь, что я тебе скажу, Семён — порядочные пионеры так себя не ведут!"
-    mt "Ты проявил неуважение к товарищу по отряду, к работе поваров и образу пионера в целом."
-    me "Ничего я не проявлял. И вообще, это наше личное дело."
-    mt "А уборка того кошмара, который остался после вас — это тоже ваше личное дело? Короче, так. Ещё раз я услышу или увижу что-то, связанное с вами обоими — и вы у меня попляшете. Всё понятно? А ну марш по домикам, в лагере тихий час!"
+    mt "The pioneers have already reported to me about your exercises with a glass. And you know what I'll tell you, Semyon - decent pioneers don't behave like that!"
+    mt "You showed disrespect for a teammate, for the work of cooks and for the image of a pioneer in general."
+    me "I didn't show anything. And besides, that's our personal business."
+    mt "And cleaning up the nightmare that was left after you is also your own business? Alright. If I hear or see something related to both of you - and you'll be in deep. All clear? And now, march back to your houses, it's naptime!"
     hide us with dissolve
     hide mt with dissolve
     scene bg ext_house_of_mt_day with dissolve
@@ -4365,46 +4368,46 @@ label alt_day2_dinner:
     scene bg int_house_of_mt_day with hpunch
     play sound sfx_open_door_kick
     play ambience ambience_int_cabin_day fadein 6
-    "Обозлённый на весь мир, я прошёл в свой домик и, шандарахнув как следует дверью, завалился в одежде на кровать. Помнётся? Ну и чёрт с ним. Не жалко. Пусть все видят образцового пионэра."
-    "Я прекрасно понимал, что в моём поведении очевидны мотивы «назло мамке уши отморожу», но ничего не мог с собой поделать."
-    "Я полежал ещё десять или пятнадцать минут, старательно жалея себя и строя планы коварчивой мести, когда в окошко тихонько постучали."
+    "Angry at the entire world, I went back to my house, slammed the door behind me and collapsed on the bed without taking off clothes. They'll get wrinkled? Who cares. Don't care. Let everyone see a true pioneer."
+    "I was well aware that motives like «to spite my mom I'll freeze my ears» were obvious in my behavior, but what could I do."
+    "I lay there for another ten or fifteen minutes, painstakingly pitying myself and plotting sly revenge, when there was a soft knock on the window."
     play sound sfx_knock_glass
-    me "И кому там… {w}неймётся."
-    "Там стояла и во все тридцать два зуба улыбалась Ульянка, уже сменившая испачканную рубашку на привычную алую футболку."
-    me "Чего тебе?"
-    "Сумрачно спросил я, готовясь и дальше предаваться экзистенциальным страданиям."
-    us "Пошли."
-    "Она поманила рукой."
-    me "Куда?"
-    us "Пошли, говорю!"
-    "Она нетерпеливо топнула ногой и тут же ойкнула, приложив руки ко рту."
-    "Со стороны входа в домик донеслось поскрипывание шезлонга. Похоже, Ольга там принимает солнечные ванны пополам с чтением очередного дамского романчика."
+    me "Who the hell… {w}is itching there."
+    "Ulyanka stood there and smiled with all her thirty-two teeth, having already changed her soiled shirt for the usual scarlet T-shirt."
+    me "What?"
+    "I asked gloomily, preparing to continue indulging in existential suffering."
+    us "Let's go."
+    "She beckoned me."
+    me "Where?"
+    us "Let's go!"
+    "She impatiently stamped her foot and then gasped, putting her hands to her mouth."
+    "From the direction of the entrance to the house came the creaking of a chair. It looks like Olga is sunbathing while reading another ladies' novel."
     if (counter_sl_7dl == 3):
-        "И будет лучше, если я последую своему первоначальному плану."
-        "В конце концов, я прекрасно понимал, что ни во что хорошее мелкая меня не втянет по определению."
-        "Так что я задёрнул шторы и, игнорируя возмущённое шипение, отправился на боковую."
+        "And it'd be better if I followed my original plan."
+        "In the end, I understood perfectly well that, by definition, she would not drag me into anything good."
+        "So I drew the curtains and, ignoring the indignant hiss, went to sleep."
     else:
         menu:
-            "Не соглашаться":
+            "Do not agree":
                 $ karma += 10
-                me "С ума сошла?!"
-                "Зашипел я."
-                me "Мало нам Ольга фитиля вставила, давай ещё?!"
-                "Ульянка посмотрела на меня как-то очень обиженно. Но я-то эти приёмчики наперечёт знаю."
-                "Не возьмёшь."
-                me "Никуда я с тобой не пойду. Иди спать."
-                "Ульянка, кажется, расстроилась. Она вздохнула, и, ссутулившись, побрела прочь. И куда только делся её обычный задор."
-            "Согласиться" if counter_sl_cl < 1:
+                me "Are you crazy?!"
+                "I hissed."
+                me "You didn't have enough reamings from Olga, come on, let's get some more?!"
+                "Ulyanka looked at me somehow very offended. But I know all these tricks."
+                "You're not fooling me."
+                me "I won't go anywhere with you. Go to sleep."
+                "Ulyanka seemed to be upset. She sighed, and hunched her shoulders as she walked away. And where did her usual enthusiasm go?"
+            "Agree" if counter_sl_cl < 1:
                 $ lp_us += 1
                 $ alt_day2_us_escape = True
-            "Пригрозить вожатой":
+            "Threaten her with squad leader":
                 $ karma -= 10
-                "Я неприязненно посмотрел на источник своих неприятностей, уставившийся на меня голубыми глазищами."
-                me "Забудь. Никуда я с тобой не пойду."
-                us "Что? Почему?"
-                me "Ни почему. Брысь отсюда, пока я Ольгу не позвал."
-                us "Придурок."
-                "Бросила девочка и исчезла."
+                "I glared at the source of my troubles, staring at me with blue eyes."
+                me "Forget it. I'm not going with you."
+                us "What? Why?"
+                me "No reason. Get lost before I summon Olga."
+                us "Dumbass."
+                "And then she disappeared."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -4412,372 +4415,372 @@ label alt_day2_dinner:
 
 label alt_day2_grand_escape:
     scene bg ext_house_of_mt_day with fade
-    "Церберит меня, значит."
-    "Это определило мой выбор в пользу Ульяны, и я раскрыл окно."
-    "Несколько секунд спустя мы уже проломились сквозь кусты и вышли на дорожку."
+    "She thinks she's Cerberus, huh."
+    "This determined my choice in favor of Ulyana, and I opened the window."
+    "A few seconds later we broke through the bushes and entered the path."
     scene bg ext_houses_day with fade
     play ambience ambience_camp_center_day fadein 5
     show us smile sport
-    me "Куда идём?"
-    us "А давай…"
+    me "Where are we going?"
+    us "Let's…"
     show us laugh2 sport with dissolve
-    "Ульяна заглянула мне в глаза, и мне очень не понравилось выражение, которое я разглядел на дне."
+    "Ulyana looked into my eyes, and I really did not like the expression that I saw at the bottom."
     show us smile sport with dspr
     play music music_list["you_lost_me"] fadein 3
-    us "Сбежим!"
-    me "Сбежим?!"
-    us "Да! Сейчас только забежим в домик, я возьму нужные вещи."
+    us "Escape!"
+    me "Escape?!"
+    us "Yeah! Let me just run by the house, I'll take the necessary things."
     hide us with dissolve
-    "Мы уже и в самом деле приблизились к домику, где квартировали Ульяна с Двачевской."
-    "Мелкая скрылась внутри, а меня вдруг осенило — я вспомнил этот взгляд!"
-    "Именно с таким взглядом моя бывшая раскручивала меня на совершенно сумасшедший секс в тамбуре поезда, идущего междугородним рейсом…"
-    "Именно с такими глазами мы прыгали на тарзанках — сначала парно с инструктором, потом парно вместе."
+    "In fact, we had already approached the house where Ulyana and Dvachevskaya lived."
+    "She quickly retreated into the house, and it suddenly dawned on me - I remembered this look!"
+    "It was with this look that my ex hyped me for completely crazy sex in the vestibule of an intercity train…"
+    "It was with such eyes that we bungee jumped - first in pairs with an instructor, then in pairs together."
     scene bg ext_house_of_dv_day with dissolve
-    "И именно с такими глазами она выдавала что-то в духе «смотри, что я умею!», и потом я неделями сидел у её кровати, пока она поправлялась."
-    "Взгляд этот значил только одно — {i}женщина изволит сходить с ума, вы приглашены, явка обязательна{/i}."
+    "With those same eyes she yelled «hold my beer!», and then I sat by her bed for weeks while she got better."
+    "That look could only mean one thing — {i}a woman deigns to go nuts, you are invited, attendance is required{/i}."
     show us normal sport bear with dissolve
-    "Поглощённый мыслями, я вздрогнул, когда снова скрипнула дверь, и на пороге показалась Ульяна — она сменила обувь на кеды и к груди прижимала кулёк с конфетами и медведя."
-    "Смешно было очень, правда. Но я не позволил ни одной черте лица дрогнуть — настолько эта картинка была трогательной и забавной. Поэтому я проглотил все возражения и на её:"
-    us "Ну что, пошли?"
-    "Просто коротко кивнул."
-    "Мы засели в очередных кустах, девочка откуда-то из кармана достала скомканную карту лагеря — явно сорванную с информационного стенда — и тыкала пальцем, пытаясь понять, где и как можно выйти."
+    "Absorbed in thoughts, I shuddered when the door creaked again, and Ulyana appeared on the porch - she changed her shoes for sneakers and pressed a bag of sweets and a bear to her chest."
+    "It was very funny, really. But I did not let a single feature of my face flinch - this picture was so touching and funny. So I swallowed all objections to her:"
+    us "Shall we go?"
+    "And just nodded."
+    "We sat down in the next bushes, the girl from somewhere in her pocket took out a crumpled map of the camp - obviously torn from the information stand - and poked her finger, trying to figure out where and how to get out."
     scene bg ext_house_of_dv_day
     show us smile sport bear
     with dissolve
-    us "Я всё просчитала."
-    "Солидным голосом говорила она."
-    us "Идти будем ночью, через лес. Я специально украла больше конфет, чем обычно, чтобы хватило на подольше. Сначала будем питаться ими, потом перейдём на подножный корм."
-    me "Ты карту вверх ногами держишь. {w}И леса в окрестностях почти что и нет. Есть лесистый клин, зажатый между полем и рекой, но… Кстати, а как река называется?"
-    us "А чёрт его знает. Нам говорили название, но я всё забыла."
-    "Простодушно призналась она."
-    me "Короче, я вижу два пути отхода — на автобусную станцию, а там несколько километров пилить по вторичке, прежде чем выйдем на междугородний маршрут."
+    us "I calculated everything."
+    "She spoke in a strong voice."
+    us "We'll leave through forest, at night. I deliberately stole more candy than usual to last longer. First we will eat them, then we will switch to grazing."
+    me "You're holding the map upside down. {w}And there are almost no forests in the vicinity. There is a wooded wedge sandwiched between a field and a river, but... By the way, what was the river called?"
+    us "I don't remember. We were told the name, but I forgot everything."
+    "She bluntly admitted."
+    me "In short, I see two escape routes - to the bus station, and there we cut a few kilometers along the secondary road before we get to the intercity route."
     show us sad sport bear with dspr
-    us "Нас поймают так! Предложи что-нибудь другое."
-    me "Другое — вот."
-    "Я указал на реку."
-    me "Мне пришло в голову, что мы слишком долго будем идти, если райцентр и в самом деле далеко. Поэтому леса, поля и дороги отпадают. Остаётся что?"
+    us "We'll get caught! Think of something else."
+    me "Something else is - here."
+    "I pointed at the river."
+    me "It occurred to me that we would be walking too long if the district center was really far away. Therefore forests, fields and roads disappear. What remains?"
     show us grin sport bear with dspr
-    us "Что?"
-    me "Железная дорога!"
-    "Я легонько постучал её по лбу."
-    me "Думай, голова, картуз куплю. Шоссе может идти из ниоткуда в никуда, леса могут быть очень большими. Но железная дорога всегда связывает два населённых пункта. Поэтому всё, что нам нужно — это забраться на поезд."
-    us "И как мы туда заберёмся?"
-    me "Легче лёгкого. Главное — доплыть до острова Длинного, там подобраться к насыпи и выждать. Если я правильно определил породу острова, он должен быть болотистым, а значит, машинист волей-неволей сбросит скорость. Тут-то мы и…"
-    us "И запрыгнем!"
-    "Восторженно завопила она."
-    me "Да тише ты, пока нас весь лагерь не услышал."
-    "Я выбрался из кустов и, поминутно озираясь, чтобы не встретить Ольгу Дмитриевну, направился по уже знакомому направлению к лодочной станции."
-    me "Короче, план мой — детали твои."
-    "Я строго посмотрел на Ульянку."
-    me "Не подведи нас."
+    us "What?"
+    me "Railroad!"
+    "I lightly flicked her forehead."
+    me "Think, head, I'll buy you a cap. The highway can go from nowhere to nowhere, the forests can be very large. But the railway always connects two settlements. So all we need is to get on the train."
+    us "And how do we get there?"
+    me "Easy. The main thing — we need to reach the Long Island, get close to the enbankment and wait. If I correctly determined island's type, which should be swampy, which means that the train will inevitably slow down. And that's where we…"
+    us "Hop on!"
+    "She screamed in delight."
+    me "Be quiet, before the whole camp hears us."
+    "I got out of the bushes and, looking around every minute so as not to meet Olga Dmitrievna, headed in the already familiar direction to the boat station."
+    me "Alright, plan's mine - the details are yours."
+    "I strictly looked at her."
+    me "Don't let us down."
     show us sad sport bear with dspr
-    us "Какие детали?"
-    me "Отвлечь паромщика или выкрасть вёсла — это на тебе. Грести буду я. Если будет чем."
-    us "Бут сделано, гражнинначаник!"
-    "Отдала салют она."
+    us "What details?"
+    me "Distract the ferryman or steal the oars, it's up to you. I will row. If there is anything to row with in the first place."
+    us "Yessir!"
+    "She saluted."
     stop music fadeout 3
-    me "Вот и действуй!"
+    me "Off you go!"
     scene bg ext_boathouse_day with fade
     play music music_list["you_won_t_let_me_down"] fadein 7
     play ambience ambience_boat_station_day fadein 2
-    "Добравшись до пристани, я сделал отмашку Ульянке, отправляя её в обход, а сам на цыпочках пересёк песчаную косу и, стараясь держаться в тени, короткими перебежками сократил дистанцию до сторожки."
-    "В здании кто-то явно был, там было заметно движение и яркая картинка — телевизор."
-    "Стараясь дышать через раз, я обогнул охранное помещение, посекундно озираясь, прокрался к самому причалу — и, присев у понтона, достал из кармана припасённую скрепку, разогнул её и, покачивая, попытался завести загогулину внутрь замка."
-    "Замок попался строптивый, с личинкой на пружине, но я и не таких обламывал — меньше чем через минуту, когда Ульянка помахала мне рукой из-за здания причала, я уже разматывал цепь."
-    "Наконец лодка отвязалась и заплясала на воде. Классическая плоскодонка, вся устойчивость которой зависит лишь от веса седоков."
-    "Прикинув наш общий вес, я понял, что это будет ещё та поездочка, и толкнул лодку вдоль понтонов, выводя из причальной зоны."
-    "Ульянка догнала меня на полпути и ловко спрыгнула с купальни на кормовую банку, заставляя судно трястись и плясать."
+    "When I reached the pier, I signaled Ulyanka, sending her around, and I crossed the sandy shore on tiptoes and, trying to stay in the shade, shortened the distance to the gatehouse with short dashes."
+    "Someone was clearly in the building, there was noticeable movement and a bright picture - TV."
+    "Trying to breathe every other time, I went around the security room, looking around every second, crept to the very pier - and, crouching at the pontoon, I took out the stored paper clip from my pocket, straightened it and, shaking it, tried to bring the squiggle inside the lock."
+    "The lock came across obstinate, with a larva on a spring, but I broke through worse - less than a minute later, when Ulyanka waved her hand at me from behind the pier building, I was already unwinding the chain."
+    "At last the boat untied itself and danced on the water. A classic punt, the entire stability of which depends only on the weight of the riders."
+    "Having estimated our total weight, I realized that it would be a hell of a trip, and pushed the boat along the pontoons, taking it out of the berthing area."
+    "Ulyanka caught up with me halfway and deftly jumped to the stern bank, making the ship shake and dance."
     show us smile sport bear with dissolve
-    me "Садись давай!"
-    "Я отобрал у неё вёсла и, немного поколебавшись, поставил их прямо на края лодки — надеяться на то, что Ульянка украдёт ещё и уключины, было глупо."
-    "С берега донёсся возмущённый, гневный крик — там какой-то старик с беломориной в зубах выскочил на причал и бегал, потрясая сединами и мослатыми кулаками."
-    me "Адью!"
+    me "Get in!"
+    "I took the oars from her and, after a little hesitation, put them right on the edges of the boat - it was stupid to hope that Ulyanka would also steal the oarlocks."
+    "An indignant, angry cry came from the shore - there some old man with a cigarette in his teeth jumped out onto the pier and ran, shaking his gray hair and hairy fists."
+    me "Adieu!"
     scene cg d2_us_boat_escape_7dl
     with dissolve
-    "Крикнул я и приналёг на вёсла."
-    "Грести было тяжело, организм сопротивлялся такой нагрузке и говорил, что работать в таком режиме отказывается!"
-    "Сначала заныли плечи, потом предплечья, спина, шея. Ульяна всё это время сидела на банке и лопала конфеты, хозяйственно убирая фантики в карман."
-    "В результате, когда до Длинного острова оставалось не более пятидесяти метров, у меня болело вообще всё, и я бросил вёсла."
-    us "Ты почему бросил грести?"
-    "Она дожевала очередную конфету и уставилась на меня."
-    me "Нипочему. Просто надоело."
-    us "Как это?! Мы же сбежали!"
-    me "Сбежали. И?"
-    us "Что непонятно? Греби!"
-    "Казалось, её возмущает моя непонятливость."
-    me "Так, может, сама погребёшь?"
-    us "Нет. Мне нельзя. Я девочка."
-    "Сказал бы я, кто ты такая."
-    "Несколько минут спустя кровообращение вернулось в прежнем объёме, и я, стараясь не сильно налегать, плавным ходом отправил наше судно в сторону острова."
-    "Ещё пять минут — и Ульяна спрыгнула на песок. Вслед за ней зашёл и я, хозяйственно втащив лодку поглубже на берег и примотав её к дереву."
-    us "Что там дальше?"
+    "I shouted and leaned on the oars."
+    "It was hard to row, the body resisted such a load and said that it refused to work in this mode!"
+    "First, the shoulders ached, then the forearms, back, neck. All this time, Ulyana was sitting across and eating sweets, putting the candy wrappers in her pocket."
+    "As a result, when there were no more than fifty meters to the Long Island, everything in me hurt, so I abandoned the oars."
+    us "Why did you stop rowing?"
+    "She chewed on another candy and stared at me."
+    me "No reason. Just got fed up."
+    us "How?! But we escaped!"
+    me "Yeah. And?"
+    us "What part didn't you get? Keep rowing!"
+    "She seemed to resent my stupidity."
+    me "Maybe you'll row, for a change?"
+    us "No. I'm not allowed to. I'm a girl."
+    "I'd fucking tell you who you are."
+    "A few minutes later, the blood circulation returned to its previous volume, and I, trying not to lean too much, smoothly sent our ship towards the island."
+    "Another five minutes - and Ulyana jumped onto the sand. Following her, I also went in, housewifely pulling the boat deeper onto the shore and fastening it to a tree."
+    us "What's next?"
     stop music fadeout 6
     scene bg ext_island_day
     show us normal sport bear
     with dissolve
     play ambience ambience_lake_shore_day fadein 3
     play music music_list["tried_to_bring_it_back"] fadein 7
-    me "Дальше ждём поезда. Прыгаем на него и уезжаем."
-    us "Быстрее бы он уже приехал."
-    "Она жалобно заглянула в кулёк."
-    us "У меня почти закончилась провизия."
-    "Я сел прямо на землю и устало закрыл глаза. Кажется, ещё одна суточная квота глупостей была закрыта. Что ж, это радует."
-    me "Дай хоть конфетку."
-    "Я протянул трясущуюся руку."
-    us "Не дам."
-    "Она жадно прижала кулёк к груди."
-    "Правда, уже через секунду опомнилась и от щедрот подвинула мне кулёк."
-    "Но я много не взял, хотелось просто попробовать, что это там так активно лопает напарница."
-    "«Раковые шейки», как я и думал. Правда, назывались они иначе — «Халвичные», и производитель у них некий «Краснознамённый имени Крупской кондитерский завод»."
-    "Короче, даже конфеты в качестве зацепки использовать нельзя."
-    "По воде разнёсся гудок тепловоза, и на мост, соединяющий большую землю и наш остров, осторожно заехала наша попутка."
-    me "Ульянка."
-    "Я оглянулся. Привалившись к моему боку, вся липкая от конфет, Ульяна безмятежно спала."
-    me "Ульяна! Подъём!"
+    me "Next we wait for the train. Jump on it, and leave."
+    us "I wish it would come faster."
+    "She looked plaintively into the bag."
+    us "I'm almost out of provisions."
+    "I sat down on the ground and wearily closed my eyes. Looks like another daily quota of stupidity has been met. Well, that's pleasing."
+    me "At least give me one."
+    "I held out a shaking hand."
+    us "Nuh-uh."
+    "She greedily pressed the bag to her chest."
+    "But, after a second she came to her senses and, out of generosity, pushed me a bag."
+    "But I didn’t take much, I just wanted to try what my partner was so actively eating there."
+    "«Rakovie Sheiki», as I thought. Although their name was a bit different — «Halvichnie», and the manufacturer was stated as «Red Banner named after Krupskaya confectionary factory»."
+    "In short, you can't even use candy as a lead."
+    "The whistle of a diesel locomotive rang through the water, and our ride carefully drove onto the bridge connecting the mainland and our island."
+    me "Ulyanka."
+    "I looked back. Leaning against my side, all sticky from sweets, Ulyana was sleeping peacefully."
+    me "Ulyana! Get up!"
     scene cg d3_ussr_catched
     with dissolve
-    us "Что? Чего?"
-    "Неохотно ответила она."
-    me "Поезд! Поднимайся давай."
-    us "Поезд?"
-    me "Да! Двинули к насыпи."
+    us "What? Whatchu want?"
+    "She reluctantly answered."
+    me "Train! Get up."
+    us "Train?"
+    me "Yes! Let's move."
     scene bg ext_island_day
     show us normal sport bear
     with dissolve
-    "Мы подошли к самой границе зелени, окружавшей крупный колотый гранит, выполняющий функцию держащей подушки для путей."
-    "Я знаю, что если взять два таких камня, то можно высечь из них искру."
-    "А если бросить один камень под колёса тепловоза — то осколками легко может вышибить глаз."
-    "Поэтому я отнял один из камешков у своей проказливой напарницы, явно помышлявшей об этом, и отволок её чуть дальше в лес."
-    me "Здесь посидим, пока локомотив не пройдёт. Идеальная цель — крытый вагон с раздвижной дверью. Но любой другой вагон тоже сгодится. Готова?"
-    us "Да."
-    "Немного напряжённо ответила девочка."
-    "Я внимательно посмотрел на неё. {w}Для неё побег из лагеря — это захватывающее приключение, о котором она потом расскажет в школе."
-    "А я? Может, для меня это единственный шанс вырваться отсюда?"
-    "Так, собрались."
+    "We approached the very border of greenery, which surrounded large chipped granite, which served as a holding cushion for the paths."
+    "I know that if you take two of these stones, you can strike a spark out of them."
+    "And if you throw one stone under the wheels of a diesel locomotive, then the fragments can easily knock out an eye."
+    "So I took one of the pebbles from my mischievous partner, who was clearly thinking about it, and dragged her a little further into the forest."
+    me "We'll sit here until the locomotive passes. The ideal target is a covered wagon with a sliding door. But any other car will do just fine. Ready?"
+    us "Yeah."
+    "The girl answered a little tensely."
+    "I carefully looked at her. {w}For her, escaping from the camp is an exciting adventure, which she will later talk about at school."
+    "But for me? Maybe that's my only chance to break out of this place?"
+    "Alright, sober up."
     scene cg d4_catac_us with fade
     play sound sfx_7dl["train_income"]
-    "Я сидел в самых тёмных кустах, чтобы нельзя было разглядеть из кабины машиниста, и считал секунды."
-    "Времени у нас будет мало, поезд хоть и идёт с малой скоростью, для нас и такая может оказаться чрезмерной."
-    "Поэтому крайне важно среагировать вовремя."
-    "По прямой видимость была метров триста, и плавно трюхающий поезд был как на ладони."
-    me "Мне говорили, что тебя никто не может догнать. А вот ты сама — сумеешь догнать уходящий поезд?"
-    me "На старт."
-    "Дистанция до поезда сократилась до ста метров."
-    me "Внимание."
+    "I sat in the darkest bushes, so that it was impossible to see me from the driver's cab, and counted the seconds."
+    "We will have little time, although the train moves at a low speed, for us that speed may turn out to be excessive."
+    "Therefore, it is extremely important to react in time."
+    "The line of sight was three hundred meters, and the smoothly shaking train was in full view."
+    me "I was told that no one can catch up with you. But you yourself - will you be able to catch up with the departing train?"
+    me "Ready."
+    "The distance to the train was reduced to one hundred meters."
+    me "Set."
     stop music fadeout 3
-    "Дистанция пятьдесят."
-    me "Марш!"
+    "Fifty meters."
+    me "GO!"
     play music music_7dl["runaway"] fadein 3
     scene cg d2_us_trainhop_7dl at fast_running
     with flash
-    "Поезд шёл тридцать-сорок километров в час, поэтому из кустов я бросился параллельно его движению.{w} Это должно будет смягчить рывок, если я схвачусь."
-    "Куда более быстрая Ульяна уже убежала вперёд и сейчас, как и я, искала, где бы можно зацепиться."
-    "И вдруг я почувствовал, как моя нога пребольно столкнулась с чем-то твёрдым."
-    th "Вот же чёрт!"
-    "В следующую секунду я уже летел носом вперёд, истошно крича:"
+    "The train was going thirty or forty kilometers per hour, so I rushed out of the bushes parallel to its movement.{w} This will have to soften the tug if I catch on."
+    "Much faster Ulyana had already run ahead and now, like me, she was looking for where to catch on."
+    "And suddenly I felt like my leg painfully collided with something hard."
+    th "Oh god damn it!"
+    "The next second I was already flying nose first, screaming heart-rendingly:"
     me "!" with vpunch
     stop music fadeout 5
     play ambience ambience_forest_day fadein 5
-    "Ульяна обернулась и резко затормозила."
-    "Это было крайне необдуманное решение с её стороны, потому что я тут же впечатался в неё, свалив девочку с ног."
+    "Ulyana turned around and braked sharply."
+    "It was a very rash decision on her part, because I immediately slammed into her, knocking the girl off her feet."
     scene black with flash
-    us "Ай!"
-    "Она распласталась подо мной на траве, хныча от боли."
-    "Как бы сильно мне ни хотелось, подняться и облегчить её страдания я не мог – у меня и дышать-то с трудом получалось."
-    us "Ты… ты…"
+    us "Ow!"
+    "She sprawled under me on the grass, whimpering in pain."
+    "No matter how much I wanted to, I could not get up and relieve her suffering - I could hardly breathe myself."
+    us "You… you…"
     stop sound fadeout 3
-    "Последний вагон поезда пронёсся мимо нас, и стук колёс плавно растворялся вдали."
-    "План побега был целиком и полностью провален."
-    us "Ты всё испортил!"
+    "The last car of the train rushed past us, and the sound of the wheels faded smoothly into the distance."
+    "The escape plan has completely and utterly failed."
+    us "You ruined everything!"
     scene bg ext_island_day with fade
-    "Наконец я сумел приподняться и откатиться в сторону."
+    "Finally, I managed to get up and roll to the side."
     show us cry2 sport with moveinbottom
-    "Ульяна тут же вскочила на ноги."
-    "Она почти не пострадала при падении, ограничившись лишь испугом и парой царапин."
-    "Дыхание медленно приходило в норму."
-    me "Извини. Чёрт бы побрал эту корягу!"
-    us "Под ноги смотреть было надо!"
-    "Ульяна была готова то ли расплакаться, то ли поколотить меня."
+    "Ulyana immediately jumped to her feet."
+    "She almost did not suffer from the fall, limiting herself to only a fright and a couple of scratches."
+    "Breathing slowly stabilized."
+    me "Sorry. Damn this snag!"
+    us "Should've looked where you went!"
+    "Ulyana was ready either to burst into tears, or to beat me."
     show us cry sport with dspr
-    us "Из-за тебя мы не сбежали!"
+    us "We didn't escape because of you!"
     hide us with dissolve
-    "Я стыдливо отвёл глаза в сторону."
-    th "А так уж ли я хотел сбегать?"
-    th "Весь наш план был идиотским с самого начала. Зачем я вообще на это подписался?"
+    "I shyly averted my eyes."
+    th "Did I really want to escape?"
+    th "Our whole plan was idiotic from the start. Why did I sign up for this?"
     show us sad sport with dissolve
-    us "И что мы теперь делать будем?"
-    me "Партизанить в лесах. Ты там ещё не всю провизию доела?"
+    us "What are we gonna do now?"
+    me "Guerilla warfare in the woods. You haven't eaten everything yet, right?"
     show us dontlike sport with dspr
-    "Ульяна рассерженно топнула ногой."
-    us "Ну уж дудки! Поехали обратно!"
-    me "Только если ты сядешь на вёсла."
+    "Ulyana angrily stamped her foot."
+    us "Toodles! Let's go back!"
+    me "Only if you'll be rowing."
     show us surp1 sport with dspr
-    me "Дай отдохнуть хотя бы немного…"
+    me "Let me catch a breath first…"
     hide us with moveoutright
-    "Но мелкая уже потеряла ко мне всякий интерес, радостно уставившись куда-то в кусты."
+    "But the little one has already lost all interest in me, joyfully staring at something in the bushes."
     play music music_list["memories"] fadein 1
-    us "Земляника!"
-    th "И как это детям удаётся – так быстро переключаться со вселенских страданий на простые человеческие радости?"
-    "Кряхтя и отряхиваясь, я поднялся с земли."
-    "Ульяна уже ускакала вперёд, и мне оставалось только догонять её."
-    th "В конце концов, должен же я поиметь хотя бы немного профита с этого сумасбродного путешествия?"
+    us "Strawberries!"
+    th "And how do children manage to switch so quickly from universal suffering to simple human joys?"
+    "Grunting and shaking, I rose from the ground."
+    "Ulyana had already galloped ahead, and I had only to catch up with her."
+    th "After all, mustn't I at least make some profit from this crazy trip?"
     with fade3
-    "До отвала наевшись земляники, я блаженно растянулся под деревом."
-    "От усталости и жары меня начало клонить в сон."
+    "Having eaten strawberries to my heart's content, I blissfully stretched out under a tree."
+    "From fatigue and heat, I began to fall asleep."
     show us dontlike sport with dspr
-    us "И чего ты тут разлёгся? А кто нас обратно повезёт?"
-    me "Тебе надо – ты и вези. А мне и тут неплохо."
+    us "And what are you doing here? Who will take us back?"
+    me "You need to - you'll take us back. I'm just fine here."
     show us upset sport with dspr
-    th "Эх, вот как же мало надо человеку для счастья: активный отдых, свежие витамины прямо с куста и приятный лесной воздух."
-    th "Если бы ещё мелкая под ухом не ныла…"
-    "Но та, кажется, обиделась на меня и замолчала."
+    th "Oh, that's how little a person needs to be happy: outdoor activities, fresh vitamins straight from the bush and pleasant forest air."
+    th "If only she also wouldn't whine under my ear…"
+    "But it looked like she took offense and fell silent."
     hide us with dissolve
-    "Или просто решила стоически ждать, когда ко мне вернутся силы."
+    "Or just decided to stoically wait for my strength to return."
     show blink
-    th "Полежу ещё минут десять, и в путь."
+    th "I'll lie down for another ten minutes, and we'll be on our way."
     stop music fadeout 5
-    th "Если усну – Ульяна разбудит…"
+    th "If I'll fall asleep - Ulyana will wake me up…"
     pause(3)
     stop music
     play music music_list["orchid"] fadein 7
-    "Но разбудил меня голос Ольги Дмитриевны:"
+    "But I was awoken by Olga Dmitrievna's voice:"
     scene cg d3_us_library_4
     with dissolve
-    mt "Семён…"
-    mt "Мне мало было за вас краснеть в столовой, вы теперь ещё и сбежать придумали?!"
-    dv "Ишь, милуются, голубки."
-    "Раздался голос Алисы."
+    mt "Semyon…"
+    mt "Blushing because of what you did in the canteen wasn't enough, and now you also came up with an idea to escape?!"
+    dv "Look at them being lovey-dovey."
+    "Alisa's voice joined in."
     pause(3)
-    "А я вдруг понял, что сплю не один. Вернее сказать, сплю не совсем сам по себе."
-    "Облапив меня в стиле кошки, положив сверху руки, ноги и живот, мне в плечо сладко посапывала Ульянка, всё такая же липкая от конфет."
-    "Это заставило меня проснуться в самые сжатые сроки."
-    me "Аааааа!"
+    "And I suddenly realized that I was not sleeping alone. Or rather, I wasn't sleeping quite by myself."
+    "Having hugged me in the style of a cat, putting her arms, legs and stomach on top, Ulyanka sniffed sweetly on my shoulder, still sticky from sweets."
+    "It got me awake in no time."
+    me "Aaaaaaa!"
     scene cg d4_us_morning
     with dissolve
-    us "Ууууууу!"
-    "Закричала спросонья Ульяна."
-    "А Ольга Дмитриевна и Алиса стояли над нами и обидно смеялись."
-    "Наконец Ульяна начала приходить в себя."
+    us "Uuuuuuuu!"
+    "Ulyana screamed, waking up."
+    "And Olga Dmitrievna and Alisa stood over us and laughed insultingly."
+    "Finally she started regaining her composure."
     scene cg d3_us_library_3 with dissolve
-    us "Что случилось? Ты чего орёшь?"
-    "Проворчала недовольная Ульяна."
-    me "Пока — ничего. Но скоро очень даже."
-    "«Утешил» её я."
+    us "What happened? Why are you screaming?"
+    "Grumbled displeased Ulyana."
+    me "Right now — nothing. But soon something will."
+    "I «consoled» her."
     scene bg ext_island_day
     show mt angry pioneer
     with dissolve
-    mt "Вы закончили выяснять отношения?"
-    "Ольга в своём обычном стиле упёрла руки в бока."
-    me "Эм… ну да, а что?"
-    "Я поднялся, и как-то само собой получилось, что Ульянка спряталась мне за спину."
-    mt "Если ты вдруг забыл, то я напомню. Что, я сказала, будет, если вы двое опять станете проблемой?"
-    me "Мммм? Заругаете и простите?"
-    dv "Ха-ха-ха-ха!"
+    mt "Have you finished arguing?"
+    "Olga, in her usual style, put her hands on her hips."
+    me "Um… yeah, why do you ask?"
+    "I got up, and somehow by itself it turned out that Ulyanka hid behind my back."
+    mt "If you suddenly forgot, then I will remind you. What did I say would happen if you two become a problem again?"
+    me "Hmmm? Scold and forgive us?"
+    dv "Ha-ha-ha-ha!"
     show dv laugh pioneer far behind mt at right with dissolve
-    "Кажется, Алиса от души веселилась."
-    "Ольга покосилась на рыжую, но ничего не сказала."
-    "Я постарался сделать как можно более невинную мордашку."
-    "Впрочем, отсвечивающие из-за плеча враждебные глазёнки Ульяны несколько портили картину."
-    mt "Нет, дорогие мои. В этот раз вы так просто не отделаетесь. {w}В этот раз я накажу вас как следует."
+    "Seemed like Alisa was having the time of her life."
+    "Olga squinted at the redhead, but said nothing."
+    "I tried to make my face as innocent as possible."
+    "However, Ulyana's hostile little eyes shining from behind her shoulder somewhat spoiled the picture."
+    mt "No, my dears. This time you won't get off so easy. {w}This time I'm giving you proper punishment."
     show dv normal pioneer with dspr
-    mt "Ты, Семён, и ты, Ульяна."
-    "Она со смаком ткнула в нашу сторону пальцем, явно наслаждаясь."
-    mt "Назначаетесь завтра дежурными по столовой. На целый день!"
+    mt "You, Semyon, and you, Ulyana."
+    "She poked her finger in our direction with relish, clearly enjoying it."
+    mt "You're on canteen duty tomorrow. For the entire day!"
     $ alt_day3_duty = True
     show us sad sport bear at left
-    us "Как скажете, Оль Дмитривна."
-    "Ульяна загрустила. И немудрено, для неё не побегать день — это уже время насмарку. А что же до меня…"
-    "Завтра будет завтра. Как бы сегодня отсюда убраться? {w}Грести-то за меня никто не будет…"
-    "Я украдкой подул на свежие мозоли на ладонях и вышел вслед за вожатой на пляж. Здесь уже была видна вторая лодка, как и моя, вытащенная на песочек."
-    "Я вопросительно посмотрел на Алису, а она кивнула на вожатую."
-    "Что, правда? Ольга сама гребла? Ни за что не поверю!"
-    "Однако поверить пришлось."
-    "Разделив нас — от греха подальше — вожатая забрала к себе в лодку Ульянку, а меня оставила наедине с Алисой. Столкнув лодки в воду, мы погребли обратно."
+    us "As you say, Olga Dmitrievna."
+    "Ulyana got sad. And no wonder, for her not to run for a day is akin to accepting that day going down the drain. What about me…"
+    "Tomorrow will be tomorrow. How do I get out of here today? {w}No one will row for me…"
+    "I furtively blew on the fresh calluses on my palms and followed the squad leader to the beach. Here the second boat was already visible, like mine, pulled out on the sand."
+    "I looked inquiringly at Alisa, and she nodded at the squad leader."
+    "What, seriously? Olga was rowing? There ain't no way I'm believing that!"
+    "However, I had to believe."
+    "After separating us - out of harm's way - the leader took Ulyanka into her boat, and left me alone with Alisa. Pushing the boats into the water, we rowed back."
     scene cg d2_dv_boat_day_7dl with fade
     play sound_loop sfx_rowboat_loop fadein 2
     play music music_list["everyday_theme"] fadein 3
-    me "Расскажи по секрету, а что ты здесь делаешь?"
+    me "Tell me a secret, what are you even doing here?"
     if (alt_day2_convoy == 'dv'):
-        dv "Я волновалась."
+        dv "I was worried."
     else:
-        dv "Ульянки долго не было."
-    "Легкомысленно пожала плечами Алиса."
-    dv "Когда я обнаружила, что Ульяна куда-то утащила конфеты, это тревоги не вызвало — у неё в лесу есть целый дворец на дереве."
-    dv "Но вот то, что она забрала с собой медведя… В общем, когда Ольга подошла ко мне, я согласилась не раздумывая."
-    "Она села по-мужицки, упираясь локтями о расставленные колени."
+        dv "Ulyanka was gone for a while."
+    "Alisa shrugged casually."
+    dv "When I discovered that Ulyana had stolen sweets somewhere, this did not cause alarm - she has a whole palace on a tree in the forest."
+    dv "But when I saw that she also took the bear… Well, when Olga approached me, I agreed without hesitation."
+    "She sat like a guy, resting her elbows on her knees apart."
     if (alt_day2_convoy == 'dv'):
-        dv "Семён…"
-        me "Да?"
+        dv "Semyon…"
+        me "Yeah?"
     else:
-        dv "Скажи-ка, новичок…"
-    dv "Это что, ты и правда собирался сбежать с мелкой куда-то?"
+        dv "Tell me, newbie…"
+    dv "Is that really you were going to run away with the kid somewhere?"
     if loki or herc:
-        me "Знаю, я, возможно, создал о себе превратное впечатление."
-        me "И очень извиняюсь, если каким-то образом задел тебя или обидел."
-        "Я не выдержал и поднял голос — так, что с соседней лодки, которую вела Ольга, на нас обернулись."
-        me "Но надо быть совершеннейшим дегенератом, чтобы отправиться в такую авантюру, тем более с маленькой девочкой на руках!!!"
-        us "Эй! Я не маленькая!"
-    "Я закатил глаза:"
-    me "Ты сама представь себе картинку — маленькая девочка в кедах с кульком конфет и медведем."
-    me "Куда она такая убежит? Хорошо мы до острова добрались, вон, какое приключение получилось."
-    "Двачевская ненадолго замолкла:"
-    dv "Я волновалась за неё. Молодец, что не бросил."
-    "Я не поверил ушам. Последние несколько дней чудеса сыплются как из рога изобилия, но организм уже привык на неожиданности реагировать именно так."
-    me "Ты… Меня… Похвалила?"
-    dv "Да. Я тебе даже секрет за это открою, только ты никому не говори."
-    "Она нагнулась ко мне с самым заговорщическим видом, а я немного опасливо наклонился ей навстречу."
-    dv "Вчерашняя вылазка была, чтобы её покормить."
-    "Она безмятежно кивнула на соседнюю лодку."
+        me "I know I may have given myself the wrong impression."
+        me "And I'm very sorry if I offended you in any way."
+        "I could not hold it and raised my voice - so that from the neighboring boat, which was led by Olga, they turned to us."
+        me "But you have to be a complete degenerate to go on such an adventure, especially with a little girl in your arms!!!"
+        us "HEY! I'M NOT A LITTLE GIRL!"
+    "I rolled my eyes:"
+    me "Imagine it yourself - a little girl in sneakers with a bag of sweets and a bear."
+    me "Where will she run away to? Well, we got to the island, look, what an adventure it turned out to be."
+    "Dvachevskaya fell silent for a while:"
+    dv "I worried about her. Thanks for not abandoning her."
+    "I didn't believe my ears. Over the past few days, miracles have been pouring out like from a cornucopia, but the body is already used to reacting to surprises in this way."
+    me "Did… You… Praise me?"
+    dv "Yes. I'll even tell you a secret for this, just don't tell anyone."
+    "She leaned towards me with the most conspiratorial look, and I leaned a little cautiously towards her."
+    dv "Yesterday's raid was to feed her."
+    "She nodded serenely at the nearby boat."
     menu:
-        "Смеяться":
+        "Laugh":
             $ karma += 10
-            me "Я так и знал."
-            "Я захохотал."
-            me "Ни у тебя, ни у неё ничего не бывает просто так."
+            me "I knew it."
+            "I burst out into laughter."
+            me "You both do things for a reason."
             $ lp_dv += 1
             $ lp_us += 1
-        "Пожать плечами":
-            me "Всё равно вы в пролёте оказались."
-            me "Что так, что этак."
-            dv "Ты не злишься?"
-            me "Нет… Она сама себя наказала."
+        "Shrug":
+            me "Anyway you missed out."
+            me "That's that and this is this."
+            dv "You're not mad?"
+            me "Nah… She punished herself."
             $ lp_dv += 1
-        "Злобиться" if alt_day_binder == 1:
+        "Get angry" if alt_day_binder == 1:
             $ karma -= 10
-            "Я не сразу нашёл, что ответить."
-            me "То есть я, практически собственными руками, накормил эту маленькую…"
-            dv "А что, сейчас бы не накормил?"
-            me "Так это сейчас."
-            me "Уже после введения моратория на насекомых в еде."
-    me "Ульяна — очень хорошая девочка…{w=.3} Если направлять её энергию в конструктивное русло."
-    me "Но я тебе этого не говорил и всё буду отрицать!"
-    dv "Как скажешь, дон Кихот."
-    "Алиса рассмеялась и до конца водного путешествия не проронила больше ни слова."
+            "I couldn't find the right words."
+            me "So, I, practically with my own hands, fed this little…"
+            dv "What, now you wouldn't?"
+            me "That's now."
+            me "After introduction of a moratorium on insects in food."
+    me "Ulyana is a very good girl…{w=.3} If you direct her energy in a constructive direction."
+    me "But I never said this and I will deny it!"
+    dv "As you say, Don Quijote."
+    "Alisa laughed and did not utter another word until the end of the water trip.."
     scene bg ext_boathouse_day
     show dv smile pioneer2 at right
     show us normal sport bear at cleft
     with fade
     stop sound_loop
     stop music fadeout 5
-    "Полдник мы прокатали-проспали, впрочем, какой-то дискомфорт от этого испытывал лишь я, вовсю отработавший сегодня вёслами и под занавес чуть не получивший таким же веслом от сторожа."
-    "Силы были потрачены, а восстанавливать их было неоткуда. Что ж, пришлось смириться."
+    "We adventured and overslept, completely missing lunch, however, only I experienced some discomfort from this, having worked hard with oars today and almost got the same oar from the watchman towards the end."
+    "Strength was spent, and there was no replenishment in sight. Well, I'll deal with it."
     scene bg ext_dining_hall_near_day
     show dv smile pioneer at right
     show us normal sport at cleft
     with fade
-    "Доставив нас обратно в лагерь, Ольга куда-то делась, наорав на нас напоследок — чисто в профилактических целях."
+    "Having taken us back to the camp, Olga disappeared somewhere, yelling at us in the end - purely for preventive purposes."
     scene bg ext_house_of_dv_day
     with dissolve
-    "Пришлось, чтобы не бесить вожатую ещё больше, прогуляться домой к девочкам и переодеть Ульяну в форму."
+    "So I had to, in order not to piss off the squad leader even more, take a walk home to the girls and change Ulyana into uniform."
     show us normal pioneer
     show dv normal pioneer at left
     with dissolve
-    dv "Ну, что дальше?"
-    "Посмотрела на нас Алиса."
-    "Я поднял указательный палец:"
-    me "Слышите?"
-    "По лагерю разносились какие-то крики."
-    "И мы направились на звук."
+    dv "Well, now what?"
+    "Alisa looked at us."
+    "I pointed my index finger up:"
+    me "You hear that?"
+    "Screams echoed throughout the camp."
+    "And so we followed them."
     $ alt_day2_dv_us_house_visited = True
     stop music fadeout 3
     stop ambience fadeout 6
@@ -4787,48 +4790,48 @@ label alt_day2_grand_escape:
 label alt_day2_siesta:
     play music music_list["trapped_in_dreams"] fadein 3
     scene bg int_house_of_mt_day with dissolve
-    "Решив провести время с чувством, с толком, с расстановкой, я развернул читалку на экране смарта и, восстановив последнюю закладку, попытался погрузиться в вымышленные миры отечественных фантастов."
-    "Вот только буквы отказывались складываться в слова, а слова постоянно выпадали из строчек."
-    "Раза три я ловил себя на том, что просто двигаюсь глазами по тексту, абсолютно не воспринимая его содержимое."
-    "И в самом-то деле, какая уж тут фантастика, когда со мной происходит вот такое!"
-    "Вздохнув, я отложил смарт и задумался."
-    th "В лагере хорошо, вопросов не задают и не хотят задавать. Хотя это тоже странно."
+    "Deciding to spend time with feeling, with sense, with the arrangement, I opened the reader on the phone and, restoring the last bookmark, tried to immerse myself in the fictional worlds of Russian science fiction writers."
+    "But the letters refused to form into words, and the words constantly fell out of the lines."
+    "Three times I caught myself just moving my eyes through the text, absolutely not perceiving its content."
+    "No, seriously, why would I read fiction, when something like this is happening to me!"
+    "Sighing, I put the phone aside."
+    th "It's good in the camp, they don't ask questions and don't want to ask. Even though it's weird too."
     if counter_sl_7dl < 2:
-        th "Славя что-то заикалась насчёт восемьдесят девятого… Мать моя женщина, тридцать лет без малого — в прошлое!"
-        th "Но можно ли ей верить?"
-        dreamgirl "Верить никому нельзя. Никому. Даже себе. Мне — можно."
+        th "Slavya stuttered something about 1989... Jesus, I'm almost thirty years old in the past!"
+        th "But can she be trusted?"
+        dreamgirl "Don't trust anyone. Not even yourself. You can trust me though."
         if not dr:
-            th "А с тобой вообще разговор особый! Что за подозрительный тип тут у меня ошивается в голове? Сквоттер или мозговой слизень с планеты Слизеринус?"
-    "Кроме всего прочего, насколько я помню, в пионерах ходили до четырнадцати, а дальше комсомол."
-    "Либо я что-то путаю, либо здесь всё обстоит несколько иначе."
-    th "Да и где это «здесь»?"
-    th "Если это не прошлое, то что?{w} Другой мир?{w} Сон?"
-    th "Ну точно, сон Семёна, который видит сон про Семёна, который видит сон."
+            th "Oh and we'll have a special conversation with you! Who the hell are you and why are you in my head? You a squatter? A brain slug from planet Slytherinus?"
+    "Among other things, as far as I remember, you could be a pioneer until fourteen, and then you went to Komsomol."
+    "Either I'm confusing something, or things are a little different here."
+    th "Where even is «here»?"
+    th "If this isn't the past, then what is it?{w} Another world?{w} Dream?"
+    th "Oh right, Semyon's dream, who's dreaming about Semyon who is also dreaming."
     th "…"
-    th "Бред."
-    "Что до самих окружающих, с ними тоже всё весьма интересно."
-    "Всегда есть хищники, столбящие дорогу, всегда есть отщепенцы, разбирающие укромные уголки, и есть так называемая инертная масса, которая либо объединяется в клубы по интересам, либо двигает за лидером, который не побрезгует принять знамя."
-    "И так получилось, что все перечисленные архетипы удивительным образом оказались в моём отряде."
-    "Кроме того, некоторые их поступки ставят меня в тупик."
-    "Например, вожатая. Ей совсем до лампочки, что у неё в отряде из неоткуда появился пионэр?"
-    "В зимней одежде. Летом."
-    "Нет, не всё ладно с этим лагерем, определённо."
-    "За размышлениями я не заметил, как провалился в сон."
+    th "Nonsense."
+    "Going back to the surrounding people, they're also quite interesting."
+    "There are always predators blocking the road, there are always renegades who take apart nooks and crannies, and there is the so-called inert mass, which either unites in interest clubs or moves after a leader who does not disdain to accept the banner."
+    "And somehow all of the above happened to end up in my squad."
+    "In addition, some of their actions baffle me."
+    "For example, the camp leader. Does she really not care that out of the blue she had a new pioneer in her squad?"
+    "In winter clothes. During summer."
+    "Something's definitely wrong here."
+    "While thinking, I did not notice how I fell into a dream."
     if (alt_day2_convoy == 'un'):
         play music music_list["goodbye_home_shores"] fadein 3
         scene cg d3_un_forest
         show prologue_dream
         with fade
-        "Мне снился лес."
-        "И Лена."
-        "Я не знаю, откуда и как, но мы шли по нему уже достаточно долго, и огни лагеря мелькали неяркими светлячками сквозь тонкую полосу леса."
+        "I dreamed of a forest."
+        "And Lena."
+        "I don't know where or how, but we've been walking along it for quite a long time, and the lights of the camp flickered like dim fireflies through a thin strip of forest."
         if dr:
-            "Девочка вцепилась мне в руку так, что стало больно, и что-то горячо шептала, умоляя, уговаривая как только могла — вспомнить… Просто не забыть."
-        "Она не висла на мне, не сковывала, но держалась, прижимаясь так, что я мог чувствовать частое биение её сердечка."
-        "И прижималась она не от страха… А совершенно по другой причине."
-        "Я вёл девочку, как водят партнёршу в танце, и финальными аккордами, неизбежной платой за тёплый вечер сорвал с податливых губ поцелуй."
-        "А она будто распахнула крылья, расправила плечи и, раскрыв глаза навстречу вечеру, плыла в моих объятьях, жадно, нетерпеливо впитывая моё внимание."
-        "Я никогда её не видел такой. Да и вряд ли увижу."
+            "The girl grabbed my arm so that it hurt, and whispered something fervently, begging, persuading as best she could - I needed to remember… Just don't forget."
+        "She did not hang on me, did not fetter, but held on, clinging so that I could feel the frequent beating of her heart."
+        "She clung to me not out of fear… But for an entirely different reason."
+        "I led the girl, as they lead a partner in a dance, and with the final chords, the inevitable payment for a warm evening, I plucked a kiss from pliable lips."
+        "And it was as if she opened her wings, straightened her shoulders and, opening her eyes towards the evening, swam in my arms, greedily, impatiently absorbing my attention."
+        "I've never seen her like that. And I don't think I will."
         stop sound_loop fadeout 2
         stop ambience fadeout 2
     elif (alt_day2_convoy == 'dv'):
@@ -4837,19 +4840,19 @@ label alt_day2_siesta:
         show prologue_dream
         with fade
         if alt_day2_us_dubstep:
-            "Рыжая во сне выглядит такой, какой я запомнил её в тот волшебный момент, когда её броньку прокололо насквозь действительно хорошей музыкой."
-            "И именно для этого и есть все по-настоящему дельные песни. Их самая главная задача — это добывать из наших сердец и душ тлеющий там уголёк и пускай ненадолго, но раздувать его до состояния пламени."
+            "The redhead in my dream looks like I remember her in that magical moment when her armor was pierced through with really good music."
+            "And that's what all the really good songs are for. Their main task is to extract from our hearts and souls a smoldering coal and, albeit not for long, but inflate it to a state of flame."
         else:
-            "Алиса выглядела невероятно спокойной и умиротворённой."
-            "Какая хорошая девочка."
-            "Хотя зная её, я бы сказал, что это было, скорее, ленивое спокойствие сытого хищника."
-            "Метафора выпрыгнула из подсознания сама, за ней ещё одна…"
-        "Когда глаза щиплет трогательностью момента, и ты спишь три часа в сутки, потому что творишь, не можешь не творить."
-        "Когда ты помнишь семь цифр номера крепче, чем собственное имя."
-        "Во сне произошло фантастическое."
-        "Алиса взяла меня под руку. И нет на ней всего этого дешёвого и наносного. Просто обычная девчонка, немного неуверенная в себе, но от этого ничуть не менее притягательная."
-        "Мы так близко никогда ещё не были. И потому я понимаю, что это сон. Алиске нужен кто-то, кто сумеет покорить её, сжиться и смириться со всеми её тараканами и, подобравшись на расстояние удара… Просто обнимет."
-        "А девочка вся напугана и дрожит. Девочке ещё не приходилось терять или выбирать между настоящей дружбой и настоящей любовью. Вот и держится она за локоть так, что сердце слышно, и катятся, и катятся из глаз ненужные сейчас и оттого вдвойне жестокие слёзы."
+            "Alisa looked incredibly calm and peaceful."
+            "What a nice girl."
+            "Although knowing her, I would say that it was rather the lazy calm of a well-fed predator."
+            "The metaphor jumped out of the subconscious itself, followed by another…"
+        "When your eyes sting with the touchingness of the moment, and you sleep three hours a day, because you create, you cannot help but create."
+        "When you remember the seven digits of a number stronger than your own name."
+        "A fantastic thing happened in a dream."
+        "Alisa took my arm. And it wasn't all this cheap and superficial. Just an ordinary girl, a little insecure, but no less attractive for that."
+        "We've never been this close before. And so I understand that this is a dream. Alisa needs someone who can subdue her, get used to and put up with all her idiosyncracies and, having gotten within striking distance… Just hug her."
+        "And the girl is all scared and trembling. The girl has never had to lose or choose between true friendship and true love. And so she clings to the elbow so that her heart can be heard. Tears keep rolling and rolling from her eyes, unnecessary tears, making it doubly cruel."
         stop sound_loop fadeout 2
         stop ambience fadeout 2
     elif (alt_day2_convoy == 'sl'):
@@ -4857,18 +4860,18 @@ label alt_day2_siesta:
         scene cg d3_sl_dance
         show prologue_dream
         with fade
-        "Славя…"
-        "Я и она… Мы…"
-        "Танцуем?!"
-        "Я чёрт знает сколько лет уже не кружил девочку в том самом медленном танце."
-        "А здесь это даже не по-лагерному. Одна рука на талии, вторая — держит её ладонь. Почти вальс."
-        "Она смотрит так искоса, и впервые за всё время, что мы знакомы, я вижу в её глазах нерешительность и даже страх."
-        "Она, кажется, догадывается о том, что я могу принести очень много боли. Ведь мир, откуда я родом, состоит из неё настолько, что мы дышим болью, блюём болью и пачкаем страницы дневников болью."
-        "Она уже внутри меня и гремит ключами."
-        "Зачем? Не отпирай чужого сердца, если не дорожишь своим."
-        "Там, под обожжённой, покрытой застарелыми шрамами бронёй прячется то, что убьёт тебя, превратит твою жизнь либо в вечное ожидание, либо в остаток чьего-то сна."
-        "Ей плевать. Она хочет, она тянется, и она получает тот самый полумёртвый кусочек плоти, слабо трепещущий в руках."
-        "Теперь в этом виновата и она тоже."
+        "Slavya…"
+        "Me and her… We…"
+        "Are dancing?!"
+        "God knows how many years I haven’t circled the girl in that very slow dance."
+        "And here it's not even camplike in any slightest. One hand on the waist, the second - holds her palm. Almost waltzing."
+        "She looks so sideways, and for the first time in all the time that we have known each other, I see indecision and even fear in her eyes."
+        "She seems to know that I can bring a lot of pain. 'Cause the world I'm from is so full of it that we breathe pain, vomit pain, and stain diary pages with pain."
+        "She's already inside me with rattling keys."
+        "Why? Don't open other's heart, if you don't treasure your own."
+        "There, under the burnt, scarred armor, hides something that will kill you, turn your life into either an eternal expectation or the remnant of someone's dream."
+        "She doesn't care. She wants, she reaches out, and she gets that very half-dead piece of flesh, weakly trembling in her hands."
+        "And now, she too, is guilty."
         stop sound_loop fadeout 2
         stop ambience fadeout 2
     elif (alt_day2_convoy not in ('dv', 'sl', 'un')) and ('music' in list_clubs_7dl):
@@ -4877,70 +4880,70 @@ label alt_day2_siesta:
         show prologue_dream
         with fade
         $ lp_mi += 1
-        "Мне снился лес."
-        "И Мику."
-        "Почему я так хорошо отношусь к этой девчонке?"
+        "I dreamed of a forest."
+        "And Miku."
+        "Why do I treat her so well?"
         if persistent.alt_binder:
             if persistent.mi_dj_good_jap:
-                "Как будто я где-то когда-то уже видел её, знал как продолжение себя самого."
-        "Хотя наше знакомство и состоялось таким забавным образом, она показалась мне очень милой."
-        "Но сейчас Мику вцепилась в меня, больно, сильно, и всё шептала и шептала."
-        "Я ничего не понял и протянул ладонь, чтобы погладить её волосы."
-        "И только после этого заметил, что она почему-то плачет."
-        "Но слёзы почти незаметны под бьющим со свинцового неба дождём."
-        "А я обнимаю её изо всех сил, я что-то знаю, что-то страшное."
-        "И не хочу разрешать ей уходить — ведь это вполне может быть навсегда."
-        "Я трясу головой и пытаюсь подобрать какие-то слова, чтобы сказать то самое, важное, незаменимое, уместное здесь."
-        "Которое утешит её."
-        "Даст ей понять, что всё хорошо."
-        "И не могу."
-        "Вместо этого я разворачиваюсь и ухожу."
+                "As if I had already seen her somewhere, know her as an extension of myself."
+        "Although our acquaintance took place in such a funny way, she seemed very nice to me."
+        "But now Miku clung to me, it hurt, hard, and kept whispering and whispering."
+        "I did not understand anything and stretched out my hand to stroke her hair."
+        "And only after that I noticed that for some reason she was crying."
+        "But the tears are almost imperceptible under the rain falling from the leaden sky."
+        "And I hug her with all my might, I know something, something terrible."
+        "And I don't want to let her go - it could very well be forever."
+        "I shake my head and try to find some words to say something, important, irreplaceable, appropriate here."
+        "Something that would console her."
+        "Something that will let her know that it's okay."
+        "But I can't."
+        "Instead I turn around, and leave."
         stop sound_loop fadeout 2
         stop ambience fadeout 2
     else:
         scene anim prolog_1
         stop music fadeout 3
         play ambience music_7dl["ambience_safe"] fadein 4
-        "Снилась какая-то муть."
-        "Будто я проснулся внутри сна и понял, что у меня нет ног."
-        "Вернее, есть — но эти два ватных бревна, которые с трудом приходится переносить с места на место."
-        "Таскать одну ногу за другой, перебираясь с кровати в кресло-каталку."
-        "С усилием, ведь они весят почти половину моего тела, хоть и выглядят хиловато на фоне гиперразвитых рук."
-        "Спасибо отцу за то, что помог обустроить квартиру — повсеместно вдоль стен протянулись перильца, делающие мою берлогу неуловимо похожей на космическую станцию."
-        "Я как героиня Сандры Буллок — таскаю себя рывком от скобы к скобе."
-        "И как у неё, мой самый главный враг — гравитация."
-        "Фотоэлемент среагировал на шевеление — с тихим шорохом кулеры системного блока вышли на стандартные обороты."
-        "Самое главное — это утренний моцион. Самое сложное, ненавистное и унизительное."
-        "Посещение туалета и водные процедуры."
-        "Иногда хочется просто плюнуть на всё и никуда не ходить, встать с утра пораньше, подкатиться в кресле к монитору и сидеть перед компьютером."
-        "Но когда я не смогу справиться с собственным телом — я не смогу жить."
-        "А потому — в ежедневный последний путь — я скриплю зубами, поднимая себя, цепляясь за первый поручень, ведущий к месту унижения."
-        "Странная, страшная жизнь. Я должен нагуливать пролежни на боках, плюя в потолок и изводя сестру-сиделку."
-        "А вместо этого умудряюсь даже смеяться от души каждый день — ведь смеяться каждый день очень важно, чтобы не сойти с ума от вида за окном."
-        "Даже немного зарабатывать умудряюсь, хотя за мои тексты платят не сказать чтобы щедро."
-        "И всё это дал мне интернет."
-        "Синтетическая реальность, суррогат."
-        "Протез для тех, кто неполноценен."
-        "Умывание заняло полчаса, после которых я вернулся в кресло и уже предвкушая то, как передо мной распахнётся целый мир по ту сторону монитора, толкнул ведущие ободы."
+        "I dreamed of random garbage."
+        "It's like I woke up inside a dream and realized that I have no legs."
+        "Or rather, they're there - but they're these two cotton logs, which are difficult to carry from place to place."
+        "Carry one leg after the other from bed to wheelchair."
+        "With effort, because they weigh almost half of my body, although they look frail against the background of hyperdeveloped arms."
+        "Thanks to my father for helping to equip the apartment - railings stretched everywhere along the walls, making my lair subtly similar to a space station."
+        "I'm like the heroine of Sandra Bullock - I drag myself jerking from brace to brace."
+        "And like her, my biggest enemy is gravity."
+        "The photocell reacted to the movement - with a quiet rustle, the coolers of the system unit reached the standard speed."
+        "The most important thing is morning exercise. The most difficult, hateful and humiliating."
+        "Toilet visit and water procedures."
+        "Sometimes you just want to spit on everything and not go anywhere, get up early in the morning, roll up in a chair to the monitor and sit in front of the computer."
+        "But when I won't be able to handle my own body - I won't be able to live."
+        "Therefore, on my daily last journey, I grit my teeth, lifting myself, clinging to the first handrail leading to the place of humiliation."
+        "Strange, terrible life. I have to work up bedsores on my sides, spitting at the ceiling and harassing my sister who nurses me."
+        "And instead, I even manage to laugh heartily every day - after all, laughing every day is very important so as not to go crazy from the view outside the window."
+        "I even manage to earn a little, although I wouldn't say they generously pay for my texts."
+        "And all of this was provided to me by the Internet."
+        "Synthetic reality. Surrogate."
+        "A prosthesis for those who are handicapped."
+        "Washing took half an hour, after which I returned to the chair and already anticipating how the whole world would open up before me on the other side of the monitor, I pushed the leading rims."
         with fade
         play sound sfx_bodyfall_1
-        "И с грохотом покатился по полу, пребольно ударившись коленом."
+        "And with a roar rolled on the floor, painfully hitting my knee."
     stop ambience fadeout 3
     stop music fadeout 3
     show blink with dissolve
     scene bg int_house_of_mt_day
-    "Странные сны."
-    "Чем они короче, тем больше ты на самом деле спишь."
-    "Хотя, возможно, пробуждение просто отсекает всё, кроме самых ярких, самых запоминающихся моментов сна?"
-    "Может, мне всё это время снилось то, что я куда-нибудь иду или что-нибудь подметаю."
-    "А потом — как вспышка! То, что задержалось в памяти. Осталось лишь продышаться и понять, откуда в голове появилась такая картинка, и почему там именно она, а не какая-либо другая."
-    "Я бросил взгляд на часы. Пять."
-    "Тихий час закончился, можно и подниматься."
+    "Weird dreams."
+    "The shorter they are, the more you actually sleep."
+    "Although, perhaps, waking up simply cuts off all but the brightest, most memorable moments of sleep?"
+    "Maybe I've been dreaming all this time that I'm walking somewhere or sweeping something."
+    "And then - like a flash! Whatever that lingers in memory. All that's left is only to breathe and understand where such a picture came from in my head, and why it is there, and not some other."
+    "I glanced at the lock. 5PM."
+    "Naptime's over. Time to get up."
     play sound sfx_open_dooor_campus_1
     play ambience ambience_camp_center_day
     scene bg ext_house_of_mt_day with fade
-    "Я услышал какой-то шум, много голосов будто спорили о чём-то."
-    "Немного погодя ноги сами вывели меня к источнику шума."
+    "I heard some noise, many voices seemed to be arguing about something."
+    "After a while, my feet led me to the source of the noise."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -4951,19 +4954,19 @@ label alt_day2_tournament:
     play ambience ambience_camp_center_day fadein 3
     play music music_list["sweet_darkness"] fadein 3
     with dissolve
-    "Здесь были все, кого я знаю — старший отряд практически в полном составе."
+    "Everyone I know was here - the senior squad almost had full attendance."
     show sl normal pioneer at left
     with dissolve
-    "Славя."
+    "Slavya."
     hide sl
     show un normal pioneer at right
     with dissolve
-    "Лена."
+    "Lena."
     if alt_day2_mi_met:
         hide un
         show mi normal pioneer
         with dissolve
-        "Мику."
+        "Miku."
         hide mi
         show dv smile pioneer2 at left
         show us laugh2 pioneer at right
@@ -4973,244 +4976,244 @@ label alt_day2_tournament:
         show dv smile pioneer2 at left
         show us laugh2 pioneer at right
         with dissolve
-    "Про рыжих бандиток и говорить не приходится."
+    "I'm not even going to speak about the redheads."
     hide us
     hide dv
     with dissolve
     if not ('library' in list_voyage_7dl) or not alt_day2_mi_met:
-        "Было и несколько незнакомых лиц."
+        "There were a few unknown faces too."
     if not ('library' in list_voyage_7dl):
         show mz normal glasses pioneer at right with dissolve
-        "Например, незнакомая девочка с угрожающе-жёлтыми глазами."
-        "Неприятный эффект от её взгляда немного гасили очки с толстыми стёклами."
-        "Но только немного."
+        "For example, an unfamiliar girl with menacing yellow eyes."
+        "The unpleasant effect of her gaze was slightly extinguished by glasses with thick glasses."
+        "But only slightly."
         hide mz with dissolve
-        "Я толкнул Ульянку локтем:"
-        me "Псс, Ульянка, это кто?"
+        "I pushed Ulyanka with my elbow:"
+        me "Psst, Ulyanka, who's that?"
         show us smile pioneer at right with dissolve
-        us "Где?"
-        me "Вон, в очках!"
-        $ meet('mz','Женя')
-        us "Аа… Это Женька. Библиотекарша наша. Постоянно спит в библиотеке."
-        me "Спит?"
-        us "Ага! Она спит, а Шурик с Электроником за неё книжки сторожат."
-        us "И все делают вид, что они заняты в стенгазете."
-        us "По-моему, там только Лена работает. Рисует."
-        me "Вот как? Что ж…"
+        us "Where?"
+        me "There, in glasses!"
+        $ meet('mz','Zhenya')
+        us "Aah… That's Zhenya. Our librarian. She sleeps in the library all of time."
+        me "Sleeps?"
+        us "Yeah! She sleeps, and Shurik and Electronik guard books for her."
+        us "And keep pretending that they work in the newspaper."
+        us "In my opinion, only Lena works there. She draws."
+        me "Is that how it is? I see…"
         show us normal pioneer with dspr
-        "Я решил, что следует подойти и познакомится с последним представителем здешнего бестиария, но Ульяна схватила меня под локоть."
-        me "В чём дело?"
-        us "Лучше не надо. Женька не очень любит людей."
-        me "Социопат?"
-        us "Это как?"
-        me "Ну людей не любит."
-        me "Ещё ворчит и брюзжит, наверно, всё время."
+        "I decided that I should approach and get acquainted with the last representative of the local bestiary, but Ulyana grabbed my elbow."
+        me "What's wrong?"
+        us "Better not. Zhenya doesn't really like people."
+        me "Sociopath?"
+        us "What?"
+        me "Doesn't like people."
+        me "Probably grumbles and growls all the time too."
         show us grin pioneer with dspr
-        us "А! Да-да, точь в точь Женя!"
+        us "Ah! Yeah, that would be her!"
         show us dontlike pioneer with dspr
-        us "А ещё она очень не любит, когда её книги…"
-        "Лицо Ульяны скривилось."
-        "Сразу понятно, что она с ней не в самых лучших отношениях."
+        us "And she also doesn't like when her books…"
+        "Ulyana's face twisted."
+        "It was clear that she is not on the best of terms with her.."
         show us upset pioneer with dspr
-        us "Не важно."
-        "Отмахнулась рыжая."
+        us "No matter."
+        "Redhead waved away."
         show us laugh2 pioneer with dspr
-        me "Прям Жужелица какая-то."
-        "Ульянка прыснула."
+        me "A real buzzer, huh."
+        "Ulyanka giggled."
         hide us with dissolve
     if not ('cyber' in list_voyage_7dl or 'library' in list_voyage_7dl):
         show sh normal pioneer with dissolve
-        th "Так, стоп, а это кто?"
-        us "Шурик, по какому поводу сбор?"
-        $ meet('sh','Шурик')
+        th "Wait, who's this?"
+        us "Shurik, what's the commotion?"
+        $ meet('sh','Shurik')
         $ alt_day2_sh_met = True
-        sh "Сечас всё расскажем."
+        sh "We'll tell you right now."
         hide sh with dissolve
     if not alt_day2_mi_met:
         show mi normal pioneer with dissolve
-        "Здесь была и давешняя аниме-девочка из столовой."
-        "Я ткнул Ульянку, стоящую тут же, локтем."
-        me "Ульяна, а что это за девочка?"
-        "Указывая одними глазами."
-        us "Нравится? Это наша худрук, её Мику зовут. По-настоящему."
-        $ meet('mi','Мику')
-        "Услышав, что её обсуждают, японка кивнула."
+        "There was also that anime girl from the cafeteria."
+        "I poked Ulyanka, who was standing right there, with my elbow."
+        me "Ulyana, who's that?"
+        "Pointing using only my eyes."
+        us "You like her? That's her art director, her name is Miku. Yes, for real."
+        $ meet('mi','Miku')
+        "Noticing our discussion, the girl nodded."
         hide mi with dissolve
     if alt_day_binder != 1:
         show el normal pioneer with dissolve
-        "А в центре всей толкучки стоял Электроник."
-        el "Нет-нет, никаких автоматчей или переигровок не будет! Нам надо восемь участников, чтобы разыграть минимальный плей-офф."
+        "And in the center of the whole flea market stood Electronik."
+        el "No, no, there will be no automatic games or replays! We need eight participants to play the minimum playoffs."
         hide el with dissolve
     elif (alt_day_binder == 1) and not ('library' in list_voyage_7dl):
         show el normal pioneer with dissolve
-        $ meet('el','Электроник')
-        "А в центре всей толкучки стоял какой-то белобрысый парень."
-        "Я видел его вчера на ужине."
-        us "Сыроега, а что если я проиграю? Я не должна проигрывать!"
-        el "Во-первых, не «Сыроега», а «Электроник», а во-вторых, никаких реваншей или переигровок."
-        el "Нам нужны восемь человек, чтобы создать плей-офф таблицу."
+        $ meet('el','Electronik')
+        "And in the center of the whole flea market was some blond guy."
+        "I saw him last supper."
+        us "Cheeser, what if I lose? I can't lose!"
+        el "First off, I'm not «Cheeser», I'm «Electronik», second, no rematches or replays."
+        el "We need eight participants for the playoffs."
         hide el with dissolve
     show sh normal pioneer at fleft with dissolve
-    sh "Может, из младших отрядов наберём?"
+    sh "Maybe we'll recruit people from younger squads?"
     show sl normal pioneer at cright with dissolve
-    sl "Нет. Это отрядное мероприятие."
+    sl "No. This is our squad's activity."
     hide sl
     hide sh
     show mi smile pioneer at cright
     with dissolve
     if alt_day2_mi_met:
-        mi "А где наш новенький? Семён. Сеня?"
-        "Мику углядела меня и тут же сбежала с крыльца, подбежала ко мне."
+        mi "Where's our new guy? Semyon. Senya?"
+        "Miku spotted me and immediately ran off the porch, straight up to me."
         show el normal pioneer at left with dissolve
-        mi "Ну вот, я тебя так ищу, кричу, а ты не отзываешься."
+        mi "Come on, I'm looking for you, screaming here, and you're not responding."
         if ('music_club' in list_voyage_7dl):
-            mi "И в кружок не пришёл."
-            mi "Забыл или не захотел?"
-            me "Первое."
+            mi "And didn't come to the club either."
+            mi "Did you forget or did you not want to?"
+            me "Former."
             if (alt_day2_mi_kumuhimo == 1):
                 $ alt_day2_mi_kumuhimo = 2
                 if dr:
-                    dreamgirl "Больше ничего не забыл?"
-                    th "В смысле?"
-                    dreamgirl "Браслет отдай, маразматик."
-                me "Кстати говоря…"
-                "Достав из кармана плетёный браслет, я протянул его Мику."
-                me "Твоя пропажа."
-                me "Преспокойно себе лежала на пристани."
+                    dreamgirl "Aren't you forgetting anything else?"
+                    th "What do you mean?"
+                    dreamgirl "Return her bracelet, you senile fuck."
+                me "Speaking of which…"
+                "Taking a wicker bracelet out of my pocket, I handed it to Miku."
+                me "Your loss."
+                me "Has been calmly waiting you at the pier."
                 show mi happy pioneer with dspr
-                mi "Ой, Сенечка, ты его нашел!"
-                "Она сжала браслет так, что пальцы побелели."
-                "Похоже он очень дорог для неё."
+                mi "Oh, Senechka, you found it!"
+                "She squeezed the bracelet so that her fingers turned white."
+                "Looks like it matters a lot to her."
                 show mi smile pioneer with dspr
-                mi "Огромное тебе спасибо, Семён!"
-                "Внезапно выкрикнула она, при этом, традиционно для японцев, поклонившись."
-                "Я прям ощутил, как взгляды присутствующих скрестились на нас."
+                mi "Thank you so much, Semyon!"
+                "She suddenly shouted, at the same time, traditionally for the Japanese, bowing."
+                "I just felt how the eyes of those present crossed on us."
                 if dr:
-                    "Мне захотелось провалиться под землю."
-                    me "Прекрати."
-                    "Шикнул я."
-                    me "У нас так не принято!"
-                    "Хвала Рандому, Мику не стала меня смущать ещё больше и выпрямилась."
+                    "I wanted to sink into the ground."
+                    me "Stop."
+                    "I shushed."
+                    me "We don't do things here like that!"
+                    "Thank God Miku stopped embarassing me and straightened up."
                 else:
                     $ lp_mi += 1
-                    me "Пожалуйста."
-                    "Я улыбнулся."
-                    "Нравится мне эта девочка."
-                    me "Не теряй больше."
+                    me "You're welcome."
+                    "I smiled at her."
+                    "I just like her."
+                    me "Don't lose it."
                     show mi cry_smile pioneer with dspr
-                    mi "Не буду!"
+                    mi "I won't!"
             else:
-                mi "Не страшно, мы открыты каждый день. То есть, я. То есть, мы. Короче, не важно! Электроник! У нас тут один новый игрок!"
+                mi "Don't worry, we are open every day. I mean, I. I mean, we. In short, it doesn't matter! Electronik! We have one new player here!"
         else:
-            me "Да я…"
-            mi "Электроник! У нас тут один новый игрок!"
+            me "I just…"
+            mi "Electronik! We have a new player!"
     else:
-        mi "А вот и наш новенький! Я Мику, привет, а ты Семён, да?"
-        me "Да я…"
-        mi "Электроник! У нас тут один новый игрок!"
+        mi "And here's our newbie! I'm Miku, hi, and you must be Semyon, right?"
+        me "I just…"
+        mi "Electronik! We have a new player!"
     $ alt_day2_mi_met = True
     hide mi
     show el smile pioneer at left
     show us laugh pioneer
     with dissolve
     if alt_day2_us_escape:
-        us "То есть два!"
-        "Ну да, куда ж без Ульяны-то…"
+        us "You mean two!"
+        "Of course, where would we be without Ulyana…"
         show dv grin pioneer2 at fright with moveinright
-        dv "Три!"
-        dv "И сделайте мне посопротивляться."
-    el "Ну вот и славно. Восемь человек есть, турнир устроить можно!"
-    me "Турнир, значит."
-    me "Спасибо, что поинтересовались моим мнением."
+        dv "Three!"
+        dv "Count me in."
+    el "Well, that's nice. There are eight people, we can arrange a tournament!"
+    me "Tournament."
+    me "Thanks for asking for my opinion."
     hide dv with hpunch
     show us smile pioneer at cright
-    us "Не кисни." with vpunch
-    "Ткнула в спину Ульянка."
-    us "Будет весело, и я всех победю! Или побежу?"
-    me "Побегу."
-    "Подсказал я."
+    us "Don't be so sour." with vpunch
+    "Ulyana poked me in the back."
+    us "It'll be fun, and I'll win everyone! Or will I wonner?"
+    me "You will run."
+    "I prompted."
     show us normal pioneer at cright
     hide el
     with dissolve
-    me "И упаду."
-    us "Да ну тебя…"
+    me "And fall."
+    us "Oh you…"
     hide us with dissolve
-    "В этом лагере все такие милые. И все такие простые. Как двадцать пять копеек."
-    "Пионэр должен помогать товарищу, поэтому можно без зазрения совести припахать его к какому-то непонятному турниру и быть уверенным в том, что он не откажет. Взаимовыручка же!"
-    me "Объясните хоть, на что меня подписали."
+    "Everyone in this camp is so nice. And they are all so simple. Like twenty five cents."
+    "A pioneer must help a friend, so you can shamelessly plow him into some incomprehensible tournament and be sure that he will not refuse. Mutual assistance, damn it!"
+    me "At least explain what I got roped into."
     show sl smile pioneer with dissolve
-    sl "Карточный турнир."
-    "Обернулась Славя."
+    sl "A card tournament."
+    "Slavya turned around."
     if alt_day2_us_escape:
-        sl "Нам не хватало участников, поэтому ты, Алиса и Ульяна очень вовремя!"
+        sl "We did not have enough participants, so you, Alisa and Ulyana are very timely!"
     show mt normal pioneer at right with dissolve
-    mt "Карточный турнир?"
-    "Театр событий освятила своим появлением вожатая."
-    mt "А почему я не в курсе?"
+    mt "Card tournament?"
+    "The theater of events was consecrated by the appearance of the squad leader."
+    mt "Why was I not informed?"
     hide sl with dissolve
     show mt normal pioneer at right
     show el smile pioneer at left
     with dissolve
-    el "Потому что это отрядное мероприятие!"
-    "Гордо ответил Электроник."
-    el "Проведение и организацию я полностью беру на себя!"
-    mt "Ладно, вы всё организуете и проведёте. Сами? От меня ничего не потребуется?"
-    el "Карты! Четыре колоды, и мы знаем, что они у вас есть!"
+    el "Because this is a squad activity!"
+    "Proudly exclaimed Electronik."
+    el "I take full responsibility for conducting and organizing it!"
+    mt "Alright, you'll organize and run everything by yourselves. Yourselves? You don't need me for anything?"
+    el "Cards! Four decks and we know you have them!"
     show mt laugh  pioneer at right with dissolve
-    "Ольга расхохоталась."
-    mt "Вот чертенята. И откуда только узнали…"
-    mt "Но вы сами должны понимать: это азартные игры, а они запрещены на территории лагеря."
+    "Olga burst into laughter."
+    mt "You devils. How did you even know…"
+    mt "But you yourself must understand: this is gambling, and gambling is prohibited in the camp."
     show el normal pioneer at left with dspr
-    el "А это не азартная игра."
-    "С пылом объяснил Электроник."
-    el "Это, можно сказать, стратегия! Почти как шахматы! Я её сегодня придумал."
+    el "It's not gambling."
+    "Fervidly explained Electronik."
+    el "It's like a strategy! Almost like chess! I came up with it today."
     show mt smile  pioneer at right with dspr
-    mt "Ладно. Раз уж согласилась…"
-    "Она кивнула мне, подзывая, и протянула небольшой резной ключ."
-    mt "Это от моего шкафчика. Там найдёшь карты…"
+    mt "Alright. I did agree to this…"
+    "She nodded to me, beckoning, and held out a small carved key."
+    mt "This is from my locker. There you will find cards…"
     show mt angry  pioneer at right with dissolve
-    "Она на секунду сделала самое злобное лицо."
+    "She made the most pissed off face she could for a second."
     show mt normal  pioneer at right with dspr
-    mt "Под вашу ответственность!"
-    "Я покрутил ключ в пальцах и спрятал его в карман шорт…"
-    "А потом медленно-медленно поднял голову…"
-    "До меня вдруг дошло, что мне сейчас придётся искать что-то в вещах — личных вещах! — девушки, которая лишь чуть-чуть младше меня настоящего."
+    mt "Under your responsibility!"
+    "I twisted the key in my fingers and hid it in the pocket of my shorts…"
+    "And then slowly reared my head…"
+    "It suddenly dawned on me that I now have to look for something in things - personal things! - a girl who is only slightly younger than the real me."
     show mt smile pioneer at right with dspr
-    "Удивительно, но Ольга просто спокойно улыбнулась мне."
-    th "Кажется, именно это она и имела в виду, когда говорила, что ни она меня, ни я её стесняться не будем. Не маленькие."
-    "Но то ли румянец, то ли мой разгильдяйский вид не добавили мне веса в её глазах, потому что она отвернулась и вполголоса произнесла:"
-    mt "Или, может, Славе это поручить…"
-    th "Угу, главный психолух-поручатор лагеря."
-    "И тут мне стало так обидно, так за живое задело, что я не удержался, и сказал:"
+    "Surprisingly, Olga just calmly smiled at me."
+    th "It seems that this is what she meant when she said that neither she nor I would be embarrassed of her. We aren't children after all."
+    "But either the blush or my slovenly appearance did not add weight to me in her eyes, because she turned away and said in an undertone:"
+    mt "Or should I entrust this to Slavya…"
+    th "Uh-huh, of course."
+    "And then I felt so offended, so touched, that I could not resist and said:"
     menu:
-        "Сам справлюсь":
-            me "Что мне, и поручить ничего нельзя, что ли…"
+        "I'll do it myself":
+            me "What, you can't entrust anything to me…"
             if alt_day2_us_escape:
-                mt "Да, нельзя! Мы ещё обсудим с тобой твои сегодняшние подвиги."
-                "Я покраснел, но всё же нашёл в себе силы продолжить спор."
-                me "А это попрошу к вопросу не приплетать. Речь о картах."
+                mt "Yes, I can't! We'll discuss today's exploits later."
+                "I blushed, but still found the strength to continue the argument."
+                me "And I ask you not to drag this incident into this unrelated question. We're talking about cards."
                 show mt smile  pioneer at right
-                mt "Хорошо. Вот твой шанс. Используй его."
+                mt "Alright. Now's your chance. Use it."
             else:
-                "И только тогда я сообразил, что снова, теперь уже по собственной глупости, оказался во что-то втянут…"
+                "And only then did I realize that again, now through my own stupidity, I got involved in something…"
             hide el
             hide mt
             with dissolve
-            dreamgirl "Ну что, всё всем доказал, умник? Тебя снова припахали за здорово живёшь. Лох — это диагноз."
-        "Мы можем вместе сходить…":
-            me "Мы вообще вместе с ней сходить можем, если вы мне так не доверяете."
+            dreamgirl "What, proved everything to everyone, smartass? Roped in again for no real reason. Goof is a diagnosis."
+        "We could go together…":
+            me "Actually, we can go with her if you don’t trust me that much."
             $ lp_sl += 1
             $ karma += 10
-            "И тут меня опять толкнуло — да меня же опять что-то заставили сделать против моей воли!"
+            "And then I mentally slapped myself - wait, I was forced to do something against my will, again!"
             hide el
             show sl laugh pioneer at left
             with dissolve
-            th "Да ещё и обставили это так, что я сам помчался это делать. Ууууу, психолухи чёртовы!"
+            th "Moreover, they arranged it in such a way that I rushed to do it myself. Wow, you fucking psychos!"
             show mt laugh pioneer with dspr
-            "Кажется, эти мысли были достаточно красноречиво написаны на моём лбу, так как Ольга рассмеялась и кивнула Славе:"
-            mt "Проводишь?"
-            sl "Конечно, Ольга Дмитриевна."
-            "Если бы у Слави были каблуки, ох и залихватски бы она ими щёлкнула сейчас!"
+            "It seems that these thoughts were quite eloquently written on my forehead, as Olga laughed and nodded to Slavya:"
+            mt "Will you escort him?"
+            sl "Of course, Olga Dmitrievna."
+            "If Slavya had heels, oh, how she would flick them in a dashing way now!"
             hide mt
             hide sl
             $ alt_day2_walk = 2
@@ -5222,40 +5225,40 @@ label alt_day2_tournament:
 label alt_day2_walk_alone:
     scene bg ext_square_day with dissolve
     play music music_list["afterword"] fadein 1
-    "Понял Антоха, что поступил плохо, и то, что развела его колдунья как лоха…"
-    "Лейтмотив последних нескольких дней в этом лагере."
-    "А потом мы не понимаем — а почему это в СССР была такая сильная педагогическая школа?"
-    "А почему бы ей и не быть, если самая обычная вожатая вертит своими пионерами как ей заблагорассудится!"
-    "Так что я решил посмотреть, что же из этой затеи получится."
+    "Antokha understood that he had acted unwise, and that the sorceress wrapped him like a sucker…"
+    "Keynote of the last few days in this camp."
+    "And then we don’t understand - why was it in the USSR that there was such a strong pedagogical school?"
+    "And why shouldn't she be, if the most ordinary squad leader twirls her pioneers as she pleases!"
+    "So I decided to see what would come of this venture."
     scene bg ext_house_of_mt_day with dissolve
     if herc:
-        "Опыт игры в карты у меня был недюжинный."
-        "Хотя всем прочим вариантам я предпочитал пулю да холдемы всех мастей."
-        "Но, всё-таки, я предпочитаю делать это по любви, а не по приказанию вожатой!"
-        "Интересно, она в курсе того, что я вижу её игру?"
-        th "Судя по довольному лицу, в курсе. Более того, наслаждается игрой в театре одного зрителя."
-        "Ещё со вчера её поведение здорово ставило меня в тупик — она поселяет меня рядом с собой, несмотря на то, что домики есть. Совершенно не стесняется, живёт рядом, спит рядом, и, если бы я был немного менее соней, то смог бы подглядеть бесплатный показ стриптиза."
-        th "Она ведёт себя так…{w} Будто мы очень-очень давно знакомы."
-        th "И знакомство наше не шапочное и не деловое. А будто мы были ближе, чем могут себе позволить быть пионер и вожатая."
-        "Или, может, я ей кого-то напоминаю?"
-        th "В любом случае, это ещё одна загадка, ответ на которую придётся искать самостоятельно."
+        "I had a lot of experience playing cards."
+        "Although I preferred bullet and all kinds of holdem to all other options."
+        "But, nevertheless, I prefer to do it out of love, and not at the order of the squad leader!"
+        "I wonder, does she know that I can see through her?"
+        th "Judging by the contented face, she knows. Moreover, he enjoys playing in the theater of one spectator."
+        "Since yesterday, her behavior has puzzled me greatly - she settles me next to her, despite the fact that there are houses. She is not shy at all, lives nearby, sleeps nearby, and if I were a little less sleepy, I could peep a free striptease show."
+        th "She acts as if…{w} As if we knew each other for a long time."
+        th "It's as if we're closer than a regular pioneer and a squad leader can afford to be."
+        "Maybe I remind her of someone?"
+        th "In any case, this is another mystery, the answer to which I will have to find on my own."
         scene bg black with fade
     else:
-        "Помнится, в лагере мы тоже здорово любили угробить пару-тройку часиков за игрой в «Тысячу»."
-        "Один парень сделал на колоде крап и за счёт этого постоянно выигрывал."
-        "Ох и метелили его, когда поймали…"
-        th "Вряд ли пионеры станут меня бить, но почему бы не воспользоваться шансом."
-        th "Тем более, меня опять втянули без моего согласия."
-        "Не сказать чтобы у меня был обширный опыт в этой сфере."
-        "Однако количество пойманных на горячем позволяет сделать некоторые выводы и даже освоить пару техник."
+        "I remember that in the camp we also loved to spend a couple of hours playing «Thousand»."
+        "One guy marked the deck and due to this he constantly won."
+        "Oh how the boys roughed him up when they found that out…"
+        th "It is unlikely that the pioneers will beat me, but why not take a chance."
+        th "Moreover, I was again dragged in without my consent."
+        "I wouldn't say that I have extensive experience in this area..."
+        "However, the number of those caught hot allowed me to draw some conclusions and even master a couple of techniques."
         menu:
-            "Пометить карты":
+            "Mark the cards":
                 $ karma -= 30
-                th "Главное, сделать это незаметно."
-                "Усмехнувшись, я подбросил на ладони ключ от шкафчика и зашёл в домик."
+                th "Just don't get caught."
+                "Smiling, I threw the key to the locker in my palm and went into the house."
                 $ alt_day2_walk = 1
-            "Не помечать":
-                "Впрочем, в моём случае это совершенно необязательно."
+            "Don't mark the cards":
+                "Although in my case it's completely unnecessary."
                 $ karma += 10
     stop music fadeout 3
     stop ambience fadeout 6
@@ -5267,140 +5270,140 @@ label alt_day2_walk_sl:
     show sl normal pioneer
     with dissolve
     play music music_list["afterword"] fadein 1
-    "Через пять минут мы уже шли через залитую солнцем площадь."
-    "Жар немного спал, и в тени деревьев было очень даже приятно."
-    "Славя молчала, будто уйдя в свои мысли, а я сам не знал, с чего начать беседу."
-    "Поэтому некоторое время мы шли молча."
-    "С пляжа донёсся детский многоголосый смех, и я с сожалением посмотрел в ту сторону."
-    "Кажется, Славя угадала ход моих мыслей:"
+    "Five minutes later we were walking through the sun-drenched square."
+    "The heat subsided a little, and it was very pleasant in the shade of the trees."
+    "Slavya was silent, as if lost in her thoughts, and I myself did not know where to start the conversation."
+    "So for a while we walked in silence."
+    "Children's many-voiced laughter came from the beach, and I looked in that direction with regret."
+    "She seemed to guess where my thoughts were headed:"
     show sl smile pioneer with dissolve
-    sl "Собирался сбежать сегодня на пляж?"
-    me "Почему бы и нет?"
+    sl "Were you going to run off there today?"
+    me "Why not?"
     if ('sports' in list_slavya_7dl) or (counter_sl_7dl < 2):
-        me "Тем более, что твоё приглашение ещё в силе, и…"
+        me "Especially if your invitation is still valid, and…"
         show sl laugh pioneer with dspr
-        sl "В силе, конечно."
-        "Улыбнулась Славя."
-    sl "Но не в середине же дня. Туда и так постоянно все рвутся, Ольге Дмитриевне приходится там постоянно дежурить."
+        sl "It's valid, of course."
+        "Slavya smiled."
+    sl "But not in the middle of the day. Everyone is constantly rushing there anyway, Olga Dmitrievna has to constantly be on duty there."
     show sl normal pioneer with dspr
     if ('beach' in list_voyage_7dl):
-        th "Ага. {w}Да я видел."
+        th "Uh-huh. {w}Seen that, been there."
     else:
-        "Так вот откуда она постоянно возвращается такая цветущая!"
-    me "Без продыха, прям."
-    sl "Да! Ей и так приходится тяжело, и никто не помогает, а я…"
-    "Она вдруг оборвала себя на полуслове. И в этот раз я абсолютно ничего не понял. Жаль."
-    "Какое-то время мы двигались бок о бок молча, но лёд уже был сломан, и некой неловкости в молчании уже не было."
+        "So that's where she constantly comes back so blooming!"
+    me "No rest for the wicked, huh."
+    sl "Yeah! She has a hard time already, and no one helps, and I…"
+    "She suddenly cut herself off mid-sentence. And this time I understood absolutely nothing. What a pity."
+    "For a while we moved side by side in silence, but the ice was already broken, and there was no longer any awkwardness in silence."
     show sl serious pioneer
-    me "А что это такое — быть помощницей вожатой, Славь?"
-    sl "Тебя подробности интересуют?"
-    me "Да. {w}Нет. {w}Не знаю. {w}Кем надо быть, чтобы стать помощницей и получать от этого удовольствие?"
-    me "Это как взять энергию Ульяны — и пустить её на добрые дела?"
+    me "How's it like - to be squad leader's assistant?"
+    sl "You want the details?"
+    me "Yeah. {w}No. {w}Don't know. {w}Who do you have to be to be a helper and enjoy it?"
+    me "It's like taking Ulyana's energy and using it for good deeds?"
     show sl laugh pioneer
-    "Славя рассмеялась моей метафоре."
-    sl "Приблизительно, да. Но важно ещё и просто любить помогать людям."
-    sl "Я вот помогаю вожатой, веду зарядки, иногда линейки, вожусь с малышами, занимаюсь с ними спортом…"
+    "She laughed at my metaphor."
+    sl "Kind of, yes. But it's also important to just love helping people."
+    sl "I’m helping the squad leader, doing exercises, sometimes lead the lineups, fiddling with the kids, playing sports with them…"
     show sl smile pioneer with dspr
-    sl "Они такие забавные."
-    "Она снова улыбнулась."
+    sl "They're so funny."
+    "She smiled again."
     if not herc:
         show sl normal pioneer with dspr
-        me "Ты прям готовый кадр для МЧС."
-        "Автоматически среагировал я."
-        sl "МЧС?"
-        "Я прикинул год создания министерства и понял, что несколько промахнулся с оценкой."
-        me "Чрезвычайники, понимаешь?"
-        "Я спешил подобрать слова-замены."
-        me "Не знаю, ДОСААФ там… Пожарники, спасатели, и так далее…"
+        me "You are a ready-made frame for the Ministry of Emergencies."
+        "I automatically reacted."
+        sl "Ministry of Emergencies?"
+        "I estimated the year the ministry was created and realized that I had missed the mark somewhat."
+        me "Emergency response, you know?"
+        "I was in a hurry to figure out replacement words."
+        me "I don't know, DOSAAF… Firefighters, rescuers, like that…"
         show sl smile pioneer with dspr
-        sl "Ого!"
-        "Глаза девушки загорелись энтузиазмом. Кажется, я только что лишил СССР одного потенциального педагога. Или врача."
-        sl "А девушек туда берут?"
-        me "Почему нет? Служба как служба, полугражданская. Только там же — на всю жизнь. Понимаешь?"
+        sl "Whoa!"
+        "The girl's eyes lit up with enthusiasm. It seems that I have just deprived the USSR of one potential teacher. Or a doctor."
+        sl "Do they take girls?"
+        me "Why not? Service as a service, semi-civilian. Except you're there for life. Understand?"
         show sl smile2 pioneer with dissolve
-        sl "Всю жизнь заниматься тем, что мне нравится — это ли не мечта?"
-        "Она рассмеялась и, пританцовывая, обернулась круг себя."
-        sl "Я же раньше думала стать краеведом, экологом, в музее работать или в школу пойти учителем. Помогать людям."
-        sl "А тут — спасатели. Значит, спасать человеческие жизни?"
-        me "Да."
-        "Кажется, кого-то сильно увлекло, и надо срочно сажать его на грешную землю."
-        me "Но мы вообще за картами шли, помнишь?"
+        sl "All my life doing what I like - is it not a dream?"
+        "She laughed and, dancing, turned around herself."
+        sl "I used to think of becoming a local historian, ecologist, working in a museum or going to school as a teacher. To help people."
+        sl "And here you tell me about rescuers. Helping people, huh?"
+        me "Yeah."
+        "It seems that someone was very carried away, and we urgently need to put them back on the sinful earth."
+        me "But we were going to fetch the cards, remember?"
         scene bg ext_house_of_mt_day with dissolve
-        "Крейсерская скорость Слави отличалась от скорости звука крайне незначительно — так что перемещения по лагерю обычно занимали считанные минуты."
-        "Я и сам не заметил, как мы добрались до домика."
+        "Slavya's cruising speed differed very little from the speed of sound - so moving around the camp usually took a matter of minutes."
+        "I myself did not notice how we got to the house."
         show sl normal pioneer with dspr
-        sl "Я пойду, возьму карты?"
-        "Дождавшись кивка, Славя скрылась в домике."
+        sl "I'll go get them?"
+        "Receiving a nod, Slavya disappeared into the house."
         play sound sfx_open_dooor_campus_1
         hide sl with dissolve
-        "А я остался в одиночестве — и уж не знаю, к сожалению, к счастью ли, а ненадолго."
-        "Я и заскучать не успел, как девушка вновь показалась на крыльце."
+        "And I was left alone - and I don’t know, unfortunately, fortunately, but not for long."
+        "I did not have time to get bored, as the girl again appeared on the porch."
         show sl smile pioneer with dspr
-        sl "Я готова!"
-        me "Тогда шагом марш."
-        sl "Мы обязательно вернёмся к этой беседе, слышишь? Ты должен мне всё рассказать."
-        "Я пожал плечами."
-        me "Должен? Серьёзно?"
-        sl "Что?"
-        me "Проехали."
+        sl "I'm ready!"
+        me "Then let's go."
+        sl "We will definitely return to this conversation, you hear? You must tell me everything."
+        "I shrugged."
+        me "I must? Really?"
+        sl "What?"
+        me "Whatever."
         hide sl with dissolve
     else:
-        "Я и сам расклеился. Куда-то делась настороженность, инертность в отношении людей."
-        "Не знаю, почему."
-        "Может, из-за того, что я не до конца верил в их реальность? Это как будто сон."
-        "А во сне нам всё даётся легче и быстрее, без глупых правил и ограничений."
-        me "Как я и говорил — берём энергию Ульяны и пускаем на добрые дела."
-        me "В детстве ты, наверное, была очень деятельной девочкой."
+        "I cracked. Alertness, inertia towards people has gone somewhere."
+        "Dunno why."
+        "Maybe because I did not fully believe in their reality? It's like a dream."
+        "And in a dream, everything comes to us easier and faster, without stupid rules and restrictions."
+        me "As I said, we take the energy of Ulyana and let her do good deeds."
+        me "As a child, you must have been a very active girl.."
         show sl laugh pioneer
-        sl "Конечно! Недели не проходило, чтобы со мной что-нибудь не случилось. Это сейчас у меня нет времени заниматься глупостями."
+        sl "Of course! Not a week went by that something didn't happen to me. It's that I don't have time to do stupid things right now."
         show sl normal pioneer at center   with dspr
-        "Она вдруг разом спрятала улыбку и посмотрела мне в глаза."
-        sl "А что с тобой?"
-        me "Со мной?"
-        sl "Да. Что ты за птица, Семён?"
-        me "Пингвин. Немного одинокий, но крайне гордый."
+        "She suddenly hid her smile and looked into my eyes."
+        sl "What about you?"
+        me "About me?"
+        sl "Yeah. What kind of a bird are you, Semyon?"
+        me "Penguin. A little lonely, but extremely proud."
         show sl smile pioneer with dissolve
-        sl "Ты, кажется, совершенно не любишь людей."
-        sl "Ты их терпишь."
-        me "В целом… Верно."
-        sl "А почему?"
-        "Вот как ответить тебе, милая моя несмышлёная девочка?"
-        "Что я не верю в людей потому, что они не оправдали доверия?"
-        "Что я не люблю их потому, что на десять человек достаточно подлости и грязи, чтобы устроить ещё один потоп и не дать нам второго Ноя?"
-        "Или рассказать о жизни ребёнка, смотрящего на мир такими же, как у тебя, распахнутыми глазами, с душой, куда, лишь только пришло время, наплевали и натоптали все, кто только мог?"
-        "А может, поведать о том, как тускнели цвета жизни и искорки в глазах людей?"
-        "Я принадлежу к поколению, пережившему апокалипсис. Тихий, спокойный апокалипсис, происшедший в сердцах людей, когда они отвернули взгляд от неба в сторону голубых экранов."
-        "И я знаю, что будет с вами, с каждым отдельно взятым мальчиком, хотящим стать нужным стране, с каждой отдельно взятой девочкой, которая высшим благом почитает помощь другим."
-        "В отличие от моего, сорнякового, поколения, вы — поколение мёртворожденное."
-        "Вас ждёт ад."
-        "И именно поэтому я не имею права отбирать у тебя твоё детство и рот свой открывать здесь с откровениями."
-        me "Потому что… Трудно объяснить в нескольких словах. Давай просто скажем…{w} Что люди сделали всё от них зависящее, чтобы утратить остатки моего пиетета."
+        sl "The way it looks to me, you don't really like people."
+        sl "You merely tolerate them."
+        me "Honestly… True."
+        sl "But why?"
+        "And how do I answer you, my dear unintelligent girl?"
+        "That I don't believe in people because they didn't live up to my trust?"
+        "That I don't like them because ten people have enough meanness and dirt to make another flood without giving us the second Noah?"
+        "Or tell about the life of a child who looks at the world with the same eyes as yours, with a soul where, as soon as the time has come, everyone who could only spat and trampled?"
+        "Or maybe tell about how the colors of life and sparks in the eyes of people faded?"
+        "I belong to the generation that survived the apocalypse. A quiet, calm apocalypse that happened in the hearts of people when they turned their eyes away from the sky towards the blue screens."
+        "And I know what will happen to you, to every single boy who wants to be needed by the country, to every single girl who considers helping others to be the highest good."
+        "Unlike my weedy generation, you are a stillborn generation."
+        "Hell awaits you."
+        "And that is why I have no right to take away your childhood from you and open my mouth here with revelations."
+        me "Because… It's hard to explain. Let's just say…{w} That people did everything in their power to lose the remnants of my reverence."
         show sl sad pioneer at center with dspr
-        sl "А как же я?"
-        me "Ты?"
-        sl "Ты общаешься со мной."
-        me "Неправда. Это не я общаюсь с тобой. Это ты общаешься со мной."
-        me "Там, где я живу, у нас едва бы выдался шанс перемолвиться словом."
-        me "Потому что такая девушка, как ты… Никогда не обратит внимания на такого молодого человека, как я. Пошло и банально."
+        sl "What about me?"
+        me "You?"
+        sl "You're talking to me."
+        me "Not true. It's not me talking to you. It's you talking to me."
+        me "Where I live, we barely would get a chance to have a word."
+        me "Because a girl like you would… never pay attention to a young man like me. It's vulgar and banal."
         show sl serious pioneer at center with dspr
-        sl "Но ведь это неправда!"
-        "Она упрямо тряхнула волосами."
-        sl "Ты интересный парень, Семён, и…"
-        me "…и принадлежу к кругу, где люди, подобные тебе, не существуют априори."
-        me "Славя."
-        "Я вздохнул."
-        me "Просто поверь мне на слово."
-        me "Ты прекрасный человек, и я искренне рад, что ты есть."
+        sl "But that's simply not true!"
+        "She shook her hair stubbornly."
+        sl "You are an interesting guy, Semyon, and…"
+        me "…and I belong to a circle where people like you do not exist by default."
+        me "Slavya."
+        "I sighed."
+        me "Just trust me."
+        me "You are a wonderful person and I am sincerely glad that you exist.."
         show sl surprise pioneer at center with dspr
-        me "Проблема лишь в том, что подобные тебе — редкость даже в этом вашем идеальном коммунистическом мирке. Я никогда и никого не встречал подобного тебе."
-        "Всегда уверенная в себе девочка сейчас выглядела так, будто ей кто-то с размаха ударил под дых."
-        sl "То, что ты говоришь, Семён…"
-        sl "…неправильно и гадко. Мы все пионеры, и мы все всегда поможем и поддержим."
-        me "Не «мы», Славя."
-        th "Нет никаких «мы», дурочка."
-        me "Давай закроем эту тему. Она мне неприятна."
-        "Славя кивнула и послушно смолкла."
-        "Похоже, расстроилась."
+        me "The only problem is that people like you are rare even in this ideal communist world of yours. I've never met anyone like you."
+        "The always self-confident girl now looked like someone had hit her in the stomach full-swing."
+        sl "What you're saying, Semyon…"
+        sl "…is wrong and disgusting. We are pioneers, we will always support each other."
+        me "Not «we», Slavya."
+        th "There can be no «we», idiot."
+        me "Let's stop talking. This topic is unpleasant to me."
+        "Slavya nodded and obediently fell silent."
+        "Seems like she got disappointed."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -5410,188 +5413,188 @@ label alt_day2_ultim:
     play ambience ambience_camp_center_day fadein 3
     scene bg ext_dining_hall_near_day with dissolve
     if alt_day2_walk != 2:
-        "Я возвращался с картами к столовой, где должен был пройти турнир."
+        "I returned with the cards to the canteen, where the tournament was supposed to take place."
     else:
-        "Мы возвращались с картами к столовой, где должен был пройти турнир."
+        "We returned with the cards to the canteen, where the tournament was supposed to take place."
     show dv normal pioneer2 with dissolve
-    "А на крыльце уже скучала Алиса."
+    "And on the porch, Alisa was clearly looking already bored."
     if alt_day2_walk != 2:
-        "Я толкнул дверь и…"
-        "Упёрся грудью прямо в выставленную поперёк прохода руку!"
+        "I pushed the door and…"
+        "Slammed into an arm, blocking my path!"
     else:
-        "Славя с отсутствующим видом прошла мимо неё — а мне почему-то на секунду показалось, что между ними проскочила некая искра."
-        "В воздухе ощутимо запахло неприятностями…"
-        "Я попытался проскользнуть вслед за Славей, но наткнулся на выставленную руку Алисы."
+        "Slavya walked past her with an absent look - and for some reason it seemed to me for a second that a certain spark had slipped between them."
+        "There was a strong smell of danger in the air…"
+        "I tried to slip after Slavya, but I stumbled upon Alisa's outstretched hand."
     show dv angry pioneer2 with dspr
     play music music_list["always_ready"] fadein 3
-    dv "Куда это мы так торопимся?"
-    "Ядовито поинтересовалась Алиса."
+    dv "Where are we hurrying?"
+    "She inquired venomously."
     play sound sfx_close_door_1
-    "Закрывшаяся дверь отсекла всех, оставив лишь меня — против неё."
+    "The closed door cut off everyone, leaving only me - against it."
     if alt_day2_us_escape:
-        dv "Наигрались с детишками, переключились на детишек постарше? Не пора ли вылезать из песочницы?"
-        me "Алиса…"
+        dv "Played enough with the kids, switched to older kids? Isn't it time to get out of the sandbox?"
+        me "Alisa…"
     else:
-        me "Что тебе нужно, Алиса?"
-    "Устало вздохнул я, не пытаясь пройти дальше."
-    "Мне бы и не удалось — она встала между мной и дверью, а в её тоне явно проявились угрожающие нотки."
+        me "Alisa, what do you want?"
+    "I sighed wearily, not trying to go further."
+    "I would not have succeeded anyways - she stood between me and the door, and menacing notes clearly appeared in her tone."
     if alt_day2_walk == 2:
-        dv "Бежишь из одной песочницы в другую. {w}Помогаешь, к активистке подмазываешься…"
-    dv "Торопишься, значит…"
-    "Злость на её лице читалась невооружённым глазом."
-    dv "Карты приказали притащить, ты и поскакал!"
+        dv "Running from one sandbox to another. {w}Helping, greasing up our activist…"
+    dv "Hurrying, huh…"
+    "The anger on her face was visible to the naked eye."
+    dv "They said to bring the cards and off you galloped!"
     if loki:
-        me "А не надо было? Ты сама хотела, красавица? Так сказала бы, мне для тебя не жалко. Давай я сейчас отнесу их обратно, а ты потом сама за ними сходишь?"
+        me "I didn't need to? You yourself wanted, beautiful? Should've said so, I wouldn't be offended. Let me take them back now, and then you yourself can go for them?"
     else:
-        me "Тебе-то какая забота?"
-        me "Во-первых, моего мнения никто не спрашивал, меня — как его — назначили. Ответственным за доставку карт."
-        me "Во-вторых, ещё раз — тебе-то какая разница?"
-    th "Вот пристала-то. Ревнует, что ли?"
+        me "What's your problem?"
+        me "First, nobody even asked for my opinion, I got - what do you call it - appointed. Responsible for card delivery."
+        me "Second, again, why do you even care?"
+    th "She won't get off. Is she jealous or something?"
     show dv normal pioneer2 with dissolve
-    dv "Прямо пай-мальчик. Наверное, и карты-то в руках никогда не держал."
-    "Ну тут не надо быть семи пядей во лбу, чтобы догадаться — она меня на что-то развести пытается."
-    "Только вот на что? Сдать партию?"
+    dv "Look at this perfect boy. You probably never even held cards in your hands."
+    "Well you don't have to be a genius to figure this one out - she definitely wants something from me."
+    "But what?"
     if loki:
-        me "Не, никогда. Но я знаю, мне говорили — ходить с бубей!"
-        dv "Тьфу. Прекрати паясничать!"
-        me "Но ведь ты первая начала! Ты меня тормознула, начала обзываться и брать на понт. Напрасно."
+        me "No, never. But I know they told me to start with diamonds!"
+        dv "Ugh. Stop clowning!"
+        me "But you were the first to start! You slowed me down, started calling names and taking on a show off. How vain."
         if (alt_day2_convoy == 'dv'):
-            me "Если ты хочешь меня на ответное свидание позвать, то могла бы сказать и так."
-            me "Итак, где и когда?"
+            me "If you wanted to call me on a return date, you could've just said so."
+            me "So, where and when?"
             show dv shy pioneer2 with dspr
     else:
-        me "Предположим, держал."
+        me "But I did."
         show dv smile pioneer2 with dspr
-        "Я лениво осклабился."
-        me "И не меньше твоего, можешь быть уверена."
-        dv "Ты?"
-        "Она, казалось, не поверила своим ушам."
-        dv "Может, ты и выиграть настроился?"
-        me "Да уж будь уверена, раскатаю как первоклашек. Встретимся в финале."
+        "I grinned lazily."
+        me "And definitely longer than you, rest assured."
+        dv "You?"
+        "She didn't seem to believe her ears."
+        dv "Maybe you also think you're gonna win?"
+        me "Be sure, I'll flatten all of you like first-graders. See you in the finals."
     show dv smile pioneer2 with dspr
-    "И если до этого Алиса просто играла, пытаясь прощупать меня на предмет слабины, то сейчас, кажется, она увязла по полной!"
-    "Все эти многозначительные подмигивания, подёргивания уголков глаз…"
+    "And if before that Alisa was just playing, trying to probe me for weakness, now it seems that she is bogged down to the full!"
+    "All those meaningful winks, twitching of the corners of the eyes…"
     show dv guilty pioneer2 with dspr
-    "Я всё ещё корил себя за свою несдержанность, а она вдруг перестала смеяться и спросила, хитро прищурившись и даже закусив в предвкушении чего-то одной ей известного губу:"
-    dv "А хочешь пари?"
-    "Выпалила она, глядя исподлобья."
+    "I was still reproaching myself for my intemperance, but she suddenly stopped laughing and asked, narrowing her eyes cunningly and even biting her lip in anticipation of something known to her alone:"
+    dv "Wanna bet?"
+    "She blurted out, looking sullenly."
     show dv smile pioneer2 with dspr
-    me "Условия?"
-    "Я откровенно наслаждался открывающейся картиной."
-    "После того, как азарт смыл с неё всё наносное, под коркой хамства, чёрствости и зла оказалась очень приятная озорная девчонка, чем-то напоминающая Ульянку."
-    th "Наверное, на этой почве они и спелись!"
-    "Но мы о пари…"
-    dv "Я спорю, что ты проиграешь!"
-    th "Неплохое начало. Интересно, что поставит? Какой-нибудь скандальный фант?"
-    me "Хм… Ну а я спорю, что проиграешь ты."
-    "Я зевнул."
-    me "Неинтересно. Какие ставки?"
-    dv "Ставки… Если ты выиграешь, я от тебя отстану! И не буду больше доставать!"
+    me "Conditions?"
+    "I frankly enjoyed the sight."
+    "After the excitement washed away everything superficial from her, under the crust of rudeness, callousness and evil, there was a very pleasant mischievous girl, somewhat reminiscent of Ulyanka."
+    th "Well, that explains how they get along!"
+    "But about the bet…"
+    dv "I bet on you losing!"
+    th "Not a bad start. I wonder what she'll bet? Some scandalous rumor?"
+    me "Hm… Well, I bet on you losing too."
+    "I yawned."
+    me "Not interesting. What are our rates?"
+    dv "Our rates… If you win, I'll get off your case! And I won't ever bother you!"
     if loki and (alt_day2_convoy == 'dv'):
-        me "Эй! Мы так не договаривались. Я не могу принять твою ставку!"
-        dv "Что? Почему?"
-        me "Ответ очевиден:"
-        "Расхохотался я."
-        me "Потому что я {b}не хочу{/b} , чтобы ты от меня отставала!"
-        dv "Ты хоть к чему-нибудь можешь отнестись серьёзно?!"
-        me "Ладно, скажем, что я принял твою ставку. А если проиграю?"
+        me "Hey! We didn't agree on that. I can't take your bet!"
+        dv "What? Why?"
+        me "The answer is obvious:"
+        "I burst out into laughter."
+        me "Because I {b}don't want{/b} you to get off me!"
+        dv "Is there anything you can take seriously?!"
+        me "Okay, let's say I accepted your bet. And if I lose?"
     else:
-        me "Как будто это когда-либо мне мешало… Но продолжим."
-        me "Что будет, если проиграю я?"
+        me "As if that ever bothered me… But let's continue."
+        me "What happens if I lose?"
     if alt_day2_walk == 1:
-        th "Разве что у неё собственный крап."
-    "Похоже, насчёт того, что игра новая, Электроник покривил душой."
+        th "Only if she has her own markings."
+    "It seems that Electronik wasn't exactly honest about the game being new."
     if herc or loki:
-        "Азарт Двачевской оказался очень заразительной штукой — не прошло ещё и минуты, а я был готов поставить что угодно! Хвала рандому, Алиса уберегла меня от глупостей, выдав своё условие."
+        "The excitement of Dvachevskaya turned out to be a very contagious thing - not even a minute had passed, and I was ready to bet anything! Thank God, Alisa saved me from stupid things by issuing her condition."
     else:
-        "А Алиса уже переходила к своим условиям."
+        "And Alisa was already stating her conditions."
     show dv smile pioneer2 with dspr
-    dv "Если ты проиграешь, тогда я…"
-    "Она призадумалась, снова прикусив губу и не переставая при этом улыбаться, и выпалила:"
-    dv "Я скажу всем, что ты подглядывал за мной, пока я переодевалась… И…"
+    dv "If you lose, then I…"
+    "She thought about it, biting her lip again, smiling all the while, and blurted out:"
+    dv "I'll tell everyone that you spied on me while I was changing… And…"
     show dv laugh pioneer2
-    "Вот тут она от души расхохоталась."
-    dv "…лапал!"
+    "This is where she burst out laughing."
+    dv "…grabbed me in places!"
     if (alt_day2_convoy == 'sl') and ('medic' in list_voyage_7dl) and alt_day1_us_shotted and (not alt_day2_us_dubstep):
-        me "А что с твоей «стрелой»?"
-        dv "Стрелой?"
-        me "Ага. Ты мне всыпать хотела за то, что твою мелкую подружку подстрелил."
-        dv "Забудь об этом."
+        me "What about the meeting later on?"
+        dv "Meeting?"
+        me "Yeah. You wanted to beat me up because I sniped your little girlfriend."
+        dv "Forget about it."
         if alt_day2_us_escape:
-            dv "Тем более, что… не важно, короче."
-        "Отмахнулась она."
-        dv "Сначала спор! Итак! Или мы спорим, или я всем расскажу…"
+            dv "Especially since… eh, don't bother."
+        "She waived me off."
+        dv "Bet comes first! So! Either we bet, or I'll tell everyone…"
     if loki or herc:
-        "Она победоносно взглянула на меня, а меня душил точно такой же хохот."
-        me "Прям всем-всем?"
-        "Отсмеявшись, спросил я."
-        dv "Всем!"
-        "Она казалась довольной своей задумкой."
+        "She looked at me triumphantly, and I was choked with exactly the same laughter."
+        me "Literally everyone?"
+        "Laughing, I asked."
+        dv "Everyone!"
+        "She seemed very pleased with herself."
         show dv smile pioneer2
-        me "Извини, если что не так, но ты собираешься на линейке это объявить или ловить каждого пионера в лагере здесь на площади и сообщать об этом лично? Мол, так и так, Семён за мной подглядывал и лапал."
-        dv "Я что-нибудь придумаю."
-        "Хитро улыбнулась Алиса."
+        me "Sorry if something is wrong, but are you going to announce it on the lineup or catch every pioneer in the camp here on the square and report it personally? Like, so and so, Semyon spied and grabbed me."
+        dv "I'll think of something."
+        "She wryly smiled."
         menu:
-            "Поспорить":
+            "Bet!":
                 $ lp_dv += 1
                 $ lp_un -= 2
                 $ alt_day2_dv_ultim = 1
                 show un cry pioneer at right
                 show un normal pioneer at right
                 with dissolve
-                "Я уже было собирался ответить, как у меня из-за спины бесшумно вынырнула Лена."
+                "I was about to answer, when Lena silently emerged from behind me."
                 show dv angry pioneer2 at center with dspr
-                dv "Чё надо?!"
+                dv "Whatchu want?!"
                 show un scared pioneer at right with dspr
-                un "Н-ничего…"
+                un "N-nothing…"
                 hide un with dissolve
-                "Бедная девочка поспешила скрыться в столовой."
-                me "Лады."
-                "Меня вдруг взял азарт, и я протянул ладонь."
-                me "Ульянка, разбей."
+                "Poor girl hurriedly disappeared in the depths of canteen."
+                me "Alright."
+                "I was suddenly taken with excitement, and I held out my hand."
+                me "Ulyanka, break it."
                 show dv rage pioneer2 with dspr
-                dv "УЛЬЯНКА?!"
-                "Глаза Алисы стали квадратными. А когда кусты у нас за спиной затрещали, и оттуда выскочила улыбающаяся мелкая, Алиса была как никогда близка к тому, чтобы покалечить свою лучшую подругу."
+                dv "ULYANKA?!"
+                "Alisa's eyes squared up. And when the bushes behind us crackled, and a smiling kid jumped out of there, Alisa was closer than ever to maiming her best friend."
                 show us laugh pioneer at left with easeinbottom
-                dv "Ты… Ты подслушивала?!"
+                dv "You… You were eavesdropping?!"
                 show us smile pioneer at left with dspr
-                us "А чё вас подслушивать?"
-                "Отмахнулась мелкая явно подсмотренным у Алиски жестом."
-                us "Вы ж тут на весь лагерь спорите!"
-                us "Я тут переоделась, шла смотреть, как дела, а вы орёте!"
-                me "Разобьёшь?"
-                us "Легко. И немного добавлю в ставку: подглядывал не только за Алиской, но и за мной."
+                us "Why would I eavesdrop on you?"
+                "The child waved away with a gesture clearly peeped from Alisa."
+                us "Your arguing can be heard from anywhere in the camp!"
+                us "I went to change, came back to see how things were going, and you're here yelling!"
+                me "Will you break it?"
+                us "Sure thing. I'll also add to the condition: you were also peeping on me."
                 show us grin pioneer at left with dspr
-                "Она расхохоталась, и ладонь ударила сверху, разрубая сцепку."
+                "She burst out laughing, and the palm hit from above, cutting our clutch."
                 show dv angry pioneer2 with dspr
-                dv "Удачи на турнире, всем нам."
+                dv "Good luck, to all of us."
                 hide dv with dissolve
-                "Пожелала Алиса и скрылась за дверью."
-            "Не спорить":
+                "Alisa wished and vanished behind the door."
+            "No bet!":
                 $ lp_un += 1
                 $ lp_dv -= 2
                 $ alt_day2_dv_ultim = 0
                 show un cry_smile pioneer at right
                 show un normal pioneer at right
                 with dissolve
-                "За спиной заскрипели ступеньки, и мимо нас прошла Лена."
-                "Стараясь глядеть в пол, она попыталась просочиться мимо нас."
+                "Steps creaked behind us, and Lena passed by."
+                "Trying to look at the floor, she tried to seep past us."
                 show dv angry pioneer2 at center
                 with dspr
-                dv "Чё пришла?!"
+                dv "Whatchu want?!"
                 show un scared pioneer at right with vpunch
-                un "Н-ничего…"
+                un "N-nothing…"
                 hide un
                 with dissolve
-                "Лена спешно зашла в столовую."
+                "Lena hurriedly went into the canteen."
                 if (alt_day2_convoy == 'un'):
-                    me "Не знаю, что она тебе сделала, но она такого обращения не заслуживает."
-                    dv "Это не твоё дело. Ты споришь или нет?"
-                me "Не буду я с тобой спорить."
-                "Я вежливо отодвинул её в сторону и зашёл в столовую вслед за Леной."
-                "Когда-нибудь я пожалею о своём поступке. Возможно, Двачевская даже расскажет всё, что она там себе понапридумала. Её право."
-                "Но плясать под её дудку я не собираюсь."
-            "Чтобы было честно":
+                    me "I don't know what she did to you, but she doesn't deserve to be treated like that."
+                    dv "Not your business. Are we betting or not?"
+                me "I ain't betting you."
+                "I politely pushed her aside and went into the canteen after Lena."
+                "Someday I will regret my actions. Perhaps Dvachevskaya will even tell everything that she thought up for herself there. That's her right."
+                "But I won't have any of that."
+            "So that it's fair":
                 play music music_list["that_s_our_madhouse"] fadein 3
                 $ lp_dv -= 10
                 $ lp_un -= 5
@@ -5600,52 +5603,52 @@ label alt_day2_ultim:
                 show dv surprise pioneer2 close at center
                 show un surprise pioneer at right
                 with dissolve
-                dv "Эй, ты чё творишь, сумасшедший!"
+                dv "What the hell are you doing, numbnuts!"
                 show dv surprise pioneer2 far at center
                 show dv angry pioneer2 far at center
                 with dspr
-                "Она дала мне по рукам и отскочила в сторону."
-                dv "Совсем уже долбанулся!"
+                "She slapped my arms and quickly dodged to the side."
+                dv "You're batshit insane!"
                 show un scared pioneer at right
                 with dspr
-                me "А чё не так-то? Сама же говорила, что я тебя лапал! Не пропадать же добру!"
-                "Ниоткуда появившаяся Лена поспешила прошмыгнуть мимо нас."
-                un "Я п-пойду…"
+                me "What's wrong? You yourself said that I laid my hands on you! It'd only be fair that way!"
+                "Lena appeared out of nowhere and hastened to sneak past us."
+                un "I-I s-should go…"
                 hide un
                 with dissolve
-                "А Двачевская подступила ко мне с явным намерением подраться."
-                "Да только я среагировал, как в первый раз, и вытянул вперёд загребущие ладони — как раз на уровне её груди."
-                dv "Если ты ещё раз только…"
+                "And Dvachevskaya approached me with the clear intention of fighting."
+                "Except I reacted just like the first time - stretching out my raking palms forward - just at the level of her chest."
+                dv "If even once more you…"
                 show dv rage pioneer2
-                me "Да ладно тебе, подумаешь, потрогали за мягкие места. Убыло, что ли?"
+                me "Oh come on, you just got grabbed by the chest. You lost anything?"
                 show dv shy pioneer2 at center with dissolve
-                "Она стояла как маков цвет и определённо не знала, что делать."
-                "Нормальная девочка давно закатала бы мне пощёчину, я бы перехватил руку…"
-                "Ну и, понятно, мы бы ушли на второй раунд «обыска»."
-                "А для этой мужички такие материи были слишком тёмными."
-                me "Ладно. Можешь теперь считать, что мы поспорили."
-                "Пожалел я её."
-                me "Хотя за тобой ещё переодевание."
-                "Не давая вставить ни слова, я скрылся за дверью столовой."
-                "Вечер определённо удался!"
+                "She stood like a poppy flower and definitely did not know what to do."
+                "A normal girl would have slapped me a long time ago, I would have intercepted her hand…"
+                "Well, of course, we would have gone to the second round."
+                "But for this manwoman such matters were too dark."
+                me "Now you can consider the bet to be on."
+                "I took pity on her."
+                me "Although you still owe me a peepshow."
+                "Without allowing her to insert even a single word, I entered the canteen."
+                "Pretty nice evening, huh!"
     else:
         $ alt_day2_dv_ultim = 1
-        "Мерзавка наслаждалась моментом!"
-        "А вот мне, похоже, придётся обратиться к доктору — хотя бы за успокоительным."
-        me "Ты что несёшь?!"
-        "Но рыжая уже вся была во власти грёз о своей будущей победе и на моё лепетание не обращала внимания."
-        me "Это же… это нечестно! Так нельзя!!!"
-        "Да слышит ли она вообще?!"
-        dv "Так что придётся потрудиться."
+        "The bastard enjoyed the moment!"
+        "And I, seemingly, would have to pay a visit to our nurse - to at least get sedatives."
+        me "What are you even saying?!"
+        "But the redhead was already all in the grip of dreams about her future victory and did not pay attention to my babbling."
+        me "But that's… that's not fair! You can't do this to me!!!"
+        "Can she even hear me?!"
+        dv "So you'll have to work hard."
         show dv grin pioneer2
-        dv "Если, конечно, не хочешь, чтоб о нашей маленькой тайне узнал весь лагерь!"
+        dv "Unless you want the entire camp to know our little secret!"
         hide dv with dissolve
-        "И со звонким смехом, довольная собой, она взбежала по ступеням и скрылась в столовой, хлопнув на прощание дверью."
+        "And with a ringing laugh, pleased with herself, she ran up the stairs and disappeared into the canteen, slamming the door in goodbye."
         play sound sfx_close_door_clubs_nextroom
-        th "Господи, во что я встрял…"
-        "Я медленно и нехотя поплёлся за ней в столовую, твердя про себя:"
-        th "Ей никто не поверит. Ей никто не поверит."
-        "Но сам я себе при этом верил слабо."
+        th "God, what did I get myself into…"
+        "I slowly and reluctantly followed her, repeating to myself:"
+        th "Nobody will believe her. Nobody will believe her."
+        "But I didn't even believe myself."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -5655,130 +5658,130 @@ label alt_day2_supper:
     scene bg int_dining_hall_sunset with fade2
     play ambience ambience_dining_hall_full
     play music music_list["smooth_machine"] fadein 3
-    "Поскольку турнир занял довольно много времени, Ольга Дмитриевна объявила, что все остаются тут же, на ужин."
+    "Since the tournament took quite a long time, Olga Dmitrievna announced that everyone was staying right there for supper."
     if alt_day2_gamblers_result['us'] == 22:
-        "Ульяна начала было кричать и возмущаться, что без призов ужинать не будет."
-        "Но её быстро успокоили, пообещав раздачу после ужина."
+        "Ulyana began to scream that she would not have dinner without prizes..."
+        "But she was quickly calmed down with a promise of prizes coming after supper."
         show mt angry pioneer with dissolve
-        mt "И то, только тем, кто будет себя хорошо вести!"
-        "Заявила вожатая."
-        mt "Тем, кто будет безобразничать, не достанется ничего!"
-        "Ульяна нахмурилась, но неохотно кивнула и заняла место за столом."
-        "Несколько секунд поизучав её, вожатая наконец махнула рукой, подзывая дежурных и добровольцев."
-    "Славя, Женя и ещё несколько девочек пошли на кухню за едой."
-    "А Электроник с Шуриком и кучей малышей принялись расставлять столы на их законные места."
+        mt "And only to those who are going to behave!"
+        "Squad leader stated."
+        mt "Misbehavers will get nothing!"
+        "Ulyana frowned, but nodded reluctantly and took her seat at the table."
+        "After studying her for a few seconds, the leader finally waved her hand, calling the attendants and volunteers."
+    "Slavya, Zhenya and a few other girls went to the kitchen to get food."
+    "And Electronik, Shurik and a bunch of other kids began to arrange tables in their rightful places."
     play ambience ambience_dining_hall_full fadein 3
     scene bg int_dining_hall_people_sunset_7dl with dissolve2
-    "Очень скоро все уже сидели и уплетали еду."
-    "И только я ещё не мог поверить в то, что со мной произошло…"
-    "Так что ужин мне запомнился слабо."
-    "Кажется, я почти ничего не ел…"
+    "Very soon everyone was already sitting and eating food."
+    "And only I couldn't believe what happened to me…"
+    "So I barely remembered this supper."
+    "I don't think I ate anything…"
     with fade2
-    "Но и после ужина никто не спешил расходиться…"
+    "But even after supper people still weren't leaving…"
     play ambience ambience_medium_crowd_indoors_1 fadein 2
-    "Атмосфера в столовой становилась всё более напряжённой — все чего-то ждали."
+    "The atmosphere in the canteen became more and more tense - everyone was waiting for something."
     show mt normal pioneer at center with dissolve
     play music music_list["always_ready"] fadein 1
-    "Наконец вперёд вышла Ольга Дмитриевна."
+    "Then, finally, Olga Dmitrievna came out."
     show mt smile pioneer with dissolve
-    "Она выглядела очень важной сейчас, но и довольной тоже."
-    mt "Ребята! Мне крайне приятно, что вы сами смогли организовать и провести это мероприятие."
-    mt "Вы все показали себя с лучшей стороны."
-    "Она невольно покосилась в сторону Ульянки, и та заулыбалась во все тридцать два."
-    mt "Молодцы!"
+    "She looked very important now, but also pleased with herself."
+    mt "Everyone! I am very pleased that you yourself were able to organize and hold this event."
+    mt "You all did your best."
+    "She involuntarily squinted in the direction of Ulyanka, who flashed a shit-eating grin."
+    mt "Great job!"
     $ volume (0.7,'sound')
     play sound sfx_concert_applause fadein 1
-    "Все дружно захлопали, затопали и закричали."
+    "Everyone clapped, stomped and screamed."
     pause(1)
     stop sound fadeout 1
     $ volume (1.0,'sound')
-    "Переждав, пока приступ восторгов схлынет, Ольга Дмитриевна продолжила:"
-    mt "Поэтому, в награду за сегодняшние старания, все сегодняшние участники турнира получают этот приз!"
-    "В награду за сегодняшние страдания, я бы сказал."
-    "Дверь в кухонный блок распахнулась, и оттуда вышли два повара, несущие огромный торт с ягодами земляники!"
-    th "Ха! Торт!"
-    th "Для ничего не подозревающей вожатой она на удивление быстро сориентировалась."
-    "Я посмотрел на Ольгу Дмитриевну, стоящую рядом с самым хитрым выражением на лице."
-    "Поймав мой взгляд, она подмигнула."
-    "Ну конечно, отрядное мероприятие, вожатая ничего не знала."
-    "Клоуны!"
-    "Болельщики закричали — и непонятно, чего было больше в их крике, то ли восторга, то ли разочарования от того, что торт не достанется им!"
-    mt "А все остальные — получат конфеты!"
+    "After waiting until the wave of enthusiasm subsided, Olga Dmitrievna continued:"
+    mt "Therefore, as a reward for today's efforts, all today's tournament participants receive this prize!"
+    "A reward for today's suffering, I'd say."
+    "The door to the kitchen block swung open and two chefs came out carrying a huge strawberry cake!"
+    th "Ha! A cake!"
+    th "For an unsuspecting squad leader, she was surprisingly quick to find her bearings."
+    "I looked at Olga Dmitrievna, standing next to me with the most cunning expression on her face."
+    "Catching my eye, she winked at me."
+    "Of course, squad activity, she didn't know anything."
+    "Clowns!"
+    "The fans screamed - and it is not clear what was more in their cry, either delight, or disappointment that they would not get the cake!"
+    mt "Everyone else gets candy!"
     $ volume (0.9,'sound')
     play sound sfx_concert_applause fadein 1
-    "И тут уже кричали все!"
+    "And then everyone started screaming!"
     pause(1)
     stop sound fadeout 1
     $ volume (1.0,'sound')
-    "Славя уже разрезала торт пополам, чтобы на пару с Ольгой Дмитриевной раздать его страждущим пионерам как можно быстрее."
+    "Slavya has already cut the cake in half so that, together with Olga Dmitrievna, she could distribute it to the waiting pioneers as quickly as possible."
     if (alt_day2_gamblers_result['us'] == 22):
-        "А Ульяна, до сих пор лучащаяся от счастья после своей эпичной победы, подошла к торту и…"
+        "And Ulyana, still beaming with happiness after her epic victory, went up to the cake and…"
     else:
-        "А Ульяна, подозрительно довольная после своего сокрушительного поражения, бочком-бочком подобралась к торту, и…"
+        "And Ulyana, suspiciously pleased after her crushing defeat, crept sideways to the cake, and…"
     stop music fadeout 1
     scene cg d5_cake with dissolve
     with vpunch
     play music music_list["that_s_our_madhouse"]
 
-    "Впилась в один из кусков зубами, отхватив сразу половину кремовой башенки!"
-    mt "Ульяна!"
-    "Возмущённо закричала Ольга Дмитриевна и попыталась оттащить её, но мелкая вырывалась и продолжала кусать и кусать торт!"
-    "И будто этого было мало, она ещё что-то кричала с набитым ртом, разбрызгивая вокруг крем, крошки и кусочки ягод:"
+    "Dug into one of the pieces with her teeth, immediately snatching off half of the cream tower!"
+    mt "Ulyana!"
+    "Olga Dmitrievna screamed indignantly and tried to pull her away, but the kid was escaping and continued to bite and bite the cake!"
+    "And as if that was not enough, she was still screaming something with her mouth full, splashing cream, crumbs and pieces of berries around:"
     if (alt_day2_gamblers_result['us'] == 22):
-        us "Эфо мой фоут! {w}Я фофефитефь!"
-        "Она с усилием проглотила и добавила:"
-        us "А ещё…"
-        mt "Да?"
-        "Ольга Дмитриевна на долю — буквально — секунды ослабила хватку, и этого хватило Ульяне для того, чтобы откусить ещё кусок!"
+        us "TFHAFHT MFY CFAKFE! {w}I FWFOWFN!"
+        "She swallowed and added:"
+        us "And also…"
+        mt "Yes?"
+        "Olga Dmitrievna loosened her grip for a fraction - literally - of a second, and this was enough for Ulyana to bite off another piece!"
     else:
-        us "Я фолфна фыла фыигфать!"
-        us "Фыигфать фоут!"
-        "Остальное уже совсем нельзя было разобрать…"
-        "Наконец она откусила особо крупный кусок и на время притихла, пытаясь его прожевать."
-        "За это время вожатая уже успела оттащить её назад."
-        "Это так и сохранилось у меня в памяти — вырывающаяся Ульянка, которую оттаскивает Ольга Дмитриевна, Алиса по ту сторону стола, снисходительно наблюдающая за сценой, Лена рядом со мной, судя по испачканному в креме пальцу, уже тоже успевшая присоединиться к дегустации."
+        us "I FHAFHD TFO FWIFN!"
+        us "FWIFNW TFHE CFAKFE!"
+        "The rest was completely undecipherable…"
+        "Finally, she bit off a particularly large piece and fell silent for a while, trying to chew it."
+        "During this time, the squad leader has already managed to pull her back."
+        "This is how it remained in my memory - Ulyanka escaping, being pulled away by Olga Dmitrievna, Alisa on the other side of the table, condescendingly watching the scene, Lena next to me, judging by her finger stained with cream, who also managed to join the tasting."
     if alt_day2_gamblers_result['mi'] >= 21:
-        "Мику же, которая на несчастное кондитерское изделия прав имела никак не меньше, держалась поодаль."
-        "Она смеялась втихомолку и над тем, как воюют вожатая с Ульяной, и над тем, как Лена с Алисой под шумок уже проводят дегустацию."
-        "А насмеявшись досыта, поймала мой взгляд, подмигнула и выскользнула прочь из столовой."
+        "Miku, who had no less rights to the unfortunate confectionery, kept aloof."
+        "She secretly laughed both at how the squad leader and Ulyana were fighting, and at how Lena and Alisa were already conducting a tasting while nobody looked."
+        "And having laughed her fill, she caught my eye, winked and slipped away from the canteen."
 
-    mt "Ульяна, ты у меня точно получишь!"
-    "Увидев, что осталось от торта, зарычала вожатая."
-    "Потому что оставалось действительно мало."
-    "Мест, куда не дотянулась Ульянка, было крайне мало, меньше половины, поэтому если резать сейчас на всех, достанется совсем по чуть-чуть."
-    "Но мелкая уже прожевала и могла внятно выразить свои мысли."
-    "Она опять топнула ногой."
+    mt "Ulyana, you'll get it someday!"
+    "Seeing what was left of the cake, the squad leader growled."
+    "Because there actually wasn't much."
+    "There were very few places where Ulyanka did not reach, less than half, so if you cut now for everyone, you will get tiny pieces."
+    "But the kid had already chewed and could clearly express her thoughts."
+    "She stomped again."
     if (alt_day2_gamblers_result['us'] == 22):
-        us "Этот торт мой по праву! Отдайте!"
-        us "Я его выиграла!"
+        us "I hold all rights to this cake! It's mine!"
+        us "I won it!"
     else:
-        us "Вы все сами виноваты! Это всё из-за того, что плохо мне поддавались!"
-        us "Я должна была выиграть и забрать торт! Он мой!"
+        us "It's all your fault! It's all because you weren't losing hard enough!"
+        us "I had to win and get it! It's mine!"
     scene bg int_dining_hall_sunset
     show mt angry pioneer at center
     show us angry pioneer at cright
     with dissolve
     show us angry pioneer:
         linear 1.0 xpos 1.2
-    "С этими словами она схватила тарелку с самым большим куском и кинулась бежать!"
+    "With these words, she grabbed the plate with the largest piece and rushed out!"
     hide us with dspr
-    mt "Ну Ульяна…"
-    "Вожатая была мрачнее тучи. И похоже, во всей этой драме только один я тихо погибал от хохота."
-    "Все стояли и не знали, что делать…"
+    mt "Ulyana…"
+    "The leader was darker than a cloud. And it seems that in all this drama, only I was quietly dying of laughter."
+    "Everyone was standing around confused…"
     show mt smile pioneer with dspr
-    "Разглядев меня, Ольга сначала неохотно, но чем дальше, тем больше, смеялась, пока наконец не расхохоталась от души."
+    "Having examined me, Olga at first reluctantly, but the further, the more, laughed, until at last she burst out laughing heartily."
     show mt laugh pioneer
-    mt "Ну она у меня ещё получит!"
+    mt "Oh she'll get it from me!"
     if (counter_sl_7dl == 3):
-        "А вскоре к её смеху присоединились и Лена со Славей."
+        "And soon Lena and Slavya joined her laughter."
     else:
-        "А я всё думал, что же делать мне…"
+        "And I was thinking what to do…"
         menu:
-            "Погнаться за Ульянкой! Торт ещё можно спасти!":
+            "Chase her! I can still save the cake!":
                 $ alt_day2_us_cake = 1
-            "Торт обречён, гнаться бессмысленно…":
-                "Прикинув, стоит ли гоняться за егозой, я всё же махнул рукой."
-                th "Ну её. Торт это всё равно не спасёт."
+            "Cake is doomed, no point in chasing…":
+                "Evaluating my chances I decided against it."
+                th "Oh well. That won't save the cake."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -5788,153 +5791,153 @@ label alt_day2_sup2:
     scene bg int_dining_hall_sunset with dissolve
     play ambience ambience_dining_hall_full fadein 3
     if alt_day2_us_cake == 1:
-        "Ужин ещё не кончился."
+        "Supper wasn't over yet."
     show mt normal pioneer with dissolve
-    "С кухни принесли нож, и мы нарезали остатки так, что каждому досталось по чуть-чуть."
-    sl "Вот…"
+    "A knife was brought from the kitchen, and we cut the leftovers so that everyone got a little bit."
+    sl "Here…"
     show sl smile pioneer at right with dissolve
-    "Славя выкладывала небольшие кусочки на салфетки и раздавала присутствующим."
-    "Досталось и мне чуть-чуть."
-    sl "Это тебе."
-    "Она улыбнулась и протянула мне мою порцию."
-    me "Спасибо, Славя. Ты — чудо!"
-    "Я улыбнулся в ответ. Похоже, Славя выбрала мне лучший кусок: он был надкусан совсем чуть-чуть."
+    "Slavya laid out small pieces on napkins and handed them out to those present."
+    "Even I got a little bit."
+    sl "It's yours, my friend."
+    "She smiled and handed me my portion."
+    me "Thanks, Slavya. You're wonderful!"
+    "I smiled back. It seems that Slavya chose the best piece for me: it was bitten off just a bit."
     hide sl with dissolve
-    "Оно и к лучшему, может."
-    "Ужину тесниться не придётся."
+    "Maybe that's for the best."
+    "Supper won't have to give up its place."
     hide mt with dissolve
     if alt_day2_gamblers_result['me'] == 22:
         pass
     else:
         show dv normal pioneer2 with dissolve
-        "Проходящая мимо Алиса задела меня плечом."
+        "Passing Alisa touched me with her shoulder."
         show dv normal pioneer2 close with dspr
-        dv "Поговорим?"
-        "Предложила она."
-        "Я пожал плечами и отправился вслед за ней."
+        dv "We should talk."
+        "She offered."
+        "I shrugged, and went after her."
         scene bg ext_dining_hall_near_sunset with fade
         show dv angry pioneer2 with dissolve
         stop ambience
-        "Несколькими минутами спустя мы вышли на крылечко, и Двачевская мгновенно напустилась на меня. Кажется, она была в бешенстве."
+        "A few minutes later we went out onto the porch, and Dvachevskaya instantly pounced on me. She seemed to be furious."
         play music music_list["awakening_power"] fadein 2
-        dv "Ты специально? Ты специально это сделал, да?"
-        "Она раздувала ноздри и злилась от души. И чем больше она злилась, тем больше веселился я."
-        me "Конечно, специально. Разве ты не знаешь, что дамам принято уступать и поддаваться?"
+        dv "Was that on purpose? You did it on purpose, yeah?"
+        "She flared her nostrils and was angry from the bottom of her heart. And the angrier she got, the more fun I had."
+        me "Of course, on purpose. Don't you know it's customary to give in to ladies?"
         if alt_day2_dv_ultim == 1:
-            dv "Ты обещал! Ты сказал, что будешь играть в полную силу!"
+            dv "You promised! You said you'd play your best!"
         elif (alt_day2_gamblers_result['me'] < 12):
-            dv "Не хотел ты спорить — хрен с тобой! Но эти дебильные сцены, это чё вообще?!"
+            dv "You didn't want to bet - to hell with you! But these moronic scenes, what is it at all?!"
         else:
-            dv "Когда я тебе спор предлагала, я не думала, что станешь вести себя как последний баран!"
-        "Казалось, ещё немного, и она пойдёт меня бить всем чем под руку попадётся, поэтому я отступил на шаг, примиряюще выставляя перед собой ладони."
-        "Она замедлилась и вопрошающе уставилась на меня."
+            dv "When I offered you a bet, I did not think that you would behave like a ram!"
+        "It seemed that a little more, and she would go to beat me with everything that came to hand, so I took a step back, reconcilingly putting my palms out in front of me."
+        "She slowed down and stared at me questioningly."
         menu:
-            "Успокоить её":
+            "Calm her down":
                 if herc:
-                    me "Алис, давай, мы все глубоко вздохнём и успокоимся."
-                    dv "Ты придурок!"
+                    me "Alisa, come on, let's just take a deep breath and calm down."
+                    dv "You idiot!"
                     show dv sad pioneer2 with dspr
-                    dv "Ты сам не знаешь, чего хочешь!"
+                    dv "You don't even know what you want!"
                     hide dv with dissolve
-                    "Она испепелила меня взглядом и провалилась в подпространство."
-                    "А я еще долго стоял на крыльце и задумчиво смотрел в сторону, куда скрылась Алиса."
+                    "She incinerated me with a look and fell into a subspace."
+                    "And I stood on the porch for a long time and looked thoughtfully in the direction where Alisa had disappeared."
                 else:
-                    me "Я не понимаю, на что ты злишься."
+                    me "I don't get why you're so angry."
                     if alt_day2_dv_ultim == 1:
-                        dv "У нас было пари, и ты всё испортил!"
-                    "Она смерила меня презрительным взглядом."
+                        dv "We had a bet, and you ruined everything!"
+                    "She gave me a contemptuous look."
                     show dv normal pioneer2 with dspr
-                    dv "Ты и в самом деле тормоз."
+                    dv "You really are a retard."
                     hide dv with easeoutleft
-                    "А я еще долго стоял на крыльце и задумчиво смотрел в сторону, куда скрылась Алиса."
+                    "And I stood on the porch for a long time and looked thoughtfully in the direction where Alisa had disappeared."
                 if lp_sl >= 8:
-                    "А пока я провожал рыжую взглядом, заметил на площади куда-то направляющуюся Славю."
-                    "Вид она имела самый деловитый."
+                    "And while I was looking that way, I noticed Slavya heading off somewhere."
+                    "She looked like she meant business."
                     menu:
-                        "Проследить за ней!":
-                            "Ну что я, глупый, такую возможность упускать!"
-                            th "Мистерия блондинок, я иду!"
+                        "Chase her!":
+                            "What am I, stupid? I wouldn't miss such an opportunity!"
+                            th "Mysteria blonde, I'm coming!"
                             stop music fadeout 3
                             scene bg ext_square_sunset at zentercenter
                             show sl smile pioneer at cleft
                             with dissolve
-                            sl "Куда это мы крадёмся?"
-                            me "Упс…"
-                            "В какой-то момент Славя просто развернулась и заметила меня."
-                            me "Э… Ну… Просто…"
+                            sl "Where are we sneaking to?"
+                            me "Oopsie…"
+                            "At some point, Slavya just turned around and noticed me."
+                            me "Uh… Well… I…"
                             show sl normal pioneer with dspr
-                            sl "Ладно, раз уж всё равно за мной подглядывать шёл, пошли вместе."
-                            me "Что?!"
-                            sl "Дело у меня есть, важное."
-                            th "О, кто бы сомневался…"
+                            sl "Okay, since you were spying on me anyways, let's just go together."
+                            me "What?!"
+                            sl "I need to do something important."
+                            th "Of course…"
                             $ alt_day2_sl_chased = True
-                        "Дела, дела…":
-                            th "Да и пусть себе идёт — может, там у ней гнездо."
-                            "Я пожал плечами."
+                        "Whatever…":
+                            th "Eh, let her go, maybe she has a nest there."
+                            "I shrugged."
                 return
-            "Да в чём дело-то?!":
+            "What's wrong?!":
                 if loki and (lp_sl < 8) and (counter_sl_7dl < 3):
-                    me "Просто, понимаешь… Мне очень, прямо безмерно, хотелось увидеть… Как ты исполнишь свою угрозу!"
+                    me "It's just, you know… I really, really, really immensely wanted to see… How you will carry out your threat!"
                     $ karma += 10
                     $ alt_day2_dv_chased = True
                     return
                 else:
-                    me "Ты не понимаешь, что это вышло случайно?"
-                    dv "Ты подмигивал, я видела!"
-                    me "С чего ты решила? Может, мне просто попала соринка в глаз."
-                    dv "Конечно, соринка."
+                    me "Don't you get that it was just an accident?"
+                    dv "You were winking, I saw that!"
+                    me "Why do you think so? Maybe I just got a speck in my eye."
+                    dv "Ah, yes, a speck."
                     show dv sad pioneer2 with dspr
                     if alt_day2_dv_ultim == 1:
-                        dv "Короче, пари ты проиграл. Теперь готовься."
-                        me "Ты и правда собираешься рассказать им?"
-                        "Я не скрывал ужаса."
-                        dv "Да!"
+                        dv "Anyways, you lost the bet. Prepare for consequences."
+                        me "And you're just going to tell them?"
+                        "I didn't hide the fear in my voice."
+                        dv "Yes!"
                         show dv laugh pioneer2 with dspr
-                        dv "Очень интересно будет посмотреть, что с тобой случится."
+                        dv "I wonder what will happen to you."
                         hide dv with dissolve
-                        "Её смех был злым и нервным. Она сошла с крыльца, оттолкнув меня с дороги."
-                        "Задерживать её я не решился."
+                        "Her laugh was angry and nervous. She stepped off the porch pushing me out of the way."
+                        "I decided not to hold her up."
                     elif alt_day2_dv_ultim == 2:
-                        dv "Думаешь, тебе сойдет с рук, то что ты устроил перед турниром?"
-                        me "Да плевать я хотел."
-                        me "У тебя ноль доказательств и ноль свидетелей."
-                        me "А твою мелкую придурочную подружку, которая в кустах сидела, вожатая даже слушать не станет."
+                        dv "You think you can get away with what you did before the tournament?"
+                        me "As if I care."
+                        me "You have no proof and no witnesses."
+                        me "And the squad leader won't even listen to your bush-inhabiting friend."
                         show dv rage pioneer2 with dspr
-                        dv "Думаешь, самый умный, всё продумал?"
-                        "Я пожал плечами и развернулся."
-                        "Новых причин тратить на неё время я не нашёл."
-                        me "Не забудь, с тебя ещё переодевание."
-                        "Лениво бросил я через плечо."
+                        dv "Oh, you think you're the smartest, accounted for everything, huh?"
+                        "I shrugged and turned around."
+                        "I haven't found any new reasons to spend time on her."
+                        me "Don't forget, you still owe me a peepshow."
+                        "I lazily threw over my shoulder."
                         hide dv with dissolve
-                        "Она сошла с крыльца, оттолкнув меня с дороги."
+                        "She stepped off the porch pushing me out of the way."
                     else:
-                        dv "Хоть ты и не принял мой спор, я всё равно всем всё расскажу. Готовься."
-                        me "Но это же неправда!"
-                        "Она и в самом деле собирается испортить мне жизнь?! Просто так? Из-за какой-то там игры?!"
-                        dv "А как ты думаешь, кому поверят?"
+                        dv "Even though you did not accept my bet, I will still tell everyone everything. Prepare yourself."
+                        me "But it's not true!"
+                        "Is she really going to ruin my life?! Just like that? Because of some game?!"
+                        dv "Who do you think everyone will believe?"
                         show dv laugh pioneer2 with dspr
-                        dv "Очень интересно будет посмотреть, что с тобой случится."
+                        dv "I wonder what will happen to you."
                         hide dv with dissolve
-                        "Её смех был злым и нервным. Она сошла с крыльца, оттолкнув меня с дороги."
-                        "Задерживать её я не решился."
+                        "Her laugh was angry and nervous. She stepped off the porch pushing me out of the way."
+                        "I decided not to hold her up."
                     if counter_sl_7dl == 3:
-                        "А пока я провожал рыжую взглядом, заметил на площади куда-то направляющуюся Славю."
-                        "Вид она имела самый деловитый."
-                        "Ну что я, глупый, такую возможность упускать!"
-                        th "Мистерия блондинок, я иду!"
+                        "And while I was looking that way, I noticed Slavya heading off somewhere."
+                        "She looked like she meant business."
+                        "What am I, stupid? I wouldn't miss such an opportunity!"
+                        th "Mysteria blonde, I'm coming!"
                         stop music fadeout 3
                         scene bg ext_square_sunset at zentercenter
                         show sl smile pioneer at cleft
                         with dissolve
-                        sl "Куда это мы крадёмся?"
-                        me "Упс…"
-                        "В какой-то момент Славя просто развернулась и заметила меня."
-                        me "Э… Ну… Просто…"
+                        sl "Where are we sneaking to?"
+                        me "Oopsie…"
+                        "At some point, Slavya just turned around and noticed me."
+                        me "Uh… Well… I…"
                         show sl normal pioneer with dspr
-                        sl "Ладно, раз уж всё равно за мной подглядывать шёл, пошли вместе."
-                        me "Что?!"
-                        sl "Дело у меня есть, важное."
-                        th "О, кто бы сомневался…"
+                        sl "Okay, since you were spying on me anyways, let's just go together."
+                        me "What?!"
+                        sl "I need to do something important."
+                        th "Of course…"
                         $ alt_day2_sl_chased = True
     stop music fadeout 3
     stop ambience fadeout 6
@@ -5945,14 +5948,14 @@ label alt_day2_slot_us_try:
     scene bg ext_dining_hall_near_sunset at running with fade
     play ambience ambience_camp_center_evening fadein 1
     play music music_7dl["sneakupon"] fadein 3
-    "У выхода из столовой я ощутил странное чувство дежа вю…"
+    "Near the exit I suddenly felt a sense of deja vu…"
     scene bg ext_dining_hall_away_sunset at running with dissolve
     if alt_day_binder != 1 and counter_sl_7dl < 2:
-        th "Вчера я точно так же гнался за Ульяной…"
-    "Только на этот раз кое-что всё-таки отличалось…"
-    "Передо мной мелькала пионерская форма, а не та красная майка…"
-    "А когда я уже привычно приготовился свернуть на спортплощадку — Ульяна побежала совсем в другую сторону."
-    "Она бежала к лесу."
+        th "Yesterday I was chasing Ulyana in exactly the same way…"
+    "Although something was different now…"
+    "A pioneer uniform flashed in front of me, not that red T-shirt…"
+    "And when I was already habitually preparing to turn to the sports ground, Ulyana ran in a completely different direction."
+    "She was running to the forest."
     play sound_loop sfx_run_forest fadein 1
     scene bg ext_path_day with dissolve:
         linear 0.1 pos (5,3)
@@ -5960,38 +5963,38 @@ label alt_day2_slot_us_try:
         linear 0.1 pos (-5,5)
         linear 0.1 pos (-5,0)
         repeat
-    "И через несколько шагов мы нырнули в заросли, так что из виду я её сразу же потерял."
-    "Дальше преследовать мне её приходилось по звуку трещавших веток…"
+    "And after a few steps we dived into the thickets, so I immediately lost sight of her."
+    "Then I had to pursue her by the sound of crackling branches…"
     scene bg ext_path_sunset with dissolve:
         linear 0.1 pos (5,3)
         linear 0.1 pos (5,0)
         linear 0.1 pos (-5,5)
         linear 0.1 pos (-5,0)
         repeat
-    "Гнался я за Ульяной уже довольно долго…"
-    "На лагерь понемногу опускался вечер."
-    "Но о том, чтобы прекратить погоню, не могло быть и речи!"
-    "Я уже слишком далеко забежал и рисковал потеряться…"
-    "А Ульянка, я надеюсь, знала дорогу обратно…"
-    "Наконец шум впереди внезапно прекратился…"
+    "I've been chasing Ulyana for quite a long time…"
+    "Evening descended onto the camp."
+    "But stopping the chase was out of the question!"
+    "I've already run too far and risked getting lost…"
+    "And I hoped Ulyana knew the way back…"
+    "Finally the noise ahead suddenly stopped…"
     stop sound_loop fadeout 1
     scene bg ext_playground_sunset_7dl with fade
     play sound_loop sfx_inhale fadein 1
     stop music fadeout 3
-    "И через секунду я, тяжело дыша, вышел к спортивным площадкам!"
+    "And a second later I, breathing heavily, went out to the sports grounds!"
     stop sound_loop fadeout 2
     if lp_us > 1:
         $ alt_day2_us_cake = 2
     else:
-        "Я огляделся."
-        "Но вокруг не было ни души!"
-        th "Куда она делась?!"
-        "Я отстал буквально на пару метров, а её уже не было!"
-        th "Как будто улетела…"
-        "Я постоял ещё пару минут, ожидая, не покажется ли она откуда-нибудь…"
-        "Но спрятаться на пустом футбольном поле было абсолютно негде."
-        "Так что мне поневоле придётся смириться."
-        "Я ещё погрозил на прощание кулаком в сторону кустов, где она могла прятаться, и пошёл обратно в столовую"
+        "I looked around."
+        "There was nobody here!"
+        th "Where did she go?!"
+        "I was literally a couple of meters behind, and she was gone!"
+        th "As if she flew away…"
+        "I stood still for a couple of minutes, waiting to see if she would show up from somewhere…"
+        "But there was absolutely nowhere to hide on an empty football field."
+        "So I'll have to put up with it."
+        "I also shook my fist goodbye in the direction of the bushes where she could hide, and went back to the canteen."
     stop ambience fadeout 6
     with fade
     return
@@ -6002,7 +6005,7 @@ label alt_day2_eventEv_music_club1:
         $ lp_mi += 1
         call alt_day2_slot_mi
     else:
-        th "Не хочу мешать. Лучше зайду в следующий раз."
+        th "Don't want to interrupt her. I'll come back later."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -6012,15 +6015,15 @@ label alt_day2_eventEv_clubs1:
     if not alt_replay_on:
         if been_there_alt2() > 1:
             scene bg ext_clubs_sunset_7dl
-            th "Клуб юного техника умеет ждать."
+            th "The Young Technician's Club knows how to wait."
             stop music fadeout 3
             stop ambience fadeout 6
             with fade
             return
     play ambience ambience_camp_center_evening fadein 1
     scene bg ext_clubs_sunset_7dl with fade
-    th "Хм. Закрыто. А утром казалось, что «юные техники» здесь даже ночуют."
-    th "Впрочем, не придётся собирать чужого робота — и на этом спасибо."
+    th "Hm. Closed. In the morning I thought they would be spending their nights here."
+    th "Although, I won't need to assemble someone else's robot, thanks for that."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -6029,11 +6032,11 @@ label alt_day2_eventEv_clubs1:
 label alt_day2_eventEv_camp_entrance1:
     scene bg ext_no_bus_sunset with fade
     play ambience ambience_camp_entrance_evening fadein 1
-    "Я вышел на дорогу."
-    "В розовых лучах закатного солнца она выглядела шёлковой лентой, уходящей прямо в горизонт."
-    "Я смотрел на неё, расположившись в тени гипсового пионера и прислушиваясь к далёкому щебетанию птиц."
-    th "Как же тут всё-таки красиво!"
-    "Но вскоре стало темнеть, и я пошёл обратно в лагерь."
+    "I went out onto the road."
+    "In the pink rays of the setting sun, it looked like a silk ribbon, stretching straight into the horizon."
+    "I looked at it, sitting in the shade of a plaster pioneer and listening to the distant chirping of birds."
+    th "It's really beautiful here!"
+    "But soon it began to get dark, and I went back to the camp."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -6045,12 +6048,12 @@ label alt_day2_eventEv_un_mi_house1:
     with dissolve
     play ambience ambience_camp_center_evening fadein 1
     if (alt_day2_convoy == 'un'):
-        "В ходе нашего турне Лена указала, где расположен её домик. И мало удивительного, что после всех моих мыслей я оказался здесь."
-        "Чего я хотел и на что рассчитывал — дело десятое, самое главное — я здесь."
+        "During our tour, Lena pointed out where her house was located. And little wonder that after all my thoughts I ended up here."
+        "What I wanted and what I counted on didn't matter, the most important thing - I'm here."
     else:
-        "Этот домик располагался по той же «улице», что и наш с вожатой, поэтому впотьмах, наверное, очень было бы удобно бегать от одного домика к другому."
-        "Не так, как это в тех лагерях, к каким привык я, где если ты не назначаешь девочке встречу, то рискуешь разбудить всю её палату в двадцать человек."
-        "Я прямо воочию представил себе эдакого Ромео в семейных труселях в «розово сердинько», с розой в зубах и резиновых сапогах с бутылкой «трёх топоров» за голенищем."
+        "This house was located on the same street as ours with the squad leader, so in the dark, it would probably be very convenient to run from one house to another."
+        "Not like it is in those camps that I'm used to, where if you don't make an appointment with the girl, you risk waking up her entire ward of twenty people."
+        "I directly imagined a kind of Romeo in family shorts, patterned in «pink heart», with a rose in his teeth and rubber boots with a bottle of «three axes» behind the bootleg."
     if (lp_un >= 6) or ((alt_day2_convoy in ('dv', 'sl')) and (lp_un >= 5)):
         if loki:
             $ lp_un += 2
@@ -6059,8 +6062,8 @@ label alt_day2_eventEv_un_mi_house1:
             $ lp_un += 2
             call alt_day2_un_herc_date
     else:
-        "В домике было темно, и если я рассчитывал кого-то здесь застать — я здорово опоздал."
-        "Однако я успел заметить Лену, переодетую в спортивную форму, которая явно куда-то направлялась."
+        "It was dark in the house, and if I expected to find someone here, I was very late."
+        "However, I managed to notice Lena, dressed in a sports uniform, who was clearly heading somewhere."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -6069,12 +6072,12 @@ label alt_day2_eventEv_un_mi_house1:
 label alt_day2_eventEv_dv_us_house1:
     scene bg ext_houses_sunset with fade
     play ambience ambience_camp_center_evening fadein 1
-    "Или мне показалось, или вечером в лагере было гораздо больше людей, чем утром."
-    "Стоило мне появиться на аллее, как малышня, играющаяся между домиками, остановилась и начала как-то странно разглядывать меня."
-    "Осмотрев себя украдкой и не обнаружив ничего нового, я пожал плечами."
-    kids "В атаку!"
-    "Внезапно они с дикими воплями помчались ко мне!"
-    th "Чёрт! Нужно срочно уносить ноги!"
+    "Either it seemed that way to me, or there were much more people in the camp in the evening than in the morning."
+    "As soon as I appeared on the alley, the kids, playing between the houses, stopped and began to look at me in a strange way."
+    "Glancing at myself, and, being unable to find anything new, I shrugged."
+    kids "Attack!"
+    "Suddenly they rushed to me with wild cries!"
+    th "Shit! I need to run!"
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -6082,7 +6085,7 @@ label alt_day2_eventEv_dv_us_house1:
 
 label alt_day2_eventEv_dining_hall1:
     scene bg ext_dining_hall_away_sunset with dspr
-    th "Спасибо, ужина мне вполне хватило."
+    th "No thanks, supper was enough."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -6097,9 +6100,9 @@ label alt_day2_eventEv_sport_area1:
                 $ lp_un += 1
             call alt_day2_slot_un
         else:
-            "Лены здесь я не нашёл. Пойду посмотрю, может, она в домике."
+            "I didn't find Lena here. I'll go see if she's in her house."
     else:
-        th "Пусто."
+        th "Empty."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -6114,53 +6117,53 @@ label alt_day2_eventEv_beach1:
         play sound sfx_angry_ulyana
         with flash_red
         play music music_list["awakening_power"]
-        "Последние слова прозвучали из пустого воздуха. {w}Быть битым мне совершенно не улыбалось, но после таких слов я бы себе сам подзатыльник отвесил точно."
+        "The last words came from empty air. {w}Being beaten wasn't a positive prospect for me, but after such words I would've hit myself on the back of the head for sure."
         scene bg ext_square_sunset at fast_running
         with flash
-        "Пока я шевелил ногами, мне пришло в голову, что в этом лагере я бегаю столько, сколько не бегал никогда. Каждый день, да в полную силу, да на длинные дистанции."
-        "Ещё я гадал, сразу ли Алиса даст мне в нос, когда догонит. То есть, ЕСЛИ догонит."
+        "While I was moving my legs, it occurred to me that in this camp I was running as much as I had never run before. Every day, full force, long distances."
+        "I also wondered if Alisa would immediately punch me in the nose when she caught up. That is, IF she catches up."
         scene bg ext_aidpost_sunset_7dl at fast_running
         with flash
-        "Все возможности у неё были. И она, кажется, не хотела их упускать. Однако по сравнению со вчерашней гонкой, эта была чуть милосерднее, в конце концов, это не я сегодня за кем-то гонялся."
+        "She had every opportunity. And she didn't seem to want to miss them. However, compared to yesterday's race, this one was a little more merciful, after all, it wasn't me who was chasing someone today."
         scene bg ext_dining_hall_away_sunset at fast_running
         with flash
         pause(1)
         scene bg ext_square_sunset with dissolve
-        "Мы пробежали подмышкой у Генды, обогнули склад, свернули к волейбольной площадке."
+        "We ran under Genda's armpit, went around the warehouse, turned to the volleyball court."
         scene bg ext_volley_court_7dl with dspr
-        "Вообще волейбольно-пионербольной. Последняя игра, всегда поражающая меня своей либеральностью, игралась тоже здесь. Если удавалось набрать хотя бы по три участника со стороны."
-        "Пригнувшись, я пробежал под сеткой и развернулся."
+        "Technically volleyball-pioneerball court. The last game, which always strikes me with its liberality, was also played here. If it was possible to recruit at least three participants for each."
+        "Crouching, I ran under the net and turned around."
         show dv angry pioneer2 with dspr
         stop music fadeout 3
-        "Признаюсь, залюбовался! Двачевская, хоть и страшна в гневе, но только поступками и репутацией. А внешне же — хороша, чертовка!"
-        "Я дёрнулся влево, и она продублировала моё движение."
-        "После чего мне оставалось только плавно проскользнуть мимо неё, влекомой инерцией, и припустить вниз по дороге. Как мне стало понятно через минутку, ведущей к пляжу."
+        "I must confess, I love it! Dvachevskaya, although terrible in anger, was also terrible only by her deeds and reputation. But her appearance - god damn!"
+        "I swerved to the left and she duplicated my move."
+        "After that, I had only to smoothly slide past her, drawn by inertia, and run down the road. As it became clear to me in a minute leading to the beach."
         scene bg ext_beach_sunset with fade
         play ambience ambience_lake_shore_evening fadein 2
-        "Как я давно хотел попасть сюда!"
-        "Но не при таких же обстоятельствах!"
-        "Щедро насыпанный песчаный язык полз под ногами, заставляя буксовать, и бежать было крайне тяжело."
-        "Я сделал ещё несколько шагов и встал, пытаясь отдышаться."
-        "Тяжёлое дыхание по правую руку свидетельствовало о том, что и Алисе пришлось попотеть. Это не могло не радовать."
-        "Я сел на песок и сбросил обувь, сверху бросил шорты с рубашкой, чёртову удавку-галстук… {w}И с разбегу нырнул в чёрную под ночным небом воду."
-        "Тихая, тёплая ночь."
+        "How long have I wanted to be here!"
+        "But not under these circumstances!"
+        "A generously poured sandy tongue crawled underfoot, forcing it to slip, and it was extremely difficult to run."
+        "I took a few more steps and stood up, trying to catch my breath."
+        "Heavy breathing on the right hand testified that Alisa also had to sweat. This could only make me rejoice."
+        "I sat down on the sand and kicked off my shoes, threw shorts with a shirt on top, that damned noose-tie… {w}And with a run dived into the black water under the night sky."
+        "Quiet, warm night."
         if (lp_dv > 3) and (alt_day2_dv_ultim == 1):
             call alt_day2_slot_dv
         else:
-            "Искупавшись, я собрал одежду, и, немного просохнув под вечерним солнцем, оделся и пошёл на площадь."
-            "Кажется, Алиса потеряла интерес к преследованию. Ну, или у неё появились какие-нибудь дела."
-            "Надо думать, чем занять вечер."
+            "Having bathed, I gathered my clothes, and, after drying a little under the evening sun, I got dressed and went to the square."
+            "Alisa seems to have lost interest in the pursuit. Well, or did she have some business."
+            "Gotta think about what to do tonight."
     else:
         scene bg ext_beach_sunset with fade
         play ambience ambience_lake_shore_evening fadein 2
         if (alt_day2_gamblers_result['me'] == 22) and (alt_day2_dv_ultim == 1):
             call alt_day2_slot_dv
         else:
-            "Весь день сюда стремился же! По такой погоде самое милое дело искупаться."
-            "Но сейчас, когда я наконец смог попасть сюда…"
-            "Как-то оно было уже не то…"
-            "То ли что-то не так, то ли чего-то не хватает, не знаю."
-            "Развернувшись, я ушёл с пляжа."
+            "Been trying to get here all day! In this weather, the sweetest thing is to swim."
+            "But now that I finally got here…"
+            "Somehow it was no longer the same…"
+            "Whether something is wrong, or something is missing, I did not know."
+            "Turning around, I left the beach."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -6169,60 +6172,60 @@ label alt_day2_eventEv_beach1:
 label alt_day2_eventEv_me_mt_house1:
     scene bg ext_house_of_mt_sunset with dissolve
     play ambience ambience_camp_center_evening
-    "Домик уже был оккупирован вожатой."
-    "Сказать по правде, после утреннего сеанса подглядывания было у меня здоровое такое опасение, что перепадёт мне от Ольги Батьковны по полной программе."
-    "Посему я воспользовался приобретённым здесь сверхсекретным умением."
+    "The house was occupied by the squad leader."
+    "To tell the truth, after the morning session of peeping, I had such a healthy fear that Olga Batkovna would unleash her fury on me."
+    "Thus, I used a supersecret move I learned here."
     play sound sfx_knock_door7_polite
-    "Я постучал!"
-    mt "Войдите!"
-    "Отозвалась Ольга изнутри."
+    "I knocked!"
+    mt "Come in!"
+    "Olga replied from the inside."
     play sound sfx_open_dooor_campus_2
     pause(1)
     scene bg int_house_of_mt_sunset at zenterleft
     show mt smile pioneer at cleft
     with dissolve
-    "Ольга сидела за столом, опять что-то записывая в свой красивый ежедневник."
-    mt "Явился, пионер."
-    "Улыбка у неё была добрая, тёплая. {w}Хорошая такая улыбка — которой, по идее и не место на лице взрослого."
-    mt "Как вечерок проходит?"
-    me "Скучновато."
-    "Признался я."
-    mt "Да…"
-    me "Что?"
+    "Olga was sitting at the table, again writing something in her beautiful diary."
+    mt "There you are, pioneer."
+    "Her smile was kind and warm. {w}Such a good smile - which, in theory, has no place on the face of an adult."
+    mt "How's your evening going?"
+    me "Pretty boring."
+    "I admitted."
+    mt "Well…"
+    me "What?"
     show mt laugh pioneer with dspr
-    mt "Хочешь, я скажу вещь, после которой твоя жизнь никогда не будет прежней?"
-    me "Э…{w}Ну, попробуйте."
-    mt "Когда ты смущаешься, у тебя краснеет шея и кончики ушей."
+    mt "Want me to say a thing after which your life will never be the same?"
+    me "Uh…{w}You can try."
+    mt "When you are embarrassed, your neck and the tips of your ears turn red."
     show mt normal pioneer with dspr
-    mt "А когда злишься, ноздри так ходят — как у быка."
-    me "Ничего не ходят и не краснеют!"
-    "Закричал я, пряча шею и нос."
+    mt "And when you're angry, your nostrils go like that of a bull."
+    me "Nothing goes and nothing turns red!"
+    "I screamed, hiding my neck and nose."
     show mt laugh pioneer with dspr
-    mt "Похоже, что ты прав — у тебя одновременно и уши покраснели, и ноздри раздулись."
-    mt "Смущённой злости же не бывает, а?"
-    dreamgirl "Тебя опять дразнят."
-    th "Спасибо. Я в курсе!"
+    mt "It looks like you're right - your ears are red and your nostrils are flared at the same time."
+    mt "There's no embarassed anger, right?"
+    dreamgirl "You're being teased again."
+    th "Thanks, I know!"
     show mt normal pioneer with dspr
-    mt "Извини, не удержалась."
-    "Ольга погасила улыбку и закрыла ежедневник."
-    mt "Слушай, раз ты всё равно не хочешь идти по лагерю гулять, может, поможешь мне?"
+    mt "Sorry, couldn't hold it in."
+    "Olga extinguished her smile and closed her diary."
+    mt "Listen, since you don't want to walk around the camp, maybe you can help me?"
     menu:
-        "Простите, я лучше ещё погуляю":
-            "Честно, после такого ответа ожидал довольно резкой реакции."
-            "Но Ольга снова меня удивила — она поняла."
-            mt "Понимаю."
-            mt "Ты если на территории встретишь Славю — отправь её ко мне, пожалуйста."
-            "Я кивнул и вышел на улицу."
+        "Sorry, I'd rather take a walk":
+            "Honestly after such an answer I was expecting a sharp reaction."
+            "But Olga surprised me again - she understood."
+            mt "I see."
+            mt "If you meet Slavya on the territory, please send her to me."
+            "I nodded and went out."
             play sound sfx_open_dooor_campus_1
             pause(1)
             scene bg ext_house_of_mt_night with dissolve
-            "Однако пока я ходил, время уже вплотную подобралось к отбою."
-            "Делать нечего, пришлось двигаться к умывальникам."
+            "However, while I was walking, the time was already closing in on the night."
+            "Nothing to do, had to move to the washbasins."
             stop music fadeout 3
             stop ambience fadeout 6
-        "Ладно":
+        "Okay":
             stop music fadeout 3
-            "Осторожно ответил я."
+            "I answered cautiously."
             $ alt_day2_mt_help = True
             call alt_day2_slot_mt
     return
@@ -6231,11 +6234,11 @@ label alt_day2_eventEv_library1:
     scene bg ext_library_day with dspr
     $ alt_day2_random_val = renpy.random.choice([1, 2, 3])
     if alt_day2_random_val == 1:
-        th "Библиотека наверняка уже закрыта…"
+        th "The library is probably closed…"
     elif alt_day2_random_val == 2:
-        "Встречаться с вредной библиотекаршей мне сейчас совсем не хотелось…"
+        "I definitely didn't want to meet the librarian now…"
     else:
-        th "Кто-то хочет почитать на ночь Канта?"
+        th "Someone wants to read Kant before sleep?"
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -6244,10 +6247,10 @@ label alt_day2_eventEv_library1:
 label alt_day2_eventEv_medic_house1:
     scene bg ext_aidpost_sunset_7dl with fade
     play ambience ambience_camp_center_evening fadein 1
-    th "У меня ничего не болит. Что я скажу… {w}Виоле?"
+    th "Nothing is hurting. What would I tell… {w}Viola?"
     if ('medic' in list_voyage_7dl):
-        "Я вспомнил утренний приём…"
-    "И так и не решился зайти."
+        "I remembered the morning…"
+    "And I didn't dare to go."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -6256,18 +6259,18 @@ label alt_day2_eventEv_medic_house1:
 label alt_day2_eventEv_estrade1:
     scene cg d3_dv_guitar with fade
     stop music fadeout 1
-    "На самом краешке сцены сидела Алиса с гитарой наперевес."
+    "At the very edge of the stage sat Alisa with a guitar at the ready."
     play music "<from 17.7 to 56.77>" + music_7dl["splin"] fadein 5
-    "Она что-то мурлыкала себе под нос и меланхолично перебирала струны."
-    "Перебор был почему-то очень знакомым…"
+    "She purred something under her breath and melancholically plucked the strings."
+    "The plucking was somehow familiar…"
     if alt_day2_minijack:
-        "Сплин? Серьёзно?"
-        "Двачевская на соло-гитаре подбирает переборы «Романса»?"
-        "Некоторые люди определённо понимают толк в извращениях."
+        "Splin? Seriously?"
+        "Dvachevskaya, with a solo guitar, trying to figure out the chords of «Romance»?"
+        "Some people definitely have a taste in perversion."
     else:
-        "Сектор Газа? Если ничего не путаю, они ещё только ВЫПУСТЯТ эту песню."
-        "Откуда она её знает?"
-        dreamgirl "Вообще-то, Сплин…"
+        "Sector Gaza? If I'm not confusing anything, they will only RELEASE this song later."
+        "How does she know it?"
+        dreamgirl "Actually, that's Splin…"
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -6276,70 +6279,70 @@ label alt_day2_eventEv_estrade1:
 label alt_day2_eventEv_square1:
     scene bg ext_square_sunset with fade
     play ambience ambience_camp_center_evening fadein 1
-    "Здесь ничего не изменилось с момента моего последнего визита."
-    "Те же рожи там же."
-    "Ну, а кроме шуток, здесь была Славя, сидящая на ступеньках, нисходящих от постамента Генде."
-    th "И как ей только так сидеть не холодно?"
+    "Nothing has changed here since my last visit."
+    "Same faces, same places."
+    "Well, jokes aside, Slavya was here, sitting on the steps descending from Genda's pedestal."
+    th "And how isn't she cold?"
     if (lp_sl >= 8) and ((counter_sl_cl == 1) or (counter_sl_7dl == 3)):
-        "Подумал я, подходя к ней."
-        me "Добрый вечер."
+        "I thought as I approached her."
+        me "Good evening."
         show sl normal pioneer with dspr
-        sl "Семён? Привет."
-        "Неизвестно чему обрадовалась девушка."
-        "Хотя по здравому осмыслению, не так уж и сложно было догадаться."
-        th "Опять будет использовать меня."
-        "Подумал я."
-        "И не ошибся."
-        sl "Семён, можно тебя попросить кое о чём?.."
-        "Начала Славя."
-        th "Ох, да кто бы сомневался."
-        "Снова этот жизнерадостный смех."
-        "Никогда не думал, что буду выступать для кого-то объектом смеха — и почти не обижаться при этом."
-        sl "Пошли!"
-        "Она поднялась."
-        me "А если я не буду?"
-        sl "Тогда откажешься, когда дойдём."
-        me "Дойдём куда?"
-        sl "Увидишь!"
-        "Потеряв всякое терпение, она схватила меня за руку и повела за собой."
+        sl "Semyon? Hello."
+        "I don't know why she was so happy."
+        "Although using common sense, it was not so difficult to guess."
+        th "She's going to use me again."
+        "I thought."
+        "And I wasn't wrong."
+        sl "Semyon, can I ask you about something?.."
+        "She began."
+        th "Oh who would've guessed."
+        "That cheerful laugh again."
+        "I never thought that I would act as an object of laughter for someone - and almost not be offended at the same time."
+        sl "Let's go!"
+        "She got up."
+        me "And if I don't?"
+        sl "Then you can refuse when we're there."
+        me "Where is there?"
+        sl "You'll see!"
+        "Having lost all patience, she grabbed my hand and led me."
         call alt_day2_slot_sl
     elif counter_sl_cl != 1 and alt_day1_sl_keys_took != 2:
-        me "Чем занимаешься?"
+        me "What are you doing?"
         show sl sad pioneer with dspr
-        sl "Да ключи ищу, будь они неладны."
+        sl "Looking for keys, damn them."
         if alt_day1_sl_keys_took == 1:
-            me "Э…"
-            th "Не те ли, случаем, что я вчера нашёл?"
+            me "Uh…"
+            th "The ones I found yesterday?"
         else:
-            me "Ключи?"
-        sl "Я… Связку потеряла. Извини."
-        "Она вскочила и куда-то убежала."
+            me "Keys?"
+        sl "I... Lost the bundle. Sorry."
+        "She jumped up and ran away."
         hide sl with dissolve
         if alt_day1_sl_keys_took == 1:
-            me "Так она у меня…"
-            "Сказал я пустому воздуху."
-            dreamgirl "Скажи, у тебя дедушка не из Эстонии был?"
-            "Делать мне здесь больше было нечего, так что я отправился дальше гулять по лагерю."
+            me "But I have them…"
+            "I told the empty air."
+            dreamgirl "Tell me, wasn't your grandfather Estonian by chance?"
+            "There was nothing else for me to do here, so I went on to walk around the camp."
         else:
-            "А я в очередной раз поразился внушительному монументу."
-            "С обеда памятник никуда не ушёл и всё так же поправлял очки…"
-            th "Как же ты только не устал здесь стоять, бедняга."
+            "And I was once again amazed at the impressive monument."
+            "Since lunch, the monument has not gone anywhere and still corrected his glasses…"
+            th "How are you just not tired of standing here, poor fellow."
             if not alt_day2_dv_chased:
-                th "Может, разделить с ним тортик?"
+                th "Maybe I should share the cake with him?"
                 menu:
-                    "Почему нет?":
+                    "Why not?":
                         "…"
-                        th "Ммм… Вкуснотища!"
-                        "Торт был изумительным."
-                        me "Будешь?"
-                        "Генда не ответил."
-                        me "Как хочешь, мне больше достанется."
-                        th "Не всегда же молчание — знак согласия…"
+                        th "Mmm… Tasty!"
+                        "The cake was amazing."
+                        me "Want some?"
+                        "Genda didn't reply."
+                        me "Oh well, more for me."
+                        th "Silence isn't always a sign of consent after all…"
                         $ alt_day2_cake = True
-                    "Обойдётся":
-                        th "Погуляю-ка я ещё."
+                    "He'll be fine without it":
+                        th "I'll take another walk."
     else:
-        th "Ладно, не буду ей мешать."
+        th "Alright, I shouldn't disturb her."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -6348,18 +6351,18 @@ label alt_day2_eventEv_square1:
 label alt_day2_eventEv_boat_station1:
     scene bg ext_boathouse_sunset_7dl with fade
     play ambience ambience_boat_station_day fadein 1
-    "Хоть уже и наступил вечер, но было по-прежнему тепло."
-    "Река лениво текла, убаюкивая лодки и пристань."
+    "Even though it was already evening, it was still warm."
+    "The river flowed lazily, lulling the boats and the pier."
     if not alt_day2_dv_chased:
-        th "Сесть на берегу и насладиться тортиком?"
+        th "Should I sit here and enjoy the cake?"
         menu:
-            "Конечно":
+            "Sure":
                 "…"
-                th "Ммм… Вкуснотища!"
-                "Торт был изумительным!"
+                th "Mmm… Tasty!"
+                "The cake was amazing!"
                 $ alt_day2_cake = True
-            "Не сейчас":
-                th "Лучше ещё погуляю."
+            "Not yet":
+                th "I'd rather take another walk."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -6371,111 +6374,111 @@ label alt_day2_dream:
     play ambience ambience_camp_center_night fadein 1
     play music music_list["a_promise_from_distant_days_v2"] fadein 2
     if alt_day2_mt_help:
-        "На часах пробила полночь, делать на улице было нечего, и я вернулся домой."
+        "The clock struck midnight, there was nothing to do on the street, and I returned home."
     else:
-        "Было уже порядком за полночь, когда я, наконец, добрался до приютившего меня домика."
+        "It was already well after midnight when I finally reached the house that sheltered me."
     stop ambience fadeout 1
     scene bg int_house_of_mt_night2 with fade
     play ambience ambience_int_cabin_night fadein 1
     if alt_day2_mt_help:
-        "Ольга на летучке."
-        "Чайник на столе."
-        "Ежедневник, раскрытый — подходи да читай…"
-        "Я с огромным трудом поборол искушение."
+        "Olga is in a meeting."
+        "Teapot on the table."
+        "Diary, wide open - come and read…"
+        "I overcame the temptation with great difficulty."
     else:
-        "Стараясь двигаться как можно тише, чтобы не…"
-        "В домике никого не было."
-        "Странно."
-        "Или вожатые тоже люди и тоже хотят отдохнуть? Не знаю."
-        "В любом случае, сил или желания размышлять на отстранённые темы не было никакого."
+        "Trying to move as quietly as possible so as not to…"
+        "There was nobody inside."
+        "Strange."
+        "Or squad leaders are also people and also want to relax? Don't know."
+        "In any case, there was no strength or desire to reflect on distant topics."
     if (alt_day2_date == 'mi') or (alt_day2_date == 'sl'):
-        "Я наскоро отряхнул с себя песок на крылечке, и, раздевшись, нырнул под одеяло. Уютно, хорошо…"
+        "I hastily shook off the sand on the porch, and, undressing, dived under the covers. Cozy, nice…"
     else:
-        "Я устал как не знаю кто, поэтому мне даже мысли не пришло об умывании — просто нырнул под одеяло."
-    "Мысли лениво гуляли где-то вне пределов моей черепной коробки."
-    "Ответы? Не было никаких ответов. Да и искал ли я их, полноте."
-    "Я, как на смотринах, показывал себя лагерю, смотрел сам лагерь, наслаждался солнышком и беззаботностью, свойственной только таким вот местам, удалённым от вечно спешащей цивилизации."
-    "Будет честным сказать, что здесь я делал то, что никогда не успевал в старой жизни…"
-    "Я жил."
-    "Были и вещи, удивившие меня самого."
+        "I’m tired like I don’t know who, so I didn’t even think about washing - I just dived under the covers."
+    "Thoughts wandered lazily somewhere outside my cranium."
+    "Answers? There were no answers. And did I look for them, of course not."
+    "I showed myself to the camp, looked at the camp itself, enjoyed the sun and carelessness, characteristic only of such places, remote from the ever-rushing civilization."
+    "It's fair to say that I did things here that I never did in my old life…"
+    "I lived."
+    "There were things that surprised me too."
     if ('sport_area' in list_voyage_7dl):
-        "Удивительно яркая реакция на подначки физрука — раньше я бы просто пожал плечами и не стал тратить времени на этого человека."
-    "Моя какая-то совершенно необъяснимая проказливость, будто приставшая от неуёмной красно-рыжей пиявки."
+        "Surprisingly bright reaction to the PE teacher's teasing - before, I would just shrug my shoulders and not waste time on this person."
+    "Some kind of completely inexplicable mischief of mine, as if pestered by an indefatigable bright-red leech."
     if alt_day2_us_escape:
-        "Наш совместный «побег»."
+        "Our «escape»."
     if (alt_my_rival_final.take == 'un') and (alt_day2_gamblers_result['me'] < 22):
-        "Турнир, в котором я, сам того не ожидая, сдал партию."
-        "Просто так, чтобы порадовать кого-то."
+        "Tournament in which I, without expecting it, surrendered the game."
+        "Just to please someone."
     elif alt_day2_gamblers_result['me'] == 22:
-        "Турнир, в котором я, сам того не ожидая, занял первое место."
+        "A tournament in which I, without expecting it, took first place."
     else:
-        "Карточный турнир, научивший меня, что победа — это далеко не всегда самое главное."
+        "The card tournament, that taught me that sometimes, winning isn't all there is to life."
     if (alt_day2_date == 'un') and dr:
-        "Лена… Нелюдимая, скромная, молчаливая. В её глазах я видел себя. И тем трогательнее было «спасать» от совёнка, поймавшего воланчик."
-        "Когда она спряталась мне за спину, я понял, что сделаю всё, чтобы помочь и сберечь это хрупкое создание."
+        "Lena… Unsociable, modest, silent. I saw myself in her eyes. And the more touching it was «saving» her from an owlet, which caught her shuttlecock."
+        "When she hid behind me, I realized that I would do everything to help and save this fragile creature."
     elif (alt_day2_date == 'dv'):
-        "И Алиска эта… Шкатулка с двойным дном. Мне казалось, мы почти помирились, почти подружились. Ещё бы чуть-чуть, и…"
+        "And this Alisa… Box with a double bottom. It seemed to me that we almost reconciled, almost became friends. A little more, and…"
     elif (alt_day2_date == 'sl'):
-        "Славя… {w}Эта девушка не перестаёт меня восхищать."
-        th "Стал бы я догонять человека, который вот так ко мне спиной поворачивается?"
-        th "Едва ли…"
-        "А она стала. {w}Потому что — славная."
-        "Я улыбнулся тому, как это прозвучало."
+        "Slavya… {w}This girl never ceases to amaze me."
+        th "Would I catch up with a person who turns his back on me like this?"
+        th "Not really…"
+        "But she did. {w}Because she is glorious."
+        "I smiled at the way it sounded."
     elif (alt_day2_date == 'mi') and (alt_day2_mi_date != 2):
-        "Мику… {w}Сначала её манера разговора привела меня в полный ужас."
-        "Но сейчас, немного присмотревшись, я даже нахожу её особым образом милой."
-        "Главное помнить, что там, где нормальная девушка смущается и опускает глаза, Мику тараторит."
-        "Ну так я и не искал нормальную девушку."
+        "Miku… {w}At first, her manner of speaking led me to complete horror."
+        "But now, after a little closer look, I even find her in a special way cute."
+        "The main thing to remember is that where a normal girl is embarrassed and lowers her eyes, Miku chatters."
+        "I wasn't looking for a normal girl either."
     elif (alt_day2_date == 'us'):
-        "Ульянка вызывала одновременное желание укрыть, спасти, сберечь — и придушить."
+        "Ulyanka evoked a simultaneous desire to shelter, rescue, save - and strangle."
         if alt_day2_us_escape:
-            "Её кулёк с конфетами, медведь, трогательно прижатый к груди."
-            "У меня никогда не было младшей сестры, но если бы она была — я бы хотел, чтобы она походила на Ульяну."
-        "Сцена, которую она устроила с тортом…"
+            "Her bag of sweets, a bear touchingly pressed to her chest."
+            "Never had a younger sister, but if I did, I would like her to look like Ulyana."
+        "Her performance with the cake…"
     else:
         if (alt_day2_date == 'mt'):
-            "Удивительно уютный, тёплый вечер рядом с вожатой."
-            "Злая-злая, а как оттаяла — оказалась таким хорошим человеком."
-            "Пусть и несколько беспардонным."
+            "Surprisingly cozy, warm evening next to the squad leader."
+            "Angry-angry, but as she thawed out, she turned out to be such a good person."
+            "Albeit somewhat shameless."
         elif alt_day2_mt_help:
-            "Меня снова заставили что-то делать."
-            "Похоже, для нашей Оленьки я самая лучшая мышь в лабораторном халате — опытный образец для испытаний педагогических приёмов."
-            "Хотя я, похоже, и не очень-то против."
-    "А впрочем, как говорит героиня «Унесённых ветром»: «Я подумаю об этом завтра.»"
+            "She made me do something again."
+            "It seems that for our Olya I am the best mouse in a lab coat - a prototype for testing pedagogical techniques."
+            "Doesn't look like I'm that against it though."
+    "But, as the heroine of «Gone with the Wind» says: «I'll think about it tomorrow.»"
     if (alt_day2_date == 'us'):
-        th "Ульяна…"
+        th "Ulyana…"
     elif (alt_day2_date == 'mi') and (alt_day2_mi_date != 2):
-        th "Мику…"
+        th "Miku…"
     elif (alt_day2_date == 'sl'):
-        th "Славя…"
+        th "Slavya…"
     elif (alt_day2_date == 'un') or (alt_day2_date == 'un_fz'):
-        th "Лена…"
+        th "Lena…"
     elif (alt_day2_date == 'dv'):
-        th "Алиса…"
-    th "Как я устал…"
-    "Я улёгся поудобнее, заложил руку за голову и прикрыл глаза."
+        th "Alisa…"
+    th "I'm so tired…"
+    "I lay down comfortably, put my hand behind my head and closed my eyes."
     play sound sfx_open_dooor_campus_2
     show mt normal pioneer with dissolve
-    "Уже почти засыпая, я услышал, как открылась дверь и Ольга Дмитриевна тронула меня за плечо."
+    "Almost falling asleep, I heard the door open and Olga Dmitrievna touched me on the shoulder."
     if (alt_day2_date == 'mt'):
-        mt "Всё в порядке?"
-        me "Не считая, что вы бросили меня на крылечке…"
-        me "Мне было грустно и одиноко…"
+        mt "Everything alright?"
+        me "Everything except you leaving me on the porch…"
+        me "I was sad and lonely…"
     else:
-        mt "Ну что, как тебе первый день в лагере?"
-        mt "Запомнилось что-нибудь?"
-        me "Больше, чем ждал… {w}меньше, чем хотел."
+        mt "Well, how did you like your first day in the camp?"
+        mt "Made any memories?"
+        me "More than I expected… {w}less than I wanted."
     show mt smile pioneer with dissolve
-    "Я еле шевелил губами, но она всё-таки услышала и улыбнулась."
-    mt "Ладно, спи."
-    mt "Завтра будет новый день."
+    "I barely moved my lips, but she still heard and smiled."
+    mt "Right, you should sleep."
+    mt "Tomorrow will be a new day."
     hide mt with dissolve
     scene bg black with fade2
     "…"
     scene cg d1_end_of_day_7dl with dissolve
-    "Я полностью согласился с ней."
+    "I fully agreed with her."
     scene black with fade2
-    "И через секунду уже спал."
+    "And a second later I was fast asleep."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -6486,78 +6489,78 @@ label alt_day2_slot_us:
     scene bg ext_playground_sunset_7dl with dissolve
     play ambience ambience_camp_center_evening fadein 2
     stop music fadeout 3
-    "Я огляделся."
-    "Но вокруг не было ни души!"
-    th "Куда она делась?!"
-    "Я отстал буквально на пару метров, а её уже не было!"
-    th "Как будто улетела…"
-    "Я постоял ещё пару минут, ожидая, не покажется ли она откуда-нибудь…"
-    "Но спрятаться на пустом футбольном поле было абсолютно негде."
-    th "Похоже, с потерей торта придётся смириться."
-    "Я ещё погрозил на прощание кулаком в сторону кустов, где она могла прятаться, и пошёл было обратно в столовую, как сзади раздался сдавленный смешок."
-    "Не узнать его было невозможно!"
-    th "Откуда она взялась? С неба свалилась, что ли?.."
-    "Я обернулся и с ужасом увидел, как она…"
+    "I looked around."
+    "But there was not a single soul around!"
+    th "Where did she go?!"
+    "I was literally a couple of meters behind, and she was gone!"
+    th "As if she flew away…"
+    "I stood still for a couple of minutes, waiting to see if she would show up from somewhere…"
+    "But there was absolutely nowhere to hide on an empty football field."
+    th "Looks like I'll have to deal with the loss of the cake."
+    "I also shook my fist goodbye in the direction of the bushes where she could hide, and was about to go back to the canteen, when a stifled chuckle was heard from behind."
+    "I couldn't not recognize it!"
+    th "Where did she come from? Fell from the sky, right?.."
+    "I turned around and saw with horror how she…"
     stop ambience fadeout 1
     play music music_list["revenga"]
     if persistent.hentai_graphics_7dl:
         scene cg d2_us_soccer_sunset_7dl with dissolve
     play sound sfx_soccer_ball_kick
-    "С задорным смехом врезала по невесть откуда взявшемуся мячу, и…"
-    "Он полетел прямо в меня!"
-    "Скорость у него была бешеная — ни уклониться, ни отскочить!"
-    "Как в замедленной съёмке, я наблюдал летящий ко мне снаряд…"
-    "А через секунду мощным ударом уже был сбит на землю!"
+    "With a fervent laugh, she hit the ball that had come from nowhere, and…"
+    "Flew straight at me!"
+    "It's speed was insane - evading or rebounding wasn't possible!"
+    "As if in slow motion, I watched the projectile fly towards me…"
+    "And a second later, with a powerful blow, I was already knocked to the ground!"
     play sound sfx_soccer_ball_catch
     with vpunch
     scene bg ext_playground_sunset_7dl with dissolve
     play ambience ambience_camp_center_evening fadein 2
-    th "Хорошо, что в живот, а не ниже…"
-    "От удара у меня сбило дыхание, что, несомненно, спасло Ульянку от потока брани в её адрес."
-    "Но она даже не думала убегать!.."
+    th "Good that it hit my stomach and not anything lower…"
+    "The impact took my breath away, which undoubtedly saved Ulyanka from the flow of swears against her."
+    "But she wasn't even thinking of running!.."
     stop music fadeout 3
-    th "Наивная!"
+    th "How naive!"
     play music music_list["always_ready"] fadein 3
     show us laugh2 pioneer with dissolve
-    us "Эй, чего валяешься?"
-    th "Дай только отдышаться…"
-    us "Столько бежал за мной…"
+    us "Hey, why are you wallowing?"
+    th "Let me… Breathe…"
+    us "You've been chasing me for so long…"
     show us grin pioneer with dspr
-    us "Хы!"
-    "Она осклабилась и показала руки, измазанные кремом."
-    us "А торта-то и не осталось!"
-    us "Опоздал! Опоздал!"
-    "Она принялась носиться вокруг и кидать в меня мяч."
-    "А я наконец смог нормально вдохнуть…"
-    me "Ты что в столовой устроила?"
-    me "Ольга Дмитриевна тебе завтра задаст!"
+    us "Ha!"
+    "She grinned and showed her hands smeared with cream."
+    us "There's no cake left!"
+    us "You're late! You're late!"
+    "She started running around and throwing a ball at me."
+    "And I was finally able to breathe normally…"
+    me "What did you do in the canteen?"
+    me "Olga Dmitrievna will punish you tomorrow!"
     show us dontlike pioneer with dspr
-    "Ульянка надулась."
-    us "Сами виноваты!"
+    "Ulyana puffed up."
+    us "You only have yourselves to blame!"
     if (alt_day2_gamblers_result['us'] == 22):
-        us "Я выиграла, и торт мой, а вы его резать."
-        us "Жады!"
-        "Она сверкнула глазами."
+        us "I won, that was my cake, and you started cutting it up."
+        us "Greeders!"
+        "She flashed her eyes."
     else:
-        us "Надо было поддаваться!"
-        us "Это я должна была выиграть!"
+        us "You should've gave in!"
+        us "It was me who supposed to win!"
         show us angry pioneer with dspr
-        us "Я!"
-        "Ульяна прикусила губу."
-    "И с душой хлопнула рукой по мячу."
-    th "Надеюсь, она не хочет повторить тот свой удар…"
+        us "Me!"
+        "She bit her lip."
+    "And heartily slammed her hand on the ball."
+    th "I hope she doesn't want to repeat that hit of hers…"
     if (alt_day2_gamblers_result['us'] == 22):
-        me "Но это же для всех было."
-        me "Ты сама всё хотела съесть?"
+        me "But that was for everyone."
+        me "Don't tell me you wanted to eat all of it yourself?"
     else:
-        me "Может, в следующий раз повезёт…"
-    "Я сказал это, чтобы хоть немного успокоить её, но она поняла это по-своему."
+        me "Maybe next time you'll be luckier…"
+    "I said this to calm her down a little, but she understood it in her own way."
     show us dontlike pioneer with dspr
     if (alt_day2_gamblers_result['us'] == 22):
-        us "Разумеется! Мой торт! Мой!"
+        us "Of course! My cake! Mine!"
     else:
-        us "В следующий раз я тако-о-ое придумаю, что сразу всех обыграю!"
-        me "Верю."
+        us "Next time I'll figure out how to beat everyone at once!"
+        me "Sure thing."
     stop ambience fadeout 1
     stop music fadeout 2
     scene bg ext_playground_night with dissolve2
@@ -6565,49 +6568,49 @@ label alt_day2_slot_us:
     $ persistent.sprite_time = "night"
     play ambience ambience_camp_center_night fadein 2
     show us dontlike pioneer with dissolve2
-    "Пока мы препирались, на площадке уже заметно стемнело, и на небе появились первые звёзды."
-    me "Ты просить прощения собираешься?"
+    "While we were arguing, it was already noticeably dark on the site, and the first stars appeared in the sky."
+    me "Are you going to ask for forgiveness?"
     show us angry pioneer with dspr
-    "Но Ульянка только насупилась ещё больше."
-    me "Пойдём, извинишься — и Ольга Дми…"
-    "Но она перебила."
-    us "Не собираюсь я ни перед кем извиняться!"
-    th "А вот теперь она, похоже, здорово разозлилась!"
+    "But Ulyanka only frowned even more."
+    me "Let's go, you'll apologize and Olga Dm…"
+    "She cut me off."
+    us "I'm not going to apologize to anyone!"
+    th "Now she looked like she was actually pissed off!"
     play sound sfx_soccer_ball_kick
-    "Ульяна со всей силы пнула по мячу, и он молнией улетел куда-то в темноту…"
-    th "Повезло, что не в меня…"
+    "Ulyana kicked the ball with all her might, and it flew away like lightning somewhere into the darkness…"
+    th "Thank god that it didn't go to me…"
     play sound sfx_broken_dish
     with vpunch
-    "Судя по звону разбившегося стекла, целью оказалось окно крытого физзала, стоящего неподалёку!"
-    us "Ой…"
+    "Judging by the sound of broken glass, the target was the window of the indoor gym, standing nearby!"
+    us "Oops…"
     show us shy2 pioneer with dspr
-    "Она сказала это так по-детски, что мне даже стало её немного жаль…"
-    th "Ольга Дмитриевна так просто это не оставит."
-    me "А теперь что будешь делать?"
-    "Но Ульянка только пожала плечами и задумчиво произнесла, ковыряя пальцем свою форму."
-    us "Скажу, что это ты разбил…"
-    me "Что?!"
-    "При этом она хлопала глазами, как будто и не понимая, почему я так недоволен."
+    "She said it so childishly that I even felt a little sorry for her…"
+    th "Olga Dmitrievna wouldn't let that go easily."
+    me "And what are you going to do now?"
+    "But Ulyanka only shrugged her shoulders and said thoughtfully, picking her uniform with her finger."
+    us "I'll just say that you broke it…"
+    me "What?!"
+    "At the same time, she blinked her eyes, as if she did not understand why I was so unhappy."
     show us surp3 pioneer with dspr
-    us "А что такого?"
-    us "Мальчик ведь должен защищать девочку…"
+    us "What's wrong?"
+    us "A boy should protect a girl…"
     show us calml pioneer with dspr
-    "Тут я вспомнил, зачем гнался за Ульяной."
-    me "А девочка должна всё свалить на мальчика, да?"
-    me "Пойдём лучше, извинишься перед Ольгой Дмитриевной и…"
+    "Then I remembered why I was chasing Ulyana."
+    me "And the girl should blame the boy, yeah?"
+    me "Come, just apologize to Olga Dmitrievna and…"
     show us laugh pioneer with dspr
-    "Я попытался взять её за руку, но она ловко увернулась и отскочила к кустам."
+    "I tried to take her hand, but she deftly dodged and jumped back to the bushes."
     $ lp_us += 1
-    us "Ольга Дмитриевна! Ольга Дмитриевна!"
-    "Передразнила она меня."
-    us "Я вам завтра и не такое устрою!"
+    us "Olga Dmitrievna! Olga Dmitrievna!"
+    "She mocked me."
+    us "I'll show you tomorrow!"
     show us grin pioneer with dspr
-    us "Вот увидите!"
+    us "I'll show you all!"
     hide us with dissolve
-    "И с этими словами она нырнула в кусты."
-    th "Что за день?!"
-    "Бежать за ней уже не имело никакого смысла."
-    "Я ещё постоял немного и пошёл к себе, обдумывая, как буду оправдываться, если меня обвинят ещё и в разбитом стекле…"
+    "And with these words she jumped back into bushes."
+    th "What a day, huh?!"
+    "There was no point in running after her."
+    "I stood a little longer and went to my room, thinking about how I would justify myself if I was also accused of breaking glass…"
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -6620,437 +6623,437 @@ label alt_day2_slot_mi:
     scene bg ext_musclub_day
     with dissolve
     stop music fadeout 1
-    "Мику произвела неизгладимое впечатление."
-    "Возможно, кому-то она могла показаться шумной, торопливой и даже надоедливой, но не мне."
-    "Я знаю такой тип людей. Их надо просто уметь слушать — отсекая воду и попытки уйти по ассоциативной цепочке на другие мысли."
-    "А на меня вдруг напало некое оцепенение — равнодушное и бессмысленное."
-    "На турнире я ещё держался, и выходя из столовой — тоже… Но даже у атлантов есть предел прочности."
-    "Напряжение сегодняшнего дня вытравило из меня те небольшие остатки сил, что ещё оставались."
-    "Тем удивительнее оказалось, что мне не хочется спрятаться в раковину и там тихонечко издохнуть."
-    "Нет. Я искал усугубления."
-    "Мучительного удушения потоком слов, пыток через риторику — чтобы кто-то рядом болтал и болтал, и болтал."
-    "Я искал Мику."
-    "Она удивительным образом подняла мне настроение с утра."
-    "Как? А вот это остаётся тайной за семью печатями."
-    th "Она же не будет против, если я немного злоупотреблю её обществом?"
-    th "В нашу встречу она обрадовалась новому лицу так, будто неделями днюет безвылазно под своим роялем, лишённая какой-либо пристойной компании."
-    th "Пускай теперь общается со мной!"
-    "Клуб оказался закрыт… {w}Чего и следовало ожидать."
-    "Мне, как типичнейшему представителю касты неудачников, следовало ожидать исключительно такого исхода.{w} Так что фигу вам, а не душеспасительный мозговынос."
-    "Я вздохнул, развернулся и ушёл."
+    "Miku made a lasting impression."
+    "Perhaps she might seem noisy, hurried and even annoying to someone, but not to me."
+    "I know this type of people. You just need to be able to listen to them - cutting off the water and attempts to leave along the associative chain to other thoughts."
+    "And suddenly I was attacked by a kind of stupor - indifferent and senseless."
+    "At the tournament, I still held on, and leaving the canteen - too… But even the Atlanteans have a limit of strength."
+    "The stress of the day had drained me of what little strength I had left."
+    "It turned out all the more surprising that I didn’t want to hide in the shell and quietly die there."
+    "No. I was looking for aggravation."
+    "Painful suffocation with a stream of words, torture through rhetoric - for someone nearby to talk, and talk, and talk."
+    "I was looking for Miku."
+    "She amazingly cheered me up in the morning."
+    "How? That's a se-cret."
+    th "She won't mind if I abuse her company a little, right?"
+    th "When we met, she was delighted with a new face as if she had been day and night without getting out under her piano for weeks, devoid of any decent company.."
+    th "Now she can talk to me!"
+    "The club was closed… {w}What did I expect."
+    "I, as a typical representative of the caste of losers, should have expected only such an outcome.{w} So screw me, no soul-saving brain drain for me."
+    "I sighed, turned around and left."
     $ alt_day2_beach_seen = True
     scene bg ext_beach_sunset
     with dissolve
     play ambience ambience_lake_shore_evening fadein 3
     play music music_7dl["you_are_soul"] fadein 3
-    "Ноги привели меня на пляж. К счастью, сейчас вокруг не было вездесущей детворы, вожатых, обслуживающего персонала и так далее, и тому подобное."
-    "Направление по правую руку блокировал лесок, поэтому я пожал плечами и двинулся влево по берегу."
-    "Это направление было ничуть не хуже любого другого."
-    "В правое плечо бил бриз, в голове было пусто и как-то щемяще. Несмотря на мою гидрофобию, отношения с водой у меня всегда были совершенно особенные."
-    "Когда говорят, что человек может смотреть на первостихию бесконечно, я вспоминаю именно воду. Потому что лично мне огонь душу не чистит, и земля с ветром — тоже."
-    "А вот сесть на бережку и раствориться в бесконечном беге водных струй…"
-    "Еще в детстве я любил убегать куда-нибудь на речке и, досыта насидевшись, напускавшись «блинчиков», чувствовать себя каким-то обновлённым…"
-    "А здесь всё было не так. Начиная с того, что вода меня не успокаивала, заканчивая тем, что абсолютно плоские гладыши вдруг отказывались прыгать по воде и радовать глаз ровной цепочкой отскоков."
-    "Я поднял ладонь к глазам."
-    "Пальцы ощутимо дрожали."
-    th "Дожили, трясусь как пропойца."
-    dreamgirl "Что опять случилось? До тормоза опять с опозданием дошло что-то значительное?"
-    "Например, то, что жизнь моя старая куда-то закончилась."
-    "Из серого пыльного болотца, где только я был сам себе Рандом и хозяин, и жил бы, десятилетиями складывая бесконечную череду дней, единственным значимым событием которых было бы нажатие клавиши включения персоналки."
-    "Ну или если всё совсем грустно, и компьютер даже не отключается, тогда — моя любимая клавиша обновления страницы."
+    "My feet took me to the beach. Fortunately, now there were no ubiquitous children around, squad leaders, attendants, and so on and so forth."
+    "The direction to the right was blocked by the woods, so I shrugged my shoulders and moved to the left along the bank."
+    "This direction was no worse than any other."
+    "A breeze hit my right shoulder, my head was empty and somehow painful. Despite my hydrophobia, I have always had a very special relationship with water."
+    "When they say that a person can look at the primal elements endlessly, I remember exactly water. Because personally, the fire does not cleanse my soul, and the earth with the wind - too."
+    "But to sit on the bank and dissolve in the endless run of water jets…"
+    "Even as a child, I loved to run away somewhere on the river and, after sitting to my fill, having indulged in stone skipping, I felt somehow renewed…"
+    "But here it was not like that. Starting with the fact that the water did not calm me down, ending with the fact that absolutely flat smooth surfaces suddenly refused to jump on the water and please the eye with an even chain of rebounds."
+    "I raised my hand to my eyes."
+    "Fingers were trembling."
+    th "Spectacular, now I'm shaking like a drunkard."
+    dreamgirl "Now what? Did our retard suddenly realize something significant?"
+    "For example, the fact that my old life ended somewhere."
+    "From a gray dusty swamp, where only I was my own master, and would have lived, adding up an endless series of days for decades, the only significant event of which would be pressing the power button for the personal computer."
+    "Well, or if everything is completely sad, and the computer does not even turn off, then my favorite page refresh key."
     if herc:
-        "Я всегда был человеком с горячей головой, но со временем научился сдержанности. И моя достаточно спокойная реакция на лагерь это только подтверждала."
-        "Несмотря на то, что жизнь здорово меня потрепала, сделав всё, чтобы мой внутренний стержень истёрся в пыль, в моей душе так и не воцарилось равнодушие."
-        "Пускай я утратил веру в людей, но благодаря одному пушистому комочку сохранил в себе человечность."
+        "I have always been a hot-headed person, but over time I have learned restraint. And my rather calm reaction to the camp only confirmed this."
+        "Despite the fact that life gave me a good pat, doing everything so that my inner core was worn to dust, indifference did not reign in my soul."
+        "Even though I lost faith in people, but thanks to one fluffy lump I retained my humanity."
     elif loki:
-        "Я всегда считал себя хладнокровным человеком, который не даёт волю эмоциям даже в форс-мажорных обстоятельствах. И моя достаточно спокойная реакция на лагерь это только подтверждала."
-        "Несмотря на то, что жизнь меня здорово потаскала, предметом особой гордости было именно ровное и доброжелательное отношение к окружающим меня людям."
-        "Может, это и не очень правильно, зато спокойно. И тихо. Просто слишком интимно для каждого человека."
+        "I have always considered myself a cold-blooded person who does not give way to emotions even in force majeure circumstances. And my rather calm reaction to the camp only confirmed this."
+        "Despite the fact that life has dragged me down a lot, the even and benevolent attitude towards the people around me was a matter of special pride."
+        "Maybe this is not very correct, but calm. And quiet. Just too intimate for every person."
     elif dr:
-        "Я всегда считал себя парнем спокойным и уравновешенным. И моя достаточно спокойная реакция на лагерь это только подтверждала."
-        "Как-то никогда ничего не трогало. Собственно, даже с девушкой бывшей разбежались не в последнюю очередь из-за того, что я толком ничего и не чувствовал."
-        "Да и чувствовал ли когда-нибудь?"
-    "Сравнивая с детством, с мечтами о романтике и приключениях, взращенный на Дюма и Стивенсоне, Грине и Булычёве, я верил в то, что все эти книжные страсти — они есть! Надо просто копнуть поглубже, искать чуть пристальнее!"
-    "Не тратить время, участвуя в лицедействе под названием «любовь до гроба», где ни один из возлюбленных не чувствует ничего — а искать…"
-    "Вот только похоже, что искать-то особо и нечего."
-    "Нет романтики, нет любви, нет страсти и клятв на крови."
-    "Есть пыль, серость и паническая боязнь остаться одному на склоне лет. Та самая предательская боязнь, толкающая под руку и заставляющая брать что дают."
-    "А меня так затрахало, что во мне все видят запасной вариант."
-    "Так и в чём дело тогда? Почему я волнуюсь до дрожи в руках, так, что не спасают ни блинчики, ни вода, ни тишина?"
-    "Неужели совесть?"
-    "Ведь я, по сути, совершенно другой. Я не имею отношения ни к этим детям, ни к их государству, целям, менталитету, наконец."
-    "И хотя Ольга избавила меня от необходимости выкручиваться, изворачиваться, врать, выдавая себя за пионэра — не оттого ли мне только паскуднее на душе?"
-    "Перед глазами почему-то вдруг появилась Мику."
-    "Ну да, особенно перед этой несчастной японской девочкой, которой настолько тоскливо и одиноко у себя в клубе, что она готова общаться даже с тормозом типа меня."
-    "И глаза, глаза-то какие — шальные, шалые. Глянешь в них — и ух! — будто с водяной горки, с пятнадцати метров вниз летишь! Не щурится, не хмурится, а всё равно, смотрит так, будто она — это добрейший батюшка Лаврентий Палыч, и сейчас тебя, контру, давить будет."
-    "Вся эта история дурацкая, с роялем и губной гармошкой. Она встала и отряхнулась, а мне стыдно стало. Будто это она меня, а не я её буквой «зю» под роялем застукал."
-    "Оттого-то и паскудит, и выводит из равновесия бессильная злость непонятно на что."
-    me "Чёртова японская стерва!"
-    "От долгого молчания связки не успевают расслабиться, и я будто каркаю эти слова, а ветер разносит их по пляжу."
-    "В основании черепа кольнуло чужим присутствием. Между лопаток появилось щекотное давление, выдающее пристальный взгляд. С впечатлительными натурами работает безотказно."
-    "Я не отреагировал. Даже когда за спиной проскрипел песок, выдающий чужие шаги, я не обернулся, и продолжал бросать и бросать несчастные гладыши, пытаясь выбить хотя бы два блина."
-    "Какого чёрта…"
-    "Броски были всё злее и резче, а толку от них было всё меньше и меньше."
-    "Наконец на плечо опустилась чья-то рука."
+        "I have always considered myself a calm and balanced guy. And my rather calm reaction to the camp only confirmed this."
+        "Somehow never got by touched anything. Actually, even the ex-girlfriend fled, not least because I really didn’t feel anything."
+        "Have I ever felt anything at all?"
+    "Comparing with childhood, with dreams of romance and adventure, brought up on Dumas and Stevenson, Greene and Bulychev, I believed that all these bookish passions - they exist! You just have to dig deeper, look a little closer!"
+    "Not to waste time participating in the play called 'love to the grave', where neither of the lovers feels anything - but to seek…"
+    "It just looks like there's not much to look for."
+    "No romance, no love, no passion, no blood vows."
+    "There is dust, dullness and a panic fear of being left alone during declining years. That same treacherous fear, pushing by the arm and forcing you to take what they give."
+    "And I'm so fucking tired of everyone seeing me as a backup option."
+    "So what's the deal then? Why am I worried to the point of trembling in my hands, so that neither skipping stones, nor water, nor silence can save me?"
+    "Is it my conscience?"
+    "After all, I am, in fact, completely different. I have nothing to do with these children, nor with their state, goals, mentality, finally."
+    "And although Olga saved me from the need to get out, dodge, lie, posing as a pioneer - is this not why I only feel more foul in my soul?"
+    "For some reason Miku suddenly appeared before my eyes."
+    "Well, yes, especially in front of this unfortunate Japanese girl, who is so dreary and lonely at her club that she is ready to communicate even with a retard like me."
+    "And eyes, eyes, look at them - crazy, crazy. You look at them - and wow! - as if from a water slide, from fifteen meters down you fly! She doesn’t squint, she doesn’t frown, but all the same, she looks as if she is the kindest father Lavrenty Palych, and now you, the contra, will be crushed."
+    "And that whole story is stupid, with the piano and the harmonica. She got up and brushed herself off, and I felt ashamed. As if it was her, and not me catching her sprawled like the letter «z» under the piano."
+    "That's why it fouls and unbalances impotent anger, for unknown reasons."
+    me "Damn japanese bitch!"
+    "From a long silence, the ligaments do not have time to relax, and I seem to croak these words, and the wind carries them along the beach."
+    "At the base of the skull a pricking, caused by someone else's presence. There was a tickling pressure between the shoulder blades, betraying a gaze. Works flawlessly with impressionable natures."
+    "I didn't react. Even when the sand creaked behind me, betraying someone else's steps, I did not turn around, and continued to throw and throw unfortunate smooth surfaces, trying to knock out at least two skips."
+    "What the hell…"
+    "The throws were getting angrier and sharper, and there was less and less sense in them."
+    "Finally, someone touched my shoulder."
     if persistent.mi_dj_true:
         menu:
-            "Я неприязненно дёрнул плечом":
+            "I shrugged my shoulders in disgust":
                 $ alt_hpt += 1
                 $ alt_day2_mi_date = 3
                 if (alt_day2_convoy not in ('dv', 'sl', 'un')):
                     $ lp_mi += 1
-                "Похоже, что здесь не только частная собственность — это буржуазный пережиток, но и личное пространство — это выдумки импотентов из минздрава."
+                "It seems that here not only private property is a bourgeois relic, but also personal space is an invention of impotent people from the Ministry of Health."
                 show mi serious pioneer close at center with dissolve
-                "Мику…"
-                "Она выглядела удивительно задумчивой и молчаливой."
-                "Некоторое время в её взгляде сквозило неприкрытое недоумение, будто она ожидала увидеть меня где угодно, только не здесь, но недолго — до ближайшего мгновения. Веко опустилось и отсекло всё, о чём я не успел спросить. Следующая остановка — конечная."
-                mi "Ты здесь один?"
-                "Я кивнул."
-                mi "Ты успел стать удивительно популярным за два дня."
+                "Miku…"
+                "She looked remarkably thoughtful and silent."
+                "For some time, her gaze showed undisguised bewilderment, as if she expected to see me anywhere, but not here, but not for long - until the next moment. The eyelid dropped and cut off everything that I did not have time to ask. Next stop is the final one."
+                mi "Are you alone here?"
+                "I nodded."
+                mi "You managed to become amazingly popular in two days."
                 show mi normal pioneer close with dspr
-                mi "За полчаса, что я шла сюда, тебя спросили Ольга Дмитриевна, Славя, Лена, Алиса и даже Ульяна."
-                mi "Может, не стоило их оставлять? Безответственно."
-                "Я не ответил. Плевать мне на ответственность."
-                "Хотелось сказать что-нибудь веское, важное, отсекающее дальнейшие вопросы, но в голову лезли почему-то сплошные банальности."
-                "И Мику какая-то странная, неразговорчивая."
+                mi "During the half hour that I was walking here, Olga Dmitrievna, Slavya, Lena, Alisa and even Ulyana asked about you."
+                mi "Maybe you shouldn't have left them? Irresponsible."
+                "I didn't answer. Fuck the responsibility."
+                "I wanted to say something weighty, important, cutting off further questions, but for some reason solid banalities climbed into my head."
+                "And Miku is acting kind of strange, taciturn."
                 show mi serious pioneer close at center with dspr
-                "Мы уселись на песок и кидали камешки в воду. Потом нашли неплохую цель — торчащий из воды чёрный бульник, покрытый длинными наростами мха, и кидали уже в него."
-                "Я отставал где-то на три попадания, когда Мику отбросила уже подобранный гладыш в сторону и легла на песок, закидывая руки за голову."
-                me "С тобой что-то произошло? Ты такая странная сейчас…"
-                "Я сидел спиной к ней, и исповедь, которую она начала, шла целиком мне в спину."
-                mi "Ничего не произошло. И не произойдёт. Ты новый человек в моей жизни, и пока жив ещё эффект попутчика, я хочу воспользоваться тобой как жилеткой. Можно?"
-                "Я пожал плечами."
+                "We sat on the sand and threw pebbles into the water. Then we found a good target - a black boulder sticking out of the water, covered with long growths of moss, and started throwing."
+                "I was about three hits behind when Miku tossed the already gathered pebble to the side and lay down on the sand, throwing her hands behind her head."
+                me "Has something happened to you? You are so strange now…"
+                "I sat with my back to her, and the confession she began went entirely to my back."
+                mi "Nothing happened. And it won't happen. You are a new person in my life, and while the travel companion effect is still alive, I want to use you as a vest. Can I?"
+                "I shrugged."
                 show mi angry pioneer close with dspr
-                mi "Начнём с того, что я никому не нужна. Даже мой великий отец и не менее великая мать бывают дома в году раз эдак пять, и за время своих визитов заскакивают дай бог если на пару часов."
-                mi "Так что выросла я очевидным сорняком, повёрнутым на жажде общения."
-                mi "Мне не хотелось оставаться одной."
-                mi "Ни{w=0.5}ког{w=0.5}да."
+                mi "Let's start with the fact that no one needs me. Even my great father and no less great mother are at home about five times a year, and their visits, God forbid, last for a couple of hours."
+                mi "So I grew up as an obvious weed turned on the thirst for communication."
+                mi "I never wanted to be alone."
+                mi "Ne{w=0.5}ve{w=0.5}r."
                 show mi serious pioneer close at center with dspr
-                "Она говорила и говорила, захлёбываясь словами и торопясь рассказать как можно больше, прежде чем слушатель уйдёт."
-                "И не было в её голосе сейчас того компрессорного напора, что встретил меня в музыкальном клубе. Поток сознания сменился обычным, чуть сбивчивым речитативом монолога-исповеди."
+                "She talked and talked, choking on words and hurrying to tell as much as possible before the listener left."
+                "And there was no more of that compressor pressure in her voice when I met her in the music club. The stream of consciousness was replaced by the usual, slightly confused recitative of a monologue-confession."
                 show mi normal pioneer close at center with dspr
-                mi "Ничего удивительного в том, что сидя дома постоянно одна — а я ведь не могла просто оставить хозяйство и уйти на улицу гулять — я заработала себе манию общения."
-                mi "Я беру каждого нового человека и говорю с ним, и говорю, и общаюсь — пока его не начнёт тошнить от меня. И тогда он уходит."
-                "Она помолчала."
-                mi "И ты уйдёшь."
-                me "А это уже мне решать."
-                "Я растянулся на песке рядом с ней."
-                me "Ты продолжай."
+                mi "There is nothing surprising in the fact that sitting at home constantly alone - and I couldn’t just leave the household and go outside for a walk - I earned myself a mania for communication."
+                mi "I take every new person and talk to him and talk and talk until he gets sick of me. And then he leaves."
+                "She fell silent."
+                mi "And so will you."
+                me "Well, that's up to me."
+                "I stretched out on the sand next to her."
+                me "Keep going."
                 show mi shy pioneer close with dspr
-                mi "Я распугала всех своих сверстников и друзей — сначала по ту сторону японской границы."
-                mi "Потом по эту."
-                mi "Бесконечные переезды, постоянная смена людей, с которыми я общаюсь, вечные стрессы из-за того, что сверстники не выдерживают общения со мной."
-                mi "Речь заходила даже об интернате, но, слава богу, отец не решился."
+                mi "I scared all my peers and friends - first on the other side of the Japanese border."
+                mi "Then on this side."
+                mi "Endless moving, constant change of people with whom I communicate, eternal stress due to the fact that peers can not stand communication with me."
+                mi "They even talked about a boarding school, but, thank God, my father did not dare."
                 show mi serious pioneer close at center with dspr
-                mi "А там мне стукнуло 16, и вот я здесь. В надежде, что хоть здесь что-нибудь изменится."
-                mi "Для тебя ведь не тайна, что здесь собрались совершенно особенные дети, Семён?"
+                mi "And there I turned 16, and here I am. In the hope that at least something will change here."
+                mi "It's no secret to you that very special children have gathered here, Semyon?"
                 show mi normal pioneer close with dspr
-                mi "Возьми Славю, Электроника, меня…"
-                mi "Мы все своего рода передовые дети… А по сути — изгои."
-                mi "И здесь будто в социальном эксперименте находимся — что будет, если бросить в одну банку нескольких уродов."
-                me "Прекрати."
-                "Я возразил как мог мягко."
-                me "Никакие мы не уроды. Просто так попались друг другу."
+                mi "For example, look at Slavya, Electronik, me…"
+                mi "We are all kind of progressive children… But in reality - we're outcasts."
+                mi "And here, as if in a social experiment, we are - what will happen if we throw several freaks into one jar."
+                me "Stop."
+                "I objected as gently as I could."
+                me "We are not freaks. Just stumbled upon each other."
                 show mi cry pioneer close with dspr
-                "Повернув голову, чтобы просто поймать её взгляд…"
-                "…я чуть не отвернулся обратно."
-                "Вот откуда ощущение слежки! Последние несколько — несколько? — минут, похоже, она так и лежала, безучастно глядя в мою сторону…"
-                "И плакала."
-                "Слёзы, безостановочно бегущие по упругой белой коже, с шипением зарывались в остывающий песок."
-                "Я не знал, что делать."
-                "Пожалеть — но как? {w}Я не умею."
-                "Я и слов утешающих никаких не знаю, и высшей мерой жалости для меня всегда было дать человеку прорыдаться."
-                "Тем более, что здесь не слова нужны, а что-то другое."
-                "Но что?"
-                "Так и не придумав ничего, я лежал как придурок, глядя ей в мокрые глаза."
+                "Turning my head just to catch her eye…"
+                "…I almost turned back."
+                "That's where the feeling of being watched! The last few - a few? - minutes, it seems, she lay like that, staring blankly in my direction…"
+                "And cried."
+                "Tears, running non-stop over the elastic white skin, hissed, buried in the cooling sand."
+                "I didn't know what to do."
+                "Pity her - but how? {w}I don't know how to."
+                "I don’t know any words of consolation, and the highest measure of pity for me has always been to let a person sob."
+                "Moreover, it is not words that are needed here, but something else."
+                "But what?"
+                "So without inventing anything, I lay like a moron, looking into her wet eyes."
                 show mi sad pioneer close with dissolve
-                mi "А ты говоришь, не уроды…"
-                "Она тихонько вздохнула."
-                mi "Если уж ты испугался собственной жалости к плачущей девочке, так, что у тебя до сих пор зрачки трясутся…"
-                "В горле вдруг встал горький ком."
-                me "Н-ничего я не испугался… Я просто…"
-                mi "Конечно, ты просто. Ты просто не умеешь жалеть. Не умеешь любить. Всё, что у тебя осталось — это дыхание. Замени его тиканьем часов, и никто не заметит разницы."
-                mi "Проблема в том, что в лагере этой премудрости никто не обучен. Мы — никто из нас — не умеем просто быть частью общества."
-                mi "Потому что умные книжки этому не научат. {w}Этому научит только жизнь — нормальная, здоровая жизнь в рядах сверстников."
-                me "Не верю я в такое. Так не бывает, чтобы нас специально таких искали."
-                mi "Да правда, что ли? А вспомни последний свой роман. Если, конечно, ты заводил их."
-                mi "Ощущение, что всё не по-настоящему, понарошку, с масками, плясками и конфетти. Ничего не напоминает?"
+                mi "And you tell me we aren't freaks…"
+                "She sighed softly."
+                mi "If you were already afraid of your own pity for a crying girl, so that your pupils are still shaking…"
+                "Suddenly there was a bitter lump in my throat."
+                me "I-I'm not afraid of anything… I just…"
+                mi "Of course, you just. You just can't be sorry. You don't know how to love. All you have left is your breath. Replace it with the ticking of a clock and no one will know the difference."
+                mi "The problem is that no one is trained in this wisdom in the camp. We - none of us - can't just be part of society."
+                mi "Because smart books won't teach you that. {w}Only life will teach this - a normal, healthy life in the ranks of peers."
+                me "I don't believe in that. It doesn't happen that we were specifically looked for."
+                mi "Really? Remember your last relationship. If it ever happened, of course."
+                mi "The feeling that everything is not real, pretend, with masks, dances and confetti. Does that remind you of anything?"
                 me "…"
-                mi "Просто ничего нет. В нас ничего нет. Потому что никто туда никогда ничего не положил."
-                me "Оно должно вырасти само…"
+                mi "Simply because there's nothing. There is nothing in us. Because no one has ever put anything there."
+                me "It must grow on its own…"
                 show mi angry pioneer close with dspr
-                mi "Да никому оно ничего не должно!"
-                mi "Мы здесь провозвестники человечества будущего — людей без страха и упрёка."
-                mi "Одно я только не пойму — зачем здесь этот лагерь? К чему вся эта красота, пляжи эти, леса… {w}Зачем? Если мы всё равно не в состоянии оценить."
-                mi "Не проще ли было бы просто посадить нас в бетонные коробки и там держать, кормя отходами раз в сутки?"
-                "Кажется, её начало заносить, и я поспешил её успокоить."
-                me "Но ведь это неправда…"
-                "Я повернулся на бок и опёрся на локоть, оказавшись таким образом чуть выше."
-                me "Насчёт эмоций."
-                mi "Правда."
-                "Она закусила губу и выжидающе смотрела на меня снизу вверх."
-                mi "Неправда? Правда…"
-                "Она шептала, и слёзы опять били себе путь по заплаканным щекам."
-                me "Глупости."
-                me "Перестань, иначе…"
-                mi "Иначе что? {w}Расскажешь вожатой? {w}Пожалуешься директору? {w}Отведёшь меня к доктору?"
-                mi "Или бросишь здесь на пляже? {w}Последнее у тебя чертовски хорошо получается — девчонки в один голос хвалят!"
-                "Тут она, конечно, хватила через край."
-                me "Хуже."
+                mi "It mustn't, not for anyone!"
+                mi "We are here the heralds of the future humanity - people without fear and reproach."
+                mi "One thing I just do not understand - why is this camp here? Why all this beauty, these beaches, forests… {w}What for? If we still fail to appreciate it."
+                mi "Wouldn't it be easier to just put us in concrete boxes and keep us there, feeding us with waste once a day?"
+                "It seems that she began to drift, and I hastened to calm her down."
+                me "But it's not true…"
+                "I turned on my side and leaned on my elbow, thus being a little higher."
+                me "About emotions."
+                mi "True."
+                "She bit her lip and looked up at me expectantly."
+                mi "Not true? True…"
+                "She whispered, and tears again beat their way down tear-stained cheeks."
+                me "Nonsense."
+                me "Please stop, or…"
+                mi "Or what? {w}You'll tell the squad leader? {w}Complain to the director? {w}Take me to the nurse?"
+                mi "Or you'll just abandon me here, on the beach? {w}The last thing you do damn well - the girls unanimously praise you!"
+                "Here she, of course, went overboard."
+                me "Worse."
                 play music music_list["confession_oboe"] fadein 3
                 show mi surprise pioneer with dspr
                 if alt_day2_mi_kumuhimo == 2:
-                    "Я наклонился над ней, поймал её запястье — браслет чуть царапнул подушечки пальцев — и нашёл её губы своими."
+                    "I leaned over her, caught her wrist - the bracelet slightly scratched the pads of her fingers - and found her lips with mine."
                 else:
-                    "Я наклонился над ней, поймал её запястье, и нашёл её губы своими."
-                "Из-за долгого отсутствия практики, напрягаясь там, где не следовало бы, я целовал её настойчиво и неумело, а она всё смотрела сквозь меня, будто не видела совершенно."
-                "Наконец, до неё дошло происшедшее, и она, взвизгнув, оттолкнула меня, откатилась сама."
+                    "I leaned over her, caught her wrist, and found her lips with mine."
+                "Due to a long lack of practice, straining where I should not have, I kissed her insistently and clumsily, and she kept looking through me, as if she did not see at all."
+                "Finally, she realized what had happened, and, squealing, she pushed me away, rolled away on her own."
                 show mi shy pioneer with dspr
-                mi "Ты что творишь, сумасшедший? Нельзя же прямо так сразу брать и целовать девушку! Вдруг она не готова, или думает о другом, или вообще хочет побыть немного одна!"
-                "Она тараторила и тараторила, а я смотрел на неё и улыбался."
-                me "С возвращением, Мику. Такой ты мне нравишься гораздо больше."
-                "Она только рукой махнула."
-                mi "Из всех странных людей этого лагеря, Семён, ты — самый странный!"
-                "Я согласно кивнул."
-                me "Нужно будет как-нибудь повторить этот странный вечер."
-            "Я замер":
+                mi "What are you doing, crazy? You can't just pick up and kiss a girl right away! Maybe she is not ready, or thinks about something else, or even wants to be a little alone!"
+                "She chattered and chattered, and I looked at her and smiled."
+                me "Welcome back, Miku. I like you more this way."
+                "She just waved her hand."
+                mi "Of all the strange people in this camp, Semyon, you are the strangest!"
+                "I nodded in agreement."
+                me "We'll need to do this again someday."
+            "I froze":
                 $ alt_spt += 1
     if not persistent.mi_dj_true or alt_day2_mi_date != 3:
-        "Похоже, что здесь не только частная собственность — это буржуазный пережиток."
+        "It seems that here not only private property is a bourgeois relic."
         show mi serious pioneer close at center with dissolve
-        "Мику."
-        "Я отвернулся, не давая ей выйти на привычную уже пулемётную скорость."
-        "Быть может, если я сделаю вид, что никого не заметил — она подыграет? И оставит меня в одиночестве."
-        "Да хрена с два!"
-        mi "Семён? Здравствуй! А что ты здесь делаешь? А то тебя там все девочки спрашивали, они тебя искали, наверное. У меня иногда так бывает, что хочется спрятаться куда-нибудь, где никто не найдёт — но только ненадолго, просто для того, чтобы немного отдохнуть."
-        me "Тогда ты должна меня понять."
-        "Неласково ответил я."
-        "Грубить не хотелось — всё-таки девочка, но…"
-        "Похоже, намёков она то ли не понимала, то ли не ценила."
-        mi "А ты один здесь сейчас? А то если вдруг с кем-то, ты скажи, чтобы я не мешала, я тогда уйду, и поищу себе другое место."
-        me "Я был один. До поры."
-        mi "Значит, мы теперь будем сидеть вместе?"
+        "Miku."
+        "I turned away, preventing her from reaching her usual machine-gun speed."
+        "Perhaps if I pretend not to notice anyone, she will play along? And leave me alone."
+        "Of course not!"
+        mi "Semyon? Hello! What are you doing here? All the girls asked about you there, they were looking for you, probably. Sometimes it happens to me that I want to hide somewhere where no one will find - but only for a while, just to get some rest."
+        me "Then you should understand me."
+        "I answered awkwardly."
+        "I didn't want to be rude - she's still a girl, after all…"
+        "It seems that she either did not understand the hints, or did not appreciate."
+        mi "Are you alone here now? If you were with someone, you can just tell me not to interfere, then I'll leave and look for another place."
+        me "I was alone. Until now."
+        mi "So we'll sit together now?"
         show mi smile pioneer close with dspr
-        "Она захлопала в ладоши и расцвела в улыбке."
+        "She clapped her hands and blossomed into a smile."
         if ('music_club' in list_voyage_7dl):
-            mi "А я тебя всё ждала в клубе, а ты не шёл и не шёл. А потом мне Лена сказала, что видела тебя где-то рядом, а потом ты исчез."
-            me "Лене-то какое дело…"
-            mi "Я не хочу сплетничать, потому что считаю, что сплетни это глупо и грязно, но всё-таки, это мои наблюдения! Я же могу поделиться наблюдениями?"
-            me "Возможно."
-            mi "Мне кажется, ты Лене понравился. То есть, в смысле как парень понравился, а не так, как в русском языке говорят «не нравится» и имеют в виду неприязнь."
-            me "Мику, а ты можешь говорить чуточку проще? Одна мысль — одно предложение."
-            mi "Но разве я так непонятно говорю, мы когда в Японии жили, Па хвалил меня за то, как я управляюсь с идиомами, а тут ты критикуешь. Но критика же всегда полезно. Так что ты хотел сказать?"
-            me "Слишком много мыслей в одной фразе. Я не знаю, на какую из них отвечать."
-            me "Ты же вокалом увлекаешься — одна фраза должна содержать одну мысль."
+            mi "And I was waiting for you at the club, but you didn’t come and didn't come. And then Lena told me that she saw you somewhere nearby, and then you disappeared."
+            me "Why would Lena care…"
+            mi "I don't want to gossip, because I think that gossip is stupid and dirty, but still, these are my observations! Can I share my observations?"
+            me "Maybe."
+            mi "I think Lena liked you. That is, in the sense of how the guy liked, and not the way they say in Russian «don't like» and mean dislike."
+            me "Miku, can you speak a little simpler? One thought, one sentence."
+            mi "But am I speaking so incomprehensibly, when we lived in Japan, dad praised me for how I handle idioms, and here you criticize me. But criticism is always helpful. So what did you mean to say?"
+            me "Too many thoughts in one phrase. I don't know which one I should respond to."
+            me "You are fond of vocals - one phrase should contain one thought."
             show mi upset pioneer at center with dspr
-            mi "Но так же не успеешь ничего!"
-        mi "Вообще, жди здесь!"
+            mi "But then you won't have time for everything!"
+        mi "Actually, wait here!"
         hide mi with dissolve
-        "Она вскочила и куда-то убежала."
-        th "Хвала Рандому! Мику-пулемётчица перенаправила собственный божественный ветер на другие цели."
-        th "Хотя, какая она нафиг камикадзе."
-        dreamgirl "Ну, не собой она тебя таранит, а словесным потоком. {w}Может, сольёмся по-тихому, пока она не вернулась?"
-        th "Нет, мне интересно, куда она убежала и зачем. Не в туалет же."
-        dreamgirl "Смотри, чувак, другого шанса может и не быть."
-        th "Плевать."
-        "Тем более, что у меня наконец начали получаться рикошеты — куцые, убогие, в пару отскоков — и тем не менее!"
-        "За спиной опять скрипнула галька, и Мику встала рядом."
+        "She jumped up and ran away."
+        th "Thank God! Chaingunner Miku redirected her own divine wind onto other targets."
+        th "Although she wouldn't make a good kamikaze."
+        dreamgirl "Well, she's not ramming you with herself, but rather with a word stream. {w}Maybe we should just quietly leave before she comes back?"
+        th "No, I wonder where she ran away and why. Not to the toilet for sure."
+        dreamgirl "Your call, dude, you might not have any other chances."
+        th "Whatever."
+        "Moreover, I finally began to get ricochets - scanty, miserable, for a couple of bounces - and yet!"
+        "The pebbles creaked again behind me, and Miku stood beside once more."
         show mi normal pioneer at center with dissolve
-        mi "Ты знаешь, что японцы говорят про текучую воду?"
-        me "Знаю. Именно поэтому я здесь."
-        me "Куда ходила?"
+        mi "Do you know what the Japanese say about flowing water?"
+        me "I know. That's why I'm here."
+        me "Where did you go?"
         show mi smile pioneer at center with dspr
-        mi "Я решила, что не лишним было бы немного музыки на вечернем пляже."
-        me "Ты разговариваешь короткими фразами."
+        mi "I decided that it would not be superfluous to have some music on the evening beach."
+        me "You're speaking in short sentences."
         show mi normal pioneer at center with dspr
-        "Она опустила голову."
-        mi "Я принимаю любую помощь. Это лучше, чем сидеть одной в клубе, где все, кто ко мне приходят в гости — это Алиса, у которой расстроилась гитара, да Ольга Дмитриевна — чтобы забрать меня убирать площадь."
-        me "И как ты долго там сидишь?"
+        "She lowered her head."
+        mi "I accept any help. It's better than sitting alone in a club, where everyone who comes to visit me is Alisa, whose guitar is out of tune, and Olga Dmitrievna - to pick me up to clean the area."
+        me "And for how long have you been cooped up there?"
         show mi serious pioneer close at center with dspr
-        mi "Да сколько мы здесь есть — все две недели. Поднимаюсь с утра, сижу в клубе весь день, а вечером — сюда."
+        mi "As long as we have been here - all two weeks. I get up in the morning, I sit in the club all day, and in the evening I come here."
         play music music_list["farewell_to_the_past_edit"] fadein 2
-        mi "Самое бездарное время в моей жизни. А отец так настаивал, уговаривал — мол, здесь, в самом лучшем лагере на свете я только и смогу немного прийти в себя, прежде чем лето закончится."
-        me "Прийти в себя?"
-        mi "Учёба, выступления, работа, танцы… И одиночество."
-        mi "Я уехала из одного одиночества, чтобы попасть в другое."
-        "Она нажала клавишу воспроизведения, и из динамика полилась песня на японском."
-        "Очень хорошая. Будь мы в моём мире — я тут же попросил бы скинуть на плеер и заслушал бы до дыр."
-        "Три минуты воспроизведения — формат радиостанции — мы промолчали, слушая каждый своё."
+        mi "The most worthless time in my life. And my father so insisted, persuaded - they say, here, in the best camp in the world, is the only place where I can recover a little before the summer is over.."
+        me "Recover?"
+        mi "Study, performance, work, dancing… And loneliness."
+        mi "I left one loneliness to fall into another."
+        "She pressed the play button, and a song in Japanese poured out of the speaker."
+        "Very good. If we were in my world, I would immediately ask to pass it to my player and listen the shit out of it."
+        "Three minutes of playback - the format of the radio station - we were silent, each listening to their own."
         if alt_day2_mi_snap:
-            mi "Дядя Боря сказал, что к завтра снимки будут готовы. Возьмёшь?"
-            me "Не знаю."
-            "Фотографироваться я не любил — нефотогеничность, прости Господи."
-            "Но уже завершая фразу, каким-то десятым чутьём понял и вывернулся:"
-            me "Вернее, не знал бы — если бы был там один."
-            me "А раз мы там вдвоём — конечно, конечно."
+            mi "Uncle Borya said that the pictures would be ready by tomorrow. Will you get them?"
+            me "Don't know."
+            "I did not like to be photographed - non-photogenic, God forgive me."
+            "But already completing the phrase, with some tenth instinct, I understood and twisted:"
+            me "Rather, I wouldn't, if I would be there alone."
+            me "And since we're there together - of course, of course."
             show mi smile pioneer with dspr
-            mi "Вот так и надо отвечать девушке."
-            "Тихо улыбнулась японка, наполовину пребывая в собственных грёзах."
-            "Видимо, песня была тому причиной."
-        "Мне понравилась музыка, а Мику, судя по грустным глазам, слушала не самый весёлый текст."
-        me "Красивая песня. О чём она?"
-        mi "О мечте."
-        "Просто ответила Мику."
-        me "А расскажешь о себе?"
-        me "Я слышал о тебе что-то, вроде бы, ты достаточно популярна в стране Восходящего Солнца."
+            mi "This is how you should respond to a girl."
+            "She smiled softly, half in her own daydreams."
+            "The song probably was the reason for that."
+        "I liked the music, and Miku, judging by the sad eyes, was not listening to the most cheerful text."
+        me "Beautiful song. What's it about?"
+        mi "About a dream."
+        "Simply replied Miku."
+        me "Can you tell me anything about yourself?"
+        me "I heard something about you, it seems that you are quite popular in the Land of the Rising Sun."
         show mi shy pioneer close at center
         with dissolve
-        mi "Не то чтобы популярна, здесь уместнее было бы сказать, что мне повезло оказаться в нужное время в нужном месте."
-        mi "У вас есть похожее шоу по телевизору, называется «Утренняя Звезда», где дети, подобные мне, демонстрируют свои таланты."
-        "Я пожал плечами. С моей любовью к телевизору, я мог поверить в существование и такого шоу."
-        me "Я не смотрю телевизор. Но ты продолжай."
-        mi "Был концерт, гала-концерт, где самых лучших из нас подтягивали до нужного уровня и в зависимости от внешних данных давали путёвку в шоубиз. Мне повезло уродиться с достаточно смазливым лицом."
-        "Она с неудовольствием потеребила себя за левую щёчку, где от касания пальцев тут же вспыхнул румянец."
-        mi "Поэтому от участи сэйю я была спасена. А тут толчок, обрыв электричества, в зале не только японцы, там ещё и гости из других стран — паникуют, рвутся куда-то."
-        me "А ты?"
-        mi "Мне тоже страшно. Страшно-страшно, понимаешь, просто до того, чтобы спрятаться в суфлёрскую яму и не выбираться оттуда — но я гляжу поверх софитов на эти лица, искажённые ужасом, и продолжаю петь."
-        mi "Из того, что я могла тогда — это просто петь, понимаешь?"
-        mi "Мне очень не хотелось, чтобы красивое платье, которое мы выбирали неделю, причёска, ради которой мне пришлось сидеть неподвижно больше часа перед зеркалом…"
-        mi "Да даже эти несчастные туфли на высокой «Скале»…"
-        "Она протянула ножку вперёд, давая мне полюбоваться туфелькой с высоким сплошным каблуком."
-        mi "И до дрожи не хотелось просто испортить всё, зарыдав и убежав со сцены."
-        mi "Тем более, что здание телецентра было сейсмоустойчиво — и мы с Па узнавали это."
+        mi "Not exactly popular, here it would be more appropriate to say that I was lucky to be at the right time in the right place."
+        mi "You have a similar show on TV called «Morning Star», where children, like me, show their talents."
+        "I shrugged. With my love for TV, I could believe in the existence of such a show."
+        me "I don't watch TV. But keep going."
+        mi "There was a concert, a gala concert, where the best of us were pulled up to the required level and, depending on external parameters, they were given a ticket to showbiz. I was lucky to be born with a pretty face."
+        "She rubbed her left cheek with displeasure, where a blush immediately flared up from the touch of her fingers."
+        mi "Therefore, I was saved from the fate of a seiyuu. And then a thump, a power outage, and there aren't only the Japanese in the hall, there are also guests from other countries - they are panicking, rushing somewhere."
+        me "And you?"
+        mi "I was afraid too. Scary, scary, you know, makes you want to hide in a prompter hole and not get out of there - but I look over the spotlights at these faces, distorted by horror, and continue to sing."
+        mi "The only thing I could do back then was sing, you know?"
+        mi "I really did not want that the beautiful dress that we chose for a week, the hairstyle for which I had to sit still for more than an hour in front of the mirror…"
+        mi "Even those unfortunate shoes with high heels…"
+        "She stretched her leg forward, letting me admire the shoe with high solid heel."
+        mi "And I didn’t want to just ruin everything by sobbing and running away from the stage, to the point I was trembling."
+        mi "Moreover, the television center building was earthquake-resistant - me and Dad knew about this."
         show mi sad pioneer close at center
         with dissolve
-        mi "Я пела и считала толчки."
-        mi "И на последней строчке землетрясение закончилось…{w} В общем, иначе как «Отчаянная Мику» меня поначалу не звали."
+        mi "I sang and counted the thumping beats."
+        mi "And on the last line earthquake ended…{w} Well, I wasn't called anything other than «Daredevil Miku» at first."
         show mi smile pioneer close at center
         with dissolve
-        mi "После этого жизнь превратилась — как это по-русски? — золотое додзё? Золотая клетка?"
-        me "Последний вариант, если ты о сытой жизни в затворничестве."
-        mi "Ваши «непоседы» хотя бы общаются между собой. А что делать бедной девочке, которой не с кем даже словом перемолвиться?"
-        th "В таких случаях и помогают интернеты. Всегда можно найти собеседника."
-        th "Жаль, ты рановато родилась."
+        mi "After that, life has turned - how do you say it in Russian? — into the golden dojo? Golden cage?"
+        me "The last option is if you're talking about a well-fed life in seclusion."
+        mi "Your «fidgets» at least communicate with each other. And what about a poor girl who has no one to even say a word to?"
+        th "In such cases, the Internet can help. You can always find a partner."
+        th "Unfortunately, you were born a bit too early for that."
         show mi angry pioneer close
         with dissolve
-        me "Перекинься со мной, я же здесь."
-        mi "Ты удивительно терпелив для незнакомого пионера. Обычно меня не выдерживают дольше пятнадцати минут, и то скрипя зубами."
-        mi "Иногда мне кажется, что если бы не было клуба, вожатая услала бы меня жить в лес или дежурить на лодочной станции — что угодно, лишь бы не слышать моей болтовни."
+        me "You can talk to me, I'm right here."
+        mi "You are remarkably patient for an unfamiliar pioneer. Usually they can't handle for more than fifteen minutes, and even then only while gritting their teeth."
+        mi "Sometimes it seems to me that if there was no club, the squad leader would send me to live in the forest or on duty at the boat station - anything, just so as not to hear my chatter."
         show mi laugh pioneer close at center
         with dissolve
-        "И что отвечать в такой ситуации? Да, девочка, ты малость навязчива?"
-        "Или сделать вид, что всё хорошо, и прибавить ещё кирпичик в стеночку лжи, отделяющую девочку от настоящего мира?"
-        me "Зависит от желания."
-        me "Мне нравится, как ты звучишь. Будто серебряный колокольчик."
-        me "И если наложить твой голос на музыку — получится песня."
+        "And what is the answer in such a situation? Yes, girl, you are a little obsessive?"
+        "Or pretend that everything is fine and add another brick to the wall of lies that separates the girl from the real world?"
+        me "Depends on what you want."
+        me "I like the way you sound. Like a silver bell."
+        me "And if your voice was to be put on music - that would be a song."
         show mi shy pioneer close at center
         with dissolve
-        "Во мне нет этой всесокрушающей жажды общения, какова присуща любому нормальному человеку, но и то, если меня вытаскивают — те, кого я ещё не разогнал из жизни окончательно — на сабантуй, а водки достаточно…"
-        "…Я могу болтать."
-        "Особенно, если перед этим долго-долго молчал."
-        "Обильно, шумно и надоедливо. Почти как Мику."
-        "Возможно, на этой почве, а может, дело в том, что в молодой организм наконец постучался подростковый гормональный фон — {w}но я ощутил подрастающую симпатию к девочке."
-        "Те ростки, что она посеяла мне в сердце в нашу первую встречу, ощутили солнце и подняли голову."
+        "I don’t have this all-destroying thirst for communication, which is inherent in any normal person, but even then, if they pull me out - those whom I have not yet completely dispersed from life - to a drinking party, and there is enough vodka…"
+        "…I can talk for hours."
+        "Especially if I was silent for a long time before."
+        "Abundantly, noisy and annoying. Almost like Miku."
+        "Perhaps on this basis, or maybe the fact is that the teenage hormonal background has finally knocked on the young body — {w}but I have felt a growing sympathy towards her."
+        "Those sprouts that she sowed in my heart at our first meeting felt the sun and raised their heads."
         show mi normal pioneer close at center
         with dissolve
-        mi "Я не хочу быть одна. Разве это слишком много?"
-        mi "Мне жизненно необходим человек, который и слушает, и говорит, и понимает меня."
-        me "А ты не пробовала мальчика, там, заводить?"
-        me "Ты красивая, талантливая, общительная… {w}Проблем быть не должно."
-        mi "Социальный разрыв, Семён. Слышал о таком? Меня не воспринимают отдельно от короткой юбки, широких рукавов и микрофона."
+        mi "I don't want to be alone. Is that too much?"
+        mi "I need a person who listens, speaks and understands me."
+        me "Have you tried, I don't know, getting a boyfriend?"
+        me "You're beautiful, talented, sociable… {w}There shouldn't be any problems."
+        mi "Social gap, Semyon. Heard about it? I'm not perceived apart from a short skirt, wide sleeves and a microphone."
         show mi upset pioneer close at center
         with dissolve
-        mi "Удобно, если хочешь спрятать собственные переживания, но совершенно непригодно для создания хоть каких-нибудь отношений."
-        me "Но здесь и сейчас этого нет."
-        "Я подвинулся к ней поближе — так, что наши плечи почти соприкасались."
+        mi "Convenient if you want to hide your own feelings, but completely unsuitable for creating at least some kind of relationship."
+        me "But here and now it doesn't exist."
+        "I moved closer to her, so that our shoulders were almost touching."
         show mi upset pioneer close at center with dissolve
-        me  "Твой отец не соврал тебе, когда сказал, что здесь ты сможешь отдохнуть так, как нигде не отдыхала."
-        me "Он просто забыл упомянуть кое-что — то, что для него естественно как для человека, выросшего в Союзе."
-        th "А для тебя осталось тайной за семью печатями."
-        me "Самые тёплые воспоминания, самые нежные чувства и самый лучший отдых невозможны в одиночку. Тебе нужен кто-то, кто будет рядом."
-        me "Влейся в коллектив, заведи подружку или друга, начни встречаться с кем-нибудь — и ясное дело, что никто тебе этого не преподнесёт на блюдечке."
-        me "Придётся приложить кое-какие усилия."
+        me "Your father didn't lie to you when he said that here you can rest like you have not rested anywhere else."
+        me "He just forgot to mention something - something that is natural for him as a person who grew up in the Union."
+        th "And for you it remains a secret behind seven seals."
+        me "The warmest memories, the most tender feelings and the best rest are impossible alone. You need someone to be by your side."
+        me "Join the team, get a girlfriend or friend, start dating someone - of course that nobody would present this to you on a silver platter."
+        me "You'll have to put in some effort."
         show mi serious pioneer close at center
         with dissolve
-        mi "Усилия? Ты имеешь в виду, что надо ходить и общаться с другими пионерами и — как там говорила вожатая — активно участвовать в жизни лагеря?"
-        me "Именно. Чтобы стать частью лагеря — надо становиться ей целенаправленно."
+        mi "Effort? You mean that you need to go and communicate with other pioneers and - as the squad leader said - actively participate in the life of the camp?"
+        me "Exactly. To become a part of the camp, you need to do it purposefully."
         show mi normal pioneer close
         with dissolve
-        mi "И что для этого делать надо?"
-        me "Для начала — оставить за бортом предыдущую жизнь. {w}Лагерь — это отдельная вселенная."
-        me "Наплевать на мнение злопыхателей."
-        me "Да просто раскинуться на песке, понимая, что такого вечера и таких звёзд больше нигде не будет!"
-        me "И впустить вечер в себя."
-        "Я устроился на песке, закинув руки за голову и снова попытался узнать хотя бы чёртов ковш Малой Медведицы."
-        "И, кажется, я слишком увлёкся, так как когда рядом вытянулось чьё-то тело, а плечо оттянуло тяжестью прелестной головки, я невольно вздрогнул."
+        mi "What am I supposed to do then?"
+        me "For starters - forget your previous life. {w}The camp is like a different universe."
+        me "Ignore the haters."
+        me "Hell, just spread out on the sand, realize that there will be no such evening and such stars anywhere else!"
+        me "And let that evening in."
+        "I settled down on the sand, throwing my hands behind my head and again tried to recognize at least the damn bucket of Ursa Minor."
+        "And it seems that I got carried away too much, because when someone’s body stretched out next to me, and my shoulder got pulled away with the weight of a lovely head, I involuntarily shuddered.."
         show mi happy pioneer close
         with dissolve
-        mi "Я поняла, Сёмочка."
-        "Прощебетала она."
-        mi "Одиночество — внутри, оно не хорошее и не плохое, оно просто есть, и можно подчиняться ему, а можно просто… Это ничего, что я на тебя улеглась?"
-        th "Что? Нет, конечно. Немедленно проваливай с моего плеча."
-        mi "Ничего?"
-        "Я сморщился, когда прядь аквамариновых волос защекотала мне нос."
-        me "Ничего. Тебе никто не говорил, что такие вещи не делают вообще-то!"
-        mi "Нет."
-        "Удручающе честно ответила Мику."
-        "Она подняла голову и повернулась, заглядывая мне в глаза."
-        mi "Прости, я сейчас уйду."
+        mi "I understand, Semochka."
+        "She chirped."
+        mi "Loneliness is inside, it is neither good nor bad, it just exists, and you can obey it, or you can just… Is it fine for me to be lying down on you?"
+        th "What? Of course not. Get off my shoulder."
+        mi "Is it fine?"
+        "I winced as a strand of aquamarine hair tickled my nose."
+        me "It's fine. Didn't anyone tell you that usually you shouldn't do these things!"
+        mi "No."
+        "Miku gave a depressingly honest answer."
+        "She lifted her head and turned, looking into my eyes."
+        mi "Sorry, I'll leave now."
         menu:
-            "Верни голову на место":
-                "Она улыбнулась и вернулась обратно на плечо."
-                me "Просто, понимаешь, не хотелось бы, чтобы твои суждения основывались на благодарности, например."
-                mi "Никогда не думала, что именно я скажу это кому-нибудь."
+            "Put your head back":
+                "She smiled and went back to my shoulder."
+                me "It's just, you know, I don't want your judgments to be based on gratitude."
+                mi "Never thought that I'd tell that to someone else."
                 show mi laugh pioneer close at center with dissolve
-                mi "Но просто замолчи, ладно?"
-                mi "Мне здесь мирно и уютно, а ты болтаешь!"
-                me "Удобно?"
-                "Я же жутко костлявый, а у неё такая кожа нежная…"
-                mi "Очень."
+                mi "But please shut up, okay?"
+                mi "I'm peaceful and comfortable here, and you keep talking!"
+                me "Comfortable?"
+                "I'm terribly bony, and her skin is so delicate…"
+                mi "Very."
                 if persistent.mi_dj_good_jap or persistent.mi_dj_good_rf:
-                    "И как после этих слов можно было поступить иначе?"
-                    "Согнутый указательный палец под подбородок, запрокидывая девочку лицом навстречу ищущим губам."
-                    "Мы делим вечер пополам — и становимся одним целым."
-                    "Она открыла глаза спустя полсекунды после того, как я разорвал контакт."
-                    "Но промолчала."
-                    "Лишь негромко мурлыкнула, прижимаясь покрепче."
-            "Угу":
+                    "And how could you have act differently after these words?"
+                    "Bent index finger under the chin, throwing the girl back towards the seeking lips."
+                    "We split the evening between us - and become one."
+                    "She opened her eyes half a second after I broke contact."
+                    "But kept silent."
+                    "She just purred softly, tightening the hug."
+            "Mhm":
                 $ lp_mi -= 5
                 $ karma -= 10
                 $ alt_day2_mi_date = 2
                 show mi sad pioneer close at center with dissolve
-                "Она вздохнула."
-                mi "И к чему тогда все эти разглагольствования, если ты же первый меня и отшиваешь?"
-                me "Так я себя же в виду не имел. Тем более, что мы только с утра познакомились."
-                dreamgirl "Как будто это имеет значение."
-                me "Просто я сейчас не хочу вообще никаких отношений."
-                "Я нёс какой-то бред, и сам же в него верил."
-                me "Просто с прошлого романа ещё остались шрамы."
-                mi "Жаль. Но если вдруг передумаешь…"
+                "She sighed."
+                mi "What's the reason for all this ranting, if you are the first one sending me off?"
+                me "I didn't mean myself. Especially since we just met in the morning."
+                dreamgirl "As if that matters."
+                me "I just don't want any relationships right now."
+                "I was spitting out bullshit, and I, myself, believe in it."
+                me "It's just that there are still scars from the last one."
+                mi "Unfortunate. But if you change your mind…"
                 show mi normal pioneer close at center with dissolve
-                me "Обещаю, ты узнаешь об этом первой."
-    mt "Семён! Семён!"
-    "Донёсся голос вожатой со стороны лагеря."
-    "Обуреваемые запоздалым стеснением, мы синхронно сели на песке."
-    "Над пляжем нависла тишина."
+                me "I promise, you'll be the first to know."
+    mt "Semyon! Semyon!"
+    "The voice of the squad leader came from the side of the camp."
+    "Overwhelmed by belated embarrassment, we synchronously sat down on the sand."
+    "Silence hung over the beach."
     $ alt_day2_beach_seen = True
     scene bg ext_beach_sunset
     show mi shy pioneer close at center
     with dissolve
     pause(2)
     show mi smile pioneer close at center with dissolve
-    mi "Спасибо за тёплый вечер, Сень, сегодня как будто что-то изменилось. А я с утра ещё только сидела и думала о том, что всё оставшееся время так и просижу наедине с пыльными инструментами."
-    me "Так не последний вечер же."
-    me "Если будет желание, можно будет потом попробовать ещё раз."
+    mi "Thank you for the warm evening, Semyon, it feels as if something has changed today. And in the morning I was just sitting and thinking that for the rest of the time I would sit alone with dusty instruments."
+    me "Well, it's not the last evening either."
+    me "We can do it again later, if you want to."
     if alt_day2_mi_date == 2:
-        mi "У меня будет. А насчёт тебя уверенности нет."
+        mi "I will want to. But I have no certainty about you."
         show mi sad pioneer close at center with dissolve
-        mi "Я знаю этот взгляд. Ты пытаешься быть вежливым, но я тебе уже надоела."
-        mi "Прости, я не хотела быть назойливой."
-        "Она цапнула магнитофон и почти бегом направилась вон с пляжа."
-        th "Может быть, я жестоко с ней поступил."
-        th "Но находиться рядом с ней в пик болтливости чревато полным выносом мозга."
+        mi "I know this look. You're trying to be polite, but actually you're already tired of me."
+        mi "I'm sorry, I didn't mean to be pushy."
+        "She grabbed the tape recorder and almost ran away from the beach."
+        th "Maybe I was too harsh on her."
+        th "But being next to her at her peak of talkativeness is fraught with a complete removal of the brain."
     else:
-        mi "Не можно, а нужно!"
-        "Она только рукой махнула."
-        mi "Ты не будешь против, если я буду считать это свиданием?"
-        "Я согласно кивнул."
-        me "Я считаю, что это несколько преждевременно."
-        mi "Я тоже! {w}Но надо же мне чем-то себя наградить за две недели мучений!"
-        me "Попробую к тебе завтра в гости заглянуть. {w}Как тебе награда?"
-        "Она улыбнулась и, подхватив меня под локоть, разрешила."
+        mi "Not only can, but we should!"
+        "She just waved her hand."
+        mi "You wouldn't mind if I considered this a date?"
+        "I nodded."
+        me "I think you're getting ahead of yourself there."
+        mi "Me too! {w}But I need to reward myself somehow after those two weeks of suffering!"
+        me "I'll try to come by tomorrow. {w}How's that for a reward?"
+        "She smiled and, grabbing me by the elbow, allowed."
         show mi smile pioneer close with dissolve
-        mi "Веди!"
+        mi "Lead the way!"
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -7061,353 +7064,353 @@ label alt_day2_un_loki_date:
     $ counter_un_7dl = 1
     scene bg ext_house_of_un_day with dissolve
     play ambience ambience_camp_center_evening fadein 2
-    "Рядом с домиком стояла очень удобная скамейка, вынуждающая думать о том, что в домике явно обитает либо кто-то крайне неторопливый…"
-    "…либо крайне популярный!"
-    "Я усмехнулся игре разума, подменившего причину следствием."
-    th "И в самом деле, ну кто бы справился с гнутой чугунной скамейкой под полтонны весом?"
-    th "Ради только того, чтобы ждать свою ненаглядную девочку, пока она наконец нос напудрит?"
-    th "Не смешно."
+    "There was a very comfortable bench next to the house, forcing you to think that the house is inhabited either by someone leisurely…"
+    "…or someone really popular!"
+    "I chuckled at my mental gymnastics that swapped cause and effect."
+    th "And in fact, well, who would have coped with a bent cast-iron bench weighing half a ton?"
+    th "Just for the sake of waiting for their beloved girl, until she finally finishes powdering her nose?"
+    th "Not funny."
     if not alt_day2_dv_chased:
-        "В любом случае, я уселся на пресловутую скамеечку и, неспешно поедая остатки торта, принялся ждать."
-    "Трудно было сказать, чего я ждал — может, у моря погоды, а может момента, когда у меня наконец достанет духу подняться на крылечко и позвать гулять одну знакомую девочку «просто так»."
-    "В смысле, что прогулка ради прогулки, без маскировки истинных намерений всякими дурацкими обходами, бегунками или маршрутами."
+        "In any case, I sat down on the aforementioned bench and, slowly eating the rest of the cake, began to wait."
+    "It was hard to say what I was waiting for - maybe some sort of change, or maybe the moment when I finally had the courage to climb the porch and call a girl I knew for a walk «just because»."
+    "In the sense of walking for the sake of walking, without masking true intentions with stupid 'camp-get-to-knows', checklists or patrolling routes."
     if alt_day2_us_escape:
-        "Наверное, после моих дневных шалостей она будет, как минимум, недовольна."
-        "Особенно учитывая природу распространения слухов."
-        "Ведь играл с ней просто плохо знакомый парень, а под дверью ждёт тот, кто предпочёл её общество кому-то другому. Разные вещи."
+        "She'll probably be, at the very least, unhappy because of my daytime pranks."
+        "Especially considering the nature of spreading rumors."
+        "After all, it was just a stranger who played with her, and the one who preferred her company to someone else is waiting under the door. Different things."
     elif (alt_day2_convoy == 'un'):
-        "Дневной сон не давал мне покоя, и где-то на краю сознания что-то уже сто раз подсчитало, что Лена к нему имеет самое прямое отношение."
-    "На секунду мне показалось, что в стеклянной части двери что-то мелькнуло, но только на секунду. Слишком быстро всё произошло."
-    "Солнце понемногу заходило, и уже очень скоро из освещённого сектора уполз дверной ночник, за ним прибалконник целиком, стеклянная часть двери…"
-    "Тишина, если не считать фоновых шумов жизни окружающего леса — а их сознание уже научилось отбрасывать — стояла абсолютная."
+        "Daytime dream haunted me, and somewhere on the edge of consciousness, something had already calculated a hundred times that Lena had the most direct relation to it."
+    "For a second it seemed to me that something flickered in the glass part of the door, but only for a second. It all happened too fast."
+    "The sun was gradually setting, and very soon a door night light crawled out of the illuminated sector, followed by the entire balcony, along the glass part of the door…"
+    "The silence, except for the background noises of the life of the surrounding forest - and consciousness had already learned to discard them - was absolute."
     scene
     $ renpy.show("bg ext_house_of_un_day", what = Desat("bg ext_house_of_un_day"))
     with dissolve
     if not alt_day2_dv_chased:
-        "Наконец торт был благополучно приговорён, а в домике так ничего не изменилось."
-    "Немного посетовав на судьбинушку мою горькую, я с грехом пополам воткнул в уши наушники и минут десять бездумно листал песни… Драйва не хотелось, мрачняк не ложился под настроение. Даже привычный уже рок был как-то безразличен."
-    "Хотелось чего-нибудь лёгкого, возможно, романтичного."
-    "Бездумно дёргающие колесо навигации пальцы наткнулись на полузабытую мелодию…"
-    "Мелодия юности, мелодия под которую были разбиты миллиарды сердец — и ровно столько же воскрешены."
-    "Старое китайское проклятье — и одновременно величайшее благословение. Ветер перемен."
-    "Я тепло улыбнулся греющим душу воспоминаниям, прибавил громкости в наушниках — и старина Клаус затянул о том, как он следовал за Москвой, в парк Горького…"
-    "А я наконец разглядел в стекле настороженные зелёные глазищи."
-    "Чего и следовало ожидать."
+        "Finally, the cake was succesfully executed, but nothing has changed in the house."
+    "Having complained a little about my bitter fate, I stuck earplugs in my ears and mindlessly flipped through the songs for about ten minutes.… Didn't want anything fast, gloomy songs didn't fit the mood. Even the already familiar rock didn't tickle my fancy."
+    "I wanted something light, perhaps romantic."
+    "Mindlessly jerking the navigation wheel, my fingers stumbled upon a half-forgotten melody…"
+    "The melody of youth, the melody to which billions of hearts were broken - and exactly the same number were resurrected."
+    "An old Chinese curse - and at the same time the greatest blessing. Wind of change."
+    "I smiled warmly at the soul-warming memories, turned up the volume on my headphones, and old Klaus started talking about how he followed Moscow to Gorky Park…"
+    "And I finally saw green alert guys in the window."
+    "As I expected."
     stop ambience fadeout 1
     stop music fadeout 5
     $ night_time()
     $ persistent.sprite_time = "night"
     scene bg ext_house_of_un_night_7dl with dissolve
     play ambience ambience_camp_center_night fadein 1
-    "Поняв, что её заметили, она ойкнула и спряталась, а я негромко рассмеялся."
-    "Ещё пару минут ничего не происходило, пока она, похоже, не поняла, что я отсюда уходить никуда не собираюсь."
+    "Realizing that she was noticed, she gasped and hid, and I laughed softly."
+    "Nothing happened for another couple of minutes, until she seemed to realize that I was not going anywhere."
     play sound sfx_open_dooor_campus_1
     show un shy pioneer
     pause(3)
-    "Негромко скрипнула дверь — красавица покинула хоромы."
-    th "Ну наконец-то!"
-    me "Подходи, я не кусаюсь."
-    "Я тщательно смотал свою нехитрую машинерию и убрал в карман, потом нарочито аккуратно подвинулся в сторонку и похлопал по скамейке рядом с собой."
-    me "Как ты, наверное, уже догадалась, просто так от меня тебе избавиться не удастся."
-    me "Впрочем, ты всегда можешь попробовать."
+    "The door creaked softly - the beauty left the palace."
+    th "Finally!"
+    me "Come closer, I don't bite."
+    "I carefully rolled up my simple machinery and put it in my pocket, then deliberately carefully moved to the side and patted the bench next to me."
+    me "As you might have figured out, you're not getting rid of me that easy."
+    me "Although, you can try."
     show un serious pioneer at center with dspr
-    un "Что ты здесь делаешь?"
-    me "Разве ты не видишь? Я жду."
+    un "What are you doing here?"
+    me "Can't you see? I'm waiting."
     show un surprise pioneer with dissolve
-    un "М-меня?!"
-    "Я огляделся. Почесал затылок.{w} Огляделся ещё раз."
-    me "Похоже, что да!"
-    "Она выглядела как минимум шокированной."
-    un "Н-но…"
-    "Она потупилась."
-    un "З-зачем…"
+    un "F-for m-me?!"
+    "I looked around. Scratched head.{w} Looked around again."
+    me "Looks like it!"
+    "She looked shocked, to say the least."
+    un "B-but…"
+    "She looked down."
+    un "W-why…"
     if (alt_day2_convoy == 'sl'):
-        un "Тебя, наверное, Славя ждёт…"
+        un "Slavya's probably waiting for you…"
     elif (alt_day2_convoy == 'dv'):
-        un "Разве ты не должен быть с Алисой сейчас?"
+        un "Shouldn't you be with Alisa now?"
     else:
-        un "Разве тебе нечем заняться?"
-    me "Но я же здесь…"
+        un "Don't you have anything else to do?"
+    me "But I'm here…"
     show un normal pioneer at center with dspr
-    un "Да."
-    un "И что теперь?"
+    un "Yes."
+    un "Now what?"
     if alt_day1_un == 4:
-        me "Помнится, я вчера звал тебя прогуляться по лагерю. Не хочешь?"
-        un "Но мы же утром… Вместе…"
-        me "Прогуляться — в смысле прогуляться."
-        me "А не сыграть в «весёлые старты» и успеть оббежать все точки до обеда."
-        me "Короче, я приглашаю тебя на вечернюю прогулку. Пойдёшь?"
+        me "I remember yesterday I asked you out on a walk. You don't want to?"
+        un "But in the morning… We…"
+        me "Out on a walk - I mean on an actual walk."
+        me "Not like playing «fun starts» trying to visit every point before lunch."
+        me "Anyways, I'm inviting you to an evening walk. Are you coming?"
     else:
-        me "Не хочешь немного погулять перед сном?"
-    un "Х-хорошо… Я сейчас."
-    "Она скрылась в домике и через несколько секунд вернулась — накинула ветровку поверх рубашечки."
-    un "Ты бы тоже оделся…"
+        me "Want to take a little walk before sleeping?"
+    un "O-okay… I'll be right back."
+    "She disappeared into the house and returned a few seconds later - she threw a windbreaker over her shirt."
+    un "You should also get dressed…"
     show un smile pioneer at center with dissolve
-    un "Прохладно."
-    me "Это ничего."
-    "Я отмахнулся."
-    me "Да и нет у меня куртки."
+    un "It's chilly."
+    me "It's alright."
+    "I waved it off."
+    me "Either way I don't have a jacket."
     show un surprise pioneer with dissolve
-    un "Как это… Совсем нет?"
-    "Рассказать ей о своём феерическом пробуждении?"
+    un "What do you mean… At all?"
+    "Should I tell her about my magical awakening?"
     if alt_day_binder != 1:
-        "О своих выкрутасах возле автобуса?"
-    "А что, вдруг, оценит?"
-    me "Так уж получилось… что я приехал в лагерь… без вещей."
-    "Я, наверное, на идиота был похож сейчас. Впрочем, у меня это ноу-хау."
+        "About my clowning near the bus?"
+    "Hey, maybe she'll suddenly appreciate that?"
+    me "It just so happened… that I came to camp… without anything packed."
+    "I probably looked like an idiot right now. Although it does seem to be my know-how."
     show un smile3 pioneer with dissolve
-    un "Пойдём, расскажешь по дороге."
+    un "Let's go, you'll tell me along the way."
     play music music_7dl["take_my_hand"] fadein 4
     if (alt_day2_convoy == 'un'):
-        "Сейчас в ней вдруг всплыла та самая девушка, которой она была утром — отбросившая все сомнения и беззаветно доверившаяся…"
-        "А кому?"
-        "Мне?"
-        "Серьёзно?!"
-        "Человеку, которого она знает меньше сорока часов?"
-        "Да я за это время руку ему подавать не приучусь и имени не запомню!"
+        "Now the very girl that she was in the morning suddenly surfaced in her - she cast aside all doubts and wholeheartedly trusted…"
+        "Trusted who?"
+        "Me?"
+        "Seriously?!"
+        "A man she's known for less than forty hours?"
+        "If it would be me, I wouldn't even remember the name!"
     scene bg ext_houses_sunset with dissolve
     show un grin pioneer with dissolve
-    "Мне вдруг стало очень неуютно."
-    "Игра, правила которой были понятны и очевидны Лене, мне казалась хаосом."
-    "Нельзя же так сразу доверять кому-то! Это же чревато, это больно, в конце концов!"
-    "А я даже не могу ничего сделать. Потому что с этого момента больше не принадлежу себе."
-    "Я не могу принять её доверия, так как не знаю, где буду завтра, и что со мной будет."
-    "И отказать не могу, потому что знаю — как тот, кто порезался, боится лезвия — насколько это сокрушительно, {w}когда тебе говорят «нет» в такие моменты."
-    me "Ты как будто мне мстишь за что-то…"
+    "I suddenly felt very uncomfortable."
+    "The game, the rules of which were clear and obvious to Lena, seemed like chaos to me."
+    "You can't just trust someone like that! It's fraught, it's painful after all!"
+    "And I can't even do anything. Because from this point onward, I don't belong to myself anymore."
+    "I can't accept her trust because I don't know where I'll be tomorrow and what will happen to me."
+    "And I can’t refuse, because I know - like who has cut himself is afraid of the blade - how devastating it is, {w}when you're told «no» in moments like these."
+    me "It's as if you're taking revenge on me for something…"
     show un shocked pioneer at center with dissolve
-    un "Что?!"
-    me "Я говорю — с чемоданом казус случился такой…"
-    "Пытаясь избавиться от тягостных мыслей, я молол всё, что только с языка срывалось."
-    me "Его на вокзале перепутали с точно таким же, но с другого направления. И он уехал в другой город."
+    un "What?!"
+    me "I'm saying - such an incident happened with my suitcase…"
+    "Trying to get rid of painful thought, I was spitting out anything that came to my head."
+    me "They confused it with an exactly same one on the station, just from a different direction. And so it went to another city."
     show un laugh pioneer
-    un "А что было во втором?"
-    me "Да вещи! Только на толстую тётку раза в три меня крупнее. Нет, если нужда будет, я смогу спрятаться от дождя, развесив одну из её плащ-кофточек…"
-    me "Но что-то не сильно хочется."
-    me "Короче, я оставил всё как есть. Написал адрес, мне обещали в течение недели вернуть всё в целости и сохранности."
-    "Лена смеялась, представляя себе, как я сижу под кустом, а надо мной висит огромная голубая кофта размером с чехол для танка."
-    "Она поделилась со мной, и мы смеялись вместе, неспешно двигаясь по лагерю."
-    "Я поклясться готов, что из окон окрестных домиков за нами уже наблюдают досужие глаза…"
-    "…что завтра будет и «тили-тили-тесто», и косые взгляды в мою сторону. Плевать."
-    me "Скажи, а у тебя есть здесь какие-нибудь любимые места?"
+    un "What was in the other one?"
+    me "Clothes! Except for a fat woman three times bigger than me. I mean, if the need arises, I could probably hide from rain under one of her raincoat blouses……"
+    me "But I don't really want to."
+    me "In short, I left everything as it is. I wrote the address, they promised me to return everything safe and sound within a week."
+    "Lena laughed, imagining me sitting under a bush, and above me hanging a huge blue jacket the size of a tank case."
+    "She shared with me and we laughed together as we slowly moved through the camp."
+    "I was ready to swear that idle eyes are already watching us from the windows of the surrounding houses…"
+    "…and that tomorrow there will be sideways glances in our direction. Who cares."
+    me "Tell me, do you have any favorite places here?"
     show un smile2 pioneer with dissolve
-    un "Ты имеешь в виду, место, где можно спрятаться ото всех?"
-    "Я кивнул."
-    th "Не слишком ли я тороплю события?"
-    th "Если она заведёт меня в какой-нибудь закуток и там надо мной надругается — виноват окажусь только я."
-    un "Мне остров нравится…"
+    un "You mean a place where you can hide from everyone else?"
+    "I nodded."
+    th "Am I rushing things too much?"
+    th "If she leads me into some nook and cranny and abuses me there, I will be the only one to blame."
+    un "I like the island…"
     if alt_day2_us_escape:
         show un angry2 pioneer
-        un "Не тот, откуда вы с Ульяной сбежать пытались… Соседний."
-        "Вот это разведка!!!"
-        me "А откуда ты…"
-        un "Знаю? Так земля слухом полнится. Про то, как новичок не прожив и суток, решил сбежать."
-        "Очень похоже, что ей крайне не по душе тема разговора."
-        "Осталось только узнать — проблема в побеге или в нюансах."
-        me "Прости. Мне и правда не следовало убегать."
+        un "Not the one you and Ulyana tried to escape from… The other one."
+        "That's some serious intelligence gathering!!!"
+        me "How do you…"
+        un "Know? Earth's full of rumors. About how the newcomer, without living here for a single day, decided to run away."
+        "It looks like she really doesn't like this topic."
+        "The only thing left to find out is where the problem lies - in the escape, or in the nuances."
+        me "Sorry. I really shouldn't have run away."
         show un laugh pioneer at center with dissolve
-        un "Да нет, я не против того, чтобы сходить с ума. Мне просто…"
-        "Она начала запинаться, с трудом выговаривая простейшие слова."
+        un "No, I don't mind doing stupid things. I just…"
+        "She began to stutter, pronouncing the simplest words with difficulty."
         show un shy pioneer at center with dissolve
-        un "…чтобы это я… а не…"
-        "Я нащупал в темноте её ладошку. Она была уже прохладная, и я как мог, постарался согреть её теплом собственных рук."
-        "Она опять вздрогнула, будто я коснулся не руки, а чего-то… интимного? Обнажённого нерва? Не знаю…"
-        me "Сим торжественно клянусь…"
-        "Мне пришлось несколько раз прерываться и прочищать горло, восстанавливать дыхание и собираться с мыслями."
-        "Кажется, обвальная стеснительность в чём-то заразительна."
-        me "…что в следующий раз, когда я решу сбежать, переплыть речку поперёк или сойти с ума любым другим способом — я позову тебя."
+        un "…that it's me… and not…"
+        "I felt her hand in the dark. She was already cool, and I did my best to warm her with the warmth of my own hands."
+        "She shuddered again, as if I had not touched a hand, but something… intimate? Exposed nerve? Don't know…"
+        me "I solemnly swear…"
+        "I had to pause several times to clear my throat, catch my breath and collect my thoughts."
+        "It seems that landslide shyness is somewhat contagious."
+        me "…that the next time I decide to run away, swim across the river or go crazy in any other way - I will call you."
         show un smile pioneer at center
-        "Она улыбнулась, видимо, решив поверить в моё обещание."
-        me "Короткий?"
-        "Она кивнула."
-        un "Ближний."
-    me "Хочешь, возьмём лодку?"
+        "She smiled, apparently deciding to believe in my promise."
+        me "Short one?"
+        "She nodded."
+        un "Closer one."
+    me "Do you want to take a boat?"
     if alt_day2_us_escape:
-        "Мои мышцы протестующе застонали, но я приказал им заткнуться."
-    un "Нет… Вернее, хочу, но… Не сегодня."
-    me "А ещё? Есть места, куда ты можешь сбежать ото всего мира и там тихо прийти в себя?"
+        "My muscles groaned in protest, but I ordered them to shut up."
+    un "No… Well, I do want to… But not today."
+    me "Any others? Any other places where you can escape from the whole world and quietly come to your senses?"
     show un smile pioneer
-    un "Ты так правильно это сказал…"
-    "Она опять замолчала, покусывая нижнюю губку, явно о чём-то напряжённо раздумывая."
-    "А я стоял и ждал её вердикта."
-    "Весь мой цинизм и вся моя чёрствость ничегошеньки не значат, когда мерилом собственной стоимости становится доверие едва знакомой девочки."
-    "Можно ли мне доверять?"
-    "Я точно знаю, что нельзя. Я не верю себе сам и никогда не верил. Начиная от попыток бросить курить, заканчивая тем статическим кошмаром, куда я загнал сам себя — всё это дело лишь моих рук."
-    "Но эта девочка оказалась слишком важной, слишком значимой…"
-    "Не знаю, что она могла разглядеть во мне, и разглядела ли, или её истовое, до самоотречения, желание впустить кого-то в себя — это просто крик о помощи."
-    "Но я просто не мог её подвести. Ни сейчас, никогда."
-    "Наконец она решилась и поднялась со скамеечки."
-    un "А пошли. Здесь недалеко."
+    un "You said it so right…"
+    "She fell silent again, biting her lower lip, obviously thinking about something intensely."
+    "And I stood and waited for her verdict."
+    "All my cynicism and all my callousness means nothing when the trust of a girl I hardly know becomes the measure of my own worth."
+    "Can I be trusted?"
+    "I know for sure that you can't. I don't trust myself and never did. Starting from trying to quit smoking, ending with that static nightmare where I drove myself into - all this is the work of my own hands."
+    "But this girl was too important…"
+    "I don’t know what she could see in me, and whether she saw it, or her earnest, to the point of self-denial, desire to let someone into herself is just a cry for help."
+    "But I just couldn't fail her. Not now, never."
+    "Finally she made up her mind and got up from the bench."
+    un "Let's go. It's not far from here."
     scene bg ext_boathouse_night with dissolve
-    "Мы вышли к лодочной станции, но Лена, вместо того, чтобы зайти на мостки, взяла меня за руку и потащила куда-то влево по берегу."
-    "Там, метрах в трёхстах, начиналась небольшая рощица, будто отсечённая самым краем территории и выходом к воде."
-    "Получилась эдакая стрелка, в которой можно действительно спрятаться, и никто тебя не найдёт, если ты сам этого не захочешь."
+    "We went to the boat station, but Lena, instead of going to the bridges, took my hand and dragged me somewhere to the left along the coast."
+    "There, about three hundred meters away, a small grove began, as if cut off by the very edge of the territory and access to the water."
+    "It turned out to be a kind of arrow in which you can really hide, and no one will find you if you don’t want it yourself."
     scene bg ext_un_hideout_night_7dl with dissolve
     pause(2)
     play music music_list["confession_oboe"] fadein 5
     show un grin pioneer at center
-    "Мы брели по песчаной косе на самом краю прибоя, где бег воды уже натаскал плавника — успевай только сушить и жечь костры."
-    "Справа веяло остывающей водой, слева звучало дыхание отходящего ко сну лагеря."
-    "А мы шли, как дети, взявшись за ручки, и с обречённым отчаянием улыбались, и не было для нас пути назад!"
-    "Слова потеряли смысл."
-    "Я уже не мог разглядеть черт её лица, остался лишь силуэт, видимый на фоне подсветки с лодочной станции и пляжа, но догадывался о том, что она так же украдкой поглядывает в мою сторону."
-    "Пятнадцать минут — и над нашими головами смыкаются хвойные шапки свободолюбивых южных сосен, растущих вкривь, по площади."
-    "Вскоре мы вышли на полянку."
-    un "Мы почти пришли."
-    "Ответила Лена на немой вопрос."
-    "В самой середине лежали три бревна, окружающие застарелое кострище. Я вопросительно кивнул в ту сторону."
-    "Она отрицательно покачала головой."
+    "We wandered along the sand at the very edge of the surf, where the flow of water had already dragged driftwood - just go, dry it out and you can burn fires."
+    "Cooling water blew on the right, the breath of the camp going to sleep sounded on the left."
+    "And we walked like children, holding hands, and smiled with doomed despair, and there was no turning back for us!"
+    "All words lost their meaning."
+    "I could no longer make out the features of her face, there was only a silhouette visible against the backlight from the boat station and the beach, but I guessed that she was also stealthily glancing in my direction."
+    "Fifteen minutes - and above our heads the coniferous caps of freedom-loving southern pines are merging together, growing at random all over the area."
+    "Soon we reached a clearing."
+    un "Almost there."
+    "Lena answered my silent question."
+    "In the very middle lay three logs surrounding an old fire pit. I nodded questioningly in that direction."
+    "She shook her hand."
     show un shy pioneer with dissolve
-    un "Н-не туда… Нам дальше. К воде."
-    "Она потянула меня за руку, которую так и не отпустила до сих пор, куда-то в сторону берега."
-    "Над головой протяжно заухало и заверещало, и она, взвизгнув, спряталась за мной."
+    un "N-not there… We need to go further. To water."
+    "She pulled me by the hand, which she never let go until now, somewhere towards the shore."
+    "There was a long hoot and squeal overhead, and she, screeching, hid behind me."
     play sound sfx_owl_far
-    un "Что это?"
-    "Сдавленно спросила она."
-    "А я улыбнулся. Не зло или насмешливо, как мог бы раньше, узнав, что кто-то мог бояться простой совы."
-    "Просто этот испуг… Как и всё, что делала Лена… Был таким милым!"
-    "Я осторожно отцепил её побелевшие пальцы от моего плеча."
-    me "Ты здесь никогда не была ночью?"
+    un "What was that?"
+    "She asked stifledly."
+    "And I smiled. Not evil or derisive, as one could before, having learned that one could be afraid of a simple owl."
+    "It's just that this fright… Like everything Lena did… Was so cute!"
+    "I carefully unhooked her whitened fingers from my shoulder."
+    me "Have you never been here at night?"
     show un scared pioneer with dspr
-    un "Н-нет…"
-    "Вот и что прикажете с такой делать?"
-    "Я-то на полном серьёзе решил, что это она такая вся бесстрашная, взяла да и отвела малознакомого юношу в ночной лесок…"
-    "А оно — вон оно что."
-    un "Я здесь только днём…"
-    un "Редко…"
-    un "Когда совсем-совсем плохо…"
-    "Над головой опять что-то заскрипело."
+    un "N-no…"
+    "And what do I do with her?"
+    "I quite seriously decided that it was her who was so fearless, took the unfamiliar young man into the night woods…"
+    "And it turned out like this."
+    un "I'm only here during the day…"
+    un "Rarely…"
+    un "When it's really, really bad…"
+    "Something creaked overhead again."
     play sound sfx_owl_far
     scene cg d2_un_owlet_pioneer_7dl
     with dissolve
-    "А Лена снова пискнула и спряталась за меня."
-    dreamgirl "Не хотелось бы служить суфлёром, но сейчас самое лучшее время для того, чтобы грабастать её в охапку и целовать."
-    th "Заткнись."
-    dreamgirl "Я серьёзно. Она сейчас близко к тебе как никогда. Тебе даже не надо изображать из себя утку и вытягивать губы."
-    dreamgirl "Достаточно просто обернуться, и…"
-    "И чёрт бы меня дёрнул послушаться этого внутреннего придурка!"
-    un "Там наверху… что-то страшное? Да?"
-    un "Не молчи… Я п…"
-    "Я бы не молчал, но у меня губы заняты…"
+    "And Lena squeaked again, and hid behind me."
+    dreamgirl "I don't want to serve as a prompter, but now is the best time to grab her in an armful and kiss."
+    th "Shut up."
+    dreamgirl "I'm serious. She is closer to you than she ever was. You don't even have to play duck and pout your lips."
+    dreamgirl "You just have to turn around and…"
+    "And why would I even listen to this inner fool!"
+    un "Above… there's something scary? Right?"
+    un "Please don't be silent… I…"
+    "I wouldn't be silent, but my lips were kind of busy…"
     play music music_list["i_dont_blame_you"] fadein 1
     scene cg d2_un_kissing_7dl with dissolve
-    "Всё произошло слишком быстро — вот мы стоим, и она прячется у меня за спиной…"
-    "А вот…"
-    "Она несколько секунд стояла, не понимая, что произошло…"
-    un "Мммм…"
-    th "И чёрт же дёрнул меня обернуться именно в этот самый момент."
-    dreamgirl "Хэхэй, чувак! Молодец! Ты сделал это!"
-    "Кажется, у неё подкосились ноги, потому что мне пришлось её поддерживать."
-    "А может, и нет…"
-    "А потом, резко оттолкнув меня, она сама сделала шаг назад."
-    "Её щёки пылали, а глаза были враждебными."
+    "It all happened too fast - here we are, and she hides behind me…"
+    "And here…"
+    "She stood there for a few seconds, not understanding what had happened…"
+    un "Mmmm…"
+    th "What devil pulled me to turn around in this very moment?"
+    dreamgirl "Heeey, dude! Nice! You did it!"
+    "It looks like her legs gave way because I had to support her."
+    "Or, maybe not…"
+    "And then, quickly pushing me away, she herself took a step back."
+    "Her cheeks were burning and her eyes were hostile."
     scene bg ext_un_hideout_night_7dl
     show un angry2 pioneer close
     with dissolve
     un "…"
-    me "Послушай, прости, я…"
-    me "Мне правда…"
-    "Она стояла и смотрела на мои убогие попытки выкрутиться."
-    "Как и её зловещее альтер эго по имени Алиса."
-    "Им доставляет удовольствие бросать человека на середине озера. И делать ставки."
-    me "Жаль, что так вышло…"
-    "Она продолжала молчать…"
-    th "Хватит врать хотя бы себе."
-    me "Ты знаешь… Можешь меня презирать или ненавидеть."
-    me "Но я наврал."
-    "Я обращался к её макушке, потому что она, и так еле видная, стояла, опустив голову."
-    me "Не понимаю, почему надо врать о таких вещах… Наверное, привычка. Или это так принято в нормальном обществе…"
-    "Я набрал в грудь побольше воздуха и, как с горки бросаясь вниз, выпалил:"
-    me "Ничего мне не жаль!"
+    me "Look, I'm sorry, I…"
+    me "I'm really…"
+    "She stood and looked at my miserable attempts to get out."
+    "Like her sinister alter ego named Alisa."
+    "They take pleasure in leaving a man in the middle of a lake. And betting."
+    me "I'm really sorry it turned out that way…"
+    "She kept silent…"
+    th "Stop lying, at least to yourself."
+    me "You know… You can hate or despise me."
+    me "But I lied."
+    "I said it to the top of her head, because she, and so barely visible, stood with her head down."
+    me "I don't know why one has to lie about things like these… Force of habit. Or that's how it is in normal society…"
+    "I took in more air into my chest and, as if rushing down a hill, blurted out:"
+    me "I regret nothing!"
     show un shy pioneer close
-    "Теперь она уйдёт и никогда больше не заговорит со мной…"
-    "Да что там, она просто возненавидит меня!"
+    "Now she'll be gone and will never speak to me again…"
+    "Hell, she'll just hate me!"
     show un cry_smile pioneer close with dspr
-    "Она подняла глаза, и это сочетание слёз и улыбки так тронули, что я, уже нимало не сомневаясь, сделал шаг вперёд, обнимая её."
-    un "Скажи это ещё раз…"
-    me "Ни о чём не жалею…"
-    "И уже оказавшись у меня на груди, она поворочалась немного, укусила меня за подбородок…"
-    "И вздохнув от разочарования по поводу моей бестолковости, положила ладонь мне на макушку и притянула к себе."
+    "She looked up, and this combination of tears and a smile was so touching that I, without any hesitation, took a step forward, hugging her."
+    un "Say it again…"
+    me "I regret nothing…"
+    "And already being on my chest, she turned a little, and then bit me on the chin…"
+    "And sighing in disappointment at my stupidity, she put her hand on the top of my head and pulled me to her."
     stop ambience fadeout 1
     scene cg d2_un_knees_7dl with dissolve
-    me "Звёзды здесь какие… Как будто над головой огромный телескоп."
-    "Я лежал на теплой мшаной подушке, головой на коленях Лены, а она, больше механически, перебирала пальцами мои волосы."
-    un "Да. В крупных городах такого не увидишь…"
-    "Она так говорит, будто сама… А кстати, откуда она?"
-    me "Ты ведь так и не рассказала мне о себе ничего."
-    "Она улыбнулась."
-    un "Спрашивай… Я не знаю, что рассказать. Может, если ты будешь задавать вопросы…"
-    me "Тогда расскажи, откуда ты."
-    un "Что ж… Я из небольшого городка с населением в сто тысяч человек неподалёку отсюда."
-    un "Учусь в школе, в следующем году планирую подавать документы в местный Политех. Вот…"
-    "Почему-то вдруг очень резануло ухо этим политехом."
-    me "Обожди… Что значит «Политех»? Почему?"
-    "Она пожала плечами."
-    un "Надо образование получать."
-    me "Да причём здесь образование?!{w} Я же о твоём призвании."
-    "Лена вопросительно покосилась в мою сторону, и я поспешил объяснить."
-    me "Ты же рисовать любишь."
+    me "The stars here… It's like a huge telescope above."
+    "I was lying on a warm moss pillow, with my head on Lena's knees, and she, more so mechanically, rustled my hair with her fingers."
+    un "Yeah. You won't see this in big cities…"
+    "She's speaking as if she's not… By the way, where was she from?"
+    me "You haven't told me anything about yourself yet."
+    "She smiled."
+    un "Then ask… I don't know what to tell you. Maybe if you ask questions…"
+    me "Then tell me where you are from."
+    un "Well… I'm from a small town of a hundred thousand people not far from here."
+    un "I study at school, next year I plan to apply to the local Polytechnic University. Yeah…"
+    "For some reason, the ear was suddenly very hurt by this 'polytechnic'."
+    me "Hold on… What do you mean «Polytechnic»? Why?"
+    "She shrugged."
+    un "Gotta get an education."
+    me "What about the education?!{w} I'm talking about your calling."
+    "Lena looked inquiringly in my direction, and I hurried to explain."
+    me "You love drawing."
     if ('library' in list_voyage_7dl):
-        me "И, судя по тому, что ты в стенгазете трудишься, рисуешь неплохо."
+        me "And, judging by the fact that you work in the wall newspaper, you draw well."
     else:
-        me "И, судя по тому, что о тебе говорит вожатая, ты очень хорошо рисуешь."
-    "Мне почему-то казалось очень важным, чтобы хотя бы эта девочка не профукала бездарно дарованный ей шанс."
-    un "Да, но…"
-    me "Не зарывай талант в землю. {w}Подавай в худ, пускай тебе руку набивают."
-    un "Но я же не художник…"
-    "Слабо заспорила Лена."
-    un "Я — так… Рисователь…"
-    me"Это не имеет значения. Главное, это чтобы тебя учили заниматься тем, что тебе нравится и тому, что у тебя получается."
-    th "О всеблагой Рандом, дай ей судей поснисходительнее, билет попонятнее и тестовое задание попроще!"
-    me "Человечество больше потеряет, если ты будешь работать швеёй или поваром. Ведь самые лучшие картины — это те, которые ещё не написаны."
-    un "Ты говоришь как наша классная."
-    "Она рассмеялась."
-    th "Я говорю как человек, у которого украли такую же мечту."
-    th "Возможно, теперь моё предназначение — помочь тебе обрести твою."
-    "Самая сладкая мечта, самая розовая фантазия — это вернуться в годы детства и юношества, сохранив при себе весь опыт и знания."
-    "Как бы ты поступил в той или иной ситуации по сравнению с тем, кем ты стал?"
-    "Если бы ты знал о последствиях, какой бы выбор ты сделал?"
-    "Я открыл глаза и снизу вверх заглянул в глаза Лене."
-    me "Просто потому, что я верю в тебя."
+        me "And judging by what the squad leader says about you, you draw very well."
+    "For some reason, it seemed very important to me that at least this girl did not waste this mediocrely given to her chance."
+    un "Yes, but…"
+    me "Don't bury your talent. {w}Apply to art, let them help you learn."
+    un "But I'm not an artist…"
+    "Lena weakly argued."
+    un "I'm just… A drawer…"
+    me "That doesn't matter. The main thing is that you are taught to do what you like and what you can do."
+    th "O God Almighty, give her more lenient judges, an easier task and a simpler test!"
+    me "Humanity will lose more if you work as a seamstress or a cook. After all, the best paintings are those that have not yet been painted."
+    un "You talk like our classroom teacher."
+    "She laughed."
+    th "I speak as someone who had the same dream stolen."
+    th "Perhaps now my destiny is to help you find yours."
+    "The sweetest dream, the rosiest fantasy is to return to the years of childhood and youth, retaining all the experience and knowledge."
+    "How would you act in this or that situation compared to who you have become?"
+    "If you knew the consequences, what choice would you make?"
+    "I opened my eyes and looked up into Lena's eyes from the bottom up."
+    me "Just because I believe in you."
     scene bg ext_path_night
     show un smile pioneer close
     with dissolve
-    "Мы немного помолчали, наслаждаясь тёплой летней ночью."
+    "We were silent for a while, enjoying the warm summer night."
     show un shy pioneer with dspr
-    "Наверху ещё несколько раз кто-то ворочался и ухал, но теперь Лена знала, что в случае чего я смогу её защитить, и больше не вздрагивала."
+    "Upstairs, someone tossed and turned and hooted a few more times, but now Lena knew that I could protect her in case of anything, and she no longer shuddered."
     play sound sfx_owl_far
-    "А я сам упивался этой ролью — защитника, человека, за чью широкую спину можно укрыть то, что ему близко и дорого."
+    "And I myself reveled in this role - a defender, a person behind whose broad back you can hide what is close and dear."
     show un surprise pioneer with dspr
-    me "Близко и дорого…"
-    un "Что?"
-    me "Засиделись мы что-то… Давай потихоньку двигаться по кроваткам."
-    th "Иначе мы рискуем заночевать здесь."
-    "Судя по тому, что говорили глаза девочки, её такая перспектива не пугала."
-    "Что ж, в паре двух безголовых идиотов должен быть один, кто позаботится об обоих."
-    me "Пойдём. Не хватало ещё простудиться здесь."
+    me "Close and dear…"
+    un "What?"
+    me "Well, we've been here a while… Let's start heading back."
+    th "Otherwise we risk spending the night here."
+    "Judging by what the girl's eyes said, this prospect did not frighten her."
+    "Well, in a pair of two headless idiots, there must be one who will take care of both."
+    me "Let's go. The last thing we need is catching a cold here."
     show un grin pioneer with dissolve
-    "Она неохотно отпустила мою руку."
-    un "А как же…"
-    me "Завтра. Послезавтра. В любое время. Его у нас теперь — целая жизнь!"
-    "Я не выдержал и расхохотался от переполняющего меня звенящего восторга."
-    "А она, будто понимая, шла рядом, загадочно улыбаясь одними глазами."
-    "Это ещё не любовь. И даже не влюблённость."
-    "Это кому-то хватило смелости сказать нужные слова в нужном месте."
+    "She reluctantly let go of my hand."
+    un "What about…"
+    me "Tomorrow. Day after tomorrow. Anytime. We have it now - our whole life!"
+    "I could not stand it and burst out laughing from the ringing delight that overwhelmed me."
+    "And she, as if understanding, walked beside, smiling mysteriously with her eyes alone."
+    "This wasn't love yet. Not even romance."
+    "It was someone who had the courage to say the right words in the right place."
     scene bg ext_house_of_un_night_7dl with dissolve2
     show un smile2 pioneer close
-    "Мы вышли прямиком к её домику, и долго-долго стояли, прощаясь."
-    me "Увидимся завтра?"
-    un "Да…"
-    me "Я буду очень скучать."
-    un "И я…"
+    "We went straight to her house, and stood for a long, long time, saying goodbyes."
+    me "Will we meet tomorrow?"
+    un "Yes…"
+    me "I'll miss you."
+    un "Me too…"
     hide un with dissolve
     stop music fadeout 3
     play sound sfx_owl_far
-    "Я постоял немного и, развернувшись, побрёл к себе…"
-    "Сзади раздался перестук каблучков по ступенькам, и меня снова обняли и поцеловали."
+    "I stood for a while and, turning around, wandered towards home…"
+    "Behind me, there was a clatter of heels on the steps, and I was hugged and kissed again."
     show un grin pioneer close
-    un "Вот теперь — точно до свиданья."
+    un "Now, definitely, goodbye."
     hide un with dissolve
-    "Лена убежала в домик, довольная донельзя, оставляя меня наедине с моей дорогой в потёмках и мыслями на тему — а правильно ли я всё сделал."
+    "Lena ran away to the house, utterly pleased, leaving me alone with my road in the dark and thoughts on the topic - did I do everything right."
     stop music fadeout 3
     stop ambience fadeout 6
     return
@@ -7416,43 +7419,43 @@ label alt_day2_un_herc_date:
     $ alt_day2_date = 'un'
     $ counter_un_7dl = 1
     scene bg ext_house_of_un_day with dissolve
-    "Ночь, улица, фонарь, аптека?"
-    "В новом переложении звучит как «Торт, музыка, твой дом, скамейка»."
-    "Напротив домика Лены я приглядел скамеечку, будто перенесённую сюда из городского парка."
-    "Гнутая спинка, белая покраска, полтонны весом."
-    "Даже думать не хочу, каким образом её поставили сюда. Впрочем, я здесь не за этим."
+    "Night, street, lamp, pharmacy?"
+    "In this new reimagining it sounded like «Cake, music, your house, bench»."
+    "Opposite of Lena's house, I looked at a bench, as if transferred here from a city park."
+    "Bent back, white paint, looks to weigh half a ton."
+    "I don't even want to think about how they put it here. However, that's not what I'm here for."
     if ('nwsppr' in list_clubs_7dl) and (alt_day1_un == 4):
-        "Помнится, мне кто-то что-то обещал взамен на моё согласие работать в стенгазете."
+        "I remember that someone promised me something in exchange for my consent to work in a wall newspaper."
     elif alt_day1_un == 4:
-        "Помнится мне, что кто-то говорил о каком-то совместном занятии. Учитывая мою криворукость, трудно представить — каким образом меня можно привлечь к живописи…"
-        "Мммм… В роли таскальщика мольберта?"
-        "На модель я явно не тяну."
-    "Я не особо скрывался, когда следил за Леной после ужина. Она никуда больше не заходила, так что сейчас она здесь."
-    "Я знаю это. {w}И она знает, что я знаю. И так далее."
-    "Смахнув рукой со скамейки несколько иголок и приблудную шишку, я уселся и принялся ждать."
+        "I remember that someone was talking about some kind of joint activity. Given my idiocy, it's hard to imagine how I can be used for painting…"
+        "Hmmm… As an easel mover?"
+        "I definitely don't look like a model."
+    "I didn't really hide when I followed Lena after dinner. She didn't go anywhere else, so now she's here."
+    "I know that. {w}And she knows that I know. So on and so forth."
+    "Brushing a few needles and a stray pinecone off the bench with my hand, I sat down and began to wait."
     if (alt_my_rival_1_tour.take == 'un') and (alt_day2_gamblers_result['me'] == 1):
-        "Вполне возможно, она злится на меня за ту партию."
-        "А может быть, и нет."
-        "Мне показалось, что она поняла мотивы, двигающие мной."
-        "Если же нет…"
+        "It's possible she's mad at me for that game."
+        "Or maybe not."
+        "It seemed that she understood my motives."
+        "And if she didn't…"
     elif (alt_my_rival_1_tour.take == 'un') and (alt_day2_gamblers_result['me'] >= 2):
-        "Уж не знаю, обиделась ли она на меня за то, что я вышиб её из турнира ещё в первом раунде."
-        "Или, может, ей всё равно. Пока что она демонстрировала либо испуг, либо смущение."
-        "Какой-то явной заинтересованности… Лично я не разглядел."
-    "Я запретил себе думать о плохом."
-    th "Может, она и вовсе обрадовалась, и сейчас благодарна мне — вон как неуютно ей было под перекрестиями взглядов зрителей. Боязнь толпы как она есть."
+        "I don’t know if she was offended by me for knocking her out of the tournament in the first round."
+        "Or maybe she doesn't care. So far, she has shown either fear or embarrassment."
+        "Some kind of obvious interest… Personally, I didn't see any."
+    "I forbade myself to think about the bad."
+    th "Maybe she was completely delighted, and now she is grateful to me - look how uncomfortable she was under the crosshairs of the views of the audience. Fear of the crowd as it is."
     if not alt_day2_dv_chased:
-        "Тортик закончился."
-        "Я с сожалением оглядел салфетку, но там действительно ничего больше не было."
-        "Что ж, значит, больше поводов ненавидеть мелкую!"
-    "Вечер был тёплый и какой-то мирный, я закинул голову на изголовье и уставился в вечереющее небо."
-    "Спокойно так…"
-    "Ещё пятнадцать минут спустя у меня лопнуло терпение, и я встал со скамейки."
-    "Подойдя к домику, я поднялся на крылечко и негромко постучал."
+        "There was no more cake."
+        "I looked at the napkin with regret, but there really was nothing else there."
+        "Well, that means there are more reasons to hate Ulyana!"
+    "The evening was warm and somehow peaceful, I threw my head on the headboard and stared at the evening sky."
+    "So peaceful…"
+    "Another fifteen minutes later, my patience snapped, and I got up from the bench."
+    "Approaching the house, I climbed onto the porch and knocked softly."
     play sound sfx_knock_door3_dull
     scene bg ext_house_of_un_night_7dl with dissolve
-    "Нет ответа."
-    "Я постучал ещё раз и, толкнув дверь, зашёл."
+    "No response."
+    "I knocked again and, pushing the door, went in."
     stop ambience fadeout 1
     stop music fadeout 2
     play sound sfx_door_squeak_light
@@ -7462,248 +7465,248 @@ label alt_day2_un_herc_date:
     $ night_time()
     $ persistent.sprite_time = "night"
     play music music_list["confession_oboe"] fadein 3
-    "Лена сидела за столом и задумчиво смотрела в окно."
-    "На мой стук она не среагировала совершенно, будто полностью углубившись в какие-то свои мысли."
-    me "Эй… Ты чего сидишь одна в темноте?"
+    "Lena sat at the table and thoughtfully looked out the window."
+    "She did not react at all to my knock, as if she was completely lost in her thoughts."
+    me "Hey… Why are you alone in the darkness…?"
     show un scared pioneer with dissolve
-    un "Ай!"
-    "Она чуть не подпрыгнула на стуле от неожиданности!"
+    un "AH!"
+    "She almost jumped out of her chair in surprise!"
     show un shy pioneer with dspr
-    "А потом вдруг засуетилась, зашевелилась, что-то перекладывая на столе…"
-    "Я еле-еле успел увидеть, как она неуловимым движением спрятала что-то, лежащее под локтем, между книжек, накрыв сверху лежащей здесь же коробкой с красками."
-    me "Прости, я не хотел тебя пугать…"
+    "And then suddenly she began to fuss, stir, shifting something on the table…"
+    "I barely had time to see how, with an imperceptible movement, she hid something lying under her elbow between books, covering it with a box of paints lying here on top."
+    me "Sorry, I didn't mean to scare you…"
     show un smile pioneer with dspr
-    un "Н-ничего…"
-    me "Просто ты не выходишь… Сидишь одна…"
-    "Начал я, чувствуя себя не то торговым агентом, не то просто придурком. Верно Двачевская меня тормозом окрестила."
-    me "Вот я и подумал…"
-    "Я запнулся, подыскивая новые слова."
-    me "Неправильно это! Сидеть одной в такой вечер…"
+    un "I-It's okay…"
+    me "It's just that you're not coming out… Sitting here alone…"
+    "I started, feeling either like a salesman, or just a jerk. Dvachevskaya was right in calling me a retard."
+    me "So I thought…"
+    "I stumbled looking for new words."
+    me "This is wrong! Sitting alone on a night like this…"
     show un serious pioneer with dspr
-    un "Что ты имеешь в виду?"
+    un "What do you mean?"
     if alt_day1_un == 4:
-        me "Ты вчера говорила о том, что любишь рисовать…"
-        me "И говорила, что готова рискнуть заниматься этим в моей компании."
-        "От двусмысленности сказанного свело скулы, но отыгрывать партию назад было уже поздно."
-        "К счастью, девочка, кажется, этого не заметила, так как совершенно не отреагировала."
+        me "Yesterday you told me that you like drawing…"
+        me "And you also said you were ready to take the risk of doing it in my company."
+        "Cheekbones cramped from the ambiguity of what was said, but it was too late to take it back."
+        "Fortunately, the girl did not seem to notice this, as she did not react at all."
     else:
-        me "Ты же в стенгазете рисуешь… Значит, рисуешь хорошо?"
+        me "You draw for the newspaper… That means you draw well?"
         show un smile pioneer with dspr
-        un "Н-ну… Я просто рисую."
-        me "Это уже значит лучше меня."
-    me "Так вот, в качестве дела на сегодняшний вечер, хотел бы попросить тебя…"
-    "Я сделал паузу."
-    me "Показать свои картины."
+        un "W-well… I just draw."
+        me "Already better than me."
+    me "So, for tonight, I would like to ask you to…"
+    "I paused."
+    me "Show me your paintings."
     if ('library' in list_voyage_7dl):
-        extend " Я у тебя здесь краску вижу, в библиотеке стоит мольберт… Значит, есть что показать, не в тетради ручкой палочных человечков рисуешь…"
+        extend " I see paint here, there's an easel in the library… That means there is something to show, you do not draw stick men in a notebook with a pen after all…"
     else:
-        extend " Ольга Дмитриевна отзывалась о тебе, как об очень талантливой художнице."
-    "Она спокойно и строго смотрела на меня, ожидая продолжения."
-    "А я вдруг понял, что в очередной раз лезу и навязываюсь. Самого себя бы я в такой ситуации уже послал далеко и надолго, однако у Лены оказался куда более солидный запас терпения, раз она до сих пор меня не выгнала."
-    "И не успел я отойти от этой мысли и кинуться извиняться за собственную докучливость, как вдогонку за первой мыслью прилетела следующая:"
-    dreamgirl "Для хорошего художника каждая его картина — это личное переживание. Он проживает сюжет, делает выводы, а потом выражает всё на холсте."
-    dreamgirl "И какого, спрашивается, чёрта ты лезешь не просто глубоко, а в самое сердце?"
-    dreamgirl "Ты что, как-то заслужил это право?"
-    dreamgirl "Или, может, тебя мир не устраивает?"
-    dreamgirl "Она только-только начала раскрываться и доверять тебе… И ты всё испортил. Дубина."
-    dreamgirl "Ты бы ещё её дневник почитать попросил."
+        extend " Olga Dmitrievna spoke of you as a very talented artist."
+    "She calmly and sternly looked at me, waiting for the continuation."
+    "And I suddenly realized that once again I was imposing on her. In such a situation, I would have already sent myself far and for a long time, but Lena turned out to have a much more solid reserve of patience, since she still hasn’t kicked me out."
+    "And before I had time to move away from this thought and rush to apologize for my own annoyance, the next one flew after the first thought:"
+    dreamgirl "For a good artist, each of his paintings is a personal experience. He lives the plot, draws conclusions, and then expresses everything on the canvas."
+    dreamgirl "And let me ask you, why the hell are you climbing not just deep, but into the very depths of her heart?"
+    dreamgirl "Did you earn this right?"
+    dreamgirl "Or maybe the world doesn't suit you?"
+    dreamgirl "She just started to open up and trust you… And you ruined everything. You dumb shit."
+    dreamgirl "Would you also like to read her diary?"
     show un surprise pioneer with dspr
-    un "Какие картины? Я же так…"
-    "Она махнула рукой."
-    un "Там некрасиво всё."
-    "Видно было, что тема разговора для неё болезненна."
-    "Кто-то уже смотрел её рисунки и раскритиковал их в пух и прах? Ну так дело житейское, без критики прогресс идёт здорово медленнее."
+    un "What paintings? I just…"
+    "She waved."
+    un "It's all bad."
+    "It was evident that the topic of conversation was painful for her."
+    "Has anyone already looked at her drawings and criticized them to the nine hells? Well, it's an everyday thing, without criticism progress goes much slower."
     stop music fadeout 2
-    "Так, надо срочно что-то придумывать, пока она опять не замкнулась!!!"
-    me "Лен…"
+    "Alright, I need to urgently think of something before she closes up again!!!"
+    me "Lena…"
     play music music_7dl["take_my_hand"] fadein 1
-    "Я старался говорить как можно мягче."
-    me "Неправда же…"
+    "I tried to speak as softly as I could."
+    me "That's not true…"
     if ('library' in list_voyage_7dl):
-        me "Я ведь видел там, на столе в библиотеке… {w=.4}Твои иллюстрации."
-        me "Это же твои творения были, правда?"
+        me "I saw in the library, on the table… {w=.4}Your illustrations."
+        me "Those were yours, right?"
         show un shy pioneer with dspr
-        un "Да…"
+        un "Yes…"
     else:
-        me "И тебя в голос хвалит и вожатая, и — ты удивишься — Ульянка."
-        dreamgirl "Угу. Ульянка-то фигни не скажет."
-        un "Я не знаю…"
-    "Прошептала она."
-    "Сейчас она олицетворяла собой сомнение."
-    "И я прекрасно её понимал!"
+        me "And the squad leader praises you out loud, and - you will be surprised - Ulyanka."
+        dreamgirl "Uh-huh. Ulyana wouldn't say shit."
+        un "I don't know…"
+    "She whispered."
+    "Right now she looked like a personification of doubt."
+    "And I perfectly understood her!"
     show un normal pioneer with fade
-    "А ещё я прекрасно понимал, что если я не уболтаю её сейчас — я не только не уболтаю её никогда…"
-    "Я ещё и того небольшого прогресса в наших с ней непонятных отношениях лишусь."
-    "И вряд ли она после этого когда-нибудь подпустит меня ближе."
-    th "Сейчас надо как можно убедительнее попросить её не упрямиться. Пока ещё есть возможность."
-    th "Или проявить милосердие и перевести разговор на другую тему?"
-    "В гробу я видал такое милосердие."
-    me "Послушай… Я понимаю, что это очень личное. И если ты не хочешь делиться им со мной — я тоже пойму."
-    me "Во всяком случае, я попытаюсь отнестись с уважением к твоему решению."
-    me "Но и ты пойми: если ты художник — ты должна выставляться."
-    me "Твои работы должны видеть люди! Все чувства, которые ты вкладываешь в картины, должны быть увидены, оценены и прочувствованы."
-    me "Я хочу сказать — не зарывай талант в землю. Если хочешь быть художником — будь им. Но уж тогда будь им до конца."
-    "Жалкий в своём пафосе спич… Кого я надеялся убедить своими воззваниями…"
+    "And I also understood very well that if I don’t chat her up now, I will not only never chat her up…"
+    "I will also lose that little progress in our incomprehensible relationship with her."
+    "And it is unlikely that she will ever let me close after that."
+    th "Now we need to ask her as convincingly as possible not to be stubborn. While there is still a possibility."
+    th "Or show mercy and move to another topic?"
+    "To hell with that mercy."
+    me "Listen… I understand that this is very personal. And if you don't want to share it with me, I'll understand too."
+    me "Anyway, I'll try to respect your decision."
+    me "But please understand: if you are an artist, you must exhibit yourself."
+    me "Your works should be seen by people! All the feelings that you put into the pictures should be seen, appreciated and felt."
+    me "I mean, don't bury talent in the ground. If you want to be an artist, be one. But then be it to the end."
+    "Pathetic speech… Whom did I hope to convince with such proclamations…"
     show un serious pioneer close at center with dissolve
-    un "То, что ты говоришь… Оно так странно."
-    "Она напряжённо думала и пыталась найти какие-то контраргументы. Более того, в итоге она их нашла, и…"
+    un "What you're saying… It's so weird."
+    "She thought hard and tried to find some counterarguments. Moreover, in the end she found them, and…"
     show un smile pioneer far with dissolve
-    un "Но ты в чём-то прав."
-    "…и милосердно оставила их при себе."
-    th "Ты святая…"
-    "Она отложила в сторону книги, под которым обнаружились эдакие салазки-держатель для листов ватмана, уложенных красками вниз."
-    un "Вот… Мои художества."
-    "Она перевернула первый лист, и я ахнул, зажмурившись."
-    "С листа бумаги на меня смотрел мой город. Заснеженный, серый и унылый, он почему-то выглядел прекрасным, выйдя из-под кисти девочки."
-    "Значит ли это, что он и был прекрасен, просто я этого не видел?"
-    un "Я назвала его просто городом. Потому что не придумала названия."
-    "Она беспомощно пожала плечами."
-    un "Просто он однажды приснился мне…"
-    me "Фантастика…"
-    "Рекламные растяжки, щиты 6 на 3, троллейбусы модернового дизайна, и…"
-    "В одном из окон горит свет. Но не простая советская лампочка, а куда более привычный и милый сердцу любого пользователя мёртвый голубой свет с монитора."
-    un "Да, он немного фантастичен… Но у меня из окна примерно такой же вид…"
-    me "Хотел бы я взглянуть."
+    un "But you may be right."
+    "…and mercifully kept them to herself."
+    th "You're a saint…"
+    "She put aside the book, under which a kind of sled-holder for sheets of whatman paper, laid with paints down, was found."
+    un "Here… My art."
+    "She turned over the first sheet and I gasped, closing my eyes."
+    "My city was looking at me from a piece of paper. Snow-covered, gray and dull, for some reason it looked beautiful, coming out from under the girl's brush."
+    "Does this mean that it was beautiful, I just didn't see it?"
+    un "I just called it a city. Because I didn't come up with a name."
+    "She helplessly shrugged."
+    un "I just dreamt of it one day…"
+    me "Fantastic…"
+    "Advertising banners, 6x3 billboards, modern design trolleybuses, and…"
+    "A light is on in one of the windows. But not a simple Soviet light bulb, but a dead blue light from the monitor, much more familiar and dear to the heart of any user."
+    un "Yeah, it's a little fantastic… But I have the same view from my window…"
+    me "I'd love to see it."
     show un surprise pioneer with dspr
-    un "Что?"
-    me "Вид… Из окна."
-    un "З-зачем?"
+    un "What?"
+    me "The view… From your window."
+    un "W-why?"
     show un shy pioneer with dspr
-    "Кажется, в голову ей пришли довольно любопытные мысли."
-    me "Просто… Нельзя?"
-    un "Можно… Наверное."
-    "С чего ещё начинать знакомство с девушкой, как не с вида из её окон."
-    "Мне стало неловко. Вдвойне неловко от того, что неловко было и хозяйке домика."
-    me "Прости… Я опять несу всякую чушь… Давай дальше смотреть?"
-    un "Давай…"
+    "She seemed to have some pretty interesting thoughts in her head."
+    me "Just because… Can't I?"
+    un "You can… Maybe."
+    "How else would you start dating a girl, if not from the view from her windows."
+    "I felt uncomfortable. Doubly embarrassing because the owner of the house was also embarrassed."
+    me "Sorry… I'm rambling again… Let's keep looking?"
+    un "Let's…"
     play sound sfx_paper_bag
-    "Отложив первую картину в сторону, она перевернула следующую."
-    "Здесь уже был нарисован лагерь. Но ракурс…"
-    "Будто она рисовала с лодки."
+    "Putting the first painting aside, she flipped the next."
+    "The camp was drawn here. But the angle…"
+    "As if she was drawing on a boat."
     if alt_day2_us_escape:
-        "Или с того самого острова, куда мы с Ульяной пытались сбежать."
-    "Если я что и знал про живопись — так это то, что она требует некоторого покоя."
-    "Иначе к чему все эти мольберты с планшетами, если можно было бы взять и на ходу нарисовать картину, не обращая внимания на окружение."
-    un "Пристань…"
-    me "Да, я понял. Это у тебя любимое место?"
+        "Or from the very island where Ulyana and I tried to escape."
+    "If there's one thing I knew about painting, it's that it requires certain calm."
+    "Otherwise, why all these easels with tablets, if you could take and draw a picture on the go, not paying attention to the environment."
+    un "Pier…"
+    me "Yeah, I see. Is that your favorite place?"
     show un shy pioneer with dspr
-    un "Не совсем…"
-    "Она смутилась, а я себя в очередной раз обругал."
-    dreamgirl "Возьми себя в руки!"
-    dreamgirl "Держи в своей пустой голове, что ты ступаешь на тонкий лёд."
-    dreamgirl "И весь твой незначительный жизненный опыт тебе не в помощь здесь."
-    dreamgirl "Потому что он абсолютно о другом."
-    "Надо себе где-нибудь записать перечень «запретных» тем, о которых не следует разговаривать с этой девочкой."
-    me "А как ты это рисовала? Неужели с лодки?"
-    un "Нет… Я просто увидела момент… И запомнила."
-    un "А потом по памяти… Нарисовала."
-    me "Потрясающая у тебя память!"
-    "И будто я сказал что-то не то, Лена повернулась и странно на меня посмотрела."
+    un "Not really…"
+    "She got embarrassed, and I scolded myself once again."
+    dreamgirl "Get a grip!"
+    dreamgirl "Keep this in your empty head - you're treading on VERY thin ice."
+    dreamgirl "And all your insignificant life experience will not help you here."
+    dreamgirl "Because it's all completely different."
+    "I'll need to write down a list of «forbidden» topics, which should not be brought up when talking to this girl."
+    me "How did you draw it? Don't tell me you were on a boat?"
+    un "No… I just saw this moment… And remembered."
+    un "And then I drew it… From memory."
+    me "You have an amazing memory!"
+    "And as if I said something wrong, Lena turned and looked at me strangely."
     show un surprise pioneer with dspr
-    un "Почему потрясающая?"
-    me "Запомнить картинку во всех деталях… Я уверен, я завтра схожу на пристань и найду там каждое причальное кольцо, лодку с номером или окно с треснувшим стеклом."
-    "Меня всегда восхищали люди творческие. Нет, я не завидовал им, не злился, что Рандом им отделил, а меня обделил. Нет. Просто когда кто-то что-то делает хорошо — я за него радуюсь."
-    "Как радовался сейчас за Лену, видя то, насколько ей удаётся выражать мысль, чувство, эмоцию."
+    un "Why amazing?"
+    me "Memorizing the picture in every detail… I'm sure I'll go to the pier tomorrow and find every mooring ring, boat with a number, or window with cracked glass."
+    "I have always been fascinated by creative people. No, I didn’t envy them, I wasn’t angry that God gave to them, but cheated on me. No. It's just that when someone does something well, I'm happy for them."
+    "How happy I was now for Lena, seeing how she manages to express a thought, feeling, emotion."
     if  alt_day2_bf == 'un':
         show un shy pioneer with dspr
-        un "Ты сейчас опять так странно смотришь…"
-        un "Как на завтраке…"
-    un "Я же говорила, что некрасиво…"
-    "И здесь до моего ограниченного разума дошёл очевидный факт."
-    "Да ей же похвала нужна! Комплимент какой-нибудь…"
-    th "Похоже, девочку недохвалили в детстве."
-    "А мне и не жалко. Тем более, что это правда."
-    me "Глупости какие. Некрасиво ей."
-    me "Я бы половину отсюда забрал домой…"
-    un "А другую?"
+        un "You're looking so strangely now…"
+        un "Like back on breakfast…"
+    un "I told you they were ugly…"
+    "And here the obvious fact reached my limited mind."
+    "She needs a praise! Some kind of compliment…"
+    th "It looks like the girl was not praised as a child."
+    "And I don't mind praising her. Considering it's all true."
+    me "Such nonsense. Listen to her, 'ugly'."
+    me "I'd take half of those with me back home…"
+    un "And the other half?"
     show un smile pioneer with dspr
-    "Она лукаво улыбнулась, и улыбка буквально преобразила её печальное лицо, наполнив его каким-то внутренним светом."
-    me "А другую половину не забрал бы."
-    un "Почему же?"
-    me "Потому что было бы эгоистично забирать себе всё… Надо и людям на что-то полюбоваться."
-    un "Ты так говоришь это…"
-    "Ватман негромко хрустнул под сжавшимися пальцами."
-    "Кажется, она опять ушла в себя, и мне пришлось высвобождать покалеченные полотна, мягко и вежливо разгибая её пальцы."
-    "Или хотя бы попытаться…"
-    "От соприкосновения пальцев вздрогнули оба."
-    "Мне вдруг пришло в голову, что это первое наше касание. Своеобразное достижение."
-    "А ещё мне пришло в голову, что мы сейчас с ней совсем одни, сидим в домике, сидим близко-близко…"
-    "Я покраснел и попытался как можно незаметнее отсесть. Хотя бы чуть-чуть подальше."
-    "Но куда ты с табуретки отсядешь-то?"
+    "She smiled slyly, and the smile literally transformed her sad face, filling it with some kind of inner light."
+    me "I wouldn't take the other half."
+    un "Why is that?"
+    me "Because it would be selfish to take everything for yourself… People also need to admire something."
+    un "You say it like…"
+    "Whatman crunched softly under clenched fingers."
+    "It seems that she again withdrew into herself, and I had to release the crippled canvases, gently and politely unbending her fingers."
+    "Or at least try to…"
+    "When our fingers touched we both flinched."
+    "It suddenly occurred to me that this was our first contact. Peculiar achievement."
+    "It also occurred to me that now we are all alone with her, sitting in a house, sitting close…"
+    "I blushed and tried to sit farther as discreetly as possible. At least a little further."
+    "But where do you move on a stool?"
     show un normal pioneer with dspr
-    un "Что-то не так?"
-    "Она внимательно посмотрела на меня."
-    "И в голове опять щёлкнул чёртов суфлёр, сообщивший, что расстояние до губ девочки не превышает десяти сантиметров."
-    me "В-всё… т-так…"
+    un "Something wrong?"
+    "She looked at me carefully."
+    "And the damn prompter clicked in my head again, saying that the distance to the girl’s lips did not exceed ten centimeters."
+    me "E-everything… i-is fine…"
     if (alt_day2_convoy == 'un') and ('library' in list_voyage_7dl):
-        "Как тогда в библиотеке, я ощущал кожей её дыхание, мог распробовать вкус и запах."
-        "Вопрос лишь в том, не слишком ли я спешу?"
+        "As then in the library, I felt her breath on my skin, I could feel the taste and smell."
+        "The only question is, am I in too much of a hurry?"
     elif (alt_day2_convoy == 'me'):
-        un "Зря не позвал меня с утра на обход по лагерю."
-        "Хрипло произнесла она."
-        me "П-почему?"
-        "Мысли заметались, не выдавая ни единой разумной идеи о том как вести себя правильно в данной ситуации."
+        un "It's unfortunate that you didn't ask me to accompany you in the morning."
+        "She said hoarsely."
+        me "W-why?"
+        "Thoughts rushed about, not giving out a single reasonable idea about how to behave correctly in this situation."
         show un smile pioneer with dspr
-        un "Ну… Погуляли бы."
+        un "Well… We could've walked."
     elif alt_day2_convoy in ('dv', 'sl'):
         stop music fadeout 0
         if (alt_day2_convoy == 'sl'):
-            un "Скажи, почему ты столько внимания мне уделяешь?"
-            me "Потому что мне с тобой интересно…"
-            un "А как же Славя? Я не хочу быть второй табуреткой в доме."
-            me "Славя… Славя просто очень хороший человечек. Она оказалась первой, кто был добр ко мне за очень долгое время."
-            me "Я благодарен ей за это. Но благодарность… Это другое."
+            un "Tell me, why do you pay so much attention to me?"
+            me "Because I'm interested in you…"
+            un "But what about Slavya? I don't want to be the second stool in the house."
+            me "Slavya… Slavya is just a good person. She was the first to show me kindness in a long time."
+            me "I'm grateful to her for this, but this gratefulness… It's different."
         elif (alt_day2_convoy == 'dv'):
-            un "Ты знаешь… Мы с Алиской выросли вместе."
-            "Я недоумённо кивнул головой, не понимая, куда она клонит."
-            un "Можно сказать, она была моей первой и самой лучшей подругой."
-            me "А сцена у столовой?"
+            un "You know… Me and Alisa, we grew up together."
+            "I nodded my head in confusion, not understanding where she was getting at."
+            un "You could say she was my first and best friend."
+            me "Then what happened at the canteen?"
             show un serious pioneer close with dspr
-            un "Ты не понимаешь. Это наш личный этикет, только между мной и ей."
-            me "Ладно, я понял. Она твоя лучшая подруга. Дальше?"
-        un "Вот с утра ты проводишь время с ней… А потом бежишь ко мне…"
-        un "Я хочу знать…"
-        "Её голос звучал всё тише и тише, пока не спустился до почти шёпота."
-        un "Зачем ты поступаешь так?"
-        un "Разве общение с неразговорчивой девочкой для тебя столько значит?"
-        "И что ей отвечать? Пошутить в духе ситкомов, мол, я дружеобильный и могу дружить со всеми? Да, это будет великолепным завершением вечера… Вполне в моём стиле."
-        me "Да… Именно столько и значит."
+            un "You don't get it. This is our personal etiquette, just between me and her.."
+            me "Alright, I got it. She's your best friend. So?"
+        un "In the morning you spend time with her… And then you run to me…"
+        un "I want to know…"
+        "Her voice got quieter and quieter until it was almost a whisper."
+        un "Why do you do this?"
+        un "Does communication with a taciturn girl mean so much to you?"
+        "And how should I answer? Joking in the spirit of sitcoms, like, I'm friendly and can be friends with everyone? Yes, it will be a great end to the evening… Just my style."
+        me "Yeah… It means that much."
         play music music_list["doomed_to_be_defeated"] fadein 0
         show un angry pioneer close with dspr
-        un "Так иди тогда к ней! {w}А я тебе обещаю ежедневную порцию общения в три слова!"
-        me "Да н-нет… Ты не так поняла… Я хотел…"
-        un "Мне {w=.3}всё {w=.3}равно — что ты хотел. Убирайся!"
+        un "Then go to her! {w}And I promise you a daily ration of communication in three words!"
+        me "N-no… you don't understand… I wanted…"
+        un "I {w=.3}don't {w=.3}care — what you wanted. Get out!"
         show un angry pioneer far with dspr
-        "Она вскочила с табуретки и, пройдя ко входу, распахнула дверь."
-        "Будто чего-то подождала и сделала приглашающий жест."
-        un "Ну же! Я жду! С вещами на вы…"
+        "She jumped up from the stool and, going to the entrance, flung open the door."
+        "As if she waited for something and made an inviting gesture."
+        un "Come on! I'm waiting! Don't forget your th…"
         $ alt_day2_date = 'un_fz'
-        dreamgirl "Ты в очередной раз подтверждаешь своё реноме, Семён Семёныч."
-        "Не смея поднять головы, я прошёл мимо Лены, буквально чувствуя, как её глаза с откровенной враждебностью провожают меня."
+        dreamgirl "You once again confirm your reputation, Semyon Semenych."
+        "Not daring to raise my head, I walked past Lena, literally feeling her eyes accompany me with open hostility."
         hide un with dissolve
         play sound sfx_open_door_kick
-        "Вот и всё."
+        "Hey guys, guess that's it."
         scene bg ext_house_of_un_night_7dl with dissolve2
-        "Мне показалось, что за грохотом захлопывающейся двери я услышал рыдание?"
+        "I thought I heard a sob behind the rumble of a slamming door?"
         "…"
         with fade2
         "…"
-        "Впрочем, это уже не моё дело. Мне показали на дверь, и я её нашёл."
-        "Пойду-ка я спать, пока ещё чего-нибудь не напортил."
+        "However, this is none of my business. She showed me the door and I found it."
+        "I should go to sleep before I mess something up."
         $ lp_un -= 10
         stop music fadeout 3
         stop ambience fadeout 6
         with fade
         return
-    "Кажется, от моих щёк можно было прикуривать в этот момент."
-    "Мне вдруг пришло в голову, что доктор Коллайдер со своими пышными формами, замашками прожжённой нимфоманки и декольте до пупа и близко не стоит рядом с этой скромной девочкой."
-    me "Уже поздно…"
+    "It seems that it was possible to light a cigarette from my cheeks at that moment."
+    "It suddenly occurred to me that Dr. Collider, with her magnificent forms, the manners of a burnt nymphomaniac and her cleavage to the navel, does not even stand close to this modest girl."
+    me "It's late…"
     show un smile pioneer with dspr
-    un "Да…"
-    me "Значит, до завтра?"
-    "Она бросила взгляд на часы и рассмеялась."
-    un "До сегодня."
-    "Я неохотно отпустил её руку и побрёл по направлению к своему домику."
+    un "Yeah…"
+    me "So, see you tomorrow?"
+    "She glanced at her watch and laughed."
+    un "See you today."
+    "I reluctantly let go of her hand and wandered towards my house."
     stop music fadeout 3
     stop ambience fadeout 6
     return
@@ -7712,428 +7715,428 @@ label alt_day2_slot_un:
     $ alt_day2_date = 'un'
     $ counter_un_7dl = 1
     scene bg ext_playground_sunset_7dl with dissolve
-    "В поисках уединения я забрёл на спортивную площадку."
-    "Она была занята целый день пылящими по полю пионерами, пинающими мяч."
-    "Сейчас же, когда все они ещё сидели в столовой и поглощали те остатки торта, до которых не дотянулась Ульяна, здесь было абсолютно пусто и безлюдно."
-    th "То, что надо!"
-    "Если я ничего не путаю, все спортивные площадки делают на отшибе, поэтому шанс, что пионерам будет лень добираться сюда вечером, был довольно высок."
-    "А сегодня и так слишком дофига всего произошло."
-    "Ту же Ульяну взять, например."
-    "Турнир, обход этот…"
-    "Я внимательно рассмотрел ворота и, вскарабкавшись по сетке, занял место на перекладине."
-    "А немного подумав, и вовсе устроился на провисающей сетке, оказавшись в импровизированном гамаке."
-    "Если не делать резких движений, можно очень неплохо полежать."
+    "In search of solitude, I wandered into the sports field."
+    "It's been occupied all day with pioneers dusting the field, kicking the ball."
+    "Now, when they were all still sitting in the canteen and absorbing those remains of the cake that Ulyana did not reach, it was absolutely empty and deserted here."
+    th "That's the ticket!"
+    "If I'm not confusing anything, all the sports fields are usually built on the outskirts, so the chance that the pioneers would be too lazy to get here in the evening was quite high."
+    "And today a shitton of things has already happened."
+    "For example, the entire show with Ulyana."
+    "Tournament, that damned checklist…"
+    "I carefully examined the gate and, climbing up the net, took a place on the crossbar."
+    "And after a little thought, I completely settled down on a sagging net, finding myself in an impromptu hammock."
+    "If you don't make any sudden movements, you could probably lay down here comfortably."
     scene bg ext_sky_7dl
     with dissolve
     stop music fadeout 8
-    "И посмотреть в небо, например. В отсутствие текучей воды небо — ничуть не худший объект для медитации."
-    "В зубах травинка, настроение мирное, вечер яркий. Теперь, если от меня все отстанут, я, возможно, даже сумею получить толику удовольствия."
-    "Возмущения в психике требовалось сгладить, {w=.4}а в чьей-либо компании это сделать было невозможно."
+    "And look at the sky, for example. In the absence of flowing water, the sky is not the worst object for meditation."
+    "A blade of grass in the teeth, the mood is peaceful, the evening is bright. Now, if everyone leaves me alone, I might even be able to have a modicum of pleasure."
+    "I had to smooth out perturbations in my psyche, {w=.4}which would be impossible in someone else's company."
     scene stars
     with dissolve2
     play music music_7dl["take_my_hand"] fadein 4
-    "А тут ещё и звёзды проглянули сквозь облака, когда закат утащил за собой непрозрачный голубой купол, обнажая черно-синюю изнанку, приколотую льдистыми иголочками над головой."
-    "С настоящим небом никогда не сравнится то, что можно разглядеть на экране монитора или в очередной голливудской поделке."
-    "Потому что настоящее небо — живое."
-    "И, как любой другой идеальный собеседник, оно ненавязчиво."
+    "And then the stars peeped through the clouds as the sunset dragged the opaque blue dome behind it, exposing the black and blue inside, pinned with icy needles above the head."
+    "What can be seen on the monitor screen or in another Hollywood craft will never compare with the real sky."
+    "Because the real sky is alive."
+    "And, like any other ideal interlocutor, it is unobtrusive."
     stop ambience fadeout 1
     $ night_time()
     $ persistent.sprite_time = "night"
     play ambience ambience_camp_center_night fadein 1
-    "Я поворочался в своём гамаке, пытаясь найти знакомые созвездия."
-    "Возможно, я не самый лучший астроном на свете, но уж такие приметные вещи как ковш Малой Медведицы, я точно бы узнал."
-    "А здесь его не было. Либо из-за слишком южной широты небо исказилось до неузнаваемости?"
-    th "Или глупости?"
-    "Может, я в южном полушарии? Там, говорят, картина неба совершенно другая."
-    "Я запрокинул руки за голову и сладко потянулся."
-    "И периферийным зрением уловил новое действующее лицо."
-    "Я снова не один?"
-    "Стоило бы ожидать."
-    "Если весь день докапывали чьей-то компанией, глупо было надеяться сбежать от оной куда-нибудь в тёмный уголок."
-    "Сверху вниз силуэт читался трудно, с уверенностью можно было сказать, что он не очень высокий."
-    "Ну а пропорции выдавали во владельце девочку."
-    "Она стояла под некоторым углом ко мне, поэтому я не мог разглядеть точнее."
-    "Ракетку удалось разглядеть тоже далеко не сразу, и я удивился — вот так, играть в темноте? Неужели не страшно растерять все воланчики?"
-    "Хотя, похоже, здесь этого опасаться вообще не приходилось — во время маха девочка постоянно поворачивала ракетку под каким-то замысловатым углом, из-за чего удар приходился вскользь."
-    "Воланчик, разумеется, падал, она, разумеется, наклонялась его поднимать. И каждый такой наклон четыре хвостика смешно прыгали в воздухе…"
-    "Лена. Только у неё тут такая причёска."
+    "I tossed and turned in my hammock, trying to find familiar constellations."
+    "I may not be the best astronomer in the world, but such noticeable things as the bucket of Ursa Minor, I would definitely know."
+    "But it wasn't here. Or did the sky distort beyond recognition because of our southern latitude?"
+    th "Or maybe I'm just stupid?"
+    "Maybe I'm in the southern hemisphere? There, they say, the picture of the sky is completely different."
+    "I threw my hands behind my head and stretched sweetly."
+    "And my peripheral vision caught a new character."
+    "I'm not alone, again?"
+    "Should've expected that."
+    "It was foolish to escape to some dark corner, considering I was constantly bothered by someone all day."
+    "From top to bottom, the silhouette was difficult to read, but it was safe to say that he was not very tall."
+    "And the proportions revealed that it was a girl."
+    "She was standing at some angle to me, so I couldn't see clearly."
+    "It took a long time to see the racket either, and I was surprised - playing in the dark like this? Isn't it scary to lose all the shuttlecocks?"
+    "Although it seems that there was no need to fear this at all - during the swing, the girl constantly turned the racket at some intricate angle, due to which the blow fell casually."
+    "The shuttlecock, of course, fell, and she, of course, stooped to pick it up. And each such tilt four ponytails jumped funny in the air…"
+    "Lena. She's the only one here with hair like that."
     show blink
-    "Я порадовался тому, какой удобный наблюдательный пункт занял — меня никто не видит, а я вижу всё и, закрыв глаза, попытался прикинуться ветошью."
-    "А в воздухе разносились удары пластика о пластик."
-    "Не шлепок упругой сетки по воланчику, а пластиковый стук."
+    "I was glad that I had taken a convenient observation point - no one sees me, but I see everything and, closing my eyes, tried to pretend to be a rag."
+    "And in the air there were sounds of plastic hitting plastic."
+    "Not a slap of an elastic mesh on a shuttlecock, but a plastic knock."
     scene stars
     show unblink
-    "Я попытался отрешиться от звуков и посмотрел на небо."
-    "Но небо меня предало. Оно больше не было открытым и живым — каким бывает только тогда, когда ты с ним один. Или вместе с дорогим человечком."
-    "А фактор раздражения продолжал насиловать воланчик."
-    "Удар."
-    "Наклон."
-    "Подъём."
-    "Снова удар."
-    "Рррр, я не могу на это смотреть!"
+    "I tried to turn off the sounds and looked at the sky."
+    "But the sky betrayed me. It was no longer open and alive - the way it is only when you are alone with it. Or together with a dear person."
+    "And the irritation factor continued raping shuttlecock."
+    "Hit."
+    "Tilt."
+    "Straighten."
+    "Another hit."
+    "I can't watch this!"
     scene bg ext_playground_night with dissolve2
-    "Я засобирался, пытаясь выбраться из сетки, чтобы отнять у девочки несчастную ракетку с воланом и запулить его куда-нибудь подальше."
-    "Но не учёл того, что лежу на незакреплённой сетке поверх футбольных ворот."
-    "Сетка сомкнулась вокруг меня и устремилась вниз!"
-    "Я даже испугаться не успел."
-    "А ловушка моя на полпути зацепилась за что-то, вытряхивая меня вон и хороня надежды на мягкое приземление."
+    "I was trying to get out of the net in order to take away the unfortunate racket with a shuttlecock from the girl and yeet it somewhere far away."
+    "But I didn’t take into account the fact that I was lying on a loose net on top of a football goal."
+    "The net closed around me and rushed down!"
+    "I didn't even have the time to get scared."
+    "And my trap caught on something halfway, shaking me out and burying any hopes for a soft landing."
     play sound sfx_bodyfall_1
     with vpunch
     show un surprise sport with dissolve
-    me "…мать… и мать… и в первую очередь их, не закрепляющих инвентарь!"
-    "Я кончил, господа присяжные."
-    "Всю тираду я произнёс с земли, даже не пытаясь подняться."
-    "Лена с отвисшей челюстью наблюдала за падением Семёна и, будто из солидарности, из её руки вывалилась ракетка."
-    "Подброшенный ещё до моего падения воланчик преодолел верхнюю точку и устремился вниз."
-    "Внимания на него никто не обратил, так что он упал рядом с ракеткой, чтоб его."
-    "И у нас образовался трогательный триумвират на мелком красноватом гравии футбольного поля — я, ракетка, воланчик."
-    "Покрытие здесь, конечно, не газончик. Ну и не асфальт, если уж на то пошло."
-    "Потому никаких серьёзных травм, исключая в очередной раз уязвлённое самолюбие, я не получил."
-    "Я поднял глаза и встретился взглядом с девочкой."
-    me "Лена? Ох. Ты всё слышала?"
-    "Глупый вопрос."
-    "Она стояла в немом оцепенении, и мне пришлось подниматься самостоятельно."
-    "И тут, будто желая тоже выступить свидетелем моего падения, на небо вскарабкалась луна."
-    "Мертвенный бледный свет высветил и мою помятую физиономию, и исцарапанные пальцы — и Лену."
+    me "…mother… and his mother… and foremost those who didn't fix everything in place!"
+    "I'm done, gentlemen of the jury."
+    "I uttered the whole tirade from the ground, without even trying to get up."
+    "Lena, with her jaw dropped, watched the fall of Semyon and, as if out of solidarity, a racket fell out of her hand."
+    "The shuttlecock thrown up before my fall overcame the top point and rushed down."
+    "No one paid attention to him, so he fell down next to the racket, damned he be."
+    "And we formed a touching triumvirate on the fine reddish gravel of the football field - me, racket, shuttlecock."
+    "The cover here is certainly not lawn. Well, at least it's not asphalt, for that matter."
+    "Therefore, I did not receive any serious injuries, aside from my once again wounded pride."
+    "I looked up and met the eyes of a girl."
+    me "Lena? Oh. You heard all of it?"
+    "Stupid question."
+    "She stood in a dumb daze and I had to get up on my own."
+    "And then, as if wanting to also witness my fall, the moon climbed into the sky."
+    "The deadly pale light illuminated both my rumpled face and scratched fingers - and Lena."
     show un smile sport with dissolve
-    "И то ли отсвет так лёг, то ли что ещё — но я вдруг засмотрелся!"
-    "Я, как посетитель музея, стоял и глазел… {w}Тонул в её глазах. И было же в чём утонуть."
-    "Её зрачок занял больше половины радужки — реакция, которую любой физиогномист легко распознает как заинтересованность."
-    "Реакция, приводящая в восторг влюблённых всех времён."
-    "А дальше — как матрёшка: под живым, но хорошо камуфлируемым интересом прячется испуг, под ним какие-то собственные переживания, названия которым я найти пока не могу."
-    "Но справлюсь, дайте только срок!"
-    "Я отмотал мысли назад. Кажется, кто-то говорил об испуге?"
-    th "Я же напугал её!"
-    "Молодец, Сёма, ты лучше всех знаешь, с чего начинать общение с девушкой."
-    "Мы простояли так несколько секунд, пока я поднимался."
-    me "Добрый ночер."
-    "Как можно куртуазнее произнёс я."
-    "Надо ж с чего-то начинать."
-    me "Извини за ту тираду — дела пошли несколько хуже, чем ожидалось."
-    me "Кх…"
-    "Горло засаднило от набившейся в глотку пыли."
-    me "Я там на воротах на звёзды смотрел, а тут ты…"
-    dreamgirl "О да, образец велеречивости."
-    th "Уж что смог!"
-    me "А там сетка незакреплённая. Короче, вот…"
-    "Я попытался отряхнуться, но, похоже, безрезультатно."
+    "And either the reflection lay down that way, or something else - but I suddenly stared!"
+    "Like a museum visitor I stood and stared… {w}Drowning in her eyes. And there definitely was something to drown in."
+    "Her pupil occupied more than half of the iris - a reaction that any physiognomist can easily recognize as interest."
+    "The reaction that delights lovers all the time."
+    "And then - like a nesting doll: under a lively, but well-camouflaged interest, fear is hidden, under it are some experiences, the names of which I can’t find yet."
+    "I'll find them, just give me time!"
+    "I rewound my thoughts. Didn't someone say something about being scared?"
+    th "I scared her!"
+    "Well done, Semyon, you know better than anyone how to start a conversation with a girl."
+    "We stood like that for a few seconds while I got up."
+    me "Good nightning."
+    "As courteously as possible I said."
+    "You gotta start somewhere."
+    me "Sorry for that tirade - things went a little worse than expected."
+    me "Ghuh…"
+    "Throat ached from dust in the throat."
+    me "I was looking at the stars, and here you were…"
+    dreamgirl "Ah yes, the epitome of eloquence."
+    th "I did all I could!"
+    me "And the net wasn't properly attached there. So, here we are…"
+    "I tried to dust myself off, but it seems to no avail."
     show un normal sport far with dissolve
-    "Лена кивнула и сделала шаг назад, мгновенно пряча за маской застенчивости то, что мне удалось прочитать за доли секунды контакта глаз."
-    th "Похоже, она не очень-то мне рада."
-    th "Мы сейчас в одинаковом положении людей, чьё уединение кто-то нарушил. Не пора ли кооперироваться?"
-    me "Слушай, Лен…"
-    me "Ты если так и продолжишь выкручивать руку, ты никогда нормально не ударишь."
-    me "И воланчик поломаешь."
-    "Ну да, если по вещи долго лупить, она сломается — проверенный факт!"
-    me "Просто держи руку ровно, ракетка большая, не промахнёшься!"
-    "Отвлечённая тема для беседы — то, что нужно, чтобы визави расслабился."
-    me "Дай наглядно покажу."
-    "Я протянул руку, в душе всё ещё опасаясь, что Лена поймёт жест превратно."
-    th "В конце концов, если она начнёт бить правильно, шума от неё будет ровно в три раза меньше, и я смогу вернуться обратно в гамак."
-    "Я бросил взгляд на сетку, которая бесформенным кулем раскачивалась под перекладиной."
-    th "Ну… или не смогу!"
+    "Lena nodded and took a step back, instantly hiding what I managed to read in a split second of eye contact behind a mask of shyness."
+    th "She doesn't seem to be very happy with me."
+    th "We are now in the same position of people whose privacy has been violated. Isn't it time to cooperate?"
+    me "Look, Lena…"
+    me "If you keep twisting your arm like this, you will never hit properly."
+    me "And you'll break the shuttlecock."
+    "Well, yes, if you hit a thing for a long time, it will break - a proven fact!"
+    me "Just keep your hand steady, the racket is big, you won't miss!"
+    "An abstract topic for conversation is what you need to make your counterpart relax."
+    me "Let me show you."
+    "I held out my hand, still afraid in my heart that Lena would misunderstand the gesture."
+    th "In the end, if she starts hitting correctly, the noise from her will be exactly three times less, and I can return back to the hammock."
+    "I glanced at the net, which swayed in a shapeless sack under the crossbar."
+    th "Or… I won't be able to!"
     show un shy sport with dissolve
-    un "Держи. Только не сильно, ладно?"
-    th "Кажется в этой ситуации она чувствует себя чуть увереннее меня?"
-    "Во всяком случае, испуг из её глаз испарился, оставив место какой-то другой эмоции. {w}Определить, какой, я затруднялся. Лунный свет играл, делая привычные вещи незнакомыми и таинственными."
-    "Она подняла с земли ракетку с воланчиком и протянула мне."
-    "Кургузая ракетка с жёсткой пластмассовой сеткой — дешевая детская игрушка. И пенопластовый воланчик ей под стать."
-    th "Это не должно вызвать трудностей."
-    "Я опустил правую руку с зажатой в ней ракеткой вниз и подбросил воланчик перед лицом."
-    "Выждал момент."
+    un "Here. Just don't hit too hard, okay?"
+    th "It seems in this situation she feels a little more confident than me?"
+    "In any case, the fright from her eyes evaporated, leaving some other emotion in place. {w}I had a hard time figuring out which one. Moonlight took its toll, making familiar things unfamiliar and mysterious."
+    "She picked up the racket along with the shuttlecock from the ground and handed it to me."
+    "A racket with a hard plastic mesh - cheap children's toy. And a plastic shuttlecock to match her."
+    th "Well, that shouldn't be hard."
+    "I lowered my right hand with the racket clamped in it down and threw the shuttlecock in front of my face."
+    "Waited for a bit."
     play sound sfx_tennis_serve_1
-    "Ударил!" with vpunch
-    "Свечка получилась — любо-дорого посмотреть!"
-    "Мы оба, открыв рты, следили за полётом."
-    "Воланчик взлетел метров на пятнадцать, добрался до пика и, развернувшись, устремился вниз."
-    "Конечно, ударил я не идеально, определённый дифферент был, но там ничего страшного, погрешность — метр-два."
-    "Если, конечно, его сейчас ветром не сдует."
-    "И я с запозданием вспомнил, почему вообще не люблю эту игру!"
-    "По закону подлости, стоило лишь мне подумать о ветре, как неизвестно откуда взявшимся порывом воланчик утащило куда-то в заросли!"
+    "Strike!" with vpunch
+    "The trajectory turned out to be quite nice!"
+    "Both of us, with our mouths open, followed the flight."
+    "Shuttlecock flew up about fifteen meters, reached the peak and, turning around, rushed down."
+    "Of course, I didn’t hit perfectly, there was a certain difference, but there’s nothing to worry about, the error margin is a meter or two."
+    "Unless it gets blown away by the wind."
+    "And I belatedly remembered why I don't like this game at all!"
+    "As soon as I thought about the wind, a gust came from nowhere and dragged the shuttlecock straight into the thicket!"
     show un sad sport with dspr
-    "Лена стояла с таким видом, что на меня напала восставшая из пепла совесть."
-    un "Ну вот…"
-    "Похоже, она всерьёз переживала из-за какого-то воланчика."
-    un "Борис Александрович меня теперь прибьёт…"
-    un "И в команду не возьмут…"
-    "Она винила себя из-за моей ошибки? Даже не подумав высказать мне претензии?"
-    me "Ничего никто не прибьёт! Я сейчас его тебе притащу."
-    "Уж, наверное, белый-то воланчик на фоне чёрных зарослей я разгляжу?"
+    "Lena stood with such a look that my conscience, rising from the ashes, attacked me."
+    un "Oh well…"
+    "It looks like she was seriously worried about some kind of shuttlecock."
+    un "Boris Alexandrovich will scold me now…"
+    un "And they won't accept me into team…"
+    "Was she blaming herself for my mistake? Without even thinking about complaining to me?"
+    me "No, he won't scold you! I'll go get it right now."
+    "I’ll probably see a white shuttlecock against the background of black thickets, right?"
     stop music fadeout 4
-    me "Жди здесь."
-    "И уже прикидывая в уме пространство поиска, раскидывая его на квадраты, направился было в сторону кустов."
+    me "Wait here."
+    "And already figuring out the search space in my mind, scattering it into squares, I headed towards the bushes."
     show un scared sport with dspr
-    un "П-подожди…"
-    "Лена догнала меня и нерешительно коснулась руки."
-    me "Что? Почему?"
-    un "Там…"
+    un "W-wait…"
+    "Lena caught up with me and hesitantly touched my hand."
+    me "What? Why?"
+    un "There…"
     play music music_list["orchid"] fadein 4
-    "Лена запнулась и отвела глаза, ощутимо побледнев."
-    "О чём бы она ни хотела рассказать, пугало оно её явно сильнее, чем свалившийся сверху под ноги пионер."
-    un "Там ОНО. Нечто."
-    "Она прошелестела это таким напуганным шёпотом."
-    "А мне вдруг захотелось просто обнять этого ребёнка и утешающе погладить по голове, спрятать на груди, где он уже ничего не будет бояться."
-    me "ОНО?"
-    "Одно «нечто» я помню — тут, вроде, для него климат жарковат."
-    me "Ты темноты боишься?"
-    "Лена молча помотала головой. Впрочем, чего это я — она же здесь, как ей думалось, в одиночестве на поле в бадминтон играла!"
-    me "Оставайся здесь, никуда не уходи. Я мигом."
-    me "Хорошо?"
-    "Я улыбнулся, пытаясь приободрить девочку, но, похоже, что это меня надо ободрять."
-    me "Дождись меня."
-    "Нечто? Оно."
-    "Ух, как два правильно подобранных слова атмосферы добавляют!"
-    "Я чувствовал себя как минимум Айзеком Кларком, направляющимся в недра «Ишимуры»."
-    "Ну, или Эллен Рипли, если вам не по нраву видеоигры."
-    "Кажется, Лена поняла, что я от идеи идти в лесок не откажусь."
-    "Она задумалась на несколько секунд."
+    "Lena stuttered and looked away, noticeably turning pale."
+    "Whatever she wanted to talk about, it frightened her clearly more than the pioneer who fell from above under her feet."
+    un "THAT is there. The thing."
+    "She whispered it in such a scared tone."
+    "And I suddenly wanted to just hug this child and pat her on the head consolingly, hide her on my chest, where she would no longer be afraid of anything."
+    me "THAT?"
+    "I remember one «Thing»  — but the climate here should be too hot for it."
+    me "Afraid of the dark?"
+    "Lena shook her head silently. Yeah, what am I saying - she was here playing badminton alone, as she thought, on the field!"
+    me "Stay here, don't go anywhere. I'll be right back."
+    me "Okay?"
+    "I smiled, trying to cheer up the girl, but it seemed that I was the one who needed to be encouraged."
+    me "Wait for me."
+    "The thing? That."
+    "Wow, how two well-chosen words add to the atmosphere!"
+    "I felt like Isaac Clarke heading for the bowels of «USG Ishimura»."
+    "Or at least like Ellen Ripley, if you don't like videogames."
+    "It seems that Lena realized that I would not refuse the idea of ​​going into the woods."
+    "She thought for a bit."
     show un normal sport with dspr
-    "А потом решилась и взяла меня за руку."
-    un "Пошли вместе?"
-    "Тут уже удивился я."
-    me "Тебе же там, это…"
+    "And then she made up her mind and took my hand."
+    un "Let's go together?"
+    "Now it was my turn to be surprised."
+    me "But there, you, uhh…"
     show un sad sport with dspr
-    "Она пожала плечами и умоляюще посмотрела на меня. Кажется, одной ей оставаться больше не хотелось."
-    "Что ж, значит, идём вместе."
+    "She shrugged her shoulders and looked at me pleadingly. She didn't seem to want to be alone anymore."
+    "Oh well, we're going together then."
     stop ambience fadeout 1
     scene bg ext_path_night with fade
     play ambience ambience_forest_night fadein 1
-    "Она держалась чуть позади, сжимая мою ладонь что есть сил."
-    "Приходилось морщиться и терпеть. Девочка оказала доверие, а доверие надо оправдывать."
-    th "Надеюсь, он не угодил в какую-нибудь яму или дупло, мы так здесь долго проваландаемся."
-    me "А ты почему так поздно?"
-    "Я решил отвлечь нас обоих разговором, так как мне тоже уже ощутимо было не по себе."
-    "Чем бы ни было это «Оно» — Лену оно напугало до чёртиков!"
+    "She kept a little behind, squeezing my hand with all her strength."
+    "I had to grimace and endure. The girl showed trust, and trust must be justified."
+    th "I hope it didn’t fall into some hole or hollow, or we'll be here all night."
+    me "Why are you here so late at night?"
+    "I decided to distract both of us with a conversation, since I, too, was already palpably uncomfortable."
+    "Whatever «THAT» was — it definitely scared the shit out of Lena!"
     show un smile sport with dissolve
-    "Она чуть заметно улыбнулась."
+    "She smiled slightly."
     if (alt_day2_gamblers_result['me'] == 22) and (alt_my_rival_1_tour.take == 'un'):
-        un "Ну… Сегодня мне повезло в карты. Я думала, что повезёт и в бадминтон."
+        un "Well… Today I was lucky in cards. I thought I'd be lucky in badminton too."
     elif (alt_day2_gamblers_result['un'] in [2,11]):
-        un "Ну… Всё-таки я дошла сегодня до полуфинала."
-        un "Вот и подумала — а вдруг мне сегодня и ещё где-нибудь повезёт?"
+        un "Well… I did make it to semi-finals today."
+        un "So I thought - maybe I'll get lucky somewhere else?"
     elif alt_day2_gamblers_result['un'] >= 21:
-        un "Я довольно далеко ушла в турнире."
-        un "Решила, что уж сегодня-то у меня точно всё получится."
+        un "I got pretty far in the tournament."
+        un "So I decided that today I will definitely succeed."
     show un sad sport with dspr
-    un "Я очень хочу в команду попасть, но Борис Саныч говорит, что пока не научусь по воланчику попадать…"
-    $ meet('ba','Борис Саныч')
-    "Она вздохнула."
-    me "Понятно…"
+    un "I really want to get into the team, but Boris Sanich says that until I learn how to hit the shuttlecock…"
+    $ meet('ba','Boris Sanich')
+    "She sighed."
+    me "I see…"
     show un normal sport with dspr
-    "За разговорами мы не заметили, как углубились в лес."
-    "Тем не менее, направление я выдержал верное."
-    "Вскоре на фоне густой темной зелени проявилось нечто белое."
-    "Воланчик!"
-    "Я протянул руку, и…"
+    "During the conversation we didn't notice how deep we went into the forest."
+    "Despite that, I was leading us in the right direction."
+    "Soon something white appeared against the background of dense dark greenery."
+    "Shuttlecock!"
+    "I reached out my hand and…"
     play sound sfx_owl_far
     show un surprise sport with dspr
-    "Вшш-ш-ш!"
-    un "Иииииии-ии-и-и-ии-и-ии!!!!"
+    "Vshhhh!"
+    un "EEEEEEEEEEEEEEEEEEEEEEE!!!!"
     scene cg d2_sovenok with dissolve
-    "Да! Вот оно! ОНО!"
-    "Я вздрогнул от неожиданности."
-    un "Это ОНО!"
-    "Оно?!"
-    "Я заозирался не то в поисках укрытия, не то стараясь разглядеть угрозу."
-    "Но Лена опередила меня — она спряталась мне за спину и прижалась изо всех сил."
-    "Не уверен, но, похоже, что она там плакала от страха. Во всяком случае, всхлипы я абсолютно точно слышал."
-    "И как было показательно, что она не бросилась с визгом прочь, бежать и бояться."
-    "А спряталась за меня!"
-    "Кому как, а для меня это уже достаточно зримый жест расположения девушки."
-    "Но мне-то, мне что делать?"
-    dreamgirl "Она доверяет тебе собственную безопасность, чего же больше? Забирай её, она вся твоя."
-    th "Да тут из кустов кто-то орёт, а ты всё о бабах!"
-    dreamgirl "Поорут и перестанут. А Лена сейчас от тебя отклеится, и…"
-    "В глазах защипало от чувства, которому я затруднялся бы подобрать определение — тут было что-то и от нежности, заботы, и от непонятной гордости за доверие."
+    "Yes! That's it! THAT!"
+    "I flinched in surprise."
+    un "It's THAT!"
+    "That?!"
+    "I looked around, half for cover, half trying to see the threat."
+    "But Lena got ahead of me - she hid behind my back and clung to me with all her might."
+    "I'm not sure, but it looked like she was there crying out of fear. In any case, I absolutely heard sobs."
+    "And how significant was that she did not rush away with a screech, running in terror."
+    "But she hid behind me!"
+    "For me that's a fairly visible gesture of girl's predisposition towards me."
+    "But uh, what am I supposed to do?"
+    dreamgirl "She trusts you with her own safety, what more do you want? Grab her, she's all yours."
+    th "Someone's yelling from the bushes, and you keep talking about women!"
+    dreamgirl "They'll yell and stop. And Lena will now peel off from you, and…"
+    "My eyes tingled from a feeling that I would find it difficult to define - there was something from tenderness, care, and from an incomprehensible pride in trust."
     if ('sport_area' in list_voyage_7dl):
-        "Эта девочка добилась того, чего не смог добиться медведь-физрук — она заставила меня чувствовать себя кем-то сильным."
-        dreamgirl "Ну или просто достаточно широким, если что."
-    "Чувство, которое до сих пор удавалось испытывать считанное количество раз — и во всех случаях мне приходилось испытывать себя на прочность."
-    "Чувство, когда чувствуешь себя нужным."
-    "И то, что сейчас происходило между мной и Леной — перед лицом угрозы…"
-    "Было чем-то большим, чем страх ребёнка, спрятавшегося за кого побольше. Это было…"
-    "…здесь мысль забуксовала — и было отчего."
+        "This girl achieved what the teacher-bear could not achieve - she made me feel like someone strong."
+        dreamgirl "Or wide enough, that also works."
+    "A feeling that so far I have managed to experience a few times - and in all cases I had to test myself for strength."
+    "A feeling of being needed."
+    "And what was happening between me and Lena - in the face of danger…"
+    "It was something more than the fear of a child hiding behind someone bigger. It was…"
+    "…here the thought stopped - there was a reason why."
     play sound sfx_owl_far
-    "Над головой внятно угукнуло, и я поднял взгляд посмотреть."
+    "There was a distinct gurgle above my head, and I looked up to see."
     stop music fadeout 3
-    "Сов. Маленький, коричневый сов со сварливым выражением на мордочке. Ещё совсем совёнок."
-    "Оказывается, это он тут орал! Удивительно, как в таком маленьком тельце помещается такой голосина?!"
-    "Мне казалось, что ближе уже некуда, но Лена продемонстрировала мне новые горизонты, забравшись чуть ли не под рубашку."
-    th "Ещё чуть-чуть ближе — и мы оба упадём."
-    th "Мне, конечно, очень приятно, но…"
-    "Я приказал всем своим внутренним тараканам, голосам и прочему населению головы заткнуться."
-    "Я чувствовал спиной, которая вдруг приобрела тактильную чувствительность, сравнимую с пальцами, всю упругую девичью топологию, вжимающуюся мне между лопаток."
-    "Организм заворчал и облизнулся, просыпаясь."
-    "До меня долетел сладкий аромат, идущий от её волос."
-    "И до боли захотелось обернуться к ней и обнять, прижать к себе, поклясться, что теперь всё будет хорошо, и я сумею защитить её ото всех опасностей, какие только существуют…"
-    "Чуть ли не до слёз."
-    "Я закусил губу."
+    "Owl. Small, brown owl with a grumpy expression on its muzzle. An owlet, even."
+    "That's who was yelling here! How does such a voice fit in such a small body?!"
+    "It seemed to me that the hugging couldn't get any tighter, but Lena showed me new horizons, climbing almost under my shirt."
+    th "A little closer and we'll both fall."
+    th "I mean, I don't mind it, but…"
+    "I ordered all my internal cockroaches, voices and other population of the head to shut up."
+    "I felt with my back, which suddenly acquired a tactile sensitivity comparable to fingers, all the elastic girlish topology pressed between my shoulder blades."
+    "The body grumbled and licked its lips, waking up."
+    "A sweet scent wafted up to me from her hair."
+    "And painfully I wanted to turn around and hug her, cuddle her up, swear that now everything will be fine, and I will be able to protect her from all the dangers that exist.…"
+    "Almost to tears."
+    "I bit my lip."
     play music music_7dl["take_my_hand"] fadein 4
-    "Вспомнился вдруг один фильм, который приходилось видеть давным-давно. Точнее, не сам фильм, а фразу оттуда."
-    "Человек, здоровый человек, эгоистичен и неспособен нанести сам себе боль — срабатывают ограничители. Просто ради интереса попробуй укусить себя до крови."
-    "И финальная сцена, где герой стоит с прокушенной рукой, а по пальцам струится вниз кровь."
-    "И солоноватую струйку, брызнувшую на язык, я сначала даже не распознал как кровь."
-    "Я сумел укусить себя до крови."
-    "И я не чувствовал, что схожу с ума."
-    th "Но почему я обернуться не могу?!"
-    "Ведь хочется же. Я это знаю. И я зарплату до конца года поставить готов — она не оттолкнёт."
-    "Потому что прятаться на груди всегда безопаснее, чем выглядывать из-за спины. Это подсознательная реакция."
-    "Наконец я сумел преодолеть ступор и развернуться."
+    "I suddenly remembered a movie that I've seen a long time ago. More precisely, not the film itself, but a phrase from there."
+    "A person, a healthy person, is selfish and incapable of inflicting pain on himself - limiters would interfere. Just for fun, try to bite yourself until you bleed."
+    "And the final scene, where the hero stands with a bitten hand, and blood flows down his fingers."
+    "And the salty trickle that splashed on my tongue, I didn’t even recognize at first as blood."
+    "I managed to bite myself hard enough to bleed."
+    "And I didn't feel like I was going crazy."
+    th "But why can't I turn back now?!"
+    "After all, I want it. I know it. And I’m ready to bet my salary for this entire year - she won’t repel me."
+    "Because hiding on someone's chest is always safer than looking out from behind. It's a subconscious reaction."
+    "Finally I managed to overcome the stupor and turn around."
     scene bg ext_path_night
     show un shy sport close
     with dissolve
-    "Её губы были в пределах десяти сантиметров. Дыхание у неё было свежее."
-    "Не знаю, что она хотела, оттолкнуть меня или отпрыгнуть сама, но получилось нечто обратное — она только обвисла на моих вовремя подставленных руках."
+    "Her lips were within ten centimeters away. Her breath was fresh."
+    "I don’t know what she wanted, to push me away or to jump away herself, but it turned out to be something opposite - she just sagged on my hands, which were placed in time."
     play sound sfx_owl_far
-    "А сов снова подал голос!"
-    "Уже не помышляя о бегстве, она вцепилась в единственное незыблемое — в меня."
+    "And the owl hooted again!"
+    "No longer thinking about running away, she clung to the only unshakable thing - me."
     show un scared sport close with dspr
-    "При этом от страха уже совершенно не соображая, что творит, полоснула ногтями по предплечью."
-    un "ОНО!"
-    un "Нечто!"
-    me "Это и есть твоё нечто?"
-    "Деловитым голосом осведомился я."
-    me "С этим нечто, думаю, мы справимся. Ну, или хотя бы попробуем."
-    "Она спрятала лицо у меня на плече."
-    "Не знаю, откуда в ней взялся этот неописуемый страх, но мне пришлось потратить ещё минут пять на поглаживания, поддерживания и увещевания."
-    me "Сама смотри. Это не нечто, это сов!"
-    un "Сов?"
-    me "Да. Совёнок. Ночь какая хорошая, вот он от удовольствия и угукает."
-    me "Здесь нечего бояться. Давай заберём воланчик и оставим его."
-    un "Х-хорошо…"
+    "At the same time, out of fear, completely unaware of what she was doing, she slashed on my forearm with her nails."
+    un "THAT!"
+    un "The thing!"
+    me "Is that your thing?"
+    "I inquired in a businesslike voice."
+    me "I think we can handle this thing. Or at least let's try."
+    "She hid her face in my shoulder."
+    "I don’t know where this indescribable fear came from in her, but I had to spend another five minutes stroking, supporting and exhorting."
+    me "Look for yourself, it's not a thing, it's just an owl!"
+    un "Owl?"
+    me "Yeah. Owlet. It's a good night out here, so here he is, humming with pleasure."
+    me "There is nothing to be afraid of here. Let's take the shuttlecock and leave him."
+    un "O-okay…"
     hide un with dissolve
-    "Я освободился из её рук и, развернувшись, попробовал добыть то, зачем мы сюда пришли."
-    "Встав на носочки и вытянув руку, я подцепил кончиками пальцев пластмассовое оперение воланчика."
-    "Тот легко поддался и упал в подставленную ладонь."
-    me "Вот и всё!"
+    "I freed myself from her hands and, turning around, tried to get what we came here for."
+    "Standing on my toes and stretching out my hand, I picked up the plastic plumage of the shuttlecock with my fingertips."
+    "He easily succumbed and fell into the substituted palm."
+    me "That's all there is to it!"
     show un surprise sport at center with dissolve
-    "Лена стояла, прижав руки ко рту, и с непонятным восхищением глядела на меня."
-    me "Так тебе нужен воланчик?"
-    "Мне пришлось напомнить о нашей задаче, прежде чем у меня забрали-таки несчастный метательный снаряд."
+    "Lena stood with her hands pressed to her mouth and looked at me with incomprehensible admiration."
+    me "So, do you need it?"
+    "I had to remind her why we came here, before she finally relieved me of the unfortunate projectile."
     show un smile sport with dspr
-    "Я улыбнулся Лене и получил в ответ тихую улыбку."
-    un "Ты такой смелый…"
+    "I smiled at Lena and got a quiet smile in return."
+    un "You're so brave…"
     scene bg ext_path_night
     with dissolve
-    "Смелый? Серьёзно?"
-    "Вот уж какой угодно, только не смелый."
+    "Brave? For real?"
+    "I'm anything but brave."
     play sound sfx_hiding_in_bush fadein 0
     scene bg ext_playground_night
     show un normal sport
     with dissolve
-    "Мне приходило в голову, что если однажды у меня будет жена и дети, а их, как во всех боевиках, захватят в заложники, я просто пожму плечами и не испытаю ровным счётом ничего."
-    "Я — довольно неплохой эникейщик, неплохо разбираюсь в дизайне, чтобы не потерять штаны, вылетев с очередной работы, плыву по течению ТАМ, в настоящей жизни."
-    "Просто потому что ничегошеньки там не зависело от некоего С. Персунова, куча лет, незаконченное высшее."
-    "И бороться за то, чтобы что-то зависело — это же усилия прилагать надо."
-    "Так и колебалась жизнь-болотце эдаким студеньком, откуда ни выплыть, ни нырнуть ко дну."
+    "It occurred to me that if one day I had a wife and children, and they were taken hostage, as in all action films, I would just shrug my shoulders and experience absolutely nothing."
+    "I'm a pretty good 'press any key' guy, decent at design, so as not to lose my pants, flying out of another job, I go with the flow THERE, in real life."
+    "Just because nothing at all depended on a certain S. Persunov, with his unfinished degree."
+    "And to fight for something to depend - you need to put in effort."
+    "So life-swamp fluctuated like a kind of jelly, from where you could neither swim out nor dive to the bottom."
     show un smile sport at center with dissolve
-    "И здесь, что характерно, тоже приходится плыть по течению."
-    "Я впервые за последние лет семь поднял голос — и это было здесь."
-    "Я впервые по-настоящему разозлился, испугался, проникся и укусил себя до крови — за неизвестно сколько лет."
-    "А ничего не изменилось."
-    "И только-только руки опустились, и воля к борьбе куда-то начала истончаться — и эта встреча."
-    "Лагерь искусно подкармливал меня стимулами, не давая ни закиснуть, ни запаниковать."
-    "И какие бы цели ни преследовал Демиург, вытащивший меня сюда — я скажу ему «спасибо», если когда-нибудь встречу."
+    "And here, typically, you also have to go with the flow."
+    "I raised my voice for the first time in seven years - and it was here."
+    "For the first time I got really angry, scared, imbued and bit myself until I bled - in who knows how many years."
+    "And nothing changed."
+    "And as soon as the hands dropped, and the will to fight began to thin somewhere - this meeting happened."
+    "The camp skillfully fed me incentives, not letting me turn sour or panic."
+    "And no matter what goals the Demiurge pursued by pulling me here - I will tell him «thanks», if I ever meet him."
     if persistent.dv_7dl_tran_un:
-        "Я отдал ей воланчик лишь тогда, когда мы выбрались из кустов."
-        me "Береги его, слышишь? Как-никак, коллективная собственность."
-        "Я немного смутился, поэтому молол всё, что в голову взбредёт."
-        me "Почему ты пришла именно сюда?"
-        un "Просто…"
+        "I gave her the shuttlecock only when we got out of the bushes."
+        me "Keep it safe, you hear me? Collective property, after all."
+        "I was a little embarrassed, so I kept speaking whatever came to my mind."
+        me "Why did you come specifically here?"
+        un "It's just…"
         show un shy sport close with dspr
-        un "Я подумала, что если я найду какое-нибудь потаённое место, где не будет никого."
-        un "Ты тоже придёшь туда."
-        un "Потому что ты…"
+        un "I thought that if I find some secret place where no one would be."
+        un "You would also come there."
+        un "Because you…"
         if (alt_day2_gamblers_result['me'] == 22) and (alt_my_rival_1_tour.take == 'un'):
-            un "Прости, что я… Что накричала на тебя."
-            un "Я хотела честного поединка, а ты…"
-            un "Я слышала, что тебе Алиса на крыльце говорила, так что…"
-        "Ей приходилось вытаскивать из себя слово за словом."
-        "Всего пару минут назад, после спасения от страшного зверя, она повеселела и улыбалась, а теперь готова заплакать."
-        me "Лена…"
+            un "I'm sorry that I… For screaming at you."
+            un "I wanted a fair fight, but you…"
+            un "I heard what Alisa told you on the porch, so…"
+        "She had to pull words out of herself one by one."
+        "Just a couple of minutes ago, after being rescued from a terrible beast, she cheered up and smiled, and now she was ready to cry."
+        me "Lena…"
         show un serious sport close with dspr
-        un "Ты был единственный, кому было хоть какое-то дело."
-        me "Но это же не так!"
-        "Мысли заметались. {w}Советский союз. {w}Пионеры. {w}Славя. {w}Нет. Не может быть, чтобы всем было плевать."
-        un "Вот почему… Я…"
-        "Её лихорадило так, что я чувствовал это, просто стоя рядом."
-        un "Я просто…"
-        me "Что?"
+        un "You're the only one who cared."
+        me "But that's simply not true!"
+        "Thoughts started rushing in and out. {w}Soviet Union. {w}Pioneers. {w}Slavya. {w}No. It can't be that nobody would care."
+        un "That's why… I…"
+        "She was in such a fever that I could feel it just standing next to her."
+        un "I just…"
+        me "What?"
         show un cry sport close with dspr
         un "…"
-        "Она судорожно выдохнула — но поздно."
-        "Слёзы огромными жемчужинами уже скользили вниз по щекам."
-        un "Я думала, что мне просто… {w}Как в «Онегине»…"
-        "Всхлипывая, ответила она."
-        un "Просто смотреть будет достаточно. А оказалось…"
-        un "Я умею видеть, я…"
-        un "Зачем ты так близко?"
-        un "Зачем?!"
-        "Она что-то ещё бессвязно лепетала, но я сделал единственно верное, что возможно было."
-        "Обнял её и прижал к груди."
-        "Вернее, попытался."
+        "She exhaled convulsively - but that was too late."
+        "Tears were already sliding down her cheeks like huge pearls."
+        un "I thought that it'd be enough… {w}Like in «Onegin»…"
+        "Sobbing, she replied."
+        un "That observing would be enough. And it just…"
+        un "I can see, I…"
+        un "Why are you so close?"
+        un "Why?!"
+        "She babbled something else incoherently, but I did the only right thing that was possible."
+        "Hugged her and pressed her to my chest."
+        "At least tried to."
         scene cg d2_un_kissing_7dl with dissolve
-        un "Мой…"
-        me "Мммм?!"
+        un "My…"
+        me "Mmmm?!"
         un "…"
-        "Это прикосновение было необъяснимо знакомым. Я даже не успел испугаться — когда между нами исчезла пустота."
-        "Лена притянула меня к себе и жадно впилась в мои губы."
-        "Её так и трясёт без остановки."
+        "The touch was inexplicably familiar. I didn’t even have time to get scared - when the emptiness between us disappeared."
+        "Lena pulled me to her and greedily dug into my lips."
+        "She's shaking non-stop."
         me "…"
-        "Её губы солёные от слёз, а в самом уголке, там, где она кусала себя, запеклась кровь."
-        "Шрам к шраму, кровь к крови — откуда между нами такая близкая связь?"
-        "Губы нежные, мягкие."
-        "От волос пахнет грейпфрутом, от кожи простым детским мылом."
-        "Наконец, она вспомнила о том, что иногда надо дышать, и отпустила меня."
+        "Her lips are salty from tears, and in the very corner, where she bit herself, blood has dried."
+        "Scar to scar, blood to blood - why is there such a close connection between us?"
+        "Soft, tender lips."
+        "Her hair smells like grapefruit and her skin smells like simple baby soap."
+        "Finally, she remembered that sometimes you need to breathe, and let me go."
         scene bg ext_playground_night with dissolve
         show un shy sport close with dspr
-        "Вернее, позволила мне поднять голову, а сама вцепилась в меня крепче, чем там, рядом с совёнком."
-        un "Не прогоняй меня. Пожалуйста."
-        un "Хотя бы ещё несколько минут."
-        "Прячась в моих руках от ужаса одиночества, так легко потерять голову и представить себе не то, что есть на самом деле."
-        me "Лена…"
-        un "Я слишком много о тебе думаю. Я слишком дышу тобой."
-        "Она опять сбилась на полубред и смотрела сквозь меня куда-то в небо."
-        un "Семён…"
-        me "Что?"
-        un "Поцелуй меня."
-        "По проторенной дорожке всегда проще, верно?"
+        "Or rather, she allowed me to raise my head, and she clung to me tighter than there, next to the owlet."
+        un "Don't chase me away. Please."
+        un "If only for a few more minutes."
+        "Hiding in my arms from the horror of loneliness, it's so easy to lose your head and imagine something else other than what it really is."
+        me "Lena…"
+        un "I think too much about you. I breathe you too much."
+        "She again lost her mind and looked through me somewhere into the sky."
+        un "Semyon…"
+        me "What?"
+        un "Kiss me."
+        "It's always easier to follow the already beaten path, right?"
         scene cg d2_un_kissing_7dl with dissolve
-        "Лена прижимается ко мне и в какой-то момент неподвижно замирает."
-        "Дьявольски смелый поступок."
-        "Смог бы я проявить свои чувства так же открыто?"
-        "Ответ я знаю и сам."
-        me "Ты успокоилась?"
-        "Она молча кивнула."
-        "Осторожно высвободилась из моих рук."
+        "Lena clings to me and at some point freezes completely motionless."
+        "Devilishly brave act."
+        "Could I express my feelings like that?"
+        "I already know the answer."
+        me "Have you calmed down?"
+        "A quiet nod in response."
+        "She carefully released herself from my hands."
     else:
-        "Пока суд да дело, мы вышли обратно на поле."
+        "We went back to the field."
     scene bg ext_playground_night with dissolve
     show un normal sport with dspr
-    "Лена близоруко поднесла к глазам запястье, где на широком ремешке были детские часики."
-    dreamgirl "У этой тоже проблемы со зрением. Прикинь!"
-    dreamgirl "Я просто понять не могу — это тебе на слепых баб везёт, или ты ищешь их специально, чтобы рожу рассмотреть не успели?"
-    th "Стебись-стебись…"
+    "Lena short-sightedly raised her wrist to her eyes, where there was a children's watch on a wide strap."
+    dreamgirl "She also has vision problems. Check this out!"
+    dreamgirl "I just don't get this - are you simply lucky with blind women, or are you purposefully looking for them so that they don't have time to look at your face?"
+    th "Yeah-yeah, keep mocking me…"
     show un smile sport with dspr
-    "Она подняла на меня глаза и улыбнулась."
+    "She looked up at me and smiled."
     if persistent.dv_7dl_tran_un:
-        un "Спасибо тебе…"
-        me "За что?"
-        un "За то, что не оттолкнул."
-    un "Спать пора. Спасибо за помощь."
-    un "Спокойной ночи!"
+        un "Thank you…"
+        me "For what?"
+        un "For not pushing me away."
+    un "It's time to sleep. We should go."
+    un "Good night!"
     hide un with dissolve
-    "Она развернулась и побежала к домикам."
-    "Жаль. Я наделся, что мы ещё прогуляемся вместе."
+    "She turned around and ran to the houses."
+    "It's a pity. I hoped we would take a walk together."
     if (alt_day2_convoy == 'un'):
-        "Утренней прогулки мне было решительно недостаточно."
-        "Я задумчиво смотрел ей вслед."
-        "А внутри всё пело от того, что завтра будет новый день."
-        "А значит, я снова её увижу."
+        "Morning walk was definitely not enough for me."
+        "I pondered, watching her leave."
+        "And inside everything sang from the fact that tomorrow will be a new day."
+        "And that means I'll meet her again."
     stop music fadeout 3
     play sound sfx_owl_far
-    "Из зарослей опять довольно угукнуло."
-    "Я улыбнулся и направился к себе в домик."
+    "From the thickets came another satisfied hoot."
+    "I smiled and headed back home."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -8146,48 +8149,48 @@ label alt_day2_slot_dv:
         stop music fadeout 1
         play ambience ambience_lake_shore_evening fadein 2
         play music music_list["silhouette_in_sunset"] fadein 2
-        "Я так давно хотел попасть на пляж!"
-        "Но безумный день закрутил меня в круговороте своих невозможных событий."
-        "Сначала я был занят с обходным листком…"
-        "Я не без удовольствия вспомнил, как познакомился с остальными обитателями лагеря…"
-        "Но это было утром."
+        "I've wanted to go to the beach for so long!"
+        "But this crazy day twirled me in the cycle of its impossible events."
+        "First the checklist…"
+        "I recalled, not without pleasure, how I met the rest of the inhabitants of the camp…"
+        "But that was in the morning."
         if not 'music' in list_joined_clubs_7dl:
-            th "А ведь я так и не записался в музыкальный клуб…"
-            "Внезапно промелькнуло в моей голове."
-        "А после обеда столько всего произошло, что о пляже некогда было и вспоминать!"
-        th "Но теперь всё закончилось… {w=.3}надеюсь."
-        th "Я ведь победил в турнире! Самое время расслабиться и отпраздновать!"
-        th "И я, наконец, смог, пусть и под самый вечер, выбраться на берег."
+            th "And I never signed up for the music club…"
+            "Thought suddenly flashed in my mind."
+        "And after dinner, so much happened that there was no time to remember about the beach!"
+        th "But now it's all over… {w=.3}hopefully."
+        th "I won the tournament! It's time to relax and celebrate!"
+        th "And I was finally able, albeit in the very evening, to get to the shores."
         if alt_day2_us_escape:
-            "Поездка на лодке не в счёт."
-        "Я всмотрелся вдаль."
-        "Железная дорога натянутой нитью проходила на фоне безупречного неба."
-        "Перекатываясь, волны искрились и слепили глаза так, что приходилось щуриться."
-        "Солнце медленно скатывалось за горизонт, окрашивая низкие облака во все оттенки розового, лилового и оранжевого."
-        th "Словно ребёнок, играющий с красками…"
-        "Но хоть солнце и уходило, объявляя приближающийся конец дня, всё ещё было тепло."
-        "Даже жарко."
-        "Очень хотелось прыгнуть с разбегу в воду и распластаться на волнах, отдыхая от суеты и всяческих переживаний."
-        "Я сбросил обувь."
-        "Какое же это блаженство — чувствовать, как янтарный песок пересыпается под пальцами, хрустит и покалывает пятки маленькими камешками!"
-        "За день солнце нагрело его так, что и сейчас ещё он приятно обжигал голую кожу!"
-        "Я расстегнул рубашку, сунув надоевший уже галстук в карман, и невольно обернулся прежде, чем стянуть шорты."
-        "Я не большой фанат купаний, лет до четырнадцати я вообще страдал стойкой формой гидрофобии, и большинство моих купаний ограничивалось лежанием на воде или маканием ног…"
-        "Вот так, чтобы плескаться — этого никогда не было."
-        "Потом плавно начал получать удовольствие."
-        "Ну а дальше история знакомая — угасание интереса абсолютно ко всему."
-        "Одно только удручает: плавать придётся в труселях — плавок нет."
-        "Ну и ладно, и так сойдёт."
+            "The boat adventure doesn't count."
+        "I looked into the distance."
+        "The railway stretched like a string against a perfect sky."
+        "Rolling, the waves sparkled and blinded the eyes so hard that I had to squint."
+        "The sun slowly slipped below the horizon, painting the low clouds in all shades of pink, purple and orange."
+        th "Like a child, playing with paint…"
+        "But even though the sun was leaving, announcing the approaching end of the day, it was still warm."
+        "Kinda hot."
+        "I really wanted to jump into the water with a running start, and spread out on the waves, resting from the hustle and bustle of all sorts of experiences."
+        "I took off my shoes."
+        "What a bliss it is to feel how amber sand crumbles under your fingers, crunches and pricks your heels with small pebbles!"
+        "During the day, the sun warmed it so much that even now it pleasantly burned my bare skin!"
+        "I unbuttoned my shirt, slipping my neckerchief into my pocket, and involuntarily turned around before pulling off my shorts."
+        "I'm a big fan of swimming, until the age of fourteen I actually suffered from a severe form of hydrophobia, and most of my baths were limited to lying on the water or dipping my feet…"
+        "So splashing around like this - never actually happened."
+        "And then I slowly began to enjoy it."
+        "And then the usual, familiar story — slowly fading interest in absolutely everything."
+        "The only depressing thing: I didn't have swimming trunks, so I'd just have to swim in my shorts."
+        "Oh well, that'll do."
         if alt_day2_us_escape:
-            "После первого гребка тело немного попротестовало — дневной демарш всё ещё давал о себе знать — но вскоре втянулось в ритм, и я поплыл в сторону буйков."
+            "After the first stroke, the body protested a little - the daytime demarche was still making itself felt - but soon it got into the rhythm, and I swam towards the buoys."
         else:
-            "Я немного поплескался, восстанавливая моторику тела, после чего лёг на воду и устремился в сторону буйков."
+            "I splashed a little, restoring the motor skills of the body, after which I laid down on the water and rushed towards the buoys."
         play sound sfx_water_emerge
-        th "Сто лет уже в воду не заходил!"
-        "Размерено хватая воздух, ритмично шевеля конечностями, я двигался в воде, не сказать чтобы прям таким уж пловцом, но и не стилем топора точно."
+        th "Haven't been in water for so long!"
+        "Measuredly grabbing air, rhythmically moving my limbs, I moved in the water, not to say that I was a great swimmer, but I definitely wasn't swimming in the style of an ax for sure."
         play sound_loop sfx_swimming
     play ambience ambience_lake_shore_night fadein 2
-    "Совсем расслабившись, я плыл лениво и неторопливо, думая о том, какой сегодня насыщенный вышел день…"
+    "Completely relaxed, I floated lazily and leisurely, thinking about what a busy day it was today…"
     stop music fadeout 1
     stop ambience fadeout 1
     stop sound_loop fadeout 1
@@ -8196,20 +8199,20 @@ label alt_day2_slot_dv:
     with vpunch
     play music music_list["that_s_our_madhouse"]
     $ lp_dv += 1
-    "За всеми своими привыканиями я сделал то, чего делать никогда не следует — упустил из виду Алису."
+    "And then I did what I should've never done - I lost sight of Alisa."
     play sound_loop sfx_underwater_dive fadein 1
-    "И вот она, похоже, решила составить мне компанию."
-    "Удар! Вернее даже не удар, толчок — немедленно сбил мне и дыхание, и ритм, и всё на свете."
+    "And as it seems, she decided to keep me company."
+    "A blow! Or rather, not even a blow, a push - immediately knocked my breath, and the rhythm, and everything in the world.."
     play sound sfx_shoulder_dive_water
     stop sound_loop fadeout 1
-    "Тёмная вода хлынула в нос, я запаниковал, забил руками, нырнув сразу на полметра."
-    "Утонуть здесь было бы крайне обидно, и я приказал себе успокоиться."
+    "Dark water rushed into my nose, I panicked, flailing my hands, diving immediately for half a meter."
+    "Drowning here would be extremely insulting, and I ordered myself to calm down."
     play sound_loop sfx_swimming fadein 1
-    "Ну, уронили немного, с кем не бывает."
-    "Без воздуха я могу обходиться не меньше минуты, до поверхности меньше метра. Мозг без кислорода вообще две минуты обходится без проблем, пешком до дна и обратно прогуляться можно."
-    "Главное — не паниковать. Не пытаться вдохнуть или выдохнуть."
-    "Плавно стабилизировать себя и выгребать наверх."
-    "Вот так, уговаривая себя, я всплыл и, схватившись за буёк, кашляя и выплёвывая воду, попытался отдышаться."
+    "Well, I got dropped a bit, happens to anyone."
+    "Without air I can last at least a minute, as long as it's less than a meter to the surface. The brain without oxygen generally works without problems for two minutes, that's enough for walking to the bottom with a return trip."
+    "The main thing is not to panic. Don't try to inhale or exhale."
+    "Smoothly stabilize yourself and row up."
+    "So, persuading myself, I surfaced and, grabbing the buoy, coughing and spitting out water, tried to catch my breath."
     scene cg d2_water_dan_night_7dl
     $ night_time()
     $ persistent.sprite_time = "night"
@@ -8217,178 +8220,178 @@ label alt_day2_slot_dv:
     with dissolve
     stop sound_loop fadeout 1
     play ambience ambience_lake_shore_evening fadein 2
-    "Обернувшись в поисках обидчицы, я обнаружил её рядом, почти вплотную ко мне."
-    "Она лениво шевелила руками под водой, удерживая себя на плаву, и смеялась."
+    "Turning around in search of the offender, I found her almost right next to me."
+    "She moved her hands lazily under the water, keeping herself afloat, and laughed."
     if alt_day1_me_d3_dv_feed:
-        "…знакомым проказливым смехом… Как вчера! Когда она напугала меня около столовой!"
-    "Похоже, она была опять довольна собой и вовсю улыбалась."
-    th "Месть, да? Месть…"
-    me "Ты…"
-    "От злости я забыл работать ногами и опять нырнул."
-    me "Ты! Вредная! Мстительная! Девчонка!"
-    dv "А что не так-то? Подумаешь, притопила чуть-чуть!"
-    me "Это не смешно!"
-    dv "Ты не прав. Это очень смешно!"
-    "Она оплыла вокруг буйка, явно забавляясь сложившейся ситуацией."
-    me "А если бы я начал тонуть?!"
-    dv "Ну… Я бы тебя спасла. {w=.5}Наверное."
-    "Вот «наверное»-то меня и пугает."
-    "Я отцепился от буйка и погрёб обратно к берегу, чувствуя, как всё тело буквально колотит от всплеска адреналина."
-    "Как тот самый кит, я выбросился на берег чуть выше линии прибоя и попытался отдышаться."
+        "…with a familiar mischievous laughter. Like yesterday! When she scared me outside the canteen!"
+    "It seems that she was pleased with herself again and smiled with might and main."
+    th "Revenge, right? Revenge…"
+    me "You…"
+    "Out of anger, I forgot to work with my feet and dived again."
+    me "You! Pesky! Vengeful! Gal!"
+    dv "What's wrong? I just sank you a little!"
+    me "Not funny!"
+    dv "Oh, no, no, no, it's very funny!"
+    "She swam around the buoy, clearly amused by the situation."
+    me "What if I would drown?!"
+    dv "Well… I'd probably save you. {w=.5}Not sure."
+    "That «probably» scared me the most."
+    "I disengaged from the buoy and rowed back to shore, feeling my whole body literally pound from a surge of adrenaline."
+    "Like a whale, I threw myself ashore just above the surf line and tried to catch my breath."
     $ alt_day2_beach_seen = True
     scene bg ext_beach_night
-    "Она тоже тяжело дышала после нашего рывка."
-    th "Мокрый песок облепил меня, в глаза светит луна, а рядом расположилась самая вредная девчонка лагеря."
-    th "Заслужил."
-    "Она вышла из воды чуть позже меня и, нимало не стесняясь, встала рядом и улыбнулась."
-    "И ни угрозы, ни злости в этой улыбке не было."
+    "She was also breathing heavily after our dash."
+    th "Wet sand stuck to me, the moon shone in my eyes, and next to me is the most obnoxious girl of the camp."
+    th "Yup, I deserve that."
+    "She came out of the water a little later than me and, not at all embarrassed, stood next to me and smiled."
+    "And there was no threat or anger in that smile."
     if (alt_day2_gamblers_result['me'] < alt_day2_gamblers_result['dv']):
-        dv "Плаваешь ты лучше, чем в карты играешь!"
-        "Угу. В стиле дикого суслика."
-        me "Я поддавался!"
-        dv "Ну да, ну да…"
-    dv "Поздравляю."
+        dv "You swim better than you play cards!"
+        "Uh-huh. In the style of a wild gopher."
+        me "I was yielding!"
+        dv "Yeah, yeah…"
+    dv "Congratulations."
     if (alt_day2_gamblers_result['me'] < alt_day2_gamblers_result['dv']):
-        dv "Только не думай, что я тебе простила тот косяк в столовой."
-    "Я перевернулся на спину."
-    me "Правда, топить меня было совсем не обязательно."
-    dv "Кто ж тебя топил. Просто по спине тебя хлопнула."
+        dv "Just don't think I forgave you that screw-up in the canteen."
+    "I flipped to my back."
+    me "Drowning me wasn't necessary, you know."
+    dv "Nobody drowned you. I just slapped you on the back."
     if alt_day1_me_d3_dv_feed:
-        dv "Ах, да. Прости. Я совсем забыла, какой ты трус."
+        dv "Oh, right. Forgive me. I completely forgot how much of a wimp you are."
     stop music fadeout 3
     stop ambience fadeout 3
     "…"
     scene bg ext_beach_night with fade2
     play ambience ambience_lake_shore_night fadein 2
-    "Она опять засмеялась и встала, потянувшись."
-    "Ну а я что — железный что ли…"
+    "She laughed again and stood up, stretching."
+    "Well, I wasn't made of metal either…"
     play music "<from 30.05 to 99.42>" + music_7dl["everlasting_summer_alice"] fadein 3
     scene cg d2_2ch_beach:
         pos (0,-1920)
         linear 10.0 pos (0,0)
         linear 2.0 pos (0, -250)
-    "Краска щедро бросилась в лицо, и я поспешил отвернуться."
-    "Фигурку Алисы в бикини чётко очерчивал лунный свет, а я вдруг подумал, что её слова…"
-    "Пари это…"
-    "Оно ведь не такое и сумасшедшее или дурацкое, как показалось на первый взгляд."
-    th "Ведь есть же за чем подглядывать!"
-    "Я усмехнулся."
-    th "И лапать!"
-    "Невозможно притягательное зрелище."
-    "Я и сам не заметил, как снова ласкал взглядом изящные обводы её фигуры."
-    "В оранжевом купальнике и с каплями воды на коже она казалась статуэткой из драгоценного камня, произведением искусства."
-    "Восхитительное зрелище."
-    "Она перехватила мой взгляд и подмигнула."
-    dv "А ты не такой уж и тормоз."
-    "Последнее слово больно резануло по сознанию."
-    "Кажется, мерзавке удалось меня уязвить. {w}Что ж, похвально."
-    "Как гласит первое инженерное правило: если вещь долго ломать, она в итоге сломается."
-    "Двачевская испытывает меня на прочность уже вторые сутки, и неудивительно, что она в итоге обнаруживает бреши в моей флегме."
+    "Paint generously rushed into my face, and I hastened to turn away."
+    "Alisa's figure in a bikini was clearly outlined by the moonlight, and I suddenly thought that her words…"
+    "That bet…"
+    "It wasn't as crazy or stupid as it seemed at first glance."
+    th "After all, there definitely was something to spy on!"
+    "I smirked."
+    th "And touch!"
+    "Impossibly attractive sight."
+    "I myself did not notice how I again caressed the graceful contours of her figure with my eyes."
+    "In an orange swimsuit and with drops of water on her skin, she looked like a statue of a precious stone, a work of art."
+    "What an eyeful."
+    "She caught my gaze and winked."
+    dv "You might not be as much of a retard."
+    "The last word scarred my mind."
+    "Seems like this bastard managed to hurt me. {w}Well, that's admirable."
+    "As the first engineering rule states: if a thing is smashed for a long time, it will eventually break."
+    "Dvachevskaya has been testing me for the second day already, and it is not surprising that she eventually started discovering gaps in my phlegm."
     scene bg ext_beach_night with dissolve
-    "Я судорожно сел, прикрыв руками свои семейники, но она, казалось, ничего и не заметила…"
+    "I sat up convulsively, covering my underwear with my hands, but she seemed not to notice anything…"
     show dv normal swim with dissolve
-    me "Тормоз? Почему ты так меня назвала?"
+    me "Retard? Why do you keep calling me that?"
     show dv smile swim with dspr
-    dv "А ты разве не?.."
-    "Окончание повисло в воздухе, а Алиса хитро улыбнулась."
-    me "А что, похоже?"
+    dv "And you aren't?.."
+    "The end of the sentence hung in the air, and Alisa smiled slyly."
+    me "What, does it look it?"
     show dv laugh swim with dissolve
-    dv "Очень!"
-    me "Это видимость."
-    dv "И чем докажешь?"
-    me "Не собираюсь я тебе ничего доказывать!"
-    "Тут я по-настоящему возмутился."
+    dv "Yup!"
+    me "That's only how it seems."
+    dv "And how are you going to prove that?"
+    me "I'm not going to prove anything to you!"
+    "That's where I got really angry."
     show dv normal swim
-    dv "Ах вот как, значит."
-    "Протянула она тихо."
-    "И уставилась мне в глаза."
-    "А я своих не отвёл. Как-то… Не успел?"
-    dreamgirl "Ну конечно, ври дальше. {w}Не хотел — сразу говори."
-    dreamgirl "Эта дерзкая девчонка умудрилась вывести тебя из равновесия и заставить чувствовать что-то кроме безразличия и апатии."
-    dreamgirl "Да ты на неё молиться и памятники ставить ей по гроб жизни обязан!"
-    "По сравнению со вчерашней, ночь была тихая-тихая."
-    "Не считая плеска гуляющей воды да одинокого сверчка, играющего соло где-то далеко, всё, что нарушало тишину — это звук моего собственного дыхания."
-    "Уверен, выглядел я не самым лучшим образом, а глаза Алисы потеряли сосредоточенность, словно смотрела она не на меня, а куда-то сквозь, словно не видела или полностью погрузилась в какие-то мысли."
+    dv "Ah, that's how it is."
+    "She quietly stretched."
+    "And stared into my eyes."
+    "And I didn't take off mine. Somehow… Wasn't fast enough?"
+    dreamgirl "Uh-huh, keep lying to yourself. {w}Just say if you didn't want to."
+    dreamgirl "This cheeky girl managed to throw you off balance and make you feel something other than indifference and apathy."
+    dreamgirl "Hell, you're practically obliged to pray and erect monuments to her!"
+    "Compared to yesterday the night was really quiet."
+    "Apart from the splashing of running water and a lone cricket playing a solo somewhere far away, all that broke the silence was the sound of my own breathing."
+    "I’m sure I didn’t look the best, and Alisa’s eyes lost focus, as if she was looking not at me, but somewhere through, as if she didn’t see me or was completely immersed in some thoughts."
     if loki:
-        "Не уверен, что мы достигли бы большей близости, чем если бы целовались."
-        me "Эй, красавица, очнись."
-        "Тихонько позвал я."
+        "I'm not sure we'd achieve more intimacy than if we kissed."
+        me "Hey, beauty, wake up."
+        "I quietly called out."
     elif herc:
-        "Старая игра в гляделки на новый лад? Интересно, она сама знает о том, каким эффектом обладает? Мммм… Этот оранжевый купальник!"
-        me "Эй, вернись на грешную землю."
-        "Помахал я у неё перед лицом ладонью."
+        "The old game of staredown? I wonder if she herself knows about what effect she has? Mmmm… That orange swimsuit!"
+        me "Hey, Earth to Alisa, come back."
+        "I waved my hand in front of her face."
     else:
-        "Я негромко кашлянул, привлекая внимание."
-    dv "А, что?"
+        "I coughed softly to get her attention."
+    dv "Huh, what?"
     show dv normal swim with dspr
-    "Она вздрогнула и сбросила оцепенение."
-    me "Ты задумалась о чём-то."
-    dv "Не важно. Проехали."
-    "Она собрала одежду."
-    dv "Ладно, бывай."
+    "She shuddered and shook off her entrancement."
+    me "You were thinking about something."
+    dv "No matter. Forget about it."
+    "She picked the clothes."
+    dv "Alright, see ya."
     hide dv with dissolve
     stop music fadeout 3
-    "И скрылась из виду."
-    "Я уже совсем разнежился и только хотел посмотреть, в какую сторону ползти, чтобы облачиться…"
+    "And exited the scene."
+    "I was already completely softened and just wanted to see which way to crawl in order to put on…"
     "…"
     stop ambience fadeout 1
     play music music_list["that_s_our_madhouse"] fadein 1
-    "И вдруг понял, что ползти-то, в сущности, и некуда! Злая Алиска утащила мою одежду!"
-    "Негу как рукой сняло, все глупости мгновенно вылетели из головы."
-    "Я оглянулся, надеясь, что просто не заметил, и моя одежда где-то лежит и ждёт…"
-    "Нет."
-    th "Ну, Алиска…"
-    "И после этого она ещё удивляется моему к ней отношению. Да там не то, что подкалывать, там сечь надо! Ремешком по мягким сиденьям!"
-    "Мысли заметались, прикидывая варианты."
-    "Конечно, можно всё рассказать вожатой, однако мысль о променаде по лагерю в мокрых труселях не грела совершенно."
-    "Я прямо воочию представил себе, как это будет выглядеть — я, непросохший, с приставшим песком, в мокрых труселях шествую по дорожке."
-    "Настоящий джентльмен, только цилиндра с моноклем не хватает."
-    "А ещё можно сразу к Алиске в домик вломиться… {w}Но тогда её угрозы и в самом деле приобретут некое подобие правдоподобности."
-    "Сами подумайте — к девочке в домик среди ночи забрался мальчик в одних трусах! Не книжки же он туда читать полез."
-    "Стерва! Вон как продумала!"
-    "Короче, подставила меня рыжая по полной программе. Оторвалась, что называется, за все тысячелетия лишений и притеснений."
-    "Это, правда, не отвечает на вопрос, что делать прямо сейчас. В долгосрочных планах прочно поселилась месть, но надо подумать о дне насущном."
-    "Шанс не сесть в лужу у меня один, и он не самый большой."
-    th "Может, она ещё не успела далеко уйти?"
-    th "Тогда я догоню её и… {w=.3}Отберу одежду."
-    "Бегом!"
+    "And suddenly I realized that there was, in fact, nowhere to crawl! Evil Alisa stole my clothes!"
+    "The bliss vanished, all the nonsense instantly flew out of my head."
+    "I looked around, hoping I just hadn't noticed, and my clothes were somewhere, waiting…"
+    "Nope."
+    th "Alisa…"
+    "And after that she is still surprised by my attitude towards her. She doesn't need to be teased, she needs to be whipped! With a belt directly applied to her soft parts!"
+    "Thoughts swirled, considering my options."
+    "Of course, I could tell everything to the squad leader, but the idea of walking around the camp in wet underwear did not entice me at all."
+    "I imagined with my own eyes how it would look like - I, completely wet, with adhering sand, in wet undergartments, march along the path."
+    "True gentleman, the only thing missing would be a monocle complete with a top hat."
+    "Or I could break into her house… {w}But then her threats will actually acquire some semblance of credibility."
+    "Think about it — a girl's house gets invaded by a guy only in his pants! For sure he's not there to read books."
+    "Bitch! She thought of everything!"
+    "In short, the redhead set me up in full. It came off, as they say, for all the millennia of deprivation and oppression."
+    "This, however, does not answer the question of what to do right now. Revenge has firmly settled in long-term plans, but we need to think about the day ahead."
+    "I only have one chance not to royally screw up, and it is not the biggest."
+    th "Maybe she hasn't gotten far?"
+    th "Then I can chase her and… {w=.3}Get my clothes back."
+    "Run!"
     scene bg ext_beach_night at fast_running
     with dissolve
     pause(1)
     scene bg ext_square_night
     with dissolve
     play ambience ambience_camp_center_night fadein 3
-    "Босиком мокрыми пятками по песочку особо не побегаешь, но я умудрился выдать неплохую скорость и очень скоро очутился под укоризненным взглядом Генды."
-    me "Чё зыришь."
-    "Угрюмо буркнул я деятелю, озираясь в поисках Алисы."
+    "Quickly running with wet heels barefoot on sand isn't really feasible, but I managed to give out good speed and very soon found myself under the reproachful look of Genda."
+    me "What are you looking at."
+    "I grunted gloomily to the figure, looking around in search of Alisa."
     show dv normal pioneer2 at center
     with dissolve
-    "На удивление, она была здесь!"
-    "Уже переодетая, с самым скучающим выражением на лице, она всем своим видом давала понять, что устала ждать, пока «этот тормоз» созреет и догонит."
-    dv "Ты долго."
-    "Не поворачиваясь в мою сторону, сказала она."
-    me "Спешил как мог. Мадемуазель не указала координат рандеву, и пришлось немного побегать."
-    "Я заметил свёрток с моей одеждой, лежащий здесь же, и мгновенно развернул его."
-    "Ничего."
-    "Ни сажи, ни зубной пасты на швах, ничего такого. Обычная, чуть ношенная пионерская форма."
-    "Я с подозрением посмотрел на Алису."
-    me "И как это прикажешь понимать?"
+    "Surprisingly, she was here!"
+    "Already changed, with the most bored expression on her face, she made it clear with all her appearance that she was tired of waiting until «this retard» will figure it out and reach her."
+    dv "You took a while."
+    "She said without turning in my direction."
+    me "I hurried as best I could. Mademoiselle did not indicate the coordinates of the rendezvous, so I had to run a little."
+    "I noticed a bundle of my clothes lying there, and immediately unwrapped it."
+    "Nothing."
+    "No soot, no toothpaste on the seams, nothing. Regular, slightly worn pioneer uniform."
+    "I suspiciously looked at her."
+    me "And how should I take this?"
     show dv guilty pioneer2 at center
     with dspr
-    dv "А никак. Решила не топить тебя глубже, чем ты есть."
+    dv "You don't have to. I decided not to drown you any deeper."
     stop music fadeout 3
-    me "Ах, решила. Что ж, крайне любезно. Спасибо, что не добавила «сюрпризов» и вернула всё в целости."
-    dv "Пожалуйста."
+    me "Oh, you decided. Well, that's very kind of you. Thanks for not adding any «surprises» and returning everything as is."
+    dv "You're welcome."
     show dv shy pioneer2 at center
     with dspr
-    "Она казалась смущённой, но быстро справилась с собой и, поднявшись со скамеечки, направилась в сторону домиков."
-    dv "А ты и правда не такой уж и тормоз."
+    "She seemed embarrassed, but quickly coped with herself and, rising from the bench, headed towards the houses."
+    dv "You really aren't that stupid."
     hide dv
-    "Донёсся до меня её голос."
-    "Она скрылась в ночи, а я остался стоять на месте как громом поражённый."
-    "Двачевская злая, агрессивная, азартная и озорная — это мы уже видели. Ещё видели Двачевскую смущённую, задумчивую."
-    "А сейчас нас пустили за кулисы и дали полюбоваться на Двачевскую настоящую."
-    me "Я польщён. И спасибо за тёплый вечер."
+    "Her voice reached me."
+    "She disappeared into the night, and I remained standing in place as if struck by thunder."
+    "Angry, aggressive, reckless and mischievous Dvachevskaya  - we have already seen this. We also saw Dvachevskaya embarrassed, thoughtful."
+    "And now they let us backstage and let us admire the real Dvachevskaya."
+    me "I'm touched. Thanks for the evening."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -8400,332 +8403,332 @@ label alt_day2_slot_sl:
     play ambience ambience_camp_entrance_evening fadein 1
     play music music_7dl["one_little_lone_cloud"] fadein 3
     $ lp_sl += 1
-    "От происходящего в лагере у меня голова шла кругом."
-    "Слишком ярко, слишком сильно, слишком интенсивно."
-    "Я уже и забыл, когда меня сразу окружало столько людей, исключая перемещения в общественном транспорте."
-    "Но там же другое всё, там люди как в коконах, окуклившиеся, умершие; в своих глупых планшетах, во внутриканальных наушниках с супербасами — нет их здесь, только физическая оболочка."
-    "А здесь все открытые. {w}Шумные."
-    "Душой, возможно, я и отдыхал, но психике моей требовался ощутимый такой сброс."
-    "Потому что даже счастье следует принимать в гомеопатических дозах, иначе есть риск пресыщения."
-    "Вот как сейчас."
+    "My head was spinning from the events occuring in the camp."
+    "Too bright, too strong, too intense."
+    "I already forgot when so many people surrounded me at once, excluding travel in public transport."
+    "But there everything is different, there people are like in cocoons, pupated, dead; in their stupid tablets, in-ear headphones with super bass - they are not here, only the physical shell."
+    "But here everyone is open. {w}Noisy."
+    "With my soul, perhaps, I rested, but my psyche needed a definite reset."
+    "Because even happiness must be taken in homeopathic doses, otherwise there is a risk of oversaturation."
+    "Just like now."
     scene bg ext_camp_entrance_sunset_7dl at zenterleft
     show sl normal pioneer at cleft
     with dissolve
-    "Репродукторы над головой уныло молчали, день клонился к закату."
-    "А я, наконец, нашёл себе удобный угол положения головы, под которым не дёргало где-то в затыльной части от обрывков смеха, доносимых ветром."
-    "Рядом со Славей же было тихо и мирно."
-    "Возможно, потому я так спешу поддаться и довериться уже этой девушке?"
-    "Почему нет? Она же большой человек в местной иерархии, способна на что-то — а как ни погляжу, всё одна и одна."
-    "Мне пришло в голову что это, возможно, связано с тем, что когда она не одна, я её не вижу."
-    "Наверное, какие-нибудь олимпиады или купания малышей тоже входят в её компетенцию — но я сам чураюсь таких мероприятий."
-    "Так что видимся мы только в моменты вынужденного одиночества."
-    "Девушка посмотрела на часы и сказала:"
-    sl "По распорядку ворота закрываются в двадцать два часа, но сегодня мне хотелось бы сделать ещё кое-что, так что закроем пораньше, хорошо?"
-    me "Ты… меня спрашиваешь?"
-    "Непонятно зачем уточнил я."
+    "The loudspeakers overhead were despondently silent, the day was drawing to a close."
+    "And I finally found myself a comfortable head angle, under which I didn’t twitch somewhere in the back of the head from snatches of laughter carried by the wind."
+    "Next to Slavya it was quiet and peaceful."
+    "Perhaps that is why I am in such a hurry to succumb and trust this girl already?"
+    "Why not? She is a big person in the local hierarchy after all, capable of something - but no matter how I look, she's always alone."
+    "It occurred to me that this may be due to the fact that when I don't see her whenever she isn't alone."
+    "Olympiads or bathing children are probably also within her competence - but I myself shy away from such events."
+    "So we see each other only in moments of forced loneliness."
+    "The girl looked at a clock and said:"
+    sl "The gates are scheduled for closing at twenty-two, but today I would like to do one more thing, so let's close early, okay?"
+    me "Are… you asking me?"
+    "I don't know why I clarified that."
     show sl smile pioneer with dspr
-    "Славя улыбнулась."
-    "Снова странно — не было в её улыбке каких-то зовущих ноток, выдающих в ней интерес."
-    "А сердце всё равно ёкает."
-    sl "А кого же ещё?{w} Вдруг у тебя дела на территории?"
+    "Slavya smiled."
+    "That's also strange - there were no inviting notes in her smile that could be taken as her showing any interest."
+    "But the heart still ached."
+    sl "Who else?{w} Unless you have some other business?"
     show sl normal pioneer with dspr
-    me "Нет, у меня никаких дел не запланировано."
+    me "No, I don't have anything planned."
     show sl smile pioneer with dspr
-    sl "Вот и хорошо! Пособи-ка мне."
-    "Рядом с воротами, в неглубоком срезе трубы, призванном сберечь содержимое от дождя, на гвозде висел открытый тяжёлый квадратный замок, от которого к земле уходила вниз кованая металлическая цепь."
-    "И замок, и цепь были покрыты ржавым налётом, но Славя безбоязненно взяла и то, и другое — то ли не боясь запачкаться, то ли не придавая этому вообще никакого значения."
-    sl "А то я одна тут постоянно мучаюсь."
+    sl "Great! Help me out here."
+    "Near the gate, in a shallow section of the pipe, designed to protect the contents from rain, an open heavy square lock hung on a nail, from which a forged metal chain went down to the ground."
+    "Both the lock and the chain were covered with a rusty coating, but Slavya fearlessly took both of them - either not being afraid to get dirty, or not giving any importance to it at all."
+    sl "Usually I'm the only one here constantly suffering."
     scene bg ext_entrance_night_clear_7dl with dissolve
     $ persistent.sprite_time = "night"
     $ night_time()
-    "Пока мы стояли и болтали, день уже почти закончился."
-    "Над головой зажёгся фонарь, и в его свете я разглядел петли на створках — их следовало совместить."
-    "Пришлось приналечь как следует; девушка быстро-быстро обмотала их цепью, закрепив концы той собственно замком."
-    me "Дотянешься?"
+    "While we stood and chatted, the day was almost over."
+    "A lantern lit up overhead, and in its light I saw the hinges on the doors - they should have been combined."
+    "The girl quickly wrapped them in a chain, securing the ends with a lock."
+    me "Can you reach?"
     show sl normal pioneer with dspr
-    sl "Кажется… нет. {w}Ты нажми на створки изо всех сил — а то мне веса не хватает."
-    "Я сделал, как было сказано, вплотную сомкнув створки и разрешая Славе сделать ещё один виток."
-    sl "Оп…"
+    sl "Looks like… no, I can't. {w}Can you press on harder, I don't really have the weight for that."
+    "I did as I was told, closing the doors completely and allowing Slavya to make one more coil."
+    sl "Hup…"
     play sound sfx_7dl["gate_open"] fadein 0
     scene bg ext_entrance_night_clear_closed_7dl at zenterleft
     show sl smile pioneer at cleft
     with dissolve
-    sl "Готово!"
-    "Пружина в замке хищно щёлкнула, смыкаясь."
-    "Подёргав замок, Славя удовлетворённо кивнула."
-    sl "На совесть! {w}А то здесь неподалёку поселилась семья ежей — если ворота не закрывать, кто-нибудь обязательно залезет."
-    me "Ежей?"
+    sl "All done!"
+    "The spring in the lock predatory clicked, closing."
+    "Pulling the lock, Slavya nodded in satisfaction."
+    sl "Well done! {w}You know, a family of hedgehogs have settled nearby — if we don't lock up the gates, they'll definitely get in."
+    me "Hedgehogs?"
     show sl laugh pioneer with dspr
-    "Видок, наверное, у меня был тот ещё, потому что Славя весело рассмеялась:"
-    sl "Неужели ты никогда не видел ежей?"
+    "I probably looked extremely confused, because Slavya merrily laughed:"
+    sl "Have you never seen hedgehogs?"
     stop music fadeout 3
-    me "Да нет, ежей-то я видел."
-    "Медленно сказал я."
+    me "I mean, I have."
+    "Slowly I said."
     play music music_7dl["out_of_your_tier"] fadein 3
-    me "Знаю, что это такое."
-    th "Всё, как и предполагал."
-    th "Сейчас она тепло поблагодарит меня за оказанную помощь, проводит до калитки или ещё лучше — скажет, куда идти — и распрощается."
-    "Как-то… досадно было, что ли."
+    me "I know what they are."
+    th "As I thought."
+    th "Now she will warmly thank me for the rendered assistance, show me to the gate, or even better - tell me where to go - and say goodbye."
+    "That's… kind of annoying, I think."
     show sl normal pioneer with dspr
-    "Для меня быть использованным не было в новинку, и не то чтобы я не ожидал этого от Слави."
-    "Я с первого дня знакомства распознал в ней манипуляторшу, вечную старшую сестру и активистку по типу той самой Шурочки."
-    "Так что просто гадал, где будет точка приложения Семёна."
-    "Я впервые жалел о том, что не ошибся."
-    "Не обмануться было горько. {w}Да что там — я поймал себя на мысли, что больше всего надеялся именно на то, что она другая, и у неё волшебная мораль человека булычёвского будущего."
-    th "Ну же… Обмани меня."
-    "Мысленно попросил я."
+    "Being used was nothing new to me, and it's not like I didn't expect it from Slavya."
+    "From the first day I met her, I recognized her as a manipulator, an eternal older sister and an activist."
+    "So I just wondered where would my application point be."
+    "For the first time I regretted not being mistaken."
+    "It was a bittersweet feeling. {w}Hell - I caught myself thinking that most of all I hoped that she was different, and she had the magical morality of a person of Bulychev's future."
+    th "Come on… Deceive me."
+    "I asked in my mind."
     show sl sad pioneer with dspr
-    th  "Ты, носительница ключей ото всего в лагере, включая и моё сердце — чего тебе стоит?"
-    "Славя молчала, смотря на меня с лёгкой неуверенностью во взгляде."
-    me "Мы здесь закончили?"
-    "Не выдержал молчания я."
-    me "Где здесь ближайший запасной вход?"
-    "Голос был каким-то деревянным, казённым."
-    sl "Он…"
-    "Славя махнула рукой влево."
-    sl "Там… Пойдёшь вдоль стены, увидишь."
-    "Я кивнул и, ссутулившись, пошёл."
+    th  "You, the bearer of the keys to everything in the camp, including my heart - what does it cost you?"
+    "Slavya was silent, looking at me with a slight uncertainty in her eyes."
+    me "Are we done here?"
+    "I could no longer stand the silence."
+    me "Where is the nearest emergency entrance?"
+    "The voice was somehow wooden, official."
+    sl "It's…"
+    "Slavya pointed somewhere to the left."
+    sl "There… You'll find it if you walk along the wall."
+    "I nodded and, stooping, went."
     scene bg ext_path_night with dissolve
-    "А у Слави дела."
-    "Дела-делы, важные — не чета одному придурку, которому и без того на голову свалилось незаслуженное счастье."
-    "В виде шанса начать всё сначала."
+    "And Slavya had her business."
+    "Deeds, deeds, very important - unlike one fool, who already had undeserved happiness on his head."
+    "In the form of a second chance."
     if alt_day2_walk == 2:
         if herc:
-            "Я вспомнил наш разговор на площади, свой дурацкий-дурацкий спич о том, что такое мой мир и почему в нём нет места таким вот светлым девушкам."
-            dreamgirl "Так всё верно — в любом обществе есть иерархия."
-            dreamgirl "Причём, в отличие от куда более милосердной индийской кастовости, здесь социальный лифт почти не работает."
-            th "Работает."
-            "Угрюмо возразил я."
-            dreamgirl "У тебя нет десяти лет для того, чтобы стать какой-нибудь видной шишкой и купить её престижем."
-            th "Я вообще не знаю, сколько у меня есть времени."
+            "I remembered our conversation on the square, my stupid speech about what my world is and why there is no place in it for such bright girls."
+            dreamgirl "That's right - any society has its hierarchy."
+            dreamgirl "Except, unlike the much more merciful Indian caste system, here the social elevator almost does not work."
+            th "It does work."
+            "Ruefully I tried to counter."
+            dreamgirl "You don't have ten years to become some big name and buy her with prestige."
+            th "I don't even know how much time I have."
         else:
-            "Я вспомнил наш разговор на площади, свою оговорочку по Фрейду о спасателях и целом министерстве людей, которым не плевать на жизни окружающих."
-            th "Меня бы кто спас…"
-            "С тоской подумал я."
-            th "Или хотя бы убил — быстро и безболезненно."
+            "I remembered our conversation on the square, my Freudian slip of the tongue about rescuers and a whole ministry of people who do give a damn about the lives of those around them."
+            th "Oh, if only anyone would rescue me too…"
+            "I thought sadly."
+            th "Or at least killed me - quickly and painlessly."
             if loki:
-                "Я почти десять лет топил, давил и душил эту иссиня-чёрную мерзость."
-                "А она живее всех живых."
-                "Звенит отголосками счастья и детского смеха, когда перед внутренним взглядом встаёт один человек."
+                "For almost ten years I drowned, crushed and choked this blue and black abomination."
+                "But it's still alive and kicking."
+                "It rings with echoes of happiness and children's laughter, when one person stands before the inner gaze."
             else:
-                "Потому что нельзя."
-                "Есть вещи, которые допустимы — благодарность за то, что пустили в дом, накормили и отмыли."
-                "Но нельзя наглеть и требовать чего-то большего."
-                "Нельзя просить — да даже подсознательно мечтать! — о том, чтобы однажды улыбка, обращённая ко мне, выглядела бы чуть-чуть теплее, чем ко всем окружающим."
-            "Поэтому милосерднее и честнее будет просто задушить в себе сейчас все преступные эмоции."
-            "Пока они ещё только проявились — это проще всего, как росток розы раздавить тяжёлым ботинком."
-            "Почти не больно, если не попасть по пальцам."
+                "Because you can't."
+                "There are things that are permissible - gratitude for being allowed into the house, fed and washed."
+                "But you can't be impudent and demand something more."
+                "You cannot ask - not even subconsciously dream! - that one day a smile addressed to me would look a little warmer than to everyone around."
+            "Therefore, it would be more merciful and honest to simply stifle all criminal emotions in yourself now."
+            "While they have only just appeared - this is the easiest way, like crushing a rose sprout with a heavy boot."
+            "Almost doesn't hurt, if you don't manage to hit your fingers."
     else:
-        "Я с неясной тоской сравнил эту кипучую, деятельную — живую! — девушку с тем, кем я знал себя сам."
-        "Стоит ли говорить, что сравнение выдалось далеко не в мою пользу?"
-    "Я со злостью стукнул кулаком по стенке, вдоль которой двигался."
-    th "И имеет ли оно вообще значение, это самое время, если я, похоже, так и возвращаюсь к тому человеку, с которого всё началось."
-    th "Выигрыш во времени? О, я буду знать о выходе «Doom» за четыре года до его выхода, даааа! {w}И на целых десять лет больше смогу просидеть перед монитором, урааааа!"
-    "Сам виноват."
-    "Не следовало позволять себе мечтать или надеяться на такие вещи."
-    "Не моего поля ягода, не мой тиер, не мой уровень."
-    "Проговорив последние слова несколько раз, я почувствовал, что мне стало чуточку легче."
+        "With a vague longing I compared this effervescent, active - alive! - girl with myself."
+        "Should I even say that the comparison definitely wasn't in my favor?"
+    "I angrily banged my fist on the wall along which I was moving."
+    th "And does it even matter, this said time, if I seem to be going back to the person who started it all."
+    th "Time gain? Oh, I'll know that «Doom» will be released in four years! {w}And I'll be able to waste ten extra years sitting before the monitor, hoorraaaaaaaaaay!"
+    "All my fault."
+    "Shouldn't have allowed myself to dream or hope for such things."
+    "Not my field's berry, not my tier, not my level."
+    "After saying the last words several times, I felt a little better."
     play sound sfx_bush_leaves
     scene bg ext_path2_night with dissolve
-    "Как будто свалил часть непосильной ноши неудачника на вездесущий фатум."
-    th "А мы соприкасались плечами, пока закрывали ворота."
-    "Плечо было тёплое и мягкое. И этот запах одуряющий."
+    "As if I dumped part of the unbearable burden of the loser on the ubiquitous fate."
+    th "And we touched shoulders while closing the gate."
+    "The shoulder was warm and soft. And this stupefying smell."
     if loki:
-        "Макушка Ксюши пахла сливовым шампунем и почему-то электричеством, несмотря на то, что с её шикарными волосами она справедливо брезговала шапкой."
-        "Мне так нравилось обнимать её, целовать в макушку."
+        "The top of Ksyusha's head smelled of plum shampoo and for some reason electricity, despite the fact that with her gorgeous hair she rightly disdained hats."
+        "I loved hugging her, kissing her on the top of her head."
     else:
-        "Когда-то, когда у меня была ещё девушка, я очень любил вдыхать запах её волос, целовать в макушку."
-    "Своего рода фетиш, наверное."
-    "Я поймал себя на мысли, что был бы очень не против поцеловать в макушку Славю."
-    "Тут же выписал себе мысленную оплеуху, прекрасно понимая, что веду себя как типичный представитель френдзоны."
-    "Пытаясь отвлечься, я углубился в воспоминания."
+        "Once, when I had a girlfriend, I really liked to inhale the smell of her hair and kiss on the top of her head."
+    "Kind of a fetish, I guess."
+    "I caught myself thinking that I would not mind kissing Slavya that way."
+    "I immediately gave himself a mental slap, knowing full well that I was behaving like a typical representative of the friendzone."
+    "Trying to distract myself, I delved into memories."
     $ set_mode_nvl()
     if herc:
-        "Мне двадцать лет… Белые питерские ночи, я сижу на подоконнике своей квартиры, выходящей окнами на бывшую церковь, из которой советская власть сделала бассейн."
-        "Над головой безграничное, бездонное небо."
-        "А впереди суд."
-        "Мои доводы о том, что я единственный кормилец в семье, что мать больная, что нельзя мне, никак нельзя, сочли недейственными."
-        "КМБ, дедовщина, однообразные будни…"
-        "Я вернулся из армии и узнал о том, что мою мать определили в Скворцова-Степанова — с руки того самого соцыча, что должен был либо выхлопотать мне отсрочку, либо позаботиться о матери новобранца."
-        "Можно сделать один крохотный шаг."
-        "И пошло оно всё к чёрту."
+        "I'm twenty… White nights, I am sitting on the windowsill of my apartment overlooking the former church, from which the Soviet authorities made a swimming pool."
+        "Over my head - the boundless, bottomless sky."
+        "Court case ahead of me."
+        "My arguments that I was the only breadwinner in the family, that my mother was sick, that I couldn’t, - I couldn’t! - were considered ineffective."
+        "Military recruit training, hazing, monotonous everyday life…"
+        "I returned from the army and found out that my mother was assigned to Skvortsov-Stepanov - from the generous hand of that same social worker who had to either get me a reprieve or take care of the recruit's mother."
+        "You can take one tiny step."
+        "And it all will go to hell."
     elif loki:
-        "Мне девятнадцать — хвастаться нечем: я идиот."
-        "В лёгких что-то надсадно булькает, когда я дышу, сутулясь."
-        "А я курю в прозрачное небо питерских белых ночей, сидя спиной в оконном растворе, свесив ногу на улицу, приветливо мотылькая пяткой навстречу пятиэтажной пустоте."
-        "У меня июнь, у меня день рождения."
-        "Ксюша в чём-то была права. Даже её этот придурок был в чём-то прав — разве что я не стал бы подряжать людей, а отметелил сам."
-        "Все правы, так-то. Куда ни кинь. Ни одного виноватого, все потерпевшие."
-        "Только кто вернёт меня Музыке?"
-        "Усмехнувшись, я щелчком отбросил окурок…"
-        "…и опрокинулся навстречу бездне."
-        "Небо прыгнуло мне навстречу…"
+        "I'm nineteen - nothing to brag about: I'm an idiot."
+        "Something in my lungs gurgles hoarsely when I breathe, stooping."
+        "And I smoke in the transparent sky of St. Petersburg's white nights, sitting with my back in the window, dangling my leg into the street, welcoming the five-story void with my heel."
+        "It's June, my birthday."
+        "Ksyusha was right about something. Even her moron was somewhat right - except that I would not hire people, but beat the shit out myself."
+        "Everyone is right, yes. Wherever you look. Not a single one to blame, all the victims."
+        "But who would return me to Music?"
+        "Smiling, I flicked my cigarette away…"
+        "…and tipped over into the abyss."
+        "The sky jumped towards me…"
     else:
-        "Мне двадцать один, и я сижу в распахнутом окне, которое так и не поменял на дешёвые пластиковые стеклопакеты."
-        "Спиной о южный край коробки, правая нога висит вниз, в зубах сигарета."
-        "Доктор, доктор, дайте мне эту красивую сиреневенькую, а ещё ту, розовую, с длинной продольной риской."
-        "И медицинского спирта, чтобы утопить кровоточащее сердце."
-        "«Дротаверина Гидрохлорид» — читаю я яркие красные буквы на белой прозрачной баночке."
-        "Спазмалитическое. Болеутоляющее."
-        "Спасающее от боли."
-        "Если у вас болит голова. Или зуб. Или что-то ещё."
-        "Съел несколько таблеток по весу — и готово."
-        "Белые глаза от боли с почти отсутствующим зрачком."
+        "I'm twenty-one, and I'm sitting in an open window, which I never changed to cheap plastic double-glazed windows."
+        "Back leaning on the south edge of the rectangle, right leg hanging down, cigarette in teeth."
+        "Doctor, doctor, give me this beautiful lilac one, and also that pink one with a long longitudinal line."
+        "And some medical alcohol to drown my bleeding heart."
+        "«Drotaverine Hydrochloride» — I read bright red letters on a transparent jar."
+        "Spasmolytic. Painkiller."
+        "Saving from pain."
+        "If you have a headache. Or a toothache. Or something else."
+        "Just eat a few pills by weight - and you're fine."
+        "White from pain eyes with an almost absent pupil."
         nvl clear
-        "Там должна быть небесная голубизна."
-        "И улыбка."
-        "И любовь ко всему миру — золотым колером её волос."
-        voice "Почему всё так неправильно…"
-        "Я читаю этот вопрос по губам."
-        "Я заедаю его болеутоляющим."
-        "Но оно почему-то не помогает: наверное, доза недостаточна."
-        "Нужно съесть больше, чтобы помогло."
-        "Если съесть достаточно, это поможет унять боль."
-        "Интересно, хватит 200 штук?"
-        "Я содрал крышку вместе с дозатором и, открыв рот, высыпал в глотку все эти жизнерадостные солнечные кругляшки."
-        "Криво усмехнулся и, запив тёплым уже абсентом, бросил пустую баночку под ноги — вниз с пятого этажа."
-        "Баночка запрыгала, ударившись о землю, и из распахнутой двери парадного тут же выскочила подъездная кошка Маха, которую мы кормили всем кагалом."
-        "Запрыгала, заиграла…"
+        "It should be blue, as the sky."
+        "And there should be a smile."
+        "And love for the whole world - the golden color of her hair."
+        voice "Why is everything so wrong…"
+        "I read this question on the lips."
+        "I keep eating painkillers."
+        "But for some reason it does not help: probably the dose is insufficient."
+        "Gotta eat more so they help."
+        "If you eat enough, it will help relieve the pain."
+        "I wonder if 200 of those would be enough?"
+        "I tore off the lid along with the dispenser and, opening my mouth, poured all these cheerful sunny rounds into my throat."
+        "Smiled crookedly and, having washed down with already warm absinthe, threw an empty jar at my feet - down from the fifth floor."
+        "The jar jumped, hitting the ground, and from the open door of the front door immediately jumped out the driveway cat Maha, which we fed collectively with the entire porch."
+        "Jumped, rolled…"
     stop music fadeout 3
     $ set_mode_adv()
-    "Тогда я впервые заглянул за ту сторону."
-    "Возможно, стоило там бы и оставаться — я почти не вижу смысла ни в чём со мной происходящем."
-    "Даже эта волшебная сказка, даже эта волшебная девуш…"
-    sl "Вот ты где!"
+    "That's when I looked beyond the other side for the first time."
+    "Perhaps it would be worth staying there - I almost see no point in anything happening to me."
+    "Even this fairy tale, even this magical gi…"
+    sl "There you are!"
     show sl normal pioneer
     with dissolve
     play music music_list["forest_maiden"] fadein 2
-    "Я остановился и поднял голову."
-    "Она догоняла меня быстрым шагом, почти не тревожа окружение."
-    "Идеально вписываясь, будто являясь частью всего этого — ничего удивительного в том, что я не сумел заметить её до сих пор."
-    sl "Почему ты ушёл?{w} Я тебя звала, звала…"
-    "Девушка остановилась рядом, легко дыша."
-    me "Прости…{w} Наверное, я задумался."
-    me "Ушёл в себя и всё в таком духе."
-    th "Ну всё, долг вежливости выполнен, ты можешь уходить."
-    sl "Когда ты развернулся так, пошёл — мне как будто по живому резануло.{w} Я подумала, что нельзя тебя такого отпускать. Дура, да?"
+    "I stopped and raised my head."
+    "She caught up with me with a quick step, almost without disturbing the environment."
+    "Fitting in perfectly, like being a part of it all - no wonder I haven't been able to notice her until now."
+    sl "Why did you leave?{w} I kept calling you…"
+    "The girl stood next to me, breathing easily.."
+    me "Sorry…{w} I guess I've been thinking."
+    me "Retreated into myself, and all that."
+    th "That's it, the duty of courtesy is done, you can leave."
+    sl "When you turned around like that and went - it felt like something cut me.{w} I thought you couldn't let go like that. I'm a fool, yes?"
     if loki:
-        th "Ещё какая…"
-    th "У тебя же важное дело."
-    "Я промолчал."
-    "Всё-таки её компания и правда грела меня. {w}Пусть и отражённым светом — такие вот солнышки не умеют не светить."
-    me "Славя, неужели тебе совсем заняться нечем?"
+        th "If only you knew…"
+    th "Don't you have important business?"
+    "I kept silent."
+    "Still, her company really warmed me. {w}Even if it was reflected light - such suns cannot be, but shine."
+    me "Slavya, don't you have anything better to do?"
     show sl surprise pioneer with dspr
-    sl "Ты это о чём?"
-    "Она удивленно посмотрела на меня."
-    me "Ты попросила меня о помощи, я тебе помог, всё, спасибо, я пошёл. {w}Почему ты делаешь вид, что тебе не всё равно?"
-    me "Ты думаешь, я в это поверю?"
-    "Я сам не знал, почему говорил это, но как будто за эти два дня нарыв налился окончательно и лопнул, выпуская наружу всю грязь и мерзость, даруя измученной плоти временное, но очищение."
-    sl "Семён, о чём ты…"
+    sl "What do you mean?"
+    "She looked at me in surprise."
+    me "You asked me for help, I helped you, that's all, thanks, I left. {w}Why do you keep pretending that you care?"
+    me "Do you think I'll believe that?"
+    "I myself did not know why I said this, but it was as if during these two days the abscess had completely filled up and burst, releasing all the dirt and filth outward, granting the tortured flesh a temporary, but still a cleansing."
+    sl "Semyon, what are you…"
     show sl serious pioneer with dspr
-    "Она нахмурилась."
-    sl "Просто я хотела немного подкормить ёжиков, думала, ты пойдёшь вместе со мной — а ты убежал."
+    "She furrowed."
+    sl "I just wanted to feed the hedgehogs a little, I thought you would come with me - and you ran away."
     if (counter_sl_cl == 1):
-        me "Я понимаю, что ты чувствуешь себя обязанной за то, что я прикрыл тебя с ключами.{w} Но это просто ответная любезность за вчерашнюю кормёжку."
-        me "Мы квиты, и ты больше не обязана заставлять себя тратить на меня время."
+        me "I understand that you feel obligated that I covered you with the keys.{w} But it's just a return courtesy for yesterday's food."
+        me "We're even and you don't have to force yourself to waste time on me anymore."
     else:
-        me "Я одного понять не могу — зачем ты со мной носишься второй день?"
-        me "Я же прекрасно знаю, у тебя куча дел, а я… Я всем только мешаю."
+        me "Here's this one thing I don't get - why have you been running around with me for two days?"
+        me "I know very well that you have a lot of things to do, and I… I only hinder everyone."
     show sl sad pioneer with dspr
-    "Не знаю, куда я попал, но точно по больному — её глаза заблестели, а голос даже задрожал немного:"
-    sl "Я не знаю, что гаже: то, что ты говоришь мне эти вещи, или то, что ты сам искренне в них веришь…"
-    me "Но это нормальная модель общения!{w} Все друг друга так или иначе используют."
-    "Я понимал, что не такие вещи стоило бы говорить, когда рядом такая красавица, а вокруг такая ночь."
-    me "Ничего плохого в этом нет.{w} Просто я не хочу, чтобы ты себя заставляла, вот и всё."
-    sl "Семён…"
-    me "Ты слишком хорошая, чтобы быть правдой.{w} И слишком мне нравишься."
-    "Слово было сказано."
-    "Органично — как и всё, что происходит вокруг Слави."
+    "I don't know which nerve I hit, but it definitely hurt - her eyes sparkled, and her voice even trembled a little:"
+    sl "I don't know what's more disgusting: the fact that you tell me these things, or that you sincerely believe in them yourself…"
+    me "But this is a normal communication pattern!{w} Everyone uses each other one way or another."
+    "I understood that such things should not be said when such a beauty is nearby, and such a night is around."
+    me "There's nothing bad in it.{w} I just don't want you to force yourself, that's all."
+    sl "Semyon…"
+    me "You're too good to be true.{w} And I like you too much."
+    "The deed was done."
+    "Organically - like everything that happens around Slavya."
     show sl normal pioneer with dspr
-    "А она уставилась мне в глаза — долгим, испытующим взглядом."
-    "Но и минуты не прошло, как она отвернулась."
-    th "Кто бы сомневался."
-    "Я горько усмехнулся."
+    "And she stared into my eyes - a long, searching look."
+    "But not even a minute passed before she turned away."
+    th "Who would've guessed."
+    "I smiled bitterly."
     show sl tender pioneer with dspr
-    sl "Вот видишь."
-    "Её голос был мягким, нежным — таким, какого я ещё никогда не слышал."
-    sl "Тебе просто следовало с самого начала сказать всё вслух."
+    sl "See."
+    "Her voice was soft, gentle, like I've never heard before."
+    sl "You should have just said it out loud from the start."
     show sl shy pioneer with dspr
-    sl "И не было бы никакой грязи на душе."
-    "Она так и не смотрела в мою сторону, вместо этого мечтательно улыбаясь и теребя косу."
-    sl "Самое важное — это быть честным с самим собой."
-    sl "Когда ты понимаешь, что на самом деле у тебя в сердце — ты не отталкиваешь людей. {w}Вот как сейчас."
-    sl "Я больше не чувствую от тебя плохого — ты ещё не улыбаешься, но это ещё."
-    me "Наверное…"
-    "Славя, наконец, подняла на меня глаза."
-    sl "Да уж не наверное, глупый Семён!"
-    "Она сделала шаг навстречу."
-    sl "Я говорю тебе — ты ещё будешь улыбаться."
+    sl "And there would be no dirt on the soul."
+    "She never looked in my direction, instead smiling dreamily and fiddling with her braid."
+    sl "The most important thing is to be honest with yourself."
+    sl "When you understand what's really in your heart, you don't push people away. {w}Just like now."
+    sl "I no longer feel bad from you - you are not smiling yet, but that'll happen."
+    me "Probably…"
+    "Slavya finally raised her eyes to me."
+    sl "Not probably, stupid Semyon!"
+    "She took one step towards me."
+    sl "I'm telling you - you will be smiling."
     show sl shy pioneer close with dspr
-    "Ещё один."
-    sl "Просто перестань сомневаться, перестань врать себе."
-    "И, наконец, взяла меня за руку."
-    "Коротко стриженные ногти царапнули мне ладонь, мимоходом нарисовав на ней не то кружок, не то какое-нибудь яблоко."
+    "Another one."
+    sl "Just stop doubting, stop lying to yourself."
+    "And, finally, she took my hand."
+    "Short-cut nails scratched my palm, casually drawing on it either a circle or some kind of apple."
     show sl smile pioneer close with dspr
-    "Я вздрогнул."
-    me "Ты же понимаешь, что просишь слишком многого?"
-    sl "Я не прошу всё и сразу."
-    "Возразила Славя."
-    sl "Я прошу попробовать."
-    sl "Дуться как мышь на крупу проще всего."
-    sl "А мне нравится твоя улыбка."
-    "И я понял вдруг, что несколько минут уже улыбаюсь, как дурачок."
-    me "Да…"
-    sl "И когда ты спокойный."
-    "Она меня обняла."
-    sl "Таким и оставайся."
-    "Шепнула она."
+    "I shuddered."
+    me "You do realize that you're asking for too much?"
+    sl "I'm not asking for everything at once."
+    "Retorted Slavya."
+    sl "I'm asking you to try."
+    sl "Pouting like a mouse on grits is the easiest way."
+    sl "And I like your smile."
+    "And suddenly I realized that I've been smiling like a dumbass for a few minutes now."
+    me "Yeah…"
+    sl "And when you're calm."
+    "She hugged me."
+    sl "Stay like that."
+    "She whispered."
     if herc or loki:
-        "Славя попыталась отстраниться."
-        "Вместо этого я поймал её."
+        "Slavya tried to move away."
+        "But instead I caught her."
         show sl surprise pioneer close with dspr
-        "Сжал так, что она изумлённо выдохнула."
-        "И, наконец, закрыл свой гештальт."
-        "Её волосы пахли дёгтем и лимонником."
-        "Я коснулся их губами — так, чтобы она ничего не заметила."
-        "И отпустил."
+        "Squeezed so hard that she exhaled in amazement."
+        "And, finally, closed up my gestalt."
+        "Her hair smelled of tar and lemongrass."
+        "I touched them with my lips - so that she wouldn't notice anything."
+        "And let her go."
     else:
-        "Я стоял столбом, красный, смущённый."
-        "Так что ей пришлось самой брать мои руки и обнимать ими себя."
-        "Она почему-то вздрогнула, когда мои ладони легли на плечи."
-        sl "Я не прошу тебя верить мне."
-        sl "Но не ожесточайся."
-        "Она погладила меня по щеке и, легко освободившись, отошла на шаг."
+        "I stood like a pillar, red, embarrassed."
+        "So she had to take my hands and hug herself with them."
+        "For some reason, she shuddered when my hands fell on her shoulders."
+        sl "I'm not asking you to believe me."
+        sl "But don't harden up."
+        "She stroked my cheek and, easily freeing herself, took a step back."
     scene bg ext_backdoor_night_7dl
     show sl smile pioneer
     with dissolve
-    "Мы пришли к самой калитке."
-    "А оттуда…"
+    "We came to the gate."
+    "And from there…"
     scene bg ext_houses_night_7dl
     show sl smile pioneer
     with dissolve
-    "И к домикам."
-    sl "Хороший вышел вечер…"
-    th "Да, у тебя получилось сделать его таким."
-    sl "Спасибо тебе."
-    me "А мне-то за что?"
+    "We reached the houses."
+    sl "That was a nice evening…"
+    th "Yes, you managed to make it so."
+    sl "Thank you."
+    me "Why are you thanking me?"
     show sl smile2 pioneer with dspr
-    sl "Догадайся!"
-    me "Я подумаю об этом завтра."
-    "Пробурчал я."
-    sl "Тогда до завтра?"
+    sl "Try guessing!"
+    me "I'll think about it tomorrow."
+    "I muttered."
+    sl "Then, see you tomorrow?"
     if ('sports' in list_slavya_7dl):
-        me "Какое «завтра»? Мне кое-кто обещал купашки!"
+        me "What «tomorrow»? Someone promising me an evening on the beach!"
         show sl smile pioneer with dspr
-        sl "А ты не забыл, надо же."
-        sl "Есть плавки?"
-        me "Э…"
-        sl "Я так и думала. {w}Пойдём, выдадим тебе казённые."
+        sl "And you haven't forgotten, huh."
+        sl "You have swimming trunks?"
+        me "Uh…"
+        sl "Thought so. {w}Let's go, we'll get you state-owned ones."
         "…"
         with joff_l
     else:
-        "Помахала мне рукой девушка и убежала."
+        "The girl waved to me and ran away."
         hide sl with easeoutleft
-        "А я замер, глядя в небо над головой, пытаясь унять сердцебиение и полный раздрай в мыслях."
-        "Эта девушка походя снесла все мои уровни защиты, и я впервые в жизни не спешил их восстанавливать."
-        "Впервые в жизни я вдруг захотел слепо — до одури — довериться."
-        "Прекрасно понимая, что ничего хорошего из этого не получится."
-        "Но как бы то ни было, я был — впервые за целую кучу времени — необъяснимо счастлив."
+        "And I froze, looking at the sky above my head, trying to calm my heartbeat and complete discord in my thoughts."
+        "This girl seemed to have demolished all my protection levels, and for the first time in my life I was in no hurry to restore them."
+        "For the first time in my life, I suddenly wanted to blindly - stupidly - trust."
+        "Knowing full well that nothing good will come of it."
+        "But be that as it may, I was - for the first time in a long while - inexplicably happy."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -8735,275 +8738,275 @@ label alt_day2_slot_mt:
     scene bg int_house_of_mt_sunset
     show mt normal pioneer at cleft
     with dspr
-    me "Как?"
+    me "How?"
     play music music_7dl["lazy_olga"] fadein 3
-    mt "Смотри."
-    "Из ниоткуда взялась толстенькая пачка белых картонок со стилизованным совёнком на обрезе."
-    mt "Путёвки на третью смену, детей много приедет, нужно заполнить по списку. Справишься?"
-    me "Ничего сложного, конечно, но что собираетесь делать вы?"
+    mt "Look here."
+    "Out of nowhere came a plump pack of white cardboards with a stylized owlet on the edge."
+    mt "Vouchers for the third shift, many children will come, you need to fill out the list. Can you handle it?"
+    me "Nothing complicated, of course, but what are you going to do then?"
     show mt smile pioneer with dspr
-    mt "Разве ты не понял?"
-    mt "Полежу и почитаю, конечно."
-    "И снова, как несколько часов назад, в небеса улетел безгласый вопль:"
-    th "Ну, Ольга Дмитриевна!"
-    dreamgirl "Ну, погоди!"
+    mt "You didn't get it yet?"
+    mt "I'll lie down and read for a bit, of course."
+    "And again, like a few hours ago, a voiceless cry flew into the sky:"
+    th "Oh, Olga Dmitrievna!"
+    dreamgirl "Oh, just you wait!"
     scene
     $ renpy.show("cg d2_mt_me_resort_afar_7dl", what = Dawn("cg d2_mt_me_resort_afar_7dl"))
     with dissolve
-    "Работа шла ни шатко ни валко."
-    "Ничего сложного…"
-    "Под набитой машинописью шапкой, гласящей «Пионерский лагерь «Совёнок», были налинованы направляющие, куда я самым старательным почерком, чуть ли не высовывая язык от усердия, переносил данные из анкет."
-    "Номер путёвки, срок выдачи — с 4 по 25 августа 1989-го года."
-    "Дальше фамилия-имя-дата рождения-место учёбы-домашний адрес."
-    "В Советской России не ты едешь в лагерь, а лагерь едет к тебе."
-    "За пачку таких вот путёвок, отданную на перепись лоботрясу типа меня, в моём XXI веке вполне могли бы огладить неполным служебным по потылице."
-    "А здесь плевать все хотели на частную жизнь."
-    "А где-то же в бумажных завалах на двадцать седьмом километре от Чёрной Речки хранится и путёвка с моими данными — и десять лет ещё будет храниться согласно регламенту о рассекречивании."
+    "The work went smoothly."
+    "It actually wasn't complicated…"
+    "Under a typewritten «Pioneer camp «Sovyonok», were outlined guides, where I, in the most diligent handwriting, almost sticking out my tongue from zeal, transferred the data from the questionnaires."
+    "Voucher number, issuing period — from August 4 to August 25, 1989."
+    "Then last name-first name-date of birth-place of study-home address."
+    "In Soviet Russia you don't go to camp, the camp comes to you."
+    "For a pack of such vouchers, given for census to a lazybones like me, in my 21st century you could get a myriad of official penalties."
+    "But here nobody gave a shit about your privacy."
+    "And somewhere in the paper rubble at the twenty-seventh kilometer from the Black River, the ticket with my data is also stored - and will be stored for another ten years in accordance with the declassification regulations."
     with fade2
-    "Может показаться, что это было всё так легко, но для меня, почти полностью отвыкшего пользоваться ручкой…"
-    "Хотя чёрта с два она меня заставит жаловаться."
-    "Я со злостью посмотрел на вожатую — и перехватил взгляд, который она бросила на меня поверх книги."
-    mt "Ты устал, что ли?"
-    "Спросила она таким голосом, как будто работа писарем была сущей безделицей."
-    me "Нет, конечно, как вы подумать могли."
-    "Усмехнулся я."
-    mt "А, ну тогда…"
-    "Она скрестила ноги на спинке кровати и, подобрав локоть левой руки под голову, снова углубилась в чтение."
-    me "Разве что я никак понять не могу, почему вы бездельничаете, пока я делаю вашу работу."
-    mt "Семён, не будь занудой, тебе не идёт, знаешь?"
-    me "Лучше я буду занудой, чем рабом, мы не рабы, рабы не мы!"
-    dreamgirl "Началось в колхозе утро…"
-    dreamgirl "Не стало Сталина! Стаханов больше к станку не станет! В Польше Анна Герман не споёт нам нового хита!"
-    mt "Семён, ты делаешь это неправильно."
-    "Заулыбалась девушка, положив книжку разворотом на грудь."
-    mt "Сначала надо залезть на табуретку, помнишь, как дома стихи читал?"
-    me "Вы издеваетесь…"
-    mt "Разве что самую чуточку. {w}Подтруниваю. {w}А ты много сделал?"
-    "Я проверил список."
-    me "Да почти всё."
-    mt "Видишь, какой ты молодец."
-    th "И тут я такой вскакиваю, руку к пустой голове и во всё горло: «Служу Советскому Союзу!», или что у них тут предполагается?"
-    dreamgirl "Партия, партия! {w}План — закон, выполнение — долг, перевыполнение — честь!"
-    th "Да иди ты!"
-    me "Вам не кажется, что нельзя доверять пионеру такие вещи?"
-    me "Это личная информация, всё-таки."
-    mt "Вот что тебя беспокоит."
-    mt "Но не бойся."
-    "Она подмигнула мне, возвращаясь к чтению."
-    mt "Я в тебя верю!"
-    me "Ольга! Дмитриевна!"
-    mt "Ничего не вииижу, ничего не слыыыышу, ничего! Никому! Не скажу!"
+    "It could seem that it was all so easy, but for me, almost completely unaccustomed to using a pen…"
+    "But she ain't going to make me complain that easy."
+    "I glared at the squad leader angrily - and caught the look she threw at me over the top of the book."
+    mt "What, you're tired?"
+    "She asked in such a voice, as if the work of a clerk was a mere trifle."
+    me "Of course not, how could you think that."
+    "I chuckled."
+    mt "Well then…"
+    "She crossed her legs on the headboard and, tucking the elbow of her left hand under her head, again plunged into reading."
+    me "I just can't figure out one thing - why you're messing around while I'm doing your job."
+    mt "Semyon, don't be a bore, it doesn't suit you, you know?"
+    me "I'd better be a bore than a slave, we aren't slaves, hear me!"
+    dreamgirl "Here we go again…"
+    dreamgirl "Stalin is gone! Stakhanov will no longer work! In Poland, Anna German won't sing us a new hit!"
+    mt "Semyon, you're doing it the wrong way."
+    "The girl smiled, placing the book on her chest."
+    mt "First you need to get on a stool, remember how you used to recite poems in your childhood?"
+    me "You've gotta be kidding me…"
+    mt "Only a little bit. {w}Just teasing. {w}How much did you finish?"
+    "I checked the list."
+    me "Almost everything."
+    mt "See, what a good guy you are."
+    th "And then I jump up like that, my hand to my empty head and in my throat: «I serve the Soviet Union!», or whatever they do here?"
+    dreamgirl "Communist party, communist party! {w}The plan is the law, the fulfillment is the duty, the overfulfillment is the honor!"
+    th "Oh screw you!"
+    me "Don't you think you can't trust a pioneer with such things?"
+    me "It's personal information after all."
+    mt "Ah, that's what was bothering you."
+    mt "Don't worry."
+    "She winked at me as she went back to reading."
+    mt "I believe in you!"
+    me "Olga! Dmitrievna!"
+    mt "I see noothing, I heear nooothing, noothing! Will! I ever tell!"
     hide mt with dspr
-    "Беззаботно мурлыкая под нос песенку, она перелистнула страницу, всеми силами изображая, что отдыхает в одиночестве."
-    "А я вернулся к писанине."
+    "Carelessly humming a song under her breath, she turned the page, pretending with all her might that she was resting alone."
+    "And I returned to writing."
     play sound sfx_click_2
     $ persistent.sprite_time = "night"
     $ night_time()
     scene cg d2_mt_me_resort_afar_7dl with dissolve2
-    "За окном стемнело, пришлось зажечь лампочку."
-    "Это уже был вопрос личного престижа — добить несчастных пионеров, начиная с буквы «П»."
-    "Фамилия-имя, возраст, место учёбы, адрес, телефон."
-    th "Фамилия-имя, возраст… {w}Эх, грехи мои тяжкие."
+    "It got dark outside the window, so we turned on the lights."
+    "It was already a matter of personal prestige - to finish off the unfortunate pioneers, starting with the letter «P»."
+    "Last name, first name, age, place of study, address, phone."
+    th "Last name, first name, age… {w}Oh, for what sins did I get this punishment."
     $ hvala_randomu_7dl = renpy.random.choice([1, 2])
     if hvala_randomu_7dl == 1:
-        mt "Этого… На «А» вычеркни."
+        mt "That guy… Starts with «D», cross him out."
     elif hvala_randomu_7dl == 2:
-        mt "Вот этого на «К» вычеркни."
-    "Я вдруг почувствовал на щеке тепло дыхания, а в плечо упруго толкнулось что-то тёплое."
-    mt "Снова перепутали, он же невъездной."
-    me "Почему?"
+        mt "Cross that one out, starts with «E»."
+    "I suddenly felt the warmth of breathing on my cheek, and something warm pushed elastically into my shoulder."
+    mt "They mixed it up again, he's banned."
+    me "Why?"
     if hvala_randomu_7dl == 1:
-        mt "Да отметился в прошлом году — устроил из своего домика притон, воняло так, что потом неделю проветривали."
+        mt "Spectacularly screwed up last year — turned his house into a tavern, it stank so much that they had to air it for a week."
     elif hvala_randomu_7dl == 2:
-        mt "В прошлую смену за Ульянкой бегал, говорил, что ей уже давно можно, таскал с собой какую-то папку с документами, пытался её предъявлять в качестве доказательств."
+        mt "Last shift, chased after Ulyanka, saying that she had been allowed for a long time, dragged some folder with documents with him, tried to present it as evidence."
     with fade
-    "Ольга взяла со стола пачку путёвок и бегло просмотрела."
-    "Хмыкнула, достала оттуда одну и бросила передо мной."
+    "Olga took a pack of vouchers from the table and skimmed through."
+    "She chuckled, took out one and threw it in front of me."
     $ hvala_randomu_7dl = renpy.random.choice([1, 2, 3])
     if hvala_randomu_7dl == 1:
-        mt "Этого, на «Т», тоже вычёркивай."
+        mt "This one, starting with «Y», cross him out too."
     elif hvala_randomu_7dl == 2:
-        mt "И вот этих на «Д» вычеркни."
+        mt "Cross out those starting with «A». Both of them."
     elif hvala_randomu_7dl == 3:
-        mt "И этого украинского мальчика на «С» тоже."
-    me "Почему?"
+        mt "And this ukrainian guy on «S» too."
+    me "Why?"
     if hvala_randomu_7dl == 1:
-        mt "Да тоже странный. Всё бегал по лагерю, дамбу искал."
-        me "И что?"
-        mt "Да ничего. Угнал лодку, долго кричал, что она плавать не может, уж он-то знает. Так и увезли, плавает в ПНД теперь."
+        mt "Also a weird guy. Kept running around the camp, searching for an intercom."
+        me "So what?"
+        mt "Nothing. Stole the keys, yelled something about overtaking this facility and that some MTF got destroyed in the middle of the night, now he's yelling in a psychiatric dispensary."
     elif hvala_randomu_7dl == 2:
-        mt "Они стенгазету украли вместе со стендом и отсебятины там понаписали. Авторы потом сделали новую, но место ей нашлось только на двери весёлого домика."
+        mt "One almost... hang himself by accident... thrice. Second got mad about that someone spelled «scene» without capitalizing it so he almost beat that guy to death."
     elif hvala_randomu_7dl == 3:
-        mt "Он пробрался в клуб к кибернетикам и перепрограммировал их робота так, что тот научился свистеть и… ещё кое-что делать. Кибернетики потом всё исправили, вот только робот почему-то после исправлений даже ходить разучился."
-    me "Воля ваша."
-    "Семён был очень послушным мальчиком, и ещё один нарушитель спокойствия отсеялся на подходе."
-    "Ольга всё ещё стояла, немного нависнув надо мной, касаясь — я окостенел."
-    mt "У тебя снова кончики ушей покраснели."
+        mt "He snuck into the cybernetics club and reprogrammed their robot so that it learned to whistle and… do something else. Cybernetics then fixed everything, but for some reason, after the corrections, the robot even forgot how to walk."
+    me "As you wish."
+    "Semyon was a very obedient boy, and another troublemaker was weeded out."
+    "Olga was still standing, hovering over me a little, touching me - I froze."
+    mt "Your ears are red again."
     scene bg int_house_of_mt_noitem_night at enterright
     show mt smile pioneer
     with dissolve
-    "Протянув руку, она поставила чайник на стол и воткнула вилку в розетку."
-    me "Ничего и не…"
-    mt "Ты как насчёт полуночного чайку?"
-    "У неё был не обычный чемодан, а стильный — чёрный с красным — дорожный саквояж."
-    "Из-под верхней крышки которого она и достала пакет с вафлями и крохотный заварочный чайник."
-    me "А это можно разве?"
+    "Reaching out her hand, she placed the kettle on the table and plugged it into the socket."
+    me "Nom they didn't…"
+    mt "How do you feel about tea at midnight?"
+    "She had not an ordinary suitcase, but a stylish - black and red - travel bag."
+    "From under the top cover of which she took out a bag of waffles and a tiny teapot."
+    me "Is that even allowed?"
     show mt grin pioneer with dspr
-    mt "Можно! Только осторожно!"
-    "Составляющие будущей чайной церемонии оказались передо мной на столе, окружив добитый список и пачку путёвок рядом с ним."
-    mt "Но придётся немного потрудиться ради этого."
-    me "Опять?!"
+    mt "Of course! Just be careful!"
+    "The components of the future tea ceremony were in front of me on the table, surrounding the completed list and a pack of tickets next to it."
+    mt "But you'll have to work a bit."
+    me "Again?!"
     show mt laugh pioneer with dspr
-    mt "Прости, Сёмчик — я с удовольствием бы поухаживала за тобой…"
-    "Она бросила взгляд на часы."
-    mt "Но труба зовёт — укладывать твоих друзей по койкам."
-    mt "Я постараюсь побыстрее, хорошо?"
-    "Она одарила меня быстрой улыбкой."
-    "И, накинув ветровку, выпорхнула на улицу."
+    mt "Sorry, Syomchik - I would gladly take care of you…"
+    "She glanced at the clock."
+    mt "But duty calls - I have to ensure everyone is in bed."
+    mt "I'll try to be quick, alright?"
+    "She gave me a quick smile."
+    "And, throwing on a windbreaker, fluttered out into the street."
     hide mt with dissolve
-    "Вот и сейчас — пришлось мне ухаживать за нашей вожатой."
-    "Поработал ради неё, теперь приготовлю чай ради неё."
-    "Я поймал себя на мысли, что тихо и глупо улыбаюсь, будто не впервые это у меня — привычно так, уютно, по-домашнему: ворчать на непутёвую девчонку, ожидая её дома с чашкой чая."
+    "Even now I had to take care of our squad leader."
+    "Worked for her - now make tea for her."
+    "I caught myself thinking that I was smiling quietly and stupidly, as if this was not the first time I had it - as usual, comfortably, at home: grumbling at an unlucky girl, waiting for her at home with a cup of tea."
     scene
     $ renpy.show("cg d1_me_dahell_7dl", what = Sepia("cg d1_me_dahell_7dl"))
     show anim_grain
     with flash
-    th "Будто и не было паники у зеркала, страха, сковавшего грудь…"
-    "Я расслабился и наслаждался тёплым, уютным вечером."
+    th "As if there was no panic at the mirror, no fear, fettering the chest…"
+    "I relaxed and enjoyed a warm, cozy evening."
     play ambience ambience_camp_center_night
     play sound sfx_open_door_2
     pause(1)
     scene bg ext_house_of_mt_night_without_light
     with blind_l
-    "Она и правда управилась быстро."
-    "Я едва-едва успел вынести оба стакана в кованых подстаканниках на улицу."
-    "Слева от лестницы, там, где замер верный железный конь нашей ленивой вожатой, было очень удобное место."
-    "Вытертое даже с виду, покрытое какими-то круглыми отметинами."
-    "В две из которых идеально встали оба стакана."
-    th "Прибалконник."
-    "Всплыло вдруг в голове."
-    "Место для вашей обуви, грибов-боровиков, сушащейся рыбы…"
-    "И чашки с чаем."
-    "А когда я уселся на вторую ступеньку, этот прибалконник так идеально лёг под локоть…"
+    "She actually got done with it fast."
+    "I barely had time to carry both glasses in forged glassholders to the street."
+    "To the left of the stairs, where the faithful iron horse of our lazy leader stood, there was a very convenient place."
+    "Worn even in appearance, covered with some kind of round marks."
+    "In two of which both glasses fit perfectly."
+    th "Porch."
+    "The word suddenly appeared in my mind."
+    "Place for your shoes, mushrooms, drying fish…"
+    "And a cup of tea."
+    "And when I sat down on the second step, this porch fit perfectly under my elbow…"
     show mt normal pioneer with dissolve
-    mt "Снова сидишь без света."
-    th "Очевидно. Без света. И без галстука. И без сил."
-    "Ступенька рядом со мной заскрипела под весом усаживающейся Ольги."
-    "Девушка протянула было руку к выключателю — но по дороге махнула рукой."
-    "И отказалась от своей затеи."
-    th "Дмитриевна? Скорее, Ленивовна…"
-    mt "Спасибо за чай, Сёмчик."
-    "Поблагодарила она, бесцеремонно приваливаясь ко мне плечом."
-    "И, с шумом отхлебнув, отставила стакан в сторону, вытянула ноги и запрокинулась назад."
-    "Я сглотнул, проследив за тем, как натянулась рубашка, и отвернулся."
-    mt "Чай замечательный."
+    mt "You're sitting without light again."
+    th "Obviously. Without light. And without my neckerchief. And without any of my strength."
+    "The step next to me creaked under the weight of Olga sitting down."
+    "The girl stretched out her hand to the switch - but on the way she waved her hand..."
+    "And gave up."
+    th "Dmitrievna? More like, Lenivovna…"
+    mt "Thanks for tea, Semchik."
+    "She thanked me, unceremoniously leaning her shoulder against me."
+    "And, noisily taking a sip, she put the glass aside, stretched out her legs and leaned back."
+    "I swallowed as I watched er shirt tighten and turned away."
+    mt "Wonderful tea."
     stop music fadeout 3
-    me "И вечер хороший."
-    mt "Как и всегда в этом лагере."
+    me "And a good evening."
+    mt "As it always is in this camp."
     play music music_7dl["wheres_wonderland"] fadein 3
     scene stars with dissolve2:
         zoom 1.1 xalign 0.5 yalign 0.5 subpixel True
         easein 200.0 zoom 2.5 rotate -10
-    mt "И небо такое огромное."
-    "Прошептала она."
-    "А я услышал."
-    "Как будто знал, что и как она говорит."
-    "Даже то, что я вытянулся на ступеньках рядом с ней, уставившись в живое — дышащее! — небо, было чем-то естественным."
-    mt "Я поручила тебе бумажную работу потому, что доверяю."
-    "Сообщила Ольга."
-    mt "Потому что считаю, что однажды привезу тебя сюда как вожатого."
-    "Тут она фыркнула."
-    mt "Но в первую очередь потому, что когда мы остаёмся вдвоём, у тебя всегда краснеет шея."
-    me "Не краснеет!"
-    mt "Ты всегда так забавно споришь с этим."
-    "Её палец скользнул по небу — сначала к югу, к огромной голубой звезде."
-    "Потом вниз под небольшим углом — к юго-востоку."
-    "Резкий поворот вверх, к северо-востоку, ещё один, ещё…"
-    mt "Неровный пятиугольник, заметный только в этих широтах — помнишь, как он называется?"
-    me "Письмо?"
-    mt "Вот именно… Я могла бы стать астрономом, наблюдать за тем, как на месте топчется наша Вселенная, но вместо этого пошла работать с детьми."
-    mt "Хотя так и не разлюбила иногда просто понаблюдать за звёздами."
-    mt "Как думаешь, Сёмчик — есть там кто-нибудь?"
-    "Я, вспоминая парадокс Ферми, пожал плечами:"
-    me "Если они есть — то где они все?"
-    mt "Злодей-карбонарий с пошлостью на все случаи жизни."
-    "Её смех был грустным, каким-то сожалеющим."
+    mt "And the sky is so vast."
+    "She whispered."
+    "And I heard."
+    "As if I knew what and how she was saying."
+    "Even the fact that I was stretched out on the steps next to her; staring at the living - breathing! - sky was something natural."
+    mt "I gave you paperwork because I trust you."
+    "Olga reported."
+    mt "Because I think that I'll bring you along as a fellow squad leader some day."
+    "She snorted."
+    mt "But first of all, because when we are alone, your neck always turns red."
+    me "It doesn't!"
+    mt "You always funnily argue with that."
+    "Her finger slid across the sky - first to the south, to a huge blue star."
+    "Then down at a slight angle - to the southeast."
+    "Sharp turn up, to the northeast, one more, one more…"
+    mt "An uneven pentagon, noticeable only in these latitudes - remember what it's called?"
+    me "Letter?"
+    mt "That's right… I could have become an astronomer, watching how our Universe is marking time, but instead I went to work with children."
+    mt "Although I never stopped loving just watching the stars sometimes."
+    mt "What do you think, Semchik - is there anyone out there?"
+    "I, remembering the Fermi paradox, shrugged my shoulders:"
+    me "If there's anyone out there - then where are they?"
+    mt "A villain with a vulgarity for any occasion."
+    "Her laugh was sad, somehow regretful."
     if counter_sl_cl == 1:
-        mt "Не злись насчёт дежурства."
-        mt "Я прекрасно понимаю, что ты просто вступился за симпатичную девочку."
-        mt "Но нельзя показывать всепрощения."
-        me "Вот как? Почему?"
-        "Снова смех — в этот раз куда более весёлый."
-        mt "Потому что мгновенно на шею сядете."
-    mt "Мы же последнее лето видимся, ты знаешь?"
-    "Я неопределённо пожал плечами."
-    mt "А завтра ты снова включишь своего «ходока по жизни», и не угнаться за тобой, пока ты копишь впечатления."
-    mt "Так что это, возможно, наш последний шанс посидеть вот так вместе."
-    "Ольга сходила к шезлонгу и утащила оттуда подушку-пенку, которую устроила на верхней ступеньке."
-    mt "Хочешь кусочек подушки?"
-    "Лукаво улыбнулась она."
-    "Я замер и не мог выдавить из себя и звука."
-    "Понятно, что для Ольги это могло быть просто игрой, но…"
-    "Есть же какие-то рамки."
-    mt "Не хочешь? {w}Какой гордый молодой человек."
-    mt "Не бойся, я тебя не съем, даже не покусаю."
-    "Ольга устроилась головой на сложенной пенке, задумчиво глядя в небо."
-    mt "Время, идеальное для сказок, да? {w}Хочешь одну?"
-    "Не ожидая ответа, она начала:"
-    mt "О том, как однажды глупая девчонка, вчерашняя выпускница педагогического, поругалась с начальством."
-    "Её голос звучал всё тише и неувереннее."
-    mt "И её отправили встречать автобус, который вёз всего одного человека."
-    "Приходилось напрягаться изо всех сил, чтобы расслышать отдельные слова."
-    "Двигаться к ней поближе — а и страшно было, и любопытно!"
-    mt "Сказку о том, как чувствуешь, что пропадаешь — и ничего не можешь поделать с этим…"
-    "Она замолчала."
-    "Я и сам пребывал в некоторой прострации от её откровений."
-    mt "Зря боишься."
-    mt "Мы живём в одном доме, неужели ты считаешь, что кого-то удивит, что мы сидим на крыльце вместе?"
-    th "Я боюсь, что кто-то увидит, как мы на одной подушке лежим и курлыкаем как голубки."
-    th "Так как в этот раз это не удастся списать на: «Ну она же первый год работает, не умеет ещё разделять личное и профессиональное», — никак не удастся."
-    mt "Как дедушка с бабушкой."
-    "Ольга снова грустно усмехнулась."
-    mt "Почему ты сегодня не пошёл никуда?"
-    mt "Неужели ни одна девушка не привлекла твоего внимания?"
+        mt "Don't be angry about canteen duty."
+        mt "I understand perfectly well that you just stood up for a pretty girl."
+        mt "But I can't show forgiveness."
+        me "Is that how it is? Why?"
+        "She laughed again - this time more heartily."
+        mt "Because you'll instantly start abusing it."
+    mt "This is our last summer together, you know that?"
+    "I vaguely shrugged."
+    mt "And tomorrow you'll turn your «life walker» back on, and I won't keep up with you while you accumulate impressions."
+    mt "So this might be our last chance to sit like this together."
+    "Olga went to a sun lounger and dragged a foam pillow from there, which she arranged on the top step."
+    mt "Want a piece?"
+    "She smiled mischievously."
+    "I froze and couldn't squeeze out a single sound."
+    "Of course it could just be a game for her, but…"
+    "Were there any limits?"
+    mt "Don't want it? {w}What a proud young man."
+    mt "Don't be afraid, I won't eat you, I won't even bite you."
+    "Olga settled her head on the folded foam, looking thoughtfully into the sky."
+    mt "Perfect time for fairy tales, right? {w}Wanna hear one?"
+    "Without waiting for an answer, she began:"
+    mt "About how once a stupid girl, yesterday's teacher graduate, had a fight with her superiors."
+    "Her voice was getting quieter and more uncertain."
+    mt "And she was sent to meet a bus that was carrying only one person."
+    "I had to strain with all my might to hear individual words."
+    "Moving closer to her was both scary and curious!"
+    mt "A fairy tale about how you feel like you're disappearing - and there's nothing you can do about it…"
+    "She got silent."
+    "I myself was in some prostration from her revelations."
+    mt "Your fear is vain."
+    mt "We live in the same house, do you really think that it will surprise anyone that we are sitting on the porch together?"
+    th "I'm afraid that someone will see us lying on the same pillow and cooing like doves."
+    th "Because this time it can't be attributed to: «Well this is her first year, she doesn't know how to separate personal and professional matters»."
+    mt "Like grandparents."
+    "Olga smiled sadly again."
+    mt "Why didn't you go anywhere today?"
+    mt "There's no way not even a single girl got your attention?"
     menu:
-        "Почему же?":
+        "How so?":
             $ alt_day2_date = 'mt'
-            me "Одна привлекла."
-            "Признался я, наконец. {w}И себе — в первую очередь."
-            me "Всё как в кино, видите, у меня дрожат руки?"
-            mt "Нервы. И ты слишком часто дышишь."
-            me "И сердце ёкает, когда вы у меня на плече."
-            mt "Просто слишком крепкий чай."
-            me "Не просто же так мы оказались вместе, может, это знак?"
-            mt "Кто-то перечитал книжек про любовь."
-            me "И сколько вы ещё будете издеваться?"
-            mt "Почему я волнуюсь за этого обормота…"
-            "Вздохнула девушка."
-            "И, немного приподняв голову, коснулась губами моей щеки."
+            me "One did."
+            "I finally confessed. {w}Firstly - to myself."
+            me "It's all just like in the movies, see, my hands are trembling?"
+            mt "That's just nerves. And you're breathing too fast."
+            me "And my heart skips a beat when you're on my shoulder."
+            mt "The tea is just too strong."
+            me "We're together for a reason, maybe that's a sign?"
+            mt "Someone read too many romance novels."
+            me "For how long are you going to tease me?"
+            mt "Why do I even worry about you…"
+            "The girl sighed."
+            "And, raising her head a little, she touched my cheek with her lips."
             scene bg ext_house_of_mt_night_without_light at zenterleft
             show mt sad pioneer at cleft
             with dissolve
-            me "Опс!"
-            mt "Знаешь, будь я года на три моложе — поверила бы безоговорочно."
-            "Она поднялась."
+            me "Oops!"
+            mt "You know, if I would be three years younger - I would've definitely believed you."
+            "She got up."
             show mt smile pioneer at cleft with dspr
-            mt "Ты говоришь самые неотразимые вещи, чёртов льстец!"
-        "Как-то не сложилось":
-            mt "Вот как? Ну, ничего, у тебя ещё есть немного времени."
+            mt "You say the most irresistible things, you fucking flatterer!"
+        "It didn't work out.":
+            mt "Is that so? Eh, it's alright, you still have time."
             scene bg ext_house_of_mt_night_without_light at zenterleft
             show mt normal pioneer at cleft
             with dissolve
-    mt "Пойду я."
-    me "Летучка?"
-    "Догадался я."
-    mt "Она самая.{w} Спасибо за чай."
+    mt "I should go."
+    me "Meeting?"
+    "I figured."
+    mt "Yup.{w} Thanks for the tea."
     hide mt with dissolve
-    "Она беззвучно удалилась, оставляя меня наедине с тёплой ночью."
-    "С зовущей, манящей, волшебной, тёплой ночью."
-    "Идеальным временем для того, чтобы сбылись все ваши самые светлые мечты."
-    "Ольга повела себя очень странно, а я очень странно на неё среагировал."
-    "Значит ли это, что у нас возможно будущее?"
+    "She silently departed, leaving me alone with the warm night."
+    "With a calling, alluring, magical, warm night."
+    "The perfect time for all your wildest dreams to come true."
+    "Olga behaved very strangely, and I reacted just as strangely to her."
+    "Does this mean we have a future?"
     stop music fadeout 3
     stop ambience fadeout 6
     with fade

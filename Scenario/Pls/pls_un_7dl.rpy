@@ -5,7 +5,7 @@
         pause(1)
         $ persistent.sprite_time = "sunset"
         $ sunset_time()
-        $ alt_chapter(4, u"Лена. 7ДЛ. Утро")
+        $ alt_chapter(4, u"Lena. 7DS. Morning")
         call alt_day4_un_7dl_begin
         pause(1)
         if not alt_day4_un_7dl_morning_searching:
@@ -22,7 +22,7 @@
         pause(1)
     $ persistent.sprite_time = "day"
     $ day_time()
-    $ alt_chapter(4, u"Лена. 7ДЛ. День")
+    $ alt_chapter(4, u"Lena. 7DS. Day")
     call alt_day4_un_7dl_dinner
     pause(1)
     if loki:
@@ -42,7 +42,7 @@
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(4, u"Лена. 7ДЛ. Вечер")
+    $ alt_chapter(4, u"Lena. 7DS. Evening")
     call alt_day4_un_7dl_supper
     pause(1)
     if herc or loki:
@@ -64,7 +64,7 @@ label alt_day5_un_7dl_start:
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(5, u"Лена. 7ДЛ. Утро")
+    $ alt_chapter(5, u"Lena. 7DS. Morning")
     call alt_day5_un_7dl_begin
     pause(1)
     call alt_day5_un_7dl_breakfast
@@ -91,7 +91,7 @@ label alt_day5_un_7dl_start:
             pause(1)
         $ persistent.sprite_time = "day"
         $ day_time()
-        $ alt_chapter(5, u"Лена. 7ДЛ. Обед")
+        $ alt_chapter(5, u"Lena. 7DS. Dinner")
         call alt_day5_un_7dl_dinner
         pause(1)
         if dr and ('nwsppr' in list_clubs_7dl):
@@ -112,7 +112,7 @@ label alt_day5_un_7dl_start:
             pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(5, u"Лена. 7ДЛ. Вечер")
+    $ alt_chapter(5, u"Lena. 7DS. Evening")
     call alt_day5_un_7dl_supper
     pause(1)
     call alt_day5_un_7dl_campfire
@@ -136,7 +136,7 @@ label alt_day5_un_7dl_start:
         pause(1)
     $ persistent.sprite_time = "night"
     $ night_time()
-    $ alt_chapter(5, u"Лена. 7ДЛ. Ночь")
+    $ alt_chapter(5, u"Lena. 7DS. Night")
     call alt_day5_un_7dl_sleeptime
     pause(1)
     jump alt_day6_un_7dl_start
@@ -147,14 +147,14 @@ label alt_day6_un_7dl_start:
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(6, u"Лена. 7ДЛ. Утро")
+    $ alt_chapter(6, u"Lena. 7DS. Morning")
     call alt_day6_un_7dl_begin
     pause(1)
     call alt_day6_un_7dl_search
     pause(1)
     $ persistent.sprite_time = "day"
     $ day_time()
-    $ alt_chapter(6, u"Лена. 7ДЛ. День")
+    $ alt_chapter(6, u"Lena. 7DS. Day")
     call alt_day6_un_7dl_dinner
     pause(1)
     call alt_day6_un_7dl_career
@@ -165,7 +165,7 @@ label alt_day6_un_7dl_start:
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(6, u"Лена. 7ДЛ. Вечер")
+    $ alt_chapter(6, u"Lena. 7DS. Evening")
     call alt_day6_un_7dl_supper
     pause(1)
     call alt_day6_un_7dl_catapult
@@ -174,10 +174,10 @@ label alt_day6_un_7dl_start:
         return
     $ persistent.sprite_time = "night"
     $ night_time()
-    $ alt_chapter(6, u"Лена. 7ДЛ. Танцы")
+    $ alt_chapter(6, u"Lena. 7DS. Dances")
     call alt_day6_un_7dl_dance
     pause(1)
-    $ alt_chapter(6, u"Лена. 7ДЛ. Ночь")
+    $ alt_chapter(6, u"Lena. 7DS. Night")
     call alt_day6_un_7dl_sleeptime
     pause(1)
     $ alt_day7_un_7dl_rnm = lp_un * 4
@@ -201,7 +201,7 @@ label alt_day7_un_7dl_start:
     pause(1)
     $ persistent.sprite_time = "prolog"
     $ prolog_time()
-    $ alt_chapter(7, u"Лена. 7ДЛ. Утро")
+    $ alt_chapter(7, u"Lena. 7DS. Morning")
     call alt_day7_un_7dl_begin
     pause(1)
     $ persistent.sprite_time = "day"
@@ -216,7 +216,7 @@ label alt_day7_un_7dl_start:
     $ night_time()
     call alt_day7_un_7dl_pills
     pause(1)
-    $ alt_chapter(7, u"Лена. 7ДЛ. Эпилог")
+    $ alt_chapter(7, u"Lena. 7DS. Epilogue")
     if routetag == "un7dlgood":
         call alt_day7_un_7dl_miracle
         pause(1)

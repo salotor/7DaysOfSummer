@@ -6,7 +6,7 @@
         pause(1)
         $ persistent.sprite_time = "sunset"
         $ sunset_time()
-        $ alt_chapter(4, u"Славя. Утро.")
+        $ alt_chapter(4, u"Slavya. Morning.")
         call alt_day4_sl_cl_begin
         pause(1)
     call alt_day4_sl_cl_shurik
@@ -16,12 +16,12 @@
         pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(4, u"Славя. Вечер.")
+    $ alt_chapter(4, u"Slavya. Evening.")
     call alt_day4_sl_cl_supper
     pause(1)
     call alt_day4_sl_cl_party_up
     pause(1)
-    $ alt_chapter(4, u"Славя. Поиски.")
+    $ alt_chapter(4, u"Slavya. Searches.")
     call alt_day4_sl_cl_lf_coop
     pause(1)
     $ persistent.sprite_time = "night"
@@ -43,7 +43,7 @@ label alt_day5_sl_cl_start:
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(5, u"Славя. Утро.")
+    $ alt_chapter(5, u"Slavya. Morning.")
     call alt_day5_sl_cl_begin
     pause(1)
     call alt_day5_sl_cl_chief
@@ -66,19 +66,19 @@ label alt_day5_sl_cl_start:
     $ day_time()
     call alt_day5_sl_cl_return
     pause(1)
-    $ alt_chapter(5, u"Славя. День.")
+    $ alt_chapter(5, u"Slavya. Day.")
     call alt_day5_sl_cl_dinner
     pause(1)
     call alt_day5_sl_cl_campfire_prepare
     pause(1)
     call alt_day5_sl_cl_bathing
     pause(1)
-    $ alt_chapter(5, u"Славя. Вечер.")
+    $ alt_chapter(5, u"Slavya. Evening.")
     call alt_day5_sl_cl_supper
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(5, u"Славя. Костёр.")
+    $ alt_chapter(5, u"Slavya. Bonfire.")
     call alt_day5_sl_cl_campfire
     pause(1)
     call alt_day5_sl_cl_dn_aid
@@ -87,7 +87,7 @@ label alt_day5_sl_cl_start:
     $ night_time()
     call alt_day5_sl_cl_cs_reward
     pause(1)
-    $ alt_chapter(5, u"Славя. Ночь.")
+    $ alt_chapter(5, u"Slavya. Night.")
     call alt_day5_sl_cl_night
     pause(1)
     call alt_day5_sl_cl_sleeptime
@@ -100,7 +100,7 @@ label alt_day6_sl_cl_start:
     pause(1)
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    $ alt_chapter(6, u"Славя. Утро.")
+    $ alt_chapter(6, u"Slavya. Morning.")
     if alt_day5_sl_cl_hentai_done:
         call alt_day6_sl_cl_begin_good
     elif alt_day4_sl_cl_tut_iz:
@@ -118,7 +118,7 @@ label alt_day6_sl_cl_start:
     $ day_time()
     call alt_day6_sl_cl_ba_kgb
     pause(1)
-    $ alt_chapter(6, u"Славя. День.")
+    $ alt_chapter(6, u"Slavya. Day.")
     call alt_day6_sl_cl_dinner
     pause(1)
     call alt_day6_sl_cl_amp_list
@@ -136,7 +136,7 @@ label alt_day6_sl_cl_start:
         $ night_time()
         call alt_day6_sl_cl_sh_story
         pause(1)
-        $ alt_chapter(6, u"Славя. Снова один.")
+        $ alt_chapter(6, u"Slavya. Alone again.")
         call alt_day6_sl_cl_sh_tug
         pause(1)
     else:
@@ -159,7 +159,7 @@ label alt_day6_sl_cl_start:
             pause(1)
             if alt_day6_sl_cl_int == 2:
                 $ routetag = "sltrue"
-                $ alt_chapter(7, u"Славя. Фантазм.")
+                $ alt_chapter(7, u"Slavya. Phantasm")
                 call alt_day7_sl_cl_fear
                 pause(1)
                 $ persistent.sprite_time = "day"
@@ -169,7 +169,7 @@ label alt_day6_sl_cl_start:
                 if alt_day6_sl_cl_int == 3:
                     $ persistent.sprite_time = "night"
                     $ night_time()
-                    $ alt_chapter(7, u"Славя. Выбор.")
+                    $ alt_chapter(7, u"Slavya. Choice.")
                     call alt_day7_sl_cl_loop
                     pause(1)
                     $ persistent.sprite_time = "day"
@@ -195,7 +195,7 @@ label alt_day6_sl_cl_start:
         else:
             call alt_day6_sl_cl_regular_arc
             pause(1)
-            $ alt_chapter(6, u"Славя. Концерт.")
+            $ alt_chapter(6, u"Slavya. Concert.")
             call alt_day6_sl_cl_hala
             pause(1)
             $ persistent.sprite_time = "sunset"
@@ -204,14 +204,14 @@ label alt_day6_sl_cl_start:
             pause(1)
             call alt_day6_sl_cl_supper
             pause(1)
-            $ alt_chapter(6, u"Славя. Танцы")
+            $ alt_chapter(6, u"Slavya. Disco")
             call alt_day6_sl_cl_dance
             pause(1)
             call alt_day6_sl_cl_dancing
             pause(1)
             $ persistent.sprite_time = "night"
             $ night_time()
-            $ alt_chapter(6, u"Славя. Ночь.")
+            $ alt_chapter(6, u"Slavya. Night.")
             call alt_day6_sl_cl_debarkader
             pause(1)
     jump alt_day7_sl_cl_start
@@ -228,12 +228,12 @@ label alt_day7_sl_cl_start:
     $ sunset_time()
     if alt_day6_sl_cl_arc == 'sh':
         $ routetag = "sl"
-        $ alt_chapter(7, u"Славя. Изолятор.")
+        $ alt_chapter(7, u"Slavya. Isolation room.")
         call alt_day7_sl_cl_begin_sh
-        $ alt_chapter(7, u"Славя. Утро.")
+        $ alt_chapter(7, u"Slavya. Morning.")
     else:
         $ routetag = "slbad"
-        $ alt_chapter(7, u"Славя. Утро.")
+        $ alt_chapter(7, u"Slavya. Morning.")
         call alt_day7_sl_cl_begin_pi
     pause(1)
     call alt_day7_sl_cl_incident
@@ -254,7 +254,7 @@ label alt_day7_sl_cl_start:
     elif alt_day6_sl_cl_good == 0:
         call alt_day7_sl_cl_departure_lone
         pause(1)
-    $ alt_chapter(7, u"Славя. Эпилог.")
+    $ alt_chapter(7, u"Slavya. Epilogue.")
     $ persistent.sprite_time = "prolog"
     $ prolog_time()
     if (lp_sl >= 18) or (alt_sp >= 6):

@@ -1,33 +1,33 @@
 init 9999 python:
-    # Лейблы
+    # Labels
 
-    ## Коммон
-    ### 0 День
+    ## Common
+    ### Day 0
     sdl_repl_array_common_day0 = [
         sdl_repl_Label(
-            "Локи",
+            "Loki",
             sdl_Replay("alt_day0_start_l", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Герк",
+            "Herc",
             sdl_Replay("alt_day0_start_h", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Дрищ",
+            "Wimp",
             sdl_Replay("alt_day0_start_d", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
             char_mask = 1
         )
     ]
-    ### 1 День
+    ### 1 Day
     sdl_repl_array_common_day1 = [
         sdl_repl_Label(
-            "Начало",
+            "Beginning",
             sdl_Replay("alt_day1_begin", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Пробуждение",
+            "Awakening",
             sdl_Replay(
                         "alt_day1_bus_start", {"alt_replay_on" : "True"},
                         music = music_7dl["areyouabully"],
@@ -35,18 +35,18 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Первое знакомство",
+            "First meeting",
             sdl_Replay(
                         "alt_day1_firts_met", {"alt_replay_on" : "True"},
-                        meets = {'sl' : 'Блондинка'},
+                        meets = {'sl' : 'Blonde'},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Прибытие",
+            "Arrival",
             sdl_Replay(
                         "alt_day1_arrival", {"alt_replay_on" : "True"},
-                        meets = {'dv' : 'Рыжая', 'sl' : 'Блондинка', 'un' : 'Грустная девочка', 'us' : 'Мелкая'},
+                        meets = {'dv' : 'Redhead', 'sl' : 'Blonde', 'un' : 'Sad girl', 'us' : 'Kid'},
                         meet_restr = {'sl' : 'alt_day1_sl_met'},
                         vars = [
                                     sdl_var_b_d1_sl_met,
@@ -56,24 +56,24 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Побег от рыжих",
+            "Redheads",
             sdl_Replay("alt_day1_chase1", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 6
         ),
         sdl_repl_Label(
-            "Склад",
+            "Warehouse",
             sdl_Replay(
                         "alt_day1_warehouse", {"alt_replay_on" : "True"},
-                        meets = {'sl' : 'Блондинка'},
+                        meets = {'sl' : 'Blonde'},
                         func_in = day_interface_on, func_out = replay_screens_load
                       ),
             char_mask = 6
         ),
         sdl_repl_Label(
-            "Вожатая",
+            "Squad leader",
             sdl_Replay(
                         "alt_day1_mod_tan", {"alt_replay_on" : "True"},
-                        meets = {'cs' : 'Медсестра', 'mt' : 'Вожатая', 'sl' : 'Блондинка', 'us' : 'Мелкая'},
+                        meets = {'cs' : 'Nurse', 'mt' : 'Counselor', 'sl' : 'Blonde', 'us' : 'Kid'},
                         meet_restr = {'sl' : 'alt_day1_sl_met'},
                         vars = [
                                     sdl_var_b_d1_sl_met,
@@ -83,10 +83,10 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Электроник",
+            "Elektronik",
             sdl_Replay(
                         "alt_day1_elektron", {"alt_replay_on" : "True"},
-                        meets = {'el' : "Кудрявый"},
+                        meets = {'el' : "Curly"},
                         vars = [
                                     sdl_var_i_sl_7dl
                                 ],
@@ -94,7 +94,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Экскурсия",
+            "Excursion",
             sdl_Replay(
                         "alt_day1_meeting", {"alt_replay_on" : "True"},
                         vars = [
@@ -104,10 +104,10 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Футбольное поле",
+            "Football field",
             sdl_Replay(
                         "alt_day1_soccer_d1", {"alt_replay_on" : "True"},
-                        meets = {'us' : 'Мелкая'},
+                        meets = {'us' : 'Kid'},
                         vars = [
                                     sdl_var_b_d1_el_foll,
                                     sdl_var_i_sl_7dl
@@ -116,7 +116,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day1_supper", {"alt_replay_on" : "True"},
                         vars = [
@@ -126,15 +126,15 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Экскурсия. Вечер",
+            "Excursion. Evening",
             sdl_Replay(
                         "alt_day1_meeting2", {"alt_replay_on" : "True"},
-                        meets = {'al' : 'Сердитый мальчик', 'dn' : 'Кудрявый'},
+                        meets = {'al' : 'Angry boy', 'dn' : 'Curly'},
                         func_in = sunset_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Погоня",
+            "Chasing",
             sdl_Replay(
                         "alt_day1_chase", {"alt_replay_on" : "True"},
                         vars = [
@@ -144,7 +144,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Погоня. Хэдшот",
+            "Chasing. Headshot",
             sdl_Replay(
                         "alt_day1_headshot", {"alt_replay_on" : "True"},
                         vars = [
@@ -154,7 +154,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Погоня. Не догнал",
+            "Chasing. Too slow!",
             sdl_Replay(
                         "alt_day1_nocatch", {"alt_replay_on" : "True"},
                         vars = [
@@ -164,7 +164,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Спасительница",
+            "Saviour",
             sdl_Replay(
                         "alt_day1_slavya_saviour", {"alt_replay_on" : "True"},
                         vars = [
@@ -174,7 +174,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Лена",
+            "Lena",
             sdl_Replay(
                         "alt_day1_lena", {"alt_replay_on" : "True"},
                         vars = [
@@ -184,7 +184,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Light out",
             sdl_Replay(
                         "alt_day1_sleep", {"alt_replay_on" : "True"},
                         vars = [
@@ -195,10 +195,10 @@ init 9999 python:
                       )
         )
     ]
-    ### 2 День
+    ### 2 Day
     sdl_repl_array_common_day2 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day2_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -210,7 +210,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Линейка",
+            "Lineup",
             sdl_Replay(
                         "alt_day2_lineup", {"alt_replay_on" : "True"},
                         vars = [
@@ -221,7 +221,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day2_bf", {"alt_replay_on" : "True"},
                         vars = [
@@ -233,7 +233,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход с Леной",
+            "Checklist. Lena",
             sdl_Replay(
                         "alt_day2_un_guide", {"alt_replay_on" : "True"},
                         vars = [
@@ -243,11 +243,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход со Славей",
+            "Checklist. Slavya",
             sdl_Replay("alt_day2_sl_guide", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Обход. Выбор спутницы",
+            "Checklist. Choice",
             sdl_Replay(
                         "alt_day2_convoy", {"alt_replay_on" : "True"},
                         vars = [
@@ -262,7 +262,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Музклуб",
+            "Checklist. Mus. Club",
             sdl_Replay(
                         "alt_day2_event_music_club1", {"alt_replay_on" : "True"},
                         vars = [
@@ -274,10 +274,10 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Музклуб. Внутри",
+            "Checklist. Mus. Club. Inside",
             sdl_Replay(
                         "alt_day2_inmusic", {"alt_replay_on" : "True"},
-                        meets = {'mi' : 'Японка'},
+                        meets = {'mi' : 'Japanese girl'},
                         vars = [
                                     sdl_var_e_d2_conv,
                                     sdl_var_l_d2_voya
@@ -286,10 +286,10 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Клубы",
+            "Checklist. Clubs",
             sdl_Replay(
                         "alt_day2_event_clubs1", {"alt_replay_on" : "True"},
-                        meets = {'sh' : 'Очкарик'},
+                        meets = {'sh' : 'Nerd'},
                         meet_restr = {'sh' : 'alt_day2_sh_met'},
                         vars = [
                                     sdl_var_b_d2_sh_met,
@@ -303,11 +303,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Стоянка",
+            "Checklist. Bus stop",
             sdl_Replay("alt_day2_event_camp_entrance1", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Обход. Дом рыжих",
+            "Checklist. Redheads cabin",
             sdl_Replay(
                         "alt_day2_event_dv_us_house1", {"alt_replay_on" : "True"},
                         vars = [
@@ -319,11 +319,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Столовая",
+            "Checklist. Canteen",
             sdl_Replay("alt_day2_event_dining_hall1", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Обход. Спортплощадка",
+            "Checklist. Football field",
             sdl_Replay(
                         "alt_day2_event_sport_area1", {"alt_replay_on" : "True"},
                         vars = [
@@ -337,7 +337,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Пляж",
+            "Checklist. Beach",
             sdl_Replay(
                         "alt_day2_event_beach1", {"alt_replay_on" : "True"},
                         vars = [
@@ -347,14 +347,14 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Дом Семёна и Ольги",
+            "Checklist. Semyon's cabin",
             sdl_Replay("alt_day2_event_me_mt_house1", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Обход. Библиотека",
+            "Checklist. Library",
             sdl_Replay(
                         "alt_day2_event_library1", {"alt_replay_on" : "True"},
-                        meets = {'sh' : 'Очкарик'},
+                        meets = {'sh' : 'Nerd'},
                         meet_restr = {'sh' : 'alt_day2_sh_met'},
                         vars = [
                                     sdl_var_b_d2_sh_met,
@@ -365,7 +365,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Библиотека. Женя",
+            "Checklist. Library. Zhenya",
             sdl_Replay(
                         "alt_day2_mz", {"alt_replay_on" : "True"},
                         vars = [
@@ -376,7 +376,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Медпункт",
+            "Checklist. Infirmary",
             sdl_Replay(
                         "alt_day2_event_medic_house1", {"alt_replay_on" : "True"},
                         vars = [
@@ -388,7 +388,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Площадь",
+            "Checklist. Square",
             sdl_Replay("alt_day2_event_square_1", {"alt_replay_on" : "True"},
                         vars = [
                                     sdl_var_e_d2_conv,
@@ -397,11 +397,11 @@ init 9999 python:
                         func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Обход. Площадь. Повторно",
+            "Checklist. Square. Again",
             sdl_Replay("alt_day2_event_square_dunno", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Обход. Площадь. Ключи",
+            "Checklist. Square. Keys",
             sdl_Replay(
                         "alt_day2_sl_hyst", {"alt_replay_on" : "True"},
                         vars = [
@@ -411,7 +411,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Лодочная станция",
+            "Checklist. Pier",
             sdl_Replay(
                         "alt_day2_event_boat_station1", {"alt_replay_on" : "True"},
                         vars = [
@@ -423,7 +423,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Эстрада",
+            "Checklist. Stage",
             sdl_Replay(
                         "alt_day2_event_estrade", {"alt_replay_on" : "True"},
                         vars = [
@@ -435,7 +435,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Эстрада. Осмотр",
+            "Stage. Looking around",
             sdl_Replay(
                         "alt_day2_dubstep", {"alt_replay_on" : "True"},
                         vars = [
@@ -446,11 +446,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Эстрада. Микрофон",
+            "Stage. Microphone",
             sdl_Replay("alt_day2_phone", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Эстрада. Миниджек",
+            "Stage. Minijack",
             sdl_Replay(
                         "alt_day2_dubstep2", {"alt_replay_on" : "True"},
                         vars = [
@@ -463,10 +463,10 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day2_dinner", {"alt_replay_on" : "True"},
-                        meets = {'mi' : 'Японка'},
+                        meets = {'mi' : 'Japanese girl'},
                         meet_restr = {'mi' : 'alt_day2_mi_met'},
                         vars = [
                                     sdl_var_b_d1_el_foll,
@@ -487,7 +487,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Великий побег",
+            "The Grand Escape",
             sdl_Replay(
                         "alt_day2_grand_escape", {"alt_replay_on" : "True"},
                         vars = [
@@ -497,7 +497,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Тихий час",
+            "Quiet hour",
             sdl_Replay(
                         "alt_day2_siesta", {"alt_replay_on" : "True"},
                         vars = [
@@ -510,10 +510,10 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Подготовка к турниру",
+            "Tournament preparations",
             sdl_Replay(
                         "alt_day2_tournament", {"alt_replay_on" : "True"},
-                        meets = {'mi' : 'Японка'},
+                        meets = {'mi' : 'Japanese girl'},
                         meet_restr = {'mi' : 'alt_day2_mi_met'},
                         vars = [
                                     sdl_var_e_d2_mi_date,
@@ -524,11 +524,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "За картами. Один",
+            "Cards. Solo",
             sdl_Replay("alt_day2_walk_alone", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "За картами. Со Славей",
+            "Cards. Slavya",
             sdl_Replay(
                         "alt_day2_walk_sl", {"alt_replay_on" : "True"},
                         vars = [
@@ -539,7 +539,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ультиматум",
+            "Ultimatum",
             sdl_Replay(
                         "alt_day2_ultim", {"alt_replay_on" : "True"},
                         vars = [
@@ -554,7 +554,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Турнир",
+            "Tournament",
             sdl_Replay(
                         "alt_day2_cards_tournament", {"alt_replay_on" : "True"},
                         vars = [
@@ -565,18 +565,18 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day2_supper", {"alt_replay_on" : "True"},
                         vars = [
                                     sdl_var_i_sl_7dl
-                                    # переменные турнира
+                                    # Tournament int
                                 ],
                         func_in = sunset_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Ужин. Продолжение",
+            "Supper. Later",
             sdl_Replay(
                         "alt_day2_sup2", {"alt_replay_on" : "True"},
                         vars = [
@@ -584,13 +584,13 @@ init 9999 python:
                                     sdl_var_i_sl_lpp,
                                     sdl_var_i_sl_7dl,
                                     sdl_var_e_d2_dv_ulti
-                                    # переменные турнира
+                                    # Tournament int
                                 ],
                         func_in = sunset_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Погоня за Ульяной",
+            "Chasing Ulyana",
             sdl_Replay(
                         "alt_day2_slot_us_try", {"alt_replay_on" : "True"},
                         vars = [
@@ -600,7 +600,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер. Пляж",
+            "Supper. Beach",
             sdl_Replay(
                         "alt_day2_eventEv_beach1", {"alt_replay_on" : "True"},
                         vars = [
@@ -609,13 +609,13 @@ init 9999 python:
                                     sdl_var_i_dv_lpp,
                                     sdl_var_e_d2_dv_ulti,
                                     sdl_var_l_d2_jclu
-                                    # переменные турнира
+                                    # Tournament int
                                 ],
                         func_in = sunset_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Вечер. Музклуб",
+            "Supper. Mus. Club",
             sdl_Replay(
                         "alt_day2_eventEv_music_club1", {"alt_replay_on" : "True"},
                         vars = [
@@ -629,32 +629,32 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер. Клубы",
+            "Evening. Clubs",
             sdl_Replay("alt_day2_eventEv_clubs1", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Вечер. Стоянка",
+            "Evening. Bus stop",
             sdl_Replay("alt_day2_eventEv_camp_entrance1", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Вечер. Столовая",
+            "Evening. Canteen",
             sdl_Replay("alt_day2_eventEv_dining_hall1", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Вечер. Спортплощадка",
+            "Evening. Football field",
             sdl_Replay(
                         "alt_day2_eventEv_sport_area1", {"alt_replay_on" : "True"},
                         vars = [
                                     sdl_var_i_un_lpp,
                                     sdl_var_e_d2_conv,
                                     sdl_var_l_d2_voya
-                                    # переменные турнира
+                                    # Tournament int
                                 ],
                         func_in = sunset_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Вечер. Дом Лены и Мику",
+            "Evening. Lena and Miku's cabin",
             sdl_Replay(
                         "alt_day2_eventEv_un_mi_house1", {"alt_replay_on" : "True"},
                         vars = [
@@ -666,17 +666,17 @@ init 9999 python:
                                     sdl_var_e_d2_conv,
                                     sdl_var_l_d2_voya,
                                     sdl_var_l_d2_club
-                                    # переменные турнира
+                                    # Tournament int
                                 ],
                         func_in = sunset_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Вечер. Дом рыжих",
+            "Evening. Redhead's cabin",
             sdl_Replay("alt_day2_eventEv_dv_us_house1", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Вечер. Дом Семёна и Ольги",
+            "Evening. Olga and Semyon's cabin",
             sdl_Replay(
                         "alt_day2_eventEv_me_mt_house1", {"alt_replay_on" : "True"},
                         vars = [
@@ -686,11 +686,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер. Библиотека",
+            "Evening. Library",
             sdl_Replay("alt_day2_eventEv_library1", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Вечер. Медпункт",
+            "Evening. Infirmary",
             sdl_Replay(
                         "alt_day2_eventEv_medic_house1", {"alt_replay_on" : "True"},
                         vars = [
@@ -700,7 +700,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер. Эстрада",
+            "Evening. Stage",
             sdl_Replay(
                         "alt_day2_eventEv_estrade1", {"alt_replay_on" : "True"},
                         vars = [
@@ -710,7 +710,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер. Площадь",
+            "Evening. Square",
             sdl_Replay(
                         "alt_day2_eventEv_square1", {"alt_replay_on" : "True"},
                         vars = [
@@ -725,7 +725,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер. Пристань",
+            "Evening. Pier",
             sdl_Replay(
                         "alt_day2_eventEv_boat_station1", {"alt_replay_on" : "True"},
                         vars = [
@@ -735,7 +735,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер с Мику",
+            "Evening with Miku",
             sdl_Replay(
                         "alt_day2_slot_mi", {"alt_replay_on" : "True"},
                         vars = [
@@ -748,7 +748,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер с Алисой",
+            "Evening with Alisa",
             sdl_Replay(
                         "alt_day2_slot_dv", {"alt_replay_on" : "True"},
                         vars = [
@@ -757,13 +757,13 @@ init 9999 python:
                                     sdl_var_i_dv_lpp,
                                     sdl_var_e_d2_dv_ulti,
                                     sdl_var_l_d2_jclu
-                                    # переменные турнира
+                                    # Tournament int
                                 ],
                         func_in = sunset_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Вечер со Славей",
+            "Evening with Slavya",
             sdl_Replay(
                         "alt_day2_slot_sl", {"alt_replay_on" : "True"},
                         vars = [
@@ -775,7 +775,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер с Леной (Локи)",
+            "Evening with Lena (Loki)",
             sdl_Replay(
                         "alt_day2_un_loki_date", {"alt_replay_on" : "True"},
                         vars = [
@@ -790,7 +790,7 @@ init 9999 python:
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Вечер с Леной (Герк)",
+            "Evening with Lena (Herc)",
             sdl_Replay(
                         "alt_day2_un_herc_date", {"alt_replay_on" : "True"},
                         vars = [
@@ -801,28 +801,28 @@ init 9999 python:
                                     sdl_var_e_d2_conv,
                                     sdl_var_l_d2_voya,
                                     sdl_var_l_d2_club
-                                    # переменные турнира
+                                    # Tournament int
                                 ],
                         func_in = sunset_interface_on, func_out = replay_screens_load
                       ),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Вечер с Леной (Дрищ)",
+            "Evening with Lena (Wimp)",
             sdl_Replay(
                         "alt_day2_slot_un", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_evening,
                         vars = [
                                     sdl_var_e_d2_conv,
                                     sdl_var_l_d2_voya
-                                    # переменные турнира
+                                    # Tournament int
                                 ],
                         func_in = sunset_interface_on, func_out = replay_screens_load
                       ),
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Вечер с Ольгой",
+            "Evening with Olga",
             sdl_Replay(
                         "alt_day2_slot_mt", {"alt_replay_on" : "True"},
                         vars = [
@@ -832,15 +832,15 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер с Ульяной",
+            "Evening with Ulyana",
             sdl_Replay(
                         "alt_day2_slot_us", {"alt_replay_on" : "True"},
-                        vars = None,    # переменные турнира
+                        vars = None,    # Tournament int
                         func_in = sunset_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day2_dream", {"alt_replay_on" : "True"},
                         vars = [
@@ -848,16 +848,16 @@ init 9999 python:
                                     sdl_var_b_d2_mt_help,
                                     sdl_var_e_d2_date,
                                     sdl_var_l_d2_voya
-                                    # переменные турнира
+                                    # Tournament int
                                 ],
                         func_in = night_interface_on, func_out = replay_screens_load
                       )
         )
     ]
-    ### 3 День
+    ### 3 Day
     sdl_repl_array_common_day3 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay("alt_day3_begin", {"alt_replay_on" : "True"},
                         vars = [
                                     sdl_var_e_d2_mi_date,
@@ -870,12 +870,12 @@ init 9999 python:
                                     sdl_var_e_d2_date,
                                     sdl_var_l_d1_sl,
                                     sdl_var_l_d2_club
-                                    # переменные турнира
+                                    # Tournament int
                                 ],
                         func_in = prolog_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day3_bf", {"alt_replay_on" : "True"},
                         vars = [
@@ -890,7 +890,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Дежурство",
+            "Duty",
             sdl_Replay(
                         "alt_day3_bf_duty", {"alt_replay_on" : "True"},
                         vars = [
@@ -904,7 +904,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Музклуб",
+            "Morning. Mus. Club",
             sdl_Replay(
                         "alt_day3_event_music_club1", {"alt_replay_on" : "True"},
                         vars = [
@@ -914,7 +914,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Клубы",
+            "Morning. Clubs",
             sdl_Replay(
                         "alt_day3_event_clubs1", {"alt_replay_on" : "True"},
                         vars = [
@@ -924,7 +924,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Стоянка",
+            "Morning. Bus stop",
             sdl_Replay(
                         "alt_day3_event_camp_entrance1", {"alt_replay_on" : "True"},
                         vars = [
@@ -937,7 +937,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Столовая",
+            "Morning. Canteen",
             sdl_Replay(
                         "alt_day3_event_dining_hall1", {"alt_replay_on" : "True"},
                         vars = [
@@ -947,7 +947,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Спортплощадка",
+            "Morning. Football field",
             sdl_Replay(
                         "alt_day3_event_sport_area1", {"alt_replay_on" : "True"},
                         vars = [
@@ -958,7 +958,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Пляж",
+            "Morning. Beach",
             sdl_Replay(
                         "alt_day3_event_beach1", {"alt_replay_on" : "True"},
                         vars = [
@@ -973,7 +973,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Библиотека",
+            "Morning. Library",
             sdl_Replay(
                         "alt_day3_event_library1", {"alt_replay_on" : "True"},
                         vars = [
@@ -986,7 +986,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Медпункт",
+            "Morning. Infirmary",
             sdl_Replay(
                         "alt_day3_event_medic_house1", {"alt_replay_on" : "True"},
                         vars = [
@@ -996,7 +996,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Эстрада",
+            "Morning. Stage",
             sdl_Replay(
                         "alt_day3_event_estrade1", {"alt_replay_on" : "True"},
                         vars = [
@@ -1013,15 +1013,15 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Площадь",
+            "Morning. Square",
             sdl_Replay("alt_day3_event_square1", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Утро. Пристань",
+            "Morning. Pier",
             sdl_Replay("alt_day3_event_boat_station1", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Утро с Мику",
+            "Morning with Miku",
             sdl_Replay(
                         "alt_day3_morning_mi", {"alt_replay_on" : "True"},
                         music = music_7dl["tellyourworld"],
@@ -1033,7 +1033,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро с Алисой",
+            "Morning with Alisa",
             sdl_Replay(
                         "alt_day3_morning_dv", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_day,
@@ -1046,7 +1046,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро со Славей",
+            "Morning with Slavya",
             sdl_Replay(
                         "alt_day3_morning_sl", {"alt_replay_on" : "True"},
                         music = music_list["take_me_beautifully"],
@@ -1062,7 +1062,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро с Леной",
+            "Morning with Lena",
             sdl_Replay(
                         "alt_day3_morning_un", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_day,
@@ -1073,7 +1073,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Операция «Ы»",
+            "Operation «Ы»",
             sdl_Replay(
                         "alt_day3_morning_un_fz", {"alt_replay_on" : "True"},
                         vars = [
@@ -1084,7 +1084,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day3_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -1103,11 +1103,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "День. Клубы",
+            "Day. Clubs",
             sdl_Replay("alt_day3_eventAf_clubs_technoquest", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "День. Клубы. Продолжение",
+            "Day. Clubs. Again",
             sdl_Replay(
                         "alt_day3_eventAf_clubs_ladder", {"alt_replay_on" : "True"},
                         vars = [
@@ -1118,7 +1118,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "День. Музклуб",
+            "Day. Mus. club",
             sdl_Replay(
                         "alt_day3_eventAf_music_club1", {"alt_replay_on" : "True"},
                         vars = [
@@ -1129,13 +1129,13 @@ init 9999 python:
                                     sdl_var_i_un_fzd,
                                     sdl_var_l_d2_voya,
                                     sdl_var_l_d2_club
-                                    # переменные турнира
+                                    # Tournament int
                                 ],
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "День. Дом Лены и Мику",
+            "Day. Lena and Miku's cabin",
             sdl_Replay(
                         "alt_day3_eventAf_un_mi_house1", {"alt_replay_on" : "True"},
                         vars = [
@@ -1148,7 +1148,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "День. Столовая",
+            "Day. Canteen",
             sdl_Replay(
                         "alt_day3_eventAf_dining_hall1", {"alt_replay_on" : "True"},
                         vars = [
@@ -1158,7 +1158,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "День. Админ. корпус",
+            "Day. Admin. building",
             sdl_Replay(
                         "alt_day3_eventAf_admins1", {"alt_replay_on" : "True"},
                         vars = [
@@ -1170,11 +1170,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "День. Дом Семёна и Ольги",
+            "Day. Olga and Semyon's cabin",
             sdl_Replay("alt_day3_eventAf_me_mt_house1", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "День. Библиотека",
+            "Day. Library",
             sdl_Replay(
                         "alt_day3_eventAf_library1", {"alt_replay_on" : "True"},
                         vars = [
@@ -1188,7 +1188,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "День. Эстрада",
+            "Day. Stage",
             sdl_Replay(
                         "alt_day3_eventAf_estrade1", {"alt_replay_on" : "True"},
                         vars = [
@@ -1204,7 +1204,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Выбор диджея. Мику",
+            "Choosing a DJ. Miku",
             sdl_Replay(
                         "alt_day3_day_mi_dj", {"alt_replay_on" : "True"},
                         vars = [
@@ -1216,7 +1216,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Выбор диджея. Алиса",
+            "Choosing a DJ. Alisa",
             sdl_Replay(
                         "alt_day3_day_dv_dj", {"alt_replay_on" : "True"},
                         vars = [
@@ -1226,7 +1226,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "День с Мику",
+            "Day with Miku",
             sdl_Replay(
                         "alt_day3_day_mi", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_day,
@@ -1239,19 +1239,19 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "День с Алисой",
+            "Day with Alisa",
             sdl_Replay(
                         "alt_day3_day_dv", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_day,
                         vars = [
                                     sdl_var_b_d3_mi_reje
-                                    # переменные турнира
+                                    # Tournament int
                                 ],
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "День с Леной",
+            "Day with Lena",
             sdl_Replay(
                         "alt_day3_day_un", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_day,
@@ -1265,15 +1265,15 @@ init 9999 python:
                       )
         ),
          sdl_repl_Label(
-            "День Френдзоны",
+            "Day. Friendzone",
             sdl_Replay("alt_day3_day_un_fz", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 2
          ),
          sdl_repl_Label(
-            "Подготовка с Алисой",
+            "Preparations with Alisa",
             sdl_Replay(
                         "alt_day3_day_un_fz_dv", {"alt_replay_on" : "True"},
-                        meets = {'dn' : 'Кудрявый', 'ka' : 'Вожатая 2 отряда'},
+                        meets = {'dn' : 'Curly', 'ka' : 'Counselor of squad 2'},
                         music = music_list["so_good_to_be_careless"],
                         ambience = ambience_camp_center_day,
                         vars = [
@@ -1284,7 +1284,7 @@ init 9999 python:
             char_mask = 2
          ),
          sdl_repl_Label(
-            "Подготовка со Славей",
+            "Preparations with Slavya",
             sdl_Replay(
                         "alt_day3_day_un_fz_sl", {"alt_replay_on" : "True"},
                         music = music_list["so_good_to_be_careless"],
@@ -1297,7 +1297,7 @@ init 9999 python:
             char_mask = 2
          ),
          sdl_repl_Label(
-            "Подготовка с Леной",
+            "Preparations with Lena",
             sdl_Replay(
                         "alt_day3_day_un_fz_un", {"alt_replay_on" : "True"},
                         music = music_list["so_good_to_be_careless"],
@@ -1307,7 +1307,7 @@ init 9999 python:
             char_mask = 2
          ),
         sdl_repl_Label(
-            "Полдник со Славей",
+            "Lunch with Slavya",
             sdl_Replay(
                         "alt_day3_sl_postlunch", {"alt_replay_on" : "True"},
                         vars = [
@@ -1319,7 +1319,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Полдник с Ульяной",
+            "Lunch with Ulyana",
             sdl_Replay(
                         "alt_day3_aftermath", {"alt_replay_on" : "True"},
                         vars = [
@@ -1335,7 +1335,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Кошмар",
+            "Nightmare",
             sdl_Replay(
                         "alt_day3_nightmare", {"alt_replay_on" : "True"},
                         vars = [
@@ -1346,7 +1346,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер Френдзоны",
+            "Evening. Friendzone",
             sdl_Replay(
                         "alt_day3_un_fz_dream", {"alt_replay_on" : "True"},
                         music = music_list["trapped_in_dreams"],
@@ -1359,17 +1359,17 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Сон. Лена",
+            "Dream. Lena",
             sdl_Replay("alt_day3_un_fz_dream_un", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Сон. Дорога",
+            "Dream. The Road",
             sdl_Replay("alt_day3_un_fz_dream_road", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day3_supper", {"alt_replay_on" : "True"},
                         vars = [
@@ -1381,7 +1381,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ужин с Ульяной",
+            "Supper with Ulyana",
             sdl_Replay(
                         "alt_day3_supper1", {"alt_replay_on" : "True"},
                         vars = [
@@ -1391,7 +1391,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ужин. Продолжение",
+            "Supper. Continued",
             sdl_Replay(
                         "alt_day3_supper2", {"alt_replay_on" : "True"},
                         vars = [
@@ -1405,7 +1405,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ужин Френдзоны",
+            "Supper. Friendzone",
             sdl_Replay(
                         "alt_day3_un_fz_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -1416,7 +1416,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Дискотека. Начало",
+            "Disco. Beginning",
             sdl_Replay(
                         "alt_day3_dance_dance", {"alt_replay_on" : "True"},
                         vars = [
@@ -1431,7 +1431,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Дискотека. Мейкап",
+            "Disco. Makeup",
             sdl_Replay(
                         "alt_day3_makeup", {"alt_replay_on" : "True"},
                         vars = [
@@ -1444,7 +1444,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Первый танец",
+            "First dance",
             sdl_Replay(
                         "alt_day3_choose", {"alt_replay_on" : "True"},
                         vars = [
@@ -1465,7 +1465,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Между танцами",
+            "Between dances",
             sdl_Replay(
                         "alt_day3_dance_dance2", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_evening,
@@ -1485,7 +1485,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Второй танец",
+            "Second dance",
             sdl_Replay(
                         "alt_day3_choose2", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_evening,
@@ -1504,7 +1504,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Дискотека. Конец",
+            "Disco. Ending",
             sdl_Replay(
                         "alt_day3_disco_past_d2", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_evening,
@@ -1516,7 +1516,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Концерт Алисы",
+            "Alisa ending",
             sdl_Replay(
                         "alt_day3_dv_lf", {"alt_replay_on" : "True"},
                         vars = [
@@ -1530,7 +1530,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Алиса. Катапульта",
+            "Alisa. Catapult",
             sdl_Replay(
                         "alt_day3_dv_reunion", {"alt_replay_on" : "True"},
                         vars = [
@@ -1540,7 +1540,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Алиса. Воссоединение",
+            "Alisa. Reunion",
             sdl_Replay(
                         "alt_day3_dv_stayhere1", {"alt_replay_on" : "True"},
                         vars = [
@@ -1551,7 +1551,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Медпункт с Леной",
+            "Infirmary with Lena",
             sdl_Replay(
                         "alt_day3_med_un", {"alt_replay_on" : "True"},
                         vars = [
@@ -1561,17 +1561,17 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Лена. Карты на раздевание",
+            "Lena. Strip cards",
             sdl_Replay(
                         "alt_day3_un_cards", {"alt_replay_on" : "True"},
                         vars = [
-                                    # переменные турнира
+                                    # Tournament int
                                 ],
                         func_in = night_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Лена. После медпункта",
+            "Lena. After the infirmary",
             sdl_Replay(
                         "alt_day3_post_strip", {"alt_replay_on" : "True"},
                         vars = [
@@ -1581,7 +1581,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Дискотека Френдзоны",
+            "Disco. Friendzone",
             sdl_Replay(
                         "alt_day3_un_fz_dance", {"alt_replay_on" : "True"},
                         vars = [
@@ -1592,7 +1592,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Прогулка с Леной",
+            "Walk with Lena",
             sdl_Replay(
                         "alt_day3_un_fz_evening_walk", {"alt_replay_on" : "True"},
                         vars = [
@@ -1603,12 +1603,12 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Сказка о Дороге",
+            "Fairy tale about The Road",
             sdl_Replay("alt_day3_un_fz_evening_stories", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Танец с Леной",
+            "Dance with Lena",
             sdl_Replay(
                         "alt_day3_un_fz_dance2", {"alt_replay_on" : "True"},
                         music = music_7dl["shape_of_my_heart"],
@@ -1620,7 +1620,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Мику. Поездка в город",
+            "Miku. Trip to the town",
             sdl_Replay(
                         "alt_day3_mi_7dl_init", {"alt_replay_on" : "True"},
                         vars = [
@@ -1630,7 +1630,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Великая Месть",
+            "Grand revenge",
             sdl_Replay(
                         "alt_day3_mt_scare", {"alt_replay_on" : "True"},
                         music = music_7dl["genki"],
@@ -1639,7 +1639,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Техноквест",
+            "Technoquest",
             sdl_Replay(
                         "alt_day3_technoquest3", {"alt_replay_on" : "True"},
                         vars = [
@@ -1651,7 +1651,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Баня",
+            "Bathhouse",
             sdl_Replay(
                         "alt_day3_bath_voyeur", {"alt_replay_on" : "True"},
                         vars = [
@@ -1666,7 +1666,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day3_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -1693,7 +1693,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой Френдзоны",
+            "Lights out. Friendzone",
             sdl_Replay(
                         "alt_day3_un_fz_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -1707,12 +1707,12 @@ init 9999 python:
         )
     ]
 
-    ## Мику
-    ### Мику-7дл
-    #### 4 День
+    ## Miku
+    ### Miku-7DS
+    #### 4 Day
     sdl_repl_array_mi_7dl_day4 = [
         sdl_repl_Label(
-            "Поездка",
+            "Trip",
             sdl_Replay(
                         "alt_day4_mi_7dl_ch1", {"alt_replay_on" : "True"},
                         vars = [
@@ -1722,7 +1722,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day4_mi_7dl_ch2", {"alt_replay_on" : "True"},
                         vars = [
@@ -1732,11 +1732,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Мику-донор",
+            "Miku-donor",
             sdl_Replay("alt_day4_mi_7dl_ch3", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "В город!",
+            "To the town!",
             sdl_Replay(
                         "alt_day4_mi_7dl_ch4", {"alt_replay_on" : "True"},
                         vars = [
@@ -1746,7 +1746,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Город. Квартира Ольги",
+            "Town. Olga's apartment",
             sdl_Replay(
                         "alt_day4_mi_7dl_ch5a", {"alt_replay_on" : "True"},
                         vars = [
@@ -1756,7 +1756,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Город. Прогулка с Мику",
+            "Town. Walk with Miku",
             sdl_Replay(
                         "alt_day4_mi_7dl_ch5b", {"alt_replay_on" : "True"},
                         vars = [
@@ -1766,7 +1766,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Город. Сакишита",
+            "Town. Sakishita",
             sdl_Replay(
                         "alt_day4_mi_7dl_ch52", {"alt_replay_on" : "True"},
                         ambience = ambience_7dl["town_day"],
@@ -1774,7 +1774,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Домой",
+            "Home sweet home",
             sdl_Replay(
                         "alt_day4_mi_7dl_ch6", {"alt_replay_on" : "True"},
                         vars = [
@@ -1784,7 +1784,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер",
+            "Evening",
             sdl_Replay(
                         "alt_day4_mi_7dl_ch7", {"alt_replay_on" : "True"},
                         vars = [
@@ -1794,7 +1794,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "История Мику",
+            "Miku's story",
             sdl_Replay(
                         "alt_day4_mi_7dl_ch8b", {"alt_replay_on" : "True"},
                         vars = [
@@ -1804,7 +1804,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Рандеву?",
+            "Rendezvous?",
             sdl_Replay(
                         "alt_day4_mi_7dl_ch8a", {"alt_replay_on" : "True"},
                         vars = [
@@ -1814,29 +1814,29 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Рандеву. Герк",
+            "Rendezvous. Herc",
             sdl_Replay("alt_day4_mi_7dl_ch81", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Рандеву. Локи",
+            "Rendezvous. Loki",
             sdl_Replay("alt_day4_mi_7dl_ch82", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay("alt_day4_mi_7dl_ch83", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         )
     ]
-    #### 5 День
+    #### 5 Day
     sdl_repl_array_mi_7dl_day5 = [
         sdl_repl_Label(
-            "Дождь вместе",
+            "Rain together",
             sdl_Replay("alt_day5_mi_7dl_rain_2gether", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day5_mi_7dl_morning", {"alt_replay_on" : "True"},
                         vars = [
@@ -1846,7 +1846,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day5_mi_7dl_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -1856,7 +1856,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "День",
+            "Day",
             sdl_Replay(
                         "alt_day5_mi_7dl_router", {"alt_replay_on" : "True"},
                         vars = [
@@ -1866,31 +1866,31 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Баня",
+            "Bathhouse",
             sdl_Replay("alt_day5_mi_7dl_lost", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Хентай",
+            "Hentai",
             sdl_Replay("alt_day5_mi_7dl_hn", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Пирс",
+            "Pier",
             sdl_Replay("alt_day5_mi_7dl_branch", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "ДжентльСемён",
+            "GentleSemen",
             sdl_Replay(
                         "alt_day5_mi_7dl_potato", {"alt_replay_on" : "True"},
-                        meets = {'uv' : 'Кошкодевочка'},
+                        meets = {'uv' : 'Catgirl'},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Уборка костровой поляны",
+            "Fire glade cleaning",
             sdl_Replay("alt_day5_mi_7dl_camp_cleance", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Костёр",
+            "Hike",
             sdl_Replay(
                         "alt_day5_mi_7dl_firecamp", {"alt_replay_on" : "True"},
                         vars = [
@@ -1904,7 +1904,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day5_mi_7dl_goodnight", {"alt_replay_on" : "True"},
                         vars = [
@@ -1914,14 +1914,14 @@ init 9999 python:
                       )
         )
     ]
-    #### 6 День
+    #### 6 Day
     sdl_repl_array_mi_7dl_day6 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay("alt_day6_mi_7dl_wakeup", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Soul. Капсулы времени",
+            "Soul. Time capsule",
             sdl_Replay(
                         "alt_day6_mi_7dl_soul", {"alt_replay_on" : "True"},
                         vars = [
@@ -1931,14 +1931,14 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Star. Культурный вечер",
+            "Star. Civil evening",
             sdl_Replay("alt_day6_mi_7dl_star", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Human. Прогулка на лодке",
+            "Human. On a boat",
             sdl_Replay(
                         "alt_day6_mi_7dl_human", {"alt_replay_on" : "True"},
-                        meets = {'bb' : 'Начальник лагеря'},
+                        meets = {'bb' : 'Camp Leader'},
                         vars = [
                                     sdl_var_b_d2_mi_snap,
                                     sdl_var_e_d3_mi_7dl_dono
@@ -1947,7 +1947,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day6_mi_7dl_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -1957,7 +1957,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Soul. Хентай",
+            "Soul. Hentai",
             sdl_Replay(
                         "alt_day6_mi_7dl_soul_day", {"alt_replay_on" : "True"},
                         vars = [
@@ -1967,11 +1967,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Star. Мини-концерт",
+            "Star. Mini-Concert",
             sdl_Replay("alt_day6_mi_7dl_star_day", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Отъезд Мику",
+            "Miku's departure",
             sdl_Replay(
                         "alt_day6_mi_7dl_miku_sakishita", {"alt_replay_on" : "True"},
                         vars = [
@@ -1982,7 +1982,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Прощание с Мику",
+            "Farewell Miku",
             sdl_Replay(
                         "alt_day6_mi_7dl_miku_farewell_finale", {"alt_replay_on" : "True"},
                         vars = [
@@ -1992,7 +1992,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Soul. Прощание",
+            "Soul. Farewell",
             sdl_Replay(
                         "alt_day6_mi_7dl_miku_farewell_soul", {"alt_replay_on" : "True"},
                         vars = [
@@ -2002,7 +2002,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Star. Прощание",
+            "Star. Farewell",
             sdl_Replay(
                         "alt_day6_mi_7dl_miku_farewell_star", {"alt_replay_on" : "True"},
                         vars = [
@@ -2012,7 +2012,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Human. Мику остаётся",
+            "Human. Miku stays",
             sdl_Replay(
                         "alt_day6_mi_7dl_human_day", {"alt_replay_on" : "True"},
                         vars = [
@@ -2022,11 +2022,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Катапульта",
+            "Catapult",
             sdl_Replay("alt_day6_mi_7dl_catapult", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Дискотека",
+            "Disco",
             sdl_Replay(
                         "alt_day6_mi_7dl_discoteque", {"alt_replay_on" : "True"},
                         vars = [
@@ -2036,7 +2036,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Хентай",
+            "Hentai",
             sdl_Replay(
                         "alt_day6_mi_7dl_hentai", {"alt_replay_on" : "True"},
                         music = music_7dl["sam_lullaby"],
@@ -2049,14 +2049,14 @@ init 9999 python:
                       )
         )
     ]
-    #### 7 День
+    #### 7 Day
     sdl_repl_array_mi_7dl_day7 = [
         sdl_repl_Label(
-            "Сон",
+            "Dream",
             sdl_Replay("alt_day7_mi_7dl_begin", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day7_mi_7dl_wakeup", {"alt_replay_on" : "True"},
                         vars = [
@@ -2067,7 +2067,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Сборы",
+            "Packing",
             sdl_Replay(
                         "alt_day7_mi_7dl_packing", {"alt_replay_on" : "True"},
                         vars = [
@@ -2078,11 +2078,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отъезд. Один",
+            "Departure. Alone",
             sdl_Replay("alt_day7_mi_7dl_departure_lone", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Отъезд. С Мику",
+            "Departure. Miku",
             sdl_Replay(
                         "alt_day7_mi_7dl_departure_a2th", {"alt_replay_on" : "True"},
                         vars = [
@@ -2093,11 +2093,11 @@ init 9999 python:
                       )
         )
     ]
-    ### Мику-Диджей
-    #### 4 День
+    ### Miku-DJ
+    #### 4 Day
     sdl_repl_array_mi_djt_day4 = [
         sdl_repl_Label(
-            "Ночь",
+            "Night",
             sdl_Replay(
                         "alt_day4_mi_dj_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -2107,7 +2107,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Охота на хыщника",
+            "Hunting the predator",
             sdl_Replay(
                         "alt_day4_mi_dj_hedg_hunt", {"alt_replay_on" : "True"},
                         vars = [
@@ -2117,7 +2117,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day4_mi_dj_morning", {"alt_replay_on" : "True"},
                         vars = [
@@ -2127,13 +2127,13 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Начало дня",
+            "Day start",
             sdl_Replay(
                         "alt_day4_mi_dj_day", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Радиорубка",
+            "Radio room",
             sdl_Replay(
                         "alt_day4_mi_dj_radio", {"alt_replay_on" : "True"},
                         vars = [
@@ -2144,7 +2144,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Радиорубка. Уборка",
+            "Radio room. Cleaning",
             sdl_Replay(
                         "alt_day4_mi_dj_cleaning", {"alt_replay_on" : "True"},
                         vars = [
@@ -2156,7 +2156,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day4_mi_dj_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -2167,7 +2167,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед со Славей",
+            "Dinner with Slavya",
             sdl_Replay(
                         "alt_day4_mi_dj_dinner2", {"alt_replay_on" : "True"},
                         vars = [
@@ -2177,7 +2177,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Репетиция",
+            "Rehearsal",
             sdl_Replay(
                         "alt_day4_mi_dj_repetition", {"alt_replay_on" : "True"},
                         vars = [
@@ -2188,7 +2188,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Волейбол",
+            "Volleyball",
             sdl_Replay(
                         "alt_day4_mi_dj_volley", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_day,
@@ -2199,7 +2199,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Dinner",
             sdl_Replay(
                         "alt_day4_mi_dj_supper", {"alt_replay_on" : "True"},
                         vars = [
@@ -2211,7 +2211,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер",
+            "Evening",
             sdl_Replay(
                         "alt_day4_mi_dj_evening", {"alt_replay_on" : "True"},
                         vars = [
@@ -2223,7 +2223,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ночное свидание",
+            "Night date",
             sdl_Replay(
                         "alt_day4_mi_dj_night", {"alt_replay_on" : "True"},
                         vars = [
@@ -2235,7 +2235,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day4_mi_dj_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -2248,10 +2248,10 @@ init 9999 python:
                       )
         )
     ]
-    #### 5 День
+    #### 5 Day
     sdl_repl_array_mi_djt_day5 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day5_mi_dj_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -2262,7 +2262,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day5_mi_dj_breakfast", {"alt_replay_on" : "True"},
                         music = music_list["reflection_on_water"],
@@ -2274,15 +2274,15 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Кино",
+            "Movie",
             sdl_Replay("alt_day5_mi_dj_cinema", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay("alt_day5_mi_dj_dinner", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Глушилка",
+            "Jammer",
             sdl_Replay(
                         "alt_day5_mi_dj_jammer", {"alt_replay_on" : "True"},
                         vars = [
@@ -2293,11 +2293,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вокалоидодрама",
+            "Vocaloidrama",
             sdl_Replay("alt_day5_mi_dj_vocadrama", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Поиски. Музклуб",
+            "Searchings. Mus. Club",
             sdl_Replay(
                         "alt_day5_mi_dj_music_club1", {"alt_replay_on" : "True"},
                         vars = [
@@ -2307,11 +2307,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Поиски. Радиорубка",
+            "Searchings. Radioroom",
             sdl_Replay("alt_day5_mi_dj_clubs1", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Поиски. Стоянка",
+            "Searchings. Bus stop",
             sdl_Replay(
                         "alt_day5_mi_dj_camp_entrance1", {"alt_replay_on" : "True"},
                         vars = [
@@ -2322,7 +2322,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Поиски. Дом Мику",
+            "Searchings. Miku's house",
             sdl_Replay(
                         "alt_day5_mi_dj_un_mi_house1", {"alt_replay_on" : "True"},
                         vars = [
@@ -2332,15 +2332,15 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Поиски. Эстрада",
+            "Searchings. Stage",
             sdl_Replay("alt_day5_mi_dj_estrade1", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay("alt_day5_mi_dj_supper", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Костёр",
+            "Fire",
             sdl_Replay(
                         "alt_day5_mi_dj_campfire", {"alt_replay_on" : "True"},
                         vars = [
@@ -2350,11 +2350,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Душевые. Мику",
+            "Shower. Miku",
             sdl_Replay("alt_day5_mi_dj_voyeur_4", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Душевые. Алиса",
+            "Shower. Alisa",
             sdl_Replay(
                         "alt_day5_mi_dj_voyeur_2", {"alt_replay_on" : "True"},
                         vars = [
@@ -2365,11 +2365,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Душевые. Славя",
+            "Shower. Slavya",
             sdl_Replay("alt_day5_mi_dj_voyeur_3", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Разговор",
+            "Talk",
             sdl_Replay(
                         "alt_day5_mi_dj_late_evening", {"alt_replay_on" : "True"},
                         vars = [
@@ -2380,7 +2380,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Примирение",
+            "Reconciliation",
             sdl_Replay(
                         "alt_day5_mi_dj_evening_club1", {"alt_replay_on" : "True"},
                         vars = [
@@ -2390,11 +2390,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "«Просмотр кино»",
+            "«Watching the movie»",
             sdl_Replay("alt_day5_mi_dj_evening_club2", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Хентай",
+            "Hentai",
             sdl_Replay(
                         "alt_day5_mi_dj_hentai", {"alt_replay_on" : "True"},
                         vars = [
@@ -2404,7 +2404,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day5_mi_dj_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -2416,10 +2416,10 @@ init 9999 python:
                       )
         )
     ]
-    #### 6 День
+    #### 6 Day
     sdl_repl_array_mi_djt_day6 = [
         sdl_repl_Label(
-            "Утро. Вместе",
+            "Morning. Together",
             sdl_Replay(
                         "alt_day6_mi_dj_good", {"alt_replay_on" : "True"},
                         vars = [
@@ -2429,7 +2429,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Один",
+            "Morning. Alone",
             sdl_Replay(
                         "alt_day6_mi_dj_neutral", {"alt_replay_on" : "True"},
                         vars = [
@@ -2441,7 +2441,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day6_mi_dj_neutral_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -2451,7 +2451,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "В эфире!",
+            "Broadcasting!",
             sdl_Replay(
                         "alt_day6_mi_dj_radio", {"alt_replay_on" : "True"},
                         vars = [
@@ -2466,11 +2466,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay("alt_day6_mi_dj_dinner", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Свидание",
+            "Date",
             sdl_Replay(
                         "alt_day6_mi_dj_rendezvous", {"alt_replay_on" : "True"},
                         music = music_list["everyday_theme"],
@@ -2484,7 +2484,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Прощение",
+            "Farewell",
             sdl_Replay(
                         "alt_day6_mi_dj_forgiveness", {"alt_replay_on" : "True"},
                         music = music_list["everyday_theme"],
@@ -2497,7 +2497,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Рассказ Мику",
+            "Miku's story",
             sdl_Replay(
                         "alt_day6_mi_dj_tale", {"alt_replay_on" : "True"},
                         music = music_list["everyday_theme"],
@@ -2510,7 +2510,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Тихий час",
+            "Quiet hour",
             sdl_Replay(
                         "alt_day6_mi_dj_plain", {"alt_replay_on" : "True"},
                         music = music_list["everyday_theme"],
@@ -2519,7 +2519,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Концерт",
+            "Concert",
             sdl_Replay(
                         "alt_day6_mi_dj_concert", {"alt_replay_on" : "True"},
                         vars = [
@@ -2529,7 +2529,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Колонки. Таскаем",
+            "Speakers. Dragging",
             sdl_Replay(
                         "alt_day6_mi_dj_sonic", {"alt_replay_on" : "True"},
                         vars = [
@@ -2540,19 +2540,19 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Колонки. Отлыниваем",
+            "Speakers. Drag evasion",
             sdl_Replay("alt_day6_mi_dj_reject", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Стенгазета",
+            "Newspaper",
             sdl_Replay("alt_day6_mi_dj_newswall", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay("alt_day6_mi_dj_supper", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Поздний ужин у Слави",
+            "Late supper with Slavya",
             sdl_Replay(
                         "alt_day6_mi_dj_late_supper_sl", {"alt_replay_on" : "True"},
                         vars = [
@@ -2564,7 +2564,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Поздний ужин у Лены",
+            "Late supper with Lena",
             sdl_Replay(
                         "alt_day6_mi_dj_late_supper_un", {"alt_replay_on" : "True"},
                         vars = [
@@ -2574,7 +2574,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Дискотека",
+            "Disco",
             sdl_Replay(
                         "alt_day6_mi_dj_discotheque", {"alt_replay_on" : "True"},
                         vars = [
@@ -2584,7 +2584,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Первый танец",
+            "First dance",
             sdl_Replay(
                         "alt_day6_mi_dj_first_dance", {"alt_replay_on" : "True"},
                         music = music_list["waltz_of_doubts"],
@@ -2592,7 +2592,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Второй танец",
+            "Second dance",
             sdl_Replay(
                         "alt_day6_mi_dj_second_dance", {"alt_replay_on" : "True"},
                         vars = [
@@ -2605,11 +2605,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Второй танец. Успех",
+            "Second dance. Success",
             sdl_Replay("alt_day6_mi_dj_dance2_success", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Второй танец. Неудача",
+            "Second dance. Failure",
             sdl_Replay(
                         "alt_day6_mi_dj_dance2_fail", {"alt_replay_on" : "True"},
                         vars = [
@@ -2622,7 +2622,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Побег с танцев",
+            "Escape from dances",
             sdl_Replay(
                         "alt_day6_mi_dj_escape", {"alt_replay_on" : "True"},
                         vars = [
@@ -2632,7 +2632,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Катапульта",
+            "Catapult",
             sdl_Replay(
                         "alt_day6_mi_dj_catapult", {"alt_replay_on" : "True"},
                         music = music_7dl["unforgotten"],
@@ -2646,13 +2646,13 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Хентай",
+            "Hentai",
             sdl_Replay(
                         "alt_day6_mi_dj_hentai", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day6_mi_dj_sleeptime", {"alt_replay_on" : "True"},
                         music = music_list["a_promise_from_distant_days"],
@@ -2661,10 +2661,10 @@ init 9999 python:
                       )
         )
     ]
-    #### 7 День
+    #### 7 Day
     sdl_repl_array_mi_djt_day7 = [
         sdl_repl_Label(
-            "Утро. Вместе",
+            "Morning. Together",
             sdl_Replay(
                         "alt_day7_mi_dj_together", {"alt_replay_on" : "True"},
                         vars = [
@@ -2674,7 +2674,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Один",
+            "Morning. Alone",
             sdl_Replay(
                         "alt_day7_mi_dj_alone", {"alt_replay_on" : "True"},
                         vars = [
@@ -2685,7 +2685,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Токсикоз",
+            "Toxicosis",
             sdl_Replay(
                         "alt_day7_mi_dj_badfeel", {"alt_replay_on" : "True"},
                         music = music_list["everyday_theme"],
@@ -2698,11 +2698,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay("alt_day7_mi_dj_breakfast", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Сборы",
+            "Gatherings",
             sdl_Replay(
                         "alt_day7_mi_dj_preparations", {"alt_replay_on" : "True"},
                         vars = [
@@ -2713,7 +2713,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отъезд",
+            "Departure",
             sdl_Replay(
                         "alt_day7_mi_dj_departure", {"alt_replay_on" : "True"},
                         vars = [
@@ -2723,7 +2723,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Мёрзну без тебя",
+            "Freezing without you",
             sdl_Replay(
                         "alt_day7_mi_dj_epilogue_frost", {"alt_replay_on" : "True"},
                         vars = [
@@ -2734,17 +2734,17 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Мир сошёл с ума",
+            "World went crazy",
             sdl_Replay("alt_day7_mi_dj_good", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load)
         )
     ]
 
-    ## Алиса
-    ### Алиса-7дл
-    #### 4 День
+    ## Alisa
+    ### Alisa-7DS
+    #### 4 Day
     sdl_repl_array_dv_7dl_day4 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day4_dv_7dl_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -2754,7 +2754,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Поход",
+            "Hike",
             sdl_Replay(
                         "alt_day4_dv_7dl_forest", {"alt_replay_on" : "True"},
                         vars = [
@@ -2767,11 +2767,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay("alt_day4_dv_7dl_dinner", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Тихий час",
+            "Quiet hour",
             sdl_Replay(
                         "alt_day4_dv_7dl_silent_hour", {"alt_replay_on" : "True"},
                         vars = [
@@ -2782,7 +2782,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Репетиция",
+            "Quiet hour",
             sdl_Replay(
                         "alt_day4_dv_7dl_repetition", {"alt_replay_on" : "True"},
                         vars = [
@@ -2793,7 +2793,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Полдник",
+            "Lunch",
             sdl_Replay(
                         "alt_day4_dv_7dl_lunch", {"alt_replay_on" : "True"},
                         music = music_list["so_good_to_be_careless"],
@@ -2802,7 +2802,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Просьба Виолы",
+            "Viola's request",
             sdl_Replay(
                         "alt_day4_dv_7dl_help", {"alt_replay_on" : "True"},
                         vars = [
@@ -2813,7 +2813,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Поездка",
+            "Trip",
             sdl_Replay(
                         "alt_day4_dv_7dl_roadtrip", {"alt_replay_on" : "True"},
                         vars = [
@@ -2824,7 +2824,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Портвейн",
+            "Port Wine",
             sdl_Replay(
                         "alt_day4_dv_7dl_alco", {"alt_replay_on" : "True"},
                         music = music_list["into_the_unknown"],
@@ -2832,11 +2832,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обратный путь",
+            "Way back",
             sdl_Replay("alt_day4_dv_7dl_back_to_camp", {"alt_replay_on" : "True"})
         ),
         sdl_repl_Label(
-            "Лекарства",
+            "Medications",
             sdl_Replay(
                         "alt_day4_dv_7dl_append", {"alt_replay_on" : "True"},
                         vars = [
@@ -2846,19 +2846,19 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Лекарства. Дом Ольги",
+            "Medications. Olga's house",
             sdl_Replay("alt_day4_dv_7dl_mt_aid", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Лекарства. Медпункт",
+            "Medications. Infirmary",
             sdl_Replay("alt_day4_dv_7dl_aidpost", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Хентай",
+            "Hentai",
             sdl_Replay("alt_day4_dv_7dl_hentai", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day4_dv_7dl_supper", {"alt_replay_on" : "True"},
                         vars = [
@@ -2868,7 +2868,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day4_dv_7dl_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -2878,10 +2878,10 @@ init 9999 python:
                       )
         )
     ]
-    #### 5 День
+    #### 5 Day
     sdl_repl_array_dv_7dl_day5 = [
         sdl_repl_Label(
-            "Похмелье",
+            "The Hangover",
             sdl_Replay(
                         "alt_day5_dv_7dl_alco_morning", {"alt_replay_on" : "True"},
                         vars = [
@@ -2891,7 +2891,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day5_dv_7dl_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -2902,11 +2902,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Возвращение",
+            "Return",
             sdl_Replay("alt_day5_dv_7dl_roadtrip", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Свечка",
+            "Candle",
             sdl_Replay(
                         "alt_day5_dv_7dl_candle", {"alt_replay_on" : "True"},
                         vars = [
@@ -2916,7 +2916,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day5_dv_7dl_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -2926,7 +2926,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Тихий час",
+            "Quiet hour",
             sdl_Replay(
                         "alt_day5_dv_7dl_silent_hour", {"alt_replay_on" : "True"},
                         vars = [
@@ -2938,7 +2938,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Полдник",
+            "Lunch",
             sdl_Replay(
                         "alt_day5_dv_7dl_lunch", {"alt_replay_on" : "True"},
                         vars = [
@@ -2949,7 +2949,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Репетиция",
+            "Rehearsal",
             sdl_Replay(
                         "alt_day5_dv_7dl_repetition", {"alt_replay_on" : "True"},
                         music = music_list["my_daily_life"],
@@ -2961,15 +2961,15 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay("alt_day5_dv_7dl_supper", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Вечер",
+            "Evening",
             sdl_Replay("alt_day5_dv_7dl_evening", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Костёр",
+            "Fire",
             sdl_Replay(
                         "alt_day5_dv_7dl_campfire", {"alt_replay_on" : "True"},
                         vars = [
@@ -2979,7 +2979,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ночное свидание",
+            "Night date",
             sdl_Replay(
                         "alt_day5_dv_7dl_night", {"alt_replay_on" : "True"},
                         vars = [
@@ -2991,7 +2991,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day5_dv_7dl_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -3002,10 +3002,10 @@ init 9999 python:
                       )
         )
     ]
-    #### 6 День
+    #### 6 Day
     sdl_repl_array_dv_7dl_day6 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day6_dv_7dl_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -3017,7 +3017,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Поручение Виолы",
+            "Viola's task",
             sdl_Replay(
                         "alt_day6_dv_7dl_mission", {"alt_replay_on" : "True"},
                         music = music_list["my_daily_life"],
@@ -3030,7 +3030,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day6_dv_7dl_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -3042,7 +3042,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Репетиция",
+            "Rehearsal",
             sdl_Replay(
                         "alt_day6_dv_7dl_repetition", {"alt_replay_on" : "True"},
                         vars = [
@@ -3053,7 +3053,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day6_dv_7dl_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -3065,7 +3065,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Славя",
+            "Slavya",
             sdl_Replay(
                         "alt_day6_dv_7dl_sl", {"alt_replay_on" : "True"},
                         vars = [
@@ -3076,7 +3076,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Славя. Согласился помочь",
+            "Slavya. Agreed to help",
             sdl_Replay(
                         "alt_day6_dv_7dl_sl_help", {"alt_replay_on" : "True"},
                         vars = [
@@ -3086,11 +3086,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Славя. Помогаем",
+            "Slavya. Helping",
             sdl_Replay("alt_day6_dv_7dl_sl_help2", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Славя. Каморка",
+            "Slavya. Backroom",
             sdl_Replay(
                         "alt_day6_dv_7dl_sl_garret", {"alt_replay_on" : "True"},
                         vars = [
@@ -3103,11 +3103,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Лена",
+            "Lena",
             sdl_Replay("alt_day6_dv_7dl_un", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Лена. Встреча",
+            "Lena. Meeting",
             sdl_Replay(
                         "alt_day6_dv_7dl_check", {"alt_replay_on" : "True"},
                         ambience = ambience_forest_day,
@@ -3119,7 +3119,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Концерт",
+            "Concert",
             sdl_Replay(
                         "alt_day6_dv_7dl_concert", {"alt_replay_on" : "True"},
                         vars = [
@@ -3131,7 +3131,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day6_dv_7dl_supper", {"alt_replay_on" : "True"},
                         vars = [
@@ -3141,7 +3141,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Дискотека",
+            "Disco",
             sdl_Replay(
                         "alt_day6_dv_7dl_dance", {"alt_replay_on" : "True"},
                         vars = [
@@ -3152,11 +3152,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Танец с Алисой",
+            "Dance with Alisa",
             sdl_Replay("alt_day6_dv_7dl_dv_dancing", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Хентай",
+            "Hentai",
             sdl_Replay(
                         "alt_day6_dv_7dl_love_scene", {"alt_replay_on" : "True"},
                         vars = [
@@ -3167,7 +3167,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Облом",
+            "No Sex???",
             sdl_Replay(
                         "alt_day6_dv_7dl_non_love", {"alt_replay_on" : "True"},
                         vars = [
@@ -3177,7 +3177,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Катапульта",
+            "Catapult",
             sdl_Replay(
                         "alt_day6_dv_7dl_catapult", {"alt_replay_on" : "True"},
                         vars = [
@@ -3190,7 +3190,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Возвращаемся на танцы",
+            "Back to the dance",
             sdl_Replay(
                         "alt_day6_dv_7dl_predance", {"alt_replay_on" : "True"},
                         vars = [
@@ -3205,7 +3205,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Танец со Славей",
+            "Dance with Slavya",
             sdl_Replay(
                         "alt_day6_dv_7dl_sl_dancing", {"alt_replay_on" : "True"},
                         vars = [
@@ -3215,11 +3215,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Танец с Леной",
+            "Dance with Lena",
             sdl_Replay("alt_day6_dv_7dl_un_dancing", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Танец с Ольгой",
+            "Dance with Olga",
             sdl_Replay(
                         "alt_day6_dv_7dl_mt_dancing", {"alt_replay_on" : "True"},
                         vars = [
@@ -3234,7 +3234,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day6_dv_7dl_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -3248,14 +3248,14 @@ init 9999 python:
                       )
         )
     ]
-    #### 7 День
+    #### 7 Day
     sdl_repl_array_dv_7dl_day7 = [
         sdl_repl_Label(
-            "Сон",
+            "Dream",
             sdl_Replay("alt_day7_dv_7dl_begin", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day7_dv_7dl_router", {"alt_replay_on" : "True"},
                         vars = [
@@ -3270,7 +3270,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Сборы с Алисой",
+            "Gathering with Alisa",
             sdl_Replay(
                         "alt_day7_dv_7dl_dv", {"alt_replay_on" : "True"},
                         vars = [
@@ -3283,20 +3283,20 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Сборы со Славей",
+            "Gathering with Slavya",
             sdl_Replay("alt_day7_dv_7dl_sl", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Сборы с Леной",
+            "Gathering with Lena",
             sdl_Replay("alt_day7_dv_7dl_un", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Сборы с Ольгой",
+            "Gathering with Olga",
             sdl_Replay("alt_day7_dv_7dl_mt", {"alt_replay_on" : "True"}),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Катапульта Локи",
+            "Catapult. Loki",
             sdl_Replay(
                         "alt_day7_dv_7dl_loki", {"alt_replay_on" : "True"},
                         music = music_list["farewell_to_the_past_edit"],
@@ -3305,7 +3305,7 @@ init 9999 python:
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Отъезд",
+            "Departure",
             sdl_Replay(
                         "alt_day7_dv_7dl_bus", {"alt_replay_on" : "True"},
                         vars = [
@@ -3315,18 +3315,18 @@ init 9999 python:
                       )
         )
     ]
-    ### Алиса-Диджей
-    #### 4 День
+    ### Alisa-DJ
+    #### 4 Day
     sdl_repl_array_dv_djt_day4 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day4_dv_dj_morning", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day4_dv_dj_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -3336,87 +3336,87 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Освобождение рыжей!",
+            "Save the readhead!",
             sdl_Replay(
                         "alt_day4_dv_dj_alise_free", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Рыжий ураган",
+            "Red hurricane",
             sdl_Replay(
                         "alt_day4_dv_dj_radio_event", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day4_dv_dj_lunch", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Тихий час",
+            "Quiet hour",
             sdl_Replay(
                         "alt_day4_dv_dj_silent_hour", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Полдник",
+            "Lunch",
             sdl_Replay(
                         "alt_day4_dv_dj_afternoon", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Концерт",
+            "Concert",
             sdl_Replay(
                         "alt_day4_dv_dj_concert", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day4_dv_dj_dinner", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Поиски Ульяны",
+            "Searching for Ulyana",
             sdl_Replay(
                         "alt_day4_dv_dj_us_search", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Свидание на пляже",
+            "Beach date",
             sdl_Replay(
                         "alt_day4_dv_dj_date_on_the_beach", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day4_dv_dj_sleeptime", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         )
     ]
-    #### 5 День
+    #### 5 Day
     sdl_repl_array_dv_djt_day5 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day5_dv_dj_morning", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day5_dv_dj_breakfast", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
@@ -3430,21 +3430,21 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day5_dv_dj_lunch", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Карта (идём к Дваче)",
+            "Map. Alisa's cabin",
             sdl_Replay(
                         "alt_day5_dv_dj_map_house_dv1", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Карта (идём на площадь)",
+            "Map. Square",
             sdl_Replay(
                         "alt_day5_dv_dj_map_square1", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
@@ -3452,7 +3452,7 @@ init 9999 python:
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Карта (идём в библ-ку)",
+            "Map. Library",
             sdl_Replay(
                         "alt_day5_dv_dj_map_library1", {"alt_replay_on" : "True"},
                         vars = [
@@ -3462,7 +3462,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Карта (идём к Мику)",
+            "Map. Miku",
             sdl_Replay(
                         "alt_day5_dv_dj_map_musclub1", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
@@ -3470,7 +3470,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Карта (идём к киб-кам)",
+            "Map. Cybernetics",
             sdl_Replay(
                         "alt_day5_dv_dj_map_cyber_club1", {"alt_replay_on" : "True"},
                         vars = [
@@ -3481,7 +3481,7 @@ init 9999 python:
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Полдник",
+            "Supper",
             sdl_Replay(
                         "alt_day5_dv_dj_afternoon", {"alt_replay_on" : "True"},
                         vars = [
@@ -3492,21 +3492,21 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Радиоэфир",
+            "Radio",
             sdl_Replay(
                         "alt_day5_dv_dj_radio_broadcast", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day5_dv_dj_dinner", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Костёр",
+            "Hike",
             sdl_Replay(
                         "alt_day5_dv_dj_campfire", {"alt_replay_on" : "True"},
                         vars = [
@@ -3516,7 +3516,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day5_dv_dj_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -3526,10 +3526,10 @@ init 9999 python:
                       )
         )
     ]
-    #### 6 День
+    #### 6 Day
     sdl_repl_array_dv_djt_day6 = [
         sdl_repl_Label(
-            "Пробуждение",
+            "Awakening",
             sdl_Replay(
                         "alt_day6_dv_dj_morning", {"alt_replay_on" : "True"},
                         vars = [
@@ -3539,14 +3539,14 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day6_dv_dj_breakfast", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Радиоэфир",
+            "Radio",
             sdl_Replay(
                         "alt_day6_dv_dj_broadcast", {"alt_replay_on" : "True"},
                         vars = [
@@ -3557,14 +3557,14 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day6_dv_dj_lunch", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Тихий час",
+            "Quiet hour",
             sdl_Replay(
                         "alt_day6_dv_dj_siesta", {"alt_replay_on" : "True"},
                         vars = [
@@ -3578,7 +3578,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Концерт",
+            "Concert",
             sdl_Replay(
                         "alt_day6_dv_dj_concert", {"alt_replay_on" : "True"},
                         vars = [
@@ -3589,14 +3589,14 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day6_dv_dj_dinner", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Вечер",
+            "Evening",
             sdl_Replay(
                         "alt_day6_dv_dj_no_dance", {"alt_replay_on" : "True"},
                         vars = [
@@ -3606,7 +3606,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Разговор по душам",
+            "Heart-to-heart talk",
             sdl_Replay(
                         "alt_day6_dv_dj_un_night", {"alt_replay_on" : "True"},
                         vars = [
@@ -3618,7 +3618,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой (вариант 1)",
+            "Light out. Variation 1",
             sdl_Replay(
                         "alt_day6_dv_dj_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -3628,7 +3628,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой (вариант 2)",
+            "Light out. Variation 2",
             sdl_Replay(
                         "alt_day6_dv_dj_sleeptime2", {"alt_replay_on" : "True"},
                         vars = [
@@ -3638,10 +3638,10 @@ init 9999 python:
                       )
         )
     ]
-    #### 7 День
+    #### 7 Day
     sdl_repl_array_dv_djt_day7 = [
         sdl_repl_Label(
-            "Сон",
+            "Dream",
             sdl_Replay(
                         "alt_day7_dv_dj_dream", {"alt_replay_on" : "True"},
                         vars = [
@@ -3651,7 +3651,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day7_dv_dj_morning", {"alt_replay_on" : "True"},
                         vars = [
@@ -3661,7 +3661,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Точки над Ё",
+            "Dots over i",
             sdl_Replay(
                         "alt_day7_dv_dj_points", {"alt_replay_on" : "True"},
                         vars = [
@@ -3671,7 +3671,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбытие",
+            "Departure",
             sdl_Replay(
                         "alt_day7_dv_dj_departure", {"alt_replay_on" : "True"},
                         vars = [
@@ -3681,16 +3681,16 @@ init 9999 python:
                       )
         )    ]
 
-    ## Славя
-    ### Славя-7дл
-    #### 4 День
+    ## Slavya
+    ### Slavya-7DS
+    #### 4 Day
     sdl_repl_array_sl_7dl_day4 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay("alt_day4_sl_7dl_begin", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day4_sl_7dl_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -3700,7 +3700,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Локи",
+            "Morning. Loki",
             sdl_Replay(
                         "alt_day4_sl_7dl_loki_morning", {"alt_replay_on" : "True"},
                         vars = [
@@ -3713,12 +3713,12 @@ init 9999 python:
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Утро. Герк",
+            "Morning. Herc",
             sdl_Replay("alt_day4_sl_7dl_herc_morning", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Утро. Дрищ",
+            "Morning. Wimp",
             sdl_Replay(
                         "alt_day4_sl_7dl_morning", {"alt_replay_on" : "True"},
                         vars = [
@@ -3729,7 +3729,7 @@ init 9999 python:
             char_mask = 1
         ),
         sdl_repl_Label(
-            "День. Локи",
+            "Day. Loki",
             sdl_Replay(
                         "alt_day4_sl_7dl_loki_day", {"alt_replay_on" : "True"},
                         vars = [
@@ -3740,7 +3740,7 @@ init 9999 python:
             char_mask = 4
         ),
         sdl_repl_Label(
-            "День. Герк",
+            "Day. Herc",
             sdl_Replay(
                         "alt_day4_sl_7dl_herc_day", {"alt_replay_on" : "True"},
                         vars = [
@@ -3754,7 +3754,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "День. Дрищ",
+            "Day. Wimp",
             sdl_Replay(
                         "alt_day4_sl_7dl_day", {"alt_replay_on" : "True"},
                         vars = [
@@ -3767,10 +3767,10 @@ init 9999 python:
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Вечер. Локи",
+            "Evening. Loki",
             sdl_Replay(
                         "alt_day4_sl_7dl_loki_evening", {"alt_replay_on" : "True"},
-                        meets = {'al' : 'Сердитый мальчик'},
+                        meets = {'al' : 'Angry boy'},
                         vars = [
                                     sdl_var_l_d2_club
                                 ],
@@ -3779,10 +3779,10 @@ init 9999 python:
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Вечер. Герк",
+            "Evening. Herc",
             sdl_Replay(
                         "alt_day4_sl_7dl_herc_evening", {"alt_replay_on" : "True"},
-                        meets = {'al' : 'Сердитый мальчик', 'dn' : 'Кудрявый'},
+                        meets = {'al' : 'Angry boy', 'dn' : 'Curly'},
                         vars = [
                                     sdl_var_b_d4_sl_7dl_appl
                                 ],
@@ -3791,15 +3791,15 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Вечер. Дрищ",
+            "Evening. Wimp",
             sdl_Replay("alt_day4_sl_7dl_evening", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Вечер",
+            "Evening",
             sdl_Replay(
                         "alt_day4_sl_7dl_sundown", {"alt_replay_on" : "True"},
-                        meets = {'dn' : 'Кудрявый', 'tn' : 'Странный мальчик'},
+                        meets = {'dn' : 'Curly', 'tn' : 'Strange boy'},
                         vars = [
                                     sdl_var_b_d4_sl_7dl_rend,
                                     sdl_var_l_d2_voya
@@ -3808,7 +3808,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day4_sl_7dl_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -3821,10 +3821,10 @@ init 9999 python:
                       )
         )
     ]
-    #### 5 День
+    #### 5 Day
     sdl_repl_array_sl_7dl_day5 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day5_sl_7dl_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -3834,7 +3834,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day5_sl_7dl_breakfast", {"alt_replay_on" : "True"},
                         ambience = ambience_7dl["rain"],
@@ -3847,7 +3847,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Свечка",
+            "Candle",
             sdl_Replay(
                         "alt_day5_sl_7dl_candle", {"alt_replay_on" : "True"},
                         vars = [
@@ -3857,7 +3857,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Свечка. Локи",
+            "Candle. Loki",
             sdl_Replay(
                         "alt_day5_sl_7dl_candle_loki", {"alt_replay_on" : "True"},
                         music = music_7dl["deep_inside"],
@@ -3867,7 +3867,7 @@ init 9999 python:
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Свечка. Герк",
+            "Candle. Herc",
             sdl_Replay(
                         "alt_day5_sl_7dl_candle_herc", {"alt_replay_on" : "True"},
                         music = music_7dl["deep_inside"],
@@ -3877,7 +3877,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Свечка. Дрищ",
+            "Candle. Wimp",
             sdl_Replay(
                         "alt_day5_sl_7dl_candle_dr", {"alt_replay_on" : "True"},
                         music = music_7dl["deep_inside"],
@@ -3887,15 +3887,15 @@ init 9999 python:
             char_mask = 1
         ),
         sdl_repl_Label(
-            "День. Локи",
+            "Day. Loki",
             sdl_Replay("alt_day5_sl_7dl_loki_day", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 4
         ),
         sdl_repl_Label(
-            "День. Герк",
+            "Day. Herc",
             sdl_Replay(
                         "alt_day5_sl_7dl_herc_day", {"alt_replay_on" : "True"},
-                        meets = {'ka' : 'Вожатая 2 отряда'},
+                        meets = {'ka' : 'Leader of 2nd squad'},
                         vars = [
                                     sdl_var_b_d4_sl_7dl_rend,
                                     sdl_var_b_d4_sl_7dl_appl,
@@ -3907,26 +3907,26 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "День. Дрищ",
+            "Day. Wimp",
             sdl_Replay(
                         "alt_day5_sl_7dl_day", {"alt_replay_on" : "True"},
-                        meets = {'al' : 'Сердитый мальчик', 'dn' : 'Кудрявый', 'tn' : 'Странный мальчик'},
+                        meets = {'al' : 'Angry boy', 'dn' : 'Curly', 'tn' : 'Strange boy'},
                         func_in = day_interface_on, func_out = replay_screens_load
                       ),
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Вечер. Локи",
+            "Evening. Loki",
             sdl_Replay("alt_day5_sl_7dl_loki_evening", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Вечер. Герк",
+            "Evening. Herc",
             sdl_Replay("alt_day5_sl_7dl_herc_evening", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Вечер. Дрищ",
+            "Evening. Wimp",
             sdl_Replay(
                         "alt_day5_sl_7dl_evening", {"alt_replay_on" : "True"},
                         vars = [
@@ -3937,10 +3937,10 @@ init 9999 python:
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Костёр",
+            "Fire",
             sdl_Replay(
                         "alt_day5_sl_7dl_campfire", {"alt_replay_on" : "True"},
-                        meets = {'tn' : 'Странный мальчик'},
+                        meets = {'tn' : 'Strange boy'},
                         vars = [
                                     sdl_var_b_d4_sl_7dl_rend,
                                     sdl_var_b_d5_sl_7dl_work,
@@ -3950,12 +3950,12 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Хентай",
+            "Hentai",
             sdl_Replay("alt_day5_sl_7dl_hentai", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day5_sl_7dl_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -3966,7 +3966,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ночное свидание",
+            "Night date",
             sdl_Replay(
                         "alt_day5_sl_7dl_rendezvous", {"alt_replay_on" : "True"},
                         vars = [
@@ -3979,10 +3979,10 @@ init 9999 python:
             char_mask = 2
         )
     ]
-    #### 6 День
+    #### 6 Day
     sdl_repl_array_sl_7dl_day6 = [
         sdl_repl_Label(
-            "Озеро",
+            "Lake",
             sdl_Replay(
                         "alt_day6_sl_7dl_camping", {"alt_replay_on" : "True"},
                         vars = [
@@ -3993,7 +3993,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Месть Ульянке",
+            "Revenge on Ulyanka",
             sdl_Replay(
                         "alt_day6_sl_7dl_revenge", {"alt_replay_on" : "True"},
                         vars = [
@@ -4005,7 +4005,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day6_sl_7dl_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -4015,7 +4015,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Пробежка",
+            "Jog",
             sdl_Replay(
                         "alt_day6_sl_7dl_running", {"alt_replay_on" : "True"},
                         vars = [
@@ -4026,7 +4026,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day6_sl_7dl_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -4037,12 +4037,12 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Локи",
+            "Morning. Loki",
             sdl_Replay("alt_day6_sl_7dl_loki_morning", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Утро. Герк. Здоров",
+            "Morning. Herc. Healthy",
             sdl_Replay(
                         "alt_day6_sl_7dl_herc_morning_well", {"alt_replay_on" : "True"},
                         vars = [
@@ -4054,18 +4054,18 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Утро. Герк. Болен",
+            "Morning. Herc. Sick",
             sdl_Replay(
                         "alt_day6_sl_7dl_herc_morning_sick", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Утро. Дрищ. Славя",
+            "Morning. Wimp. Slavya",
             sdl_Replay("alt_day6_sl_7dl_dr_morning_normal", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Утро. Дрищ. Дорога",
+            "Morning. Wimp. The Road",
             sdl_Replay(
                         "alt_day6_sl_7dl_dr_morning_olroad", {"alt_replay_on" : "True"},
                         vars = [
@@ -4076,7 +4076,7 @@ init 9999 python:
             char_mask = 1
         ),
         sdl_repl_Label(
-            "День. Локи",
+            "Day. Loki",
             sdl_Replay(
                         "alt_day6_sl_7dl_loki_day", {"alt_replay_on" : "True"},
                         vars = [
@@ -4087,7 +4087,7 @@ init 9999 python:
             char_mask = 4
         ),
         sdl_repl_Label(
-            "День. Герк. Электроник",
+            "Day. Herc. Electronik",
             sdl_Replay(
                         "alt_day6_sl_7dl_herc_day_normal", {"alt_replay_on" : "True"},
                         vars = [
@@ -4098,7 +4098,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "День. Герк. На крыше",
+            "Day. Herc. On the roof",
             sdl_Replay(
                         "alt_day6_sl_7dl_herc_day_alt", {"alt_replay_on" : "True"},
                         vars = [
@@ -4109,29 +4109,29 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "День. Дрищ. Славя",
+            "Day. Wimp. Slavya",
             sdl_Replay(
                         "alt_day6_sl_7dl_dr_day_normal", {"alt_replay_on" : "True"},
-                        meets = {'ka' : 'Вожатая 2 отряда'},
+                        meets = {'ka' : 'Leader of 2nd squad'},
                         func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 1
         ),
         sdl_repl_Label(
-            "День. Дрищ. Дорога",
+            "Day. Wimp. The Road",
             sdl_Replay(
                         "alt_day6_sl_7dl_dr_day_olroad", {"alt_replay_on" : "True"},
-                        meets = {'uv' : 'Кошкодевочка'},
+                        meets = {'uv' : 'Catgirl'},
                         func_in = day_interface_on, func_out = replay_screens_load
                       ),
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Вечер. Локи",
+            "Evening. Loki",
             sdl_Replay("alt_day6_sl_7dl_loki_evening", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Вечер. Герк. Славя",
+            "Evening. Herc. Slavya",
             sdl_Replay(
                         "alt_day6_sl_7dl_herc_evening_normal", {"alt_replay_on" : "True"},
                         vars = [
@@ -4142,7 +4142,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Вечер. Герк. Концерт",
+            "Evening. Herc. Concert",
             sdl_Replay(
                         "alt_day6_sl_7dl_herc_evening_alt", {"alt_replay_on" : "True"},
                         vars = [
@@ -4153,21 +4153,21 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Вечер. Дрищ. Славя",
+            "Evening. Wimp. Slavya",
             sdl_Replay("alt_day6_sl_7dl_dr_evening_normal", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Вечер. Дрищ. Дорога",
+            "Evening. Wimp. The Road",
             sdl_Replay(
                         "alt_day6_sl_7dl_dr_evening_olroad", {"alt_replay_on" : "True"},
-                        meets = {'uv' : 'Кошкодевочка'},
+                        meets = {'uv' : 'Catgirl'},
                         func_in = day_interface_on, func_out = replay_screens_load
                       ),
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day6_sl_7dl_supper", {"alt_replay_on" : "True"},
                         vars = [
@@ -4178,7 +4178,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Катапульта",
+            "Catapult",
             sdl_Replay(
                         "alt_day6_sl_7dl_catapult", {"alt_replay_on" : "True"},
                         vars = [
@@ -4190,12 +4190,12 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Похороны Пирата",
+            "The Pirate's Funeral",
             sdl_Replay("alt_day6_sl_7dl_dr_funeral", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Лес Памяти",
+            "Memory Forest",
             sdl_Replay(
                         "alt_day6_sl_7dl_loki_disco", {"alt_replay_on" : "True"},
                         vars = [
@@ -4206,7 +4206,7 @@ init 9999 python:
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Дискотека. Герк",
+            "Disco. Herc",
             sdl_Replay(
                         "alt_day6_sl_7dl_herc_disco", {"alt_replay_on" : "True"},
                         vars = [
@@ -4219,12 +4219,12 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Дискотека. Дрищ. Славя",
+            "Disco. Wimp. Slavya",
             sdl_Replay("alt_day6_sl_7dl_dr_disco_normal", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Дискотека. Дрищ. Дорога",
+            "Disco. Wimp. The Road",
             sdl_Replay(
                         "alt_day6_sl_7dl_dr_disco_olroad", {"alt_replay_on" : "True"},
                         music = music_7dl["unforgotten"],
@@ -4233,12 +4233,12 @@ init 9999 python:
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Хентай. Локи",
+            "Hentai. Loki",
             sdl_Replay("alt_day6_sl_7dl_loki_hentai", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Хентай. Герк",
+            "Hentai. Herc",
             sdl_Replay(
                         "alt_day6_sl_7dl_herc_hentai", {"alt_replay_on" : "True"},
                         vars = [
@@ -4249,17 +4249,17 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Хентай. Дрищ",
+            "Hentai. Wimp",
             sdl_Replay("alt_day6_sl_7dl_dr_hentai_normal", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Хентай. Дрищ 2",
+            "Hentai. Wimp 2",
             sdl_Replay("alt_day6_sl_7dl_dr_hentai_olroad", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day6_sl_7dl_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -4269,10 +4269,10 @@ init 9999 python:
                       )
         )
     ]
-    #### 7 День
+    #### 7 Day
     sdl_repl_array_sl_7dl_day7 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day7_sl_7dl_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -4285,12 +4285,12 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Локи",
+            "Morning. Loki",
             sdl_Replay("alt_day7_sl_7dl_begin_loki", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Утро. Герк",
+            "Morning. Herc",
             sdl_Replay(
                         "alt_day7_sl_7dl_begin_herc", {"alt_replay_on" : "True"},
                         vars = [
@@ -4301,17 +4301,17 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Сборы. Локи. Прощение",
+            "Gatherings. Loki. Farewell",
             sdl_Replay("alt_day7_sl_7dl_packing_loki_forgive", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Сборы. Локи. Сволочь",
+            "Gatherings. Loki. Asshole",
             sdl_Replay("alt_day7_sl_7dl_packing_loki_asshole", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Сборы. Герк",
+            "Gatherings. Herc",
             sdl_Replay(
                         "alt_day7_sl_7dl_packing_herc", {"alt_replay_on" : "True"},
                         vars = [
@@ -4324,7 +4324,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Сборы. Дрищ",
+            "Gatherings. Wimp",
             sdl_Replay(
                         "alt_day7_sl_7dl_packing", {"alt_replay_on" : "True"},
                         vars = [
@@ -4335,7 +4335,7 @@ init 9999 python:
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Отъезд",
+            "Departure",
             sdl_Replay(
                         "alt_day7_sl_7dl_leaving", {"alt_replay_on" : "True"},
                         vars = [
@@ -4348,7 +4348,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Эпилог. Локи",
+            "Epilogue. Loki",
             sdl_Replay(
                         "alt_day7_sl_7dl_loki", {"alt_replay_on" : "True"},
                         vars = [
@@ -4359,26 +4359,26 @@ init 9999 python:
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Эпилог. Локи. Сволочь",
+            "Epilogue. Loki. Asshole",
             sdl_Replay("alt_day7_sl_7dl_loki_rewind", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
             char_mask = 4
         ),
         # sdl_repl_Label(
-            # "Эпилог. Герк",
+            # "Epilogue. Herc",
             # sdl_Replay("alt_day7_sl_7dl_herc", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
             # char_mask = 2
         # ),
         sdl_repl_Label(
-            "Эпилог. Дрищ",
+            "Epilogue. Wimp",
             sdl_Replay("alt_day7_sl_7dl_epi", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
             char_mask = 1
         )
     ]
-    ### Славя-Классик
-    #### 4 День
+    ### Slavya-Classic
+    #### 4 Day
     sdl_repl_array_sl_clt_day4 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day4_sl_cl_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -4388,11 +4388,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Гуделка",
+            "Buzzer",
             sdl_Replay("alt_day4_sl_cl_shurik", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Техносон",
+            "Technodream",
             sdl_Replay(
                         "alt_day4_sl_cl_laundry", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_day,
@@ -4403,7 +4403,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day4_sl_cl_supper", {"alt_replay_on" : "True"},
                         vars = [
@@ -4415,7 +4415,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Сборы",
+            "Gatherings",
             sdl_Replay(
                         "alt_day4_sl_cl_party_up", {"alt_replay_on" : "True"},
                         vars = [
@@ -4428,7 +4428,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Поиски",
+            "Searchings",
             sdl_Replay(
                         "alt_day4_sl_cl_lf_coop", {"alt_replay_on" : "True"},
                         ambience = ambience_forest_evening,
@@ -4442,7 +4442,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Старый лагерь",
+            "Old Camp",
             sdl_Replay(
                         "alt_day4_sl_cl_old_camp", {"alt_replay_on" : "True"},
                         vars = [
@@ -4453,7 +4453,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Катакомбы",
+            "Catacombs ",
             sdl_Replay(
                         "alt_day4_sl_cl_old_camp2", {"alt_replay_on" : "True"},
                         vars = [
@@ -4464,7 +4464,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ведьма",
+            "Witch",
             sdl_Replay(
                         "alt_day4_sl_wh_night", {"alt_replay_on" : "True"},
                         vars = [
@@ -4474,7 +4474,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day4_sl_cl_cs_night", {"alt_replay_on" : "True"},
                         vars = [
@@ -4484,10 +4484,10 @@ init 9999 python:
                       )
         )
     ]
-    #### 5 День
+    #### 5 Day
     sdl_repl_array_sl_clt_day5 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day5_sl_cl_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -4498,10 +4498,10 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Начальник лагеря",
+            "Head of the camp",
             sdl_Replay(
                         "alt_day5_sl_cl_chief", {"alt_replay_on" : "True"},
-                        meets = {'bb' : 'Начальник лагеря'},
+                        meets = {'bb' : 'Head of the camp'},
                         ambience = ambience_7dl["rain"],
                         vars = [
                                     sdl_var_b_d4_sl_cl_tuti,
@@ -4511,7 +4511,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ольга",
+            "Olga",
             sdl_Replay(
                         "alt_day5_sl_cl_mt", {"alt_replay_on" : "True"},
                         vars = [
@@ -4522,7 +4522,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day5_sl_cl_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -4532,7 +4532,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Разговор с Санычем",
+            "Conversation with Sanich",
             sdl_Replay(
                         "alt_day5_sl_cl_ba_quest", {"alt_replay_on" : "True"},
                         music = music_list["everyday_theme"],
@@ -4545,7 +4545,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Катакомбы",
+            "Catacombs ",
             sdl_Replay(
                         "alt_day5_sl_cl_catacombs", {"alt_replay_on" : "True"},
                         vars = [
@@ -4557,7 +4557,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Туман",
+            "The Fog",
             sdl_Replay(
                         "alt_day5_sl_cl_fog", {"alt_replay_on" : "True"},
                         vars = [
@@ -4569,7 +4569,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Возвращение",
+            "Return",
             sdl_Replay(
                         "alt_day5_sl_cl_return", {"alt_replay_on" : "True"},
                         vars = [
@@ -4579,7 +4579,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Лекция Виолы",
+            "Viola's lecture",
             sdl_Replay(
                         "alt_day5_sl_cl_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -4590,7 +4590,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Подготовка костра",
+            "Preparing the fire",
             sdl_Replay(
                         "alt_day5_sl_cl_campfire_prepare", {"alt_replay_on" : "True"},
                         vars = [
@@ -4601,19 +4601,19 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Купание",
+            "Swimming",
             sdl_Replay("alt_day5_sl_cl_bathing", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day5_sl_cl_supper", {"alt_replay_on" : "True"},
-                        meets = {'dn' : 'Кудрявый'},
+                        meets = {'dn' : 'Curly'},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Костёр",
+            "Fire",
             sdl_Replay(
                         "alt_day5_sl_cl_campfire", {"alt_replay_on" : "True"},
                         ambience = ambience_forest_evening,
@@ -4621,10 +4621,10 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Транспортировка раненого",
+            "Help the wounded",
             sdl_Replay(
                         "alt_day5_sl_cl_dn_aid", {"alt_replay_on" : "True"},
-                        meets = {'dn' : 'Кудрявый'},
+                        meets = {'dn' : 'Curly'},
                         ambience = ambience_forest_evening,
                         vars = [
                                     sdl_var_b_d4_sl_cl_tuti
@@ -4633,7 +4633,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Презент Виолы",
+            "Viola's Gift",
             sdl_Replay(
                         "alt_day5_sl_cl_cs_reward", {"alt_replay_on" : "True"},
                         vars = [
@@ -4644,7 +4644,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ночное свидание",
+            "Night date",
             sdl_Replay(
                         "alt_day5_sl_cl_night", {"alt_replay_on" : "True"},
                         vars = [
@@ -4656,11 +4656,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Хентай",
+            "Hentai",
             sdl_Replay("alt_day5_sl_cl_hentai", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day5_sl_cl_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -4672,10 +4672,10 @@ init 9999 python:
                       )
         )
     ]
-    #### 6 День
+    #### 6 Day
     sdl_repl_array_sl_clt_day6 = [
         sdl_repl_Label(
-            "Утро. Пещера",
+            "Morning. Cave",
             sdl_Replay(
                         "alt_day6_sl_cl_begin_cave", {"alt_replay_on" : "True"},
                         vars = [
@@ -4685,7 +4685,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Вместе",
+            "Morning. Together",
             sdl_Replay(
                         "alt_day6_sl_cl_begin_good", {"alt_replay_on" : "True"},
                         vars = [
@@ -4695,7 +4695,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Техносон",
+            "Morning. Technodream",
             sdl_Replay(
                         "alt_day6_sl_cl_begin_techno", {"alt_replay_on" : "True"},
                         vars = [
@@ -4705,7 +4705,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Проблемы Шурика",
+            "Shurik's problems",
             sdl_Replay(
                         "alt_day6_sl_cl_sh_problems", {"alt_replay_on" : "True"},
                         vars = [
@@ -4716,11 +4716,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay("alt_day6_sl_cl_breakfast", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Поручение Саныча",
+            "Sanich's task",
             sdl_Replay(
                         "alt_day6_sl_cl_ba_quest", {"alt_replay_on" : "True"},
                         ambience = ambience_dining_hall_empty,
@@ -4733,7 +4733,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Начальство Саныча",
+            "Sanich's boss",
             sdl_Replay(
                         "alt_day6_sl_cl_ba_kgb", {"alt_replay_on" : "True"},
                         vars = [
@@ -4744,7 +4744,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day6_sl_cl_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -4756,7 +4756,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Усилитель",
+            "Amplifier",
             sdl_Replay(
                         "alt_day6_sl_cl_amp_list", {"alt_replay_on" : "True"},
                         vars = [
@@ -4766,7 +4766,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Глушилка",
+            "Jammer",
             sdl_Replay(
                         "alt_day6_sl_cl_amp_club", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_day,
@@ -4780,7 +4780,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обморок Слави",
+            "Fainting Slavya",
             sdl_Replay(
                         "alt_day6_sl_cl_ambulance", {"alt_replay_on" : "True"},
                         ambience = ambience_clubs_inside_day,
@@ -4792,7 +4792,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Анатолий Иванович",
+            "Anatoliy Ivanovich",
             sdl_Replay(
                         "alt_day6_sl_cl_kgb", {"alt_replay_on" : "True"},
                         vars = [
@@ -4804,7 +4804,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Пират",
+            "Pirate",
             sdl_Replay(
                         "alt_day6_sl_cl_pirate", {"alt_replay_on" : "True"},
                         vars = [
@@ -4815,7 +4815,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Мир Вторых Шансов",
+            "World of Second Chances",
             sdl_Replay(
                         "alt_day6_sl_cl_regular_arc", {"alt_replay_on" : "True"},
                         music = music_7dl["gonna_be_ok"],
@@ -4828,7 +4828,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Помощь Саныча",
+            "Help from Sanich",
             sdl_Replay(
                         "alt_day6_sl_cl_ba_help", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_day,
@@ -4839,7 +4839,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Концерт. Пират",
+            "Concert. Pirate",
             sdl_Replay(
                         "alt_day6_sl_cl_hala", {"alt_replay_on" : "True"},
                         vars = [
@@ -4850,7 +4850,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Концерт. Шурик",
+            "Concert. Shurik",
             sdl_Replay(
                         "alt_day6_sl_cl_concert", {"alt_replay_on" : "True"},
                         vars = [
@@ -4862,7 +4862,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Алгоритм",
+            "Algorithm",
             sdl_Replay(
                         "alt_day6_sl_cl_algorithm", {"alt_replay_on" : "True"},
                         vars = [
@@ -4872,11 +4872,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Колонки",
+            "Speakers",
             sdl_Replay("alt_day6_sl_cl_sonic", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day6_sl_cl_supper", {"alt_replay_on" : "True"},
                         vars = [
@@ -4886,7 +4886,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Дискотека",
+            "Disco",
             sdl_Replay(
                         "alt_day6_sl_cl_dance", {"alt_replay_on" : "True"},
                         vars = [
@@ -4896,7 +4896,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Танец",
+            "Dance",
             sdl_Replay(
                         "alt_day6_sl_cl_dancing", {"alt_replay_on" : "True"},
                         vars = [
@@ -4907,7 +4907,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "История Шурика",
+            "Shurik's Story",
             sdl_Replay(
                         "alt_day6_sl_cl_sh_story", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_entrance_night,
@@ -4918,7 +4918,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Виола",
+            "Viola",
             sdl_Replay(
                         "alt_day6_sl_cl_sh_tug", {"alt_replay_on" : "True"},
                         vars = [
@@ -4928,7 +4928,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Дебаркадер",
+            "Landing stage",
             sdl_Replay(
                         "alt_day6_sl_cl_debarkader", {"alt_replay_on" : "True"},
                         vars = [
@@ -4938,14 +4938,14 @@ init 9999 python:
                       )
         )
     ]
-    #### 7 День
+    #### 7 Day
     sdl_repl_array_sl_clt_day7 = [
         sdl_repl_Label(
-            "Техносон",
+            "Technodream",
             sdl_Replay("alt_day7_sl_cl_techno", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Утро. Изолятор",
+            "Morning. Isolator",
             sdl_Replay(
                         "alt_day7_sl_cl_begin_sh", {"alt_replay_on" : "True"},
                         vars = [
@@ -4956,11 +4956,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Дебаркадер",
+            "Morning. Landing stage",
             sdl_Replay("alt_day7_sl_cl_begin_pi", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Инцидент",
+            "Incident",
             sdl_Replay(
                         "alt_day7_sl_cl_incident", {"alt_replay_on" : "True"},
                         vars = [
@@ -4970,7 +4970,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day7_sl_cl_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -4980,11 +4980,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Админ. корпус",
+            "Detour. Admin. building",
             sdl_Replay("alt_day7_sl_cl_admins1", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Обход. Клубы",
+            "Detour. Clubs",
             sdl_Replay(
                         "alt_day7_sl_cl_clubs1", {"alt_replay_on" : "True"},
                         vars = [
@@ -4994,11 +4994,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Столовая",
+            "Detour. Canteen",
             sdl_Replay("alt_day7_sl_cl_dining_hall1", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Обход. Спортплощадка",
+            "Detour. Sports ground",
             sdl_Replay(
                         "alt_day7_sl_cl_sport_area1", {"alt_replay_on" : "True"},
                         vars = [
@@ -5008,7 +5008,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Воллейбол. площадка",
+            "Detour. Volleyball court.",
             sdl_Replay(
                         "alt_day7_sl_cl_volleyball_alt2", {"alt_replay_on" : "True"},
                         vars = [
@@ -5018,11 +5018,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Эстрада",
+            "Detour. Stage",
             sdl_Replay("alt_day7_sl_cl_estrade1", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Обход. Пристань",
+            "Detour. Pier",
             sdl_Replay(
                         "alt_day7_sl_cl_boat_station1", {"alt_replay_on" : "True"},
                         vars = [
@@ -5032,7 +5032,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обход. Пляж",
+            "Detour. Beach",
             sdl_Replay(
                         "alt_day7_sl_cl_beach", {"alt_replay_on" : "True"},
                         vars = [
@@ -5043,7 +5043,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Фото на память",
+            "A commemorative photo",
             sdl_Replay(
                         "alt_day7_sl_cl_photo", {"alt_replay_on" : "True"},
                         vars = [
@@ -5055,10 +5055,10 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day7_sl_cl_dinner", {"alt_replay_on" : "True"},
-                        meets = {'bb' : 'Начальник лагеря'},
+                        meets = {'bb' : 'Head of the camp'},
                         vars = [
                                     sdl_var_i_sl_lpp,
                                     sdl_var_i_sl_sp,
@@ -5068,11 +5068,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отъезд. Успел",
+            "Departure. Got it",
             sdl_Replay("alt_day7_sl_cl_departure_a2th", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Отъезд. Опоздал",
+            "Departure. Late",
             sdl_Replay(
                         "alt_day7_sl_cl_departure_lone", {"alt_replay_on" : "True"},
                         vars = [
@@ -5085,18 +5085,18 @@ init 9999 python:
                       )
         )
     ]
-    #### ??? День
+    #### ??? Day
     sdl_repl_array_sl_clt_dayx = [
         sdl_repl_Label(
-            "Дома",
+            "At home",
             sdl_Replay("alt_day6_sl_cl_home", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Сёмушка",
+            "Syomushka",
             sdl_Replay("alt_day6_sl_cl_intellectual", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Самый большой страх",
+            "Biggest fear",
             sdl_Replay("alt_day7_sl_cl_fear", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
@@ -5104,7 +5104,7 @@ init 9999 python:
             sdl_Replay("alt_day7_sl_cl_1996", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Спасательная операция",
+            "Rescue operation",
             sdl_Replay(
                         "alt_day7_sl_cl_loop", {"alt_replay_on" : "True"},
                         vars = [
@@ -5114,21 +5114,21 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Порридж",
+            "Porridge",
             sdl_Replay("alt_day7_sl_cl_porridge", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Послесловие",
+            "Post-Scriptum",
             sdl_Replay("alt_day7_sl_cl_ps", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load)
         )
     ]
 
-    ## Лена
-    ### Лена-7дл
-    #### 4 День
+    ## Lena
+    ### Lena-7DS
+    #### 4 Day
     sdl_repl_array_un_7dl_day4 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day4_un_7dl_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -5139,11 +5139,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Линейка",
+            "Lineup",
             sdl_Replay("alt_day4_un_7dl_lineup", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day4_un_7dl_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -5153,7 +5153,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Стоянка",
+            "Bus stop",
             sdl_Replay(
                         "alt_day4_un_7dl_entrance", {"alt_replay_on" : "True"},
                         music = music_list["tried_to_bring_it_back"],
@@ -5165,7 +5165,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Запись",
+            "Recording",
             sdl_Replay(
                         "alt_day4_un_7dl_declaration", {"alt_replay_on" : "True"},
                         vars = [
@@ -5175,7 +5175,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Примирение с Женей",
+            "Make up with Zhenya",
             sdl_Replay(
                         "alt_day4_un_7dl_library", {"alt_replay_on" : "True"},
                         music = music_list["everyday_theme"],
@@ -5186,7 +5186,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day4_un_7dl_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -5197,7 +5197,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "День. Локи",
+            "Day. Loki",
             sdl_Replay(
                         "alt_day4_un_7dl_day_loki", {"alt_replay_on" : "True"},
                         vars = [
@@ -5211,12 +5211,12 @@ init 9999 python:
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Хентай",
+            "Hentai",
             sdl_Replay("alt_day4_un_7dl_hentai", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 4
         ),
         sdl_repl_Label(
-            "День. Герк",
+            "Day. Herc",
             sdl_Replay(
                         "alt_day4_un_7dl_day_herc", {"alt_replay_on" : "True"},
                         vars = [
@@ -5227,7 +5227,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "День. Дрищ. Газета",
+            "Day. Wimp. newspaper",
             sdl_Replay(
                         "alt_day4_un_7dl_day_dr_nwsppr", {"alt_replay_on" : "True"},
                         vars = [
@@ -5240,7 +5240,7 @@ init 9999 python:
             char_mask = 1
         ),
         sdl_repl_Label(
-            "День. Дрищ. Бадминтон",
+            "Day. Wimp. Badminton",
             sdl_Replay(
                         "alt_day4_un_7dl_day_dr_badmin", {"alt_replay_on" : "True"},
                         vars = [
@@ -5254,7 +5254,7 @@ init 9999 python:
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Полдник",
+            "Lunch",
             sdl_Replay(
                         "alt_day4_un_7dl_launch", {"alt_replay_on" : "True"},
                         vars = [
@@ -5265,7 +5265,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Концерт",
+            "Concert",
             sdl_Replay(
                         "alt_day4_un_7dl_concert", {"alt_replay_on" : "True"},
                         vars = [
@@ -5277,7 +5277,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Взрывчатка",
+            "Explosives",
             sdl_Replay(
                         "alt_day4_un_7dl_dynamite", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_day,
@@ -5288,7 +5288,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day4_un_7dl_supper", {"alt_replay_on" : "True"},
                         vars = [
@@ -5298,7 +5298,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер",
+            "Evening",
             sdl_Replay(
                         "alt_day4_un_7dl_evening", {"alt_replay_on" : "True"},
                         music = music_list["a_promise_from_distant_days"],
@@ -5310,7 +5310,7 @@ init 9999 python:
             char_mask = 6
         ),
         sdl_repl_Label(
-            "Вечер. Дрищ",
+            "Evening. Wimp",
             sdl_Replay(
                         "alt_day4_un_7dl_evening_dr", {"alt_replay_on" : "True"},
                         music = music_list["a_promise_from_distant_days"],
@@ -5323,18 +5323,18 @@ init 9999 python:
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Пристань",
+            "Pier",
             sdl_Replay("alt_day4_un_7dl_dock", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay("alt_day4_un_7dl_sleeptime", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load)
         )
     ]
-    #### 5 День
+    #### 5 Day
     sdl_repl_array_un_7dl_day5 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day5_un_7dl_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -5344,7 +5344,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day5_un_7dl_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -5357,12 +5357,12 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Локи",
+            "Morning. Loki",
             sdl_Replay("alt_day5_un_7dl_breakfast_l", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Утро. Герк",
+            "Morning. Herc",
             sdl_Replay(
                         "alt_day5_un_7dl_breakfast_h", {"alt_replay_on" : "True"},
                         vars = [
@@ -5375,7 +5375,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Утро. Дрищ",
+            "Morning. Wimp",
             sdl_Replay(
                         "alt_day5_un_7dl_games", {"alt_replay_on" : "True"},
                         vars = [
@@ -5389,12 +5389,12 @@ init 9999 python:
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Клубы",
+            "Clubs",
             sdl_Replay("alt_day5_un_7dl_clubs", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 4
         ),
         sdl_repl_Label(
-            "«Лиловый шар»",
+            "«Lilac Balloon»",
             sdl_Replay(
                         "alt_day4_un_7dl_cinema", {"alt_replay_on" : "True"},
                         music = music_list["sweet_darkness"],
@@ -5406,11 +5406,11 @@ init 9999 python:
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Уборка площади",
+            "Square cleaning",
             sdl_Replay("alt_day5_un_7dl_cleaning", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day5_un_7dl_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -5425,7 +5425,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Пляж",
+            "Beach",
             sdl_Replay(
                         "alt_day5_un_7dl_np", {"alt_replay_on" : "True"},
                         vars = [
@@ -5435,17 +5435,17 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Статья",
+            "Article",
             sdl_Replay("alt_day5_un_7dl_article", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Алёна",
+            "Alyona",
             sdl_Replay("alt_day5_un_7dl_unl", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Полдник",
+            "Lunch",
             sdl_Replay(
                         "alt_day5_un_7dl_launch", {"alt_replay_on" : "True"},
                         vars = [
@@ -5455,7 +5455,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Библиотека",
+            "Library",
             sdl_Replay(
                         "alt_day5_un_7dl_library", {"alt_replay_on" : "True"},
                         vars = [
@@ -5466,7 +5466,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Уборка костровой поляны",
+            "Cleaning the campfire glade",
             sdl_Replay(
                         "alt_day5_un_7dl_washing", {"alt_replay_on" : "True"},
                         vars = [
@@ -5479,7 +5479,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day5_un_7dl_supper", {"alt_replay_on" : "True"},
                         vars = [
@@ -5489,7 +5489,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Костёр",
+            "Fire",
             sdl_Replay(
                         "alt_day5_un_7dl_campfire", {"alt_replay_on" : "True"},
                         vars = [
@@ -5500,7 +5500,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Лёгкая ссора",
+            "Small quarrel",
             sdl_Replay(
                         "alt_day5_un_7dl_evening_un", {"alt_replay_on" : "True"},
                         sound_loop = sfx_forest_fireplace,
@@ -5508,7 +5508,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Серьёзная ссора",
+            "Big quarrel",
             sdl_Replay(
                         "alt_day5_un_7dl_evening_dv", {"alt_replay_on" : "True"},
                         sound_loop = sfx_forest_fireplace,
@@ -5519,7 +5519,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Побег с костра",
+            "Runaway",
             sdl_Replay(
                         "alt_day5_un_7dl_runaway", {"alt_replay_on" : "True"},
                         sound_loop = sfx_forest_fireplace,
@@ -5531,7 +5531,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Хентай в клубах",
+            "Hentai in clubs",
             sdl_Replay(
                         "alt_day5_un_7dl_video", {"alt_replay_on" : "True"},
                         sound_loop = sfx_forest_fireplace,
@@ -5540,7 +5540,7 @@ init 9999 python:
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Хентай в лодке",
+            "Hentai in the boat",
             sdl_Replay(
                         "alt_day5_un_7dl_island_hen", {"alt_replay_on" : "True"},
                         vars = [
@@ -5552,7 +5552,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day5_un_7dl_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -5562,14 +5562,14 @@ init 9999 python:
                       )
         )
     ]
-    #### 6 День
+    #### 6 Day
     sdl_repl_array_un_7dl_day6 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay("alt_day6_un_7dl_begin", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Поиски. Библиотека",
+            "Searchings. Library",
             sdl_Replay(
                         "alt_day6_un_7dl_search", {"alt_replay_on" : "True"},
                         vars = [
@@ -5579,15 +5579,15 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay("alt_day6_un_7dl_dinner", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Поиски. Карьер",
+            "Searchings. Quarry",
             sdl_Replay("alt_day6_un_7dl_career", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Поиски. Музклуб",
+            "Searchings. Mus. club",
             sdl_Replay(
                         "alt_day6_un_7dl_music_club", {"alt_replay_on" : "True"},
                         vars = [
@@ -5597,7 +5597,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Концерт",
+            "Concert",
             sdl_Replay(
                         "alt_day6_un_7dl_concert", {"alt_replay_on" : "True"},
                         music = music_list["everyday_theme"],
@@ -5611,11 +5611,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay("alt_day6_un_7dl_supper", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Катапульта",
+            "Catapult",
             sdl_Replay(
                         "alt_day6_un_7dl_catapult", {"alt_replay_on" : "True"},
                         vars = [
@@ -5625,7 +5625,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Дискотека",
+            "Disco",
             sdl_Replay(
                         "alt_day6_un_7dl_dance", {"alt_replay_on" : "True"},
                         vars = [
@@ -5638,18 +5638,18 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay("alt_day6_un_7dl_sleeptime", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load)
         )
     ]
-    #### 7 День
+    #### 7 Day
     sdl_repl_array_un_7dl_day7 = [
         sdl_repl_Label(
-            "Сон",
+            "Dream",
             sdl_Replay("alt_day7_un_7dl_begin", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "День",
+            "Day",
             sdl_Replay(
                         "alt_day7_un_7dl_day", {"alt_replay_on" : "True"},
                         vars = [
@@ -5660,11 +5660,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay("alt_day7_un_7dl_dinner", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Истерика",
+            "Hysteria",
             sdl_Replay(
                         "alt_day7_un_7dl_hysterics", {"alt_replay_on" : "True"},
                         vars = [
@@ -5674,11 +5674,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Таблетки",
+            "Pills",
             sdl_Replay("alt_day7_un_7dl_pills", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Чудо",
+            "Miracle",
             sdl_Replay(
                         "alt_day7_un_7dl_miracle", {"alt_replay_on" : "True"},
                         vars = [
@@ -5690,11 +5690,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Откат",
+            "Rollback",
             sdl_Replay("alt_day7_un_7dl_rollback", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Отъезд",
+            "Departure",
             sdl_Replay(
                         "alt_day7_un_7dl_departure", {"alt_replay_on" : "True"},
                         vars = [
@@ -5704,26 +5704,26 @@ init 9999 python:
                       )
         )
     ]
-    ### Лена-Френдзона
-    #### 4 День
+    ### Lena-FZ
+    #### 4 Day
     sdl_repl_array_un_fzd_day4 = [
         sdl_repl_Label(
-            "Сон. Лена",
+            "Dream. Lena",
             sdl_Replay("alt_day4_un_fz_dream_un", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Сон. Дорога",
+            "Dream. The Road",
             sdl_Replay("alt_day4_un_fz_dream_road", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay("alt_day4_un_fz_morning", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Медпункт",
+            "Infirmary",
             sdl_Replay(
                         "alt_day4_un_fz_aidpost", {"alt_replay_on" : "True"},
                         vars = [
@@ -5735,7 +5735,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Стенгазета",
+            "Wall newspaper",
             sdl_Replay(
                         "alt_day4_un_fz_un_nwsppr", {"alt_replay_on" : "True"},
                         vars = [
@@ -5746,32 +5746,32 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Помощник вожатой",
+            "Assistant counselor",
             sdl_Replay("alt_day4_un_fz_mt_help", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Побег с Алисой",
+            "Escape with Alisa",
             sdl_Replay("alt_day4_un_fz_dv_escape", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Заблудший",
+            "Lost",
             sdl_Replay("alt_day4_un_fz_old_road", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Обед. После стенгазеты",
+            "Dinner. After newspaper",
             sdl_Replay("alt_day4_un_fz_lunch_nwsppr", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Обед. После лодок",
+            "Dinner. After boats",
             sdl_Replay("alt_day4_un_fz_lunch_boat", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Обед. После леса",
+            "Dinner. After forest",
             sdl_Replay(
                         "alt_day4_un_fz_lunch_forest", {"alt_replay_on" : "True"},
                         vars = [
@@ -5782,7 +5782,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Тихий час",
+            "Quiet hour",
             sdl_Replay(
                         "alt_day4_un_fz_siesta", {"alt_replay_on" : "True"},
                         vars = [
@@ -5795,7 +5795,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Полдник",
+            "Lunch",
             sdl_Replay(
                         "alt_day4_un_fz_afternoon", {"alt_replay_on" : "True"},
                         vars = [
@@ -5806,7 +5806,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Песчаная коса",
+            "Wild beach",
             sdl_Replay(
                         "alt_day4_un_fz_un_date", {"alt_replay_on" : "True"},
                         vars = [
@@ -5817,7 +5817,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day4_un_fz_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -5828,10 +5828,10 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Погоня",
+            "The Chase",
             sdl_Replay(
                         "alt_day4_un_fz_run", {"alt_replay_on" : "True"},
-                        meets = {'al' : 'Сердитый мальчик'},
+                        meets = {'al' : 'Angry Boy'},
                         vars = [
                                     sdl_var_b_d3_un_fz_stories,
                                     sdl_var_i_un_fzd_dv
@@ -5841,10 +5841,10 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Разборки",
+            "The showdown",
             sdl_Replay(
                         "alt_day4_un_fz_debriefing", {"alt_replay_on" : "True"},
-                        meets = {'dn' : 'Кудрявый'},
+                        meets = {'dn' : 'Curly'},
                         music = music_7dl["areyouabully"],
                         vars = [
                                     sdl_var_i_un_fzd_dv,
@@ -5855,7 +5855,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Вечер",
+            "Evening",
             sdl_Replay(
                         "alt_day4_un_fz_evening", {"alt_replay_on" : "True"},
                         vars = [
@@ -5868,12 +5868,12 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Вечер. Дом Семёна и Ольги",
+            "Evening. Olga's cabin",
             sdl_Replay("alt_day4_un_fz_mt_house", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Вечер. Портвейн",
+            "Evening. Port Wine",
             sdl_Replay(
                         "alt_day4_un_fz_portwine", {"alt_replay_on" : "True"},
                         music = music_list["smooth_machine"],
@@ -5889,19 +5889,19 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "«Чаепитие»",
+            "«Tea Party»",
             sdl_Replay(
                         "alt_day4_un_fz_tea_party", {"alt_replay_on" : "True"},
                         vars = [
                                     sdl_var_e_d4_un_fz_morn
-                                    # переменные турнира
+                                    # Tournament int
                                 ],
                         func_in = night_interface_on, func_out = replay_screens_load
                       ),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "После вечеринки",
+            "After the party",
             sdl_Replay(
                         "alt_day4_un_fz_afterparty", {"alt_replay_on" : "True"},
                         vars = [
@@ -5914,7 +5914,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day4_un_fz_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -5926,15 +5926,15 @@ init 9999 python:
             char_mask = 2
         )
     ]
-    #### 5 День
+    #### 5 Day
     sdl_repl_array_un_fzd_day5 = [
         sdl_repl_Label(
-            "Сон",
+            "Dream",
             sdl_Replay("alt_day5_un_fz_dream", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day5_un_fz_morning", {"alt_replay_on" : "True"},
                         vars = [
@@ -5945,7 +5945,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day5_un_fz_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -5958,7 +5958,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Свечка",
+            "Candle",
             sdl_Replay(
                         "alt_day5_un_fz_cndl", {"alt_replay_on" : "True"},
                         vars = [
@@ -5970,22 +5970,22 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Сон. Алиса",
+            "Dream. Alisa",
             sdl_Replay("alt_day5_un_fz_dream2_dv", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Сон. Лена",
+            "Dream. Lena",
             sdl_Replay("alt_day5_un_fz_dream2_un", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Сон. Дорога",
+            "Dream. The Road",
             sdl_Replay("alt_day5_un_fz_dream2_road", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day5_un_fz_lunch", {"alt_replay_on" : "True"},
                         vars = [
@@ -5996,7 +5996,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Золушка",
+            "Cinderella",
             sdl_Replay(
                         "alt_day5_un_fz_beach_work", {"alt_replay_on" : "True"},
                         vars = [
@@ -6007,7 +6007,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Полдник",
+            "Lunch",
             sdl_Replay(
                         "alt_day5_un_fz_afternoon", {"alt_replay_on" : "True"},
                         vars = [
@@ -6018,7 +6018,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Костровая поляна",
+            "Campfire glade",
             sdl_Replay(
                         "alt_day5_un_fz_bonfire_glade", {"alt_replay_on" : "True"},
                         vars = [
@@ -6029,7 +6029,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Старый лагерь",
+            "Old Camp",
             sdl_Replay(
                         "alt_day5_un_fz_old_camp", {"alt_replay_on" : "True"},
                         vars = [
@@ -6041,7 +6041,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day5_un_fz_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -6053,7 +6053,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Поручение Ольги",
+            "Olga's errand",
             sdl_Replay(
                         "alt_day5_un_fz_mission", {"alt_replay_on" : "True"},
                         vars = [
@@ -6065,7 +6065,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Вечер",
+            "Evening",
             sdl_Replay(
                         "alt_day5_un_fz_evening", {"alt_replay_on" : "True"},
                         vars = [
@@ -6078,7 +6078,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Костёр",
+            "Fire",
             sdl_Replay(
                         "alt_day5_un_fz_campfire", {"alt_replay_on" : "True"},
                         ambience = ambience_forest_evening,
@@ -6091,7 +6091,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Поиски",
+            "Searchings",
             sdl_Replay(
                         "alt_day5_un_fz_search", {"alt_replay_on" : "True"},
                         vars = [
@@ -6103,7 +6103,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Огонёк. ФЗ",
+            "Flare. FZ",
             sdl_Replay(
                         "alt_day5_un_fz_fzr", {"alt_replay_on" : "True"},
                         ambience = ambience_lake_shore_night,
@@ -6115,7 +6115,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Огонёк. Дорога",
+            "Flare. The Road",
             sdl_Replay(
                         "alt_day5_un_fz_rr", {"alt_replay_on" : "True"},
                         ambience = ambience_lake_shore_night,
@@ -6127,7 +6127,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Отбой. ФЗ",
+            "Lights out. FZ",
             sdl_Replay(
                         "alt_day5_un_fz_fzr_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -6139,20 +6139,20 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Отбой. Дорога",
+            "Lights out. The Road",
             sdl_Replay("alt_day5_un_fz_rr_sleeptime", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 2
         )
     ]
-    #### 6 День. Дорога
+    #### 6 Day. The Road
     sdl_repl_array_un_fzd_day6 = [
         sdl_repl_Label(
-            "Сон",
+            "Dream",
             sdl_Replay("alt_day6_un_fz_rr_dream", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day6_un_fz_rr_morning", {"alt_replay_on" : "True"},
                         vars = [
@@ -6165,12 +6165,12 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Линейка",
+            "Lineup",
             sdl_Replay("alt_day6_un_fz_rr_lineup", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day6_un_fz_rr_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -6181,7 +6181,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Поиски",
+            "Searchings",
             sdl_Replay(
                         "alt_day6_un_fz_rr_search", {"alt_replay_on" : "True"},
                         vars = [
@@ -6192,7 +6192,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Поиски. Домик на дереве",
+            "Searchings. Tree house",
             sdl_Replay(
                         "alt_day6_un_fz_rr_search3", {"alt_replay_on" : "True"},
                         music = music_list["get_to_know_me_better"],
@@ -6206,16 +6206,16 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Поиски. Старый лагерь",
+            "Searchings. Old Camp",
             sdl_Replay(
                         "alt_day6_un_fz_rr_search2", {"alt_replay_on" : "True"},
-                        meets = {'tn' : 'Странный мальчик'},
+                        meets = {'tn' : 'Strange boy'},
                         func_in = sunset_interface_on, func_out = replay_screens_load
                       ),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day6_un_fz_rr_lunch", {"alt_replay_on" : "True"},
                         vars = [
@@ -6226,12 +6226,12 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Спасение Гвардии",
+            "Rescue the Guardsmen",
             sdl_Replay("alt_day6_un_fz_rr_guard_resque", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Старая Дорога",
+            "The Old Road",
             sdl_Replay(
                         "alt_day6_un_fz_rr_old_road", {"alt_replay_on" : "True"},
                         vars = [
@@ -6245,20 +6245,20 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Иной мир",
+            "Another world",
             sdl_Replay("alt_day6_un_fz_rr_another_world", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Прощание",
+            "Farewell",
             sdl_Replay("alt_day6_un_fz_rr_farewell", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 2
         )
     ]
-    #### 6 День. ФЗ
+    #### 6 Day. FZ
     sdl_repl_array_un_fzd_day62 = [
         sdl_repl_Label(
-            "Пробуждение",
+            "Awakening",
             sdl_Replay(
                         "alt_day6_un_fz_morning", {"alt_replay_on" : "True"},
                         func_in = sunset_interface_on, func_out = replay_screens_load
@@ -6266,7 +6266,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Линейка",
+            "Lineup",
             sdl_Replay(
                         "alt_day6_un_fz_lineup", {"alt_replay_on" : "True"},
                         vars = [
@@ -6277,7 +6277,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day6_un_fz_breakfast", {"alt_replay_on" : "True"},
                         func_in = sunset_interface_on, func_out = replay_screens_load
@@ -6285,7 +6285,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Карта. Лодочная станция",
+            "Map. Boat station",
             sdl_Replay(
                         "alt_day6_un_fz_map_boatstation1", {"alt_replay_on" : "True"},
                         func_in = sunset_interface_on, func_out = replay_screens_load
@@ -6293,7 +6293,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Карта. Спортплощадка",
+            "Map. Sports ground",
             sdl_Replay(
                         "alt_day6_un_fz_map_playground1", {"alt_replay_on" : "True"},
                         vars = [
@@ -6304,7 +6304,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Карта. Музклуб",
+            "Map. Mus. club",
             sdl_Replay(
                         "alt_day6_un_fz_map_musclub1", {"alt_replay_on" : "True"},
                         func_in = sunset_interface_on, func_out = replay_screens_load
@@ -6312,7 +6312,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Карта. Домик Алисы",
+            "Map. Alisa's house",
             sdl_Replay(
                         "alt_day6_un_fz_map_house_dv1", {"alt_replay_on" : "True"},
                         vars = [
@@ -6323,7 +6323,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Карта. Пляж",
+            "Map. Beach",
             sdl_Replay(
                         "alt_day6_un_fz_map_beach2", {"alt_replay_on" : "True"},
                         func_in = sunset_interface_on, func_out = replay_screens_load
@@ -6331,7 +6331,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Карта. Столовая",
+            "Map. Canteen",
             sdl_Replay(
                         "alt_day6_un_fz_map_dinner_hall2", {"alt_replay_on" : "True"},
                         vars = [
@@ -6342,7 +6342,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Карта. Автоб. остановка",
+            "Map. Bus stop",
             sdl_Replay(
                         "alt_day6_un_fz_map_busstation2", {"alt_replay_on" : "True"},
                         func_in = sunset_interface_on, func_out = replay_screens_load
@@ -6350,7 +6350,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day6_un_fz_lunch", {"alt_replay_on" : "True"},
                         vars = [
@@ -6361,7 +6361,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Помощь Славе",
+            "Helping Slavya",
             sdl_Replay(
                         "alt_day6_un_fz_sl_help", {"alt_replay_on" : "True"},
                         vars = [
@@ -6375,7 +6375,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Полдник",
+            "Lunch",
             sdl_Replay(
                         "alt_day6_un_fz_afternoon", {"alt_replay_on" : "True"},
                         vars = [
@@ -6387,7 +6387,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Концерт",
+            "Concert",
             sdl_Replay(
                         "alt_day6_un_fz_concert", {"alt_replay_on" : "True"},
                         vars = [
@@ -6400,7 +6400,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Ужин с Алисой",
+            "Supper with Alisa",
             sdl_Replay(
                         "alt_day6_un_fz_dv_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -6411,7 +6411,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Вечер с Алисой",
+            "Evening with Alisa",
             sdl_Replay(
                         "alt_day6_un_fz_dv_date", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -6419,7 +6419,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Поиски Лены",
+            "Searching for Lena",
             sdl_Replay(
                         "alt_day6_un_fz_dv_un_search", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -6427,7 +6427,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Кошмар наяву",
+            "Nightmare unfolding",
             sdl_Replay(
                         "alt_day6_un_fz_dv_un_night", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -6435,7 +6435,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Ужин с Леной",
+            "Supper with Lena",
             sdl_Replay(
                         "alt_day6_un_fz_good_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -6446,7 +6446,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Точки над «Ё»",
+            "Dots over «i»",
             sdl_Replay(
                         "alt_day6_un_fz_good_un_evening", {"alt_replay_on" : "True"},
                         func_in = sunset_interface_on, func_out = replay_screens_load
@@ -6454,7 +6454,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Танцы в одиночестве",
+            "Dances alone",
             sdl_Replay(
                         "alt_day6_un_fz_dance1", {"alt_replay_on" : "True"},
                         vars = [
@@ -6466,7 +6466,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Разговор с Ольгой",
+            "Conversation with Olga",
             sdl_Replay(
                         "alt_day6_un_fz_sleeptime1", {"alt_replay_on" : "True"},
                         vars = [
@@ -6477,7 +6477,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Танцы с Леной",
+            "Dances with Lena",
             sdl_Replay(
                         "alt_day6_un_fz_dance2", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -6485,7 +6485,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Прогулка",
+            "Walk",
             sdl_Replay(
                         "alt_day6_un_fz_night_walk", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -6493,7 +6493,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day6_un_fz_sleeptime2", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -6501,7 +6501,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Ужин в одиночестве",
+            "Supper alone",
             sdl_Replay(
                         "alt_day6_un_fz_bad_neu_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -6512,7 +6512,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "На поиски",
+            "Search",
             sdl_Replay(
                         "alt_day6_un_fz_un_search", {"alt_replay_on" : "True"},
                         vars = [
@@ -6523,7 +6523,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Сопровождение до лагеря",
+            "Escort to camp",
             sdl_Replay(
                         "alt_day6_un_fz_neu_sleeptime", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -6531,7 +6531,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Возвращение в одиночку",
+            "Returning Alone",
             sdl_Replay(
                         "alt_day6_un_fz_neu_bad_sleeptime", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -6539,7 +6539,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "На границе чистилища",
+            "At Hell's gate",
             sdl_Replay(
                         "alt_day6_un_fz_night_in_hell", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -6547,10 +6547,10 @@ init 9999 python:
             char_mask = 2
         )
     ]
-    #### 7 День. ФЗ
+    #### 7 Day. FZ
     sdl_repl_array_un_fzd_day7 = [
         sdl_repl_Label(
-            "Ад. Утро",
+            "Hell. Morning",
             sdl_Replay(
                         "alt_day7_un_fz_bad_morning", {"alt_replay_on" : "True"},
                         vars = [
@@ -6561,7 +6561,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Ад. В поисках Ольги",
+            "Hell. In Search of Olga",
             sdl_Replay(
                         "alt_day7_un_fz_bad_mt_search", {"alt_replay_on" : "True"},
                         vars = [
@@ -6572,7 +6572,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Ад. Отбытие",
+            "Hell. Departure",
             sdl_Replay(
                         "alt_day7_un_fz_bad_departure", {"alt_replay_on" : "True"},
                         vars = [
@@ -6584,7 +6584,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Лена. Утро",
+            "Lena. Morning",
             sdl_Replay(
                         "alt_day7_un_fz_good_morning", {"alt_replay_on" : "True"},
                         vars = [
@@ -6595,7 +6595,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Лена. Завтрак",
+            "Lena. Breakfast",
             sdl_Replay(
                         "alt_day7_un_fz_good_breakfast", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
@@ -6603,7 +6603,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Лена. Прощание",
+            "Lena. Farewell",
             sdl_Replay(
                         "alt_day7_un_fz_good_farewell", {"alt_replay_on" : "True"},
                         vars = [
@@ -6617,7 +6617,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Лена. Отбытие",
+            "Lena. Departure",
             sdl_Replay(
                         "alt_day7_un_fz_good_departure", {"alt_replay_on" : "True"},
                         vars = [
@@ -6628,7 +6628,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day7_un_fz_neu_morning", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
@@ -6636,7 +6636,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day7_un_fz_neu_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -6647,7 +6647,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Прощание с лагерем",
+            "Goodbye, Camp",
             sdl_Replay(
                         "alt_day7_un_fz_neu_camp_farewell", {"alt_replay_on" : "True"},
                         vars = [
@@ -6661,7 +6661,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Отбытие",
+            "Departure",
             sdl_Replay(
                         "alt_day7_un_fz_neu_departure", {"alt_replay_on" : "True"},
                         vars = [
@@ -6673,12 +6673,12 @@ init 9999 python:
         )
     ]
 
-    ## Ольга
-    ### Ольга-7дл
-    #### 6 День
+    ## Olga
+    ### Olga-7DS
+    #### 6 Day
     sdl_repl_array_mt_7dl_day6 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day6_mt_7dl_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -6688,11 +6688,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay("alt_day6_mt_7dl_breakfast", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Партийное задание",
+            "Party assignment",
             sdl_Replay(
                         "alt_day6_mt_7dl_morning", {"alt_replay_on" : "True"},
                         vars = [
@@ -6702,12 +6702,12 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Алиса",
+            "Morning. Alisa",
             sdl_Replay("alt_day6_mt_7dl_dv_morning", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Утро. Лена",
+            "Morning. Lena",
             sdl_Replay(
                         "alt_day6_mt_7dl_un_morning", {"alt_replay_on" : "True"},
                         vars = [
@@ -6720,7 +6720,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "О ненужных",
+            "About unneeded",
             sdl_Replay(
                         "alt_day6_mt_7dl_retail", {"alt_replay_on" : "True"},
                         vars = [
@@ -6730,7 +6730,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Горечь",
+            "Bitterness",
             sdl_Replay(
                         "alt_day6_mt_7dl_bitter", {"alt_replay_on" : "True"},
                         vars = [
@@ -6741,11 +6741,11 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Прощение",
+            "Farewell",
             sdl_Replay("alt_day6_mt_7dl_forgive", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Первые встречи",
+            "First meetings",
             sdl_Replay(
                         "alt_day6_mt_7dl_memento", {"alt_replay_on" : "True"},
                         vars = [
@@ -6755,11 +6755,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Дневник ч. 3",
+            "Diary P. 3",
             sdl_Replay("alt_day6_mt_7dl_diary3", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day6_mt_7dl_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -6769,7 +6769,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Воспоминания",
+            "Memories",
             sdl_Replay(
                         "alt_day6_mt_7dl_memory", {"alt_replay_on" : "True"},
                         music = music_7dl["seven_summer_days"],
@@ -6781,7 +6781,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Концерт",
+            "Concert",
             sdl_Replay(
                         "alt_day6_mt_7dl_concert", {"alt_replay_on" : "True"},
                         vars = [
@@ -6791,7 +6791,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Колонки",
+            "Speakers",
             sdl_Replay(
                         "alt_day6_mt_7dl_sonic", {"alt_replay_on" : "True"},
                         vars = [
@@ -6801,11 +6801,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay("alt_day6_mt_7dl_supper", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Катапульта",
+            "Catapult",
             sdl_Replay(
                         "alt_day6_mt_7dl_catapult", {"alt_replay_on" : "True"},
                         vars = [
@@ -6816,7 +6816,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Дискотека",
+            "Disco",
             sdl_Replay(
                         "alt_day6_mt_7dl_disco", {"alt_replay_on" : "True"},
                         vars = [
@@ -6828,11 +6828,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Чай",
+            "Tea",
             sdl_Replay("alt_day6_mt_7dl_nighttime", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Хентай",
+            "Hentai",
             sdl_Replay(
                         "alt_day6_mt_7dl_hentai", {"alt_replay_on" : "True"},
                         vars = [
@@ -6842,14 +6842,14 @@ init 9999 python:
                       )
         )
     ]
-    #### 7 День
+    #### 7 Day
     sdl_repl_array_mt_7dl_day7 = [
         sdl_repl_Label(
-            "Сон",
+            "Dream",
             sdl_Replay("alt_day7_mt_7dl_begin", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day7_mt_7dl_morning", {"alt_replay_on" : "True"},
                         vars = [
@@ -6859,7 +6859,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Олька-комета",
+            "Olga-comet",
             sdl_Replay(
                         "alt_day7_mt_7dl_comet", {"alt_replay_on" : "True"},
                         vars = [
@@ -6870,7 +6870,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day7_mt_7dl_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -6881,7 +6881,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Прощание. Славя",
+            "Farewell. Slavya",
             sdl_Replay(
                         "alt_day7_mt_7dl_byes", {"alt_replay_on" : "True"},
                         vars = [
@@ -6893,21 +6893,21 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Прощание. Алиса",
+            "Farewell. Alisa",
             sdl_Replay("alt_day7_mt_7dl_dv_bye", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Прощание. Лена",
+            "Farewell. Lena",
             sdl_Replay("alt_day7_mt_7dl_un_bye", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Прощание. Лена-ФЗ",
+            "Farewell. Lena-FZ",
             sdl_Replay("alt_day7_mt_7dl_un_fz_bye", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Отъезд",
+            "Departure",
             sdl_Replay(
                         "alt_day7_mt_7dl_departure", {"alt_replay_on" : "True"},
                         vars = [
@@ -6918,25 +6918,25 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Выбор",
+            "Choice",
             sdl_Replay("alt_day7_mt_7dl_choice", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Выбор: прошлое",
+            "Choice: past",
             sdl_Replay("alt_day7_mt_7dl_loopthru", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Выбор: будущее",
+            "Choice: future",
             sdl_Replay("alt_day7_mt_7dl_loopback", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load)
         )
     ]
 
-    ## Ульяна
-    ### Ульяна-7дл
-    #### 6 День
+    ## Ulyana
+    ### Ulyana-7DS
+    #### 6 Day
     sdl_repl_array_us_7dl_day6 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day6_us_7dl_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -6947,7 +6947,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Линейка",
+            "Lineup",
             sdl_Replay(
                         "alt_day6_us_7dl_exercises", {"alt_replay_on" : "True"},
                         vars = [
@@ -6958,7 +6958,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day6_us_7dl_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -6970,7 +6970,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Разлука",
+            "Separated",
             sdl_Replay(
                         "alt_day6_us_7dl_separation", {"alt_replay_on" : "True"},
                         vars = [
@@ -6982,7 +6982,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Помощь",
+            "Help",
             sdl_Replay(
                         "alt_day6_us_7dl_helping", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_evening,
@@ -6997,7 +6997,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Утро. Мику",
+            "Morning. Miku",
             sdl_Replay(
                         "alt_day6_us_7dl_preps", {"alt_replay_on" : "True"},
                         vars = [
@@ -7010,7 +7010,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Утро. Славя",
+            "Morning. Slavya",
             sdl_Replay(
                         "alt_day6_us_7dl_warehouse", {"alt_replay_on" : "True"},
                         vars = [
@@ -7021,7 +7021,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Утро. Лена",
+            "Morning. Lena",
             sdl_Replay(
                         "alt_day6_us_7dl_un_met", {"alt_replay_on" : "True"},
                         vars = [
@@ -7034,7 +7034,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day6_us_7dl_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -7048,7 +7048,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Медведь",
+            "Bear",
             sdl_Replay(
                         "alt_day6_us_7dl_button", {"alt_replay_on" : "True"},
                         vars = [
@@ -7061,7 +7061,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Спасение дезертира",
+            "Saving the deserter",
             sdl_Replay(
                         "alt_day6_us_7dl_deserter", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_day,
@@ -7075,7 +7075,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Привидение",
+            "Ghost",
             sdl_Replay(
                         "alt_day6_us_7dl_ghost", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_day,
@@ -7088,7 +7088,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Фиаско",
+            "Fiasco",
             sdl_Replay(
                         "alt_day6_us_7dl_fiasco", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_day,
@@ -7097,7 +7097,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Саундчек",
+            "Soundcheck",
             sdl_Replay(
                         "alt_day6_us_7dl_soundcheck", {"alt_replay_on" : "True"},
                         vars = [
@@ -7113,7 +7113,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Свидание",
+            "Date",
             sdl_Replay(
                         "alt_day6_us_7dl_rendezvous", {"alt_replay_on" : "True"},
                         vars = [
@@ -7125,7 +7125,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Концерт",
+            "Concert",
             sdl_Replay(
                         "alt_day6_us_7dl_concert", {"alt_replay_on" : "True"},
                         vars = [
@@ -7140,7 +7140,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day6_us_7dl_supper", {"alt_replay_on" : "True"},
                         vars = [
@@ -7157,7 +7157,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Дискотека. Начало",
+            "Disco. Beginning",
             sdl_Replay(
                         "alt_day6_us_7dl_disco_prepare", {"alt_replay_on" : "True"},
                         vars = [
@@ -7172,7 +7172,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Дискотека. Мейкап",
+            "Disco. Makeup",
             sdl_Replay(
                         "alt_day6_us_7dl_makeup", {"alt_replay_on" : "True"},
                         vars = [
@@ -7187,7 +7187,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Дискотека",
+            "Disco",
             sdl_Replay(
                         "alt_day6_us_7dl_disco", {"alt_replay_on" : "True"},
                         vars = [
@@ -7201,7 +7201,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Танец с Ульяной",
+            "Dance with Ulyana",
             sdl_Replay(
                         "alt_day6_us_7dl_us_dancing", {"alt_replay_on" : "True"},
                         music = music_7dl["stilllovingyou"],
@@ -7214,7 +7214,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Танец с Леной",
+            "Dance with Lena",
             sdl_Replay(
                         "alt_day6_us_7dl_un_dancing", {"alt_replay_on" : "True"},
                         music = music_7dl["stilllovingyou"],
@@ -7228,7 +7228,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Танец с Мику",
+            "Dance with Miku",
             sdl_Replay(
                         "alt_day6_us_7dl_mi_dancing", {"alt_replay_on" : "True"},
                         music = music_7dl["stilllovingyou"],
@@ -7242,7 +7242,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Танец со Славей",
+            "Dance with Slavya",
             sdl_Replay(
                         "alt_day6_us_7dl_sl_dancing", {"alt_replay_on" : "True"},
                         music = music_7dl["stilllovingyou"],
@@ -7251,7 +7251,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Дискотека в одиночестве",
+            "Disco, forever alone",
             sdl_Replay(
                         "alt_day6_us_7dl_no_dancing", {"alt_replay_on" : "True"},
                         music = music_7dl["stilllovingyou"],
@@ -7260,7 +7260,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Чаепитие",
+            "Tea party",
             sdl_Replay(
                         "alt_day6_us_7dl_tea", {"alt_replay_on" : "True"},
                         vars = [
@@ -7271,7 +7271,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day6_us_7dl_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -7286,42 +7286,42 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Огоньки. Утро",
+            "Flares. Morning",
             sdl_Replay("alt_day6_us_7dl_px_begin", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Огоньки. Завтрак",
+            "Flares. Breakfast",
             sdl_Replay("alt_day6_us_7dl_px_breakfast", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Огоньки. Карьер",
+            "Flares. Quarry",
             sdl_Replay("alt_day6_us_7dl_px_carrier", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Огоньки. Обед",
+            "Flares. Dinner",
             sdl_Replay("alt_day6_us_7dl_px_dinner", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Огоньки. Сбор группы. Славя",
+            "Flares. LFG. Slavya",
             sdl_Replay("alt_day6_us_7dl_px_party_sl", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Огоньки. Сбор группы. Лена",
+            "Flares. LFG. Lena",
             sdl_Replay("alt_day6_us_7dl_px_party_un", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Огоньки. Проблемы",
+            "Flares. Problems",
             sdl_Replay("alt_day6_us_7dl_px_far_gate", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Огоньки. Дискотека",
+            "Flares. Disco",
             sdl_Replay(
                         "alt_day6_us_7dl_px_disco", {"alt_replay_on" : "True"},
                         vars = [
@@ -7332,7 +7332,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Огоньки. Счастье",
+            "Flares. Happiness",
             sdl_Replay(
                         "alt_day6_us_7dl_px_afterwords", {"alt_replay_on" : "True"},
                         vars = [
@@ -7343,10 +7343,10 @@ init 9999 python:
             char_mask = 5
         )
     ]
-    #### 7 День
+    #### 7 Day
     sdl_repl_array_us_7dl_day7 = [
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day7_us_7dl_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -7362,7 +7362,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day7_us_7dl_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -7375,7 +7375,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Фотокарточки",
+            "Pictures",
             sdl_Replay(
                         "alt_day7_us_7dl_photo", {"alt_replay_on" : "True"},
                         vars = [
@@ -7388,7 +7388,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Домик на дереве",
+            "Treehouse",
             sdl_Replay(
                         "alt_day7_us_7dl_treehouse", {"alt_replay_on" : "True"},
                         vars = [
@@ -7399,12 +7399,12 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Сборы с Ульяной",
+            "Packing with Ulyana",
             sdl_Replay("alt_day7_us_7dl_packing_us", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Сборы с Леной",
+            "Packing with Lena",
             sdl_Replay(
                         "alt_day7_us_7dl_packing_un", {"alt_replay_on" : "True"},
                         vars = [
@@ -7416,7 +7416,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Сборы с Мику",
+            "Packing with Miku",
             sdl_Replay(
                         "alt_day7_us_7dl_packing_mi", {"alt_replay_on" : "True"},
                         vars = [
@@ -7428,7 +7428,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Сборы. Один",
+            "Packing. Alone",
             sdl_Replay(
                         "alt_day7_us_7dl_packing", {"alt_replay_on" : "True"},
                         vars = [
@@ -7440,7 +7440,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Отъезд",
+            "Departure",
             sdl_Replay(
                         "alt_day7_us_7dl_leaving", {"alt_replay_on" : "True"},
                         vars = [
@@ -7456,7 +7456,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Эпилог",
+            "Epilogue",
             sdl_Replay(
                         "alt_day7_us_7dl_wakeup", {"alt_replay_on" : "True"},
                         vars = [
@@ -7469,7 +7469,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Огоньки. Завтрак",
+            "Flares. Breakfast",
             sdl_Replay(
                         "alt_day7_us_7dl_px_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -7480,7 +7480,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Огоньки. Поход",
+            "Flares. Escape",
             sdl_Replay(
                         "alt_day7_us_7dl_px_escape", {"alt_replay_on" : "True"},
                         vars = [
@@ -7492,12 +7492,12 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Огоньки. Автобус",
+            "Flares. Bus",
             sdl_Replay("alt_day7_us_7dl_px_bus", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Огоньки. Возвращение",
+            "Flares. Way back",
             sdl_Replay(
                         "alt_day7_us_7dl_px_mourning", {"alt_replay_on" : "True"},
                         vars = [
@@ -7508,22 +7508,22 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Огоньки. Пустоши",
+            "Flares. Wastelands",
             sdl_Replay("alt_day7_us_7dl_px_wastelands", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 5
         )
     ]
 
-    ## Одиночка
-    ### Одиночка
-    #### 4 День
+    ## Loner
+    ### Loner
+    #### 4 Day
     sdl_repl_array_me_neu_day4 = [
         sdl_repl_Label(
-            "Утро. Дома",
+            "Morning. Cabin",
             sdl_Replay("alt_day4_me_neu_home", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Утро. Медпункт",
+            "Morning. Infirmary",
             sdl_Replay(
                         "alt_day4_me_neu_aid", {"alt_replay_on" : "True"},
                         vars = [
@@ -7540,31 +7540,31 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Утро. Алиса",
+            "Morning. Alisa",
             sdl_Replay(
                         "alt_day4_me_neu_dv", {"alt_replay_on" : "True"},
                         vars = [
                                     sdl_var_b_d2_dv_hous,
                                     sdl_var_b_d2_us_esca
-                                    # переменные турнира
+                                    # Tournament int
                                 ],
                         func_in = sunset_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Медпункт. Славя",
+            "Infirmary. Slavya",
             sdl_Replay("alt_day4_me_neu_aid_sl", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Медпункт. Лена",
+            "Infirmary. Lena",
             sdl_Replay("alt_day4_me_neu_aid_un", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Медпункт. Ульяна",
+            "Infirmary. Ulyana",
             sdl_Replay("alt_day4_me_neu_aid_generic", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Мику. Уборка",
+            "Miku. Cleaning",
             sdl_Replay(
                         "alt_day4_me_neu_mi", {"alt_replay_on" : "True"},
                         vars = [
@@ -7576,7 +7576,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Славя. Поручения",
+            "Slavya. Tasks",
             sdl_Replay(
                         "alt_day4_me_neu_sl", {"alt_replay_on" : "True"},
                         vars = [
@@ -7588,7 +7588,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Лена. Амнезия",
+            "Lena. Amnesia",
             sdl_Replay(
                         "alt_day4_me_neu_un", {"alt_replay_on" : "True"},
                         vars = [
@@ -7599,7 +7599,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ольга. Костёр",
+            "Olga. Fire",
             sdl_Replay(
                         "alt_day4_me_neu_mt", {"alt_replay_on" : "True"},
                         vars = [
@@ -7610,7 +7610,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ульяна. Змея",
+            "Ulyana. Snake",
             sdl_Replay(
                         "alt_day4_me_neu_us", {"alt_replay_on" : "True"},
                         vars = [
@@ -7626,11 +7626,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay("alt_day4_me_neu_dinner", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Побег",
+            "Escape",
             sdl_Replay(
                         "alt_day4_me_neu_curl", {"alt_replay_on" : "True"},
                         vars = [
@@ -7640,11 +7640,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ольга. Велосипед",
+            "Olga. Bicycle",
             sdl_Replay("alt_day4_me_neu_day_mt", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Ульяна. Переодевание",
+            "Ulyana. Changing",
             sdl_Replay(
                         "alt_day4_me_neu_day_us", {"alt_replay_on" : "True"},
                         vars = [
@@ -7654,7 +7654,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Полдник",
+            "Lunch",
             sdl_Replay(
                         "alt_day4_me_neu_lunch", {"alt_replay_on" : "True"},
                         vars = [
@@ -7668,10 +7668,10 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Концерт",
+            "Concert",
             sdl_Replay(
                         "alt_day4_me_neu_concert", {"alt_replay_on" : "True"},
-                        meets = {'dn' : 'Кудрявый'},
+                        meets = {'dn' : 'Curly'},
                         vars = [
                                     sdl_var_e_d4_me_neu_date
                                 ],
@@ -7679,7 +7679,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Волейбол",
+            "Volleyball",
             sdl_Replay(
                         "alt_day4_me_neu_volley", {"alt_replay_on" : "True"},
                         vars = [
@@ -7689,7 +7689,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Dinner",
             sdl_Replay(
                         "alt_day4_me_neu_supper", {"alt_replay_on" : "True"},
                         vars = [
@@ -7702,7 +7702,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Мороженое",
+            "Ice cream",
             sdl_Replay(
                         "alt_day4_me_neu_reward", {"alt_replay_on" : "True"},
                         vars = [
@@ -7712,7 +7712,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Пират",
+            "Pirate",
             sdl_Replay(
                         "alt_day4_me_neu_pirate", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_evening,
@@ -7720,7 +7720,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер. Площадь",
+            "evening. Square",
             sdl_Replay(
                         "alt_day4_me_neu_square", {"alt_replay_on" : "True"},
                         vars = [
@@ -7730,7 +7730,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер. Дом Семёна и Ольги",
+            "Evening. Olga and Semyon's cabin",
             sdl_Replay(
                         "alt_day4_me_neu_map_me_mt_house1", {"alt_replay_on" : "True"},
                         vars = [
@@ -7742,11 +7742,11 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Вечер. Столовая",
+            "Evening. Canteen",
             sdl_Replay("alt_day4_me_neu_map_dining_hall1", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Вечер. Эстрада",
+            "Evening. Stage",
             sdl_Replay(
                         "alt_day4_me_neu_map_estrade1", {"alt_replay_on" : "True"},
                         vars = [
@@ -7756,7 +7756,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Вечер. Клубы",
+            "Evening. Clubs",
             sdl_Replay(
                         "alt_day4_me_neu_map_cyber1", {"alt_replay_on" : "True"},
                         vars = [
@@ -7767,7 +7767,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Вечер. Администрация",
+            "Evening. Administration",
             sdl_Replay(
                         "alt_day4_me_neu_map_admin_house1", {"alt_replay_on" : "True"},
                         func_in = sunset_interface_on, func_out = replay_screens_load
@@ -7775,7 +7775,7 @@ init 9999 python:
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Вечер. Лодочная станция",
+            "Evening. Boat station",
             sdl_Replay(
                         "alt_day4_me_neu_map_boat_station1", {"alt_replay_on" : "True"},
                         vars = [
@@ -7788,7 +7788,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Мику. Песни",
+            "Miku. Songs",
             sdl_Replay(
                         "alt_day4_me_neu_songs", {"alt_replay_on" : "True"},
                         vars = [
@@ -7798,7 +7798,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Алиса. Шалость",
+            "Alisa. Prank",
             sdl_Replay(
                         "alt_day4_me_neu_prank", {"alt_replay_on" : "True"},
                         vars = [
@@ -7809,7 +7809,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ольга. Дневник ч. 1",
+            "Olga. Diary P-1",
             sdl_Replay(
                         "alt_day4_me_neu_mt_diary_vol1", {"alt_replay_on" : "True"},
                         vars = [
@@ -7819,7 +7819,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ульяна. Конфеты",
+            "Ulyana. Candies",
             sdl_Replay(
                         "alt_day4_me_neu_us_candies", {"alt_replay_on" : "True"},
                         vars = [
@@ -7830,10 +7830,10 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Ульяна. Гвардия",
+            "Ulyana. Guardsmen",
             sdl_Replay(
                         "alt_day4_me_neu_us_guards", {"alt_replay_on" : "True"},
-                        meets = {'dn' : 'Кудрявый', 'tn' : 'Странный мальчик'},
+                        meets = {'dn' : 'Curly', 'tn' : 'Strange boy'},
                         vars = [
                                     sdl_var_b_d2_us_esca,
                                     sdl_var_i_us_7dl
@@ -7843,12 +7843,12 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Ульяна. Огоньки",
+            "Ulyana. Flares",
             sdl_Replay("alt_day4_me_neu_us_launch", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day4_me_neu_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -7862,15 +7862,15 @@ init 9999 python:
                       )
         )
     ]
-    #### 5 День
+    #### 5 Day
     sdl_repl_array_me_neu_day5 = [
         sdl_repl_Label(
-            "Сон",
+            "Dream",
             sdl_Replay("alt_day5_me_neu_morningdream", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Утро",
+            "Morning",
             sdl_Replay(
                         "alt_day5_me_neu_begin", {"alt_replay_on" : "True"},
                         vars = [
@@ -7881,7 +7881,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Завтрак",
+            "Breakfast",
             sdl_Replay(
                         "alt_day5_me_neu_breakfast", {"alt_replay_on" : "True"},
                         vars = [
@@ -7896,7 +7896,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Дождь",
+            "Rain",
             sdl_Replay(
                         "alt_day5_me_neu_rain", {"alt_replay_on" : "True"},
                         vars = [
@@ -7906,11 +7906,11 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Тихий час",
+            "Quiet hour",
             sdl_Replay("alt_day5_me_neu_along", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load)
         ),
         sdl_repl_Label(
-            "Свечка",
+            "Candle",
             sdl_Replay(
                         "alt_day5_me_neu_cndl", {"alt_replay_on" : "True"},
                         vars = [
@@ -7926,7 +7926,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Свечка. Побег",
+            "Candle. Escape",
             sdl_Replay(
                         "alt_day5_me_neu_cndl_esc", {"alt_replay_on" : "True"},
                         vars = [
@@ -7939,7 +7939,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Свечка. Ответы. Герк",
+            "Candle. Answers. Herc",
             sdl_Replay(
                         "alt_day5_me_neu_day_answ_h", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -7947,7 +7947,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Свечка. Ответы. Локи",
+            "Candle. Answers. Loki",
             sdl_Replay(
                         "alt_day5_me_neu_day_answ_l", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -7955,7 +7955,7 @@ init 9999 python:
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Свечка. Ответы. Дрищ",
+            "Candle. Answers. Wimp",
             sdl_Replay(
                         "alt_day5_me_neu_day_answ_d", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -7963,7 +7963,7 @@ init 9999 python:
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Игротека",
+            "Gaming",
             sdl_Replay(
                         "alt_day5_me_neu_gaming", {"alt_replay_on" : "True"},
                         vars = [
@@ -7974,17 +7974,17 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Арестанты",
+            "Convicted",
             sdl_Replay(
                         "alt_day5_me_neu_arrest", {"alt_replay_on" : "True"},
-                        meets = {'dn' : 'Кудрявый', 'tn' : 'Странный мальчик'},
+                        meets = {'dn' : 'Curly', 'tn' : 'Strange boy'},
                         meet_restr = {'dn' : 'loki', 'tn' : 'loki'},
                         func_in = sunset_interface_on, func_out = replay_screens_load
                       ),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Обед",
+            "Dinner",
             sdl_Replay(
                         "alt_day5_me_neu_dinner", {"alt_replay_on" : "True"},
                         vars = [
@@ -7997,7 +7997,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Мику. Эстрада",
+            "Miku. Stage",
             sdl_Replay(
                         "alt_day5_me_neu_mi_estrade", {"alt_replay_on" : "True"},
                         vars = [
@@ -8008,7 +8008,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Мику. Помощь",
+            "Miku. Help",
             sdl_Replay(
                         "alt_day5_me_neu_mi_help", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_center_day,
@@ -8020,7 +8020,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ольга. Пляж",
+            "Olga. Beach",
             sdl_Replay(
                         "alt_day5_me_neu_mt_beach", {"alt_replay_on" : "True"},
                         vars = [
@@ -8032,14 +8032,14 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Кружки. Кибернетика",
+            "Clubs. Cybernetic",
             sdl_Replay(
                         "alt_day5_me_neu_cyber_sh", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Кружки. Стенгазета",
+            "Clubs. Newspaper",
             sdl_Replay(
                         "alt_day5_me_neu_nwsppr_sh", {"alt_replay_on" : "True"},
                         vars = [
@@ -8050,14 +8050,14 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Кружки. Спорт",
+            "Clubs. Sport",
             sdl_Replay(
                         "alt_day5_me_neu_sport_sh", {"alt_replay_on" : "True"},
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Ульяна. Тоска",
+            "Ulyana. Longing",
             sdl_Replay(
                         "alt_day5_me_neu_us_melancholy", {"alt_replay_on" : "True"},
                         vars = [
@@ -8068,12 +8068,12 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Ульяна. Карьер",
+            "Ulyana. Quarry",
             sdl_Replay("alt_day5_me_neu_us_career", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Ульяна. Попались",
+            "Ulyana. Got caught",
             sdl_Replay(
                         "alt_day5_me_neu_us_caught", {"alt_replay_on" : "True"},
                         vars = [
@@ -8084,7 +8084,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Полдник",
+            "Lunch",
             sdl_Replay(
                         "alt_day5_me_neu_lunch", {"alt_replay_on" : "True"},
                         vars = [
@@ -8096,7 +8096,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Слежка за Славей",
+            "Spy gaming",
             sdl_Replay(
                         "alt_day5_me_neu_sl_secret", {"alt_replay_on" : "True"},
                         vars = [
@@ -8106,7 +8106,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ужин",
+            "Supper",
             sdl_Replay(
                         "alt_day5_me_neu_supper", {"alt_replay_on" : "True"},
                         vars = [
@@ -8119,7 +8119,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ульяна. Наказание",
+            "Ulyana. Punishment",
             sdl_Replay(
                         "alt_day5_me_neu_us_punishment", {"alt_replay_on" : "True"},
                         vars = [
@@ -8130,12 +8130,12 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Ульяна. Сытые",
+            "Ulyana. Satiated",
             sdl_Replay("alt_day5_me_neu_us_full", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Ульяна. Голодные",
+            "Ulyana. Hungry",
             sdl_Replay(
                         "alt_day5_me_neu_us_hungry", {"alt_replay_on" : "True"},
                         vars = [
@@ -8147,7 +8147,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Вечер",
+            "Evening",
             sdl_Replay(
                         "alt_day5_me_neu_evening", {"alt_replay_on" : "True"},
                         vars = [
@@ -8159,7 +8159,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Костёр",
+            "Hike",
             sdl_Replay(
                         "alt_day5_me_neu_campfire", {"alt_replay_on" : "True"},
                         ambience = ambience_forest_evening,
@@ -8170,7 +8170,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Карта. Домик ДваЧе",
+            "Map. DvaChe cabin",
             sdl_Replay(
                         "alt_day5_me_neu_map_house_dv1", {"alt_replay_on" : "True"},
                         vars = [
@@ -8181,7 +8181,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Карта. Склад",
+            "Map. Warehouse",
             sdl_Replay(
                         "alt_day5_me_neu_map_shed1", {"alt_replay_on" : "True"},
                         vars = [
@@ -8191,7 +8191,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Карта. Медпункт",
+            "Map. Infirmary",
             sdl_Replay(
                         "alt_day5_me_neu_map_medic_house1", {"alt_replay_on" : "True"},
                         vars = [
@@ -8203,7 +8203,7 @@ init 9999 python:
             char_mask = 6
         ),
         sdl_repl_Label(
-            "Карта. Лодочная станция",
+            "Map. Boat station",
             sdl_Replay(
                         "alt_day5_me_neu_map_boat_station1", {"alt_replay_on" : "True"},
                         vars = [
@@ -8213,7 +8213,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Карта. Клубы",
+            "Map. Clubs",
             sdl_Replay(
                         "alt_day5_me_neu_map_cyber1", {"alt_replay_on" : "True"},
                         vars = [
@@ -8223,7 +8223,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Карта. Спортплощадка",
+            "Map. Football field",
             sdl_Replay(
                         "alt_day5_me_neu_map_playground1", {"alt_replay_on" : "True"},
                         vars = [
@@ -8233,14 +8233,14 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Карта. Пляж",
+            "Map. Beach",
             sdl_Replay(
                         "alt_day5_me_neu_map_beach1", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Карта. Библиотека",
+            "Map. Library",
             sdl_Replay(
                         "alt_day5_me_neu_map_library1", {"alt_replay_on" : "True"},
                         vars = [
@@ -8252,14 +8252,14 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Карта. Неудача",
+            "Map. Loser",
             sdl_Replay(
                         "alt_day5_me_neu_map_fail", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
                       )
         ),
         sdl_repl_Label(
-            "Вечер. Ответы. Герк",
+            "Evening. Answer. Herc",
             sdl_Replay(
                         "alt_day5_me_neu_evening_answ_h", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -8267,7 +8267,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Вечер. Ответы. Локи",
+            "Evening. Answers. Loki",
             sdl_Replay(
                         "alt_day5_me_neu_evening_answ_l", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -8275,7 +8275,7 @@ init 9999 python:
             char_mask = 4
         ),
         sdl_repl_Label(
-            "Вечер. Ответы. Дрищ",
+            "Evening. Answers. Wimp",
             sdl_Replay(
                         "alt_day5_me_neu_evening_answ_d", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -8283,17 +8283,17 @@ init 9999 python:
             char_mask = 1
         ),
         sdl_repl_Label(
-            "Ульяна. Прятки",
+            "Ulyana. Hide-n-Seek",
             sdl_Replay("alt_day5_me_neu_us_hideandseek", {"alt_replay_on" : "True"}, func_in = sunset_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Ульяна. Купание",
+            "Ulyana. Swimming",
             sdl_Replay("alt_day5_me_neu_us_warm_evening", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Ульяна. Ограбление",
+            "Ulyana. Robbery",
             sdl_Replay(
                         "alt_day5_me_neu_us_robbery", {"alt_replay_on" : "True"},
                         music = music_list["eat_some_trouble"],
@@ -8305,12 +8305,12 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Ульяна. Уборка",
+            "Ulyana. Cleaning",
             sdl_Replay("alt_day5_me_neu_us_cleaning", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Отбой",
+            "Lights out",
             sdl_Replay(
                         "alt_day5_me_neu_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -8324,7 +8324,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой. Промокший",
+            "Lights out. Wet",
             sdl_Replay(
                         "alt_day5_me_neu_sleeptime_wet", {"alt_replay_on" : "True"},
                         vars = [
@@ -8338,7 +8338,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой. Пьяный",
+            "Lights out. Drunk",
             sdl_Replay(
                         "alt_day5_me_neu_sleeptime_drunk", {"alt_replay_on" : "True"},
                         vars = [
@@ -8348,7 +8348,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой. Сбежавший",
+            "Lights out. Escaped",
             sdl_Replay(
                         "alt_day5_me_neu_sleeptime_map", {"alt_replay_on" : "True"},
                         vars = [
@@ -8360,7 +8360,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Отбой. Ответы. Герк",
+            "Lights out. Answers. Herc",
             sdl_Replay(
                         "alt_day5_me_neu_sleeptime_answ_h", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -8368,7 +8368,7 @@ init 9999 python:
             char_mask = 2
         ),
         sdl_repl_Label(
-            "Отбой. Ответы. Дрищ",
+            "Lights out. Answers. Wimp",
             sdl_Replay(
                         "alt_day5_me_neu_sleeptime_answ_d", {"alt_replay_on" : "True"},
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -8377,7 +8377,7 @@ init 9999 python:
         ),
 
         sdl_repl_Label(
-            "Ульяна. Отбой",
+            "Ulyana. Lights out",
             sdl_Replay(
                         "alt_day5_me_neu_us_sleeptime", {"alt_replay_on" : "True"},
                         vars = [
@@ -8388,7 +8388,7 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Ольга. Дневник ч. 2",
+            "Olga. Diary P-2",
             sdl_Replay(
                         "alt_day5_me_neu_mt_retrib", {"alt_replay_on" : "True"},
                         ambience = ambience_int_cabin_night,
@@ -8399,7 +8399,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Ольга. «Чаепитие»",
+            "Olga. «Tea party»",
             sdl_Replay(
                         "alt_day5_me_neu_mt_tea_party", {"alt_replay_on" : "True"},
                         ambience = ambience_int_cabin_night,
@@ -8415,13 +8415,13 @@ init 9999 python:
     sdl_repl_label_frozen = [
                              ]
 
-    # Дни
+    # Days
 
-    ## Коммон
-    sdl_repl_common_day0 = sdl_repl_Day("Пролог", sdl_repl_array_common_day0)
-    sdl_repl_common_day1 = sdl_repl_Day("День 1", sdl_repl_array_common_day1)
-    sdl_repl_common_day2 = sdl_repl_Day("День 2", sdl_repl_array_common_day2)
-    sdl_repl_common_day3 = sdl_repl_Day("День 3", sdl_repl_array_common_day3)
+    ## Common
+    sdl_repl_common_day0 = sdl_repl_Day("Prologue", sdl_repl_array_common_day0)
+    sdl_repl_common_day1 = sdl_repl_Day("Day 1", sdl_repl_array_common_day1)
+    sdl_repl_common_day2 = sdl_repl_Day("Day 2", sdl_repl_array_common_day2)
+    sdl_repl_common_day3 = sdl_repl_Day("Day 3", sdl_repl_array_common_day3)
     sdl_repl_common_days = [
         sdl_repl_common_day0,
         sdl_repl_common_day1,
@@ -8429,23 +8429,23 @@ init 9999 python:
         sdl_repl_common_day3
     ]
 
-    ## Мику
-    ### Мику-7дл
-    sdl_repl_mi_7dl_day4 = sdl_repl_Day("День 4", sdl_repl_array_mi_7dl_day4)
-    sdl_repl_mi_7dl_day5 = sdl_repl_Day("День 5", sdl_repl_array_mi_7dl_day5)
-    sdl_repl_mi_7dl_day6 = sdl_repl_Day("День 6", sdl_repl_array_mi_7dl_day6)
-    sdl_repl_mi_7dl_day7 = sdl_repl_Day("День 7", sdl_repl_array_mi_7dl_day7)
+    ## Miku
+    ### Miku-7DS
+    sdl_repl_mi_7dl_day4 = sdl_repl_Day("Day 4", sdl_repl_array_mi_7dl_day4)
+    sdl_repl_mi_7dl_day5 = sdl_repl_Day("Day 5", sdl_repl_array_mi_7dl_day5)
+    sdl_repl_mi_7dl_day6 = sdl_repl_Day("Day 6", sdl_repl_array_mi_7dl_day6)
+    sdl_repl_mi_7dl_day7 = sdl_repl_Day("Day 7", sdl_repl_array_mi_7dl_day7)
     sdl_repl_mi_7dl_days = [
         sdl_repl_mi_7dl_day4,
         sdl_repl_mi_7dl_day5,
         sdl_repl_mi_7dl_day6,
         sdl_repl_mi_7dl_day7
     ]
-    ### Мику-Диджей
-    sdl_repl_mi_djt_day4 = sdl_repl_Day("День 4", sdl_repl_array_mi_djt_day4)
-    sdl_repl_mi_djt_day5 = sdl_repl_Day("День 5", sdl_repl_array_mi_djt_day5)
-    sdl_repl_mi_djt_day6 = sdl_repl_Day("День 6", sdl_repl_array_mi_djt_day6)
-    sdl_repl_mi_djt_day7 = sdl_repl_Day("День 7", sdl_repl_array_mi_djt_day7)
+    ### Miku-DJ
+    sdl_repl_mi_djt_day4 = sdl_repl_Day("Day 4", sdl_repl_array_mi_djt_day4)
+    sdl_repl_mi_djt_day5 = sdl_repl_Day("Day 5", sdl_repl_array_mi_djt_day5)
+    sdl_repl_mi_djt_day6 = sdl_repl_Day("Day 6", sdl_repl_array_mi_djt_day6)
+    sdl_repl_mi_djt_day7 = sdl_repl_Day("Day 7", sdl_repl_array_mi_djt_day7)
     sdl_repl_mi_djt_days = [
         sdl_repl_mi_djt_day4,
         sdl_repl_mi_djt_day5,
@@ -8453,23 +8453,23 @@ init 9999 python:
         sdl_repl_mi_djt_day7
     ]
 
-    ## Алиса
-    ### Алиса-7дл
-    sdl_repl_dv_7dl_day4 = sdl_repl_Day("День 4", sdl_repl_array_dv_7dl_day4)
-    sdl_repl_dv_7dl_day5 = sdl_repl_Day("День 5", sdl_repl_array_dv_7dl_day5)
-    sdl_repl_dv_7dl_day6 = sdl_repl_Day("День 6", sdl_repl_array_dv_7dl_day6)
-    sdl_repl_dv_7dl_day7 = sdl_repl_Day("День 7", sdl_repl_array_dv_7dl_day7)
+    ## Alisa
+    ### Alisa-7DS
+    sdl_repl_dv_7dl_day4 = sdl_repl_Day("Day 4", sdl_repl_array_dv_7dl_day4)
+    sdl_repl_dv_7dl_day5 = sdl_repl_Day("Day 5", sdl_repl_array_dv_7dl_day5)
+    sdl_repl_dv_7dl_day6 = sdl_repl_Day("Day 6", sdl_repl_array_dv_7dl_day6)
+    sdl_repl_dv_7dl_day7 = sdl_repl_Day("Day 7", sdl_repl_array_dv_7dl_day7)
     sdl_repl_dv_7dl_days = [
         sdl_repl_dv_7dl_day4,
         sdl_repl_dv_7dl_day5,
         sdl_repl_dv_7dl_day6,
         sdl_repl_dv_7dl_day7
     ]
-    ### Алиса-Диджей
-    sdl_repl_dv_djt_day4 = sdl_repl_Day("День 4", sdl_repl_array_dv_djt_day4)
-    sdl_repl_dv_djt_day5 = sdl_repl_Day("День 5", sdl_repl_array_dv_djt_day5)
-    sdl_repl_dv_djt_day6 = sdl_repl_Day("День 6", sdl_repl_array_dv_djt_day6)
-    sdl_repl_dv_djt_day7 = sdl_repl_Day("День 7", sdl_repl_array_dv_djt_day7)
+    ### Alisa-DJ
+    sdl_repl_dv_djt_day4 = sdl_repl_Day("Day 4", sdl_repl_array_dv_djt_day4)
+    sdl_repl_dv_djt_day5 = sdl_repl_Day("Day 5", sdl_repl_array_dv_djt_day5)
+    sdl_repl_dv_djt_day6 = sdl_repl_Day("Day 6", sdl_repl_array_dv_djt_day6)
+    sdl_repl_dv_djt_day7 = sdl_repl_Day("Day 7", sdl_repl_array_dv_djt_day7)
     sdl_repl_dv_djt_days = [
         sdl_repl_dv_djt_day4,
         sdl_repl_dv_djt_day5,
@@ -8477,24 +8477,24 @@ init 9999 python:
         sdl_repl_dv_djt_day7
     ]
 
-    ## Славя
-    ### Славя-7дл
-    sdl_repl_sl_7dl_day4 = sdl_repl_Day("День 4", sdl_repl_array_sl_7dl_day4)
-    sdl_repl_sl_7dl_day5 = sdl_repl_Day("День 5", sdl_repl_array_sl_7dl_day5)
-    sdl_repl_sl_7dl_day6 = sdl_repl_Day("День 6", sdl_repl_array_sl_7dl_day6)
-    sdl_repl_sl_7dl_day7 = sdl_repl_Day("День 7", sdl_repl_array_sl_7dl_day7)
+    ## Slavya
+    ### Slavya-7DS
+    sdl_repl_sl_7dl_day4 = sdl_repl_Day("Day 4", sdl_repl_array_sl_7dl_day4)
+    sdl_repl_sl_7dl_day5 = sdl_repl_Day("Day 5", sdl_repl_array_sl_7dl_day5)
+    sdl_repl_sl_7dl_day6 = sdl_repl_Day("Day 6", sdl_repl_array_sl_7dl_day6)
+    sdl_repl_sl_7dl_day7 = sdl_repl_Day("Day 7", sdl_repl_array_sl_7dl_day7)
     sdl_repl_sl_7dl_days = [
         sdl_repl_sl_7dl_day4,
         sdl_repl_sl_7dl_day5,
         sdl_repl_sl_7dl_day6,
         sdl_repl_sl_7dl_day7
     ]
-    ### Славя-Классик
-    sdl_repl_sl_clt_day4 = sdl_repl_Day("День 4", sdl_repl_array_sl_clt_day4)
-    sdl_repl_sl_clt_day5 = sdl_repl_Day("День 5", sdl_repl_array_sl_clt_day5)
-    sdl_repl_sl_clt_day6 = sdl_repl_Day("День 6", sdl_repl_array_sl_clt_day6)
-    sdl_repl_sl_clt_day7 = sdl_repl_Day("День 7", sdl_repl_array_sl_clt_day7)
-    sdl_repl_sl_clt_dayx = sdl_repl_Day("День ???", sdl_repl_array_sl_clt_dayx)
+    ### Slavya-Classic
+    sdl_repl_sl_clt_day4 = sdl_repl_Day("Day 4", sdl_repl_array_sl_clt_day4)
+    sdl_repl_sl_clt_day5 = sdl_repl_Day("Day 5", sdl_repl_array_sl_clt_day5)
+    sdl_repl_sl_clt_day6 = sdl_repl_Day("Day 6", sdl_repl_array_sl_clt_day6)
+    sdl_repl_sl_clt_day7 = sdl_repl_Day("Day 7", sdl_repl_array_sl_clt_day7)
+    sdl_repl_sl_clt_dayx = sdl_repl_Day("Day ???", sdl_repl_array_sl_clt_dayx)
     sdl_repl_sl_clt_days = [
         sdl_repl_sl_clt_day4,
         sdl_repl_sl_clt_day5,
@@ -8503,24 +8503,24 @@ init 9999 python:
         sdl_repl_sl_clt_dayx
     ]
 
-    ## Лена
-    ### Лена-7дл
-    sdl_repl_un_7dl_day4 = sdl_repl_Day("День 4", sdl_repl_array_un_7dl_day4)
-    sdl_repl_un_7dl_day5 = sdl_repl_Day("День 5", sdl_repl_array_un_7dl_day5)
-    sdl_repl_un_7dl_day6 = sdl_repl_Day("День 6", sdl_repl_array_un_7dl_day6)
-    sdl_repl_un_7dl_day7 = sdl_repl_Day("День 7", sdl_repl_array_un_7dl_day7)
+    ## Lena
+    ### Lena-7DS
+    sdl_repl_un_7dl_day4 = sdl_repl_Day("Day 4", sdl_repl_array_un_7dl_day4)
+    sdl_repl_un_7dl_day5 = sdl_repl_Day("Day 5", sdl_repl_array_un_7dl_day5)
+    sdl_repl_un_7dl_day6 = sdl_repl_Day("Day 6", sdl_repl_array_un_7dl_day6)
+    sdl_repl_un_7dl_day7 = sdl_repl_Day("Day 7", sdl_repl_array_un_7dl_day7)
     sdl_repl_un_7dl_days = [
         sdl_repl_un_7dl_day4,
         sdl_repl_un_7dl_day5,
         sdl_repl_un_7dl_day6,
         sdl_repl_un_7dl_day7
     ]
-    ### Лена-Френдзона
-    sdl_repl_un_fzd_day4 = sdl_repl_Day("День 4", sdl_repl_array_un_fzd_day4, char_mask=2)
-    sdl_repl_un_fzd_day5 = sdl_repl_Day("День 5", sdl_repl_array_un_fzd_day5, char_mask=2)
-    sdl_repl_un_fzd_day6 = sdl_repl_Day("День 6. Дорога", sdl_repl_array_un_fzd_day6, char_mask=2)
-    sdl_repl_un_fzd_day62 = sdl_repl_Day("День 6. ФЗ", sdl_repl_array_un_fzd_day62, char_mask=2)
-    sdl_repl_un_fzd_day7 = sdl_repl_Day("День 7. ФЗ", sdl_repl_array_un_fzd_day7, char_mask=2)
+    ### Lena-FZ
+    sdl_repl_un_fzd_day4 = sdl_repl_Day("Day 4", sdl_repl_array_un_fzd_day4, char_mask=2)
+    sdl_repl_un_fzd_day5 = sdl_repl_Day("Day 5", sdl_repl_array_un_fzd_day5, char_mask=2)
+    sdl_repl_un_fzd_day6 = sdl_repl_Day("Day 6. The Road", sdl_repl_array_un_fzd_day6, char_mask=2)
+    sdl_repl_un_fzd_day62 = sdl_repl_Day("Day 6. FZ", sdl_repl_array_un_fzd_day62, char_mask=2)
+    sdl_repl_un_fzd_day7 = sdl_repl_Day("Day 7. FZ", sdl_repl_array_un_fzd_day7, char_mask=2)
     sdl_repl_un_fzd_days = [
         sdl_repl_un_fzd_day4,
         sdl_repl_un_fzd_day5,
@@ -8529,94 +8529,94 @@ init 9999 python:
         sdl_repl_un_fzd_day7
     ]
 
-    ## Ольга
-    ### Ольга-7дл
-    sdl_repl_mt_7dl_day6 = sdl_repl_Day("День 6", sdl_repl_array_mt_7dl_day6)
-    sdl_repl_mt_7dl_day7 = sdl_repl_Day("День 7", sdl_repl_array_mt_7dl_day7)
+    ## Olga
+    ### Olga-7DS
+    sdl_repl_mt_7dl_day6 = sdl_repl_Day("Day 6", sdl_repl_array_mt_7dl_day6)
+    sdl_repl_mt_7dl_day7 = sdl_repl_Day("Day 7", sdl_repl_array_mt_7dl_day7)
     sdl_repl_mt_7dl_days = [
         sdl_repl_mt_7dl_day6,
         sdl_repl_mt_7dl_day7
     ]
 
-    ## Ульяна
-    ### Ульяна-7дл
-    sdl_repl_us_7dl_day6 = sdl_repl_Day("День 6", sdl_repl_array_us_7dl_day6, char_mask=5)
-    sdl_repl_us_7dl_day7 = sdl_repl_Day("День 7", sdl_repl_array_us_7dl_day7, char_mask=5)
+    ## Ulyana
+    ### Ulyana-7DS
+    sdl_repl_us_7dl_day6 = sdl_repl_Day("Day 6", sdl_repl_array_us_7dl_day6, char_mask=5)
+    sdl_repl_us_7dl_day7 = sdl_repl_Day("Day 7", sdl_repl_array_us_7dl_day7, char_mask=5)
     sdl_repl_us_7dl_days = [
         sdl_repl_us_7dl_day6,
         sdl_repl_us_7dl_day7
     ]
 
-    ## Одиночка
-    ### Одиночка
-    sdl_repl_me_neu_day4 = sdl_repl_Day("День 4", sdl_repl_array_me_neu_day4)
-    sdl_repl_me_neu_day5 = sdl_repl_Day("День 5", sdl_repl_array_me_neu_day5)
+    ## Loner
+    ### Loner
+    sdl_repl_me_neu_day4 = sdl_repl_Day("Day 4", sdl_repl_array_me_neu_day4)
+    sdl_repl_me_neu_day5 = sdl_repl_Day("Day 5", sdl_repl_array_me_neu_day5)
     sdl_repl_me_neu_days = [
         sdl_repl_me_neu_day4,
         sdl_repl_me_neu_day5
     ]
 
-    # Руты | Разделы
+    # Routes | Sections
 
-    ## Коммон
-    sdl_repl_common = sdl_repl_Section("Коммон-рут", None, None, sdl_repl_common_days)
+    ## Common
+    sdl_repl_common = sdl_repl_Section("Common-route", None, None, sdl_repl_common_days)
 
-    ## Мику
-    sdl_repl_mi_7dl = sdl_repl_Section("Мику-7дл",     None, None, sdl_repl_mi_7dl_days)
-    sdl_repl_mi_djt = sdl_repl_Section("Мику-Диджей",  None, None, sdl_repl_mi_djt_days)
+    ## Miku
+    sdl_repl_mi_7dl = sdl_repl_Section("Miku-7DS",     None, None, sdl_repl_mi_7dl_days)
+    sdl_repl_mi_djt = sdl_repl_Section("Miku-DJ",  None, None, sdl_repl_mi_djt_days)
     sdl_repl_mi_routes = [
         sdl_repl_mi_7dl,
         sdl_repl_mi_djt
     ]
-    sdl_repl_mi = sdl_repl_Section("Мику", "sdl_repl_section_label_mi", sdl_repl_mi_routes, None)
+    sdl_repl_mi = sdl_repl_Section("Miku", "sdl_repl_section_label_mi", sdl_repl_mi_routes, None)
 
-    ## Алиса
-    sdl_repl_dv_7dl = sdl_repl_Section("Алиса-7дл",     None, None, sdl_repl_dv_7dl_days)
-    sdl_repl_dv_djt = sdl_repl_Section("Алиса-Диджей",  None, None, sdl_repl_dv_djt_days)
+    ## Alisa
+    sdl_repl_dv_7dl = sdl_repl_Section("Alisa-7DS",     None, None, sdl_repl_dv_7dl_days)
+    sdl_repl_dv_djt = sdl_repl_Section("Alisa-DJ",  None, None, sdl_repl_dv_djt_days)
     sdl_repl_dv_routes = [
         sdl_repl_dv_7dl,
         sdl_repl_dv_djt
     ]
-    sdl_repl_dv = sdl_repl_Section("Алиса", "sdl_repl_section_label_dv", sdl_repl_dv_routes, None)
+    sdl_repl_dv = sdl_repl_Section("Alisa", "sdl_repl_section_label_dv", sdl_repl_dv_routes, None)
 
-    ## Славя
-    sdl_repl_sl_7dl = sdl_repl_Section("Славя-7дл",     None, None, sdl_repl_sl_7dl_days)
-    sdl_repl_sl_clt = sdl_repl_Section("Славя-Классик", None, None, sdl_repl_sl_clt_days)
+    ## Slavya
+    sdl_repl_sl_7dl = sdl_repl_Section("Slavya-7DS",     None, None, sdl_repl_sl_7dl_days)
+    sdl_repl_sl_clt = sdl_repl_Section("Slavya-Classic", None, None, sdl_repl_sl_clt_days)
     sdl_repl_sl_routes = [
         sdl_repl_sl_7dl,
         sdl_repl_sl_clt
     ]
-    sdl_repl_sl = sdl_repl_Section("Славя", "sdl_repl_section_label_sl", sdl_repl_sl_routes, None)
+    sdl_repl_sl = sdl_repl_Section("Slavya", "sdl_repl_section_label_sl", sdl_repl_sl_routes, None)
 
-    ## Лена
-    sdl_repl_un_7dl = sdl_repl_Section("Лена-7дл",       None, None, sdl_repl_un_7dl_days)
-    sdl_repl_un_fzd = sdl_repl_Section("Лена-Френдзона", None, None, sdl_repl_un_fzd_days)
+    ## Lena
+    sdl_repl_un_7dl = sdl_repl_Section("Lena-7DS",       None, None, sdl_repl_un_7dl_days)
+    sdl_repl_un_fzd = sdl_repl_Section("Lena-Friendzone", None, None, sdl_repl_un_fzd_days)
     sdl_repl_un_routes = [
         sdl_repl_un_7dl,
         sdl_repl_un_fzd
     ]
-    sdl_repl_un = sdl_repl_Section("Лена", "sdl_repl_section_label_un", sdl_repl_un_routes, None)
+    sdl_repl_un = sdl_repl_Section("Lena", "sdl_repl_section_label_un", sdl_repl_un_routes, None)
 
-    ## Ольга
-    sdl_repl_mt_7dl = sdl_repl_Section("Ольга-7дл",       None, None, sdl_repl_mt_7dl_days)
+    ## Olga
+    sdl_repl_mt_7dl = sdl_repl_Section("Olga-7DS",       None, None, sdl_repl_mt_7dl_days)
     sdl_repl_mt_routes = [
         sdl_repl_mt_7dl
     ]
-    sdl_repl_mt = sdl_repl_Section("Ольга", "sdl_repl_section_label_mt", sdl_repl_mt_routes, None)
+    sdl_repl_mt = sdl_repl_Section("Olga", "sdl_repl_section_label_mt", sdl_repl_mt_routes, None)
 
-    ## Ульяна
-    sdl_repl_us_7dl = sdl_repl_Section("Ульяна-7дл",     None, None, sdl_repl_us_7dl_days)
+    ## Ulyana
+    sdl_repl_us_7dl = sdl_repl_Section("Ulyana-7DS",     None, None, sdl_repl_us_7dl_days)
     sdl_repl_us_routes = [
         sdl_repl_us_7dl
     ]
-    sdl_repl_us = sdl_repl_Section("Ульяна", "sdl_repl_section_label_us", sdl_repl_us_routes, None)
+    sdl_repl_us = sdl_repl_Section("Ulyana", "sdl_repl_section_label_us", sdl_repl_us_routes, None)
 
-    ## Одиночка
-    sdl_repl_me_neu = sdl_repl_Section("Семён-Одиночка", None, None, sdl_repl_me_neu_days)
+    ## Loner
+    sdl_repl_me_neu = sdl_repl_Section("Semyon-Loner", None, None, sdl_repl_me_neu_days)
     sdl_repl_me_routes = [
         sdl_repl_me_neu
     ]
-    sdl_repl_me = sdl_repl_Section("Семён", "sdl_repl_section_label_me", sdl_repl_me_routes, None)
+    sdl_repl_me = sdl_repl_Section("Semyon", "sdl_repl_section_label_me", sdl_repl_me_routes, None)
 
     sdl_repl_sections = [
         sdl_repl_common,
@@ -8631,7 +8631,7 @@ init 9999 python:
 
 
 
-    # Протагонисты
+    # Protags
     sdl_repl_characters = [
         sdl_Character("sdl_repl_char_none", 15, None, None),
         sdl_Character("sdl_repl_char_loki", 4, "sdl_repl_char_label_loki", "loki"),
