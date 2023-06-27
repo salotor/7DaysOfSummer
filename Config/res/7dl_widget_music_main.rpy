@@ -30,11 +30,11 @@ python early:
                 m = get_playing_7dl('music2')
             # Парсим название трека
             # Выводим текущий трек
-            ui.button(clicked=None, style="button_7dl", xpos=0.40, xanchor=0.0, xminimum=200)
+            ui.button(clicked=None, style="button_7dl", xpos=0.40, xanchor=0.0, xminimum=200, xmaximum=490)
             if m in music_list.values():
                 ui.text(check_muzlo(m), style="button_text_music_7dl")
             elif m in music_list_7dl.values():
-                ui.text(check_muzlo_7dl(m), style="button_text_music_7dl")
+                ui.text(check_muzlo_7dl(m), style="button_text_music_7dl", yalign=0)
             elif m == None:
                 ui.text("%s" % "Нет музыки", style="button_text_music_7dl")
             else:

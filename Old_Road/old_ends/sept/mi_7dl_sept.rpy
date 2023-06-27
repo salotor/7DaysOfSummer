@@ -1,4 +1,9 @@
 label alt_day7_mi_7dl_sept:
+    $ sdl_local_vars = [sdl_var_e_d0_char]
+    call screen sdl_replay_vars(sdl_local_vars)
+    $ alt_vars_screen(sdl_local_vars)
+    $ alt_char_set(plthr)
+
     play music music_7dl["youre_not_real"] fadein 3
     scene anim intro_2
     with dissolve
@@ -391,4 +396,7 @@ label alt_day7_mi_7dl_sept:
     show acm_logo_mi_7dl_sept with moveinright:
         pos (1600, 1020)
     pause(7.4)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

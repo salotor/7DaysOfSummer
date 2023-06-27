@@ -422,11 +422,66 @@ init -999 python: # Прочие функции
         _window_hide()
         renpy.pause(time)
         _window_auto = True
-    def alt_binder_update():
-        if (persistent.mi_7dl_good_human or persistent.mi_7dl_good_star) and persistent.dv_7dl_good_ussr and (persistent.sl_7dl_loki_good or persistent.sl_7dl_herc_good or persistent.sl_7dl_dr_good) and persistent.un_7dl_good_ussr and persistent.mt_7dl_good and persistent.us_7dl_good:
+    def alt_binder_update(): # Обновление статуса пазла
+        if persistent.mi_dj_true and persistent.dv_dj_true and persistent.sl_cl_int_true and persistent.un_fz_rr_true and persistent.mt_7dl_true and persistent.us_7dl_true:
             persistent.alt_binder = True
         else:
             persistent.alt_binder = False
+    def alt_thoughts_tilde_update(): # Обновление вида тильд/кавычек
+        global th_prefix
+        global th_suffix
+        if not persistent.thoughts_tilde_7dl:
+            th_prefix = "«"
+            th_suffix = "»"
+        else:
+            th_prefix = "~ "
+            th_suffix = " ~"
+    def alt_vars_screen(vars): # Обновление значений переменных после вызова экрана
+        global store
+        for f in vars:
+            setattr(store, f.get_variable(), f.get_cur_value())
+            f.reset()
+        return
+    def alt_char_set(char): # Обновление значений переменных персонажей
+        global herc
+        global loki
+        global dr
+        herc = False
+        loki = False
+        dr = False
+        if char == "Герк":
+            herc = True
+        elif char == "Локи":
+            loki = True
+        elif char == "Дрищ":
+            dr = True
+    # функции для показа донатеров
+    def alt_get_size(displayable):
+        w, h = renpy.render(displayable, config.screen_width, config.screen_height, 0, 0).get_size()
+        return int(w), int(h)
+    def alt_split_string(string):
+        words = string.split('; ')
+        result = []
+        current_list = []
+        current_list_temp = []
+        for word in words:
+            current_list_temp.append(word)
+            if alt_get_size(Text(', '.join(current_list_temp), style = "alt_credits", size = 50, xmaximum = 1900))[1] <= 850:
+                current_list.append(word)
+            else:
+                result.append(current_list)
+                current_list = [word]
+                current_list_temp = current_list.copy()
+        if current_list:
+            result.append(current_list)
+        return result
+    def alt_show_donators(input_string):
+        for list in alt_split_string(input_string):
+            renpy.show("txt", what = Text(', '.join(list), style = "alt_credits", size = 50, xmaximum = 1900, ycenter = 0.55))
+            renpy.with_statement(dissolve)
+            renpy.pause(10, hard = True)
+        renpy.scene()
+        renpy.with_statement(fade)
 
 init python: # Новые переходы
 
@@ -483,8 +538,62 @@ init python: # Новые переходы
 
     Shake = renpy.curry(_Shake)
 
-### ФИКСЫ ДЛЯ БЛ И МОДОВ ###
+### ЗАМЕНЯЕМ БЛ НА ПИВО ###
+init 9000 python:
+    if persistent.pivo_default_7dl:
+        renpy.game.script.namemap["splashscreen"] =                  renpy.game.script.namemap["splashscreen_7dl"]
+        renpy.game.script.namemap["start"] =                         renpy.game.script.namemap["start_7dl"]
+        renpy.display.screen.screens[("main_menu", None)] =          renpy.display.screen.screens[("alt_menu", None)]
+        renpy.display.screen.screens[("game_menu_selector", None)] = renpy.display.screen.screens[("alt_game_menu_selector", None)]
+        renpy.display.screen.screens[("preferences", None)] =        renpy.display.screen.screens[("alt_preferences", None)]
+        renpy.display.screen.screens[("save", None)] =               renpy.display.screen.screens[("alt_save", None)]
+        renpy.display.screen.screens[("load", None)] =               renpy.display.screen.screens[("alt_load", None)]
 
+    alt_copy_counter = 0
+    alt_safe_counter = 0
+
+    def alt_saves_copy_in():
+        import re
+        global alt_copy_counter
+        global alt_safe_counter
+        alt_copy_counter = 0
+        alt_safe_counter = 0
+        for save in renpy.list_saved_games():
+            if (re.match(r'^[0-9]-', save[0])) and ("7ДЛ" in save[1]):
+                alt_safe_counter += 1
+                for page, slot in itertools.product(range(701, 800), range(1, 13)):
+                    if not renpy.can_load(str(page)+"-"+str(slot)):
+                        renpy.copy_save(save[0], str(page)+"-"+str(slot))
+                        alt_copy_counter += 1
+                        break
+
+    def alt_saves_copy_out():
+        import re
+        global alt_copy_counter
+        global alt_safe_counter
+        alt_copy_counter = 0
+        alt_safe_counter = 0
+        for save in renpy.list_saved_games():
+            if re.match(r'^7[0-9]{2}-', save[0]):
+                alt_safe_counter += 1
+                for page, slot in itertools.product(range(1, 10), range(1, 13)):
+                    if not renpy.can_load(str(page)+"-"+str(slot)):
+                        renpy.copy_save(save[0], str(page)+"-"+str(slot))
+                        alt_copy_counter += 1
+                        break
+
+init python hide:
+    if persistent.pivo_default_7dl:
+        config.main_menu_music = None
+        config.quit_action = Quit(confirm=False)
+
+screen alt_menu:
+    timer 0.01 action(Jump("scenario__alt_sevendl"))
+
+label splashscreen_7dl:
+    return
+
+### ФИКСЫ ДЛЯ БЛ И МОДОВ ###
 init -1000 python: # Для совместимости с одной из ранних сборок на RenPy 7.0.0
     if not 'translation_new' in globals():
         translation_new = translation
@@ -565,21 +674,21 @@ init 2 python:
     def translate():
         pass
 
-### === ###
-
 ### КАСТОМНЫЕ МЕНЮ ###
-
 init python:
     def alt_screens_save():
-        renpy.display.screen.screens[("original_game_menu_selector", None)] =         renpy.display.screen.screens[("game_menu_selector", None)]
+        renpy.display.screen.screens[("original_game_menu_selector", None)] = renpy.display.screen.screens[("game_menu_selector", None)]
+        renpy.display.screen.screens[("original_preferences", None)] =        renpy.display.screen.screens[("preferences", None)]
 
     alt_screens_save()
 
     def alt_screens_on():
-        renpy.display.screen.screens[("game_menu_selector", None)] =                  renpy.display.screen.screens[("alt_game_menu_selector", None)]
+        renpy.display.screen.screens[("game_menu_selector", None)] =          renpy.display.screen.screens[("alt_game_menu_selector", None)]
+        renpy.display.screen.screens[("preferences", None)] =                 renpy.display.screen.screens[("alt_preferences", None)]
 
     def alt_screens_load():
-        renpy.display.screen.screens[("game_menu_selector", None)] =                  renpy.display.screen.screens[("original_game_menu_selector", None)]
+        renpy.display.screen.screens[("game_menu_selector", None)] =          renpy.display.screen.screens[("original_game_menu_selector", None)]
+        renpy.display.screen.screens[("preferences", None)] =                 renpy.display.screen.screens[("original_preferences", None)]
 
     orig_config_version = config.version
 
@@ -592,7 +701,8 @@ init python:
                 config.version = config.version + " + 7DL v.%s.%s" % (alt_release_no, alt_hotfix_no)
             else:
                 config.version = config.version + " + 7DL v.%s.%s (save v.%s)" % (alt_release_no, alt_hotfix_no, alt_save_release_no)
-        alt_screens_on()
+        if not persistent.pivo_default_7dl:
+            alt_screens_on()
         config.window_auto_hide = [ "scene", "call screen", "menu", "pause" ]
         persistent.alt_interface = True
 
@@ -605,14 +715,16 @@ init python:
         persistent.alt_interface = False
 
     def alt_exit():
-        global th_prefix
-        global th_suffix
-        alt_interface_off()
-        reset_names_to_default()
-        if not persistent.thoughts_tilde_7dl:
+        if not persistent.pivo_default_7dl:
+            global th_prefix
+            global th_suffix
+            alt_interface_off()
+            reset_names_to_default()
             th_prefix = "~ "
             th_suffix = " ~"
-        reload_names()
+            reload_names()
+        else:
+            pass
 
 # Замена экрана истории в реплеях
     def replay_screens_save():
@@ -629,814 +741,8 @@ init python:
         renpy.display.screen.screens[("text_history_screen", None)] =                  renpy.display.screen.screens[("original_text_history_screen", None)]
         renpy.display.screen.screens[("preferences", None)] =                          renpy.display.screen.screens[("original_preferences", None)]
 
-screen alt_game_menu_selector:
-    tag menu
-    modal True
-    $ timeofday = persistent.timeofday
-    button:
-        style "blank_button"
-        xpos 0
-        ypos 0
-        xfill True
-        yfill True
-        action Return()
-    add get_image("gui/ingame_menu/"+timeofday+"/ingame_menu.png"):
-        xalign 0.5
-        yalign 0.5
-    imagemap:
-        if _preferences.language == "spanish":
-            auto get_image("gui/ingame_menu/"+timeofday+"/ingame_menu_es_%s.png")
-            xalign 0.5
-            yalign 0.5
-        elif _preferences.language == "italian":
-            auto get_image("gui/ingame_menu/"+timeofday+"/ingame_menu_it_%s.png")
-            xalign 0.5
-            yalign 0.5
-        elif _preferences.language == "english":
-            auto get_image("gui/ingame_menu/"+timeofday+"/ingame_menu_en_%s.png")
-            xalign 0.5
-            yalign 0.5
-        elif _preferences.language == "chinese":
-            auto get_image("gui/ingame_menu/"+timeofday+"/ingame_menu_ch_%s.png")
-            xalign 0.5
-            yalign 0.5
-        elif _preferences.language == "french":
-            auto get_image("gui/ingame_menu/"+timeofday+"/ingame_menu_fr_%s.png")
-            xalign 0.5
-            yalign 0.5
-        else:
-            auto get_image("gui/ingame_menu/"+timeofday+"/ingame_menu_%s.png")
-            xalign 0.5
-            yalign 0.5
-        hotspot (0, 83, 660, 65):
-            focus_mask None
-            clicked [Function(alt_exit), MainMenu()]
-        hotspot (0, 148, 660, 65):
-            focus_mask None
-            clicked ShowMenu('save')
-        hotspot (0, 213, 660, 65):
-            focus_mask None
-            clicked ShowMenu('load')
-        hotspot (0, 278, 660, 65):
-            focus_mask None
-            if persistent.alt_config_developer:
-                clicked (ShowMenu('preferences'), Hide('alt_game_menu_selector'))
-            else:
-                clicked (ShowMenu('alt_preferences'), Hide('alt_game_menu_selector'))
-        hotspot (0, 343, 660, 65):
-            focus_mask None
-            clicked ShowMenu('quit')
-
-screen alt_preferences:
-    tag menu
-    modal True
-    $ translate()
-    $ bar_null = Frame(get_image("gui/settings/bar_null.png"),36,36)
-    $ bar_full = Frame(get_image("gui/settings/bar_full.png"),36,36)
-    window:
-        background get_image("gui/settings/preferences_bg.jpg")
-        textbutton translation_new["SAVE"]:
-            style "log_button"
-            text_style "settings_link"
-            xalign 0.02
-            yalign 0.08
-            action ShowMenu('save')
-        textbutton translation_new["LOAD"]:
-            style "log_button"
-            text_style "settings_link"
-            xalign 0.98
-            yalign 0.08
-            action ShowMenu('load')
-        hbox:
-            xalign 0.5
-            yalign 0.08
-            add get_image("gui/settings/star.png"):
-                yalign 0.65
-            text " "+translation_new["settings"]+" ":
-                style "settings_link"
-                yalign 0.5
-                color "#ffffff"
-            add get_image("gui/settings/star.png"):
-                yalign 0.65
-        textbutton translation_new["Back"]:
-            style "log_button"
-            text_style "settings_link"
-            xalign 0.015
-            yalign 0.92
-            action Return()
-        side "c b r":
-            area (0.25, 0.23, 0.51, 0.71)
-            viewport:
-                id "preferences"
-                mousewheel True
-                scrollbars None
-                grid 1 20:
-                    xfill True
-                    spacing 15
-                    text translation_new["Window_mode"]:
-                        style "settings_header"
-                        xalign 0.5
-                    grid 2 1:
-                        xfill True
-                        hbox:
-                            xalign 0.5
-                            if _preferences.fullscreen:
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Fullscreen"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action Preference("display", "fullscreen")
-                        hbox:
-                            xalign 0.5
-                            if not _preferences.fullscreen:
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Window"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action Preference("display", "window")
-                    text translation_new["Skip"]:
-                        style "settings_header"
-                        xalign 0.5
-                    grid 2 1:
-                        xfill True
-                        hbox:
-                            xalign 0.5
-                            if _preferences.skip_unseen:
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Skip_all"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action Preference("skip", "all")
-                        hbox:
-                            xalign 0.5
-                            if not _preferences.skip_unseen:
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Skip_seen"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action Preference("skip", "seen")
-                    text translation_new["Volume"]:
-                        style "settings_header"
-                        xalign 0.5
-                    grid 2 1:
-                        xfill True
-                        textbutton translation_new["Music_lower"]:
-                            style "log_button"
-                            text_style "settings_text"
-                            action Play("sound", "sound/test.ogg")
-                            xpos 0.1
-                        bar:
-                            value Preference("music volume")
-                            left_bar bar_full
-                            right_bar bar_null
-                            thumb "images/gui/settings/htumb.png"
-                            hover_thumb "images/gui/settings/htumb.png"
-                            xmaximum 1.35
-                            ymaximum 36
-                            xpos -0.55
-                    grid 2 1:
-                        xfill True
-                        textbutton translation_new["Sound"]:
-                            style "log_button"
-                            text_style "settings_text"
-                            action Play("sound", "sound/test.ogg")
-                            xpos 0.1
-                        bar:
-                            value Preference("sound volume")
-                            left_bar bar_full
-                            right_bar bar_null
-                            thumb "images/gui/settings/htumb.png"
-                            hover_thumb "images/gui/settings/htumb.png"
-                            xmaximum 1.35
-                            ymaximum 36
-                            xpos -0.55
-                    grid 2 1:
-                        xfill True
-                        textbutton translation_new["Ambience"]:
-                            style "log_button"
-                            text_style "settings_text"
-                            action Play("sound", "sound/test.ogg")
-                            xpos 0.1
-                        bar:
-                            value Preference("voice volume")
-                            left_bar bar_full
-                            right_bar bar_null
-                            thumb "images/gui/settings/htumb.png"
-                            hover_thumb "images/gui/settings/htumb.png"
-                            xmaximum 1.35
-                            ymaximum 36
-                            xpos -0.55
-                    text translation_new["Text_speed"]:
-                        style "settings_header"
-                        xalign 0.5
-                    bar:
-                        value Preference("text speed")
-                        left_bar bar_full
-                        right_bar bar_null
-                        thumb "images/gui/settings/htumb.png"
-                        hover_thumb "images/gui/settings/htumb.png"
-                        xalign 0.5
-                        xmaximum 0.8
-                        ymaximum 36
-                    text translation_new["Autoforward"]:
-                        style "settings_header"
-                        xalign 0.5
-                    grid 2 1:
-                        xfill True
-                        hbox:
-                            xalign 0.5
-                            if _preferences.afm_time != 0:
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Adult_content_on"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action Preference("auto-forward after click", "enable")
-                        hbox:
-                            xalign 0.5
-                            if _preferences.afm_time == 0:
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Adult_content_off"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action (Preference("auto-forward time", 0), Preference("auto-forward after click", "disable"))
-                    text translation_new["Autoforward_time"]:
-                        style "settings_header"
-                        xalign 0.5
-                    bar:
-                        value Preference("auto-forward time")
-                        left_bar bar_full
-                        right_bar bar_null
-                        thumb "images/gui/settings/htumb.png"
-                        hover_thumb "images/gui/settings/htumb.png"
-                        xalign 0.5
-                        xmaximum 0.8
-                        ymaximum 36
-                    text translation_new["Font"]:
-                        style "settings_header"
-                        xalign 0.5
-                    grid 2 1:
-                        xfill True
-                        hbox:
-                            xalign 0.5
-                            if persistent.font_size == "small":
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Normal_font"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action SetField(persistent, "font_size", "small")
-                        hbox:
-                            xalign 0.5
-                            if not persistent.font_size == "small":
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Big_font"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action SetField(persistent, "font_size", "large")
-                    textbutton translation_new["Language"]:
-                        style "log_button"
-                        text_style "settings_text"
-                        text_size 50
-                        xalign 0.5
-                        action ShowMenu("language_menu")
-                    text translation_new["show_achievments"]:
-                        style "settings_header"
-                        xalign 0.5
-                    grid 2 1:
-                        xfill True
-                        hbox:
-                            xalign 0.5
-                            if persistent.show_achievements:
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Yes"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action SetField(persistent, "show_achievements", True)
-                        hbox:
-                            xalign 0.5
-                            if not persistent.show_achievements:
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["No"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action SetField(persistent, "show_achievements", False)
-                    null
-            bar:
-                value XScrollValue("preferences")
-                left_bar "images/misc/none.png"
-                right_bar "images/misc/none.png"
-                thumb "images/misc/none.png"
-                hover_thumb "images/misc/none.png"
-            vbar:
-                value YScrollValue("preferences")
-                bottom_bar "images/misc/none.png"
-                top_bar "images/misc/none.png"
-                thumb "images/gui/settings/vthumb.png"
-                thumb_offset -12
-
-screen replay_text_history_screen:
-    tag menu
-    predict False
-    $ xmax = 1600
-    $ xposition = 100
-    $ history_text_size = 21
-    $ history_name_size = 22
-    if persistent.font_size == "large":
-        $ history_text_size = 28
-        $ history_name_size = 29
-    elif persistent.font_size == "giant":
-        $ history_text_size = 36
-        $ history_name_size = 37
-    button:
-        style "blank_button"
-        xpos 0
-        ypos 0
-        xfill True
-        yfill True
-        action Return()
-    window:
-        background Frame("images/gui/choice/"+persistent.timeofday+"/choice_box.png")
-        left_padding 75
-        right_padding 75
-        bottom_padding 120
-        top_padding 120
-        viewport:
-            id "text_history_screen"
-            draggable True
-            mousewheel True
-            scrollbars None
-            yinitial 1.0
-            vbox:
-                for h in _history_list:
-                    if h.who:
-                        text h.who:
-                            font main_font
-                            ypos 0
-                            xpos xposition
-                            xalign 0.0
-                            size history_name_size
-                            if "color" in h.who_args:
-                                color h.who_args["color"]
-                    text h.what:
-                        style "normal_day"
-                        size history_text_size
-                        xmaximum xmax
-                        xpos 100
-        vbar:
-            value YScrollValue("text_history_screen")
-            bottom_bar "images/misc/none.png"
-            top_bar "images/misc/none.png"
-            thumb "images/gui/settings/vthumb.png"
-            xoffset 1700
-
-screen replay_preferences:
-    tag menu
-    modal True
-    $ translate()
-    $ bar_null = Frame(get_image("gui/settings/bar_null.png"),36,36)
-    $ bar_full = Frame(get_image("gui/settings/bar_full.png"),36,36)
-    window:
-        background get_image("gui/settings/preferences_bg.jpg")
-        textbutton translation_new["SAVE"]:
-            style "log_button"
-            text_style "settings_link"
-            xalign 0.02
-            yalign 0.08
-            action ShowMenu('save')
-        textbutton translation_new["LOAD"]:
-            style "log_button"
-            text_style "settings_link"
-            xalign 0.98
-            yalign 0.08
-            action ShowMenu('load')
-        hbox:
-            xalign 0.5
-            yalign 0.08
-            add get_image("gui/settings/star.png"):
-                yalign 0.65
-            text " "+translation_new["settings"]+" ":
-                style "settings_link"
-                yalign 0.5
-                color "#ffffff"
-            add get_image("gui/settings/star.png"):
-                yalign 0.65
-        textbutton translation_new["Back"]:
-            style "log_button"
-            text_style "settings_link"
-            xalign 0.015
-            yalign 0.92
-            action Return()
-        side "c b r":
-            area (0.25, 0.23, 0.51, 0.71)
-            viewport:
-                id "preferences"
-                mousewheel True
-                scrollbars None
-                grid 1 21:
-                    xfill True
-                    spacing 15
-                    textbutton "Выйти из повтора":
-                        style "log_button"
-                        text_style "settings_header"
-                        xalign 0.5
-                        action [Function(replay_screens_load), EndReplay(confirm=False)]
-                    text translation_new["Window_mode"]:
-                        style "settings_header"
-                        xalign 0.5
-                    grid 2 1:
-                        xfill True
-                        hbox:
-                            xalign 0.5
-                            if _preferences.fullscreen:
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Fullscreen"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action Preference("display", "fullscreen")
-                        hbox:
-                            xalign 0.5
-                            if not _preferences.fullscreen:
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Window"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action Preference("display", "window")
-                    text translation_new["Skip"]:
-                        style "settings_header"
-                        xalign 0.5
-                    grid 2 1:
-                        xfill True
-                        hbox:
-                            xalign 0.5
-                            if _preferences.skip_unseen:
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Skip_all"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action Preference("skip", "all")
-                        hbox:
-                            xalign 0.5
-                            if not _preferences.skip_unseen:
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Skip_seen"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action Preference("skip", "seen")
-                    text translation_new["Volume"]:
-                        style "settings_header"
-                        xalign 0.5
-                    grid 2 1:
-                        xfill True
-                        textbutton translation_new["Music_lower"]:
-                            style "log_button"
-                            text_style "settings_text"
-                            action Play("sound", "sound/test.ogg")
-                            xpos 0.1
-                        bar:
-                            value Preference("music volume")
-                            left_bar bar_full
-                            right_bar bar_null
-                            thumb "images/gui/settings/htumb.png"
-                            hover_thumb "images/gui/settings/htumb.png"
-                            xmaximum 1.35
-                            ymaximum 36
-                            xpos -0.55
-                    grid 2 1:
-                        xfill True
-                        textbutton translation_new["Sound"]:
-                            style "log_button"
-                            text_style "settings_text"
-                            action Play("sound", "sound/test.ogg")
-                            xpos 0.1
-                        bar:
-                            value Preference("sound volume")
-                            left_bar bar_full
-                            right_bar bar_null
-                            thumb "images/gui/settings/htumb.png"
-                            hover_thumb "images/gui/settings/htumb.png"
-                            xmaximum 1.35
-                            ymaximum 36
-                            xpos -0.55
-                    grid 2 1:
-                        xfill True
-                        textbutton translation_new["Ambience"]:
-                            style "log_button"
-                            text_style "settings_text"
-                            action Play("sound", "sound/test.ogg")
-                            xpos 0.1
-                        bar:
-                            value Preference("voice volume")
-                            left_bar bar_full
-                            right_bar bar_null
-                            thumb "images/gui/settings/htumb.png"
-                            hover_thumb "images/gui/settings/htumb.png"
-                            xmaximum 1.35
-                            ymaximum 36
-                            xpos -0.55
-                    text translation_new["Text_speed"]:
-                        style "settings_header"
-                        xalign 0.5
-                    bar:
-                        value Preference("text speed")
-                        left_bar bar_full
-                        right_bar bar_null
-                        thumb "images/gui/settings/htumb.png"
-                        hover_thumb "images/gui/settings/htumb.png"
-                        xalign 0.5
-                        xmaximum 0.8
-                        ymaximum 36
-                    text translation_new["Autoforward"]:
-                        style "settings_header"
-                        xalign 0.5
-                    grid 2 1:
-                        xfill True
-                        hbox:
-                            xalign 0.5
-                            if _preferences.afm_time != 0:
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Adult_content_on"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action Preference("auto-forward after click", "enable")
-                        hbox:
-                            xalign 0.5
-                            if _preferences.afm_time == 0:
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Adult_content_off"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action (Preference("auto-forward time", 0), Preference("auto-forward after click", "disable"))
-                    text translation_new["Autoforward_time"]:
-                        style "settings_header"
-                        xalign 0.5
-                    bar:
-                        value Preference("auto-forward time")
-                        left_bar bar_full
-                        right_bar bar_null
-                        thumb "images/gui/settings/htumb.png"
-                        hover_thumb "images/gui/settings/htumb.png"
-                        xalign 0.5
-                        xmaximum 0.8
-                        ymaximum 36
-                    text translation_new["Font"]:
-                        style "settings_header"
-                        xalign 0.5
-                    grid 2 1:
-                        xfill True
-                        hbox:
-                            xalign 0.5
-                            if persistent.font_size == "small":
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Normal_font"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action SetField(persistent, "font_size", "small")
-                        hbox:
-                            xalign 0.5
-                            if not persistent.font_size == "small":
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Big_font"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action SetField(persistent, "font_size", "large")
-                    textbutton translation_new["Language"]:
-                        style "log_button"
-                        text_style "settings_text"
-                        text_size 50
-                        xalign 0.5
-                        action ShowMenu("language_menu")
-                    text translation_new["show_achievments"]:
-                        style "settings_header"
-                        xalign 0.5
-                    grid 2 1:
-                        xfill True
-                        hbox:
-                            xalign 0.5
-                            if persistent.show_achievements:
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["Yes"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action SetField(persistent, "show_achievements", True)
-                        hbox:
-                            xalign 0.5
-                            if not persistent.show_achievements:
-                                add get_image("gui/settings/leaf.png"):
-                                    ypos 0.12
-                            else:
-                                null:
-                                    width 22
-                            textbutton translation_new["No"]:
-                                style "log_button"
-                                text_style "settings_text"
-                                action SetField(persistent, "show_achievements", False)
-                    null
-            bar:
-                value XScrollValue("preferences")
-                left_bar "images/misc/none.png"
-                right_bar "images/misc/none.png"
-                thumb "images/misc/none.png"
-                hover_thumb "images/misc/none.png"
-            vbar:
-                value YScrollValue("preferences")
-                bottom_bar "images/misc/none.png"
-                top_bar "images/misc/none.png"
-                thumb "images/gui/settings/vthumb.png"
-                thumb_offset -12
-
-### === ###
-
 ### РЕПЛЕИ ###
-
 init python:
-    # Списки всех ачивок
-    sdl_achv_mi_names = [
-        "mi_7dl_shard",
-        "mi_7dl_good_human",
-        "mi_7dl_good_star",
-        "mi_7dl_neu_human",
-        "mi_7dl_loki_exc",
-        "mi_7dl_herc_exc",
-        "mi_7dl_dr_exc",
-        "mi_7dl_bad_human",
-        "mi_7dl_bad_star",
-        "mi_dj_true",
-        "mi_dj_good_jap",
-        "mi_dj_good_rf",
-        "mi_dj_bad"
-        ]
-    sdl_achv_dv_names = [
-        "dv_7dl_shard",
-        "dv_7dl_good_ussr",
-        "dv_7dl_good_rf",
-        "dv_7dl_rej_ussr",
-        "dv_7dl_rej_rf",
-        "dv_7dl_tran_un",
-        "dv_7dl_loki_exc",
-        "dv_7dl_bad",
-        "dv_dj_true",
-        "dv_dj_good",
-        "dv_dj_neu",
-        "dv_dj_rej",
-        "dv_dj_herc_exc",
-        "dv_dj_loki_exc",
-        "dv_dj_dr_exc",
-        "dv_dj_bad"
-        ]
-    sdl_achv_sl_names = [
-        "sl_7dl_shard",
-        "sl_7dl_good_rf",
-        "sl_7dl_loki_good",
-        "sl_7dl_loki_neu",
-        "sl_7dl_loki_rej",
-        "sl_7dl_herc_good",
-        "sl_7dl_herc_neu",
-        "sl_7dl_dr_good",
-        "sl_7dl_dr_good2",
-        "sl_7dl_bad",
-        "sl_cl_int_true",
-        "sl_cl_int_good",
-        "sl_cl_int_rej",
-        "sl_cl_int_bad",
-        "sl_cl_good_ussr",
-        "sl_cl_good_rf",
-        "sl_cl_good_rf2",
-        "sl_cl_rej_rf",
-        "sl_cl_rej",
-        "sl_cl_loki_exc",
-        "sl_cl_bad"
-        ]
-    sdl_achv_un_names = [
-        "un_7dl_shard",
-        "un_7dl_true_tran",
-        "un_7dl_good_ussr",
-        "un_7dl_good_rf",
-        "un_7dl_rej",
-        "un_7dl_bad",
-        "un_fz_rr_true",
-        "un_fz_rr_good",
-        "un_fz_rr_bad",
-        "un_fz_good",
-        "un_fz_neu",
-        "un_fz_rj",
-        "un_fz_bad",
-        "un_fz_bad_post"
-        ]
-    sdl_achv_mt_names = [
-        "mt_7dl_shard",
-        "mt_7dl_true",
-        "mt_7dl_good",
-        "mt_7dl_neu",
-        "mt_7dl_herc_exc",
-        "mt_7dl_bad"
-        ]
-    sdl_achv_us_names = [
-        "us_7dl_shard",
-        "us_7dl_true",
-        "us_7dl_good",
-        "us_7dl_tran_un",
-        "us_7dl_tran_mi",
-        "us_7dl_bad",
-        "us_7dl_px_true",
-        "us_7dl_px_good"
-        ]
-    sdl_achv_me_names = [
-        "me_neu_bad"
-        ]
-    sdl_achv_va_names = [
-        "alt_lost",
-        "alt_lamp",
-        "alt_deep",
-        "alt_qte",
-        "alt_victim",
-        "alt_drunk"
-        ]
-    sdl_achv_names = [
-        sdl_achv_mi_names,
-        sdl_achv_dv_names,
-        sdl_achv_sl_names,
-        sdl_achv_un_names,
-        sdl_achv_mt_names,
-        sdl_achv_us_names,
-        sdl_achv_me_names,
-        sdl_achv_va_names
-        ]
-
     # Добавляем ключ в словарь
     def sdl_add_to_dict(x, key, val):
         z = x.copy()
@@ -1757,8 +1063,10 @@ init python:
     sdl_var_b_d4_sl_cl_left    = sdl_Bool('alt_day4_sl_cl_tut_lf', "Славя с Леной ушли на поиски без нас")
     sdl_var_b_d4_sl_cl_un_reje = sdl_Bool('alt_day4_sl_cl_un_rej', "Выступил против участия Лены в поисках")
     sdl_var_b_d5_sl_cl_hent    = sdl_Bool('alt_day5_sl_cl_hentai_done', "Был хентай вечером 5 дня")
+    sdl_var_b_d5_sl_cl_cs      = sdl_Bool('alt_day5_sl_cl_cs', "Согласился на осмотр у Виолы")
     sdl_var_b_d6_sl_cl_shir    = sdl_Bool('alt_day6_sl_cl_shirt', "Решил принарядиться к дискотеке")
     sdl_var_b_d6_sl_cl_hent    = sdl_Bool('alt_day6_sl_cl_hentai_done', "Был хентай в медпункте")
+    sdl_var_b_d6_sl_cl_agre    = sdl_Bool('alt_day6_sl_cl_agreed', "Согласились с предложением кошкодевочки")
     sdl_var_b_d7_sl_cl_code    = sdl_Bool('alt_day7_sl_cl_code', "Нашёл бумажку с кодом")
     # ====================
     sdl_var_b_d4_un_7dl_sear    = sdl_Bool('alt_day4_un_7dl_morning_searching', "Отпросился с линейки искать Лену")
@@ -1786,6 +1094,8 @@ init python:
     sdl_var_b_d4_me_neu_us_debt = sdl_Bool('alt_day4_me_neu_us_debt', "Заглянул к кибернетикам после обеда")
     sdl_var_b_d4_me_neu_cs_debt = sdl_Bool('alt_day4_me_neu_cs_debt', "Провёл вечер в компании двух дам")
     sdl_var_b_d4_me_neu_mz_news = sdl_Bool('alt_day4_me_neu_mz_newspaper', "Помог починить полку в библиотеке")
+    sdl_var_b_d4_me_neu_ba_duty = sdl_Bool('alt_day4_me_neu_ba_duty', "Был на спортивном кружке")
+    sdl_var_b_d4_me_neu_mi_club = sdl_Bool('alt_day4_me_neu_mi_club', "Был музыкальном кружке")
     sdl_var_b_d5_me_neu_sprt    = sdl_Bool('alt_day5_me_neu_sport', "Был разыгран добрым дедушкой Санычем")
     sdl_var_b_d5_me_neu_nwpp    = sdl_Bool('alt_day5_me_neu_nwsppr', "Посетил библиотеку в тихий час")
     sdl_var_b_d5_me_neu_pota    = sdl_Bool('alt_day5_me_neu_potato', "Получил поручение нести мешок картошки")
@@ -1796,7 +1106,13 @@ init python:
     sdl_var_b_d5_me_neu_mt_hent = sdl_Bool('alt_day5_me_neu_mt_hentai', "Был хентай вечером 5 дня")
     sdl_var_b_d5_me_neu_us_stor = sdl_Bool('alt_day5_me_neu_us_stores', "Получил еду для рыжих")
     sdl_var_b_d5_me_neu_us_pota = sdl_Bool('alt_day5_me_neu_us_potato', "Поделился с Ульяной картошкой")
-    ##############################
+    sdl_var_b_d5_me_neu_cs_debt = sdl_Bool('alt_day5_me_neu_cs_debt2', "Проштрафился перед Виолой")
+    sdl_var_b_d6_me_neu_mt_help = sdl_Bool('alt_day6_me_neu_mt_help', "Согласился помочь Ольге")
+    sdl_var_b_d6_me_neu_dv_reve = sdl_Bool('alt_day6_me_neu_dv_revenge', "Рыжая устроила мстю")
+    sdl_var_b_d6_me_neu_mi_club = sdl_Bool('alt_day6_me_neu_mi_club', "Был в музклубе утром")
+    sdl_var_b_d6_me_neu_un_esca = sdl_Bool('alt_day6_me_neu_un_escape', "Сбежал с территории лагеря")
+    sdl_var_b_d6_me_neu_cybr    = sdl_Bool('alt_day6_me_neu_clubs_cyber', "Рыбачил с кибернетиками")
+
     sdl_var_i_mi_lpp = sdl_Int('lp_mi', "ЛП Мику", 25)
     sdl_var_i_dv_lpp = sdl_Int('lp_dv', "ЛП Алисы", 25)
     sdl_var_i_sl_lpp = sdl_Int('lp_sl', "ЛП Слави", 25)
@@ -1818,11 +1134,27 @@ init python:
     sdl_var_i_mt_7dl = sdl_Int('counter_mt_7dl', "Ольга-7дл", 16)
     sdl_var_i_us_7dl = sdl_Int('counter_us_7dl', "Ульяна-7дл", 8)
     sdl_var_i_us_7dl_pxs = sdl_Int('counter_us_7dl_px',  "Ульяна-Огоньки", 3)
+    sdl_var_i_mz_7dl = sdl_Int('counter_mz_7dl',  "Встречи с Женей", 3)
     sdl_var_i_karma  = sdl_Int('karma', "Карма", 300)
     sdl_var_i_sl_sp  = sdl_Int('alt_sp', "Воля", 14)
     sdl_var_i_mi_spt = sdl_Int('alt_spt', "Princess-поинты", 10)
     sdl_var_i_mi_hpt = sdl_Int('alt_hpt', "Human-поинты", 10)
-    ##############################
+
+    sdl_var_e_d0_ch_no_hc = sdl_Enum(
+                                'plthr', "Персонаж",
+                                (
+                                    ('Локи', "Локи"),
+                                    ('Дрищ', "Дрищ")
+                                )
+                              )
+    sdl_var_e_d0_char    = sdl_Enum(
+                                'plthr', "Персонаж",
+                                (
+                                    ('Герк', "Герк"),
+                                    ('Локи', "Локи"),
+                                    ('Дрищ', "Дрищ")
+                                )
+                              )
     sdl_var_e_d1_cofr    = sdl_Enum(
                                 'alt_day1_cofront_sl_dv', "Конфликт Слави и Алисы",
                                 (
@@ -2184,7 +1516,7 @@ init python:
                                 (
                                     ('musclub', "Музклуб"),
                                     ('boatstation', "Причал"),
-                                    ('playground', "Спортплозадка"),
+                                    ('playground', "Спортплощадка"),
                                     ('dv_house', "Домик Алисы")
                                 )
                               )
@@ -2238,6 +1570,24 @@ init python:
                                     (2, "Подглядывал за переодевающейся Ольгой")
                                 )
                               )
+    sdl_var_e_d6_me_neu_danc = sdl_Enum('alt_day6_me_neu_dance_invite', "Приглашение на танцы",
+                                (
+                                    ('', "Никто"),
+                                    ('mi', "Мику"),
+                                    ('dv', "Алиса"),
+                                    ('sl', "Славя"),
+                                    ('un', "Лена"),
+                                    ('mt', "Ольга"),
+                                    ('us', "Ульяна")
+                                )
+                              )
+    sdl_var_e_d6_me_neu_nwsp = sdl_Enum('alt_day6_me_neu_nwsppr', "Был в стенгазете",
+                                (
+                                    ('', "Не был"),
+                                    ('mz', "С Женей"),
+                                    ('no_mz', "Без Жени")
+                                )
+                              )
     # ====================
     sdl_var_e_d6_us_7dl_mi_frie = sdl_Enum('alt_day6_us_7dl_mi_friends', "Ветка Мику",
                                 (
@@ -2261,7 +1611,7 @@ init python:
                                     (3, "Сблизился с Леной")
                                 )
                               )
-    ##############################
+
     sdl_var_l_d1_sl = sdl_List(
                                 'list_slavya_7dl', "Экскурсия со Славей",
                                 [
@@ -2627,5 +1977,3 @@ label sdl_replay(): # Лейбл для запуска реплеев
             $ cur_replay.get_func_out()()
 
     return
-
-### === ###

@@ -88,7 +88,7 @@ label alt_chudesa_byvayut:
     "Весна – время, когда природа просыпается. И как же Славе хотелось проснуться вместе с ней…"
     "Сбросить, словно зимнюю одежду, все проблемы и воспоминанания, и ощутить себя лёгкой и свободной…"
     "Как весенний ветерок, что треплет ей волосы…"
-    scene bg ext_busstop_summer_7dl with dissolve2
+    scene bg ext_bus_stop_summer_7dl with dissolve2
     "Было около 16:30. Три девушки, закончившие работу в читальном зале, шли к трамвайной остановке."
     us "Что-то я устала, не могу."
     "Пожаловалась Света."
@@ -144,7 +144,7 @@ label alt_chudesa_byvayut:
     show prologue_dream
     with dissolve
     pause(1.5)
-    scene bg ext_busstop_summer_7dl with dissolve
+    scene bg ext_bus_stop_summer_7dl with dissolve
 
     "В памяти вновь всплыло лицо другого человека."
     th "Но его нет. А Стас здесь."
@@ -378,4 +378,7 @@ label alt_chudesa_byvayut:
     with vpunch
     pause(3)
     stop music fadeout 2
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

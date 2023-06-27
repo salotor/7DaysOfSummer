@@ -24,8 +24,6 @@
             call alt_day4_me_neu_aid_sl
             pause(1)
             if alt_day4_me_neu_transit == 'sl_cl':
-                $ counter_mt_7dl = 0
-                $ counter_us_7dl = 0
                 $ routetag = "sl"
                 jump alt_day4_sl_cl_start
         else:
@@ -51,8 +49,7 @@
             call alt_day4_me_neu_un
             pause(1)
             if alt_day4_me_neu_transit == 'un_7dl':
-                $ counter_mt_7dl = 0
-                $ counter_us_7dl = 0
+                $ routetag = "un7dl"
                 jump alt_day4_un_7dl_start
         elif (alt_day2_date == 'mi') and (alt_day2_mi_date != 2):
             call alt_day4_me_neu_mi
@@ -83,10 +80,10 @@
             call alt_day4_me_neu_sport
         elif 'cyber' in list_clubs_7dl:
             call alt_day4_me_neu_cyber
-        elif 'music' in list_clubs_7dl:
-            call alt_day4_me_neu_music
         elif 'nwsppr' in list_clubs_7dl:
             call alt_day4_me_neu_nwsppr
+        elif 'music' in list_clubs_7dl:
+            call alt_day4_me_neu_music
     pause(1)
     call alt_day4_me_neu_lunch
     pause(1)
@@ -176,7 +173,7 @@ label alt_day5_me_neu_start:
     elif alt_day5_me_neu_candle == 3:
         call alt_day5_me_neu_gaming
         pause(1)
-    else:
+    elif alt_day5_me_neu_candle == 4:
         call alt_day5_me_neu_arrest
         pause(1)
     $ persistent.sprite_time = "day"
@@ -223,17 +220,17 @@ label alt_day5_me_neu_start:
             $ routetag = "us_7dl"
         jump alt_day6_us_7dl_start
     else:
-        if 'music' in list_clubs_7dl or len(list_clubs_7dl) == 0:
+        if alt_day5_me_neu_mi_help:
             call alt_day5_me_neu_mi_estrade
             pause(1)
             if alt_day5_me_neu_mt_voyeur == 1:
                 call alt_day5_me_neu_mt_beach
             else:
                 call alt_day5_me_neu_mi_help
-        elif 'cyber' in list_clubs_7dl:
-            call alt_day5_me_neu_cyber_sh
         elif ('soccer' in list_clubs_7dl) or ('volley' in list_clubs_7dl) or ('badmin' in list_clubs_7dl):
             call alt_day5_me_neu_sport_sh
+        elif 'cyber' in list_clubs_7dl:
+            call alt_day5_me_neu_cyber_sh
         elif 'nwsppr' in list_clubs_7dl:
             call alt_day5_me_neu_nwsppr_sh
         pause(1)
@@ -264,6 +261,7 @@ label alt_day5_me_neu_start:
                 call alt_day5_me_neu_sleeptime_drunk
             else:
                 call alt_day5_me_neu_sleeptime_map
+            jump alt_day6_me_neu_start
         elif alt_day5_me_neu_campfire_choise == 2:
             if herc:
                 call alt_day5_me_neu_evening_answ_h
@@ -275,23 +273,159 @@ label alt_day5_me_neu_start:
                 call alt_day5_me_neu_evening_answ_d
                 pause(1)
                 call alt_day5_me_neu_sleeptime_answ_d
-        else:
+            pause(1)
+            jump alt_day7_me_neu_start
+        elif alt_day5_me_neu_campfire_choise == 3:
             call alt_day5_me_neu_sleeptime
-        pause(1)
-        if (counter_mt_7dl >= 7) and (alt_day5_me_neu_mt_voyeur != 0):
-            $ routetag = "mt7dl"
-            if alt_day5_me_neu_mt_diary:
-                call alt_day5_me_neu_mt_retrib
-            elif alt_day5_me_neu_mt_hentai:
-                call alt_day5_me_neu_mt_tea_party
-            jump alt_day6_mt_7dl_start
-        elif (counter_us_7dl >= 6):
-            $ routetag = "us_7dl"
-            jump alt_day6_us_7dl_start
-        else:
-            jump alt_day6_me_neu_start
+            if (counter_mt_7dl >= 7) and (alt_day5_me_neu_mt_voyeur != 0):
+                $ routetag = "mt7dl"
+                if alt_day5_me_neu_mt_diary:
+                    call alt_day5_me_neu_mt_retrib
+                elif alt_day5_me_neu_mt_hentai:
+                    call alt_day5_me_neu_mt_tea_party
+                jump alt_day6_mt_7dl_start
+            elif (counter_us_7dl >= 6):
+                $ routetag = "us_7dl"
+                jump alt_day6_us_7dl_start
+            else:
+                jump alt_day6_me_neu_start
 
 label alt_day6_me_neu_start:
+    call alt_day6_me_neu_vars
+    $ routetag = "neu_main"
+    $ persistent.sprite_time = "sunset"
+    $ sunset_time()
+    if alt_day5_me_neu_map_ivent == 'boat':
+        $ alt_chapter(6, u"Одиночка. Пробуждение.")
+        call alt_day6_me_neu_begin_duty
+    else:
+        if alt_day5_me_neu_map_ivent == 'medic':
+            $ alt_chapter(6, u"Одиночка. Пьяный-помятый")
+        else:
+            $ alt_chapter(6, u"Одиночка. Пробуждение")
+        call alt_day6_me_neu_begin
+    $ alt_save_name(6, u"Одиночка. Завтрак")
+    $ persistent.sprite_time = "day"
+    $ day_time()
+    if alt_day5_me_neu_map_ivent == 'dv':
+        call alt_day6_me_neu_breakfast_dv
+    else:
+        call alt_day6_me_neu_breakfast
+        if alt_day5_me_neu_map_ivent == 'boat':
+            call alt_day6_me_neu_breakfast_duty
+    if not (alt_day6_me_neu_dv_revenge or alt_day6_me_neu_mt_help or alt_day5_me_neu_cs_debt2):
+        call alt_day6_me_neu_after_breakfast
+        if alt_day6_me_neu_walk:
+            $ alt_save_name(6, u"Одиночка. Двадцать тысяч лье под водой")
+            call alt_day6_me_neu_beach
+        elif ('soccer' in list_clubs_7dl) or ('volley' in list_clubs_7dl) or ('badmin' in list_clubs_7dl):
+            $ alt_save_name(6, u"Одиночка. День физкультурника")
+            call alt_day6_me_neu_sport
+        elif 'cyber' in list_clubs_7dl:
+            $ alt_save_name(6, u"Одиночка. Приключения Электроника")
+            call alt_day6_me_neu_cyber
+        elif ('nwsppr' in list_clubs_7dl and counter_mz_7dl != 2):
+            $ alt_save_name(6, u"Одиночка. Дни минувшего прошлого")
+            call alt_day6_me_neu_nwsppr
+        elif ('nwsppr' in list_clubs_7dl and counter_mz_7dl == 2):
+            $ alt_save_name(6, u"Одиночка. В глубине души твоей")
+            call alt_day6_me_neu_nwsppr_mz
+        elif 'music' in list_clubs_7dl:
+            $ alt_save_name(6, u"Одиночка. Музыкальная пауза")
+            call alt_day6_me_neu_music
+    else:
+        if alt_day6_me_neu_dv_revenge:
+            $ alt_save_name(6, u"Одиночка. Месть Алисы")
+            call alt_day6_me_neu_dv_revenge
+        elif alt_day6_me_neu_mt_help:
+            $ alt_save_name(6, u"Одиночка. Рандеву с вожатой")
+            call alt_day6_me_neu_mt_help
+        elif alt_day5_me_neu_cs_debt2:
+            $ alt_save_name(6, u"Одиночка. Вопрос с подвохом")
+            call alt_day6_me_neu_viola_duty
+            pause(1)
+            $ alt_save_name(6, u"Одиночка. Двадцать тысяч лье под водой")
+            call alt_day6_me_neu_beach
+    pause(1)
+    $ alt_chapter(6, u"Одиночка. Обед")
+    if alt_day5_me_neu_map_ivent == 'boat':
+        call alt_day6_me_neu_duty
+        pause(1)
+    call alt_day6_me_neu_lunch
+    pause(1)
+    $ alt_save_name(6, u"Одиночка. Тихий час")
+    call alt_day6_me_neu_map_sh
+    pause(1)
+    if alt_day6_me_neu_dance_invite == 'mt':
+        call alt_day6_me_neu_mt_invite
+    pause(1)
+    call alt_day6_me_neu_afternoon
+    pause(1)
+    $ alt_save_name(6, u"Одиночка. Концерт")
+    call alt_day6_me_neu_concert
+    pause(1)
+    $ persistent.sprite_time = "sunset"
+    $ sunset_time()
+    if alt_day6_me_neu_un_escape:
+        $ alt_save_name(6, u"Одиночка. Побег")
+        call alt_day6_me_neu_un_escape
+    else:
+        $ alt_save_name(6, u"Одиночка. Инспекция")
+        call alt_day6_me_neu_inspection
+    pause(1)
+    $ alt_save_name(6, u"Одиночка. Ужин")
+    call alt_day6_me_neu_dinner
+    pause(1)
+    $ alt_save_name(6, u"Одиночка. Перед дискотекой")
+    call alt_day6_me_after_dinner
+    pause(1)
+    $ persistent.sprite_time = "night"
+    $ night_time()
+
+    if alt_day6_me_neu_dance_invite == 'dv':
+        $ alt_save_name(6, u"Одиночка. У тебя бы и не вышло…")
+        call alt_day6_me_neu_dv_dance
+    else:
+        $ alt_chapter(6, u"Одиночка. Дискотека")
+        call alt_day6_me_neu_dance
+        if alt_day6_me_neu_dance_invite == 'mi':
+            $ alt_save_name(6, u"Одиночка. Танец с Мику")
+            call alt_day6_me_neu_mi_dance
+        elif alt_day6_me_neu_dance_invite == 'sl':
+            $ alt_save_name(6, u"Одиночка. Хороший Пират -")
+            call alt_day6_me_neu_sl_dance
+        elif alt_day6_me_neu_dance_invite == 'un':
+            $ alt_save_name(6, u"Одиночка. ЧП")
+            call alt_day6_me_neu_un_dance
+        elif alt_day6_me_neu_dance_invite == 'us':
+            $ alt_save_name(6, u"Одиночка. Танец с Ульяной")
+            call alt_day6_me_neu_us_danсe
+        elif counter_mz_7dl == 3:
+            $ alt_save_name(6, u"Одиночка. Танец с Женей")
+            call alt_day6_me_neu_mz_danсe
+        elif counter_mt_7dl >= 5:
+            $ alt_save_name(6, u"Одиночка. Сбежавшая невеста")
+            call alt_day6_me_neu_mt_dance
+        elif alt_day4_me_neu_us_debt and alt_day5_me_neu_clubs_cyber and alt_day6_me_neu_clubs_cyber:
+            $ alt_save_name(6, u"Одиночка. Рыбный день")
+            call alt_day6_me_neu_el_dance
+        else:
+            $ alt_save_name(6, u"Одиночка. Джон Тайтор")
+            call alt_day6_me_neu_ka_danсe
+    pause(1)
+    if alt_day6_me_neu_dance_invite == 'un':
+        $ alt_save_name(6, u"Одиночка. Отмена свечки")
+        call alt_day6_me_neu_no_candle
+    else:
+        $ alt_save_name(6, u"Одиночка. Свечка")
+        call alt_day6_me_neu_candle
+        pause(1)
+        $ alt_save_name(6, u"Одиночка. Отбой")
+        call alt_day6_me_neu_sleeptime
+    pause(1)
+    jump alt_day7_me_neu_start
+
+label alt_day7_me_neu_start:
     $ persistent.sprite_time = "prolog"
     $ prolog_time()
     $ alt_chapter(-1, u"Одиночка. Обречённое")

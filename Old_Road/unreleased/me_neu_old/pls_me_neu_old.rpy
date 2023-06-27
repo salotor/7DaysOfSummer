@@ -1,12 +1,9 @@
 label alt_day6_me_neu_start_old:
-    "За кого будем играть?"
-    menu:
-        "Локи":
-            $ loki = True
-            $ plthr = u"Локи"
-        "Дрищ":
-            $ dr = True
-            $ plthr = u"Дрищ"
+    $ sdl_local_vars = [sdl_var_e_d0_ch_no_hc]
+    call screen sdl_replay_vars(sdl_local_vars)
+    $ alt_vars_screen(sdl_local_vars)
+    $ alt_char_set(plthr)
+
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
     $ alt_chapter(6, u"Одиночка. Утро")
@@ -55,17 +52,17 @@ label alt_day6_me_neu_start_old:
     pause(1)
     call alt_day6_me_neu_sleeptime_old
     pause(1)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return
 
 label alt_day7_me_neu_start_old:
-    "За кого будем играть?"
-    menu:
-        "Локи":
-            $ loki = True
-            $ plthr = u"Локи"
-        "Дрищ":
-            $ dr = True
-            $ plthr = u"Дрищ"
+    $ sdl_local_vars = [sdl_var_e_d0_ch_no_hc]
+    call screen sdl_replay_vars(sdl_local_vars)
+    $ alt_vars_screen(sdl_local_vars)
+    $ alt_char_set(plthr)
+
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
     $ alt_chapter(7, u"Одиночка. Сон")
@@ -95,4 +92,7 @@ label alt_day7_me_neu_start_old:
         "Будущее":
             $ alt_chapter(7, u"Одиночка. Будущее")
             call alt_day7_me_neu_sept
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

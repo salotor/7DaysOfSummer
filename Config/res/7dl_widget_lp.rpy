@@ -24,21 +24,6 @@ python early:
     def widget_lp_7dl():
         if (not persistent.lp_widget_7dl) or (plthr in [u"None", u"Выбор", u"Достижения", u"Меню"]):
             return
-        elif plthr == u"Нуар":
-            # Нуар
-            ui.button(clicked=None, style="button_7dl", xpos=0.0, xanchor=0.0, xminimum=220)
-            ui.text("%s: %s" % ("Рут", plthr), style="button_text_7dl")
-            ui.button(clicked=None, style="button_7dl", xpos=0.16, xanchor=0.0, xminimum=120)
-            ui.text("%s" % (save_name), style="button_text_7dl")
-
-            ui.button(clicked=None, style="button_7dl", xpos=0.79, xanchor=1.0, xminimum=120)
-            ui.text("%s: %d" % ("Патроны", alt_no_ammo), style="button_text_7dl", color="#ffffff")
-            ui.button(clicked=None, style="button_7dl", xpos=0.86, xanchor=1.0, xminimum=120)
-            ui.text("%s: %d" % ("Оружие", alt_no_weapon), style="button_text_7dl", color="#ffffff")
-            ui.button(clicked=None, style="button_7dl", xpos=0.93, xanchor=1.0, xminimum=120)
-            ui.text("%s: %d" % ("Зацепки", alt_no_clue), style="button_text_7dl", color="#ffffff")
-            ui.button(clicked=None, style="button_7dl", xpos=1.0, xanchor=1.0, xminimum=120)
-            ui.text("%s: %d" % ("Лена", alt_no_un), style="button_text_7dl", color="#ffffff")
         else:
             # Роль
             ui.button(clicked=None, style="button_7dl", xpos=0.0, xanchor=0.0, xminimum=120)
@@ -104,7 +89,55 @@ python early:
                 if (alt_day6_dv_dj_secret or (not alt_day4_dv_dj_radio_scoff) or (alt_day5_dv_dj_map == "un")):
                     ui.button(clicked=None, style="button_7dl", xpos=0.93, xanchor=1.0, xminimum=120)
                     ui.text("%s: %d" % ("Тайна", int(alt_day6_dv_dj_secret)+int(not alt_day4_dv_dj_radio_scoff)+int(alt_day5_dv_dj_map == "un")), style="button_text_7dl", color="#00a060")
+            elif routetag == "neu_main":
+                ### Мику
+                ui.button(clicked=None, style="button_7dl", xpos=1.00, xanchor=1.0, xminimum=90)
+                if lp_mi < 5:
+                    ui.text("%s: %d" % ("Мику", lp_mi), style="button_text_7dl")
+                else:
+                    ui.text("%s: %d" % ("Мику", lp_mi), style="button_text_7dl", color="#00bbbb")
 
+                ### Алиса
+                ui.button(clicked=None, style="button_7dl", xpos=0.95, xanchor=1.0, xminimum=90)
+                if lp_dv < 5:
+                    ui.text("%s: %d" % ("Алиса", lp_dv), style="button_text_7dl")
+                else:
+                    ui.text("%s: %d" % ("Алиса", lp_dv), style="button_text_7dl", color="#bb8800")
+
+                ### Славя
+                ui.button(clicked=None, style="button_7dl", xpos=0.90, xanchor=1.0, xminimum=90)
+                if lp_sl < 5:
+                    ui.text("%s: %d" % ("Славя", lp_sl), style="button_text_7dl")
+                else:
+                    ui.text("%s: %d" % ("Славя", lp_sl), style="button_text_7dl", color="#bbb200")
+
+                ### Лена
+                ui.button(clicked=None, style="button_7dl", xpos=0.85, xanchor=1.0, xminimum=90)
+                if lp_un < 5:
+                    ui.text("%s: %d" % ("Лена", lp_un), style="button_text_7dl")
+                else:
+                    ui.text("%s: %d" % ("Лена", lp_un), style="button_text_7dl", color="#9f72be")
+
+                ### Ольга
+                ui.button(clicked=None, style="button_7dl", xpos=0.80, xanchor=1.0, xminimum=90)
+                if counter_mt_7dl < 5:
+                    ui.text("%s: %d" % ("Ольга", counter_mt_7dl), style="button_text_7dl")
+                else:
+                    ui.text("%s: %d" % ("Ольга", counter_mt_7dl), style="button_text_7dl", color="#00ea32")
+
+                ### Ульяна
+                ui.button(clicked=None, style="button_7dl", xpos=0.75, xanchor=1.0, xminimum=90)
+                if counter_us_7dl < 5:
+                    ui.text("%s: %d" % ("Ульяна", counter_us_7dl), style="button_text_7dl")
+                else:
+                    ui.text("%s: %d" % ("Ульяна", counter_us_7dl), style="button_text_7dl", color="#f65252")
+
+                ### Женя
+                ui.button(clicked=None, style="button_7dl", xpos=0.70, xanchor=1.0, xminimum=90)
+                if counter_mz_7dl < 3:
+                    ui.text("%s: %d" % ("Женя", counter_mz_7dl), style="button_text_7dl")
+                else:
+                    ui.text("%s: %d" % ("Женя", counter_mz_7dl), style="button_text_7dl", color="#647fc5")
             else:
                 ## Лена | Славя | Алиса | Мику | Ульяна
                 ### Ульяна

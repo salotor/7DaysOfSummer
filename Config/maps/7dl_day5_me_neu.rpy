@@ -3,7 +3,7 @@
     $ disable_all_zones_alt2()
     $ disable_all_chibi_alt2()
 
-    if alt_day4_me_neu_date == 'us':
+    if alt_day4_me_neu_date == 'us' and lp_dv >= 4:
         $ set_zone_alt2('dv_us_house_alt2', 'alt_day5_me_neu_map_house_dv')
         $ set_chibi_alt2('dv_us_house_alt2', '?')
 
@@ -46,6 +46,7 @@ label alt_day5_me_neu_map_house_dv:
     else:
         $ alt_day5_me_neu_map_ivent = 'dv'
         return
+
 label alt_day5_me_neu_map_shed:
     call alt_day5_me_neu_map_shed1
     $ disable_current_zone_alt2()
@@ -73,12 +74,11 @@ label alt_day5_me_neu_map_boat_station:
 label alt_day5_me_neu_map_library:
     call alt_day5_me_neu_map_library1
     $ disable_current_zone_alt2()
-    if (not loki and counter_me_neu_answers == 1) or (alt_day5_me_neu_nwsppr):
+    if (not (loki and counter_me_neu_answers == 1)) or (alt_day5_me_neu_nwsppr):
         $ alt_day5_me_neu_map_points += 1
         jump alt_day5_me_neu_map_search
     else:
         return
-
 
 label alt_day5_me_neu_map_playground:
     call alt_day5_me_neu_map_playground1

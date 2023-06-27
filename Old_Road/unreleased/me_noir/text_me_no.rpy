@@ -5,7 +5,7 @@ label alt_day4_no_begin:
     play ambience ambience_camp_entrance_night fadein 3
     play music music_7dl["hole_in_chest"] fadein 5
     play sound_loop sfx_bus_interior_moving fadein 1
-    $ volume (0.3,'sound_loop')
+    $ renpy.music.set_volume(0.3, delay=2, channel='sound_loop')
     $ meet('cs', 'Водитель')
     cs "А ты силён… Увиливать от вопросов."
     "Я угрюмо промолчал."
@@ -65,7 +65,7 @@ label alt_day4_no_begin:
     with dissolve
     play ambience ambience_7dl["town_day"] fadein 3
     stop sound_loop fadeout 5
-    $ volume (1.0,'sound_loop')
+    $ renpy.music.set_volume(1.0, delay=2, channel='sound_loop')
     "Меня выставили вон из машины, бросили вслед рюкзак."
     "Оставили тет-а-тет с какой-то незнакомой девочкой."
     "Невысокой брюнеткой самых приятных пропорций."
@@ -1316,14 +1316,14 @@ label alt_day4_no_cop:
     "Очаровашки в униформе за стойкой уже не было, её место занял некий хмурый тип в очках."
     "Он кивнул в ответ на мою фамилию, достал из шкафчика ключ."
     $ meet('sh', 'Портье')
-    show sh normal uniform with dissolve
+    show sh normal pioneer with dissolve
     sh "Вас спрашивали."
     "Между делом сообщил он."
     me "Вот как? Кто же?"
     sh "Я не знаю. {w}Лена уже убежала в вечернюю, просто просила передать, что вас спрашивали."
     me "Понял, спасибо."
     "Странно это всё."
-    show sh smile uniform with dspr
+    show sh smile pioneer with dspr
     sh "Вообще, у нас для таких случаев есть абонентские ящики по занятому номеру."
     menu:
         "Дорого стоит?":

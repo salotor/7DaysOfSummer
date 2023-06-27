@@ -212,7 +212,7 @@ label alt_day7_mi_7dl_start:
                 $ alt_chapter(-1, u"Мику. 7ДЛ. Сны.")
                 call alt_day7_mi_7dl_good_human
             else:
-                call alt_day7_mi_7dl_neu_human
+                call alt_day7_mi_7dl_good_ussr
         elif alt_day7_mi_7dl_pt == 2:
             call alt_day7_mi_7dl_bad_human
         elif alt_day7_mi_7dl_pt == 3:

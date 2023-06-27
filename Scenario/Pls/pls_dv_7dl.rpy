@@ -67,11 +67,11 @@ label alt_day5_dv_7dl_start:
         $ alt_chapter(5, u"Алиса. 7ДЛ. Утро.")
         call alt_day5_dv_7dl_begin
         pause(1)
-    $ persistent.sprite_time = "day"
     $ day_time()
     $ alt_chapter(5, u"Алиса. 7ДЛ. Свечка.")
     call alt_day5_dv_7dl_candle
     pause(1)
+    $ persistent.sprite_time = "day"
     $ alt_chapter(5, u"Алиса. 7ДЛ. День")
     call alt_day5_dv_7dl_dinner
     pause(1)

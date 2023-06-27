@@ -185,4 +185,7 @@ label alt_day7_mt_7dl_sept:
     pause(7.4)
     with vpunch
     pause(1)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

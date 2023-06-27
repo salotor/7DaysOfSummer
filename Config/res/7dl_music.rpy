@@ -43,8 +43,6 @@ init:
     ##\\\\\\\\\\\\\\\\\\\\\\\\\ЭКРАНЫ\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     image sdl_mus_screen_main = get_image_7dl("gui/music/screens/mus_screen_7dl.png")
 
-
-
 init 2 python:
     def get_mus_pos_7dl():
         pos = renpy.music.get_pos()
@@ -57,6 +55,19 @@ init 2 python:
     def get_mus_len_7dl():
         len = int(renpy.music.get_duration())
         return len
+
+    # Калькулятор прогресса
+    def sdl_mus_progress_calc():
+        global sdl_mus_progress
+        seen_count = 0.0
+        label_count = 0.0
+        for mus in music_list_7dl.values():
+            if mus not in music_list_excluded_7dl:
+                if renpy.seen_audio(mus):
+                    seen_count += 1
+                label_count += 1
+        ratio = seen_count / label_count * 100
+        sdl_mus_progress = round(ratio, 1)
 
     # Основной класс
     class sdl_mus_Engine:
@@ -115,8 +126,6 @@ init 2 python:
     for name, file in sorted(music_list_7dl.iteritems()):
         if file not in music_list_excluded_7dl:
             sdl_mus_room.add(file, action=Function(sdl_mus_engine.update_cur_track))
-
-
 
 screen music_7dl(engine=sdl_mus_engine, default_music):
     modal True
@@ -224,17 +233,20 @@ screen music_7dl(engine=sdl_mus_engine, default_music):
     # Стрелки
     if engine.page_cur > 0:
         imagebutton:
-            auto get_image_7dl("gui/music/buttons/mus_arrow_left_%s.png") xcenter 860 ypos 927
+            auto get_image_7dl("gui/music/buttons/mus_arrow_left_%s.png") xanchor 0.0 xpos 649 ypos 927
             activate_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
             action [Function(engine.cur_page_dec), Function(sdl_mus_bar_value.change, 0)]
     if (len(music_list_7dl) - len(music_list_excluded_7dl)) > ((engine.page_cur + 1) * SDL_MUS_PAGE_SIZE):
         imagebutton:
-            auto get_image_7dl("gui/music/buttons/mus_arrow_right_%s.png") xcenter 1060 ypos 927
+            auto get_image_7dl("gui/music/buttons/mus_arrow_right_%s.png") xanchor 0.0 xpos 834 ypos 927
             activate_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
             action [Function(engine.cur_page_inc), Function(sdl_mus_bar_value.change, 0)]
-    text engine.get_cur_page() style "sdl_mus_page_font" xcenter 0.5 ypos 923
+    text engine.get_cur_page() style "sdl_mus_page_font" xanchor 0.0 xpos 679 ypos 923
 
     on "show" action [SetField(engine, "is_active", True), Function(engine.update_cur_track)]
+
+    # Прогресс
+    text "ПРОСЛУШАНО: "+str(sdl_mus_progress)+"%" style "sdl_mus_page_font" xanchor 1.0 xpos 1222 ypos 923
 
 # Панель быстрого доступа для плеера
 screen music_panel_7dl(engine=sdl_mus_engine, default_music):

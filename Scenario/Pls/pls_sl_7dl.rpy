@@ -116,7 +116,7 @@ label alt_day5_sl_7dl_start:
     pause(1)
     $ persistent.sprite_time = "night"
     $ night_time()
-    if herc and (lp_sl > 16) and persistent.sl_7dl_herc_neu:
+    if herc and (lp_sl > 16) and persistent.sl_7dl_herc_good:
         call alt_day5_sl_7dl_hentai
         pause(1)
     call alt_day5_sl_7dl_sleeptime

@@ -23,8 +23,6 @@
     if counter_mi_7dl == 1:
         $ set_chibi_alt2("un_mi_house_alt2",     "mi")
     $ set_zone_alt2("library_alt2",         "alt_day3_eventAf_library")
-    if (counter_un_7dl == 4):
-        $ set_chibi_alt2("library_alt2",         "un")
     jump alt_day3_mapAf
 
 label alt_day3_mapAf:
@@ -81,11 +79,8 @@ label alt_day3_eventAf_me_mt_house:
 
 label alt_day3_eventAf_library:
     call alt_day3_eventAf_library1
-    if counter_un_7dl == 5:
-        return
-    else:
-        $ disable_current_zone_alt2()
-        jump alt_day3_mapAf
+    $ disable_current_zone_alt2()
+    jump alt_day3_mapAf
 
 label alt_day3_eventAf_estrade:
     call alt_day3_eventAf_estrade1

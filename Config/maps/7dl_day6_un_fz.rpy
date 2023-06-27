@@ -15,7 +15,7 @@ label alt_day6_un_fz_map:
     play music music_list["smooth_machine"] fadein 2
     if alt_day6_un_fz_map1_quest == '':
         scene bg ext_dining_hall_near_day with dissolve
-        "Стоя на крыльце столовой я прикидывал, куда бы можно было податься."
+        "Стоя на крыльце столовой, я прикидывал, куда бы можно было податься."
     else:
         $ disable_all_zones_alt2()
         $ disable_all_chibi_alt2()

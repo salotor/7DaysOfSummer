@@ -1,15 +1,16 @@
 ﻿label alt_day0_uvao_start:
     $ make_names_unknown_7dl()
-    if not persistent.thoughts_tilde_7dl:
-        $ th_prefix = "«"
-        $ th_suffix = "»"
+    $ alt_thoughts_tilde_update()
     $ reload_names()
     call alt_vars
     $ alt_uvao_active = True
     call screen alt_uvao_info
     scene intro_dr with dissolve
     call alt_day0_role_d
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return
 
 label alt_day1_uvao_ch1:
     if dr:

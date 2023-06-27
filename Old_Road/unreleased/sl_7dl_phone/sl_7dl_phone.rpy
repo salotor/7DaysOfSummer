@@ -297,6 +297,7 @@ label alt_day4_sl_7dl_old_phone:
             "Лязгнул трубкой и смолк."
             "Понятия не имею, мистика, фантастика или просто запись с датчиком движения?"
         "Не снимать":
+            $ alt_day4_sl_7dl_phone = False
             "Телефон звонил ещё с полминуты, прежде чем смолк, и не было в мире силы, способной заставить меня прикоснуться к запыленной трубке."
             "Понятия не имею, мистика, фантастика или просто датчик движения?"
     stop sound_loop
@@ -358,4 +359,7 @@ label alt_day4_sl_7dl_old_phone:
     stop music fadeout 3
     stop ambience fadeout 6
     pause(2)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

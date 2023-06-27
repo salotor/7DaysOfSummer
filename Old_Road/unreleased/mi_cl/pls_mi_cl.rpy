@@ -1,3 +1,8 @@
+init python:
+    alt_day2_gamblers_result_me = False
+
+    sdl_var_b_old_mi_cl    = sdl_Bool('alt_day2_gamblers_result_me', "Выиграл в турнире")
+
 label alt_day4_mi_cl_vars:
     $ alt_day4_mi_mi2midj_transit = False
     $ alt_day4_mi_vodka = False
@@ -15,7 +20,11 @@ label alt_day4_mi_cl_vars:
 
 label alt_day4_mi_cl_start:
     call alt_day4_mi_cl_vars
-    pause(1)
+    $ sdl_local_vars = [sdl_var_e_d0_char, sdl_var_i_mi_7dl, sdl_var_e_d1_sl_key, sdl_var_e_d2_dv_ulti, sdl_var_i_mi_lpp, sdl_var_i_karma, sdl_var_e_d2_walk, sdl_var_b_old_mi_cl]
+    call screen sdl_replay_vars(sdl_local_vars)
+    $ alt_vars_screen(sdl_local_vars)
+    $ alt_char_set(plthr)
+
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
     $ alt_chapter(4, u"Мику. Утро. Медпункт")
@@ -57,7 +66,10 @@ label alt_day4_mi_cl_start:
                 $ alt_chapter(4, u"Мику. DJ. Вечер")
                 call alt_day4_mi_date
                 pause(1)
-                jump alt_stories_start
+                if not persistent.pivo_default_7dl:
+                    jump alt_stories_start
+                else:
+                    return
             else:
                 $ persistent.sprite_time = "sunset"
                 $ sunset_time()
@@ -70,7 +82,10 @@ label alt_day4_mi_cl_start:
                 $ persistent.sprite_time = "night"
                 call alt_day4_mi_herbs
                 pause(1)
-                jump alt_stories_start
+                if not persistent.pivo_default_7dl:
+                    jump alt_stories_start
+                else:
+                    return
         else:
             $ alt_chapter(4, u"Мику. Клуб")
             call alt_day4_mi_club_sick
@@ -91,4 +106,7 @@ label alt_day4_mi_cl_start:
         $ persistent.sprite_time = "night"
         call alt_day4_mi_herbs
         pause(1)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

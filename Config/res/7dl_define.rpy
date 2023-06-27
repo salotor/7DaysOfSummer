@@ -152,9 +152,9 @@ init 2:
         linear 0.8 zoom 1.0 xalign 0.5
 
     transform bottotop: #для показа вертикальных артов в галерее
-        pos (0,-1261)
-        linear 10.0 pos (0,0)
-        linear 2.0 pos (0, -200)
+        pos (0,int(-706/sdl_gall_vert_ratio))
+        linear round(5.6/sdl_gall_vert_ratio, 1) pos (0,0)
+        linear round(1.12/sdl_gall_vert_ratio, 1) pos (0,int(-112/sdl_gall_vert_ratio))
 
     transform normal_gallery: #для показа артов в галерее
         pos (0,0)
@@ -303,6 +303,9 @@ init 2:
         zoom 1.3
         linear .6 zoom 1.15
 
+    transform sdl_transform20:
+        linear 1.0 zoom 1.3 xcenter 0.65
+
     transform veryclose:
         zoom 1.5
         yalign 0.0
@@ -354,6 +357,22 @@ init 2:
         parallel:
             ease 0.5 zoom 1.05
             ease 0.75 zoom 1.0
+
+    transform awakening_7dl(imgn): # трансформ пробуждения, позаимствованный из БКРР
+        contains:
+            ImageReference(imgn)
+        contains:
+            im.MatrixColor(ImageReference(imgn), im.matrix.brightness(0.5))
+            truecenter
+            alpha 0.9
+            zoom 1.05
+            ease 5.0 alpha 0.0 zoom 1.0
+        contains:
+            im.MatrixColor(ImageReference(imgn), im.matrix.brightness(0.5))
+            truecenter
+            alpha 0.9
+            zoom 1.075
+            ease 5.0 alpha 0.0 zoom 1.0
 
 # Наши транзиты, с блекджеком и разными цветами.
     $ flash_cyan = Fade(1, 0, 1, color="#1fa")
@@ -631,45 +650,197 @@ init 2:
         repeat # Не убирать
 
 #ЦГ Ольги в лодке. Лена-ФЗ.
-    image cg d4_un_fz_mt_board_7dl mt_dontlike = Composite(
+    image cg d4_mt_board_7dl mt_dontlike = Composite(
         (1920, 1080),
-        (0, 0), get_image_7dl("cg/un_fz_mt_board/d4_un_fz_mt_board_7dl.png"),
-        (0, 0), get_image_7dl("cg/un_fz_mt_board/mt_dontlike.png"))
+        (0, 0), get_image_7dl("cg/mt_board/d4_mt_board_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/mt_board/mt_dontlike.png"))
 
-    image cg d4_un_fz_mt_board_7dl mt_grin = Composite(
+    image cg d4_mt_board_7dl mt_grin = Composite(
         (1920, 1080),
-        (0, 0), get_image_7dl("cg/un_fz_mt_board/d4_un_fz_mt_board_7dl.png"),
-        (0, 0), get_image_7dl("cg/un_fz_mt_board/mt_grin.png"))
+        (0, 0), get_image_7dl("cg/mt_board/d4_mt_board_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/mt_board/mt_grin.png"))
 
-    image cg d4_un_fz_mt_board_7dl mt_normal = Composite(
+    image cg d4_mt_board_7dl mt_normal = Composite(
         (1920, 1080),
-        (0, 0), get_image_7dl("cg/un_fz_mt_board/d4_un_fz_mt_board_7dl.png"),
-        (0, 0), get_image_7dl("cg/un_fz_mt_board/mt_normal.png"))
+        (0, 0), get_image_7dl("cg/mt_board/d4_mt_board_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/mt_board/mt_normal.png"))
 
-    image cg d4_un_fz_mt_board_7dl mt_normal2 = Composite(
+    image cg d4_mt_board_7dl mt_normal2 = Composite(
         (1920, 1080),
-        (0, 0), get_image_7dl("cg/un_fz_mt_board/d4_un_fz_mt_board_7dl.png"),
-        (0, 0), get_image_7dl("cg/un_fz_mt_board/mt_normal2.png"))
+        (0, 0), get_image_7dl("cg/mt_board/d4_mt_board_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/mt_board/mt_normal2.png"))
 
-    image cg d4_un_fz_mt_board_7dl mt_smile = Composite(
+    image cg d4_mt_board_7dl mt_smile = Composite(
         (1920, 1080),
-        (0, 0), get_image_7dl("cg/un_fz_mt_board/d4_un_fz_mt_board_7dl.png"),
-        (0, 0), get_image_7dl("cg/un_fz_mt_board/mt_smile.png"))
+        (0, 0), get_image_7dl("cg/mt_board/d4_mt_board_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/mt_board/mt_smile.png"))
 
-    image cg d4_un_fz_mt_board_7dl mt_smile2 = Composite(
+    image cg d4_mt_board_7dl mt_smile2 = Composite(
         (1920, 1080),
-        (0, 0), get_image_7dl("cg/un_fz_mt_board/d4_un_fz_mt_board_7dl.png"),
-        (0, 0), get_image_7dl("cg/un_fz_mt_board/mt_smile2.png"))
+        (0, 0), get_image_7dl("cg/mt_board/d4_mt_board_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/mt_board/mt_smile2.png"))
 
-    image cg d4_un_fz_mt_board_7dl mt_smile3 = Composite(
+    image cg d4_mt_board_7dl mt_smile3 = Composite(
         (1920, 1080),
-        (0, 0), get_image_7dl("cg/un_fz_mt_board/d4_un_fz_mt_board_7dl.png"),
-        (0, 0), get_image_7dl("cg/un_fz_mt_board/mt_smile3.png"))
+        (0, 0), get_image_7dl("cg/mt_board/d4_mt_board_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/mt_board/mt_smile3.png"))
 
-    image cg d4_un_fz_mt_board_7dl mt_laugh = Composite(
+    image cg d4_mt_board_7dl mt_laugh = Composite(
         (1920, 1080),
-        (0, 0), get_image_7dl("cg/un_fz_mt_board/d4_un_fz_mt_board_7dl.png"),
-        (0, 0), get_image_7dl("cg/un_fz_mt_board/mt_laugh.png"))
+        (0, 0), get_image_7dl("cg/mt_board/d4_mt_board_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/mt_board/mt_laugh.png"))
+
+    image cg d4_mt_board_7dl = ImageReference("cg d4_mt_board_7dl mt_normal")
+
+#Рыбалка в 6 день Сыча.
+#DefaultALL
+    image cg d6_me_cyberfish_7dl el_cf_normal semen_cf_normal sh_cf_bore = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_bore.png"))
+
+#SurpriseEL
+    image cg d6_me_cyberfish_7dl el_cf_surp semen_cf_normal sh_cf_bore = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_surp.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_bore.png"))
+
+#SurpriseALL
+    image cg d6_me_cyberfish2_7dl el_cf_surp2 semen_cf_surp sh_cf_surp = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish2_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_surp2.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_surp.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_surp.png"))
+
+#HappyEL + SurpSEM + SmileSH
+    image cg d6_me_cyberfish_7dl el_cf_happy semen_cf_surp sh_cf_smile = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_happy.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_surp.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_smile.png"))
+
+#SadEL + DefaultSEM + PokerSH
+    image cg d6_me_cyberfish_7dl el_cf_sad semen_cf_normal sh_cf_poker = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_sad.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_poker.png"))
+
+#SorrowEL + DefaultSEM + PokerSH
+    image cg d6_me_cyberfish_7dl el_cf_sorrow semen_cf_normal sh_cf_poker = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_sorrow.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_poker.png"))
+
+#SadEL + DefaultSEM + BoreSH
+    image cg d6_me_cyberfish_7dl el_cf_sad semen_cf_normal sh_cf_bore = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_sad.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_bore.png"))
+
+#SorrowEL + DefaultSEM + BoreSH
+    image cg d6_me_cyberfish_7dl el_cf_sorrow semen_cf_normal sh_cf_bore = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_sorrow.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_bore.png"))
+
+#SmileEL + DefaultSEM + PokerSH
+    image cg d6_me_cyberfish_7dl el_cf_smile semen_cf_normal sh_cf_poker = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_smile.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_poker.png"))
+
+#SmileEL + SurpSEM + PokerSH
+    image cg d6_me_cyberfish_7dl el_cf_smile semen_cf_surp sh_cf_poker = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_smile.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_surp.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_poker.png"))
+
+#SmileEL + DefaultSEM + SurpSH
+    image cg d6_me_cyberfish_7dl el_cf_smile semen_cf_normal sh_cf_surp = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_smile.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_surp.png"))
+
+#SmileEL + DefaultSEM + boreSH
+    image cg d6_me_cyberfish_7dl el_cf_smile semen_cf_normal sh_cf_bore = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_smile.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_bore.png"))
+
+#SmileEL_SH + DefaultSEM
+    image cg d6_me_cyberfish_7dl el_cf_smile2 semen_cf_normal sh_cf_smile = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_smile2.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_smile.png"))
+
+#Smile2EL_SH + DefaultSEM
+    image cg d6_me_cyberfish_7dl el_cf_smile2 semen_cf_normal sh_cf_bore = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_smile2.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_bore.png"))
+
+#DefaultEL_SEM + PokerSH
+    image cg d6_me_cyberfish_7dl el_cf_normal semen_cf_normal sh_cf_poker = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_poker.png"))
+
+#DefaltEL + SurpSEM + PokerSH
+    image cg d6_me_cyberfish_7dl el_cf_normal semen_cf_surp sh_cf_poker = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_surp.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_poker.png"))
+
+#SurpEL_SH + DefailtSEM
+    image cg d6_me_cyberfish_7dl el_cf_surp3 semen_cf_normal sh_cf_surp = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_surp3.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_surp.png"))
+
+#Smile3EL + DefailtSEM + BoreSH
+    image cg d6_me_cyberfish_7dl el_cf_smile3 semen_cf_normal sh_cf_bore = Composite(
+        (1920, 1080),
+        (0, 0), get_image_7dl("cg/cyber_fish/d6_me_cyberfish_7dl.jpg"),
+        (0, 0), get_image_7dl("cg/cyber_fish/el_cf_smile3.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/semen_cf_normal.png"),
+        (0, 0), get_image_7dl("cg/cyber_fish/sh_cf_bore.png"))
+
+    image cg d6_me_cyberfish_7dl = ImageReference("cg d6_me_cyberfish_7dl el_cf_normal semen_cf_normal sh_cf_bore")
+
+# Сыч в тумане
+    image d7_me_epilogue_bus2_7dl = get_image_7dl("gui/fog/d7_me_epilogue_bus2_7dl.png")
 
 # Фото Ульяны.
     image cg d6_us_photo_7dl = get_image_7dl("cg/d6_us_photo_7dl.png")
@@ -750,6 +921,8 @@ init 2:
     image uv shade3 sized = Transform("uv shade3", zoom=.4)
     image uv shade4 sized = Transform("uv shade4", zoom=.4)
     image digi_pad = get_sprite_7dl("custom/digi_pad_7dl.png")
+    image sl_1_winter2 = get_sprite_7dl("custom/sl_1_winter2_7dl.png")
+    image sl3_4_winter1 = get_sprite_7dl("custom/sl3_4_winter1_7dl.png")
     image sl_trench = get_sprite_7dl("custom/sl_trench_7dl.png")
     image sl_trench2 = get_sprite_7dl("custom/sl_trench2_7dl.png")
     image cotocomb_lighter = get_sprite_7dl("custom/cotocomb_lighter_7dl.png")
@@ -798,6 +971,12 @@ init 2:
     image lmt sad = get_sprite_7dl("custom/lmt/lmt_sad_7dl.png")
     image lmt smile = get_sprite_7dl("custom/lmt/lmt_smile_7dl.png")
 
+#Семён Анимешник
+    image semen_animeshnik_7dl = get_sprite_7dl("custom/semen_animeshnik_7dl.png")
+
+#Грустный Семён (отбытие)
+    image semen_mouth_bus_7dl = get_sprite_7dl("custom/semen_mouth_bus_7dl.png")
+
 # Dnd
     image alt_cat_map_wireframe = get_image_7dl("gui/dnd/alt_cat_map_wireframe.png")
     image alt_cat_map = get_image_7dl("gui/dnd/alt_cat_map.png")
@@ -816,9 +995,9 @@ init 2:
         0.8
         repeat
 
-    image cg d7_un_fire_7dl:
-        get_image_7dl("cg/d7_un_fire2_7dl.jpg") with Dissolve(1.5)
+    image cg d7_fire_7dl:
+        get_image_7dl("cg/d7_fire2_7dl.jpg") with Dissolve(1.5)
         1.4
-        get_image_7dl("cg/d7_un_fire1_7dl.jpg") with Dissolve(1.5)
+        get_image_7dl("cg/d7_fire1_7dl.jpg") with Dissolve(1.5)
         1.4
         repeat

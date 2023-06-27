@@ -154,4 +154,7 @@ label alt_uvao_hentai:
     stop music fadeout 4
     pause(3.4)
     $ set_mode_adv()
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

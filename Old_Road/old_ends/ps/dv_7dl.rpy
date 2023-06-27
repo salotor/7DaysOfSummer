@@ -1,7 +1,7 @@
 label alt_day7_dv_7dl_good_rf_ps_old:
     play music "<to 52.94>" + music_7dl["herc_death"] fadein 3
     scene
-    $ renpy.show("bg int_sam_house_clean_7dl", what = Noir("bg int_sam_house_clean_7dl", brightness = 0.1, tint_r = 0.2, tint_g = 0.9, tint_b = 0.7, saturation = 0.7))
+    $ renpy.show("bg int_semen_room_clean_7dl", what = Noir("bg int_semen_room_clean_7dl", brightness = 0.1, tint_r = 0.2, tint_g = 0.9, tint_b = 0.7, saturation = 0.7))
     with joff_l
     "Дуров был гений, изобретая свой «вконтакте», чтобы люди всегда оставались в контакте с близкими."
     "Хотя его вклада там куда меньше, чем у создателя другой социальной сети…"
@@ -18,7 +18,7 @@ label alt_day7_dv_7dl_good_rf_ps_old:
     "Пытаюсь сделать хотя бы что-нибудь достойное в этой жизни и в кровь режусь от невозможности это сделать."
     "Потому что на единственное достойное, что стоило бы сделать — мне не хватило духу."
     scene
-    $ renpy.show("bg int_sam_house_clean_7dl", what = Noir("bg int_sam_house_clean_7dl", brightness = 0.2, tint_r = 0.2, tint_g = 1.0, tint_b = 1.0, saturation = 0.7))
+    $ renpy.show("bg int_semen_room_clean_7dl", what = Noir("bg int_semen_room_clean_7dl", brightness = 0.2, tint_r = 0.2, tint_g = 1.0, tint_b = 1.0, saturation = 0.7))
     with dissolve
     "Я погасил монитор, оставляя десятичасовой микс, где закольцованные, играли «Взвейтесь кострами»."
     show blink
@@ -39,4 +39,7 @@ label alt_day7_dv_7dl_good_rf_ps_old:
     scene cg d7_dv_noir_7dl
     show prologue_dream
     pause(1)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

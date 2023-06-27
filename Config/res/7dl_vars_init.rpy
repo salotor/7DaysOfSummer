@@ -1,8 +1,8 @@
 ﻿#Мод пилится на базе нетленки от АБЦБ - его сюжет и подача мне куда симпатичнее оригинальной стори.
 #За что ему огромный респектище и, по возможности, оставлены отсылки на оригинальные правки.
 init -1:
-    $ alt_release_no = "0.50"
-    $ alt_compatible_release_no = ["0.34.a", "0.34.b", "0.35.a", "0.36.a", "0.37.a", "0.38.a", "0.39.a", "0.40", "0.40.1", "0.40.2", "0.41", "0.42", "0.43", "0.44", "0.45", "0.46", "0.47", "0.48", "0.49", "0.50"]
+    $ alt_release_no = "0.51"
+    $ alt_compatible_release_no = ["0.34.a", "0.34.b", "0.35.a", "0.36.a", "0.37.a", "0.38.a", "0.39.a", "0.40", "0.40.1", "0.40.2", "0.41", "0.42", "0.43", "0.44", "0.45", "0.46", "0.47", "0.48", "0.49", "0.50", "0.51"]
     $ alt_hotfix_no = "1"
     $ plthr = u"None"
 
@@ -12,7 +12,9 @@ init 2:
 
     $ timeskip_dev = "Рут находится в разработке…\nВ активной разработке: Одиночка, день 6"
 
-    $ alt_credits_text = "{image=logo_7dl}\n\n\n{b}Сценарий{/b}\n\ndialup, 7дл-кун, abcb\n\n{b}Режиссура сцен{/b}\n\nGr0m, Ismir, 7дл-кун, still13free, Макс Ветров, stranburg\n\n{b}Графика{/b}\n\nТэй (shwwma), GoodbyeNona, SkieyWayfarer, Макс Смолев, Narwhal Iv, Kef34, Mannych, FairyApple, nyamaznya, nenkoket, Trojan, NikHaker, rina.jess, childofburningtime27, Касандра, resident_art, Mo~, Эру, Денис Кучер, goozeecat, Таруто Неко, Primary, teromioset, RanKate, LCKR, Katy-Tan, Eve Kel'man, Панельев\n\n{b}Музыка{/b}\n\nApril Rain, Tym Nyman, DeadPunk, ППВК, Kevin MacLeod, SinkWay, DeepCosmo и др.\n\n{b}Логика повествования, вычитка сценария{/b}\n\nSitzileon, Ismir, Salotor, Dantiras, faddeev, Kaiserd3, Alex New, tngeyzer, Макс Ветров, Евген\n\n{b}Код и адаптация{/b}\n\nSalotor — порт сценария в Steam и на Андроид, главное меню, галерея, раздел «Истории», прочие технические решения\n\nKaiserd3 — ачивлист, просмотрщик сцен, музыкальный плеер\n\nSitzileon — рефаб рутов\n\nEldhenn, Kibconj — порт сценария в Steam\n\nBlackMazeGOD — главное меню\n\nNuttyprof, openplace — новая карта лагеря и новый карточный турнир\n\nЛенофаг Простой, Ravsii — стартовые меню\n\nDantiras — старый ачивлист\n\n{b}Товарищи, помогавшие со всем остальным{/b}\n\nМакс Ветров, Drago23, Arlien, Peregarrett, Demiurge-kun, Дельта, KirillZ89, Ленофаг Простой, Ленивый Бегун, Занудный, Serge Domingo, Ravsii, Peregarrett, Chess, shers, polandkyn, alexzen84, traven42, nikolaystorm, Рыжий Тигра, Дмитрий Мерзляков, Paul Atrides, AlzGamer и др.\n\n{b}Благодарим за предоставленные ресурсы{/b}\n\nРазработчиков модификаций «Саманта», «Булки, кефир и рок-н-ролл», «Двое», «Последнее Лето», «Эти безумные деньки!», «Бесконечное лето: продолжение истории», «Дубликат», «По ту сторону Совёнка», визуальных новелл «HSOOVN», «Katawa Shoujo», «Young Hearts», группу «КПБСА».\n\n{b}Команда разработчиков «7 Дней Лета: Lost Alpha»{/b}\n\ndialup, salotor, Gr0m, Ismir, Corvinus, Макс Ветров, Евген, stranburg\n\n{b}Выражаем отдельную благодарность{/b}\n\nКоманде «Soviet Games» за предоставление ресурсов и платформы для творчества\n\n7дл-куну за ранее проделанную работу над модификацией «7 дней лета»\n\nСпасибо всем, кто не был упомянут, но внёс свой вклад, — за то, что помогали и поддерживали!"
+    $ alt_credits_text = "{image=logo_7dl}\n\n\n{b}Сценарий{/b}\n\ndialup, Евген, 7дл-кун, abcb\n\n{b}Режиссура сцен{/b}\n\nGr0m, Ismir, 7дл-кун, still13free, stranburg\n\n{b}Графика{/b}\n\nТэй (shwwma), GoodbyeNona, SkieyWayfarer, Макс Смолев, Narwhal Iv, Kef34, Mannych, FairyApple, nyamaznya, nenkoket, Trojan, NikHaker, rina.jess, childofburningtime27, Касандра, resident_art, Mo~, Эру, Денис Кучер, goozeecat, Таруто Неко, Primary, teromioset, RanKate, LCKR, Katy-Tan, Eve Kel'man, Панельев, Михаил Ломов, Денис Скиба \n\n{b}Музыка{/b}\n\nApril Rain, Tym Nyman, DeadPunk, ППВК, Kevin MacLeod, SinkWay, DeepCosmo и др.\n\n{b}Логика повествования, вычитка сценария{/b}\n\nSitzileon, Ismir, Salotor, Dantiras, faddeev, Kaiserd3, Alex New, tngeyzer, Макс Ветров, Евген\n\n{b}Код и адаптация{/b}\n\nSalotor — порт сценария в Steam и на Андроид, главное меню, галерея, раздел «Истории», прочие технические решения\n\nKaiserd3 — ачивлист, просмотрщик сцен, музыкальный плеер\n\nSitzileon — рефаб рутов\n\nEldhenn, Kibconj — порт сценария в Steam\n\nBlackMazeGOD — главное меню\n\nNuttyprof, openplace — новая карта лагеря и новый карточный турнир\n\nЛенофаг Простой, Ravsii — стартовые меню\n\nDantiras — старый ачивлист\n\nLyonyai, drh, Macrosis — перевод на английский язык\n\n{b}Бета-тест{/b}\n\nAlex New, Corvinus, Макс Ветров\n\n{b}Товарищи, помогавшие со всем остальным{/b}\n\nМакс Ветров, Drago23, Arlien, Peregarrett, Demiurge-kun, Дельта, KirillZ89, Ленофаг Простой, Ленивый Бегун, Занудный, Serge Domingo, Ravsii, Peregarrett, Chess, shers, polandkyn, alexzen84, traven42, nikolaystorm, Рыжий Тигра, Дмитрий Мерзляков, Paul Atrides, Пивной Логист и др.\n\n{b}Благодарим за предоставленные ресурсы{/b}\n\nРазработчиков модификаций «Саманта», «Булки, кефир и рок-н-ролл», «Двое», «Последнее Лето», «Эти безумные деньки!», «Бесконечное лето: продолжение истории», «Дубликат», «По ту сторону Совёнка», «Сансара», визуальных новелл «HSOOVN», «Katawa Shoujo», «Young Hearts», группу «КПБСА», Артёма Болгова\n\n{b}Команда разработчиков «7 Дней Лета: Lost Alpha»{/b}\n\ndialup, salotor, Gr0m, Ismir, Евген, AlzGamer, stranburg\n\n{b}Выражаем благодарность{/b}\n\nКоманде «Soviet Games» за предоставление ресурсов и платформы для творчества\n\n7дл-куну за ранее проделанную работу над модификацией «7 дней лета»\n\nСпасибо всем, кто не был упомянут, но внёс свой вклад, — за то, что помогали и поддерживали!"
+
+    $ alt_donator_list = "Святослав Тюпин; Пивной Логист; Александр Павлов; Даниил Полев; Роман Александров; Shun Akiyama; AlzGamer; Дмитрий Ражабалиев; Иван Рейнгард; Юрий Назаренко; Егор из Амбальского Чатика (the_vozhd); Степан Ермаков; Евгений Москвичев; Михаил Ломакин; Анатолий Сотник; Андрей Неткачев; Геннадий Сафонкин; Herr_Kruss; Максим Шорохов; Михаил Круглов; Андрей Цымбалюк; Arsulis; Arrogance; Александр Лобанов; Беларус; Petr Janouškovec; Изяслав Макаров; Guron; Максим Соборников; Кит; Tom Joad; Антон Кулаженков; Kivi86; Лена Тихонова; Савва Окопный; Таня Танина; Никита Павлов; Echoe; _sponez; Арсений Липатов; Обыgun 228; Рома Попека; Виктор Резунов; Андрей Фадеев; EroFumi ; Redmoor Goto; Адриан Бравцев; Артемий Стрела; Егор Маркин; Иван Кецко; Анатоль Курочкин; Данил Переверзев; Андрей Васильев; Сергей Матвеев; IXIL_x; drh; 13th_PILOT; Абстрактное Лето; Илья Соболев; Legion; Аркадий Шестиряков; Александр Майский; Александр Белянкин; Спасибо СалаторКатя; Ilya Timokhin; Артём Юран; Александр Разливаев; Даня Шляхтич; Михаил Осипов; Леонид Пономарев; Даниил Чуб; Андрей Любимов; Velg'larn Noamuth; Андрей Попович; Дима Токарев; Артем Захаров; Денис Гумаров; Паша Пилипчук; Анастасия Тихонова; Вячеслав Юшков; Иван Крузенштейн; Даниил Мясников; Ilgar Novruzov; Иван Бабич; Серго Зайцев; Григорий Коток; Олег Луданный; Анатолий Правдюк; Андрей Бакин; Илья Вишняков; Никита Мошонкин; Frostmourne; Gamball007; Mause; btn; Илья Макарычев; Artur Martos"
 
     #Day - базис
     #Sunset - 94%, 82%, 100%
@@ -180,13 +182,13 @@ label scenario__alt_sevendl:
     $ init_map_zones_alt2()
 ###
     $ alt_interface_on() # включаем кастомные менюшки
-    if persistent.waifu_7dl:
-        $ persistent.list_waifu_7dl.append(persistent.waifu_7dl) # записываем текущий фон в меню в список
-    $ persistent.waifu_7dl = False # обнуляем текущий фон в меню
     jump main_menu_7dl # переходим к главному меню мода
 
 init 4:
     call alt_vars # вызываем все переменные в init
+    if persistent.waifu_7dl:
+        $ persistent.list_waifu_7dl.append(persistent.waifu_7dl) # записываем текущий фон в меню в список
+    $ persistent.waifu_7dl = False # обнуляем текущий фон в меню
 
 label alt_vars:
     call alt_day0_vars
@@ -226,6 +228,7 @@ label alt_vars:
     call alt_day7_us_7dl_vars
     call alt_day4_me_neu_vars
     call alt_day5_me_neu_vars
+    call alt_day6_me_neu_vars
     return
 
 label alt_day0_vars: # Переменные нулевого дня
@@ -245,7 +248,6 @@ label alt_day0_vars: # Переменные нулевого дня
     $ dr = False
     $ herc = False
     $ loki = False
-    $ d3 = False
     $ routetag = "prologue"
     $ role_bg = "intro_ground"
     $ alt_day_binder = 0
@@ -345,7 +347,7 @@ label alt_day3_vars:
     $ alt_day3_mi_dj_fale = False #Мика-ДЖ. Фейл вербовки
     $ alt_day3_dj = ''
     $ alt_day3_dancing1 = ''
-    $ alt_day3_dancing2 = ''
+    $ alt_day3_dancing2 = '' # = 'me_2' - танец C Ольгой
     $ alt_day3_technoquest0 = False
     $ alt_day3_technoquest1 = 0
     $ alt_day3_technoquest2 = False
@@ -504,6 +506,7 @@ label alt_day4_sl_cl_vars:
     return
 
 label alt_day5_sl_cl_vars:
+    $ alt_day5_sl_cl_cs = False
     $ alt_day5_sl_cl_hentai_done = False
     return
 
@@ -511,8 +514,9 @@ label alt_day6_sl_cl_vars:
     $ alt_day6_sl_cl_arc = ''
     $ alt_day6_sl_cl_hentai_done = False
     $ alt_day6_sl_cl_shirt = False
-    $ alt_day6_sl_cl_int = 0
+    $ alt_day6_sl_cl_int_end = ''
     $ alt_day6_sl_cl_good = 0
+    $ alt_day6_sl_cl_agreed = False
     return
 
 label alt_day7_sl_cl_vars:
@@ -561,7 +565,7 @@ label alt_day6_un_fz_vars:
     $ alt_day6_un_fz_map2_quest = ''      # Локация пребывания во втором заходе.
     $ alt_day6_un_fz_sl_secret = False    # Узнаём про маленькую и пушистую тайну Слави.
     $ alt_day6_un_fz_answer = 0           # 1 - Возразил. 0 - Ушел.
-    $ alt_un_fz_ends = ""                  # Определяем концовку Леночки по ФЗ-ветке (fake_date == 3 идёт отдельно, опционально плохая концовка). 1 - g_end. 2 - n_end. 3 - rj_end. 4 - b_end.
+    $ alt_un_fz_ends = ""                 # Определяем концовку Леночки по ФЗ-ветке (fake_date == 3 идёт отдельно, опционально плохая концовка). 1 - g_end. 2 - n_end. 3 - rj_end. 4 - b_end.
     $ alt_day6_un_fz_hentai = False
     return
 
@@ -583,43 +587,62 @@ label alt_day7_us_7dl_vars:
     return
 
 label alt_day4_me_neu_vars:
-    $ counter_me_neu_answers = 0 # Счётчик ответов (Одиночка)
-    $ counter_mt_7dl = 0 # Счётчик рута (Ольга-7дл)
-    $ counter_us_7dl = 0 # Счётчик рута (Ульяна-7дл)
-    $ counter_us_7dl_px = 0  # Счётчик рута (Ульяна-Огоньки)
-    $ alt_day4_me_neu_date = ''
-    $ alt_day4_me_neu_transit = ''
-    $ alt_day4_me_neu_boat = False
-    $ alt_day4_me_neu_volley = False
-    $ alt_day4_me_neu_dv_help = False
-    $ alt_day4_me_neu_mi_songs = False
-    $ alt_day4_me_neu_mt_diary = False
-    $ alt_day4_me_neu_mt_dream = False
-    $ alt_day4_me_neu_mt_volonteer = False
-    $ alt_day4_me_neu_us_backpack = False
-    $ alt_day4_me_neu_us_debt = False
-    $ alt_day4_me_neu_mi_resentment = False
-    $ alt_day4_me_neu_mz_newspaper = False
-    $ alt_day4_me_neu_escape = False
-    $ alt_day4_me_neu_cs_debt = False
-    $ alt_day4_me_neu_ba_duty = False
+    $ counter_me_neu_answers = 0                # Счётчик ответов (Одиночка)
+    $ counter_mt_7dl = 0                        # Счётчик рута (Ольга-7дл)
+    $ counter_us_7dl = 0                        # Счётчик рута (Ульяна-7дл)
+    $ counter_us_7dl_px = 0                     # Счётчик рута (Ульяна-Огоньки)
+    $ counter_mz_7dl = 0                        # Счётчик встреч с Женей
+    $ alt_day4_me_neu_date = ''                 # Компаньон Семена = 'us' (сушил змею), 'mi', 'mt', 'un'
+    $ alt_day4_me_neu_transit = ''              # Транзиты 'un_7dl', 'sl_cl'
+    $ alt_day4_me_neu_boat = False              # Выбор "Отдохнуть на пристани" на вечерней карте
+    $ alt_day4_me_neu_volley = False            # Флаг воллейбола
+    $ alt_day4_me_neu_dv_help = False           # Флаг помощи Алисы
+    $ alt_day4_me_neu_mi_songs = False          # Флаг готовки песен с Мику
+    $ alt_day4_me_neu_mt_diary = False          # Флаг чтения дневника
+    $ alt_day4_me_neu_mt_dream = False          # Флаг сна про новеллы
+    $ alt_day4_me_neu_mt_volonteer = False      # Флаг сломанного велика
+    $ alt_day4_me_neu_us_backpack = False       # Флаг просмотра содержимого рюкзака
+    $ alt_day4_me_neu_us_debt = False           # Был в киберкружке
+    $ alt_day4_me_neu_mi_resentment = False     # Затроллил Мику
+    $ alt_day4_me_neu_mz_newspaper = False      # Был в библиотеке
+    $ alt_day4_me_neu_escape = False            # Флаг побега
+    $ alt_day4_me_neu_cs_debt = False           # Карточный долг перед Виолой
+    $ alt_day4_me_neu_ba_duty = False           # Был на спорт-кружке
+    $ alt_day4_me_neu_mi_club = False           # Был в музклубе
+
     return
 
 label alt_day5_me_neu_vars:
-    $ alt_day5_me_neu_candle = 0
-    $ alt_day5_me_neu_candle_escape = False
-    $ alt_day5_me_neu_potato = False
-    $ alt_day5_me_neu_sl_voyeur = False
-    $ alt_day5_me_neu_mt_voyeur = 0
-    $ alt_day5_me_neu_mt_diary = False
-    $ alt_day5_me_neu_mt_hentai = False
-    $ alt_day5_me_neu_us_stores = False
-    $ alt_day5_me_neu_us_potato = False
-    $ alt_day5_me_neu_map_points = 0
-    $ alt_day5_me_neu_campfire_choise = 0
-    $ alt_day5_me_neu_cs_debt2 = False
-    $ alt_day5_me_neu_clubs_cyber = False
-    $ alt_day5_me_neu_nwsppr = False
-    $ alt_day5_me_neu_sport = False
-    $ alt_day5_me_neu_map_ivent = ''
+    $ alt_day5_me_neu_candle = 0                # 1 - перед свечкой заходил в домик; 2 - сразу пошёл на свечку; 3 - помогал с игротекой; 4 - присматривал за гвардией
+    $ alt_day5_me_neu_candle_escape = False     # Семён свечку не держал, Семён со свечки убежал
+    $ alt_day5_me_neu_potato = False            # Таскаем картошку!
+    $ alt_day5_me_neu_sl_voyeur = False         # Подглядываем за Славей
+    $ alt_day5_me_neu_mt_voyeur = 0             # 0 - остаёмся помогать Мику, 1 - уходим с Ольгой
+    $ alt_day5_me_neu_mt_diary = False          # Читаем дневничок Ольги
+    $ alt_day5_me_neu_mt_hentai = False         # Мнём вожатую снаружи и внутри
+    $ alt_day5_me_neu_us_stores = False         # Наезжаем на Ольгу за то, что лишила Ульяну ужина
+    $ alt_day5_me_neu_us_potato = False         # Отдал Ульяне свою картошку
+    $ alt_day5_me_neu_map_points = 0            # Очко неудачи на карте. Собери все три
+    $ alt_day5_me_neu_campfire_choise = 0       # 1 - сбежал, 2 - искал ответы, 3 - остался у костра
+    $ alt_day5_me_neu_cs_debt2 = False          # Дежурит в медпункте
+    $ alt_day5_me_neu_clubs_cyber = False       # Прятал карты вместе с кибернетиками
+    $ alt_day5_me_neu_nwsppr = False            # Провёл время за книжкой. Возможно пил чай с Женей
+    $ alt_day5_me_neu_sport = False             # Гачимучи с Санычем. Мирного решения не будет
+    $ alt_day5_me_neu_map_ivent = ''            # medic - бухал на крыше медпункта, boat - навернулся с лодки и залетел на дежурство, dv - мстил рыжему-бесстыжему,
+    $ alt_day5_me_neu_mi_help = False           # Вызвался помочь Мику убрать эстраду
     return
+
+label alt_day6_me_neu_vars:
+    $ alt_day6_me_neu_dance_invite = ''         # Приглашение на танцы (dv, mt, us, sl, mi, un)
+    $ alt_day6_me_neu_mt_help = False           # Помогаем Ольге
+    $ alt_day6_me_neu_dv_revenge = False        # Месть Рыжей
+    $ alt_day6_me_neu_walk = False              # Решил прогуляться
+    $ alt_day6_me_neu_sl_routh = False          # Приглашение Слави # а оно зачем?
+    $ alt_day6_me_neu_map_ivent = ''            # Карта - 'music', 'house'
+    $ alt_day6_me_neu_mi_club = False           # Был в музклубе утром
+    $ alt_day6_me_neu_nwsppr = ''               # был в стенгазете с Ж или без Ж 'mz', 'no_mz'
+    $ alt_day6_me_neu_un_escape = False         # Флаг побега
+    $ alt_day6_me_neu_clubs_cyber = False       # Kибернетики
+    
+label alt_day7_me_neu_vars:  
+    

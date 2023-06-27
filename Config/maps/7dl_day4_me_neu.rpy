@@ -64,6 +64,7 @@ label alt_day4_me_neu_map_cyber:
         call alt_day4_me_neu_map_cyber1
         return
     else:
+        scene bg ext_clubs_sunset_7dl with dissolve
         th "И что мне тут делать?"
         th "Пытаться объяснить будущим светилам советской науки что такое мультиварка?"
         th "Лучше отправлюсь куда-нибудь ещё."
@@ -74,6 +75,7 @@ label alt_day4_me_neu_map_admin_house:
         call alt_day4_me_neu_map_admin_house1
         return
     else:
+        scene bg ext_admins_day_7dl with dissolve
         th "За все четыре дня в лагере я ни разу не видел ни одного представителя местной администрации."
         th "Делать здесь мне решительно нечего."
         $ disable_current_zone_alt2()

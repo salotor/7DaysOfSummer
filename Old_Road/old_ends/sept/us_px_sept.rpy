@@ -313,4 +313,7 @@ label alt_day7_us_px_sept:
     show acm_logo_us_px_sept with moveinright:
         pos (1600, 1020)
     pause(2)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

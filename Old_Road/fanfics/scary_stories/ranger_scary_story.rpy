@@ -97,4 +97,7 @@ label ranger_scary_story:
     "Кинув в реку что-то тяжелое, она посмотрела на полную Луну и тут же скрылась в противоположном направлении."
     hide un with dissolve
     $ alt_pause(5)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

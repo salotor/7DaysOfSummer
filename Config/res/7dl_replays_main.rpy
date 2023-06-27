@@ -196,19 +196,19 @@ screen sdl_repl_section_selector(engine):
                 text route.get_title():
                     style "replays_text_current"
                     xpos 0.235
-                    ypos (0.236 + 0.049 * sdl_route_count)
+                    ypos (0.236 + 0.0485 * sdl_route_count)
             elif route.is_available():
                 textbutton route.get_title():
                     style "log_button"
                     text_style "replays_textbutton"
                     xpos 0.235
-                    ypos (0.236 + 0.049 * sdl_route_count)
+                    ypos (0.236 + 0.0485 * sdl_route_count)
                     action [Function(engine.set_cur_route, route)]
             else:
                 text route.get_title():
                     style "replays_text_locked"
                     xpos 0.235
-                    ypos (0.236 + 0.049 * sdl_route_count)
+                    ypos (0.236 + 0.0485 * sdl_route_count)
             $ sdl_route_count += 1
     else:
         # Селектор раздела
@@ -220,20 +220,20 @@ screen sdl_repl_section_selector(engine):
                     style "log_button"
                     text_style "replays_textbutton"
                     xpos 0.235
-                    ypos (0.187 + 0.049 * sdl_section_count)
+                    ypos (0.187 + 0.0485 * sdl_section_count)
                     action [Function(engine.set_cur_section, section)]
             else:
                 if section == engine.get_cur_section():
                     text section.get_title():
                         style "replays_text_current"
                         xpos 0.235
-                        ypos (0.187 + 0.049 * sdl_section_count)
+                        ypos (0.187 + 0.0485 * sdl_section_count)
                 else:
                     textbutton section.get_title():
                         style "log_button"
                         text_style "replays_textbutton"
                         xpos 0.235
-                        ypos (0.187 + 0.049 * sdl_section_count)
+                        ypos (0.187 + 0.0485 * sdl_section_count)
                         action [Function(engine.set_cur_section, section)]
             $ sdl_section_count += 1
         if engine.get_cur_section() == None:
@@ -256,7 +256,7 @@ screen sdl_repl_route(engine):
                 style "log_button"
                 text_style "replays_textbutton"
                 xpos 0.544
-                ypos (0.187 + 0.049 * sdl_day_count)
+                ypos (0.187 + 0.0485 * sdl_day_count)
                 action [Function(engine.set_cur_day, day)]
             $ sdl_day_count += 1
     else:
@@ -266,7 +266,7 @@ screen sdl_repl_route(engine):
                 style "log_button"
                 text_style "replays_textbutton"
                 xpos 0.544
-                ypos (0.187 + 0.049 * sdl_day_count)
+                ypos (0.187 + 0.0485 * sdl_day_count)
                 action [Function(engine.set_cur_day, day)]
             $ sdl_day_count += 1
 # ------------------------------------------------------------------------------------------------
@@ -284,7 +284,7 @@ screen sdl_repl_day(engine):
     if engine.get_cur_section().get_icon() != None:
         add engine.get_cur_section().get_icon() xalign 0.415 ypos 0.187 maxsize (250, 50)
 
-    text engine.get_cur_tag():
+    text engine.get_cur_tag()[:25]:
         style "replays_text_current"
         xalign 0.690
         ypos 0.187
@@ -300,7 +300,7 @@ screen sdl_repl_day(engine):
                     style "log_button"
                     text_style "replays_textbutton"
                     xpos (0.235 + 0.309 * sdl_x_shift)
-                    ypos (0.236 + 0.049 * sdl_y_shift)
+                    ypos (0.236 + 0.0485 * sdl_y_shift)
                     action [Replay("sdl_replay", scope=sdl_add_to_dict(label.get_replay().get_scope(), "cur_char", engine.get_cur_char().get_variable()), locked=False), Play('music', get_playing_7dl(), fadein=3)]
             elif label.get_label() in sdl_repl_label_frozen:
                 pass
@@ -308,21 +308,21 @@ screen sdl_repl_day(engine):
                 text "?????":
                     style "replays_text_locked"
                     xpos (0.235 + 0.309 * sdl_x_shift)
-                    ypos (0.236 + 0.049 * sdl_y_shift)
+                    ypos (0.236 + 0.0485 * sdl_y_shift)
         else:
             # Зачёркиваем недоступные выбранному персонажу лейблы
             if renpy.seen_label(label.get_label()):
                 text ("{s}" + label.get_title() + "{/s}"):
                     style "replays_text_locked"
                     xpos (0.235 + 0.309 * sdl_x_shift)
-                    ypos (0.236 + 0.049 * sdl_y_shift)
+                    ypos (0.236 + 0.0485 * sdl_y_shift)
             elif label.get_label() in sdl_repl_label_frozen:
                 pass
             else:
                 text "{s}?????{/s}":
                     style "replays_text_locked"
                     xpos (0.235 + 0.309 * sdl_x_shift)
-                    ypos (0.236 + 0.049 * sdl_y_shift)
+                    ypos (0.236 + 0.0485 * sdl_y_shift)
 
         $ sdl_label_count += 1
 

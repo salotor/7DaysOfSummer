@@ -1,4 +1,9 @@
-﻿label alt_day1_me_d3_vars:
+﻿init python:
+    alt_me_neu_true = False
+
+    sdl_var_b_old_me_d3_true = sdl_Bool('alt_me_neu_true', "Прошёл старого сыча на тру")
+
+label alt_day1_me_d3_vars:
     $ alt_day2_us_candy = 0
     $ alt_d3_bad_0 = False
     $ alt_day1_me_d3_chase = False
@@ -10,6 +15,10 @@
     return
 
 label alt_day1_me_d3_start:
+    $ sdl_local_vars = [sdl_var_b_old_me_d3_true]
+    call screen sdl_replay_vars(sdl_local_vars)
+    $ alt_vars_screen(sdl_local_vars)
+
     call alt_day1_me_d3_vars
     $ alt_d3_bad_0 = True
     $ reput = 100
@@ -51,4 +60,7 @@ label alt_day2_me_d3_start:
     scene black
     with fade
     pause(1)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

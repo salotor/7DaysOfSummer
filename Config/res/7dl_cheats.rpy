@@ -24,95 +24,40 @@ init python:
 
         # Если код полностью введён - вызываем обработчик
         if sdl_cheat_string in sdl_cheat_code_to_handler:
-            sdl_cheat_code_to_handler[sdl_cheat_string]()
+            sdl_cheat_code_to_handler[sdl_cheat_string][0](sdl_cheat_code_to_handler[sdl_cheat_string][1])
             sdl_cheat_string = ""
             renpy.hide_screen("sdl_cheat_reader")
             return
 
     # Обработчики чит-кодов
-    def sdl_cheat_all_enable():
-        for group in sdl_achv_names:
-            for name in group:
-                sdl_persistent_inc(name)
-
+    def sdl_cheat_enable_all(name):
+        for ch, char in sdl_achv_section_to_routes.items():
+            if ch != "va":
+                for route in char:
+                    for achieve in route.achv_arr:
+                        sdl_persistent_inc(achieve.persistent)
         sdl_persistent_inc("alt_cheater")
-
         renpy.play(sfx_konami_on, channel='sound')
 
-    def sdl_cheat_mi_enable():
-        for name in sdl_achv_mi_names:
-            sdl_persistent_inc(name)
-
+    def sdl_cheat_enable(name):
+        for ch, char in sdl_achv_section_to_routes.items():
+            if ch == name:
+                for route in char:
+                    for achieve in route.achv_arr:
+                        sdl_persistent_inc(achieve.persistent)
         sdl_persistent_inc("alt_cheater")
-
         renpy.play(sfx_konami_on, channel='sound')
 
-    def sdl_cheat_dv_enable():
-        for name in sdl_achv_dv_names:
-            sdl_persistent_inc(name)
 
-        sdl_persistent_inc("alt_cheater")
-
-        renpy.play(sfx_konami_on, channel='sound')
-
-    def sdl_cheat_sl_enable():
-        for name in sdl_achv_sl_names:
-            sdl_persistent_inc(name)
-
-        sdl_persistent_inc("alt_cheater")
-
-        renpy.play(sfx_konami_on, channel='sound')
-
-    def sdl_cheat_un_enable():
-        for name in sdl_achv_un_names:
-            sdl_persistent_inc(name)
-
-        sdl_persistent_inc("alt_cheater")
-
-        renpy.play(sfx_konami_on, channel='sound')
-
-    def sdl_cheat_mt_enable():
-        for name in sdl_achv_mt_names:
-            sdl_persistent_inc(name)
-
-        sdl_persistent_inc("alt_cheater")
-
-        renpy.play(sfx_konami_on, channel='sound')
-
-    def sdl_cheat_us_enable():
-        for name in sdl_achv_us_names:
-            sdl_persistent_inc(name)
-
-        sdl_persistent_inc("alt_cheater")
-
-        renpy.play(sfx_konami_on, channel='sound')
-
-    def sdl_cheat_me_enable():
-        for name in sdl_achv_me_names:
-            sdl_persistent_inc(name)
-
-        sdl_persistent_inc("alt_cheater")
-
-        renpy.play(sfx_konami_on, channel='sound')
-
-    def sdl_cheat_va_enable():
-        for name in sdl_achv_va_names:
-            sdl_persistent_inc(name)
-
-        sdl_persistent_inc("alt_cheater")
-
-        renpy.play(sfx_konami_on, channel='sound')
-
-    def sdl_cheat_disable():
-        for group in sdl_achv_names:
-            for name in group:
-                sdl_persistent_res(name)
-
+    def sdl_cheat_disable_all(name):
+        for ch, char in sdl_achv_section_to_routes.items():
+            for route in char:
+                for achieve in route.achv_arr:
+                    sdl_persistent_res(achieve.persistent)
         sdl_persistent_res("alt_cheater")
-
         renpy.play(sfx_konami_off, channel='sound')
 
-    def sdl_cheat_jojo():
+    def sdl_cheat_jojo(name):
         if getattr(persistent, "jojo_reference_7dl"):
             setattr(persistent, "jojo_reference_7dl", False)
             renpy.play(sfx_konami_off, channel='sound')
@@ -122,17 +67,16 @@ init python:
 
     # Словарь чит-кодов
     sdl_cheat_code_to_handler = {
-        "7dl4people"   : sdl_cheat_all_enable,
-        "justnamiki"   : sdl_cheat_mi_enable,
-        "justalice"    : sdl_cheat_dv_enable,
-        "justslavya"   : sdl_cheat_sl_enable,
-        "justlena"     : sdl_cheat_un_enable,
-        "justolga"     : sdl_cheat_mt_enable,
-        "justulyana"   : sdl_cheat_us_enable,
-        "foreveralone" : sdl_cheat_me_enable,
-        "getmisc"      : sdl_cheat_va_enable,
-        "fullreset"    : sdl_cheat_disable,
-        "jojoreference": sdl_cheat_jojo
+        "7dl4people"   : [sdl_cheat_enable_all, ""],
+        "justnamiki"   : [sdl_cheat_enable, "mi"],
+        "justalice"    : [sdl_cheat_enable, "dv"],
+        "justslavya"   : [sdl_cheat_enable, "sl"],
+        "justlena"     : [sdl_cheat_enable, "un"],
+        "justolga"     : [sdl_cheat_enable, "mt"],
+        "justulyana"   : [sdl_cheat_enable, "us"],
+        "foreveralone" : [sdl_cheat_enable, "me"],
+        "fullreset"    : [sdl_cheat_disable_all, ""],
+        "jojoreference": [sdl_cheat_jojo, ""]
     }
 
 screen sdl_cheat_reader:

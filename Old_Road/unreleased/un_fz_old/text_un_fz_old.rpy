@@ -22,7 +22,7 @@
     th "Как жаль, что он неправда."
     th "Как жаль."
     scene
-    $ renpy.show("cg d4_fz_un_reject_7dl", what = Desat("cg d4_fz_un_reject_7dl"))
+    $ renpy.show("cg d4_un_reject_7dl", what = Desat("cg d4_un_reject_7dl"))
     with fade2
     play ambience ambience_boat_station_night fadein 9
     "И потому я нисколько не удивляюсь тому, что видение пропадает, сменяясь другим."
@@ -3425,11 +3425,11 @@ label alt_day4_un_fz_old_camp_old:
         "Кивнув, я вложил весь вес в нажатие — и лишь после этого колесо медленно и неохотно повернулось."
         "Электроник быстро-быстро завращал механизм, прекрасно понимая, что долго я так не продержу."
         "Наконец, дверь вздрогнула и…"
+    stop music fadeout 1
     play sound sfx_open_door_mines_metal
     scene bg int_catacombs_living
     with dissolve
-    stop music fadeout 5
-    play ambience music_7dl["ambience_safe"] fadein 3
+    play music music_7dl["ambience_safe"] fadein 3
     "Мы оказались в святая святых этого места."
     $ persistent.sprite_time = "sunset"
     "Двухъярусная кровать с толстым слоем пыли — демонстрирующая, что на ней никогда не спали, уголок радиста и индивидуальные шкафчики, один из которых был распахнут."
@@ -3701,6 +3701,7 @@ label alt_day4_un_fz_old_camp_old:
         th "Я бы удивился, окажись оно иначе — в запертом-то бункере!"
         el "Ничего. Ты готов?"
         "Кивнув, я взялся за поворотный запор, а Электроник налёг на кнопку."
+    stop music fadeout 3
     play sound sfx_open_door_mines_metal
     scene bg int_catacombs_entrance
     th "Мотивирует, ничего не скажешь."
@@ -3758,7 +3759,7 @@ label alt_day4_un_fz_old_camp_old:
         "…как вдруг световой круг выхватил из темноты провал в полу."
     elif alt_day4_un_fz_companion == 'sl':
         play music music_list["trapped_in_dreams"] fadein 3
-        scene cg d4_fz_catac_sl_7dl with dissolve
+        scene cg d4_sl_catac_7dl with dissolve
         sl "Сколько мы здесь уже бродим?"
         "Она задала риторический вопрос, но я понял это уже тогда, когда на автомате проверил время."
         me "Без малого три часа."

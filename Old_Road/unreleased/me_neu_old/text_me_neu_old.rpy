@@ -773,7 +773,7 @@ label alt_day6_me_neu_loki_day_old:
     "В любом случае, пора искупаться!"
     "Довольно насвистывая, я отправился к свободной кабинке."
     stop music fadeout 3
-    $ volume(0.2, "sound_loop")
+    $ renpy.music.set_volume(0.2, delay=2, channel='sound_loop')
     "И застыл…"
     with fade
     play music music_list["so_good_to_be_careless"] fadein 3
@@ -869,7 +869,7 @@ label alt_day6_me_neu_loki_day_old:
     th "Ага, понятно."
     stop music fadeout 3
     hide mi with dissolve
-    $ volume(1.0, "sound_loop")
+    $ renpy.music.set_volume(1.0, delay=2, channel='sound_loop')
     "Вздохнув ещё раз, я вышел на улицу, неудачно махнул рукой и…"
     scene bg ext_shower_day_7dl:
         xalign .5 yalign .5 zoom 1.0
@@ -944,7 +944,7 @@ label alt_day6_me_neu_dr_day_old:
     "Человека с совершенно другим жизненным опытом, другими привычками, окружением."
     "Гораздо умнее и взвешеннее меня самого."
     "Как будто за то время, что я сидел за компьютером, он старательно жил, ловил впечатления и опыт."
-    "И по итогу превратился в человека с опытом сразу нескольких жизней."
+    "И в итоге превратился в человека с опытом сразу нескольких жизней."
     "Начиная от его «Я слежу за тобой, ничтожество», сопровождаемое громким смехом довольного собой человека, завершая просьбой беречь дорогих ему людей."
     "Виолу, Ольгу, Катюшку."
     "Девочки в отряде могут и обязательно сменятся, возможно, не доведётся встретить никого знакомого."
@@ -1835,7 +1835,7 @@ label alt_day6_me_neu_loki_disco_old:
     play ambience ambience_int_cabin_evening fadein 3
     "Танцы подразумевают наличие какой-никакой нарядной, праздничной одежды и праздничного же настроения."
     "А у меня, как-то так получилось, не оказалось ни того, ни другого."
-    scene cg d3_me_mirror_white_7dl
+    scene cg d3_me_mirror_pioneer_7dl
     with dissolve
     "Отражение безглазо уставилось мне прямо в душу."
     "Оно тоже выглядело как человек с цветущим садом в душе и ровным счётом никаким образом не отражало, что внутри сидит сожжённый человек."
@@ -2221,7 +2221,7 @@ label alt_day6_me_neu_dr_disco_old:
     "При всей неприглядности этого рода занятости Катюшка как в воду глядела — от постоянных потягушек шея немного расслабилась, неприятные ощущения пропали, будто и не было их."
     "И коль скоро я не верил в чудесное исцеление и всё тянулся и тянулся, проверяя — не болит ли — через десять минут оказалось, что таки не болит."
     "И работа наша закончена."
-    "По итогу самое обыкновенное стальное колесо на распорках превратилось в импровизированную китайскую беседку из шёлка и бумаги."
+    "В итоге самое обыкновенное стальное колесо на распорках превратилось в импровизированную китайскую беседку из шёлка и бумаги."
     "Отлучившаяся Катюшка вернулась с подозрительно знакомым стеклянным свечным фонарём, а меня, поблагодарив, прогнали прочь."
     "И ладно. {w}Не особо-то и хотелось."
     dreamgirl "Почувствуй себя ненужным."
@@ -3053,7 +3053,7 @@ label alt_day6_me_neu_sleeptime_old:
     "На часах была ровно полночь."
     "Значит, пора и мне ложиться спать."
     play ambience ambience_int_cabin_night
-    scene cg d1_end_of_day_7dl
+    scene cg d1_me_end_of_day_7dl
     with dissolve
     "Уже лёжа в кровати, я пытался разобраться в поведении соседки, но не мог объяснить ни грусть её, ни разочарование в глазах."
     "Может быть, она хотела чуть большей настойчивости с моей стороны?"
@@ -3100,7 +3100,7 @@ label alt_day7_me_neu_sleep_old:
     "Вот только уже не для нас."
     "Возможно, боясь именно такого исхода, я и придумываю себе всех этих несбыточных людей?"
     "Красивых, искренних… Настоящих."
-    scene cg d7_trio_7dl
+    scene cg d0_me_gld_7dl
     show prologue_dream
     with dissolve
     "Вроде этой троицы."
@@ -3429,7 +3429,7 @@ label alt_day7_me_neu_sleep_old:
     return
 
 label alt_day7_me_neu_wakeup_old:
-    scene cg d1_end_of_day_7dl with dissolve
+    scene cg d1_me_end_of_day_7dl with dissolve
     play music music_7dl["youre_not_real"] fadein 3
     "Когда лифт пробил слой облаков и остановился, я проснулся."
     "И только теперь понял, что спал."
@@ -3808,7 +3808,7 @@ label alt_day7_me_neu_explore_old:
     "Я снял форму, бросил её на кровать и за несколько секунд впрыгнул в джинсы, футболку и ботинки."
     "Свитер надевать не стал, так как в такую жарищу это было бы чревато."
     "Просто завязал его рукавами на талии."
-    scene cg d1_me_dahell_7dl
+    scene cg d1_me_mirror_casual2_7dl
     show mouth_dull
     with dissolve
     "Закрыл дверцу шкафа, полюбовался на себя в отражении."
@@ -4702,7 +4702,7 @@ label alt_day7_me_neu_loki_neu_old:
     "Чтобы только музыка в наушниках и доносящиеся из форточки порывы ветра."
     "И никак иначе."
     "Я не могу путешествовать в будущее при других условиях."
-    scene bg ext_busstop_summer_7dl
+    scene bg ext_bus_stop_summer_7dl
     with dissolve
     "А потому январь сменился майским полднем; мне хотелось май."
     "Вокруг было уже зелено, расцвели растения и чувства у некоторых майских оглоедов."
@@ -4711,7 +4711,7 @@ label alt_day7_me_neu_loki_neu_old:
     "Май маетный."
     stop sound_loop
     play music music_7dl["devastated"] fadein 3
-    scene bg int_sam_house_clean_7dl
+    scene bg int_semen_room_clean_7dl
     with fade
     play ambience sfx_keyboard_mouse_computer_noise
     "Руки ещё гудели от количества набитого текста."
@@ -4726,7 +4726,7 @@ label alt_day7_me_neu_loki_neu_old:
     th "Кажется, я в самом деле пропал."
     "Грустно поведал я майской ночи."
     stop ambience fadeout 3
-    scene bg int_sam_house_clean_7dl
+    scene bg int_semen_room_clean_7dl
     with dissolve
     pause(1)
     scene bg semen_room_window
@@ -4788,7 +4788,7 @@ label alt_day7_me_neu_loki_neu_old:
     "Ещё один звонок."
     "Ещё один выдох."
     scene
-    $ renpy.show("bg int_sam_house_clean_7dl", what = Gjs("bg int_sam_house_clean_7dl"))
+    $ renpy.show("bg int_semen_room_clean_7dl", what = Gjs("bg int_semen_room_clean_7dl"))
     with dissolve
     am "{i}Ты забудешь всё, что с тобой было, получишь свой второй шанс.{/i}"
     "Качнутся небеса, и ты начнёшь всё сначала."
@@ -4836,7 +4836,7 @@ label alt_day7_me_neu_loki_neu_old:
     play sound sfx_door_bell
     "Час бесконечного перезвона спустя всё стихло."
     "Я снова смог дышать."
-    scene bg int_sam_house_clean_7dl
+    scene bg int_semen_room_clean_7dl
     with dissolve
     "Сквозь тучи на кухню заглянула луна и проложила лунную дорожку до самой прихожей."
     "Отразилась от зеркала, выхватила из темноты меня — всклокоченного, бледного, с запавшими глазами и покрасневшим носом."
@@ -4866,7 +4866,7 @@ label alt_day7_me_neu_loki_neu_old:
     "Пришло лето."
     "Человека прошлого."
     play sound sfx_7dl["aunl"]
-    show acm_logo_me_neu_loki_neu with moveinright:
+    show acm_logo_me_neu_old_loki_neu with moveinright:
         pos (1600, 1020)
     pause(7.4)
     call alt_7dl_titles
@@ -5081,7 +5081,7 @@ label alt_day7_me_neu_dr_neu_old:
     "Затухающего."
     "Но меня это уже не волновало."
     play sound sfx_7dl["aunl"]
-    show acm_logo_me_neu_dr_neu with moveinright:
+    show acm_logo_me_neu_old_dr_neu with moveinright:
         pos (1600, 1020)
     pause(7.4)
     call alt_7dl_titles

@@ -33,8 +33,9 @@ init -997 python:
             "dv": get_image_7dl("gui/maps/map_icon_n10.png"),
             "sl": get_image_7dl("gui/maps/map_icon_n11.png"),
             "cs": get_image_7dl("gui/maps/map_icon_n12.png"),
-            "heart1" : get_image_7dl("gui/maps/map_icon_n13.png"),
-            "heart2" : get_image_7dl("gui/maps/map_icon_n14.png"),
+            "heart1": get_image_7dl("gui/maps/map_icon_n13.png"),
+            "heart2": get_image_7dl("gui/maps/map_icon_n14.png"),
+            "dv_us" : get_image_7dl("gui/maps/map_icon_n15.png"),
         }
 
 

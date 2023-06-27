@@ -322,7 +322,7 @@ label alt_day7_sl_7dl_sept:
     "Я."
     stop music fadeout 3
     $ set_mode_adv()
-    scene bg int_sam_house_clean_7dl
+    scene bg int_semen_room_clean_7dl
     with dissolve
     play music music_7dl["misery"] fadein 3
     "Я хорошо помнил этот почерк — завитушка у буквы «д», идущая вверх, буква «ш», больше похожая на «омегу»…"
@@ -422,4 +422,7 @@ label alt_day7_sl_7dl_sept:
     pause(7.4)
     with vpunch
     pause(2)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

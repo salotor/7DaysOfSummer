@@ -8,15 +8,29 @@ init:
     #  - если было сохранение с присвоением номера, при загрузке переменная будет взята из сохранения;
     #  - если загружается "старое" сохранение (до ввода процедуры контроля загрузок) - останется None
     $ alt_save_release_no = None
-    $ alt_save_fixed = False
+    $ alt_save_fixed = False #todo решение для загрузки на нескольких версиях
     $ alt_aicr_string = " "
+
     $ vars_040_saved = False
     $ vars_0401_saved = False
     $ vars_0402_saved = False
     $ vars_043_saved = False
     $ vars_049_saved = False
+    $ vars_050_saved = True
+    
+    # переменные для проверки
+    $ alt_day6_sl_cl_int = 0
 
     $ config.after_load_callbacks.append(sdl_after_load)
+
+label alt_vars_saved:
+    $ vars_040_saved = True
+    $ vars_0401_saved = True
+    $ vars_0402_saved = True
+    $ vars_043_saved = True
+    $ vars_049_saved = True
+    $ vars_050_saved = True
+    return
 
 init 1: # Переименования персистентов
     if not persistent.not_first_start_7dl:
@@ -142,10 +156,577 @@ init 1: # Переименования персистентов
         if persistent.us_px_good:
             $ persistent.us_7dl_px_good = persistent.us_px_good
             $ persistent.us_px_good = False
-            
+
     if not persistent.not_first_start6_7dl:
         $ persistent.not_first_start6_7dl = True
         $ persistent.achv_sprite_emo_7dl = True
+
+    if not persistent.not_first_start7_7dl:
+        $ persistent.not_first_start7_7dl = True
+        python:
+            try:
+                if persistent._seen_ever['alt_day6_us_px_begin']:
+                    persistent._seen_ever['alt_day6_us_7dl_px_begin'] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_ever['alt_day6_us_px_breakfast']:
+                    persistent._seen_ever['alt_day6_us_7dl_px_breakfast'] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_ever['alt_day6_us_px_carrier']:
+                    persistent._seen_ever['alt_day6_us_7dl_px_carrier'] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_ever['alt_day6_us_px_dinner']:
+                    persistent._seen_ever['alt_day6_us_7dl_px_dinner'] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_ever['alt_day6_us_px_party_un']:
+                    persistent._seen_ever['alt_day6_us_7dl_px_party_un'] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_ever['alt_day6_us_px_party_sl']:
+                    persistent._seen_ever['alt_day6_us_7dl_px_party_sl'] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_ever['alt_day6_us_px_far_gate']:
+                    persistent._seen_ever['alt_day6_us_7dl_px_far_gate'] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_ever['alt_day6_us_px_disco']:
+                    persistent._seen_ever['alt_day6_us_7dl_px_disco'] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_ever['alt_day6_us_px_afterwords']:
+                    persistent._seen_ever['alt_day6_us_7dl_px_afterwords'] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_ever['alt_day7_us_px_escape']:
+                    persistent._seen_ever['alt_day7_us_7dl_px_escape'] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_ever['alt_day7_us_px_bus']:
+                    persistent._seen_ever['alt_day7_us_7dl_px_bus'] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_ever['alt_day7_us_px_wastelands']:
+                    persistent._seen_ever['alt_day7_us_7dl_px_wastelands'] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_ever['alt_day7_us_px_true']:
+                    persistent._seen_ever['alt_day7_us_7dl_px_true'] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_ever['alt_day7_us_px_mourning']:
+                    persistent._seen_ever['alt_day7_us_7dl_px_mourning'] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_ever['alt_day7_us_px_good']:
+                    persistent._seen_ever['alt_day7_us_7dl_px_good'] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_sl_lookup_7dl')]:
+                    persistent._seen_images[('cg', 'd4_sl_lookup2_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd3_un_dance_7dl')]:
+                    persistent._seen_images[('cg', 'd3_un_dance2_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_sl_bench_sunset_7dl')]:
+                    persistent._seen_images[('cg', 'd5_sl_bench_day_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('bg', 'us_lake_7dl')]:
+                    persistent._seen_images[('bg', 'ext_us_lake_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('bg', 'int_warehouse_night_7dl')]:
+                    persistent._seen_images[('bg', 'int_warehouse3_night_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('bg', 'int_warehouse_day2_7dl')]:
+                    persistent._seen_images[('bg', 'int_warehouse3_day_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('bg', 'semen_room2_7dl')]:
+                    persistent._seen_images[('bg', 'int_semen_room2_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('bg', 'int_sam_house_clean_7dl')]:
+                    persistent._seen_images[('bg', 'int_semen_room_clean_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('bg', 'int_sam_room_7dl')]:
+                    persistent._seen_images[('bg', 'int_semen_room_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('bg', 'ext_stage_near_clear_7dl')]:
+                    persistent._seen_images[('bg', 'ext_stage_normal_clear_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('bg', 'ext_lib_sunset_7dl')]:
+                    persistent._seen_images[('bg', 'ext_library_sunset_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('bg', 'ext_un_house_with_un_7dl')]:
+                    persistent._seen_images[('bg', 'ext_house_of_un_day_with_un_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('bg', 'ext_bus1_7dl')]:
+                    persistent._seen_images[('bg', 'ext_bus2_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('bg', 'ext_busstop_summer_7dl')]:
+                    persistent._seen_images[('bg', 'ext_bus_stop_summer_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('bg', 'ext_boathous_day2_7dl')]:
+                    persistent._seen_images[('bg', 'ext_boathouse_alt2_day_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd1_me_dahell_7dl')]:
+                    persistent._seen_images[('cg', 'd1_me_mirror_casual2_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd3_me_mirror_bordo_7dl')]:
+                    persistent._seen_images[('cg', 'd3_me_mirror_bordo_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd3_me_mirror_white_7dl')]:
+                    persistent._seen_images[('cg', 'd3_me_mirror_pioneer_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_me_dahell2_7dl')]:
+                    persistent._seen_images[('cg', 'd7_me_mirror_casual_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd2_us_boat_escape_7dl')]:
+                    persistent._seen_images[('cg', 'd2_us_boat_day_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_boat_night_solo_7dl')]:
+                    persistent._seen_images[('cg', 'd5_me_boat_night_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_un_boat_7dl')]:
+                    persistent._seen_images[('cg', 'd5_un_boat_night_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd6_mi_boat_7dl')]:
+                    persistent._seen_images[('cg', 'd6_mi_boat_day_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_mi_lineup_7dl')]:
+                    persistent._seen_images[('cg', 'd4_lineup_with_mi_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd2_mt_me_resort_afar_7dl')]:
+                    persistent._seen_images[('cg', 'd2_mt_me_resort_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_fz_catac_sl_7dl')]:
+                    persistent._seen_images[('cg', 'd4_sl_catac_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_sl_dnd_7dl')]:
+                    persistent._seen_images[('cg', 'd4_sl_un_catac_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_dv_alise_falls_7dl')]:
+                    persistent._seen_images[('cg', 'd4_dv_falls_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_un_7dl')]:
+                    persistent._seen_images[('cg', 'd4_un_falls_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_fz_camping_7dl')]:
+                    persistent._seen_images[('cg', 'd4_un_camping_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_fz_un_reject_7dl')]:
+                    persistent._seen_images[('cg', 'd4_un_reject_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_mi_dj_dancing_7dl')]:
+                    persistent._seen_images[('cg', 'd4_mi_moon_dancing_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_mi_dj_lib0_7dl')]:
+                    persistent._seen_images[('cg', 'd4_mi_falls_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_mi_dj_lib_7dl')]:
+                    persistent._seen_images[('cg', 'd4_mi_falls2_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_mi_hedgehod_7dl')]:
+                    persistent._seen_images[('cg', 'd4_mi_hedgehod_night_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_un_fz_mt_board_7dl mt_normal')]:
+                    persistent._seen_images[('cg', 'd4_mt_board_7dl mt_normal')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_un_fz_mt_board_7dl mt_normal2')]:
+                    persistent._seen_images[('cg', 'd4_mt_board_7dl mt_normal2')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_un_fz_mt_board_7dl mt_dontlike')]:
+                    persistent._seen_images[('cg', 'd4_mt_board_7dl mt_dontlike')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_un_fz_mt_board_7dl mt_grin')]:
+                    persistent._seen_images[('cg', 'd4_mt_board_7dl mt_grin')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_un_fz_mt_board_7dl mt_laugh')]:
+                    persistent._seen_images[('cg', 'd4_mt_board_7dl mt_laugh')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_un_fz_mt_board_7dl mt_smile')]:
+                    persistent._seen_images[('cg', 'd4_mt_board_7dl mt_smile')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_un_fz_mt_board_7dl mt_smile2')]:
+                    persistent._seen_images[('cg', 'd4_mt_board_7dl mt_smile2')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_un_fz_mt_board_7dl mt_smile3')]:
+                    persistent._seen_images[('cg', 'd4_mt_board_7dl mt_smile3')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_fz_un_pixies_7dl')]:
+                    persistent._seen_images[('cg', 'd5_un_pixies_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_me_Alisa_7dl')]:
+                    persistent._seen_images[('cg', 'd5_alisa_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_mt_n2gether_7dl')]:
+                    persistent._seen_images[('cg', 'd7_mt_bed_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_sl_snark_7dl')]:
+                    persistent._seen_images[('cg', 'd5_snark_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_sl_square_me_lead_7dl')]:
+                    persistent._seen_images[('cg', 'd5_square_me_lead_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_sl_square_sl_lead_7dl')]:
+                    persistent._seen_images[('cg', 'd5_square_sl_lead_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_sl_square_us_lead_7dl')]:
+                    persistent._seen_images[('cg', 'd5_square_us_lead_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_un_fz_old_camp_al_7dl')]:
+                    persistent._seen_images[('cg', 'd5_us_old_photo_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_un_fz_tousand_twinkles_7dl')]:
+                    persistent._seen_images[('cg', 'd5_thousand_twinkles_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_un_fz_twinkles_1_7dl')]:
+                    persistent._seen_images[('cg', 'd5_twinkle_1_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_un_fz_twinkles_2_7dl')]:
+                    persistent._seen_images[('cg', 'd5_twinkle_2_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_un_fz_twinkles_3_7dl')]:
+                    persistent._seen_images[('cg', 'd5_twinkle_3_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_un_fz_twinkles_4_7dl')]:
+                    persistent._seen_images[('cg', 'd5_twinkle_4_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_un_fz_twinkles_5_7dl')]:
+                    persistent._seen_images[('cg', 'd5_twinkle_5_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_un_fz_twinkles_6_7dl')]:
+                    persistent._seen_images[('cg', 'd5_twinkle_6_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_un_dress_island_7dl')]:
+                    persistent._seen_images[('cg', 'd5_un_island_dress_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd6_dance_alt_7dl')]:
+                    persistent._seen_images[('cg', 'd6_disco2_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd6_dv_dance_7dl')]:
+                    persistent._seen_images[('cg', 'd6_dv_dance_bordo_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd6_dv_dance_normal_7dl')]:
+                    persistent._seen_images[('cg', 'd6_dv_dance_pioneer_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd6_mi_vyluthere_7dl')]:
+                    persistent._seen_images[('cg', 'd6_mi_grass_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd2_mi_me_polaroid_7dl')]:
+                    persistent._seen_images[('cg', 'd2_mi_polaroid_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd2_mt_me_resort_7dl')]:
+                    persistent._seen_images[('cg', 'd2_mt_resort_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd6_sl_puppy_7dl')]:
+                    persistent._seen_images[('cg', 'd6_puppy_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd6_un_fz_rr_faceless_hands_7dl')]:
+                    persistent._seen_images[('cg', 'd6_faceless_hands_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd6_un_fz_rr_faceless_hands_2_7dl')]:
+                    persistent._seen_images[('cg', 'd6_faceless_hands2_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd6_un_fz_un_death_7dl')]:
+                    persistent._seen_images[('cg', 'd6_un_death_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd6_un_rape_7dl')]:
+                    persistent._seen_images[('cg', 'd6_un_violence_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd6_un_rape2_7dl')]:
+                    persistent._seen_images[('cg', 'd6_un_violence2_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_dv_addic_happy_7dl')]:
+                    persistent._seen_images[('cg', 'd7_dv_addic_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_dv_ep_red_7dl')]:
+                    persistent._seen_images[('cg', 'd7_dv_epilogue_kiss_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_un_modern_epilogue_bus_7dl')]:
+                    persistent._seen_images[('cg', 'd7_un_epilogue_bus_modern_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_leaving_no_sl_sam_7dl')]:
+                    persistent._seen_images[('cg', 'd7_leaving_no_sl_me_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_mi_dj_concert_7dl')]:
+                    persistent._seen_images[('cg', 'd7_mi_concert_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_mi_dj_concert2_7dl')]:
+                    persistent._seen_images[('cg', 'd7_mi_concert2_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_mi_kaito_7dl')]:
+                    persistent._seen_images[('cg', 'd7_mi_stroll_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_mt_mj2_7dl')]:
+                    persistent._seen_images[('cg', 'd7_me_arseny_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_mt_mj_7dl')]:
+                    persistent._seen_images[('cg', 'd7_me_semen_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_sl_gonna_be_ok_7dl')]:
+                    persistent._seen_images[('cg', 'd0_me_loki_park_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_un_epilogue_d1_7dl')]:
+                    persistent._seen_images[('cg', 'd7_me_cosmonaut_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_un_met_7dl')]:
+                    persistent._seen_images[('cg', 'd7_un_epilogue_rf_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_us_tai_tai_7dl')]:
+                    persistent._seen_images[('cg', 'd7_me_tai_tai_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd3_mi_dance_afar_7dl')]:
+                    persistent._seen_images[('cg', 'd3_mi_dance_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd3_mi_dance_afar_bordo_7dl')]:
+                    persistent._seen_images[('cg', 'd3_mi_dance_bordo_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd1_end_of_day_7dl')]:
+                    persistent._seen_images[('cg', 'd1_me_end_of_day_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd3_fag_room_7dl')]:
+                    persistent._seen_images[('cg', 'd3_me_fag_room_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd4_mi_kandji_7dl')]:
+                    persistent._seen_images[('cg', 'd4_kandji_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd5_dv_dream_7dl')]:
+                    persistent._seen_images[('cg', 'd5_dream_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_un_epilogue_bad_7dl')]:
+                    persistent._seen_images[('cg', 'd7_epilogue_fall_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_un_epilogue_bad2_7dl')]:
+                    persistent._seen_images[('cg', 'd7_un_epilogue_bad_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_un_fire_7dl')]:
+                    persistent._seen_images[('cg', 'd7_fire_7dl')] = True
+            except Exception:
+                pass
+            try:
+                if persistent._seen_images[('cg', 'd7_frozen_7dl')]:
+                    persistent._seen_images[('cg', 'd7_me_frozen_7dl')] = True
+            except Exception:
+                pass
+
+    if not persistent.not_first_start8_7dl:
+        $ persistent.not_first_start8_7dl = True
+        if persistent.mi_7dl_neu_human:
+            $ persistent.mi_7dl_good_ussr = persistent.mi_7dl_neu_human
+            $ persistent.mi_7dl_neu_human = False
+        python:
+            try:
+                if persistent._seen_ever['alt_day7_us_7dl_px_breakfast']:
+                    persistent._seen_ever['alt_day7_us_7dl_breakfast'] = True
+            except Exception:
+                pass
+
+    if not persistent.not_first_start9_7dl:
+        $ persistent.not_first_start9_7dl = True
+        if persistent.un_7dl_true_tran:
+            $ persistent.un_7dl_rej2 = persistent.un_7dl_true_tran
+            $ persistent.un_7dl_true_tran = False
 
 # Старый экран. Показывается в доисторических сейвах
 screen alt_incompatible_release:
@@ -370,12 +951,7 @@ label alt_after_load:
         $ save_names_known()
 
         # меняем тильды на кавычки, если указано в настройках
-        if not persistent.thoughts_tilde_7dl:
-            $ th_prefix = "«"
-            $ th_suffix = "»"
-        else:
-            $ th_prefix = "~ "
-            $ th_suffix = " ~"
+        $ alt_thoughts_tilde_update()
 
         $ reload_names()
 
@@ -391,7 +967,7 @@ label alt_after_load:
         window auto
 
         # Переносим старые переменные
-        if (alt_save_release_no in ["0.34.a", "0.34.b", "0.35.a", "0.36.a", "0.37.a", "0.38.a", "0.39.a", "0.40"]) and (not vars_040_saved):
+        if (alt_save_release_no in alt_compatible_release_no[:8]) and (not vars_040_saved):
             $ vars_040_saved = True
             python:
                 # Спасаем сейвы Дрища
@@ -416,7 +992,7 @@ label alt_after_load:
                         alt_day2_date = list_d2_date_7dl[0]
                 except Exception:
                     pass
-        if (alt_save_release_no in ["0.34.a", "0.34.b", "0.35.a", "0.36.a", "0.37.a", "0.38.a", "0.39.a", "0.40", "0.40.1"]) and (not vars_0401_saved):
+        if (alt_save_release_no in alt_compatible_release_no[:9]) and (not vars_0401_saved):
             $ vars_0401_saved = True
             python:
                 # Новая переменная
@@ -425,7 +1001,7 @@ label alt_after_load:
                         alt_day2_un_rej_convoy = True
                 except Exception:
                     pass
-        if (alt_save_release_no in ["0.34.a", "0.34.b", "0.35.a", "0.36.a", "0.37.a", "0.38.a", "0.39.a", "0.40", "0.40.1", "0.40.2"]) and (not vars_0402_saved):
+        if (alt_save_release_no in alt_compatible_release_no[:10]) and (not vars_0402_saved):
             $ vars_0402_saved = True
             python:
                 # Новые переменные
@@ -1297,7 +1873,7 @@ label alt_after_load:
                         counter_un_fz_dream_road += 1
                 except Exception:
                     pass
-        if (("0.3" in alt_save_release_no) or ("0.4" in alt_save_release_no)) and (not vars_049_saved):
+        if (alt_save_release_no in alt_compatible_release_no[:19]) and (not vars_049_saved):
             $ vars_049_saved = True
             python:
                 try:
@@ -1332,12 +1908,46 @@ label alt_after_load:
                     for i in ["День 4","День 5","День 6","День 7"]:
                         if i in save_name:
                             routetag = "neu"
+        if (alt_save_release_no in alt_compatible_release_no[:19]) and (not vars_050_saved):
+            $ vars_050_saved = True
+            python:
+                try:
+                    if alt_day6_sl_cl_int == 5:
+                        alt_day6_sl_cl_int_end = 'rej'
+                except Exception:
+                    pass
+                try:
+                    if alt_day6_sl_cl_int == 4:
+                        alt_day6_sl_cl_int_end = 'true'
+                except Exception:
+                    pass
+                try:
+                    if alt_day6_sl_cl_int == 3:
+                        alt_day6_sl_cl_int_end = 'good'
+                except Exception:
+                    pass
+                try:
+                    if (not alt_day4_me_neu_escape) and ('nwsppr' not in list_clubs_7dl) and ('music' in list_clubs_7dl):
+                        alt_day4_me_neu_mi_club = True
+                except Exception:
+                    pass
+                try:
+                    if alt_day4_me_neu_mz_newspaper:
+                        counter_mz_7dl = 1
+                except Exception:
+                    pass
+                try:
+                    if (counter_us_7dl_px < 2) and (not alt_day5_me_neu_mi_help) and ('nwsppr' in list_clubs_7dl) and not (loki and counter_me_neu_answers >= 2) and alt_day4_me_neu_mz_newspaper:
+                        counter_mz_7dl = 2
+                except Exception:
+                    pass
+
         if (alt_save_release_no not in alt_compatible_release_no) and (not alt_save_fixed): # и если сохранение несовместимо
             python: # генерируем строку с номерами версий
                 alt_aicr_string = (u"ЗАГРУЖАЕМАЯ ВЕРСИЯ СОХРАНЕНИЯ (%s) НЕСОВМЕСТИМА С ЭТОЙ ВЕРСИЕЙ МОДА (%s)") % (alt_save_release_no, alt_release_no)
             $ alt_save_fixed = True
             call screen alt_incompatible_release # и показываем экран предупреждения с выбором вариантов
-        elif ((alt_save_release_no in ["0.34.a", "0.34.b", "0.35.a", "0.36.a", "0.37.a", "0.38.a", "0.39.a", "0.40", "0.40.1", "0.40.2"]) or ((alt_save_release_no in ["0.42", "0.43"]) and counter_un_cl) or ((("0.3" in alt_save_release_no) or ("0.4" in alt_save_release_no)) and ("us_px" in routetag))) and (not alt_save_fixed): # если сохранение частично совместимо
+        elif ((alt_save_release_no in alt_compatible_release_no[:10]) or ((alt_save_release_no in ["0.42", "0.43"]) and counter_un_cl) or ((alt_save_release_no in alt_compatible_release_no[:19]) and ("us_px" in routetag)) or ((alt_save_release_no in alt_compatible_release_no[:20]) and alt_day6_sl_cl_int)) and (not alt_save_fixed): # если сохранение частично совместимо
             python: # генерируем строку с предупреждением
                 alt_aicr_string = (u"ВЫ ЗАГРУЖАЕТЕ СОХРАНЕНИЕ С УСТАРЕВШЕЙ (%s) ВЕРСИИ МОДА") % (alt_save_release_no)
             $ alt_save_fixed = True
@@ -1350,11 +1960,3 @@ label alt_after_load:
             $ reset_names_to_default() # сбрасываем имена персонажей на дефолтные
             $ reload_names() # загружаем сброшенные имена
     return # возвращаемся в игру
-
-label alt_vars_saved:
-    $ vars_040_saved = True
-    $ vars_0401_saved = True
-    $ vars_0402_saved = True
-    $ vars_043_saved = True
-    $ vars_049_saved = True
-    return

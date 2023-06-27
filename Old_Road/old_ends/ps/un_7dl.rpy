@@ -34,7 +34,7 @@ label alt_day7_un_7dl_good_rf_ps_old:
     with flash
     "Когда перестанет спасать даже моё самое последнее средство."
     scene
-    $ renpy.show("bg int_sam_house_clean_7dl", what = Noir("bg int_sam_house_clean_7dl", brightness = 0.2, tint_r = 0.2, tint_g = 1.0, tint_b = 1.0, saturation = 0.7))
+    $ renpy.show("bg int_semen_room_clean_7dl", what = Noir("bg int_semen_room_clean_7dl", brightness = 0.2, tint_r = 0.2, tint_g = 1.0, tint_b = 1.0, saturation = 0.7))
     with dissolve
     "Я пришёл в себя, сидя на продавленном кресле напротив монитора."
     "Жутко болела голова, запрокинутая последние несколько часов, затекла шея."
@@ -43,10 +43,13 @@ label alt_day7_un_7dl_good_rf_ps_old:
     "Привычно болело место укола."
     with blind_l
     "И в жгучей белизне таяло прощальное:"
-    scene cg d7_un_epilogue_bad2_7dl
+    scene cg d7_un_epilogue_bad_7dl
     show prologue_dream
     with dissolve2
     stop music fadeout 10
     show alt_letter "Спасибо…" at truecenter with zoomin
     pause(8)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

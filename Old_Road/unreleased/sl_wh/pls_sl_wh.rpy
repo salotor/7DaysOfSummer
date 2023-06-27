@@ -15,4 +15,7 @@ label alt_day5_sl_wh_start:
     $ alt_chapter(5, u"Ведьма. Утро.")
     call alt_day5_sl_wh_begin
     with fade
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

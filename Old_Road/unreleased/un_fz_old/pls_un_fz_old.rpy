@@ -98,7 +98,10 @@ label alt_day4_un_fz_start_old:
     if alt_day4_un_fz_companion not in ['sl', 'dv']:
         jump alt_day5_un_fz_start
     else:
-        jump alt_stories_start
+        if not persistent.pivo_default_7dl:
+            jump alt_stories_start
+        else:
+            return
 
 label alt_day5_un_fz_start:
     $ persistent.sprite_time = "sunset"
@@ -106,4 +109,7 @@ label alt_day5_un_fz_start:
     $ alt_chapter(5, u"Лена. ФЗ. Утро.")
     call alt_day5_fz_begin_old
     pause(1)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

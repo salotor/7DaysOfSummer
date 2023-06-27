@@ -55,4 +55,7 @@ label alt_chudo_novogodnee:
         pos (1600, 1020)
     pause(7.4)
     with vpunch
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

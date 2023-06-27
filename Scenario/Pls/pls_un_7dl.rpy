@@ -244,7 +244,10 @@ label alt_day7_un_7dl_start:
         call alt_day7_un_7dl_bad
         pause(1)
     elif routetag == "un":
-        if (alt_day7_un_7dl_rnm > 75) and (karma >= 75):
+        if alt_day7_un_7dl_shard_end:
+            call alt_day7_un_7dl_shard
+            pause(1)
+        elif (alt_day7_un_7dl_rnm > 75) and (karma >= 75):
             call alt_day7_un_7dl_miracle
             pause(1)
             $ persistent.sprite_time = "day"
@@ -255,6 +258,6 @@ label alt_day7_un_7dl_start:
             pause(1)
             call alt_day7_un_7dl_good_ussr
         else:
-            call alt_day7_un_7dl_true_tran
+            call alt_day7_un_7dl_rej2
         pause(1)
     return

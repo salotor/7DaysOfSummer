@@ -223,6 +223,20 @@ init:
     image sdl_achv_char_herc = get_image_7dl("gui/ach_list/icons/achv_char_herc.png")
     image sdl_achv_char_dr   = get_image_7dl("gui/ach_list/icons/achv_char_dr.png")
     image sdl_achv_char_none = get_image_7dl("gui/ach_list/icons/achv_char_none.png")
+    # Пазл-сердечко
+    layeredimage sdl_achv_puzzle:
+        if persistent.mi_dj_true:
+            get_image_7dl("gui/ach_list/icons/achv_puzzle_mi.png")
+        if persistent.dv_dj_true:
+            get_image_7dl("gui/ach_list/icons/achv_puzzle_dv.png")
+        if persistent.sl_cl_int_true:
+            get_image_7dl("gui/ach_list/icons/achv_puzzle_sl.png")
+        if persistent.un_fz_rr_true:
+            get_image_7dl("gui/ach_list/icons/achv_puzzle_un.png")
+        if persistent.mt_7dl_true:
+            get_image_7dl("gui/ach_list/icons/achv_puzzle_mt.png")
+        if persistent.us_7dl_true:
+            get_image_7dl("gui/ach_list/icons/achv_puzzle_us.png")
 
     ##\\\\\\\\\\\\\\\\\\\\\\\\\ТЕКСТЫ\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     # Общие фразы
@@ -234,7 +248,7 @@ init:
     image sdl_achv_ps_jump        = Text("  Перейти\nк послесловию", style="sdl_achv_font_small_inactive")
 
     image sdl_achv_info_or     = Text("или", style="sdl_achv_font_prereq")
-    image sdl_achv_info_end    = Text("Требует прохождения\n      концовки", style="sdl_achv_font_prereq")
+    image sdl_achv_info_end    = Text("Требует прохождения", style="sdl_achv_font_prereq")
     image sdl_achv_info_puz    = Text("Требует сбора\nпазла-сердечка", style="sdl_achv_font_prereq")
     # Типология рутов
     image sdl_achv_7dl_route = Text("7ДЛ-рут", style="sdl_achv_font_small_inactive")
@@ -274,9 +288,9 @@ init:
     image sdl_achv_mi_rej  = Text("Реджект\nконцовка", style="sdl_achvlistA_mi_st")
     image sdl_achv_mi_true    = Text("Истинная\nконцовка", style="sdl_achvlistA_mi_st")
     image sdl_achv_mi_good    = Text("Хорошая\nконцовка", style="sdl_achvlistA_mi_st")
+    image sdl_achv_mi_good_US = Text("  Хорошая \nСССР-концовка", style="sdl_achvlistA_mi_st")
     image sdl_achv_mi_good_RF = Text(" Хорошая\nРФ-концовка", style="sdl_achvlistA_mi_st")
     image sdl_achv_mi_good_IN = Text(" Хорошая\nинт-концовка", style="sdl_achvlistA_mi_st")
-    image sdl_achv_mi_neu     = Text("Нейтральная\n  концовка", style="sdl_achvlistA_mi_st")
     image sdl_achv_mi_LO_exc  = Text("Эксклюзивная \nконцовка Локи", style="sdl_achvlistA_mi_st")
     image sdl_achv_mi_HE_exc  = Text(" Эксклюзивная \nконцовка Герка", style="sdl_achvlistA_mi_st")
     image sdl_achv_mi_DR_exc  = Text(" Эксклюзивная \nконцовка Дрища", style="sdl_achvlistA_mi_st")
@@ -295,7 +309,6 @@ init:
     image sdl_achv_dv_HE_exc  = Text(" Эксклюзивная \nконцовка Герка", style="sdl_achvlistA_dv_st")
     image sdl_achv_dv_LO_exc  = Text("Эксклюзивная \nконцовка Локи", style="sdl_achvlistA_dv_st")
     image sdl_achv_dv_DR_exc  = Text(" Эксклюзивная \nконцовка Дрища", style="sdl_achvlistA_dv_st")
-    image sdl_achv_dv_HE_tran = Text("  Транзитная\nконцовка Герка", style="sdl_achvlistA_dv_st")
     image sdl_achv_dv_bad     = Text(" Плохая\nконцовка", style="sdl_achvlistA_dv_st")
     ## Славя расцветка
     image sdl_achv_sl_shard = Text(" Осколок\n памяти", style="sdl_achvlistA_sl_st")
@@ -315,9 +328,8 @@ init:
     image sdl_achv_sl_bad     = Text(" Плохая\nконцовка", style="sdl_achvlistA_sl_st")
     image sdl_achv_sl_bad_IN  = Text("  Плохая\nинт-концовка", style="sdl_achvlistA_sl_st")
     ## Лена расцветка
-    image sdl_achv_un_shard   = Text(" Осколок\n памяти", style="sdl_achvlistA_un_st")
+    image sdl_achv_un_shard     = Text(" Осколок\n памяти", style="sdl_achvlistA_un_st")
     image sdl_achv_un_true_IN   = Text(" Истинная\nинт-концовка", style="sdl_achvlistA_un_st")
-    image sdl_achv_un_true_tran = Text("   Истинная\nконцовка-транзит", style="sdl_achvlistA_un_st")
     image sdl_achv_un_good_US   = Text("  Хорошая \nСССР-концовка", style="sdl_achvlistA_un_st")
     image sdl_achv_un_good_RF   = Text(" Хорошая \nРФ-концовка", style="sdl_achvlistA_un_st")
     image sdl_achv_un_good_IN   = Text(" Хорошая\nинт-концовка", style="sdl_achvlistA_un_st")
@@ -343,6 +355,9 @@ init:
     image sdl_achv_us_tran_mi = Text("Концовка\n Мику", style="sdl_achvlistA_us_st")
     image sdl_achv_us_bad     = Text(" Плохая\nконцовка", style="sdl_achvlistA_us_st")
     ## Семён расцветка
+    image sdl_achv_me_herc_exc    = Text(" Концовка\n   Герка", style="sdl_achvlistA_me_st")
+    image sdl_achv_me_loki_exc     = Text(" Концовка\n   Локи", style="sdl_achvlistA_me_st")
+    image sdl_achv_me_dr_exc     = Text(" Концовка\n  Дрища", style="sdl_achvlistA_me_st")
     image sdl_achv_me_bad     = Text(" Плохая\nконцовка", style="sdl_achvlistA_me_st")
     ## Разное расцветка
     image sdl_achv_va_lost   = Text("Потрачено", style="sdl_achvlistA_va_st")

@@ -17,7 +17,7 @@
     "Сначала на тёмно-синие тона, а потом сгорит в оранжево-желтом пламени заката. Затем, и вовсе погаснет в ночи."
     "И какое нарисовать небо?"
 
-    scene bg int_sam_room_7dl with flash
+    scene bg int_semen_room_7dl with flash
     $ meet('voice',"Мама")
 
     un "Мамочка!"
@@ -118,4 +118,7 @@
     stop ambience fadeout 3
     stop music fadeout 3
     pause(3)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

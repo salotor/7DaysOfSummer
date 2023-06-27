@@ -48,7 +48,7 @@
     "Я же молча стоял — мне жизненно важно было удержать мир в равновесии."
     "Если как следует расставить ноги, держаться крепче и не позволять ему раскачиваться…"
     "Подобное происходило со мной с удручающей периодичностью — провалы в памяти, амнезия."
-    $ volume(0.5, "music")
+    $ renpy.music.set_volume(0.5, delay=2, channel='music')
     play music music_7dl["bad_apple"] fadein 10
     "Под нос что-то сунули, я невольно вдохнул."
     hide blackout_exh
@@ -86,7 +86,7 @@
     "Вздохнув ещё раз, я поплёлся вслед за начальницей."
     $ night_time()
     $ persistent.sprite_time = 'night'
-    $ volume(1.0, "music")
+    $ renpy.music.set_volume(1.0, delay=2, channel='music')
     play music music_7dl["breath_again"] fadein 3
     scene bg ext_square_night
     with dissolve
@@ -106,7 +106,7 @@
     scene bg ext_house_of_el_night_7dl with dissolve
     play sound sfx_open_dooor_campus_1 fadein 0
     pause(1)
-    scene bg int_extra_house_7dl
+    scene bg int_extra_house_nolight_7dl
     with dissolve
     play ambience ambience_int_cabin_evening fadein 2
     am "Та, что я заслужил."
@@ -164,7 +164,7 @@
     show prologue_dream
     with fade
     pause(.1)
-    scene cg d6_dv_dance_7dl
+    scene cg d6_dv_dance_bordo_7dl
     show blackout_exh3
     show prologue_dream
     with flash
@@ -199,7 +199,8 @@
     with dissolve
     pause(1)
     dreamgirl "Ещё экзотичнее?"
-    scene cg d3_mi_dance_close_bordo_7dl
+    scene cg d3_mi_dance_bordo_7dl:
+        xalign 0.0 yalign 0.0 zoom 1.75
     show prologue_dream
     with dissolve2
     "Три миллиметра, два…"
@@ -214,7 +215,7 @@
     with vpunch
     am "А вот это плохо!"
     play music music_7dl["hole_in_chest"] fadein 3
-    scene bg int_extra_house_7dl
+    scene bg int_extra_house_night_7dl
     with dissolve
     "Я зажёг ночник, зашарил руками по столу в поисках средства спасения."
     th "Доктор-доктор, дайте мне таблеточку, чтобы ничего не помнить и не страдать."
@@ -300,7 +301,7 @@
     "А я вижу её распластанной на капоте, смотрящей мне в глаза сквозь лобовое стекло."
     "Доктор-доктор…"
     "Снова чужая память."
-    show sh normal uniform close with easeinleft
+    show sh normal pioneer close with easeinleft
     play sound sfx_punch_medium
     with vpunch
     "От толчка в плечо таблетки полетели в решётку стока."
@@ -402,4 +403,7 @@
     stop ambience fadeout 5
     with fade
     pause(1)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

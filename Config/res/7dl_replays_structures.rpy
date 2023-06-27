@@ -4341,8 +4341,7 @@ init 9999 python:
                         vars = [
                                     sdl_var_b_d5_sl_7dl_olro,
                                     sdl_var_b_d6_sl_7dl_forg,
-                                    sdl_var_i_sl_lpp,
-                                    sdl_var_i_karma
+                                    sdl_var_i_sl_lpp
                                 ],
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
@@ -4526,7 +4525,8 @@ init 9999 python:
             sdl_Replay(
                         "alt_day5_sl_cl_breakfast", {"alt_replay_on" : "True"},
                         vars = [
-                                    sdl_var_b_d4_sl_cl_tuti
+                                    sdl_var_b_d4_sl_cl_tuti,
+                                    sdl_var_b_d5_sl_cl_cs
                                 ],
                         func_in = sunset_interface_on, func_out = replay_screens_load
                       )
@@ -4594,7 +4594,6 @@ init 9999 python:
             sdl_Replay(
                         "alt_day5_sl_cl_campfire_prepare", {"alt_replay_on" : "True"},
                         vars = [
-                                    sdl_var_b_d4_sl_cl_tuti,
                                     sdl_var_e_d3_me_dan1
                                 ],
                         func_in = day_interface_on, func_out = replay_screens_load
@@ -4637,7 +4636,6 @@ init 9999 python:
             sdl_Replay(
                         "alt_day5_sl_cl_cs_reward", {"alt_replay_on" : "True"},
                         vars = [
-                                    sdl_var_b_d4_sl_cl_tuti,
                                     sdl_var_e_d4_sl_cl_solo
                                 ],
                         func_in = night_interface_on, func_out = replay_screens_load
@@ -4674,6 +4672,16 @@ init 9999 python:
     ]
     #### 6 День
     sdl_repl_array_sl_clt_day6 = [
+        sdl_repl_Label(
+            "Сон. Выбор",
+            sdl_Replay(
+                        "alt_day6_sl_cl_begin_yulya", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_i_sl_sp
+                                ],
+                        func_in = sunset_interface_on, func_out = replay_screens_load
+                      )
+        ),
         sdl_repl_Label(
             "Утро. Пещера",
             sdl_Replay(
@@ -4750,6 +4758,7 @@ init 9999 python:
                         vars = [
                                     sdl_var_b_d4_sl_cl_tuti,
                                     sdl_var_b_d5_sl_cl_hent,
+                                    sdl_var_b_d6_sl_cl_agre,
                                     sdl_var_i_sl_sp
                                 ],
                         func_in = day_interface_on, func_out = replay_screens_load
@@ -4809,6 +4818,7 @@ init 9999 python:
                         "alt_day6_sl_cl_pirate", {"alt_replay_on" : "True"},
                         vars = [
                                     sdl_var_b_d5_sl_cl_hent,
+                                    sdl_var_b_d6_sl_cl_agre,
                                     sdl_var_i_sl_lpp
                                 ],
                         func_in = day_interface_on, func_out = replay_screens_load
@@ -4862,7 +4872,7 @@ init 9999 python:
                       )
         ),
         sdl_repl_Label(
-            "Алгоритм",
+            "Вечер. Медпункт",
             sdl_Replay(
                         "alt_day6_sl_cl_algorithm", {"alt_replay_on" : "True"},
                         vars = [
@@ -4911,9 +4921,6 @@ init 9999 python:
             sdl_Replay(
                         "alt_day6_sl_cl_sh_story", {"alt_replay_on" : "True"},
                         ambience = ambience_camp_entrance_night,
-                        vars = [
-                                    sdl_var_b_d4_sl_cl_tuti
-                                ],
                         func_in = night_interface_on, func_out = replay_screens_load
                       )
         ),
@@ -5088,22 +5095,6 @@ init 9999 python:
     #### ??? День
     sdl_repl_array_sl_clt_dayx = [
         sdl_repl_Label(
-            "Дома",
-            sdl_Replay("alt_day6_sl_cl_home", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load)
-        ),
-        sdl_repl_Label(
-            "Сёмушка",
-            sdl_Replay("alt_day6_sl_cl_intellectual", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load)
-        ),
-        sdl_repl_Label(
-            "Самый большой страх",
-            sdl_Replay("alt_day7_sl_cl_fear", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load)
-        ),
-        sdl_repl_Label(
-            "1996",
-            sdl_Replay("alt_day7_sl_cl_1996", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
-        ),
-        sdl_repl_Label(
             "Спасательная операция",
             sdl_Replay(
                         "alt_day7_sl_cl_loop", {"alt_replay_on" : "True"},
@@ -5115,11 +5106,12 @@ init 9999 python:
         ),
         sdl_repl_Label(
             "Порридж",
-            sdl_Replay("alt_day7_sl_cl_porridge", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
-        ),
-        sdl_repl_Label(
-            "Послесловие",
-            sdl_Replay("alt_day7_sl_cl_ps", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load)
+            sdl_Replay(
+                        "alt_day7_sl_cl_porridge", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_i_sl_lpp
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load)
         )
     ]
 
@@ -5698,7 +5690,7 @@ init 9999 python:
             sdl_Replay(
                         "alt_day7_un_7dl_departure", {"alt_replay_on" : "True"},
                         vars = [
-                                    sdl_var_e_d4_me_neu_tran
+                                    sdl_var_i_karma
                                 ],
                         func_in = day_interface_on, func_out = replay_screens_load
                       )
@@ -6963,7 +6955,8 @@ init 9999 python:
                         "alt_day6_us_7dl_breakfast", {"alt_replay_on" : "True"},
                         vars = [
                                     sdl_var_i_us_7dl_pxs,
-                                    sdl_var_e_d3_date
+                                    sdl_var_e_d3_date,
+                                    sdl_var_e_d2_date
                                 ],
                         func_in = sunset_interface_on, func_out = replay_screens_load
                       ),
@@ -7306,12 +7299,12 @@ init 9999 python:
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Огоньки. Сбор группы. Славя",
+            "Огоньки. Сбор. Славя",
             sdl_Replay("alt_day6_us_7dl_px_party_sl", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
         sdl_repl_Label(
-            "Огоньки. Сбор группы. Лена",
+            "Огоньки. Сбор. Лена",
             sdl_Replay("alt_day6_us_7dl_px_party_un", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load),
             char_mask = 5
         ),
@@ -7368,7 +7361,9 @@ init 9999 python:
                         vars = [
                                     sdl_var_b_d6_us_7dl_help,
                                     sdl_var_e_d6_us_7dl_mi_frie,
-                                    sdl_var_e_d6_us_7dl_un_frie
+                                    sdl_var_e_d6_us_7dl_un_frie,
+                                    sdl_var_b_d6_us_7dl_px_sl_join,
+                                    sdl_var_i_us_7dl_pxs
                                 ],
                         func_in = sunset_interface_on, func_out = replay_screens_load
                       ),
@@ -7465,17 +7460,6 @@ init 9999 python:
                                     sdl_var_e_d6_us_7dl_un_frie
                                 ],
                         func_in = prolog_interface_on, func_out = replay_screens_load
-                      ),
-            char_mask = 5
-        ),
-        sdl_repl_Label(
-            "Огоньки. Завтрак",
-            sdl_Replay(
-                        "alt_day7_us_7dl_px_breakfast", {"alt_replay_on" : "True"},
-                        vars = [
-                                    sdl_var_b_d6_us_7dl_px_sl_join
-                                ],
-                        func_in = sunset_interface_on, func_out = replay_screens_load
                       ),
             char_mask = 5
         ),
@@ -7628,6 +7612,47 @@ init 9999 python:
         sdl_repl_Label(
             "Обед",
             sdl_Replay("alt_day4_me_neu_dinner", {"alt_replay_on" : "True"}, func_in = day_interface_on, func_out = replay_screens_load)
+        ),
+        sdl_repl_Label(
+            "Помощь Санычу",
+            sdl_Replay(
+                        "alt_day4_me_neu_sport", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_b_d2_mi_snap
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Помощь Мику",
+            sdl_Replay(
+                        "alt_day4_me_neu_music", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_e_d4_me_neu_date
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Помощь Жене",
+            sdl_Replay(
+                        "alt_day4_me_neu_nwsppr", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_e_d4_me_neu_date,
+                                    sdl_var_b_d3_un_fz_transit
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Помощь Кибернетикам",
+            sdl_Replay(
+                        "alt_day4_me_neu_cyber", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_b_d3_me_tec2
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
         ),
         sdl_repl_Label(
             "Побег",
@@ -8411,6 +8436,427 @@ init 9999 python:
                       )
         )
     ]
+    #### 6 День
+    sdl_repl_array_me_neu_day6 = [
+        sdl_repl_Label(
+            "Дежурный. Пробуждение",
+            sdl_Replay(
+                        "alt_day6_me_neu_begin_duty", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_i_mt_7dl,
+                                    sdl_var_i_us_lpp,
+                                    sdl_var_b_d3_me_duty
+                                ],
+                        func_in = sunset_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Пробуждение",
+            sdl_Replay(
+                        "alt_day6_me_neu_begin", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_e_d5_me_neu_mapi
+                                ],
+                        func_in = sunset_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Завтрак с Алисой",
+            sdl_Replay(
+                        "alt_day6_me_neu_breakfast_dv", {"alt_replay_on" : "True"},
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Завтрак",
+            sdl_Replay(
+                        "alt_day6_me_neu_breakfast", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_e_d5_me_neu_mapi,
+                                    sdl_var_l_d2_club,
+                                    sdl_var_b_d5_me_neu_cs_debt
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Завтрак. Дежурство",
+            sdl_Replay(
+                        "alt_day6_me_neu_breakfast_duty", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_b_d6_me_neu_mt_help
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "После завтрака",
+            sdl_Replay(
+                        "alt_day6_me_neu_after_breakfast", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_l_d2_club
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Месть Алисы",
+            sdl_Replay(
+                        "alt_day6_me_neu_dv_revenge", {"alt_replay_on" : "True"},
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Рандеву с вожатой",
+            sdl_Replay(
+                        "alt_day6_me_neu_mt_help", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_l_d2_club,
+                                    sdl_var_i_mt_7dl
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Дни минувшего прошлого",
+            sdl_Replay(
+                        "alt_day6_me_neu_nwsppr", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_b_d4_me_neu_mz_news,
+                                    sdl_var_i_me_neu_answ,
+                                    sdl_var_i_sl_lpp,
+                                    sdl_var_e_d1_sl_key
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "В глубине души твоей",
+            sdl_Replay(
+                        "alt_day6_me_neu_nwsppr_mz", {"alt_replay_on" : "True"},
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Приключения Электроника",
+            sdl_Replay(
+                        "alt_day6_me_neu_cyber", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_b_d5_me_neu_cybr,
+                                    sdl_var_e_d5_me_neu_mapi,
+                                    sdl_var_i_mi_lpp,
+                                    sdl_var_i_dv_lpp,
+                                    sdl_var_i_sl_lpp,
+                                    sdl_var_i_un_lpp,
+                                    sdl_var_i_us_lpp,
+                                    sdl_var_i_mt_7dl
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "День физкультурника",
+            sdl_Replay(
+                        "alt_day6_me_neu_sport", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_b_d4_me_neu_ba_duty,
+                                    sdl_var_b_d5_me_neu_sprt,
+                                    sdl_var_e_d5_me_neu_mapi
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Музыкальная пауза",
+            sdl_Replay(
+                        "alt_day6_me_neu_music", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_b_d4_me_neu_mi_club,
+                                    sdl_var_i_mi_lpp
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Вопрос с подвохом",
+            sdl_Replay(
+                        "alt_day6_me_neu_viola_duty", {"alt_replay_on" : "True"},
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Под водой",
+            sdl_Replay(
+                        "alt_day6_me_neu_beach", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_b_d5_me_neu_cs_debt,
+                                    sdl_var_e_d5_me_neu_mapi
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Обед. Дежурство",
+            sdl_Replay(
+                        "alt_day6_me_neu_duty", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_i_mz_7dl,
+                                    sdl_var_e_d5_me_neu_mapi
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Обед",
+            sdl_Replay(
+                        "alt_day6_me_neu_lunch", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_e_d5_me_neu_mapi
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Карта. Домик рыжих",
+            sdl_Replay(
+                        "alt_day6_me_neu_map_house_dv1", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_i_dv_lpp,
+                                    sdl_var_i_us_lpp,
+                                    sdl_var_e_d5_me_neu_mapi,
+                                    sdl_var_b_d6_me_neu_dv_reve,
+                                    sdl_var_b_d4_me_neu_cs_debt,
+                                    sdl_var_e_d6_me_neu_danc
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Карта. Музклуб",
+            sdl_Replay(
+                        "alt_day6_me_neu_map_musclub", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_b_d6_me_neu_mi_club,
+                                    sdl_var_i_mi_lpp
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Карта. Склад",
+            sdl_Replay(
+                        "alt_day6_me_neu_map_shed", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_e_d6_me_neu_nwsp,
+                                    sdl_var_e_d1_sl_key,
+                                    sdl_var_b_d4_me_neu_voll,
+                                    sdl_var_i_sl_lpp,
+                                    sdl_var_i_sl_clt,
+                                    sdl_var_i_sl_7dl
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Карта. Свой домик",
+            sdl_Replay(
+                        "alt_day6_me_neu_map_mt_house", {"alt_replay_on" : "True"},
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Приглашение Ольги",
+            sdl_Replay(
+                        "alt_day6_me_neu_mt_invite", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_e_d5_me_neu_mapi
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Полдник",
+            sdl_Replay(
+                        "alt_day6_me_neu_afternoon", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_e_d5_me_neu_mapi
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Возле столовой",
+            sdl_Replay(
+                        "alt_day6_me_neu_concert", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_i_un_lpp,
+                                    sdl_var_e_d6_me_neu_danc
+                                ],
+                        func_in = day_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Инспекция",
+            sdl_Replay(
+                        "alt_day6_me_neu_inspection", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_i_mz_7dl,
+                                    sdl_var_e_d6_me_neu_danc
+                                ],
+                        func_in = sunset_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Побег",
+            sdl_Replay(
+                        "alt_day6_me_neu_un_escape", {"alt_replay_on" : "True"},
+                        func_in = sunset_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Ужин",
+            sdl_Replay(
+                        "alt_day6_me_neu_dinner", {"alt_replay_on" : "True"},
+                        func_in = sunset_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Общий сбор",
+            sdl_Replay(
+                        "alt_day6_me_after_dinner", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_e_d6_me_neu_danc,
+                                    sdl_var_b_d6_me_neu_un_esca
+                                ],
+                        func_in = sunset_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Дискотека",
+            sdl_Replay(
+                        "alt_day6_me_neu_dance", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_e_d6_me_neu_danc
+                                ],
+                        func_in = night_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "ЧП",
+            sdl_Replay(
+                        "alt_day6_me_neu_un_dance", {"alt_replay_on" : "True"},
+                        func_in = night_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Танец с Мику",
+            sdl_Replay(
+                        "alt_day6_me_neu_mi_dance", {"alt_replay_on" : "True"},
+                        func_in = night_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Вечер с Алисой",
+            sdl_Replay(
+                        "alt_day6_me_neu_dv_dance", {"alt_replay_on" : "True"},
+                        func_in = night_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Пират",
+            sdl_Replay(
+                        "alt_day6_me_neu_sl_dance", {"alt_replay_on" : "True"},
+                        func_in = night_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Сбежавшая вожатая",
+            sdl_Replay(
+                        "alt_day6_me_neu_mt_dance", {"alt_replay_on" : "True"},
+                        func_in = night_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Танец с Ульяной",
+            sdl_Replay(
+                        "alt_day6_me_neu_us_danсe", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_b_d5_me_neu_cs_debt
+                                ],
+                        func_in = night_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Дискотека с Женей",
+            sdl_Replay(
+                        "alt_day6_me_neu_mz_danсe", {"alt_replay_on" : "True"},
+                        func_in = night_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Вечер с Кибернетиками",
+            sdl_Replay(
+                        "alt_day6_me_neu_el_dance", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_b_d3_me_tec2,
+                                    sdl_var_e_d3_dj
+                                ],
+                        func_in = night_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Танец с Катюшкой",
+            sdl_Replay(
+                        "alt_day6_me_neu_ka_danсe", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_b_d4_me_neu_cs_debt
+                                ],
+                        func_in = night_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Отмена свечки",
+            sdl_Replay(
+                        "alt_day6_me_neu_no_candle", {"alt_replay_on" : "True"},
+                        func_in = night_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Свечка",
+            sdl_Replay(
+                        "alt_day6_me_neu_candle", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_e_d6_me_neu_danc,
+                                    sdl_var_i_mt_7dl,
+                                    sdl_var_i_us_7dl,
+                                    sdl_var_i_mz_7dl,
+                                    sdl_var_i_mi_lpp,
+                                    sdl_var_i_dv_lpp,
+                                    sdl_var_i_sl_lpp,
+                                    sdl_var_i_un_lpp,
+                                    sdl_var_b_d4_me_neu_us_debt,
+                                    sdl_var_b_d5_me_neu_cybr,
+                                    sdl_var_b_d6_me_neu_cybr,
+                                    sdl_var_b_d6_me_neu_mt_help
+                                ],
+                        func_in = night_interface_on, func_out = replay_screens_load
+                      )
+        ),
+        sdl_repl_Label(
+            "Отбой",
+            sdl_Replay(
+                        "alt_day6_me_neu_sleeptime", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_e_d6_me_neu_danc,
+                                    sdl_var_i_mz_7dl,
+                                    sdl_var_b_d4_me_neu_us_debt,
+                                    sdl_var_b_d5_me_neu_cybr,
+                                    sdl_var_b_d6_me_neu_cybr
+                                ],
+                        func_in = night_interface_on, func_out = replay_screens_load
+                      )
+        ),
+    ]
 
     sdl_repl_label_frozen = [
                              ]
@@ -8551,9 +8997,11 @@ init 9999 python:
     ### Одиночка
     sdl_repl_me_neu_day4 = sdl_repl_Day("День 4", sdl_repl_array_me_neu_day4)
     sdl_repl_me_neu_day5 = sdl_repl_Day("День 5", sdl_repl_array_me_neu_day5)
+    sdl_repl_me_neu_day6 = sdl_repl_Day("День 6", sdl_repl_array_me_neu_day6)
     sdl_repl_me_neu_days = [
         sdl_repl_me_neu_day4,
-        sdl_repl_me_neu_day5
+        sdl_repl_me_neu_day5,
+        sdl_repl_me_neu_day6
     ]
 
     # Руты | Разделы

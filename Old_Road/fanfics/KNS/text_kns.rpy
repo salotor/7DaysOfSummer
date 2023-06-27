@@ -567,7 +567,7 @@ label kns_start:
     "Не знаю, что снится ей, а вот мне…"
 
     play music music_kns["road_to_the_past"] fadein 2
-    scene bg int_sam_room_7dl
+    scene bg int_semen_room_7dl
     show prologue_dream
     with dissolve
 
@@ -1067,7 +1067,7 @@ label kns_start:
     me "Не можем не справиться. Мы же сильные."
     me "А для начала давай приберёмся здесь?"
 
-    scene bg int_sam_house_clean_7dl with dissolve
+    scene bg int_semen_room_clean_7dl with dissolve
 
     "А утром раздаётся звонок от менеджера магазина, где я так долго работал охранником."
     "Суд признал обвинения в сторону торговой сети ложными, а подосланные к нам инспектора и вовсе оказались переодетыми мошенниками, оборотням в погонах, которые теперь находятся в розыске."
@@ -1172,4 +1172,7 @@ label kns_start:
     "Я верю в это. И никогда не забуду. Буду ждать тебя."
     "Твоя Маха."
     $ set_mode_adv()
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

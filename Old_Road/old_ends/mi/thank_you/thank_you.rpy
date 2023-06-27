@@ -38,12 +38,12 @@ label alt_day7_mi_7dl_reject:
     "Но пройдёт ещё немного времени, и всё станет правильно."
     "Я, наконец, забуду."
     scene
-    $ renpy.show("cg d6_mi_vyluthere_7dl", what = SS_com("cg d6_mi_vyluthere_7dl"))
+    $ renpy.show("cg d6_mi_grass_7dl", what = SS_com("cg d6_mi_grass_7dl"))
     show anim_grain
     play sound sfx_7dl["white_noise"]
     pause(1)
     scene
-    $ renpy.show("cg d6_mi_vyluthere_7dl", what = SS_com("cg d6_mi_vyluthere_7dl"))
+    $ renpy.show("cg d6_mi_grass_7dl", what = SS_com("cg d6_mi_grass_7dl"))
     show anim_grain
     play sound sfx_7dl["white_noise"]
     scene white with flash
@@ -122,7 +122,7 @@ label alt_day7_mi_7dl_reject:
     mi "{i}Что?{/i}"
     me "{i}Не вырастет.{/i}"
     scene
-    $ renpy.show("cg d2_mi_me_polaroid_7dl", what = Desat("cg d2_mi_me_polaroid_7dl"))
+    $ renpy.show("cg d2_mi_polaroid_7dl", what = Desat("cg d2_mi_polaroid_7dl"))
     show anim_grain
     with flash
     "Ещё один пластиковый контейнер встаёт в стойку и начинает еле слышно гудеть."
@@ -133,12 +133,12 @@ label alt_day7_mi_7dl_reject:
     me "{i}Что?{/i}"
     mi "{i}Можно… мы… будем играть вместе? С этой маленькой девочкой.{/i}"
     "Ничего не ответив, Сеня-сан садится перед девочкой на корточки и порывисто обнимает её."
-    scene cg d2_mi_me_polaroid_7dl
+    scene cg d2_mi_polaroid_7dl
     show anim_grain
     with blinds_r
     "Память раскручивается всё стремительнее, стенки коридора, сквозь который падает девочка, слились в единый бирюзово-голубой фон."
     scene
-    $ renpy.show("cg d2_mi_me_polaroid_7dl", at_list = [sdl_transform7], what = SS_com("cg d2_mi_me_polaroid_7dl"))
+    $ renpy.show("cg d2_mi_polaroid_7dl", at_list = [sdl_transform7], what = SS_com("cg d2_mi_polaroid_7dl"))
     show anim_grain
     mi "{i}Сень, а Сень.{/i}"
     me "{i}Ну?{/i}"
@@ -174,7 +174,7 @@ label alt_day7_mi_7dl_reject:
     mi "{i}Слышу, Сенечка.{/i}"
     "Он уже не «сан» и даже не «сэмпай»."
     "Он Сенечка, Сеня. Иногда — Сенька."
-    scene cg d4_mi_dj_dancing_7dl
+    scene cg d4_mi_moon_dancing_7dl
     show anim_grain
     with fade
     "И наврал."
@@ -204,7 +204,7 @@ label alt_day7_mi_7dl_reject:
     "Проверила ещё раз базы данных — несколько кластеров вышли из строя, но запасных винчестеров хватало."
     "Проверила системы жизнеобеспечения — на поверхности бушевал радиоактивный шторм, и системы очистки воздуха трудились вовсю."
     "Всё шло в штатном режиме."
-    scene cg d7_frozen_7dl with dissolve
+    scene cg d7_me_frozen_7dl with dissolve
     "Сенька был не в духе."
     "Он таращил на неё свои мёрзлые глаза и молчал."
     "Как и последние триста лет."
@@ -231,4 +231,7 @@ label alt_day7_mi_7dl_reject:
     show acm_logo_mi_7dl_reject with moveinright:
         pos (1600, 1020)
     pause(7.4)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

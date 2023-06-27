@@ -9,19 +9,6 @@
     show spill_red with dspr
     $ renpy.pause(2)
     show spill_gray with dspr
-    $ renpy.pause(2)
-    if persistent.mi_7dl_good_human or persistent.mi_7dl_good_star:
-        show acm_m
-    if persistent.dv_7dl_good_ussr:
-        show acm_a
-    if persistent.sl_7dl_loki_good or persistent.sl_7dl_herc_good or persistent.sl_7dl_dr_good:
-        show acm_s
-    if persistent.un_7dl_good_ussr:
-        show acm_l
-    if persistent.mt_7dl_good:
-        show acm_o
-    if persistent.us_7dl_good:
-        show acm_u
     with dissolve2
     $ renpy.pause(3)
     scene black with fade2

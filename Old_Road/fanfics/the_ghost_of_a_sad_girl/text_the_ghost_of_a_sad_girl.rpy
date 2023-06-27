@@ -332,4 +332,7 @@ label the_ghost_of_a_sad_girl:
     "Я нащупала в кармане отобранные «Тамагочи». Ни один из подопечных не подошёл и не попросил вернуть игрушку."
     "Улыбка сама по себе появилась на моём лице."
     us "Я не против. Эта работа… навевает воспоминания."
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

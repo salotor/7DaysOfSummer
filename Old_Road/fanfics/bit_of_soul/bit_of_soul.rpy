@@ -289,4 +289,7 @@ label alt_bit_of_soul:
     with vpunch
     call alt_7dl_titles
     pause(3)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

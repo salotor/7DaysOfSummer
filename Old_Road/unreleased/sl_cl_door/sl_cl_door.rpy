@@ -19,7 +19,7 @@ label alt_day7_sl_cl_square1:
     play sound sfx_metal_door_heavy_close
     pause(1)
     $ night_time()
-    scene bg int_hence_day_7dl
+    scene bg int_mine_exit_day_7dl
     "Прикрыв решётку за собой, я ступил на скобы."
     play ambience ambience_catacombs fadein 3
     "Снизу мгновенно подуло прохладным ветром, забирающимся под одежду."
@@ -59,7 +59,7 @@ label alt_day7_sl_cl_square1:
         "Осенив себя крестным знамением, я сделал свой первый шаг в неизвестность."
         stop music fadeout 3
         scene black with fade
-        play ambience music_7dl["ambience_safe"]
+        play music music_7dl["ambience_safe"]
         "Странное чувство — будто я хожу по самому краю — то самое, что было у меня только тогда, когда я оттаскивал Славю за шиворот от того злополучного тумана."
         "Но в этот раз оно не в пример сильнее."
         "Туннель немного петлял, однако я был начеку и вовремя выставлял ладони перед собой."
@@ -121,7 +121,10 @@ label alt_day7_sl_cl_square1:
             stop music fadeout 3
             stop ambience fadeout 6
             with fade
-            jump alt_stories_start
+            if not persistent.pivo_default_7dl:
+                jump alt_stories_start
+            else:
+                return
         else:
             if (persistent.mi_7dl_good_human or persistent.mi_7dl_good_star) or persistent.dv_7dl_good_ussr or (persistent.sl_7dl_loki_good or persistent.sl_7dl_herc_good or persistent.sl_7dl_dr_good) or persistent.un_7dl_good_ussr or persistent.mt_7dl_good or persistent.us_7dl_good:
                 "Немного посверкав и посияв, символы погасли."
@@ -151,4 +154,7 @@ label alt_day7_sl_cl_square1:
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

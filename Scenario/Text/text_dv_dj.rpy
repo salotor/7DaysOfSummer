@@ -242,7 +242,7 @@ label alt_day4_dv_dj_breakfast:
             me "А с кем ты тут обычно общаешься, если не секрет?"
             show un surprise pioneer with dissolve
             "Лена удивлённо взглянула на меня."
-            un "Да так… Со всеми по-немногу."
+            un "Да так… Со всеми понемногу."
             show un normal2 pioneer with dissolve
             un "А почему ты спрашиваешь?"
             th "А действительно, почему?"
@@ -402,11 +402,11 @@ label alt_day4_dv_dj_alise_free:
     "Ободрав ладонями почти всю краску с оконной рамы, я всё же обнаружил тонюсенький просвет между шторой и стеной."
     th "Ага! Вижу что-то рыжее…"
     "Если зрение меня не подвело, то Алиса лежала на самой дальней от окна кровати, отвернувшись лицом к стене."
-    $ volume(0.2, "sound")
+    $ renpy.music.set_volume(0.2, delay=2, channel='sound')
     play sound sfx_knock_glass
     extend " Я тихонько постучал пальцами по стеклу."
     "Ноль реакции."
-    $ volume(1.0, "sound")
+    $ renpy.music.set_volume(1.0, delay=2, channel='sound')
     play sound sfx_knock_glass
     "Во второй раз я постучал настойчивее. Ничего нового – всё то же отсутствие хоть каких-либо действий по ту сторону стекла."
     me "Да она там дрыхнет, что ли?"
@@ -541,7 +541,7 @@ label alt_day4_dv_dj_alise_free:
     play sound sfx_7dl["blanket"] fadein 0
     with vpunch
     hide dv
-    scene cg d4_dv_alise_falls_7dl
+    scene cg d4_dv_falls_7dl
     with dissolve
 
     "Успела крикнуть она, прежде чем мы с грохотом упали на кровать."
@@ -722,7 +722,7 @@ label alt_day4_dv_dj_radio_event:
     play sound sfx_open_door_clubs_nextroom
     scene bg int_clubs_male2_night
     show dv normal pioneer2 with dspr
-    $ volume(0.2, 'ambience')
+    $ renpy.music.set_volume(0.2, delay=2, channel='ambience')
     "Двачевская уже распахнула дверь."
     me "…плохо."
     "Вся комнатушка-конура была завалена разного рода барахлом, которое то ли не поместилось на складе, то ли его поленились туда донести."
@@ -754,7 +754,7 @@ label alt_day4_dv_dj_radio_event:
         dv "Готово!"
     "Она покрутила регулятор громкости."
     dv "Сходи-ка проверь, заработало?"
-    $ volume(2.0, "music")
+    $ renpy.music.set_volume(2.0, delay=2, channel='music')
     play music music_7dl["hurricane"]
     "И без всякого предупреждения включила первый попавшийся трек!"
     th "Армагеддон настал."
@@ -763,7 +763,7 @@ label alt_day4_dv_dj_radio_event:
     "Умоляюще закричал я."
     me "Ты вышибешь во всём лагере стёкла!"
     show dv laugh pioneer2 with dissolve
-    $ volume(0.7, "music")
+    $ renpy.music.set_volume(0.7, delay=2, channel='music')
     "Двачевская убавила громкость в половину, радостно хихикая."
     dv "Ой."
     dv "Я и не знала, что будет так мощно!"
@@ -807,7 +807,7 @@ label alt_day4_dv_dj_radio_event:
     th "Многовато, конечно, но до обеда мы теперь совершенно свободны."
     th "А сколько до него, кстати?"
     show dv tired pioneer2 close with dissolve
-    $ volume(1.0, "music")
+    $ renpy.music.set_volume(1.0, delay=2, channel='music')
     play music music_7dl["yume_akari"] fadein 3
     "С мысли меня сбил очередной зевок Алисы."
     me "Позволь поинтересоваться: чем ты занималась всю ночь, если даже сейчас ты клюёшь носом?"
@@ -877,7 +877,7 @@ label alt_day4_dv_dj_radio_event:
             dreamgirl "Регулярная смена поз – это хорошо!"
             dreamgirl "Вносит, так сказать, разнообразие в процесс…"
             show dv angry pioneer2 with dissolve
-            play music music_7dl["what_am_i_doing_here"] fadein 3
+            play music music_7dl["red_hurricane_guitar"] fadein 3
             dv "Ну ты и идиот."
             "Фыркнула Алиса, поднимаясь с меня."
             "В процессе она – нарочно, я был уверен в этом! – больно пнула меня коленом по животу."
@@ -920,6 +920,7 @@ label alt_day4_dv_dj_radio_event:
             dv "Не отставай, тормоз!"
         "Спросить о музыке":
             $ alt_pause(1)
+            play music music_7dl["red_hurricane_guitar"] fadein 3
             me "И что же, как тебе, понравились песенки?"
             "Как можно более нейтральным голосом поинтересовался я, силясь не выдать своего любопытства в полной мере."
             dv "Нормально."
@@ -990,7 +991,7 @@ label alt_day4_dv_dj_radio_event:
             dv "Ладно, потом найду! Пошли уже жрать."
             hide dv with MoveTransition(1.5, leave=offscreenleft)
             "Она сунула плеер в карман и вышла, не оставляя мне ничего, кроме как следовать за ней."
-    $ volume(1.0, 'ambience')
+    $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
     stop music fadeout 3
     stop ambience fadeout 3
     return
@@ -1455,21 +1456,21 @@ label alt_day4_dv_dj_silent_hour:
     scene bg int_clubs_dj_7dl
     show dv tired pioneer2 close
     with fade
-    $ volume(0.7, "music")
+    $ renpy.music.set_volume(0.7, delay=2, channel='music')
     "Нашими совместными усилиями каморка наконец-то приобрела человеческий вид."
     th "Не самая крутая радиостанция в мире, конечно, но теперь тут можно хотя бы поворачиваться спокойно, не боясь что-то свалить или обо что-то споткнуться."
     if alt_day4_dv_dj_radio_scoff:
         "Провода я благоразумно спрятал под столом, памятуя об утреннем инциденте."
     th "Неплохо бы тут ещё и подмести, но моральных сил на это уже не осталось. У моей напарницы, полагаю, тоже."
     stop music fadeout 3
-    $ volume(0.5, "sound")
+    $ renpy.music.set_volume(0.5, delay=2, channel='sound')
     play sound sfx_7dl["eat_horn"] fadein 3
-    $ volume(1.0, "music")
+    $ renpy.music.set_volume(1.0, delay=2, channel='music')
     "Стоило мне только откинуться на стуле и облегчённо вздохнуть, как с крыши над нашими головами послышался сигнал горна."
     show dv smile pioneer2 close with dissolve
     "Лицо Алисы просияло."
     dv "Я уж думала, что тихий час сегодня будет бесконечным!"
-    $ volume(1.0, "sound")
+    $ renpy.music.set_volume(1.0, delay=2, channel='sound')
     show dv smile pioneer2 with dissolve
     hide dv with moveoutleft
     "Радостно вскочив, она помчалась к двери, даже не оборачиваясь ко мне. Я усмехнулся, поднимаясь следом."
@@ -1665,7 +1666,7 @@ label alt_day4_dv_dj_concert:
     "Я же опустился на скамейку рядом с активисткой."
     show sl dontlike pioneer close at right with dissolve
     play music music_7dl["unforgotten"] fadein 5
-    $ volume(0.8, "music")
+    $ renpy.music.set_volume(0.8, delay=2, channel='music')
     sl "А ты не видел Алису?"
     me "Пересеклись недавно."
     "Пробормотал я, потирая колено."
@@ -1699,7 +1700,7 @@ label alt_day4_dv_dj_concert:
     show sl sad pioneer close at right with dissolve
     stop music fadeout 5
     "Славя опустила глаза."
-    $ volume(1.0, "music")
+    $ renpy.music.set_volume(1.0, delay=2, channel='music')
     sl "Извини."
     hide sl with dissolve
     "На этом я решил, что разговор наш исчерпан, и молча уставился на сцену."
@@ -1708,7 +1709,7 @@ label alt_day4_dv_dj_concert:
     "Удивиться можно было разве что тому, насколько профессионально ведёт концерт Мику. Номера детей же оставляли желать лучшего."
     "Я уже начал было клевать носом, когда меня вернул к реальности задорный голос ведущей:"
     mi "А сейчас для вас выступает Алиса Двачевская, первый отряд!"
-    $ volume(0.7, "sound")
+    $ renpy.music.set_volume(0.7, delay=2, channel='sound')
     play sound sfx_7dl["applause_someone"] fadein 1
     "Немного оживившись, я присоединился к негромким аплодисментам."
     stop sound fadeout 3
@@ -1743,7 +1744,7 @@ label alt_day4_dv_dj_concert:
     th "А эта музыка ей так подходит…"
     stop sound fadeout 3
     "Но всё же что-то внутри не давало мне в полной мере насладиться выступлением рыжей. Я как будто чувствовал фальшь."
-    $ volume(1.0, "sound")
+    $ renpy.music.set_volume(1.0, delay=2, channel='sound')
     "Пусть и хорошо, пусть и талантливо, но играла она абсолютно не от души. Не было в этом никакой жизни, которую я так ожидал услышать."
     th "Может, она хотела исполнить что-то другое, но Ольга не позволила?"
     th "Но ведь и «Пикник» она явно разучивала не в музыкальной школе!"
@@ -2094,7 +2095,7 @@ label alt_day4_dv_dj_us_search:
         zoom 1.3
     show us upset sport at cright
     with dissolve
-    play music music_7dl["fatest"] fadein 3
+    play music "<to 193.5>" + music_7dl["fatest"] fadein 3
     "Мелкая свернулась калачиком в куче какого-то тряпья в углу, словно свив себе из него гнездо. С виду это напоминало старые одеяла – наверняка стащенные со склада."
     dv "Ульяна?"
     us "А?"
@@ -2277,7 +2278,7 @@ label alt_day4_dv_dj_date_on_the_beach:
     dv "То есть, ты не склонен к предрассудкам?"
     me "Абсолютно не склонен."
     show dv normal pioneer close at cleft with dissolve
-    $ volume(0, "music")
+    $ renpy.music.set_volume(0, delay=2, channel='music')
     dv "Я детдомовская."
     show dv sad pioneer close at cleft with dissolve
     $ alt_pause(0.3)
@@ -2287,7 +2288,7 @@ label alt_day4_dv_dj_date_on_the_beach:
     $ alt_pause(0.5)
     show dv normal pioneer close at cleft with dissolve
     "Она выпалила это так резко, что я опешил."
-    $ volume(1.0, "music")
+    $ renpy.music.set_volume(1.0, delay=2, channel='music')
     th "Так вот что это всё значит!"
     th "Именно об этом говорил с утра Сыроежкин!"
     th "Я ведь мог догадаться и раньше – по обрывкам фраз, по повадкам…"
@@ -2355,7 +2356,7 @@ label alt_day4_dv_dj_date_on_the_beach:
     "Перебил я Алису."
     stop music fadeout 1
     me "Тут же все домики одноэтажные! Да и штырей на заборе нет."
-    $ volume(0.6, "music")
+    $ renpy.music.set_volume(0.6, delay=2, channel='music')
     play music "<from 15.0>" + music_7dl["time_lapse"] fadein 5
     show dv sad pioneer close at cleft with dissolve
     "Девочка осеклась, и брови её поползли к переносице."
@@ -2380,7 +2381,7 @@ label alt_day4_dv_dj_date_on_the_beach:
     th "Не любит вспоминать вещи, связанные с детским домом?"
     dreamgirl "Или не любит, когда её подлавливают на чём-то."
     th "Да на чём?"
-    $ volume(1.0, "music")
+    $ renpy.music.set_volume(1.0, delay=2, channel='music')
     stop music fadeout 3
     stop ambience fadeout 3
     $ renpy.show("bg ext_path_night", what = Dawn("bg ext_path_night"))
@@ -2527,7 +2528,7 @@ label alt_day4_dv_dj_sleeptime:
 
 label alt_day5_dv_dj_morning:
     scene black with dissolve
-    $ volume(0.5, 'ambience')
+    $ renpy.music.set_volume(0.5, delay=2, channel='ambience')
     play ambience ambience_7dl["rain"] fadein 4
     th "Как же я ненавижу вставать с кровати, когда за окном хлещет дождь…"
     th "В такую погоду можно либо сладко спать, либо бесцельно пялиться в окно на то, как крыши высоток прячутся за серой завесой из крошечных капель. Третьего не дано."
@@ -2565,7 +2566,7 @@ label alt_day5_dv_dj_morning:
         dreamgirl "Смеёшься, что ли? Напомнить, сколько раз ты пытался приучить себя выполнять самые простые действия, и чем это обычно заканчивалось?"
     th "Тебя-то мне только не хватало…"
     play sound sfx_open_door_1
-    $ volume(1.0, 'ambience')
+    $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
     scene bg ext_house_of_mt_rain_7dl with dissolve
     $ alt_pause(0.6)
     play sound sfx_close_door_1
@@ -2746,7 +2747,7 @@ label alt_day5_dv_dj_breakfast:
 label alt_day5_dv_dj_dvachcast:
     scene bg int_clubs_male_rain_7dl with dissolve
     play music music_7dl["carefree"] fadein 3
-    $ volume(0.5, 'ambience')
+    $ renpy.music.set_volume(0.5, delay=2, channel='ambience')
     play ambience ambience_7dl["rain"] fadein 1
     "Скинув дождевики на стол, мы направились в радиорубку."
     play sound sfx_open_door_clubs_nextroom
@@ -3631,7 +3632,7 @@ label alt_day5_dv_dj_dvachcast:
     with dspr
     "Я рассмеялся, ловя на себе недоумённые взгляды Мику и Электроника."
     me "Идёмте есть, пока Шляпе не пришло в голову оставить нас без обеда в качестве наказания!"
-    $ volume(1.0, 'ambience')
+    $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
     stop music fadeout 3
     return
 
@@ -4373,7 +4374,7 @@ label alt_day5_dv_dj_map_musclub1:
     "{i}И этого не превзойти, не избежать.{/i}"
     nvl clear
     $ alt_pause(1)
-    scene cg d5_dv_dream_7dl with fulldiam
+    scene cg d5_dream_7dl with fulldiam
     show prologue_dream
     "Я вижу разрушенное кладбище под разрушенным небом, точно шахматная доска, на которой играл свою жестокую партию Бог, перевернулась наземь."
     "И по обломкам этой доски с пушкой наперевес, идёт Мику в развевающемся чёрном плаще."
@@ -4751,7 +4752,7 @@ label alt_day5_dv_dj_afternoon:
     th "Так и до генерала к концу смены дослужусь…"
     dreamgirl "Размечтался! У него свои дети есть."
     show us laugh sport at right with dissolve
-    us "Есть, гражданначальник!"
+    us "Есть, гражнинначальник!"
     hide us with moveoutleft
     "Откланявшись, Ульяна пулей выскочила из столовой."
     show dv angry pioneer at cleft with dissolve
@@ -4771,7 +4772,7 @@ label alt_day5_dv_dj_afternoon:
     me "Куда же без этого."
     "Пробормотал я."
     mt "Я бы очень хотела, чтобы во время эфира вы исполнили несколько песен в живую, под гитару. Какие-нибудь самые простые, походные – Алиса точно такие знает."
-    mt "Надо освежить тексты в памяти младших отрядах, а также хотя бы дать послушать эти песни тем, кто приехал в лагерь впервые."
+    mt "Надо освежить тексты в памяти младших отрядов, а также хотя бы дать послушать эти песни тем, кто приехал в лагерь впервые."
     th "Много чести для них будет!"
     th "Вот приедут во второй раз – от зубов отлетать будет. Сейчас-то чего из-за них беспокоиться?"
     mt "Задачу поняли?"
@@ -4832,7 +4833,7 @@ label alt_day5_dv_dj_radio_broadcast:
     "Алиса вовсю занималась настройкой аппаратуры, пока я топтался в углу, сжимая в руках гитару."
     me "Что будешь исполнять, массовик-затейник?"
     stop ambience fadeout 3
-    play music music_7dl["lastlight_guitar"] fadein 3
+    play music music_7dl["red_hurricane_guitar"] fadein 3
     show dv tired pioneer2 with dissolve
     "Включив музыку, девочка устало откинулась на стуле, сверля глазами потолок."
     dv "Не знаю. Ничего в голову не приходит."
@@ -5082,7 +5083,7 @@ label alt_day5_dv_dj_radio_broadcast:
     dreamgirl "В нашем тормозе всё это время дремал Дон Жуан провинциального разлива?"
     th "Питер это вторая столица!"
     stop music fadeout 2
-    $ volume(0.5, "sound")
+    $ renpy.music.set_volume(0.5, delay=2, channel='sound')
     play sound sfx_7dl["eat_horn"] fadein 3
     "Контроль над ситуацией был упущен: взгляд Алисы резко из растерянного стал настороженным. А пару секунд спустя затрубил горн, призывая пионеров к последней на сегодня трапезе."
     hide dv
@@ -5090,7 +5091,7 @@ label alt_day5_dv_dj_radio_broadcast:
     play music music_list["goodbye_home_shores"] fadein 3
     "Без особых усилий высвободившись из моей хватки, девочка с невозмутимым лицом принялась отключать аппаратуру."
     th "И какого лешего ты вечно появляешься так не вовремя?"
-    $ volume(1.0, "sound")
+    $ renpy.music.set_volume(1.0, delay=2, channel='sound')
     dreamgirl "Кто же виноват, что малая родина тебе интереснее девочек?"
     me "Придумала отмазку для Шляпы?"
     show dv smile pioneer2 with dissolve
@@ -5337,7 +5338,7 @@ label alt_day5_dv_dj_dinner:
             show dv smile pioneer with dissolve
             dv "Астма. Аллергия."
             $ alt_pause(3.0)
-            $ volume(0.75, "music")
+            $ renpy.music.set_volume(0.75, delay=2, channel='music')
             show sl scared pioneer at right with dissolve
             th "Если бы я знал, что всего лишь двумя словами возможно так качественно заткнуть человека…"
             "Активистка, казалось, задохнулась, подавившись застрявшими в горле претензиями."
@@ -5361,7 +5362,7 @@ label alt_day5_dv_dj_dinner:
             dv "А ты её круто приложил – я ничего умнее аллергии не вспомнила."
             stop music fadeout 3
             "В голосе Алисы слышалось уважение, что легло приятным бальзамом на мою слегка засаднившую совесть."
-            $ volume(1.0, "music")
+            $ renpy.music.set_volume(1.0, delay=2, channel='music')
             me "Найти опасность можно в чём угодно, даже в самых безобидных с виду вещах. А уж надавить на девочку, у которой и без того за душой не чисто – задачка пустяковая."
             me "Она бы пошла сдаваться с повинной, даже если бы самой страшной перспективой было напугать лаем кого-то из детей, отправившихся ночью по нужде."
             dv "Даже жалко, что она так быстро сдалась. Могла бы и поторговаться, в конце концов!"
@@ -5576,14 +5577,14 @@ label alt_day5_dv_dj_campfire:
     us "А подслушивать нехорошо!"
     $ renpy.show("bg ext_backroad_sunset_7dl", what = Desat("bg ext_backroad_sunset_7dl"))
     with dissolve
-    $ volume(0.3, "music")
+    $ renpy.music.set_volume(0.3, delay=2, channel='music')
     "В мгновение ока все окружающие затихли. Любопытные взгляды сзади я буквально ощущал лопатками."
     show mi surprise pioneer at right with dissolve
     mi "А кто подслушивает?"
     show dv concent pioneer at cleft with dissolve
     "Мику обернулась, вытаращив глаза, и принялась выискивать потенциального шпиона где-то за моей спиной. Алиса со звонким хлопком уронила лицо в ладони."
     "Из-за нашей заминки движение резко прекратилось, и тишину начал заполнять недовольный гул младших пионеров."
-    $ volume(1.0, "music")
+    $ renpy.music.set_volume(1.0, delay=2, channel='music')
     show dv angry pioneer at left with dissolve
     show bg ext_backroad_sunset_7dl with dissolve
     dv "И что ты устроила?"
@@ -5654,7 +5655,7 @@ label alt_day5_dv_dj_campfire:
         me "Сто лет таким не занимался, так что ничего не обещаю…"
     else:
         me "Да я, знаете, парень городской…"
-    play music music_7dl["fatest"] fadein 3
+    play music "<to 193.5>" + music_7dl["fatest"] fadein 3
     show mt normal pioneer with dissolve
     "Ольга махнула рукой."
     mt "Ну и мужчины пошли нынче! Славя!"
@@ -5890,7 +5891,7 @@ label alt_day5_dv_dj_campfire:
     show dv normal pioneer
     with dissolve
     play ambience ambience_forest_night fadein 1
-    play music music_7dl["fatest"] fadein 3
+    play music music_7dl["red_hurricane_piano"] fadein 3
     "Мы вышли из леса лишь убедившись, что костёр окончательно потух."
     "Пионеры дружно зевали, и вели себя не в пример тише, чем по пути в эту пародию на поход."
     show dv think pioneer with dissolve
@@ -6359,7 +6360,7 @@ label alt_day6_dv_dj_breakfast:
 
 label alt_day6_dv_dj_broadcast:
     scene bg int_clubs_dj_7dl with dissolve
-    play music music_list["my_daily_life"] fadein 2
+    play music music_7dl["red_hurricane_guitar"] fadein 2
     th "Эх, убогонькая ты наша каморка с двумя стульями и грузной аппаратурой!"
     th "Когда же ты успела стать такой родной?"
     "Я с любовью оглядывал скромное убранство радиорубки."
@@ -6422,7 +6423,7 @@ label alt_day6_dv_dj_broadcast:
         "Опрометчиво решив, что опасность миновала, я высунулся из-под стола – и в ту же секунду получил тубусом по кумполу."
         dv "Шуточки у тебя дурацкие!"
         show dv angry pioneer2 with dissolve
-        play music music_list["what_do_you_think_of_me"] fadein 2
+        play music music_7dl["red_hurricane_piano"] fadein 2
         me "Всё, что я сказал – чистая правда."
         "Обиженно проворчал я, выпрямляясь и отряхивая шорты."
         me "Неужели тебе никогда не признавались в любви?"
@@ -6693,7 +6694,7 @@ label alt_day6_dv_dj_broadcast:
     hide dv with dissolve
     "Я быстро складывал кабели в коробку, изредка косясь на Алису."
     th "Неужели её настолько гложет прошлое, что любое случайное воспоминание так сильно бороздит так и не зажившие раны?"
-    $ volume (0.2,'sound')
+    $ renpy.music.set_volume(0.2, delay=2, channel='sound')
     th "А я всё никак не пойму, как мне правильно на это реагировать!"
     play sound sfx_7dl["eat_horn"] fadein 1
     "До того, как с улицы раздался приглушённый сигнал горна, Алиса так и не проронила ни слова."
@@ -6711,7 +6712,7 @@ label alt_day6_dv_dj_broadcast:
     "Она заливисто расхохоталась, задвигая свой стул."
     show dv smile pioneer2 with dspr
     dv "Идём уже есть – бьюсь об заклад, обед нас сегодня ждёт королевский!"
-    $ volume (1.0,'sound')
+    $ renpy.music.set_volume(1.0, delay=2, channel='sound')
     stop music fadeout 3
     return
 
@@ -6896,7 +6897,7 @@ label alt_day6_dv_dj_siesta:
     play sound sfx_bed_squeak2
     "Я послушно приземлился на незаправленную койку, не сводя с рыжей взгляда."
     show dv shy pioneer2 close at ba_sit_down_unfzdv
-    play music music_7dl["vale"] fadein 3
+    play music music_7dl["red_hurricane_piano"] fadein 3
     "И это подействовало: теперь смутилась уже она."
     dv "В картишки, может?.."
     me "Ну какие картишки? Детство в одном месте покоя не даёт?"
@@ -7528,12 +7529,12 @@ label alt_day6_dv_dj_siesta:
             mi "Может, надо подарить ей его перед отъездом на память?"
             if (alt_day6_dv_dj_secret):
                 stop music
-                $ volume(0.7, "sound")
+                $ renpy.music.set_volume(0.7, delay=2, channel='sound')
                 play sound sfx_scary_sting
                 $ renpy.show("bg int_musclub_day", what = Desat("bg int_musclub_day"))
                 with zoomin
                 th "В АЛИСИНОМ ДЕТСТВЕ?" with vpunch
-                $ volume(1.0, "sound")
+                $ renpy.music.set_volume(1.0, delay=2, channel='sound')
                 th "Нет, это уже перебор! В начале восьмидесятых точно не было ничего похожего!"
                 th "Или она просто увидела в этом сходство с шедевром от “Электроники” по мотивам “Ну, погоди”?"
                 scene bg int_musclub_day
@@ -7919,7 +7920,7 @@ label alt_day6_dv_dj_siesta:
             sl "Уже нашептали?"
             me "Она сама мне рассказала."
             show sl upset pioneer with dissolve
-            sl "Узнав это, мне стало жаль Алису. Я начала защищать её перед учителями и одноклассниками, какую бы гадость она ни сделала."
+            sl "Когда я узнала это, мне стало жаль Алису. Я начала защищать её перед учителями и одноклассниками, какую бы гадость она ни сделала."
             sl "Но это лишь сильнее её злило. Лишь много позже я поняла, что люди не любят, когда их жалеют. Это унизительно для них!"
             sl "Но я не могу ничего поделать с собой, Семён! Мне всё равно всех жаль."
             th "И людей, и животных, да-да. Наслышаны будем."
@@ -8459,7 +8460,7 @@ label alt_day6_dv_dj_un_night:
     play sound sfx_wind_gust
     "Тропинка резко повернула вправо, и я ощутил порыв холодного и влажного ветра."
     play music music_7dl["brigh_you"]
-    scene cg d5_fz_un_pixies_7dl with dissolve
+    scene cg d5_un_pixies_7dl with dissolve
     play ambience ambience_boat_station_night fadein 2
     "Перед глазами вырос залитый луной дикий пляж."
     "А у самой воды еле-еле различалась одинокая фигурка."
@@ -8523,7 +8524,7 @@ label alt_day6_dv_dj_un_night:
         me "Почему же ты до сих пор не повисла у меня на шее?"
         play sound sfx_bodyfall_1
         with vpunch
-        scene cg d6_un_rape_7dl with dissolve
+        scene cg d6_un_violence_7dl with dissolve
         "Лена вновь попыталась вырваться, но я толкнул её, не ослабляя хватки, и мы полетели прямо на песок."
         "Она вздохнула от боли и испуга, когда я придавил её всем своим телом."
         un "Пожалуйста, не надо…"
@@ -8538,7 +8539,7 @@ label alt_day6_dv_dj_un_night:
         "Я наклонился к лицу девочки, заглядывая в полные отчаяния глаза."
         me "Не нравится?"
         "Яростно прошептал я, заставляя Лену тихо заскулить."
-        scene cg d6_un_rape2_7dl with vpunch
+        scene cg d6_un_violence2_7dl with vpunch
         me "Вот и мне не нравится, когда ко мне лезут в душу посторонние!"
         "Последнее слово я буквально выплюнул ей в лицо."
         "Девочка дёрнулась и закрыла глаза, точно ожидая удара."
@@ -9256,7 +9257,7 @@ label alt_day7_dv_dj_morning:
         with dissolve
         play music music_list["trapped_in_dreams"] fadein 3
         th "Но я просто обязан поговорить с Алисой!"
-        show cg d7_me_dahell2_7dl with dissolve
+        show cg d7_me_mirror_casual_7dl with dissolve
         "После быстрого исследования окрестностей на предмет желающих вломиться в мой домик я распахнул шкаф и осмотрел себя в зеркало."
         "Прилизал волосы, скривился и вновь их взлохматил."
         "Заправил футболку в джинсы и тут же вытащил обратно."
@@ -9272,17 +9273,17 @@ label alt_day7_dv_dj_morning:
         scene bg ext_house_of_dv_day with dissolve
         play ambience ambience_camp_center_day fadein 2
         "Алиса сидела на крыльце своего домика и вертела в руках плеер."
-        show dv normal sport with dissolve
+        show dv normal modern with dissolve
         "Я неловко закашлял, заставив её поднять глаза."
         me "Привет?"
-        show dv smile sport with dspr
+        show dv smile modern with dspr
         "На секунду мне показалось, что на её лице нарисовалось облегчение."
-        show dv normal sport with dspr
+        show dv normal modern with dspr
         "Впрочем, она быстро взяла себя в руки."
         dv "Привет."
         dv "Я уж думала, ты меня избегаешь – даже на завтрак не явился."
         me "Проспал. Кто же знал, что именно сегодня мне выпадет честь дрыхнуть до обеда?"
-        show dv smile sport with dspr
+        show dv smile modern with dspr
         "Алиса вяло усмехнулась, и я несмело улыбнулся в ответ."
         stop music fadeout 5
         "Повисло неловкое молчание."
@@ -9359,7 +9360,7 @@ label alt_day7_dv_dj_morning:
         th "Лучше уж пройтись, в самом деле."
         play sound sfx_open_door_1
         scene bg ext_house_of_mt_day with dissolve
-        show dv guilty sport with dissolve
+        show dv guilty modern with dissolve
         play ambience ambience_camp_center_day fadein 3
         stop music fadeout 2
         "Но стоило мне выйти за дверь, как сердце рухнуло куда-то в бездну."
@@ -9371,13 +9372,13 @@ label alt_day7_dv_dj_morning:
 
 label alt_day7_dv_dj_points:
     if alt_dv_dj_ends == 'neu' or alt_dv_dj_ends == 'rej' or alt_dv_dj_ends == 'bad':
-        show dv sad sport with dissolve
-        play music music_7dl["fogive_me"] fadein 3
+        show dv sad modern with dissolve
+        play music music_7dl["red_hurricane_piano"] fadein 3
         dv "Я, наверное, хотела бы попросить прощения… Ну ты знаешь, за вчерашнее."
         dv "Я не имела в виду ничего такого, просто…"
         me "Я знаю. И зла на тебя не держу."
         th "То есть, держу, конечно, но чёрт возьми, не когда ты рядом со мной!"
-        show dv sad_smile sport with dspr
+        show dv sad_smile modern with dspr
         dv "Правда?"
         "Она посмотрела на меня с такой искренней надеждой, что я не выдержал и облегчённо рассмеялся."
         if alt_dv_dj_ends == 'bad':
@@ -9393,21 +9394,21 @@ label alt_day7_dv_dj_points:
         dv "А сам-то!"
         if alt_dv_dj_ends == 'bad':
             scene bg ext_house_of_mt_day
-            show dv shy_smile sport
+            show dv shy_smile modern
             with dissolve
         else:
             scene bg ext_house_of_dv_day
-            show dv shy_smile sport
+            show dv shy_smile modern
             with dissolve
         "Алиса отстранилась."
         "Лицо у неё было красное, но до неприличного довольное."
         "И мы вновь замолчали, как два придурка."
         me "Сильно от вожатой досталось?"
         "Осторожно спросил я, боясь снова вывести Алису из себя."
-        show dv smile sport with dspr
+        show dv smile modern with dspr
         "Но та лишь отмахнулась."
         dv "Ой, да ну её к лешему – покричала и погрозила письмом в школу, обычные формальности."
-        show dv normal sport with dspr
+        show dv normal modern with dspr
         "Лицо девочки стало серьёзным."
         dv "Ты ведь не останешься тут после лагеря. Уедешь и поминай как звали."
         "Она не спрашивала – знала. И я тоже это знал."
@@ -9420,31 +9421,31 @@ label alt_day7_dv_dj_points:
             th "А я словно слышу первые аккорды группы The Pixies…"
         me "Мы что-нибудь придумаем."
         "Не слишком обнадёживающим тоном сказал я."
-        show dv guilty sport with dspr
+        show dv guilty modern with dspr
         dv "Да я тут уже…"
-        show dv closed_eyes sport with dspr
+        show dv closed_eyes modern with dspr
         "Алиса вздохнула и закрыла глаза."
-        show dv normal sport with dspr
+        show dv normal modern with dspr
         dv "Когда я закончу школу, я рвану в Ленинград и создам своё радио."
         dv "Быть может, тогда ты сможешь хотя бы услышать меня, если тебе это будет нужно. Когда у меня всё получится."
         th "Физику в школе кто-то явно прогуливал…"
         th "Впрочем, какая уж тут физика?"
         th "Никакие радиоволны не способны преодолеть расстояние в тридцать лет."
-        show dv tired sport with dspr
+        show dv tired modern with dspr
         dv "И если вдруг всё получится…"
         me "Я смогу позвонить в эфир и передать привет?"
-        show dv dontlike sport with dspr
+        show dv dontlike modern with dspr
         dv "Да ну тебя!"
         play sound sfx_punch_medium
         with vpunch
         "Алиса ткнула меня кулаком в бок."
         dv "Иногда мне кажется, что ты отстаешь в психологическом развитии лет на десять."
         me "И где ты таких слов нахваталась? Тебе Виола лекции читала, пока ты в медпункте от зарядки отлынивала?"
-        show dv angry sport with dspr
+        show dv angry modern with dspr
         dv "Ах ты…"
-        show dv surprise sport close with dissolve
+        show dv surprise modern close with dissolve
         "Алиса замахнулась, но я уже привычным движением перехватил её руку и прижал девочку к себе."
-        show dv sad sport close with dspr
+        show dv sad modern close with dspr
         dv "Дурак."
         me "Сама такая."
         th "И всё-таки у меня странное ощущение, что всё не в порядке."
@@ -9459,12 +9460,12 @@ label alt_day7_dv_dj_points:
             th "Обо всех проблемах мы подумаем потом. Когда они наступят."
         else:
             me "И всё же, Алис: почему ты вчера так вскипела?"
-            show dv guilty sport close with dspr
+            show dv guilty modern close with dspr
             dv "Да понимаешь…"
             "Она прижалась ко мне сильнее – вероятно, просто не хотела смотреть в глаза."
             dv "Я стала часто вспоминать детский дом. Чаще, чем когда-либо."
             dv "И очень многое в лагере напоминает мне о тех временах. О том, как я сама себе не принадлежала, и вся эта самодеятельность…"
-            show dv sad_smile sport with dspr
+            show dv sad_smile modern with dspr
             dv "Давай поговорим об этом позже?"
             me "Хорошо. Это будет мой первый вопрос в эфире, на который я позвоню."
             dv "Дурак."
@@ -9478,23 +9479,23 @@ label alt_day7_dv_dj_points:
             scene bg ext_house_of_mt_day
         else:
             scene bg ext_house_of_dv_day
-        show dv normal sport
+        show dv normal modern
         show unblink
         with dissolve
         "Я неохотно отлип от девочки."
         "И тут в мою голову пришла совершенно нелепая, но в то же время гениальная мысль."
         me "Алис, а можно сфотографировать тебя?"
-        show dv surprise sport with dspr
+        show dv surprise modern with dspr
         dv "А?"
         me "На память. Я же уеду, ты знаешь."
-        show dv shy sport with dspr
+        show dv shy modern with dspr
         "Девочка вмиг покраснела."
         dv "Я не очень люблю это дело. Да и где ты фотоаппарат-то возьмёшь?"
         "Я вынул из кармана смарт."
         "Последние проценты зарядки внушали надежду, что хотя бы один кадр я сделать успею."
-        show dv normal sport with dspr
+        show dv normal modern with dspr
         "Девочка с недоверием покосилась на телефон."
-        show dv laugh sport with dspr
+        show dv laugh modern with dspr
         show frame at truecenter:
             xalign 0.5 yalign 0.5 zoom 1.0
             linear 0.8 zoom 1.0 xalign 0.5 yalign 0.20
@@ -9512,25 +9513,25 @@ label alt_day7_dv_dj_points:
             scene bg ext_house_of_mt_day
         else:
             scene bg ext_house_of_dv_day
-        show dv smile sport
+        show dv smile modern
         with dissolve
         me "Вот и всё."
-        show dv normal sport with dspr
+        show dv normal modern with dspr
         dv "А вдруг я моргнула? Или у меня там лицо глупое?"
         "Я усмехнулся."
         "Какой бы ни была Алиса, она всё же была девочкой."
         me "Ну, если ты хочешь, можем целую серию снимков сделать: в шезлонге, в вожатской панамке, с солнышком на ладошке…"
-        show dv scared sport with dspr
+        show dv scared modern with dspr
         "Алиса испуганно замахала руками."
         dv "Не надо никаких серий! Мы и без того сейчас опоздаем на автобус!"
         if alt_dv_dj_ends == 'bad':
             me "Пойдём уж тогда, помогу твой чемодан отнести."
         else:
             me "Тогда сейчас я беру твой чемодан – и вперёд."
-        show dv normal sport with dspr
+        show dv normal modern with dspr
         "Алиса кивнула."
         "Я не услышал, скорее прочитал по губам:"
-        show dv smile sport with dspr
+        show dv smile modern with dspr
         dv "Спасибо."
         stop music fadeout 3
         stop ambience fadeout 3
@@ -9542,7 +9543,7 @@ label alt_day7_dv_dj_points:
         scene bg int_house_of_dv_day with dissolve
         play ambience ambience_int_cabin_day fadein 3
         "Я широко распахнул дверь, буквально вваливаясь внутрь."
-        show dv surprise sport at left with dissolve
+        show dv surprise modern at left with dissolve
         stop music fadeout 7
         "Алиса испуганно подняла глаза."
         "Она сидела у кровати над спортивной сумкой с сандалиями в руках."
@@ -9550,13 +9551,13 @@ label alt_day7_dv_dj_points:
         dreamgirl "Отличное начало разговора!"
         play music music_7dl["youarenotalone"] fadein 3
         me "Алиса, я извиниться хотел за вчерашнее. Я идиот."
-        show dv normal sport with dspr
+        show dv normal modern with dspr
         me "Это только твоё дело – что и для кого делать. Я наговорил тебе такого…"
-        show dv guilty sport at cleft with dissolve
+        show dv guilty modern at cleft with dissolve
         dv "Да брось. Я тоже хороша."
         "Она поднялась, неловко одёргивая майку и упорно глядя в пол."
         dv "Это всё было неправдой. Ну, про то, что ты мне не нужен и всякое такое…"
-        show dv shy sport close with dissolve
+        show dv shy modern close with dissolve
         "Я в три шага пересёк домик и порывисто обнял Алису, с облегчением выдыхая."
         scene cg d7_dv_hugs3_7dl with dissolve
         "Её руки робко сомкнулись за моей спиной."
@@ -9574,25 +9575,25 @@ label alt_day7_dv_dj_points:
         "Я запустил пальцы в её волосы."
         me "Это всё давно в прошлом. И это не повторится."
         scene bg int_house_of_dv_day
-        show dv dontlike sport
+        show dv dontlike modern
         with dissolve
         dv "В том-то и дело!"
         "Алиса отстранилась, серьёзно заглядывая мне в глаза."
         dv "Мне кажется, словно та Алиса Смолева, которая жила там, умерла."
         dv "И из-за этого мне трудно понять: а кто же тогда я?"
         me "Ты – Алиса Двачевская. Злая, как чёрт из табакерки, ленивая, как тюлень, да и манеры у тебя хромают…"
-        show dv rage sport with dspr
+        show dv rage modern with dspr
         dv "Эй!"
-        show dv angry sport with dspr
+        show dv angry modern with dspr
         me "Но в то же время искренняя в своей злости, изобретательная, когда хочешь улизнуть от обязанностей, а твои грубости меня умиляют, точно картинки с котятами."
         me "Такую я тебя и люблю."
-        show dv shy sport with dspr
+        show dv shy modern with dspr
         me "Я больной на голову, да?"
         dv "Да."
-        show dv grin sport with dspr
+        show dv grin modern with dspr
         dv "Сразу из автобуса тебя под белы рученьки возьмут санитары и упекут куда надо. Я уже позвонила, договорилась."
         me "Ах вот как?"
-        show dv scared sport close with dissolve
+        show dv scared modern close with dissolve
         dv "Ааааа!"
         "Щекотки она боялась до ужаса, и я не стеснялся этим пользоваться!"
         play sound sfx_bed_squeak2
@@ -9603,7 +9604,7 @@ label alt_day7_dv_dj_points:
         "Мы с хохотом повалились на кровать, едва не сорвав пружину."
         dv "Ты… ты…"
         me "Кто?"
-        show dv smile sport close with dissolve
+        show dv smile modern close with dissolve
         "Я прекратил щекотать её, сомкнув свои руки на талии девочки и внимательно посмотрев ей в глаза."
         "Она не ответила."
         "Притянула к себе и поцеловала, зарываясь пальцами в мои спутанные волосы."
@@ -9618,32 +9619,32 @@ label alt_day7_dv_dj_points:
         me "Неужели?"
         dv "Ну, в конце концов у меня появилось нечто важное…"
         th "Она скажет это вслух?"
-        show dv laugh sport close with dspr
+        show dv laugh modern close with dspr
         dv "Моя первая серьёзная мечта."
         me "Выйти замуж?"
-        show dv dontlike sport close with dspr
+        show dv dontlike modern close with dspr
         dv "Вот ещё!"
-        show dv smile sport close with dspr
+        show dv smile modern close with dspr
         dv "Я радио своё хочу создать. Без этих скучных новостей и прогнозов погоды."
         dv "Только музыка. Классная, новая, зарубежная и отечественная, из подпольных групп."
         "Она ласково потёрлась об меня щекой, мечтательно зажмурившись."
         dv "Представь себе только: радиостанция, на которой играет только музыка, которая нравится мне!"
         th "Даже представлять страшно…"
-        show dv normal sport close with dspr
+        show dv normal modern close with dspr
         dv "Но для начала придётся как-то в Ленинград прорваться. На Москву не мечу, да и там не прорвёшься – все места под солнцем уже разобраны."
         dv "Я уже даже в институт податься думаю…"
         me "Ты понимаешь, что произошло, Двачевская? Мы получили самое достоверное доказательство теории эволюции!"
         stop music fadeout 3
-        show dv normal sport close with dspr
+        show dv normal modern close with dspr
         dv "Чё?"
         me "Труд из тебя человека сделал!"
         play music2 music_list["always_ready"] fadein 3
-        show dv angry sport close with dspr
+        show dv angry modern close with dspr
         dv "Ах ты гад!"
         scene bg int_house_of_dv_day:
             zoom 1.4
             align(0.3,0.5)
-        show dv angry sport close at left
+        show dv angry modern close at left
         with dissolve
         "Она выскользнула из моих объятий и грозно нависла надо мной."
         dv "А сам-то эволюционировать не торопишься – вон инстинкты-то животные как работают!"
@@ -9651,7 +9652,7 @@ label alt_day7_dv_dj_points:
         "Лёгкий пинок коленом по моему бедру заставил меня слегка покраснеть." with hpunch
         me "А чего им не работать-то? Рядом со мной тут самая красивая девушка…"
         play sound sfx_open_dooor_campus_1
-        show dv surprise sport close with dspr
+        show dv surprise modern close with dspr
         "Дверь распахнулась."
         scene bg int_house_of_dv_day
         show us dontlike sport at right
@@ -9666,14 +9667,14 @@ label alt_day7_dv_dj_points:
         us "А что, завидно?"
         me "Да нет, я больше по девочкам…"
         play sound sfx_pat_shoulder_hard
-        show dv angry sport close at left
+        show dv angry modern close at left
         show us laugh sport close
         with flash
         "В моё лицо больно прилетело подушкой."
         show us smile sport close with dspr
         us "Вы уезжать собираетесь или планируете весь пересменок тут проваляться?"
         play sound sfx_bed_squeak1
-        show dv normal sport close at cleft with move
+        show dv normal modern close at cleft with move
         "Алиса со вздохом перебралась через меня и встала с кровати."
         dv "Пойдём, пока Шляпа не пришла нас подгонять. Ору-то будет…"
         play sound sfx_bed_squeak2
@@ -9687,11 +9688,11 @@ label alt_day7_dv_dj_points:
         us "А он уже в автобус загружается."
         us "Неси-неси, иначе я Алиску за тебя замуж не отпущу!"
         "Под такими серьёзными угрозами пришлось сдаться."
-        show dv tired sport close with dspr
+        show dv tired modern close with dspr
         dv "Классный у нас всё-таки домик был…"
         show us grin sport close with dspr
         us "Наплачешься ещё! Шевелитесь!"
-        show dv normal sport close with dspr
+        show dv normal modern close with dspr
         th "Ей-то налегке шевелиться удобно!"
         "Мы с шумом выбрались из домика рыжих и двинулись к остановке."
         stop music2 fadeout 3
@@ -9714,16 +9715,16 @@ label alt_day7_dv_dj_points:
         play ambience ambience_int_cabin_day fadein 2
         play music music_list["trapped_in_dreams"] fadein 2
         "Алиса сидела у своей кровати на корточках, складывая вещи в сумку."
-        show dv surprise sport at left with dissolve
+        show dv surprise modern at left with dissolve
         "Она с удивлением подняла на меня глаза."
         dv "О. Ты всё-таки пришёл…"
-        show dv scared sport with vpunch
+        show dv scared modern with vpunch
         me "Алиса, я знаю, кто ты!"
         "Повисло совершенно идиотское молчание."
         dreamgirl "…"
         dreamgirl "Ты серьёзно?"
         me "В смысле, я такой же. Я тоже из будущего, и вообще…"
-        show dv dontlike sport with dspr
+        show dv dontlike modern with dspr
         dv "Что ты несёшь?"
         "Алиса нахмурилась, поднимаясь с пола."
         dv "Какое будущее? Ты перепил вчера или головой ударился?"
@@ -9734,11 +9735,11 @@ label alt_day7_dv_dj_points:
         "Либо она так искусно врала, либо я оказался полным идиотом."
         dreamgirl "Одно другое не исключает."
         me "Алиса, мне не до шуток! Я абсолютно серьёзен!"
-        show dv tired sport with dspr
+        show dv tired modern with dspr
         "Девочка с сочувствием взглянула на меня."
         dv "Ты не смог придумать менее идиотского повода заговорить со мной?"
         me "Ответь мне только на один вопрос: кто был президентом до Генды?"
-        show dv angry sport with dspr
+        show dv angry modern with dspr
         "Алиса начала закипать."
         dv "Какой президент? Генда – генсек, и он был генсеком всю мою сознательную жизнь!"
         dv "Я, может, и похожа на любительницу весёлых розыгрышей, но не таких дурацких!"
@@ -9751,9 +9752,9 @@ label alt_day7_dv_dj_points:
         "Мне уже не хотелось поднимать эту тему."
         th "Я облажался. Как всегда облажался."
         th "Сам придумал себе удобное объяснение, сам в него поверил."
-        show dv guilty sport at left with dissolve
+        show dv guilty modern at left with dissolve
         "Я вновь окинул взглядом Алису."
-        "Она стояла сгорбленная, удурчённая, потерянная."
+        "Она стояла сгорбленная, удручённая, потерянная."
         "Она явно надеялась услышать от меня нечто другое."
         me "Бойцовский клуб."
         me "Фильм, где в конце всё взорвалось, называется “Бойцовский клуб”."
@@ -9764,21 +9765,21 @@ label alt_day7_dv_dj_points:
         stop music fadeout 3
         dv "Ельцин…"
         "Догнал меня тихий голос Алисы."
-        show dv guilty sport with dissolve
+        show dv guilty modern with dissolve
         me "Что?"
         dv "До Генды президентом был Борис Николаевич Ельцин."
         play music music_7dl["nap_one"] fadein 2
         me "Так ты…"
-        show dv cry2 sport with dspr
+        show dv cry2 modern with dspr
         dv "Я не знаю, Семён. Я не понимаю!"
         "По её щекам катились слёзы."
         "Алиса стояла и смотрела перед собой, и на лице её было нечто среднее между отчаянием и ступором."
-        show dv cry sport with dspr
+        show dv cry modern with dspr
         dv "Он ушёл с поста в девяносто девятом, во время новогоднего обращения. Мы думали, что это из-за конца света!"
-        show dv cry sport close with dissolve
+        show dv cry modern close with dissolve
         "Я кинулся к девочке и осторожно усадил её на кровать."
         me "И какого ты года рождения?"
-        show dv cry2 sport close with dspr
+        show dv cry2 modern close with dspr
         dv "Девяностого."
         dv "Я рожусь только через год, понимаешь?"
         me "А я родился только в этом."
@@ -9788,16 +9789,16 @@ label alt_day7_dv_dj_points:
         dv "В лагере?"
         me "В прошлом!"
         dv "Не знаю. Это всё…"
-        show dv cry sport close with dspr
+        show dv cry modern close with dspr
         dv "Это полный бред!"
         dv "У меня такая каша в голове, что она вот-вот взорвётся!"
         "Алиса стиснула пальцами виски."
         dv "Я помню своих биологических родителей, но я также знаю, что меня забрали в детский дом, когда мне не было и двух, и они ни разу меня не навестили."
         dv "Я помню, как на девятый день рождения мне подарили Барби волонтёры, но я знаю, что праздновала свой девятый день рождения с приёмными."
         dv "Я помню, как ездила в лагерь под Ленинградом…"
-        show dv scared sport close with dspr
+        show dv scared modern close with dspr
         dv "Нет, под Петербургом! В восемь, но в восемь я ездила только в “Совёнок”."
-        show dv shocked sport close with dspr
+        show dv shocked modern close with dspr
         dv "И знаешь, что самое странное?"
         "Она посмотрела на меня полными страха глазами."
         dv "Я каждую ночь вижу один и тот же сон."
@@ -9813,7 +9814,7 @@ label alt_day7_dv_dj_points:
         dv "Я редко вспоминала детский дом – приёмные сделали всё, чтобы я стала частью их семьи и не ворошила прошлое."
         dv "Но когда ты отдал мне плеер, воспоминания начали всплывать всё чаще. Я услышала музыку, о которой забыла на девять лет."
         scene bg int_house_of_dv_day
-        show dv cry_smile sport close
+        show dv cry_smile modern close
         with dissolve
         "Алиса истерично усмехнулась."
         dv "Музыку, которой ещё не существует. Сплин, Би-2, Король и Шут."
@@ -9822,15 +9823,15 @@ label alt_day7_dv_dj_points:
         th "Только как Алису заставили забыть половину своей жизни?"
         "Я содрогнулся."
         th "И не проделают ли то же самое со мной?"
-        show dv sad sport close with dissolve
+        show dv sad modern close with dissolve
         "Алиса утёрла слёзы."
         dv "И как мне теперь с этим жить? Кого я могу расспросить об этом?"
         me "То есть, ты оказалась в больнице сразу после того… Как попала сюда?"
-        show dv guilty sport close with dspr
+        show dv guilty modern close with dspr
         dv "Нет."
         "Алиса глубоко вздохнула."
         dv "Раз уж ты и сам слегка того…"
-        show dv sad sport close with dspr
+        show dv sad modern close with dspr
         dv "Я умерла."
         scene black
         show prologue_dream
@@ -9847,11 +9848,11 @@ label alt_day7_dv_dj_points:
         dv "Только не в белых платьицах, как на картинке, а в пионерской форме."
         dv "Мне стало страшно, я начала плакать и проситься обратно, а они сбежали."
         scene bg int_house_of_dv_day
-        show dv sad_smile sport close
+        show dv sad_smile modern close
         with dissolve
         dv "А потом… Не помню, мне стало слишком плохо, но так хотелось жить!"
         dv "И я думала только об одном: как же сильно я не хочу умирать!"
-        show dv sad sport close with dspr
+        show dv sad modern close with dspr
         dv "А дальше была больница."
         dv "Я там долго была, уже и не знаю, сколько. А потом меня в семью забрали."
         th "То есть, Алиса не садилась в автобус, который привёз её неизвестно куда. Она говорит, что там, в будущем, она умерла."
@@ -9878,7 +9879,7 @@ label alt_day7_dv_dj_points:
             "Точнее, не успел выйти."
             "Мой маршрут окончился на дне ледяной Невы, и последнее, что я помнил – обжигающая лёгкие вода."
         scene bg int_house_of_dv_day
-        show dv sad sport close
+        show dv sad modern close
         with dissolve
         th "Только без паники! Возьми себя в руки!"
         th "У тебя на руках девочка на грани нервного срыва, не хватало только ещё одной истерички!"
@@ -9934,13 +9935,13 @@ label alt_day7_dv_dj_points:
         "Мелкая скривилась."
         us "Дожили – всякие проходимцы из собственного домика выгоняют!"
         us "Вы заканчивайте свои прощания, автобус уже подали. Только нас и ждут."
-        show dv guilty sport close at left with dissolve
+        show dv guilty modern close at left with dissolve
         "Алиса на автопилоте поднялась с кровати, и я молча встал следом, поднимая с пола её сумку."
         show us normal sport close at cright with dissolve
         "Бездумно закинул на плечо протянутый Ульяной багаж, свободной рукой сжал холодную ладонь Алисы."
         me "Мы переживём это. Обязательно переживём."
         "Шепнул я."
-        show dv sad sport close with dissolve
+        show dv sad modern close with dissolve
         "Девочка бездумно кивнула, до боли стиснув мои пальцы."
         show us smile sport close with dspr
         us "Шевелитесь, рёвы-коровы!"
@@ -10004,19 +10005,19 @@ label alt_day7_dv_dj_departure:
     "На несколько секунд Ольга затихла, после чего выпрямилась, нервно хихикнув."
     mt "Все слёзы утёрли? Тогда марш в автобус!"
     hide mt
-    show dv normal sport close at cright
+    show dv normal modern close at cright
     with dissolve
     "Я повернулся к Алисе."
     me "Сядем вместе?"
     if alt_dv_dj_ends == 'good':
-        show dv smile sport close with dspr
+        show dv smile modern close with dspr
         dv "Разумеется."
         dv "Только чур я у окна!"
         me "На камень-ножницы-бумага."
-        show dv grin sport close with joff_r
+        show dv grin modern close with joff_r
         dv "Ну и сиди там, жарься на солнышке!"
         me "Бу-бу-бу…"
-        show dv angry sport close with dspr
+        show dv angry modern close with dspr
         dv "Чё вякнул?"
         me "Ничего."
         stop music fadeout 4
@@ -10026,48 +10027,49 @@ label alt_day7_dv_dj_departure:
         scene bg int_bus_people_day with dissolve
         play music music_7dl["breath_again"] fadein 3
         "С шумом и гамом мы расселись по местам."
-        "Электроник с Шуриком устроились сразу за вожатой, Лена с Женей сели слева."
+        "Электроник с Шуриком устроились на соседнем ряду, Лена с Женей сели впереди нас."
         "Славя гордо сидела в одиночестве, а Мику уже о чём-то весело щебетала со слегка насупившейся Ульяной."
-        "Мы с Алисой разместились в самом конце."
+        "Мы с Алисой разместились в середине."
         "Ольга с явным облегчением дала отмашку водителю:"
         mt "Поехали!"
         play sound_loop sfx_bus_interior_moving fadein 2
         "Ворота лагеря плавно уезжали из поля зрения, сменяясь буйными зарослями травы."
         "Наши товарищи по отряду весело переговаривались, мотор гудел, нагретый металл автобуса вгонял в приятную сонливость."
         "А под боком сидело моё рыжее счастье."
-        show dv normal sport close at cright with dissolve
+        show dv normal modern close at cright with dissolve
         dv "Давай-ка послушаем одну группу…"
         me "Ты за смену не наслушалась музыки, Двачевская? Может, поговорим хотя бы?"
         dv "Какие тут разговоры? В дороге разве что байки травить можно, а мне неохота."
         me "Тогда я потравлю, а ты послушаешь."
-        show dv angry sport close with dspr
+        show dv angry modern close with dspr
         dv "Дались тебе эти байки! Наслушаюсь ещё."
         if alt_day6_dv_dj_quest == 4:
-            show dv shy sport close with dspr
+            show dv shy modern close with dspr
             dv "Ты меня ещё в кино сводить обещал…"
             me "И свожу. Я что, похож на обманщика?"
-        show dv normal sport close with dspr
+        scene cg d7_dv_epilogue_bus_7dl with dissolve
         "Алиса протянула мне один наушник."
         "Я скорчил недовольную мину, но наушник взял – было интересно, что же там она так сильно жаждала послушать."
         "Заиграли первые аккорды “Романса”."
-        show dv smile sport close with dspr
         th "Ну конечно, первая песня, которую я ей показал."
         th "Корчит из себя невесть что, а в душе такая…"
         th "Романтичная?"
         "Я с опасением взглянул на Алису."
         th "За такие мысли она меня побьёт. Надо бы с этим завязывать."
         "Автобус набирал скорость."
-        scene cg d7_dv_epilogue_bus_7dl with dissolve
+        scene cg d7_dv_epilogue_bus2_7dl with dissolve
         "Алиса устроилась у меня на плече и начала посапывать."
         "Все остальные тоже притихли, разморённые жарой."
         th "И всё-таки как хорошо всё закончилось. Чудесное примирение двух строптивых, но до безумия друг друга любящих."
         th "И как хорошо продолжится!"
         "Я не знал, что ждёт меня после того, как автобус приедет в город."
+        show semen_mouth_bus_7dl with dspr
         th "Кто меня встретит и куда заберёт?"
         th "Какие-то родители у меня имеются – кто-то же передал мне мой собственный рюкзак."
         th "Значит, не пропаду."
         th "А если окажется, что мы живём в разных городах?"
         "Отыскав рукой ладонь Алисы, я легонько её стиснул."
+        hide semen_mouth_bus_7dl with dspr
         th "С этим я справлюсь."
         th "Сбегу из дома, проеду зайцем и на попутках хоть тысячи километров, но не потеряю то, к чему неосознанно стремился всю свою жизнь!"
         th "Теперь никто не отнимет у меня Алису."
@@ -10086,27 +10088,27 @@ label alt_day7_dv_dj_departure:
         "И он был очень, очень испуганным."
         scene emptiness_7dl behind int_bus
         show int_bus_7dl
-        show dv scared sport close:
+        show dv scared modern close:
             alpha 0.8
         with flash
         play music music_7dl["timetowakeup"] fadein 2
         "Салон автобуса погрузился в темноту."
         "Мотор заглох, и из звуков осталось лишь учащённое дыхание сидящей рядом Алисы."
         me "Что происходит?"
-        show dv shocked sport close:
+        show dv shocked modern close:
             alpha 0.7
         with dissolve
         dv "Я не знаю!"
         "Она вцепилась в мою руку, но это прикосновение было… странным."
         "Как будто неосязаемым."
-        show dv cry sport close:
+        show dv cry modern close:
             alpha 0.6
         with dissolve
         "А Алиса…"
         "Она словно таяла у меня на глазах."
         th "Нет…"
         me "Нет!"
-        show dv cry sport close:
+        show dv cry modern close:
             alpha 0.5
         with dissolve
         me "Не смей! Не исчезай!"
@@ -10114,7 +10116,7 @@ label alt_day7_dv_dj_departure:
         dreamgirl "Она не исчезает. Это ты выходишь на своей остановке."
         th "Я не могу уйти! Не могу её оставить!"
         th "Она стала всем, ради чего я хочу жить!"
-        show dv cry sport close:
+        show dv cry modern close:
             alpha 0.5
         with dissolve
         dreamgirl "Так и живи ради неё."
@@ -10145,7 +10147,7 @@ label alt_day7_dv_dj_departure:
         scene black with fade3
         th "Обязательно найду."
     elif alt_dv_dj_ends == 'true':
-        show dv guilty sport close with dspr
+        show dv guilty modern close with dspr
         "Девочка покачала головой, глядя куда-то в пустоту."
         dv "Хочу побыть одна. Переварить это всё."
         "Я приобнял её и почти невесомо поцеловал в макушку."
@@ -10208,6 +10210,9 @@ label alt_day7_dv_dj_departure:
         "Автобус, погружённый в темноту, стоял на месте."
         "Ульяны рядом со мной не было."
         th "Куда все делись? Мы уже приехали?"
+        scene emptiness_7dl behind d7_me_epilogue_bus2_7dl
+        show d7_me_epilogue_bus2_7dl
+        with dissolve
         "Я выглянул в окно, но увидел лишь чёрную пустоту, не позволяющую даже предположить, где я нахожусь."
         dreamgirl "Извини, приятель. Не хотел огорчать тебя раньше времени, но ты тут не остаёшься."
         th "Но почему?!"
@@ -10229,6 +10234,9 @@ label alt_day7_dv_dj_departure:
         dreamgirl "Ровным счётом ничего. Ты уже уходишь – прямо сейчас, в этот самый момент."
         th "Но куда?"
         dreamgirl "Это ты решишь сам."
+        scene emptiness_7dl behind int_bus
+        show int_bus_7dl
+        with dissolve
         "Я вскочил на ноги."
         "На мгновение мне показалось, что за лобовым стеклом мелькнуло что-то медно-рыжее…"
         if persistent.dv_dj_true:
@@ -10260,7 +10268,7 @@ label alt_day7_dv_dj_departure:
         th "А мне пора возвращаться домой."
         return
     else:
-        show dv shy sport close with dspr
+        show dv shy modern close with dspr
         "Алиса смущённо отвела глаза."
         dv "Да знаешь, я уже с Ульяной договорилась. Нехорошо выйдет…"
         "Я хмыкнул."
@@ -10468,7 +10476,7 @@ label alt_day7_dv_dj_bad:
     scene black with dissolve2
     "И неожиданное спокойствие."
     $ alt_pause(2)
-    scene bg int_ward_day_kns with dissolve
+    scene bg int_ward_day_7dl with dissolve
     "Когда я проснулся, вокруг царила абсолютная тишина."
     th "Получилось! У меня получилось! Я…"
     "Но вокруг был не лагерь. И даже не железнодорожная станция."
@@ -10649,13 +10657,13 @@ label alt_day7_dv_dj_neu:
     play sound_loop sfx_7dl["pk_venti"] fadein 1
     me "Добрый вечер, дорогие слушатели."
     "Тихо произнёс я в микрофон."
-    $ volume(0.1,"sound")
+    $ renpy.music.set_volume(0.1, delay=2, channel='sound')
     me "С вами станция “Ночь”, и сегодня для Алисы играет группа Amatory."
     play sound sfx_7dl["wakeup"]
     "Я нажал на “плей”, но в моих наушниках осталась всё прежняя тишина с тихим и почти неуловимым треском."
     th "Что за…"
     "В панике я кинулся проверять роутер, не удосужившись даже снять наушники."
-    $ volume(1.0, "sound")
+    $ renpy.music.set_volume(1.0, delay=2, channel='sound')
     play sound sfx_7dl["radiotune"]
     "И стоило мне наклониться под стол, как помехи стали сильнее."
     "И сквозь них я услышал её."
@@ -10765,7 +10773,7 @@ label alt_day7_dv_dj_rej:
     "А меня едва ли не тошнило от волнения при мысли, что нам придётся спать в одной кровати."
     $ alt_pause(1)
     $ set_mode_nvl()
-    scene bg int_sam_room_7dl with dissolve
+    scene bg int_semen_room_7dl with dissolve
     "И всего неделю спустя у меня в квартире оказались все Алисины вещи – она окончательно разругалась со своими соседями и искала место, где можно перекантоваться на первое время."
     stop music fadeout 3
     "Стоит ли говорить, что ей было предложено оставаться столько, сколько она пожелает?"
@@ -11101,6 +11109,7 @@ label alt_day7_dv_dj_good:
     play sound sfx_close_water_sink
     pause(0.1)
     $ set_mode_adv()
+    scene bg int_semen_bath_7dl with dissolve
     "Ледяная вода принесла почти мгновенное облегчение, и я выдохнул, закрывая глаза и успокаиваясь."
     "Алиса перебесится и вернётся."
     "Она всегда возвращается."
@@ -11187,12 +11196,12 @@ label alt_day7_dv_dj_herc_exc:
     th "Какой же у меня противный будильник…"
     th "Надо будет поменять при случае."
     stop sound fadeout 1
-    scene bg int_sam_room_7dl with fade
+    scene bg int_semen_room_7dl with fade
     "Я схватил с тумбочки телефон и нажал на кнопку “сбросить вызов”."
     th "Ещё пять ми…"
     play music music_list["drown"] fadein 5
     scene
-    $ renpy.show("bg int_sam_room_7dl", what = Notch("bg int_sam_room_7dl"))
+    $ renpy.show("bg int_semen_room_7dl", what = Notch("bg int_semen_room_7dl"))
     with vpunch
     "Подскочил с кровати я столь резко, что у меня потемнело в глазах."
     show tapochek_mobile_7dl with dissolve
@@ -11214,7 +11223,7 @@ label alt_day7_dv_dj_herc_exc:
         alpha 0.3
     with dissolve
     "И какая-то рыжая девчонка, которой было так плохо, а я ничего не мог с этим сделать."
-    scene bg int_sam_room_7dl with dissolve
+    scene bg int_semen_room_7dl with dissolve
     th "Вот уж не думал, что в мои годы наступает старческий маразм."
     th "Ещё каких-то девять лет назад радовался со всей страной, что этот проклятый совок развалился, занавес рухнул, а теперь ностальгирую!"
     th "И лагерь-то какой красивый был, как с картинки: новенький, чистенький, с домиками аккуратными. Не чета тем баракам, в которых я сам когда-то жил!"
@@ -11370,6 +11379,7 @@ label alt_day7_dv_dj_herc_exc:
     "Мы с директрисой договорились на том, что пока я смогу навещать Алису на выходных."
     "А я уже думал, как бы подключить к этой безрассудной затее свою мать."
     stop music fadeout 3
+    scene bg ext_childhouse_day_7dl with dissolve2
     $ alt_pause(1.7)
     $ set_mode_adv()
     scene bg int_childhouse_corridor_7dl with dissolve
@@ -11388,6 +11398,7 @@ label alt_day7_dv_dj_herc_exc:
     "Она спрашивала это уже сотню раз, но я был готов ответить и в сто первый:"
     me "Насовсем-насовсем."
     show dvk happy dress with dspr
+    pause(1)
     scene bg ext_childhouse_day_7dl
     show dvk smile dress close
     with dissolve
@@ -11409,7 +11420,7 @@ label alt_day7_dv_dj_herc_exc:
     "Моя падчерица приоткрыла было рот, но тут же покраснела и уставилась куда-то в асфальт."
     "Я не выдержал и рассмеялся."
     me "Запрыгивай уже!"
-    scene cg d7_dv_child_7dl with dissolve
+    scene cg d7_dv_child_7dl with dissolve2
     "Я шёл в сторону остановки со своей излишне весёлой ношей на плечах."
     "И кто бы мог подумать, что такое может случиться, если просто удачно поехать развеяться после работы?"
     "С компьютером повременим – нам ещё столько всего для Алисы купить надо."
@@ -11995,7 +12006,7 @@ label alt_day7_dv_dj_true:
     "Я ведь думала, что тут меня встретят мои мама и папа…"
     stop ambience fadeout 1
     $ alt_pause(1)
-    scene bg int_ward_sunset_kns with dissolve
+    scene bg int_ward_sunset_7dl with dissolve
     $ set_mode_nvl()
     $ meet('voice','Доктор')
     play music music_7dl["sky_feather"] fadein 3
@@ -12023,7 +12034,7 @@ label alt_day7_dv_dj_true:
     stop music fadeout 4
     $ alt_pause(2)
     $ set_mode_adv()
-    scene bg int_ward_day_kns with dissolve2
+    scene bg int_ward_day_7dl with dissolve2
     $ meet('hg','Мужчина')
     play music music_7dl["youarenotalone"] fadein 4
     hg "Ну привет, Алиса."

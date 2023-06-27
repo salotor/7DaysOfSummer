@@ -107,9 +107,11 @@ label alt_day5_mi_dj_start:
             else:
                 call alt_day5_mi_dj_evening_club2
                 pause(1)
-                if not alt_day5_mi_dj_hentai_done:
+                if alt_day5_mi_dj_hentai_done:
+                    call alt_day5_mi_dj_hentai
+                else:
                     call alt_day5_mi_dj_sleeptime
-                    pause(1)
+                pause(1)
         else:
             call alt_day5_mi_dj_sleeptime
             pause(1)
@@ -243,16 +245,26 @@ label alt_day7_mi_dj_start:
     pause(1)
     $ persistent.sprite_time = "prolog"
     $ prolog_time()
-    if alt_day6_mi_dj_catapult in (1, 2):
-        $ alt_chapter(7, u"Мёрзну без тебя")
-        call alt_day7_mi_dj_epilogue_frost
-        pause(1)
-        if alt_day6_mi_dj_catapult == 2:
-            call alt_day7_mi_dj_bad
-            pause(1)
+    if alt_day6_mi_dj_catapult in (1, 2, 3):
+        if lp_mi < 18:
+            if alt_day6_mi_dj_catapult == 2:
+                $ alt_chapter(7, u"Мёрзну без тебя")
+                call alt_day7_mi_dj_epilogue_frost
+                call alt_day7_mi_dj_bad
+                pause(1)
+            elif alt_day6_mi_dj_catapult == 1:
+                call alt_day7_mi_dj_reject
+                pause(1)
         else:
-            call alt_day7_mi_dj_true
+            $ alt_chapter(7, u"Мёрзну без тебя")
+            call alt_day7_mi_dj_epilogue_frost
             pause(1)
+            if alt_day6_mi_dj_catapult == 2:
+                call alt_day7_mi_dj_bad
+                pause(1)
+            elif alt_day6_mi_dj_catapult in (1, 3):
+                call alt_day7_mi_dj_true
+                pause(1)
     else:
         $ alt_chapter(7, u"Мир сошёл с ума")
         call alt_day7_mi_dj_good

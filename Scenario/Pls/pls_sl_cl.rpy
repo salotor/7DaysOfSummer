@@ -48,8 +48,6 @@ label alt_day5_sl_cl_start:
     pause(1)
     call alt_day5_sl_cl_chief
     pause(1)
-    if alt_day_catapult:
-        return
     call alt_day5_sl_cl_mt
     pause(1)
     call alt_day5_sl_cl_breakfast
@@ -101,6 +99,8 @@ label alt_day6_sl_cl_start:
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
     $ alt_chapter(6, u"Славя. Утро.")
+    call alt_day6_sl_cl_begin_yulya
+    pause(1)
     if alt_day5_sl_cl_hentai_done:
         call alt_day6_sl_cl_begin_good
     elif alt_day4_sl_cl_tut_iz:
@@ -148,49 +148,24 @@ label alt_day6_sl_cl_start:
             call alt_day6_sl_cl_loki_exc
             pause(1)
             return
-        elif (alt_day6_sl_cl_int == 1) and (alt_sp >= 6) and (persistent.sl_cl_good_rf or persistent.sl_cl_good_rf2 or persistent.sl_cl_good_ussr):
+        elif alt_day6_sl_cl_agreed:
             call alt_day6_sl_cl_ba_help
             pause(1)
-            $ persistent.sprite_time = "prolog"
-            $ prolog_time()
-            call alt_day6_sl_cl_home
+            $ routetag = "sltrue"
+            $ persistent.sprite_time = "night"
+            $ night_time()
+            $ alt_chapter(7, u"Славя. Выбор.")
+            call alt_day7_sl_cl_loop
             pause(1)
-            call alt_day6_sl_cl_intellectual
+            call alt_day7_sl_cl_porridge
             pause(1)
-            if alt_day6_sl_cl_int == 2:
-                $ routetag = "sltrue"
-                $ alt_chapter(7, u"Славя. Фантазм.")
-                call alt_day7_sl_cl_fear
-                pause(1)
-                $ persistent.sprite_time = "day"
-                $ day_time()
-                call alt_day7_sl_cl_1996
-                pause(1)
-                if alt_day6_sl_cl_int == 3:
-                    $ persistent.sprite_time = "night"
-                    $ night_time()
-                    $ alt_chapter(7, u"Славя. Выбор.")
-                    call alt_day7_sl_cl_loop
-                    pause(1)
-                    $ persistent.sprite_time = "day"
-                    $ day_time()
-                    call alt_day7_sl_cl_porridge
-                    pause(1)
-                    $ persistent.sprite_time = "night"
-                    $ night_time()
-                    if alt_day6_sl_cl_int == 5:
-                        call alt_day7_sl_cl_int_rej
-                    elif alt_day6_sl_cl_int == 4:
-                        call alt_day7_sl_cl_int_true
-                    else:
-                        call alt_day7_sl_cl_int_good
-                    pause(1)
-                else:
-                    call alt_day7_sl_cl_int_bad
-                    pause(1)
-            else:
-                call alt_day7_sl_cl_int_bad
-                pause(1)
+            if alt_day6_sl_cl_int_end == 'true':
+                call alt_day7_sl_cl_int_true
+            elif alt_day6_sl_cl_int_end == 'good':
+                call alt_day7_sl_cl_int_good
+            elif alt_day6_sl_cl_int_end == 'rej':
+                call alt_day7_sl_cl_int_rej
+            pause(1)
             return
         else:
             call alt_day6_sl_cl_regular_arc
@@ -264,10 +239,6 @@ label alt_day7_sl_cl_start:
             elif alt_sp >= 6:
                 call alt_day7_sl_cl_good_rf
             pause(1)
-            if alt_day6_sl_cl_arc == 'sh':
-                $ persistent.sprite_time = "prolog"
-                $ prolog_time()
-                call alt_day7_sl_cl_ps
         elif alt_day6_sl_cl_good == 3:
             call alt_day7_sl_cl_bad
         else:
@@ -281,13 +252,7 @@ label alt_day7_sl_cl_start:
                     call alt_day7_sl_cl_rej
                 elif lp_sl >= 18:
                     call alt_day7_sl_cl_rej_rf
-        pause(1)
     else:
         call alt_day7_sl_cl_bad
-        pause(1)
-        if alt_day6_sl_cl_arc == 'sh':
-            $ persistent.sprite_time = "prolog"
-            $ prolog_time()
-            call alt_day7_sl_cl_ps
-            pause(1)
+    pause(1)
     return

@@ -6,8 +6,8 @@ init python:
     # Сброс перзистентов
     def sdl_achv_clear_persistents_ask(achv_arr):
         layout.yesno_screen(
-            "Сбросить полученные концовки в этом разделе?",
-            yes = [Function(sdl_achv_clear_persistents, achv_arr), Play("sound", sdl_achv_clear)],
+            "Сбросить полученные концовки в этом руте?",
+            yes = [Function(sdl_achv_clear_persistents, achv_arr), Function(sdl_achv_progress_calc), Play("sound", sdl_achv_clear)],
             no  = NullAction()
             )
 
@@ -17,7 +17,20 @@ init python:
         alt_binder_update()
         return
 
-
+    # Калькулятор прогресса
+    def sdl_achv_progress_calc():
+        global sdl_achv_progress
+        seen_count = 0.0
+        label_count = 0.0
+        for ch, char in sdl_achv_section_to_routes.items():
+            if ch != "va":
+                for route in char:
+                    for achieve in route.achv_arr:
+                        if getattr(persistent, achieve.persistent):
+                            seen_count += 1
+                        label_count += 1
+        ratio = seen_count / label_count * 100
+        sdl_achv_progress = round(ratio, 1)
 
     # Das ist OOP!
 
@@ -285,7 +298,12 @@ init python:
         def get_achievements(self):
             return self.achievements
 
-
+    # Требование к пазлу
+    class sdl_achv_Puzzle_prerequisites:
+        def __init__(self, cur_prerequisites):
+            self.cur_prerequisites = cur_prerequisites
+        def get_cur_prerequisites(self):
+            return self.cur_prerequisites
 
 ##\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ЭКРАНЫ\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 # Начальный экран
@@ -412,6 +430,25 @@ screen sdl_achv_section_selector(engine):
     # Панелька плеера
     if sdl_mus_engine.is_active:
         use music_panel_7dl(default_music=music_7dl["ambience_safe"])
+
+    # Инфа по прогрессу
+    if engine.get_cur_route().get_title() == None:
+        text "Открыто\nконцовок: [sdl_achv_progress]%":
+            style "sdl_achv_font_small_inactive"
+            xcenter 795
+            ycenter 1010
+
+    # Пазл-сердечко
+        imagebutton xcenter 595 ycenter 1010:
+            focus_mask True
+            idle "sdl_achv_puzzle"
+            hovered SetVariable("sdl_achv_show_puzzle_prereq", True)
+            unhovered SetVariable("sdl_achv_show_puzzle_prereq", False)
+            action SetVariable("sdl_achv_show_puzzle_prereq", True)
+
+    if sdl_achv_show_puzzle_prereq and (not persistent.alt_binder):
+        use sdl_achv_prerequisites(sdl_achv_puzzle_prereq)
+
 # ------------------------------------------------------------------------------------------------
 # Экран раздела
 screen sdl_achvlist_section(engine):
@@ -465,7 +502,7 @@ screen sdl_achv_route(engine):
         hover (engine.get_cur_route().get_interface().get_del_button())
         hovered [Function(engine.set_hovered_icon, "sdl_achv_del")]
         unhovered [Function(engine.set_hovered_icon, None)]
-        action [Function(sdl_achv_clear_persistents_ask, engine.get_cur_route().get_achv_arr())]
+        action [Function(engine.set_hovered_icon, None), Function(sdl_achv_clear_persistents_ask, engine.get_cur_route().get_achv_arr())]
 
     # Ачивки
     $ sdl_achv_count = 0
@@ -524,7 +561,7 @@ screen sdl_achv_route(engine):
                             action [Function(engine.set_cur_prerequisites, achv.get_prerequisites())]
                         $ sdl_achv_prerequisites = {}
             # Счётчик прохождений
-            if d3:
+            if False:
                 frame:
                     xysize (50, 50)
                     xcenter 965
@@ -554,7 +591,7 @@ screen sdl_achv_route(engine):
 
                 add "sdl_achv_fog" pos (0, 0)
             # Счётчик прохождений
-            if d3:
+            if False:
                 frame:
                     xysize (50, 50)
                     xcenter 965
@@ -606,13 +643,13 @@ screen sdl_achv_prerequisites(engine):
         vbox:
             spacing 25
             null height 25
+            hbox xalign 0.5:
+                spacing 25
+                null width 25
+                add engine.get_cur_prerequisites()[0].get_text() xalign 0.5
+                null width 25
             for prerequisite in engine.get_cur_prerequisites():
                 if not prerequisite.check_conditions():
-                    hbox xalign 0.5:
-                        spacing 25
-                        null width 25
-                        add prerequisite.get_text() xalign 0.5
-                        null width 25
                     if prerequisite.get_achievements() != None:
                         hbox xalign 0.5:
                             spacing 25
@@ -661,6 +698,8 @@ label sdl_achvlist_main:
 
     $ renpy.block_rollback()
     $ sdl_achv_engine = sdl_achv_Engine(sdl_achv_route_default)
+    $ sdl_achv_progress_calc()
+    $ sdl_achv_show_puzzle_prereq = False
     call screen sdl_achvlist_main(sdl_achv_engine)
 # ------------------------------------------------------------------------------------------------
 # Выбор раздела

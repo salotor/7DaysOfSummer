@@ -70,6 +70,14 @@ init 9999 python:
             Show("sdl_achv_sprite", Dissolve(0.5), "ars", "smile3", "pajama"),
             persistent.alt_binder
         ),
+        sdl_achv_Achievement(    # Гуд-СССР
+            "acm_logo_mi_7dl_good_ussr",
+            "mi_7dl_good_ussr",
+            "sdl_achv_mi_good_US",
+            [],
+            sdl_Replay("alt_day7_mi_7dl_good_ussr", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
+            "smile"
+        ),
         sdl_achv_Achievement(    # Гуд-M
             "acm_logo_mi_7dl_good_human",
             "mi_7dl_good_human",
@@ -95,14 +103,6 @@ init 9999 python:
             "happy",
             7,
             sdl_Replay("alt_day7_mi_7dl_good_star_ps", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
-        ),
-        sdl_achv_Achievement(    # Нейтрал-M
-            "acm_logo_mi_7dl_neu_human",
-            "mi_7dl_neu_human",
-            "sdl_achv_mi_neu",
-            [],
-            sdl_Replay("alt_day7_mi_7dl_neu_human", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
-            "cry_smile"
         ),
         sdl_achv_Achievement(    # Эксклюзив-Локи
             "acm_logo_mi_7dl_loki_exc",
@@ -213,6 +213,14 @@ init 9999 python:
                       ),
             "happy"
         ),
+        sdl_achv_Achievement(    # Рикошет
+            "acm_logo_mi_dj_rej",
+            "mi_dj_reject",
+            "sdl_achv_mi_rej",
+            [],
+            sdl_Replay("alt_day7_mi_dj_reject", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
+            "surprise"
+        ),
         sdl_achv_Achievement(    # Бэд
             "acm_logo_mi_dj_bad",
             "mi_dj_bad",
@@ -222,6 +230,7 @@ init 9999 python:
             "cry"
         )
     ]
+
 
     ## Алиса-7дл
     sdl_achv_array_dv_7dl = [
@@ -447,7 +456,13 @@ init 9999 python:
             "sl_7dl_good_rf",
             "sdl_achv_sl_good_RF",
             [],
-            sdl_Replay("alt_day7_sl_7dl_good_rf", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
+            sdl_Replay(
+                        "alt_day7_sl_7dl_good_rf", {"alt_replay_on" : "True"},
+                        vars = [
+                                    sdl_var_i_karma
+                                ],
+                        func_in = prolog_interface_on, func_out = replay_screens_load
+                      ),
             "shy",
             7,
             sdl_Replay(
@@ -504,9 +519,6 @@ init 9999 python:
             sdl_Replay(
                         "alt_day7_sl_7dl_herc_good", {"alt_replay_on" : "True"},
                         meets = {'uv' : 'Кошкодевочка'},
-                        vars = [
-                                    sdl_var_b_d5_sl_7dl_sick
-                                ],
                         func_in = prolog_interface_on, func_out = replay_screens_load
                       ),
             "happy",
@@ -609,23 +621,6 @@ init 9999 python:
                 )
             ],
             sdl_Replay("alt_day7_sl_cl_int_rej", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
-            "upset"
-        ),
-        sdl_achv_Achievement(    # Инт-бэд
-            "acm_logo_sl_cl_int_bad",
-            "sl_cl_int_bad",
-            "sdl_achv_sl_bad_IN",
-            [
-                sdl_achv_Prerequisite(
-                    "sdl_achv_info_end",
-                    {
-                        sdl_achv_Achievement("acm_logo_sl_cl_good_ussr", "sl_cl_good_ussr", "sdl_achv_sl_good_US", None, None),
-                        sdl_achv_Achievement("acm_logo_sl_cl_good_rf", "sl_cl_good_rf", "sdl_achv_sl_good_RF", None, None),
-                        sdl_achv_Achievement("acm_logo_sl_cl_good_rf2", "sl_cl_good_rf2", "sdl_achv_sl_good_RF", None, None)
-                    }
-                )
-            ],
-            sdl_Replay("alt_day7_sl_cl_int_bad", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
             "upset"
         ),
         sdl_achv_Achievement(    # СССР-гуд
@@ -731,14 +726,6 @@ init 9999 python:
             Show("sdl_achv_sprite", Dissolve(0.5), "ars", "laugh", "casual"),
             persistent.alt_binder
         ),
-        sdl_achv_Achievement(    # ТруЪ-транзит
-            "acm_logo_un_7dl_true_tran",
-            "un_7dl_true_tran",
-            "sdl_achv_un_true_tran",
-            [],
-            sdl_Replay("alt_day7_un_7dl_true_tran", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
-            "shy"
-        ),
         sdl_achv_Achievement(    # Гуд-СССР
             "acm_logo_un_7dl_good_ussr",
             "un_7dl_good_ussr",
@@ -771,6 +758,14 @@ init 9999 python:
             ],
             sdl_Replay("alt_day7_un_7dl_rej", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
             "normal"
+        ),
+        sdl_achv_Achievement(    # Реджект2
+            "acm_logo_un_7dl_rej2",
+            "un_7dl_rej2",
+            "sdl_achv_un_rej",
+            [],
+            sdl_Replay("alt_day7_un_7dl_rej2", {"alt_replay_on" : "True"}, func_in = night_interface_on, func_out = replay_screens_load),
+            "sad"
         ),
         sdl_achv_Achievement(    # Бэд
             "acm_logo_un_7dl_bad",
@@ -970,9 +965,9 @@ init 9999 python:
     ## Ульяна-7дл
     sdl_achv_array_us_7dl = [
         sdl_achv_Achievement(    # Осколок памяти
-        "acm_logo_us_7dl_shard",
-        "us_7dl_shard",
-        "sdl_achv_us_shard",
+            "acm_logo_us_7dl_shard",
+            "us_7dl_shard",
+            "sdl_achv_us_shard",
             [
                 sdl_achv_Prerequisite(
                     "sdl_achv_info_puz",
@@ -1008,7 +1003,7 @@ init 9999 python:
             ],
             sdl_Replay("alt_day7_us_7dl_true", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
             "grin",
-            7,
+            5,
             None,
             Show("sdl_achv_sprite", Dissolve(0.5), "us", "grin", "grow_dress")
         ),
@@ -1093,6 +1088,30 @@ init 9999 python:
 
     ## Семён-Одиночка
     sdl_achv_array_me_owl = [
+        # sdl_achv_Achievement(    # Нейтрал Герка
+            # "acm_logo_me_neu_herc_exc",
+            # "me_neu_herc_exc",
+            # "sdl_achv_me_herc_exc",
+            # [],
+            # sdl_Replay("alt_day7_me_neu_herc_exc", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
+            # "pi_normal"
+        # ),
+        # sdl_achv_Achievement(    # Нейтрал Локи
+            # "acm_logo_me_neu_loki_exc",
+            # "me_neu_loki_exc",
+            # "sdl_achv_me_loki_exc",
+            # [],
+            # sdl_Replay("alt_day7_me_neu_loki_exc", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
+            # "pi_normal"
+        # ),
+        # sdl_achv_Achievement(    # Нейтрал Дрищ
+            # "acm_logo_me_neu_dr_exc",
+            # "me_neu_dr_exc",
+            # "sdl_achv_me_dr_exc",
+            # [],
+            # sdl_Replay("alt_day7_me_neu_dr_exc", {"alt_replay_on" : "True"}, func_in = prolog_interface_on, func_out = replay_screens_load),
+            # "pi_normal"
+        # ),
         sdl_achv_Achievement(    # Бэд
             "acm_logo_me_neu_bad",
             "me_neu_bad",
@@ -1232,3 +1251,45 @@ init 9999 python:
         sdl_Character("sdl_achv_char_herc", 2, "sdl_achv_char_label_herc", "herc"),
         sdl_Character("sdl_achv_char_dr",   1, "sdl_achv_char_label_dr",   "dr")
     ]
+
+    # Требования для пазла-сердечка
+    sdl_achv_puzzle_prereq = sdl_achv_Puzzle_prerequisites(
+        [
+            sdl_achv_Prerequisite(
+                "sdl_achv_info_end",
+                {
+                    sdl_achv_Achievement("acm_logo_mi_dj_true", "mi_dj_true", "sdl_achv_mi_true", None, None)
+                }
+            ),
+            sdl_achv_Prerequisite(
+                "sdl_achv_info_end",
+                {
+                    sdl_achv_Achievement("acm_logo_dv_dj_true", "dv_dj_true", "sdl_achv_dv_true", None, None)
+                }
+            ),
+            sdl_achv_Prerequisite(
+                "sdl_achv_info_end",
+                {
+                    sdl_achv_Achievement("acm_logo_sl_cl_int_true", "sl_cl_int_true", "sdl_achv_sl_true_IN", None, None)
+                }
+            ),
+            sdl_achv_Prerequisite(
+                "sdl_achv_info_end",
+                {
+                    sdl_achv_Achievement("acm_logo_un_fz_rr_true", "un_fz_rr_true", "sdl_achv_un_true_IN", None, None)
+                }
+            ),
+            sdl_achv_Prerequisite(
+                "sdl_achv_info_end",
+                {
+                    sdl_achv_Achievement("acm_logo_mt_7dl_true", "mt_7dl_true", "sdl_achv_mt_true", None, None)
+                }
+            ),
+            sdl_achv_Prerequisite(
+                "sdl_achv_info_end",
+                {
+                    sdl_achv_Achievement("acm_logo_us_7dl_true", "us_7dl_true", "sdl_achv_us_true", None, None)
+                }
+            )
+        ]
+    )

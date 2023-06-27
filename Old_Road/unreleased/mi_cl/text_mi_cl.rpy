@@ -829,7 +829,7 @@ label alt_day4_mi_duty:
             "Она замялась."
             show dv normal pioneer at center with dspr
             dv "Ладно. Договорились."
-            if (alt_day2_dv_ultim == 2) and (alt_day2_gamblers_result['me'] == 22):
+            if (alt_day2_dv_ultim == 2) and alt_day2_gamblers_result_me:
                 $ alt_day4_mi_coal = True
                 me "Что, правда разденешься?"
                 me "Серьёзно?!"
@@ -3444,7 +3444,7 @@ label alt_day4_mi_date:
     "Скучать уж точно не доводилось."
     "И то ли ещё будет!"
     "Мику опять переборщила с эфирными маслами, и от рубашки, висящей на спинке кровати отчётливо слышался летучий запах — отныне и впредь навсегда связанный с ней."
-    scene cg d1_end_of_day_7dl  with dissolve
+    scene cg d1_me_end_of_day_7dl  with dissolve
 
     "Ми…"
     scene black with fade2

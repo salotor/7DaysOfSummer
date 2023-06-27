@@ -13,7 +13,7 @@
     "В эти периоды я никогда не доверяю своим органам чувств на сто процентов."
     "Я отшатываюсь назад, едва не теряя равновесие."
     "В этот раз всё произошло слишком резко."
-    show un cry pioneer behind prologue_dream with dissolve
+    show un3 cry_88 pioneer behind prologue_dream with dissolve
     "Я бы ликовал, если бы не залитая слезами девчонка напротив меня."
     un "После всего, что между нами было?"
     "Кажется, эта истерика продолжается уже долго."
@@ -29,7 +29,7 @@
     am "Мы объяснились?"
     "Она не сводит с меня заплаканных глаз, и это жутко раздражает."
     am "Объяснились. А теперь меня ждут."
-    hide un with moveoutleft
+    hide un3 with moveoutleft
     "Она срывается с места и убегает."
     "Я слышу долетающие до меня всхлипы, пока она не растворяется среди деревьев."
     "Глубоко вдыхаю."
@@ -991,7 +991,7 @@ label alt_day4_un_fz_mt_help:
     mt "Пока что вперёд."
     mt "Я скажу, когда повернуть."
     "Я налёг на вёсла, и мы отчалили."
-    scene cg d4_un_fz_mt_board_7dl mt_smile
+    scene cg d4_mt_board_7dl mt_smile
     with joff_r
     play music music_7dl["lazy_olga"] fadein 3
     "Минуту спустя за мной потянулась вереница лодок, загруженных родителями и их чадами."
@@ -999,44 +999,44 @@ label alt_day4_un_fz_mt_help:
     "Я с недоумением взглянул на неё."
     me "А вы не собираетесь проводить экскурсию?"
     me "Рассказывать им о местной флоре и фауне, например? Расхваливать виды, которые открываются с воды?"
-    show cg d4_un_fz_mt_board_7dl mt_laugh
+    show cg d4_mt_board_7dl mt_laugh
     with dspr
     mt "Сёмыч, я же голос сорву! Они далеко!"
-    show cg d4_un_fz_mt_board_7dl mt_smile3
+    show cg d4_mt_board_7dl mt_smile3
     with dissolve
     "Моя спина уже изрядно вспотела, хотя мы не проплыли и ста метров от причала."
     "Я начал чувствовать в этой затее вожатой какой-то подвох."
     me "А рупор вы, я так полагаю, не нашли?"
-    show cg d4_un_fz_mt_board_7dl mt_normal
+    show cg d4_mt_board_7dl mt_normal
     with dissolve
     mt "Признаться честно, я и не искала."
     mt "Эта идея с лодочным круизом была такой спонтанной, что я не успела обдумать детали…"
-    show cg d4_un_fz_mt_board_7dl mt_smile3
+    show cg d4_mt_board_7dl mt_smile3
     with dissolve
     "Она довольно щурилась, вытянув вперёд загорелые ноги."
     th "Поздравляю, болван, на тебе опять покатались."
     th "Только на этот раз почти буквально."
     th "Вон как Ольгу-то разморило! Балдеет лежит. А ты впахивай!"
     "Я стиснул зубы и активнее заработал вёслами."
-    show cg d4_un_fz_mt_board_7dl mt_dontlike
+    show cg d4_mt_board_7dl mt_dontlike
     with dissolve
     mt "Не гони так. Плыви помедленнее. Не хватало ещё, чтобы кто-то свалился."
     mt "Да и вообще, нам нужно растянуть наш заплыв до обеда. Других развлечений в лагере пока что нет."
     me "Неужели другие вожатые не смогли придумать, чем занять родителей?"
-    show cg d4_un_fz_mt_board_7dl mt_normal
+    show cg d4_mt_board_7dl mt_normal
     with dissolve
     "Ольга пожала плечами."
-    show cg d4_un_fz_mt_board_7dl mt_normal2
+    show cg d4_mt_board_7dl mt_normal2
     with dspr
     mt "Анна сейчас затеяла игру в вышибалы со своими подопечными и их родителями. Но там, в основном, совсем малыши."
     mt "Катерина повела своих в лес на пикник."
     mt "Ещё какая-то часть просто гуляет по лагерю с детьми."
-    show cg d4_un_fz_mt_board_7dl mt_normal
+    show cg d4_mt_board_7dl mt_normal
     with dspr
     mt "Мне же, как старшей вожатой, нужно было изобрести занятие посерьёзнее."
     mt "Поэтому мы и сплавляемся по реке."
     "Я обречённо взглянул на тянувшиеся за нами лодки."
-    show cg d4_un_fz_mt_board_7dl mt_normal2
+    show cg d4_mt_board_7dl mt_normal2
     with dissolve
     "Пассажиры восторженно осматривались вокруг. Вряд ли гребцы разделяли их удовольствие."
     "Мы проплыли мимо пляжа, а это означало, что половина пути уже пройдена."
@@ -1046,7 +1046,7 @@ label alt_day4_un_fz_mt_help:
     "Ольга опустила панамку пониже на лоб: теперь солнце светило ей прямо в глаза."
     "Злорадно ухмыльнувшись, я вывернул лодку так, чтобы она оказалась прямо под палящими лучами."
     th "Пусть походит пару дней с обгоревшим носом. Исключительно в воспитательных целях."
-    show cg d4_un_fz_mt_board_7dl mt_smile
+    show cg d4_mt_board_7dl mt_smile
     with dspr
     mt "Теперь можешь расслабиться, Сёмыч."
     mt "По течению мы уж как-нибудь доплывём."
@@ -1054,39 +1054,39 @@ label alt_day4_un_fz_mt_help:
     "Родители в лодках позади тоже побросали вёсла. Поездка измотала всех."
     mt "Кажется, теперь уже не важно, когда мы вернёмся. У родителей всё равно не будет сил искать новые развлечения до обеда."
     me "Это была ваша гениальная задумка?"
-    show cg d4_un_fz_mt_board_7dl mt_grin
+    show cg d4_mt_board_7dl mt_grin
     with dspr
     mt "Нет. Только что в голову пришло."
     "Ольга ехидно засмеялась."
     mt "А заодно на время выведем тебя из строя, чтобы не хулиганил!"
     "Я опешил."
     me "А когда, простите, я нахулиганить успел?"
-    show cg d4_un_fz_mt_board_7dl mt_dontlike
+    show cg d4_mt_board_7dl mt_dontlike
     with dspr
     mt "Ой, не знаю даже."
     mt "Когда вчера лодку с Ульяной угонял?{w} Или когда дискотеку саботировал?"
     me "А про лодку вы откуда знаете?"
     "Обречённо спросил я."
-    show cg d4_un_fz_mt_board_7dl mt_normal
+    show cg d4_mt_board_7dl mt_normal
     with dspr
     mt "Да лодочник сказал, что видел с Ульяной высокого парня вчера."
     mt "Не Сыроежкина ведь она с собой потащила?"
     me "И это моё наказание?"
-    show cg d4_un_fz_mt_board_7dl mt_smile2
+    show cg d4_mt_board_7dl mt_smile2
     with dspr
     mt "Нет!"
     mt "Это партийное поручение."
-    show cg d4_un_fz_mt_board_7dl mt_smile
+    show cg d4_mt_board_7dl mt_smile
     with dspr
     mt "Наказывать я тебя не стану, так уж и быть."
     mt "Но ты ведь должен показать, что одумался и в своём вчерашнем поведении раскаиваешься?"
     mt "А лучший способ это выразить – принести пользу обществу!"
     "Она стащила с лица панамку и принялась ей обмахиваться."
-    show cg d4_un_fz_mt_board_7dl mt_normal
+    show cg d4_mt_board_7dl mt_normal
     with dspr
     mt "На самом деле, ты даже не представляешь, как сильно ты меня сегодня выручил. Без Слави я как без рук."
     th "Да уж. Не полениться даже, бедолаге!"
-    show cg d4_un_fz_mt_board_7dl mt_dontlike
+    show cg d4_mt_board_7dl mt_dontlike
     with dspr
     mt "Я ведь ещё и старшая вожатая в этом году."
     mt "Меньше общения с детьми, больше скучных бумажек."
@@ -1094,7 +1094,7 @@ label alt_day4_un_fz_mt_help:
     "В последней её фразе слышалась неприкрытая горечь."
     th "У самой Ольги вряд ли есть дети. Не чувствуется в ней чего-то такого, присущего матерям."
     th "Да и как можно укатить на всё лето к другим детям, скинув своих собственных на попечение бабушкам и дедушкам?"
-    show cg d4_un_fz_mt_board_7dl mt_normal2
+    show cg d4_mt_board_7dl mt_normal2
     with dspr
     "Откуда-то у меня была твёрдая уверенность, что мужа у нашей вожатой тоже нет."
     th "Будь она моей женой – я бы её на такую хлопотную работу, да ещё и чёрт знает куда, не отпустил."
@@ -1108,14 +1108,14 @@ label alt_day4_un_fz_mt_help:
     dreamgirl "Думаешь? Ничего себе!"
     dreamgirl "А ты умеешь?"
     th "Да пошёл ты…"
-    show cg d4_un_fz_mt_board_7dl mt_normal
+    show cg d4_mt_board_7dl mt_normal
     with dspr
     mt "О чём задумался, Сёмыч?"
     mt "У тебя лицо такое, будто споришь с кем-то."
     "Я ещё раз мысленно выругался на своего внутреннего собеседника."
     me "Да так. Прикидываю, скоро ли обед."
     "Ольга посмотрела на свои часы."
-    show cg d4_un_fz_mt_board_7dl mt_smile
+    show cg d4_mt_board_7dl mt_smile
     with dspr
     mt "Через полтора часа."
     mt "Пора причаливать!"
@@ -1392,6 +1392,7 @@ label alt_day4_un_fz_dv_escape:
             show dv normal pioneer close with dissolve
             "Я сел рядом с ней."
             "Выпустил аккуратное колечко."
+            th "Ништяк!"
             me "И давно ты куришь?"
             dv "Достаточно давно, чтобы не переживать о том, что ты кому-то об этом растреплешь."
             me "А кому трепать-то? Ольге настучать, обдав её ароматом табака?"
@@ -1496,7 +1497,7 @@ label alt_day4_un_fz_dv_escape:
             "Да и не был я уверен, что кто-то из двух девочек готов посвящать первого встречного в тонкости их взаимоотношений."
             scene bg ext_backdoor_day_7dl with dissolve
             "Впереди показалась калитка."
-            $ volume(0.2, "sound")
+            $ renpy.music.set_volume(0.2, delay=2, channel='sound')
             play sound sfx_7dl["eat_horn"] fadein 1
             "Мы поспели как раз вовремя: отсюда едва слышно различались звуки горна со стороны столовой."
             show dv normal pioneer with dissolve
@@ -1815,7 +1816,7 @@ label alt_day4_un_fz_lunch_forest:
         play music music_list["reminiscences"] fadein 3
     else:
         play music music_list["reflection_on_water"] fadein 3
-    $ volume(1.0, "sound")
+    $ renpy.music.set_volume(1.0, delay=2, channel='sound')
     "После беготни по лесу есть хотелось страшно."
     "Отстояв очередь и набрав на поднос всё, до чего дотянулись загребущие руки, я огляделся по столовой в поисках места."
     "Лена как раз сидела одна, и я направился к ней."
@@ -1944,7 +1945,7 @@ label alt_day4_un_fz_siesta:
     show un normal pioneer with dspr
     un "А что ты хочешь увидеть на рисунке?"
     menu:
-        "Город из твоих снов":
+        "Город из твоих снов" if alt_day3_un_fz_stories:
             $ counter_un_fz_old_road += 1
             me "Любую его часть, какая только придёт тебе в голову."
             hide un with dissolve
@@ -2381,7 +2382,7 @@ label alt_day4_un_fz_un_date:
     un "Её отцу дали две путёвки, но никто из её младших не захотел ехать."
     me "Понятно."
     hide un with dissolve
-    $ volume(0.5, 'ambience')
+    $ renpy.music.set_volume(0.5, delay=2, channel='ambience')
     play music music_7dl["what_if"] fadein 4
     "Мы продолжили путь."
     "Стало как-то совершенно неловко."
@@ -2508,7 +2509,7 @@ label alt_day4_un_fz_un_date:
     show un smile pioneer with dspr
     un "Отец заезжал утром, ещё до завтрака. И привёз результаты экзаменов."
     scene bg ext_un_hideout_day_7dl with dissolve
-    $ volume(1.0, 'ambience')
+    $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
     play ambience ambience_lake_shore_day fadein 3
     play music music_7dl["dance_with_me"] fadein 3
     "Тропинка, наконец, закончилась, и мы ступили на поросший грубой травой песок."
@@ -3786,7 +3787,7 @@ label alt_day4_un_fz_tea_party:
     "Лена постучала."
     un "Славя? Ты тут?"
     play sound sfx_open_dooor_campus_1
-    show sl normal pioneer with dissolve
+    show sl normal pioneer behind dv with dissolve
     "Дверь открылась, и активистка выглянула наружу."
     show sl surprise pioneer with dspr
     "Завидев нас с Алисой, она застыла с приоткрытым ртом."
@@ -4708,7 +4709,7 @@ label alt_day5_un_fz_dream:
     "Завернувшись в одеяло, я поспешил в домик."
     scene bg int_house_of_mt_night2 with dissolve
     play sound sfx_close_door_1
-    $ volume(0.2, 'ambience')
+    $ renpy.music.set_volume(0.2, delay=2, channel='ambience')
     "Я осторожно прикрыл за собой дверь и лёг на кровать, не потрудившись даже раздеться."
     "Ольга что-то пробормотала во сне, но глаза не открыла."
     show blink with dissolve
@@ -4758,7 +4759,7 @@ label alt_day5_un_fz_morning:
     th "Этот её тон…"
     th "Ну точно девушка, чей молодой человек завалился ночью пьяный в стельку, да ещё и пропахший женскими духами."
     play sound sfx_open_door_1
-    $ volume(1.0, 'ambience')
+    $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
     scene bg ext_house_of_mt_rain_7dl with dissolve
     "Я натянул дождевик поверх помятой формы и поспешно вышел на крыльцо."
     "Оставаться наедине с вожатой было неловко."
@@ -5157,7 +5158,7 @@ label alt_day5_un_fz_cndl:
     "Дверь открылась, и на крыльцо выглянула Славя."
     sl "Доброе утро! А мы только вас и ждём!"
     sl "Я уже собиралась идти искать вас. Заходите!"
-    $ volume(0.2, "ambience")
+    $ renpy.music.set_volume(0.2, delay=2, channel='ambience')
     play sound sfx_open_door_clubs
     scene bg int_clubs_male_rain_7dl with dissolve
     play music music_7dl["what_if"] fadein 3
@@ -5382,7 +5383,7 @@ label alt_day5_un_fz_cndl:
             me "Я лишь хочу убедиться, что она действительно нуждается именно в этом!"
             play sound sfx_open_door_clubs
             scene bg ext_clubs_rain_7dl with dissolve
-            $ volume(1.0, "ambience")
+            $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
             "Не слушая дальнейших возражений, я схватил со спинки стула свой дождевик и выскользнул за дверь."
             "Самой сложной задачей из предстоящих мне казался поиск Лены."
             "Дождь, конечно, значительно сокращал количество локаций, на которых она могла обнаружиться, но кто её знает?"
@@ -5505,7 +5506,7 @@ label alt_day5_un_fz_cndl:
                 "Воспользовавшись тем, что весь наш отряд полным составом крутился вокруг телевизора, наперебой раздавая Электронику советы по его подключению, я стащил со стула свой дождевик и бесшумно выскользнул за дверь."
                 play sound sfx_open_door_clubs
                 scene bg ext_clubs_rain_7dl with dissolve
-                $ volume(1.0, "ambience")
+                $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
                 th "Домой. Просто хочу домой."
                 th "Не могу дождаться, когда я забьюсь в угол кровати и начну упиваться одиночеством."
             else:
@@ -5553,7 +5554,7 @@ label alt_day5_un_fz_cndl:
                 scene bg ext_clubs_rain_7dl
                 show dv normal pioneer
                 with dissolve
-                $ volume(1.0, "ambience")
+                $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
                 play music music_7dl["ask_you_out"] fadein 2
                 "Только на крыльце я пожалел о столь поспешном решении."
                 "Дождь всё ещё лил, и явно не собирался утихнуть в ближайшее время, а мы даже не удосужились прихватить с собой плащи."
@@ -5645,7 +5646,7 @@ label alt_day5_un_fz_cndl:
     scene
     $ renpy.show("bg int_house_of_mt_sunset", what = Desat("bg int_house_of_mt_sunset"))
     with dissolve
-    $ volume(0.2, "ambience")
+    $ renpy.music.set_volume(0.2, delay=2, channel='ambience')
     play sound sfx_close_door_1
     if (counter_un_fz_dv_fake_date == 3):
         "Едва зайдя в свою скромную обитель, я скинул с себя мокрую форму и аккуратно развесил её на дверцах шкафа."
@@ -5673,7 +5674,7 @@ label alt_day5_un_fz_cndl:
     stop ambience fadeout 5
     "Сериалы – аналог наркотиков для бедных. Быстрый и качественный уход от реальности."
     "От реальности…"
-    $ volume(1.0, "ambience")
+    $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
     return
 
 label alt_day5_un_fz_dream2_dv:
@@ -6883,7 +6884,7 @@ label alt_day5_un_fz_old_camp:
     with vpunch
     "Я отпрянул назад, больно ударившись об стол."
     "Потому что Алиса Сидорова, с улыбкой смотревшая на меня с фотографии…"
-    scene cg d5_un_fz_old_camp_al_7dl with dissolve
+    scene cg d5_us_old_photo_7dl with dissolve
     $ alt_pause(3)
     scene bg int_old_building_cab_day_7dl
     show un shocked pioneer far
@@ -7965,7 +7966,7 @@ label alt_day5_un_fz_search:
         "Какое-то неведомое чувство шептало, что сейчас я увижу нечто важное. Нечто такое, что перевернёт привычный мне мир с ног на голову."
         "Но в то же время я как будто знал, что именно, только не мог вспомнить, как ни пытался."
     stop music fadeout 4
-    scene cg d5_fz_un_pixies_7dl with fade3
+    scene cg d5_un_pixies_7dl with fade3
     play ambience ambience_lake_shore_night fadein 3
     play music music_7dl["embers"] fadein 3
     "В свете луны пляж выглядел, как одна из тех картин, которые я видел во время школьных экскурсий из прошлой жизни."
@@ -7987,7 +7988,7 @@ label alt_day5_un_fz_search:
     "Я закрыл глаза и глубоко вздохнул."
     "Оцепенение спало, словно его никогда и не было."
     un "Ты всё же пришёл."
-    scene cg d5_fz_un_pixies_7dl
+    scene cg d5_un_pixies_7dl
     show unblink
     with dissolve
     "Лена произнесла это не оборачиваясь, хотя я никак себя не выдавал."
@@ -8041,13 +8042,13 @@ label alt_day5_un_fz_search:
     un "Тай-тай, налетай огоньками ветер."
     un "Чтоб однажды меня кто-то где-то встретил."
     stop music fadeout 5
-    scene cg d5_un_fz_twinkles_1_7dl with dissolve
+    scene cg d5_twinkle_1_7dl with dissolve
     "С тихим всплеском кусок коры упал на тёмную поверхность воды."
     return
 
 label alt_day5_un_fz_rr:
     play sound sfx_7dl["cndl_flash"]
-    scene cg d5_un_fz_twinkles_3_7dl with dissolve
+    scene cg d5_twinkle_3_7dl with dissolve
     $ alt_pause(0.5)
     play music music_7dl["i_will_find_you"] fadein 3
     "Блик от загоревшегося фитилька свечи заплясал на волнах."
@@ -8086,15 +8087,15 @@ label alt_day5_un_fz_rr:
     "Она уже держала наготове свечу."
     hide un with dissolve
     me "Тай-тай, налетай…"
-    scene cg d5_un_fz_twinkles_4_7dl with dissolve
+    scene cg d5_twinkle_4_7dl with dissolve
     "С замиранием сердца я отпускал Огонёк на воду."
     "Если он не загорится…"
     th "Нельзя! Нельзя лишать последней надежды умирающего."
     th "Нельзя сказать сейчас Лене, что чудес не бывает, и сказке не суждено стать былью."
     play sound sfx_7dl["cndl_flash"]
-    scene cg d5_un_fz_twinkles_5_7dl with dissolve
+    scene cg d5_twinkle_5_7dl with dissolve
     $ alt_pause(2)
-    scene cg d5_un_fz_twinkles_6_7dl with dissolve2
+    scene cg d5_twinkle_6_7dl with dissolve2
     "Второй огонёк медленно подплыл к первому."
     "Я словно заново вспомнил, как дышать."
     un "В прошлом году ты уже был здесь."
@@ -8114,7 +8115,7 @@ label alt_day5_un_fz_rr:
     me "Быстрее!"
     "Раскидывая ногами мокрый песок, мы мчались вдоль берега по течению реки."
     "И там…"
-    scene cg d5_un_fz_tousand_twinkles_7dl with dissolve2
+    scene cg d5_thousand_twinkles_7dl with dissolve2
     $ alt_pause(2)
     "Флотилия Огоньков покачивалась на волнах, озаряя поверхность воды ничуть не хуже солнца на закате."
     if alt_day4_un_fz_un_evening == 'walk':
@@ -8194,11 +8195,11 @@ label alt_day5_un_fz_rr_sleeptime:
     me "Ты подарил одной замечательной девочке шанс."
     show blink
     "Глаза медленно закрылись, но в голове до сих пор отчётливо виднелась картинка:"
-    scene cg d5_fz_un_pixies_7dl
+    scene cg d5_un_pixies_7dl
     show prologue_dream
     with dissolve
     "Ночь. Река. Хвостики Лены, которые треплет лёгкий ветерок."
-    scene cg d5_un_fz_tousand_twinkles_7dl
+    scene cg d5_thousand_twinkles_7dl
     show prologue_dream
     with dissolve
     "И флотилия Огоньков, дрейфующих у горизонта."
@@ -8217,7 +8218,7 @@ label alt_day5_un_fz_rr_sleeptime:
 label alt_day5_un_fz_fzr:
     play music music_7dl["lynn"] fadein 3
     play sound sfx_scoop_water_cup
-    scene cg d5_un_fz_twinkles_2_7dl with dissolve
+    scene cg d5_twinkle_2_7dl with dissolve
     $ alt_pause(1)
     "Качнувшись на волнах, кораблик повалился набок."
     "Ночную тишину рассёк судорожный вздох Лены."
@@ -8374,7 +8375,7 @@ label alt_day5_un_fz_fzr_sleeptime:
     $ alt_pause(1)
     scene bg int_house_of_mt_night2 with dissolve
     $ alt_pause(1)
-    scene cg d1_end_of_day_7dl with fade3
+    scene cg d1_me_end_of_day_7dl with fade3
     play ambience ambience_int_cabin_night fadein 3
     play music music_7dl["melancholy_sun"] fadein 3
     th "Сумасшедший был денёк."
@@ -8392,10 +8393,10 @@ label alt_day5_un_fz_fzr_sleeptime:
     th "Сумел ведь?"
     stop music fadeout 3
     scene black with fade3
-    $ volume(0.1, "sound")
+    $ renpy.music.set_volume(0.1, delay=2, channel='sound')
     play sound sfx_close_door_1
     "В полудрёме я услышал, как тихо закрывается дверь."
-    $ volume(1.0, "sound")
+    $ renpy.music.set_volume(1.0, delay=2, channel='sound')
     play sound sfx_bed_squeak1
     "Ольга переоделась не зажигая свет и улеглась на свою кровать."
     mt "Доброй ночи, Сёмыч."
@@ -8712,11 +8713,11 @@ label alt_day6_un_fz_map_boatstation1:
     th "Разве она не привыкла добиваться своего? Рвать и метать, когда что-то идёт не по её плану?"
     show us upset sport far with dspr
     us "Ты уже меня старше. А в следующем году тебе аж шестнадцать стукнет."
-    dn "Мире это не помешало."
+    dn "И что с того?"
     "Пожал плечами мальчик."
     show us normal sport far with dspr
-    us "Да, не помешало. Но он был другой, понимаешь? Не такой, как мы."
-    us "И он так и не рассказал нам, как её найти."
+    us "Да то, что только дети могут найти путь!"
+    dn "Не попробуем — не узнаем. А пока мы с тобой будем в лагере, я сдаваться не собираюсь!"
     th "Да о чём они вообще?"
     show dn smile pioneer far at center with move
     "Я уже хотел было развернуться и уйти, как вдруг кудряш неловко приобнял Ульяну за плечи."
@@ -8791,8 +8792,8 @@ label alt_day6_un_fz_map_playground1:
     th "Разве что перекати-поля не хватает. Или зловеще скрипящих качелей."
     $ alt_pause(0.01)
     play sound_loop sfx_kns_fzs fadein 0.5
-    $ volume(0.0, "ambience")
-    $ volume(0.0, "music")
+    $ renpy.music.set_volume(0.0, delay=2, channel='ambience')
+    $ renpy.music.set_volume(0.0, delay=2, channel='music')
     show bg ext_lost_city_7dl
     show prologue_dream
     with flash
@@ -8800,8 +8801,8 @@ label alt_day6_un_fz_map_playground1:
     "В голове рисовались мрачные картинки альтернативного будущего после ядерной войны или взрыва Солнца…"
     stop sound_loop fadeout 0.2
     scene bg ext_playground_day with dissolve
-    $ volume(1.0, "ambience")
-    $ volume(1.0, "music")
+    $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
+    $ renpy.music.set_volume(1.0, delay=2, channel='music')
     dreamgirl "Когда Солнце взорвётся – нашей планете настанет крышка."
     dreamgirl "Если какая-нибудь площадка этот взрыв и переживёт, то только если той посчастливится располагаться на Плутоне."
     th "С каких это пор ты эксперт в области астрофизики?"
@@ -9028,7 +9029,7 @@ label alt_day6_un_fz_map_house_dv1:
     hide dv with dissolve
     "Её рыжая голова скрылась за дверью."
     "Весьма заинтригованный, я проскользнул в её домик следом за ней."
-    $ volume(0.3, "ambience")
+    $ renpy.music.set_volume(0.3, delay=2, channel='ambience')
     scene bg int_house_of_dv_day with dissolve
     "И тут же замер в изумлении, ведь Двачевская…"
     show dv smile dress with dissolve
@@ -9112,7 +9113,7 @@ label alt_day6_un_fz_map_house_dv1:
     play sound sfx_open_dooor_campus_1
     scene bg ext_house_of_dv_day with dissolve
     play sound sfx_close_door_campus_1
-    $ volume(1.0, "ambience")
+    $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
     "Закончить она не успела – я оперативно выскочил за дверь."
     th "Поколотит ещё!"
     "На душе вдруг сделалось так светло и радостно, словно мне на мгновение вновь стало семнадцать лет."
@@ -9297,10 +9298,10 @@ label alt_day6_un_fz_map_dinner_hall2:
     th "У неё там… свидание?"
     th "Но с кем?"
     "Самым адекватным в данной ситуации вариантом смотрелся разве что физрук."
-    $ volume(3.5, "sound")
+    $ renpy.music.set_volume(3.5, delay=2, channel='sound')
     play sound sfx_7dl["pup_bark2"]
     "Но ответом девочке послужил звонкий собачий лай."
-    $ volume(1.0, "sound")
+    $ renpy.music.set_volume(1.0, delay=2, channel='sound')
     sl "Голодный? Держи!"
     play sound sfx_cigarette_pack_crumple
     "Послышалось шуршание пакета."
@@ -9310,7 +9311,7 @@ label alt_day6_un_fz_map_dinner_hall2:
     "Решив, что гадать мне не хочется, я сунулся в дверь."
     stop music fadeout 3.5
     "Конечно, вряд ли мне были там рады, но посмотреть на собаку (а заодно и на то, как будет оправдываться Славя) было весьма любопытно."
-    $ volume(0.4, "ambience")
+    $ renpy.music.set_volume(0.4, delay=2, channel='ambience')
     play sound sfx_close_door_1
     scene bg int_warehouse2_day_7dl with dissolve
     play music music_7dl["beasteye"] fadein 2
@@ -9321,7 +9322,7 @@ label alt_day6_un_fz_map_dinner_hall2:
     "Она не спрашивала, а утверждала."
     "В ответ я лишь кивнул."
     sl "Ничего. Уже завтра я увезу его в город и пристрою к хорошим людям."
-    show cg d6_sl_puppy_7dl with dissolve
+    show cg d6_puppy_7dl with dissolve
     "Я присел на корточки рядом с девочкой."
     "У её ног ползал белый пушистый комок."
     me "Знатный вырастет волчара."
@@ -9340,10 +9341,10 @@ label alt_day6_un_fz_map_dinner_hall2:
     th "Знаю. Сам, бывало, возмущался."
     me "Я больше кошек люблю. Сам приютил одну – нашёл в парадной, выходил."
     "Говоря это, я осторожно почесал щенка за ухом указательным пальцем."
-    $ volume(3.5, "sound")
+    $ renpy.music.set_volume(3.5, delay=2, channel='sound')
     play sound sfx_7dl["pup_bark2"]
     "Пёс довольно тявкнул."
-    $ volume(1.0, "sound")
+    $ renpy.music.set_volume(1.0, delay=2, channel='sound')
     show sl smile pioneer close with dspr
     sl "А родители что?"
     me "А что родители?"
@@ -9381,7 +9382,7 @@ label alt_day6_un_fz_map_dinner_hall2:
     stop music fadeout 3
     stop ambience fadeout 3
     scene black with fade3
-    $ volume(1.0, "ambience")
+    $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
     return
 
 label alt_day6_un_fz_map_busstation2:
@@ -10008,7 +10009,7 @@ label alt_day6_un_fz_concert:
     stop ambience fadeout 3
     scene bg ext_stage_big_day_7dl with joff_r
     "Когда я вернулся к сцене, нагруженный стульями, пионеры уже сидели на скамейках, но не по отрядам, а как-то вразнобой."
-    $ volume(3.5, "ambience")
+    $ renpy.music.set_volume(3.5, delay=2, channel='ambience')
     play ambience ambience_medium_crowd_outdoors fadein 3
     "Первые скамейки, судя по пёстрой одежде, занимали выступающие. Остальные пионеры просто галдели, не выказывая к происходящему ровно никакого интереса."
     "Я обогнул трех маленьких девочек, играющих в классики на импровизированном поле, начерченном палкой на пыли, и принялся пробираться к сцене."
@@ -10288,7 +10289,7 @@ label alt_day6_un_fz_concert:
     stop ambience fadeout 3
     stop music fadeout 3
     scene black with Dissolve(3)
-    $ volume(1.0, "ambience")
+    $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
     return
 
 label alt_day6_un_fz_dv_dinner:
@@ -10894,10 +10895,10 @@ label alt_day6_un_fz_dv_date:
 
     stop music fadeout 3
     scene bg ext_stage_big_night with fade3
-    $ volume(0.6, "ambience")
+    $ renpy.music.set_volume(0.6, delay=2, channel='ambience')
     play ambience ambience_camp_center_night fadein 2
     $ alt_pause(0.5)
-    $ volume(0.6, "music")
+    $ renpy.music.set_volume(0.6, delay=2, channel='music')
     $ persistent.sprite_time = 'night'
     $ night_time()
     play music music_list["raindrops"] fadein 2
@@ -10934,7 +10935,7 @@ label alt_day6_un_fz_dv_date:
     "Щёлкнула зажигалкой и довольно зажмурилась."
 
     $ alt_pause(1)
-    $ volume(1.0, "music")
+    $ renpy.music.set_volume(1.0, delay=2, channel='music')
     show cg d3_dv_scene_2 with dissolve
     play music music_7dl["dv_guitar2"] fadein 2
     "Пока я возился с доживающей свои последние запасы бензина зажигалкой, девочка начала тихо наигрывать какую-то мелодию."
@@ -11105,7 +11106,7 @@ label alt_day6_un_fz_dv_date:
     me "И вообще, ты не одна хочешь понять её, и не с тобой одной она поступает по-свински!"
     "Мы стояли так близко друг к другу, что злость Алисы я мог ощутить кончиками своих дрожащих от гнева пальцев."
     me "К чёрту эту Лену!"
-    $ volume(0.4, "music")
+    $ renpy.music.set_volume(0.4, delay=2, channel='music')
     play music music_7dl["scorpions"] fadein 3
     show dv surprise pioneer close:
         linear 0.1 zoom 1.6
@@ -11178,7 +11179,7 @@ label alt_day6_un_fz_dv_date:
     "Будто нас связывает нечто большее, чем случайная встреча в летнем лагере…"
 
     $ alt_pause(1)
-    $ volume(1.0, "music")
+    $ renpy.music.set_volume(1.0, delay=2, channel='music')
     show dv normal pioneer close with Fade(0.15, 0, 0.15, color="#fff")
     "Вдалеке за деревьями как будто мелькнуло пятно света."
     "Я настороженно пригляделся."
@@ -11186,7 +11187,7 @@ label alt_day6_un_fz_dv_date:
     dv "Угу."
     "Судя по тому, как учащённо забилось сердце Алисы под моей рукой, она испугалась даже больше моего."
 
-    $ volume(1.0, "ambience")
+    $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
     scene bg ext_stage_normal_night
     show dv normal pioneer
     with dissolve
@@ -11582,13 +11583,13 @@ label alt_day6_un_fz_dv_un_search:
     $ alt_pause(2)
     play sound sfx_7dl['flashlight_fallen_in_blood']
     $ alt_pause(1)
-    scene cg d6_un_fz_un_death_7dl:
+    scene cg d6_un_death_7dl:
         align(0.585, 0.623) zoom 3
     with Dissolve(3)
     "Фонарь, вывалившийся из моих ослабевших пальцев, летел с добрую пару секунд, прежде чем плюхнулся в лужу крови вокруг распластавшегося тела в пионерской форме."
 
     window hide
-    show cg d6_un_fz_un_death_7dl:
+    show cg d6_un_death_7dl:
         linear 3.0 zoom 1.0
     with Dissolve(3)
     window auto
@@ -13713,7 +13714,7 @@ label alt_day6_un_fz_dance1:
     "Тихо прошмыгнув за деревья, я двинулся вперёд наобум, удаляясь от шума дискотеки."
     stop music fadeout 2.5
     scene bg ext_aidpost_night with dissolve2
-    $ volume(0.1,"music")
+    $ renpy.music.set_volume(0.1, delay=2, channel='music')
     play music music_7dl["stilllovingyou"] fadein 1
     "Бодрая песня сменилась медляком, когда я дошёл до медпункта."
     "В окнах горел свет."
@@ -13724,7 +13725,7 @@ label alt_day6_un_fz_dance1:
     stop music fadeout 1.5
 
     scene bg ext_stage_big_night with dissolve2
-    $ volume(0.2, "music")
+    $ renpy.music.set_volume(0.2, delay=2, channel='music')
     play music music_7dl["dv_guitar2"] fadein 1
     "И почти не удивился, когда дойдя до эстрады услышал тихие гитарные переборы."
     "Алиса сидела на краю сцены, свесив ноги, и играла какую-то незнакомую мне печальную мелодию."
@@ -13732,12 +13733,12 @@ label alt_day6_un_fz_dance1:
     "Беспокоить девочку не хотелось, но всё же она была не последним для меня человеком в этом лагере."
     "Так что я медленно пошёл к сцене, словно боялся спугнуть её."
     scene bg ext_stage_normal_night with dissolve
-    $ volume(0.7, "music")
+    $ renpy.music.set_volume(0.7, delay=2, channel='music')
     me "Здорово играешь."
     stop music fadeout 1
     show dv sad pioneer with dissolve
     "Двачевская резко подняла голову, хмуро уставившись на меня."
-    $ volume(1.0, "music")
+    $ renpy.music.set_volume(1.0, delay=2, channel='music')
     "В зубах она сжимала почти истлевшую сигарету."
     show dv normal pioneer with dspr
     play music music_list["trapped_in_dreams"] fadein 1
@@ -13882,7 +13883,7 @@ label alt_day6_un_fz_sleeptime1:
     mt "А завтра мы навсегда расстанемся. Даже не верится."
     me "Признавайтесь, по кому вы будете скучать сильнее всех?"
     show mt smile dress close with dspr
-    "Ольга смутилась – этот вопрос застал её в расплох."
+    "Ольга смутилась – этот вопрос застал её врасплох."
     show mt laugh dress close with dspr
     "Но тут же захихикала:"
     mt "По всем вашим проделкам, за которые мне регулярно устраивали головомойку на летучке!"
@@ -13915,7 +13916,7 @@ label alt_day6_un_fz_sleeptime1:
     play sound sfx_clench2
     scene bg int_house_of_mt_night2 with dissolve
     "Когда вожатая вышла за дверь, я залпом допил свой чай, разделся и выключил свет."
-    scene cg d1_end_of_day_7dl with fade
+    scene cg d1_me_end_of_day_7dl with fade
     $ alt_pause(0.5)
     show blink
     "Натянул до подбородка одеяло и закрыл глаза."
@@ -14129,7 +14130,7 @@ label alt_day6_un_fz_sleeptime2:
     "До домика я дополз уставший, как ездовая собака, но почти неприлично счастливый."
     "Моей соседки не было на месте – вероятно, она отлавливала злостных нарушителей режима, решивших вдоволь оттянуться в последнюю ночь."
     play sound sfx_bed_squeak1
-    scene cg d1_end_of_day_7dl with fade
+    scene cg d1_me_end_of_day_7dl with fade
     "Скинув с себя форму, я с наслаждением забрался под одеяло."
     "Спать хотелось ужасно."
     th "Что будет со мной завтра?"
@@ -14166,7 +14167,7 @@ label alt_day6_un_fz_rr_dream:
     "Я падаю на колени, изо всех сил зажимая ладонями уши."
     me "Хватит!" with vpunch
     extend " Прекратите!" with hpunch
-    $ volume(1.5, "ambience")
+    $ renpy.music.set_volume(1.5, delay=2, channel='ambience')
     "Словно насмехаясь надо мной, они жужжат лишь громче, чем прежде."
     th "Этот шум… он в моей голове!"
     scene bg ext_path_day
@@ -14200,7 +14201,7 @@ label alt_day6_un_fz_rr_dream:
     scene bg ext_busstop_dust_7dl
     show prologue_dream
     with touch
-    $ volume(1.0, "ambience")
+    $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
     "И передо мной бетонная остановка."
     "Старая, заброшенная, но надёжная, словно строили её на века."
     "Жужжание исчезает, как по щелчку пальцев. Жара тоже."
@@ -14212,7 +14213,7 @@ label alt_day6_un_fz_rr_dream:
     th "Только автобус должен быть под стать – старый, заброшенный."
     th "И водитель такой же."
     play sound sfx_intro_bus_engine_start
-    scene bg ext_bus1_7dl
+    scene bg ext_bus2_7dl
     show prologue_dream
     with dissolve
     "Рёв мотора однозначно такой, каким я его и ожидал услышать."
@@ -14951,7 +14952,7 @@ label alt_day6_un_fz_rr_search2:
     me "Надеюсь, мы их не напугаем."
     "Пробормотал я, обращаясь скорее к себе, чем к Лене."
     scene bg int_old_building_day_7dl with dissolve
-    $ volume(0.3, "ambience")
+    $ renpy.music.set_volume(0.3, delay=2, channel='ambience')
     "Мы пробрались ко входу по уже примятой траве."
     "Я не сумел подавить дрожь – после всей свалившейся на меня информации это место казалось жутким вдвойне."
     "Этот мир нравился бы мне куда больше, если бы тут и в самом деле водились призраки усопших вожатых, а не вся эта чертовщина."
@@ -15095,7 +15096,7 @@ label alt_day6_un_fz_rr_search2:
     th "И теперь, когда мы вместе, когда нас много – мы обязательно справимся."
     th "Ведь настоящие Огоньки – это наши сердца."
     th "И если они ведут нас к Дороге – мы найдём её, чего бы это нам ни стоило."
-    $ volume(1.0, "ambience")
+    $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
     stop music2 fadeout 2.5
     stop ambience fadeout 2.5
     return
@@ -16036,7 +16037,7 @@ label alt_day6_un_fz_rr_guard_resque:
     "И, наконец, выбежали за ворота."
     "Лёгкие горели от столь внезапного спринта, а ноги и вовсе почти не чувствовались, но сбавить темп я не мог."
     "От этого зависело слишком многое."
-    "Лена, не выглядевшая большой спортивной энтузиасткой, бежала наравне с остальными, не взирая на явно неудобные для такого сандалии."
+    "Лена, не выглядевшая большой спортивной энтузиасткой, бежала наравне с остальными, невзирая на явно неудобные для такого сандалии."
     th "Вот уж кто действительно хочет, чтобы у нас всё получилось…"
     stop music fadeout 4
     scene bg ext_backroad_day_7dl with flash
@@ -16282,7 +16283,8 @@ label alt_day6_un_fz_rr_old_road:
     "Она рванула с места так стремительно, что мне пришлось догонять её."
     "Никак я не мог ожидать от девочки такой прыти."
     "Мы пробежали мимо остановки и устремились вперёд по Дороге."
-    scene bg ext_road_day at running
+    
+    scene bg ext_old_road_7dl at running
     show un smile2 pioneer close at running
     with dissolve
     "Лена неслась так уверенно, словно точно знала правильный путь."
@@ -16419,7 +16421,7 @@ label alt_day6_un_fz_rr_another_world:
     "Девочка прижала ладони ко рту."
     un "Я знала! Он и правда из будущего!"
     th "А я тогда откуда, интересно?.."
-    scene bg ext_busstop_summer_7dl with dissolve
+    scene bg ext_bus_stop_summer_7dl with dissolve
     "Переведя взгляд на остановку, маячившую за углом, я вновь едва не впал в ступор."
     th "Это же конечная моего привычного маршрута до работы!"
     th "А значит, отсюда точно можно доехать до нужного адреса!"
@@ -16447,7 +16449,7 @@ label alt_day6_un_fz_rr_another_world:
     return
 
 label alt_day6_un_fz_rr_farewell:
-    scene bg ext_busstop_summer_7dl
+    scene bg ext_bus_stop_summer_7dl
     show un sad pioneer
     with dissolve
     play music2 music_7dl["faraway"] fadein 3
@@ -16494,7 +16496,7 @@ label alt_day6_un_fz_rr_farewell:
     me "Но кто спросит мнение больного?"
     show un cry pioneer with dspr
     "По щеке Лены скатилась слеза, и я торопливо смахнул её тыльной стороной ладони."
-    $ volume(0.3, "sound")
+    $ renpy.music.set_volume(0.3, delay=2, channel='sound')
     play sound sfx_bus_loop
     "Послышался приближающийся рёв автобуса."
     th "Времени на прощание почти не осталось…"
@@ -16503,7 +16505,7 @@ label alt_day6_un_fz_rr_farewell:
     me "На этом автобусе проедешь пять остановок."
     me "Если потребуют билет, скажи, что срезали сумку и ты едешь в милицию."
     me "Там как раз участок неподалёку."
-    $ volume(1.0, "sound")
+    $ renpy.music.set_volume(1.0, delay=2, channel='sound')
     play sound sfx_bus_stop
     "Торопливо, но чётко проинструктировал я Лену."
     me "Домофона в том доме наверняка нет – в подъезд войдёшь без проблем."
@@ -16608,7 +16610,7 @@ label alt_day6_un_fz_rr_bad:
     me "Я уже давно ничего не хочу."
     "Моим собственным голосом ответило мне моё подсознание."
     th "Разве?"
-    $ volume(0.1, "ambience")
+    $ renpy.music.set_volume(0.1, delay=2, channel='ambience')
     th "Нельзя ведь ничего не хотеть!"
     play ambience sfx_run_forest
     show am pi_sad pioneer far at fright:
@@ -16616,20 +16618,20 @@ label alt_day6_un_fz_rr_bad:
     with dissolve
     "Вдали показалась чья-то фигура."
     "Я напрягся."
-    $ volume(0.3, "ambience")
+    $ renpy.music.set_volume(0.3, delay=2, channel='ambience')
     show am pi_sad pioneer far at right:
         alpha 0.4
     with dissolve
     "Это был мальчишка лет четырнадцати."
-    $ volume(0.5, "ambience")
+    $ renpy.music.set_volume(0.5, delay=2, channel='ambience')
     show am pi_sad pioneer at right with dissolve
     "На вид – очень знакомый, но только я никак не мог вспомнить, где я его видел."
     me "Эй! Постой!"
-    $ volume(0.7, "ambience")
+    $ renpy.music.set_volume(0.7, delay=2, channel='ambience')
     hide am with moveoutleft
     stop ambience fadeout 1
     "Словно не услышав меня, он промчался мимо."
-    $ volume(1.0, "ambience")
+    $ renpy.music.set_volume(1.0, delay=2, channel='ambience')
     "Его красный галстук мелькнул прямо у меня перед носом."
     th "Бред какой-то! На таком расстоянии мы обязаны были столкнуться!"
     th "Расстояние… Скорость… Время…"
@@ -16640,7 +16642,7 @@ label alt_day6_un_fz_rr_bad:
     scene bg ext_emptiness_7dl with dissolve
     "Картинка вокруг начала меняться."
     "Секунда (а может, и целая вечность) – и я уже не мог вспомнить, что я видел до этого."
-    scene cg d5_un_fz_twinkles_4_7dl
+    scene cg d5_twinkle_4_7dl
     show fog_7dl:
         alpha 0.3
     with dissolve
@@ -16650,7 +16652,7 @@ label alt_day6_un_fz_rr_bad:
     th "На нём должен гореть огонь!"
     "Я протянул руку к свече, закреплённой на мачте."
     play sound sfx_7dl["cndl_flash"]
-    scene cg d5_un_fz_twinkles_5_7dl
+    scene cg d5_twinkle_5_7dl
     show fog_7dl:
         alpha 0.3
     with dissolve
@@ -16669,7 +16671,7 @@ label alt_day6_un_fz_rr_bad:
     "Я знаю, что свечи на корабликах необходимо зажигать, когда это кому-нибудь нужно."
     "Хорошо чего-то хотеть. Понимать, откуда и куда тебе нужно двигаться."
     scene
-    show cg d6_un_fz_rr_faceless_hands_7dl
+    show cg d6_faceless_hands_7dl
     show fog_7dl:
         alpha 0.2
     with dissolve
@@ -16687,7 +16689,7 @@ label alt_day6_un_fz_rr_bad:
     "Я не знаю, кто они, и предпочитаю не думать об этом."
     "Ведь мысли порождают вопросы."
     nvl clear
-    show cg d6_un_fz_rr_faceless_hands_2_7dl
+    show cg d6_faceless_hands2_7dl
     show fog_7dl:
         alpha 0.1
     with dissolve2
@@ -16707,7 +16709,7 @@ label alt_day6_un_fz_rr_bad:
     return
 
 label alt_day6_un_fz_rr_good:
-    scene bg ext_busstop_summer_7dl with dissolve
+    scene bg ext_bus_stop_summer_7dl with dissolve
     "Я задумался, поражённый самой мыслью о том, что я могу здесь остаться."
     "В чужом мире, без средств к существованию, без друзей, без связей…"
     "Немногим лучше моего бренного существования с графиком два через два, дошираками на завтрак, обед и ужин и компанией из кошки и пенсионерки-продавщицы."
@@ -17167,12 +17169,12 @@ label alt_day6_un_fz_rr_true:
     show unblink
     with dissolve
     "Глаза лежавшей на земле девочки распахнулись."
-    show un2 surprise winter with dissolve
+    show un surprise winter with dissolve
     "Она рывком поднялась с земли и ошалело уставилась на нас."
-    show un2 shocked winter with dspr
+    show un shocked winter with dspr
     un "Где я?"
     "Её обезумевший взгляд остановился на мне."
-    show un2 scared winter with dspr
+    show un scared winter with dspr
     un "Семён?"
     un "Куда ты меня привёз? Зачем? Это шутка?"
     "Её голос сорвался почти на визг."
@@ -17180,7 +17182,7 @@ label alt_day6_un_fz_rr_true:
     th "Как иронично."
     th "Эта девочка даже не Лена… не моя Лена."
     th "Но тоже приняла меня за кого-то другого."
-    hide un2
+    hide un
     show al sad pioneer at left
     show us sad sport
     show dn sad pioneer at cright
@@ -17191,7 +17193,7 @@ label alt_day6_un_fz_rr_true:
     hide dn
     hide tn
     hide al
-    show un2 shocked winter
+    show un shocked winter
     with dissolve
     me "Присядь. История будет долгая."
     stop ambience fadeout 2
@@ -17878,10 +17880,10 @@ label alt_day7_un_fz_bad_departure:
     th "Может, всё же сбегать за ней?"
     th "Хотя к чёрту. Ещё сильнее нервировать вожатую, задерживая отъезд…"
     if (counter_un_fz_dv_fake_date == 3):
-        show dv guilty sport at fleft with dissolve
+        show dv guilty modern at fleft with dissolve
         "Алису я заметил не сразу – она сидела на пыльной дорожной сумке с другого края автобуса, мрачно глядя себе под ноги."
         show sl sad casual at cleft
-        show dv sad sport
+        show dv sad modern
         with dissolve
         "Я непроизвольно двинулся было к ней, но меня опередила Славя."
         "Активистка наклонилась и тихо заговорила о чём-то."
@@ -17918,8 +17920,8 @@ label alt_day7_un_fz_bad_departure:
     mz "Я же говорила тебе: без тебя не уедут!"
     "Раздался скрипучий голос со стороны ворот."
     scene bg ext_camp_entrance_day
-    show mi sad pioneer far at left
-    show mz bukal glasses pioneer far at cright
+    show mi sad casual at left
+    show mz bukal dress glasses at cright
     with dissolve
     "Мику, выглядевшая крайне взволнованной, катила за собой огромный чемодан."
     "Женя ловко обогнула её: в руке библиотекарши была лишь полупустая дорожная сумка."
@@ -17943,7 +17945,7 @@ label alt_day7_un_fz_bad_departure:
     "Срываться и бежать было бы глупо – ключи я отдал ещё утром, так что в домик бы всё равно не попал."
     th "Какой же я идиот!"
     stop ambience fadeout 1
-    scene bg int_bus_people_day with dissolve
+    scene cg d7_me_epilogue_bus_7dl with dissolve
     "Рухнув на самое последнее сидение, я мрачно уставился в окно."
     "Товарищи по отряду расселись быстро – благо, желающих составить мне компанию не нашлось."
     "Даже Сыроежкин скромно уселся прямо позади водителя в гордом одиночестве."
@@ -17999,6 +18001,9 @@ label alt_day7_un_fz_bad_end:
     "Я резко распахнул глаза, выдёргивая из ушей затычки."
     "В салоне было темно, хотя я был готов поставить что угодно – я не спал ни минуты."
     "Вдоль позвоночника поползли мурашки."
+    scene emptiness_7dl behind d7_me_epilogue_bus2_7dl
+    show d7_me_epilogue_bus2_7dl
+    with dissolve
     th "Что за…"
     "Выглянув в окно, я тут же отшатнулся."
     "Автобус стоял на месте."
@@ -18016,7 +18021,7 @@ label alt_day7_un_fz_bad_end:
     th "Нет. Чёрта с два я смогу жить дальше, как ни в чём не бывало!"
     th "Автобус оказался лишь ловушкой, утянувшей меня в бездну ада."
     th "Да только где все черти, что должны окунать меня в котёл?"
-    "Дойдя до двери, я поймал свой взгляд в отражении на стекле."
+    "Я поймал свой взгляд в отражении на стекле."
     th "Ах, вот же он!"
     th "Мой главный мучитель."
     "Отражение скалилось, сверля меня безумным взглядом."
@@ -18043,9 +18048,12 @@ label alt_day7_un_fz_bad_end:
     "Даже кристально ясно понимая, что с ней не так, я не сделал для девочки ровным счётом ничего."
     "Мнил себя рыцарем, героем, наставником…"
     th "Я ничего не хочу."
-    "Вновь шагнув вперёд, навстречу своему отражению, я толкнул дверь автобуса."
+    scene emptiness_7dl behind int_bus
+    show int_bus_7dl
+    with dissolve
+    "Встав с сиденья, я подошёл к двери автобуса и толкнул её."
     "Она, к моему удивлению, не поддалась."
-    "Отражение злобно рассмеялось."
+    "Отражение, следуя за мной, злобно рассмеялось."
     me "{i}Неужели всё оказалось так просто?{\i}"
     me "{i}Предпочтёшь удрать?{\i}"
     th "Это единственный выход. И для меня, и для других."
@@ -19313,7 +19321,7 @@ label alt_day7_un_fz_rj_end:
     "Моя законная жёнушка."
     $ alt_pause(0.5)
     $ set_mode_nvl()
-    scene bg int_sam_room_7dl with dissolve
+    scene bg int_semen_room_7dl with dissolve
     "На тот злополучный квартирник меня позвала Молния."
     "Единственная девчонка, которой всегда было плевать на меня – возможно, поэтому мы и поддерживали некое подобие дружеских отношений."
     "Да и как можно было в моём положении переживать о какой-то отшившей меня девчонке?"
@@ -19426,7 +19434,7 @@ label alt_day7_un_fz_rj_end:
     "В пользу её слов сыграла выписка из медицинской карточки за восемьдесят восьмой и восемьдесят девятый года."
     "Попытка самоубийства. Стационар психиатрической больницы. Огромный перечень таблеток и несколько предполагаемых диагнозов, стоявших под вопросом."
     nvl clear
-    scene bg int_ward_day_kns with dissolve
+    scene bg int_ward_day_7dl with dissolve
     $ persistent.sprite_time = "day"
     "Я сидел в пустой больничной палате, выделенной под нашу беседу с гэбистом."
     $ meet('ba', "Мужик")
@@ -20093,7 +20101,7 @@ label alt_day7_un_fz_good_farewell:
     "Я шагнул к одному из деревьев и провёл рукой по грубо высеченному на коре имени."
     th "Миря – это же Мирослава?"
     th "Впрочем, Славя тоже не самое распространённое имя. Чему удивляться?"
-    "А на следующем дереве следы вандализма выглядели совсем свежими, словно нацарапали их буквально вчера. “С.У. + С.Д."
+    "А на следующем дереве следы вандализма выглядели совсем свежими, словно нацарапали их буквально вчера. “С.У. + С.Д.“."
     "Чем дольше я ходил среди этой выставки детского наивного отчаяния, тем сильнее у меня рябило в глазах."
     "Одних только “Лен” я насчитал четыре штуки."
     th "Это столь же мило, сколь странно. Ощущение, будто я на кладбище…"
@@ -20159,10 +20167,10 @@ label alt_day7_un_fz_good_departure:
     th "Так вот и подохну от собственной доброты…"
     scene bg ext_bus with dissolve
     play ambience ambience_camp_entrance_day_people fadein 1
-    show dv smile sport with dissolve
+    show dv smile modern with dissolve
     dv "А что, у нас тут завёлся носильщик?"
     "Не упустила возможности вставить шпильку Двачевская."
-    show dv tired sport with dspr
+    show dv tired modern with dspr
     dv "Знала бы – не тащила бы свою сумку сама!"
     "Она притворно вздохнула."
     show sl happy casual at left with dissolve
@@ -20196,7 +20204,7 @@ label alt_day7_un_fz_good_departure:
     play sound sfx_carousel_squeak
     "Калитка лагерных ворот печально скрипнула."
     scene bg ext_camp_entrance_day
-    show mz bukal glasses pioneer far
+    show mz bukal dress glasses
     with dissolve
     th "Вспомнишь лучик – вот и солнце…"
     scene bg ext_bus
@@ -20228,8 +20236,8 @@ label alt_day7_un_fz_good_departure:
     scene bg int_bus_people_day
     with dissolve
     play music "<from 4.0 to 200>" + music_7dl["tilltheend"] fadein 2
-    $ volume(1.5, "music")
-    "Мы с Леной заняли одно из последних мест в салоне."
+    $ renpy.music.set_volume(1.5, delay=2, channel='music')
+    "Мы с Леной заняли одно из мест в середине салона."
     "Перед нами уселась Жужелица – разумеется, в гордом одиночестве."
     "Рыжие, вопреки моим опасениям, сидели почти у самого выхода, о чём-то громко переговариваясь с устроившейся позади них Мику."
     "Я уступил Лене место у окна, но она покачала головой."
@@ -20273,7 +20281,7 @@ label alt_day7_un_fz_good_departure:
     scene emptiness_7dl behind int_bus
     show int_bus_7dl
     with fade3
-    $ volume(1.0, "music")
+    $ renpy.music.set_volume(1.0, delay=2, channel='music')
     play music music_7dl["devastated"] fadein 2.5
     "Я прижался губами к макушке Лены, и в тот же момент почувствовал что-то неладное."
     th "Разве мы едем так долго, что ночь уже наступила? Не могли же тучи так затянуть небо…"

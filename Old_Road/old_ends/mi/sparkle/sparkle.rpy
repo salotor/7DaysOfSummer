@@ -49,7 +49,7 @@ label alt_day7_mi_7dl_sparkle:
     "Карман дёрнулся, оттуда полились переливы рингтона, и я осторожно, как дохлую крысу, вытащил аппарат из кармана."
     me "Какого чёрта?!"
     stop music fadeout 0
-    $ volume(0.3, 'ambience')
+    $ renpy.music.set_volume(0.3, delay=2, channel='ambience')
     me "Алло?"
     "Осторожно ответил я. {w}Номер был незнакомый."
     voice "Здравствуйте. {w}Вы Семён-сан?"
@@ -62,7 +62,7 @@ label alt_day7_mi_7dl_sparkle:
     "Снова, как тогда, сердце сбилось с ритма, и…"
     me "Вы… знаете Мику?!"
     voice "Да."
-    $ volume(0.8, 'ambience')
+    $ renpy.music.set_volume(0.8, delay=2, channel='ambience')
     stop music fadeout 4
     scene black with dissolve
     play music music_7dl["you_are_star"] fadein 3
@@ -117,4 +117,7 @@ label alt_day7_mi_7dl_sparkle:
     show acm_logo_mi_7dl_good_star with moveinright:
         pos (1600, 1020)
     pause(7.4)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

@@ -55,9 +55,9 @@ init 9999 python:
                           '4':['body','body2','body3'],
                           '5':['']},
                     'tn':{'1':['']},
-                    'un':{'1':['body','body2'],
-                          '2':['body','body2'],
-                          '3':['body','body2']},
+                    'un':{'1':['body','body2','body3'],
+                          '2':['body','body2','body3'],
+                          '3':['body','body2','body3']},
                     'us':{'1':['body','body2'],
                           '2':['body','body2'],
                           '3':['body','body2'],
@@ -80,11 +80,11 @@ init 9999 python:
                           '2':['pioneer'],
                           '3':['pioneer']},
                     'cs':{'1':['']},
-                    'dv':{'1':['dress','pioneer','pioneer2','sport','swim','pajama','modern','casual','body'],
+                    'dv':{'1':['dress','pioneer','pioneer2','sport','swim','pajama','modern','casual','coat','body'],
                           '2':['pioneer','pioneer2','sport','swim','modern','casual','body'],
-                          '3':['dress','pioneer','pioneer2','sport','swim','modern','casual','body'],
-                          '4':['dress','dress_pregnant','pioneer','pioneer2','sport','swim','winter','hoody','modern','casual','body'],
-                          '5':['dress','pioneer','pioneer2','sport','swim','pajama','modern','casual','body']},
+                          '3':['dress','pioneer','pioneer2','sport','swim','modern','casual','coat','body'],
+                          '4':['dress','dress_pregnant','pioneer','pioneer2','sport','swim','winter','hoody','modern','casual','coat','body'],
+                          '5':['dress','pioneer','pioneer2','sport','swim','pajama','modern','casual','coat','body']},
                     'dvk':{'1':['dress','casual'],
                            '2':['dress','casual'],
                            '3':['dress','casual']},
@@ -100,23 +100,23 @@ init 9999 python:
                     'mt':{'1':['dress','dress2','pioneer','sport','swim','swim2','uniform','sweater','winter','nightdress','body'],
                           '2':['dress','dress2','pioneer','sport','swim','swim2','uniform','nightdress','body'],
                           '3':['dress','dress2','pioneer','sport','swim2','uniform','nightdress','body']},
-                    'mz':{'1':['pioneer'],
-                          '2':['pioneer'],
-                          '3':['pioneer']},
+                    'mz':{'1':['pioneer','dress'],
+                          '2':['pioneer','dress'],
+                          '3':['pioneer','dress']},
                     'sak':{'1':['suit'],
                            '2':['suit'],
                            '3':['suit']},
-                    'sh':{'1':['uniform'],
-                          '2':['uniform'],
-                          '3':['uniform']},
+                    'sh':{'1':[''],
+                          '2':[''],
+                          '3':['']},
                     'sl':{'1':['casual','casual_pregnant','dress','pioneer','pioneer2','sport','suit','swim','uniform','winter','skirt','pantsu','body','body2','body3'],
                           '2':['casual','casual_pregnant','dress','pioneer','pioneer2','sport','suit','swim','winter','skirt','pantsu','body','body2','body3'],
-                          '3':['casual','casual_pregnant','dress','pioneer','pioneer2','sport','suit','swim','voca','winter','skirt','pantsu','body','body2','body3'],
-                          '4':['casual','dress','pioneer','pioneer2','sport','suit','swim','winter','skirt','pantsu','body','body2','body3'],
+                          '3':['casual','casual2','casual_pregnant','dress','pioneer','pioneer2','sport','suit','swim','voca','winter','skirt','pantsu','body','body2','body3'],
+                          '4':['casual','casual2','dress','pioneer','pioneer2','sport','suit','swim','winter','skirt','pantsu','body','body2','body3'],
                           '5':['25']},
                     'tn':{'1':['pioneer']},
                     'un':{'1':['casual','dress','modern','pioneer','sleep','sport','swim','winter','underwear','shift','shift2','body','skirt'],
-                          '2':['casual','dress','modern','pioneer','sleep','sport','swim','winter','body'],
+                          '2':['casual','dress','modern','pioneer','sleep','sport','swim','winter','winter_88','body'],
                           '3':['casual','dress','modern','pioneer','sleep','sport','winter','underwear','body']},
                     'us':{'1':['dress','pioneer','sport','swim'],
                           '2':['dress','pioneer','sport','swim'],
@@ -124,7 +124,7 @@ init 9999 python:
                           '4':['adult_summer', 'adult_winter'],
                           '5':['grow_coat', 'grow_dress', 'grow_pioneer', 'grow_prolog']},
                     'uv':{'1':['pioneer'],
-                          '2':['pioneer'],
+                          '2':['pioneer','nurse'],
                           '3':['pioneer'],
                           '4':['pioneer']}
         }
@@ -160,24 +160,24 @@ init 9999 python:
                     'mt':{'1':['normal','sad','smile','smile_g','sad_smile','surprise'],
                           '2':['angry','rage','shocked'],
                           '3':['feared','grin','laugh','scared']},
-                    'mz':{'1':['bukal','laugh','normal','surp1','surp2','sad'],
+                    'mz':{'1':['bukal','laugh','normal','surp1','surp2','sad','grin','smile2'],
                           '2':['angry','rage','shy_angry'],
                           '3':['shy','smile']},
                     'sak':{'1':['calm','normal','sorrow','unsured'],
                            '2':['dontlike','sigh','smile','treat'],
                            '3':['angry','pain','sad','scared']},
                     'sh':{'1':['laugh','scared','smile','upset'],
-                          '2':['cry','mad_smile','normal_smile','rage'],
+                          '2':['cry','mad_smile','normal_smile','rage','think','think2'],
                           '3':['normal','serious','surprise']},
                     'sl':{'1':['dontlike','normal','serious','smile','normal_uv','normal_gr','serious_uv','serious_gr'],
                           '2':['grin','happy','laugh','shy','smile2'],
                           '3':['angry','happy2','sad','shy2','surprise','upset','sad_uv','sad_gr','cry_smile'],
-                          '4':['cry','scared','tender','cry_uv'],
+                          '4':['cry','scared','tender','cry_uv','plea'],
                           '5':['displeased','fear_1','fear_2','neutral']},
                     'tn':{'1':['dontlike','grin','laugh','normal','sad','shy','smile']},
-                    'un':{'1':['angry','evil_smile','normal','normal2','shy','silent_angry','smile','smile2','snide_smile','sorrow','shy_smile'],
-                          '2':['close_eyes_cry','cry','cry_smile','sad','scared','shocked','surprise'],
-                          '3':['angry2','close_eye','grin','happy','laugh','rage','serious','smile3']},
+                    'un':{'1':['angry','evil_smile','normal','normal2','shy','silent_angry','smile','smile2','snide_smile','sorrow','shy_smile','shy_88','smile_88','smile2_88','sorrow_88'],
+                          '2':['close_eyes_cry','cry','cry_smile','sad','scared','shocked','surprise','cry_88','cry_smile_88','sad_88','scared_88','shocked_88','surprise_88'],
+                          '3':['angry2','close_eye','grin','happy','laugh','rage','serious','smile3','rage_88','serious_88','smile2_88']},
                     'us':{'1':['grin','laugh','laugh2','normal','sad','smile'],
                           '2':['angry','calml','dontlike','fear','upset'],
                           '3':['cry','cry2','shy','shy2','surp1','surp2','surp3'],
@@ -2698,6 +2698,7 @@ init 9999:
 # Мику
     image mi pioneer shade = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/mi/mi_1_body.png'), (0, 0), get_sprite_ori('normal/mi/mi_1_pioneer.png')), im.matrix.tint(0.01, 0.01, 0.01) )
     image mi pioneer shade far = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('far/mi/mi_2_body.png'), (0, 0), get_sprite_ori('far/mi/mi_2_pioneer.png')), im.matrix.tint(0.01, 0.01, 0.01) )
+    image mi dress shade = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/mi/mi_2_body.png'), (0, 0), get_sprite_7dl('normal/mi/mi_2_dress.png')), im.matrix.tint(0.01, 0.01, 0.01) )
 
     image mi sad casual tr1 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/mi/mi_2_body.png'), (0, 0), get_sprite_7dl('normal/mi/mi_2_casual.png'), (0, 0), get_sprite_ori('normal/mi/mi_2_sad.png')), im.matrix.opacity(0.6) )
     image mi sad casual tr2 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/mi/mi_2_body.png'), (0, 0), get_sprite_7dl('normal/mi/mi_2_casual.png'), (0, 0), get_sprite_ori('normal/mi/mi_2_sad.png')), im.matrix.tint(0.4, 0.4, 0.4)* im.matrix.opacity(0.4) )
@@ -2719,11 +2720,16 @@ init 9999:
     image dv guilty sport tr2 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/dv/dv_3_body.png'), (0, 0), get_sprite_7dl('normal/dv/dv_3_sport.png'), (0, 0), get_sprite_ori('normal/dv/dv_3_guilty.png')), im.matrix.tint(0.6, 0.6, 0.6)* im.matrix.opacity(0.6) )
     image dv guilty sport tr3 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/dv/dv_3_body.png'), (0, 0), get_sprite_7dl('normal/dv/dv_3_sport.png'), (0, 0), get_sprite_ori('normal/dv/dv_3_guilty.png')), im.matrix.tint(0.2, 0.2, 0.2)* im.matrix.opacity(0.4) )
     image dv sport tr4 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/dv/dv_3_body.png'), (0, 0), get_sprite_7dl('normal/dv/dv_3_sport.png')), im.matrix.tint(0.01, 0.01, 0.01)* im.matrix.opacity(0.1) )
+    image dv guilty modern tr1 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/dv/dv_3_body.png'), (0, 0), get_sprite_7dl('normal/dv/dv_3_modern.png'), (0, 0), get_sprite_ori('normal/dv/dv_3_guilty.png')), im.matrix.opacity(0.8) )
+    image dv guilty modern tr2 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/dv/dv_3_body.png'), (0, 0), get_sprite_7dl('normal/dv/dv_3_modern.png'), (0, 0), get_sprite_ori('normal/dv/dv_3_guilty.png')), im.matrix.tint(0.6, 0.6, 0.6)* im.matrix.opacity(0.6) )
+    image dv guilty modern tr3 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/dv/dv_3_body.png'), (0, 0), get_sprite_7dl('normal/dv/dv_3_modern.png'), (0, 0), get_sprite_ori('normal/dv/dv_3_guilty.png')), im.matrix.tint(0.2, 0.2, 0.2)* im.matrix.opacity(0.4) )
+    image dv modern tr4 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/dv/dv_3_body.png'), (0, 0), get_sprite_7dl('normal/dv/dv_3_modern.png')), im.matrix.tint(0.01, 0.01, 0.01)* im.matrix.opacity(0.1) )
     image dv sad pioneer tr1 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/dv/dv_3_body.png'), (0, 0), get_sprite_ori('normal/dv/dv_3_pioneer.png'), (0, 0), get_sprite_ori('normal/dv/dv_3_sad.png')), im.matrix.opacity(0.8) )
 
 # Славя
     image sl pioneer shade = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/sl/sl_1_body.png'), (0, 0), get_sprite_ori('normal/sl/sl_1_pioneer.png')), im.matrix.tint(0.01, 0.01, 0.01) )
     image sl2 dress shade = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_7dl('normal/sl/sl_1_body2.png'), (0, 0), get_sprite_ori('normal/sl/sl_1_dress.png')), im.matrix.tint(0.01, 0.01, 0.01) )
+    image sl dress shade = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/sl/sl_1_body.png'), (0, 0), get_sprite_ori('normal/sl/sl_1_dress.png')), im.matrix.tint(0.01, 0.01, 0.01) )
 
     image sl smile casual tr1 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/sl/sl_1_body.png'), (0, 0), get_sprite_7dl('normal/sl/sl_1_casual.png'), (0, 0), get_sprite_ori('normal/sl/sl_1_smile.png')), im.matrix.opacity(0.8) )
     image sl smile casual tr2 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/sl/sl_1_body.png'), (0, 0), get_sprite_7dl('normal/sl/sl_1_casual.png'), (0, 0), get_sprite_ori('normal/sl/sl_1_smile.png')), im.matrix.tint(0.6, 0.6, 0.6)* im.matrix.opacity(0.6) )
@@ -2735,6 +2741,7 @@ init 9999:
     image sl opaq_dress = ConditionSwitch("persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1050,1080), (0,0), get_sprite_ori('close/sl/sl_1_body.png'),(0,0), im.MatrixColor(get_sprite_ori('close/sl/sl_1_dress.png'), im.matrix.opacity(0.8)),(0,0), get_sprite_ori('close/sl/sl_1_normal.png')), im.matrix.tint(0.94, 0.82, 1.0) ), "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1050,1080), (0,0), get_sprite_ori('close/sl/sl_1_body.png'),(0,0), im.MatrixColor(get_sprite_ori('close/sl/sl_1_dress.png'), im.matrix.opacity(0.8)),(0,0), get_sprite_ori('close/sl/sl_1_normal.png')), im.matrix.tint(0.63, 0.78, 0.82) ), True,im.Composite((1050,1080), (0,0), get_sprite_ori('close/sl/sl_1_body.png'),(0,0), im.MatrixColor(get_sprite_ori('close/sl/sl_1_dress.png'), im.matrix.opacity(0.8)),(0,0), get_sprite_ori('close/sl/sl_1_normal.png')) )
 # Унылка
     image un modern shade close = At(im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/un/un_1_body.png'), (0, 0), get_sprite_7dl('normal/un/un_1_modern.png')), im.matrix.tint(0.01, 0.01, 0.01) ), close_sprites)
+    image un sad dress shade = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/un/un_2_body.png'), (0, 0), get_sprite_ori('normal/un/un_2_dress.png')), im.matrix.tint(0.01, 0.01, 0.01) )
 
     image un sorrow dress tr1 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/un/un_1_body.png'), (0, 0), get_sprite_ori('normal/un/un_1_dress.png'), (0, 0), get_sprite_7dl('normal/un/un_1_sorrow.png')), im.matrix.opacity(0.8) )
     image un sorrow dress tr2 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/un/un_1_body.png'), (0, 0), get_sprite_ori('normal/un/un_1_dress.png'), (0, 0), get_sprite_7dl('normal/un/un_1_sorrow.png')), im.matrix.tint(0.6, 0.6, 0.6)* im.matrix.opacity(0.6) )
@@ -2747,13 +2754,15 @@ init 9999:
     image un normal pioneer tr1 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/un/un_1_body.png'), (0, 0), get_sprite_ori('normal/un/un_1_pioneer.png'), (0, 0), get_sprite_ori('normal/un/un_1_normal.png')), im.matrix.tint(0.4, 0.4, 0.4)* im.matrix.opacity(0.4)  )
 # ОД
     image mt pioneer shade = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/mt/mt_1_body.png'), (0, 0), get_sprite_ori('normal/mt/mt_1_pioneer.png')), im.matrix.tint(0.01, 0.01, 0.01) )
-
+    image mt dress shade = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/mt/mt_1_body.png'), (0, 0), get_sprite_ori('normal/mt/mt_1_dress.png')), im.matrix.tint(0.01, 0.01, 0.01) )
     image mt2 sad sport tr1 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_7dl('normal/mt/mt_1_body2.png'), (0, 0), get_sprite_7dl('normal/mt/mt_1_sport.png'), (0, 0), get_sprite_ori('normal/mt/mt_1_sad.png')),  im.matrix.opacity(0.8) )
 # Ульяна
     image us normal sport tr1 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/us/us_1_body.png'), (0, 0), get_sprite_ori('normal/us/us_1_sport.png'), (0, 0), get_sprite_ori('normal/us/us_1_normal.png')), im.matrix.tint(0.5, 0.5, 0.5)* im.matrix.opacity(0.5) )
     image us normal sport tr2 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/us/us_1_body.png'), (0, 0), get_sprite_ori('normal/us/us_1_sport.png'), (0, 0), get_sprite_ori('normal/us/us_1_normal.png')), im.matrix.tint(0.3, 0.3, 0.3)* im.matrix.opacity(0.3) )
+    image us normal dress shade = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/us/us_1_body.png'), (0, 0), get_sprite_ori('normal/us/us_1_dress.png')), im.matrix.tint(0.01, 0.01, 0.01) )
 # Жужа
     image mz pioneer shade = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/mz/mz_1_body.png'), (0, 0), get_sprite_ori('normal/mz/mz_1_pioneer.png')), im.matrix.tint(0.01, 0.01, 0.01) )
+    image mz dress shade = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/mz/mz_1_body.png'), (0, 0), get_sprite_7dl('normal/mz/mz_1_dress.png')), im.matrix.tint(0.01, 0.01, 0.01) )
 # Кошонка-распашонка
     image uv shade  = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/uv/uv_1_body.png'), (0, 0), get_sprite_ori('normal/uv/uv_1_pioneer.png')), im.matrix.tint(0.01, 0.01, 0.01) )
     image uv shade2 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/uv/uv_2_body.png'), (0, 0), get_sprite_ori('normal/uv/uv_2_pioneer.png')), im.matrix.tint(0.01, 0.01, 0.01) )
@@ -2761,7 +2770,12 @@ init 9999:
     image uv shade4 = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/uv/uv_4_body.png'), (0, 0), get_sprite_ori('normal/uv/uv_4_pioneer.png')), im.matrix.tint(0.01, 0.01, 0.01) )
 #Катюшка
     image ka pioneer shade = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_7dl('normal/ka/ka_1_body.png'), (0, 0), get_sprite_7dl('normal/ka/ka_1_pioneer.png')), im.matrix.tint(0.01, 0.01, 0.01) )
-
+#Данька
+    image dn normal pioneer shade = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_7dl('normal/dn/dn_1_pioneer.png')), im.matrix.tint(0.01, 0.01, 0.01) )
+#Электроник
+    image el pioneer shade = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/el/el_1_body.png'), (0, 0), get_sprite_ori('normal/el/el_1_pioneer.png')), im.matrix.tint(0.01, 0.01, 0.01) )
+#Шурик
+    image sh pioneer shade = im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/sh/sh_3_body.png')), im.matrix.tint(0.01, 0.01, 0.01) )
 ######## Разное ########
 # Унылка отравленная, эмоция сожаление
     image un sorrow modern poisoned = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), get_sprite_ori('normal/un/un_1_body.png'), (0, 0), get_sprite_7dl('normal/un/un_1_modern.png'), (0, 0), get_sprite_7dl('normal/un/un_1_sorrow.png')), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080),  (0, 0), get_sprite_ori('normal/un/un_1_body.png'), (0, 0), get_sprite_7dl('normal/un/un_1_modern.png'), (0, 0), get_sprite_7dl('normal/un/un_1_sorrow.png')), im.matrix.tint(0.53, 0.88, 0.72)), True, im.Composite((900, 1080),  (0, 0), get_sprite_ori('normal/un/un_1_body.png'), (0, 0), get_sprite_7dl('normal/un/un_1_modern.png'), (0, 0), get_sprite_7dl('normal/un/un_1_sorrow.png')))

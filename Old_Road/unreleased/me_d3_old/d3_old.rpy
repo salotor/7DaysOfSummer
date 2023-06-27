@@ -283,7 +283,7 @@
     pi "Мы не торопимся. {w}Мы отчаялись. {w}Ты — первый за всё это время, кто оказался хотя бы не сломанным у основания. {w}Для нас — это справедливый шанс попробовать."
     menu:
         "Поменяться":
-            $ volume(0.3, 'music')
+            $ renpy.music.set_volume(0.3, delay=2, channel='music')
             play music music_7dl["loki_on_3"]
             me "Чёрт с вами."
             "Я махнул рукой."
@@ -329,7 +329,7 @@
             show achieve_beagod with moveinright:
                 pos (1600, 1020)
             pause(7.4)
-            $ volume(1.0, 'music')
+            $ renpy.music.set_volume(1.0, delay=2, channel='music')
 
         "Отказаться":
             me "Черта с два я на такое соглашусь. {w}Править иллюзией гаснущего сознания?"
@@ -425,4 +425,7 @@
             pause(7.4)
 
     $ set_mode_adv()
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

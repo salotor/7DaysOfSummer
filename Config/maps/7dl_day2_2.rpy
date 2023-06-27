@@ -23,15 +23,13 @@
     $ set_zone_alt2('library_alt2',       'alt_day2_eventEv_library')
     $ set_zone_alt2('medic_house_alt2',   'alt_day2_eventEv_medic_house')
     $ set_zone_alt2('estrade_alt2',       'alt_day2_eventEv_estrade')
-    if lp_dv < 5:
-        $ set_chibi_alt2('estrade_alt2',      'dv')
     $ set_zone_alt2('square_alt2',        'alt_day2_eventEv_square')
     if (lp_sl >= 8) and ((counter_sl_cl == 1) or (counter_sl_7dl == 3)):
         $ set_chibi_alt2('square_alt2',       'sl')
     $ set_zone_alt2('boat_station_alt2',  'alt_day2_eventEv_boat_station')
     if not alt_day2_dv_chased:
         $ set_zone_alt2('beach_alt2',     'alt_day2_eventEv_beach')
-        if lp_dv >= 5:
+        if (alt_day2_gamblers_result['me'] == 22) and (alt_day2_dv_ultim == 1):
             $ set_chibi_alt2('beach_alt2',    'dv')
     play music music_list["smooth_machine"] fadein 2
     jump alt_day2_mapEv

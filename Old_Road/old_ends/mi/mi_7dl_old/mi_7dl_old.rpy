@@ -1,17 +1,12 @@
 ﻿label alt_day4_mi2sl_transit2:
-    stop music fadeout 3
+    $ sdl_local_vars = [sdl_var_e_d0_char]
+    call screen sdl_replay_vars(sdl_local_vars)
+    $ alt_vars_screen(sdl_local_vars)
+    $ alt_char_set(plthr)
+
     $ persistent.sprite_time = "day"
     $ day_time()
     scene bg ext_dining_hall_away_day with dissolve
-
-    menu:
-        "Герк":
-            $ herc = True
-        "Локи":
-            $ loki = True
-        "Дрищ":
-            $ dr = True
-
     "Я вышел на улицу и, обернувшись, почувствовал, как от ужаса волоски встают дыбом на загривке."
     "Я не успел среагировать."
     "Никто бы не успел."
@@ -143,7 +138,10 @@
             pos (1600, 1020)
         pause(4.4)
         with vpunch
-        jump alt_stories_start
+        if not persistent.pivo_default_7dl:
+            jump alt_stories_start
+        else:
+            return
     elif herc:
         play music "<to 52.94>" + music_7dl["herc_death"] fadein 5
         "Ты можешь быть богом, воплощением счастья или ненависти. Истинно только одно."
@@ -170,12 +168,15 @@
             pos (1600, 1020)
         pause(7.4)
         with vpunch
-        jump alt_stories_start
+        if not persistent.pivo_default_7dl:
+            jump alt_stories_start
+        else:
+            return
     elif dr:
         "Пора возвращаться домой."
         me "Я был признан негодным."
         scene black with fade
-        $ volume(0.5, 'music')
+        $ renpy.music.set_volume(0.5, delay=2, channel='music')
         scene bg intro_xx with flash
         stop ambience fadeout 2
         play sound_loop sfx_bus_interior_moving fadein 4
@@ -200,8 +201,10 @@
         show achieve_ungood with moveinright:
             pos (1600, 1020)
         pause(7.4)
-        jump alt_stories_start
-
+        if not persistent.pivo_default_7dl:
+            jump alt_stories_start
+        else:
+            return
 
 label alt_day4_beach_night_mi:
     stop ambience fadeout 2
@@ -538,4 +541,7 @@ label alt_day4_beach_night_mi:
     stop ambience fadeout 3
     stop music fadeout 3
     pause(3)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

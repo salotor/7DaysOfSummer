@@ -32,4 +32,7 @@ label alt_day4_no_start:
 
     $ noir_interface_off()
     $ noir_interface = False
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

@@ -342,4 +342,7 @@ label alt_day5_un_7dl_video_old:
     "И, похоже, отключился."
     show blinking
     $ alt_pause (2)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return

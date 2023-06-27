@@ -22,7 +22,7 @@
         pause(1)
         call alt_day6_us_7dl_px_party_un
         pause(1)
-        if persistent.us_7dl_px_good:
+        if alt_day6_us_7dl_px_sl_join:
             call alt_day6_us_7dl_px_party_sl
         else:
             call alt_day6_us_7dl_px_far_gate
@@ -129,9 +129,9 @@ label alt_day7_us_7dl_start:
     $ alt_chapter(7, u"Ульяна. 7ДЛ. Утро")
     call alt_day7_us_7dl_begin
     pause(1)
+    call alt_day7_us_7dl_breakfast
+    pause(1)
     if counter_us_7dl_px == 3:
-        call alt_day7_us_7dl_px_breakfast
-        pause(1)
         call alt_day7_us_7dl_px_escape
         pause(1)
         if alt_day6_us_7dl_px_sl_join:
@@ -159,8 +159,6 @@ label alt_day7_us_7dl_start:
         $ alt_chapter(7, u"Ульяна. 7ДЛ. Эпилог")
         call alt_day7_us_7dl_px_good
     else:
-        call alt_day7_us_7dl_breakfast
-        pause(1)
         if alt_day6_us_7dl_help:
             call alt_day7_us_7dl_photo
             pause(1)

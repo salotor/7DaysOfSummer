@@ -1,7 +1,7 @@
 label alt_day7_mi_dj_good_rf_ps_old:
     play music music_7dl["unfinished_life"] fadein 3
     scene
-    $ renpy.show("bg int_sam_house_clean_7dl", what = Noir("bg int_sam_house_clean_7dl", brightness = 0.1, tint_r = 0.2, tint_g = 0.9, tint_b = 0.7, saturation = 0.7))
+    $ renpy.show("bg int_semen_room_clean_7dl", what = Noir("bg int_semen_room_clean_7dl", brightness = 0.1, tint_r = 0.2, tint_g = 0.9, tint_b = 0.7, saturation = 0.7))
     with touch
     "Так всё оно и будет однажды."
     "Я верю в это."
@@ -42,4 +42,7 @@ label alt_day7_mi_dj_good_rf_ps_old:
     scene black
     with joff_l
     pause(3)
-    jump alt_stories_start
+    if not persistent.pivo_default_7dl:
+        jump alt_stories_start
+    else:
+        return
