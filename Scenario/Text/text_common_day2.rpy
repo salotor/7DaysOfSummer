@@ -51,7 +51,7 @@
     "On the other hand, forcing a girl with whom you are not in a relationship to clean up after yourself… Doesn't feel right."
     "Anyways, time to get up. I lowered a leg onto the floor…"
     show mt normal pioneer far with dissolve
-    extend " And immediately put it back under the covers - Olga Dmitrievna entered the room."
+    extend " And immediately put it back under the blanket - Olga Dmitrievna entered the room."
     mt "Rise and shine, Semyon!"
     mt "Overboard morning is beautiful, weather forecasters threaten us with 30 degrees during the day, so it's a sin to lie in bed for too long."
     mt "We have a very strict routine here, approved by the best specialists. Sleep for at least eight hours, fresh air and mass events - everything for you to properly gain strength!"
@@ -2008,13 +2008,13 @@ label alt_day2_event_clubs1:
                 elif 'music' in list_joined_clubs_7dl:
                     me "I have already signed up with Miku."
                 elif 'soccer' in list_joined_clubs_7dl:
-                    me "I've already signed up, and PE teacher would probably decimate me, if he ever found out that I preferred your club to football."
+                    me "I've already signed up, and gym teacher would probably decimate me, if he ever found out that I preferred your club to football."
                 elif ('volley' in list_joined_clubs_7dl) and (alt_day2_convoy == 'sl'):
-                    me "I've already signed up, and PE teacher would probably decimate me, if he ever found out that I preferred your club to volleyball. Slavya probably also wouldn't like that."
+                    me "I've already signed up, and gym teacher would probably decimate me, if he ever found out that I preferred your club to volleyball. Slavya probably also wouldn't like that."
                 elif 'volley' in list_joined_clubs_7dl:
-                    me "I've already signed up, and PE teacher would probably decimate me, if he ever found out that I preferred your club to volleyball."
+                    me "I've already signed up, and gym teacher would probably decimate me, if he ever found out that I preferred your club to volleyball."
                 elif 'badmin' in list_joined_clubs_7dl:
-                    me "I've already signed up, and PE teacher would probably decimate me, if he ever found out that I preferred your club to badminton."
+                    me "I've already signed up, and gym teacher would probably decimate me, if he ever found out that I preferred your club to badminton."
             else:
                 me "I haven't signed up anywhere yet, and I don't think I want to. {w=0.2}I'd rather take a look around camp first."
                 sh "You think?"
@@ -2161,7 +2161,7 @@ label alt_day2_event_sport_area1:
     "A little further was a volleyball court, on which some girls I didn’t know were warming up."
     "The area was dominated by the vastness of an indoor gym for everyone who wanted to run in the rain or in winter, there were brick corners of showers nearby and, of course, toilets."
     "The field was occupied by some boys from the younger squads with the ubiquitous Ulyanka at the head, a shuttlecock was elastically thrown on the court - which means they also were from younger squads."
-    "After standing for a while, looking for the PE teacher, I had to start thinking, since he definitely wasn't anywhere near my sights."
+    "After standing for a while, looking for the gym teacher, I had to start thinking, since he definitely wasn't anywhere near my sights."
     "Obviously he's not at football, game's too spontaneous."
     "Training queens in badminton? Doubt it."
     "Volleyball? Maybe, but I don't see anyone there…"
@@ -2203,7 +2203,7 @@ label alt_day2_event_sport_area1:
                 us "If I remember correctly she was at the square last time I saw her."
                 hide us with dissolve
                 "Ulyanka ran to the bushes and fished out a ball."
-                me "I'd first get a signature from PE teacher… Where is he, anyways?"
+                me "I'd first get a signature from gym teacher… Where is he, anyways?"
             sl "Let's go, uncle Borya always stays indoors."
         else:
             if alt_day1_us_shotted:
@@ -2259,7 +2259,7 @@ label alt_day2_event_sport_area1:
                     me "Redhair!"
                     show us smile sport at cleft with dspr
                     us "What?"
-            me "Where is the PE teacher, or his replacement?"
+            me "Where is the gym teacher, or his replacement?"
             show us normal sport with dspr
             us "Name, last name?"
             me "Anyone works. So where is he?"
@@ -2276,7 +2276,7 @@ label alt_day2_event_sport_area1:
         "Slavya was right!"
     else:
         "Ulyana was right!"
-    "In the far corner, squinting from the sun shining, the PE teacher was brazenly sleeping!"
+    "In the far corner, squinting from the sun shining, the gym teacher was brazenly sleeping!"
     "I re-read the checklist — Boris Alexandrovich — came closer to the sleepyhead and tugged him on his shoulder."
     $ meet('ba','Sanich')
     me "Boris Alexandrovich!"
@@ -2298,7 +2298,7 @@ label alt_day2_event_sport_area1:
     ba "Hey, pioneer. Whatchu want?"
     "He hooted."
     me "I… Here… Checklist."
-    "I handed him a piece of paper, which the PE teacher, grimacing in disgust, picked up."
+    "I handed him a piece of paper, which the gym teacher, grimacing in disgust, picked up."
     show ba em1 uniform with dspr
     ba "The hell did you bring me?"
     "He crumpled the paper and tossed it away."
@@ -2331,7 +2331,7 @@ label alt_day2_event_sport_area1:
         show sl normal pioneer  at right
         me "If you're done haggling for me…"
         "I started hinting at something."
-        "PE teacher looked at me as if it was his first time seeing me in his life."
+        "gym teacher looked at me as if it was his first time seeing me in his life."
     elif (alt_day2_convoy == 'dv'):
         ba "So that this redhead can rely on you."
         show dv smile pioneer2 at right with dspr
@@ -2751,7 +2751,7 @@ label alt_day2_event_library1:
     "There was a piece of paper in his hand."
     sh "Your task!"
     "Shurik looked at me triumphantly."
-    sh "Every session, vacationers arrange a big concert on the day of amateur performances. Write about it."
+    sh "Every shift, vacationers arrange a big concert on the day of amateur performances. Write about it."
     me "About what?"
     "Dumbfoundedly I asked again."
     sh "About self-activity! I already know a few people who are preparing, but I won't help you. Write one sheet, bring it to us and we will either issue it or rewrite it… Depending on how terrible your handwriting is… And then we'll paste it into the newspaper. That'll be our «high life» column. You got everything?"
@@ -3107,7 +3107,7 @@ label alt_day2_event_estrade:
     "And then I didn't have anywhere to go - everything was filled out with signatures."
     "Even though they were in random places."
     if not ('sport_area' in list_voyage_7dl):
-        "Instead of PE teacher's signature there was an entirely different one."
+        "Instead of gym teacher's signature there was an entirely different one."
         "But, if I ever see him, I'll probably recognize him."
         $ meet('ba','Sanich')
         "I repeated his name in my head."
@@ -5049,8 +5049,8 @@ label alt_day2_tournament:
         $ meet('el','Electronik')
         "And in the center of the whole flea market was some blond guy."
         "I saw him last supper."
-        us "Cheeser, what if I lose? I can't lose!"
-        el "First off, I'm not «Cheeser», I'm «Electronik», second, no rematches or replays."
+        us "Syroezhka, what if I lose? I can't lose!"
+        el "First off, I'm not «Syroezhka», I'm «Electronik», second, no rematches or replays."
         el "We need eight participants for the playoffs."
         hide el with dissolve
     show sh normal pioneer at fleft with dissolve
@@ -6402,7 +6402,7 @@ label alt_day2_dream:
     "I lived."
     "There were things that surprised me too."
     if ('sport_area' in list_voyage_7dl):
-        "Surprisingly bright reaction to the PE teacher's teasing - before, I would just shrug my shoulders and not waste time on this person."
+        "Surprisingly bright reaction to the gym teacher's teasing - before, I would just shrug my shoulders and not waste time on this person."
     "Some kind of completely inexplicable mischief of mine, as if pestered by an indefatigable bright-red leech."
     if alt_day2_us_escape:
         "Our «escape»."
@@ -7611,7 +7611,7 @@ label alt_day2_un_herc_date:
         show un shy pioneer with dspr
         un "You're looking so strangely now…"
         un "Like back on breakfast…"
-    un "I told you they were ugly…"
+    un "I told you they are ugly…"
     "And here the obvious fact reached my limited mind."
     "She needs a praise! Some kind of compliment…"
     th "It looks like the girl was not praised as a child."

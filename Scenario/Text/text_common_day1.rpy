@@ -101,7 +101,7 @@ label alt_day1_bus_start:
     "For some reason, there was absolutely no fear - modern man is rarely surprised at anything."
     "And here the miracles have simply already chosen a quota, so all that remained for me was to listlessly state the amazing."
     "It would be better for my psyche anyways."
-    "Noting that I was still flaunting my winter clothes—another item on a growing list of questions — I threw off my overcoat, out of place in this heat, and began to make my way to the exit.."
+    "Noting that I was still flaunting my winter clothes — another item on a growing list of questions — I threw off my overcoat, out of place in this heat, and began to make my way to the exit.."
     scene bg int_bus:
         zoom 1.0 xalign 0.5 yalign 0.4
         linear 6.0 zoom 2.0 xalign 0.5 yalign 0.4
@@ -544,7 +544,7 @@ label alt_day1_firts_met:
             scene bg ext_road_day with flash
             th "NO!"
         else:
-            "The almost conquered pain returned, and I took the hint - apparently, there is something not very useful for the psyche."
+            "The almost conquered pain returned, and I took the hint - apparently, there is something not very healthy for the psyche."
             "As from a tooth shot through with pain, I recoiled from this part of the memory."
             "Not now. {w}Not yet."
             stop ambience fadeout 1
@@ -1508,7 +1508,7 @@ label alt_day1_elektron:
         me "Oops…"
         sl "Apology accepted. Grab any bed you like."
         me "Okay."
-        sl "I'll iron out the form and put it in order, but for today use your civilian clothes, alright?"
+        sl "I'll iron out the uniform and put it in order, but for today use your civilian clothes, alright?"
         "I responded with a nod."
     show sl surprise sport at center with dspr
     sl "Oh, almost forgot!"
@@ -3091,7 +3091,7 @@ label alt_day1_slavya_saviour:
     "I studied her profile, not forgetting to work with my jaws."
     th "Dueling was forbidden by the highest edict, but the clanging of swords was heard every night - or something like that."
     "And her Gray Cardinal Majesty turned to me and at one moment destroyed the magic of the moment, puffing out her cheeks and depicting me chewing."
-    th "Oh good, another fun lover. Even though she's a bit more mature than others."
+    th "Oh good, another mocker. Even though she's a bit more mature than others."
     "I don't know why, but it warmed my soul."
     "Not an infallible golden paladin without fear and reproach, not an ideal instrument of order, but a lively, warm girl who simply liked everything to be in order and everything to work."
     if dr and (counter_sl_7dl != 1):

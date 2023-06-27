@@ -37,11 +37,11 @@ label alt_day3_begin:
     "And with Olga Dmitrievna."
     play sound sfx_knocking_door_outside
     dreamgirl "Oh yeaaah?"
-    dreamgirl "Don't you tell me then, what cities did you pass to get there? Or you are from the city named City, from the street named Street"
+    dreamgirl "Don't you tell me then, what cities did you pass to get there? Or you are from the city named City, from the street named Street."
     "And again, I am asking my inner voice to shut up."
     play sound sfx_knocking_door_outside
     "My thoughts were interrupted by an impatient knocking at the door."
-    me "What? Who's there"
+    me "What? Who's there?"
     "Those were not my words, but this hairy creature that took my chair."
     voice "Nobody. Stop playing the fool, Semyon."
     "Someone responded from other side of the door."
@@ -117,7 +117,7 @@ label alt_day3_begin:
             "in every single possible meaning of this word."
             me "Can I dress up please?"
             hide mt with dissolve
-            "Like in a far boyhood I clenched my asscheks — there was no other way to get into my shorts."
+            "Like in a far boyhood I clenched my asscheeks — there was no other way to get into my shorts."
             "Door slammed behind me, and I couldn't help but grin. Who's embarassed now, huh."
         else:
             "Instantly blushed, I covered with blanket laying nearby."
@@ -1503,7 +1503,7 @@ label alt_day3_bf_duty:
     "The kitchen itself was also shining here - apparently, the children were not allowed in. They were cleaning on their own."
     play ambience ambience_7dl["elevator"] fadein 2
     "Huge stoves crackled as they cooled, in the back room - judging by the abundance of taps, it was dishwawing room - the boilers were already drying out, and most of the workers had left."
-    "There was only that same woman-cook whose name I forgot to ask, and now it was completely embarrassing to do so."
+    "There was only that same cook whose name I forgot to ask, and now it was completely embarrassing to do so."
     us "What is this buzz?"
     "Ulyanka asked casually hiding behind my back."
     voice "That's our machine, don't mind it."
@@ -2715,7 +2715,7 @@ label alt_day3_morning_un:
     dreamgirl "Oh really? So you're sayin that you would refuse her certain offer?"
     th "Hey, hey! Let's not twist my words! I said that now the soul is more important."
     dreamgirl "Have you even noticed that both her sizes are 90, both top and bottom?"
-    dreamgirl "It’s so soulful there that it’s tearing up to the heels"
+    dreamgirl "It’s so soulful there that it’s tearing up to the heels."
     "Inner vulgar laughed vilely and fell silent."
     scene bg ext_path_day
     show un smile pioneer
@@ -6215,7 +6215,7 @@ label alt_day3_un_fz_dance:
     dreamgirl "Would you take a closer look at them, slow-witted! You see how they attract your attention?"
     dreamgirl "And dressed up in dresses. Well, just a feast for the eyes!"
     th "Do you think I look like a fan of snotty eighth graders?"
-    th "No, let them go and fool Cheeser instead."
+    th "No, let them go and fool Syroezhka instead."
     th "He would've like this."
     show ka laugh dress at right
     show al sad pioneer at center
@@ -13350,7 +13350,7 @@ label alt_day3_post_strip:
     un "But it's sad and ridiculous to panic that I don't know how I'm going to let go of my hands now and spend a few hours without you."
     un "I just don't know. I can't imagine."
     "I kissed her instead of answering."
-    th "After all, it is possible to run a marathon without unhooking my arms, after all. How much more time do I have here? Hours? Weeks?"
+    th "After all, it is possible to run a marathon without unhooking the arms, after all. How much more time do I have here? Hours? Weeks?"
     "I closed my eyes."
     "And I remember my own deals with fate, where the stakes were always something extremely important and necessary."
     "Twelve years old was my first crush. I called her a cat for her funny face and cunning eyes."
@@ -13415,7 +13415,7 @@ label alt_day3_post_strip:
     "Actually, she was supposed to be the quiet one. But something went wrong, and it turned..."
     show un laugh dress close with dspr
     "Soon the counselor's voice faded into the darkness, and Lena, laughing, burrowed into my lips in a greedy, demanding kiss."
-    "Quiet, yes. Modest."
+    "Quiet. Modest."
     "She tickled my sides with her unsophisticated manicure, just the way she wanted."
     "She dispersed all the heat reserves from my muscles with herds of goosebumps."
     "And only an inexplicably platonic crush - the same one that kept me from seducing Lena in the infirmary - allows me not to show my true attitude when the pads of someone else's fingers move over living skin."

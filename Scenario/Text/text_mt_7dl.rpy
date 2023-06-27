@@ -5367,7 +5367,7 @@ label alt_day7_mt_7dl_shard:
     "The bus stops at the gate, and a pillar of dust settles smoothly on the road."
     "The doors are about to open, and the pioneers are pouring out."
     "Not my pioneers anymore."
-    "Not my old men, to whom my young, inexperienced heart once clung."
+    "Not my old ones, to whom my young, inexperienced heart once clung."
     scene bg ext_camp_entrance_day with dissolve
     "Then it still belonged to yesterday's Olga the Comet, not the camp director, Olga Dmitrievna Mironova."
     "I close my eyes and see them all, as if they were real."

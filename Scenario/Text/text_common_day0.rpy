@@ -532,7 +532,7 @@ label alt_day0_start_h:
     "What would he do, if me-current could talk to me-child and tell him, that his most important skill will be quick legs and accurate aim?"
     "Probably he would not enter the university, no lectures, notes, funny acquaintances in the library, attempts to build his unexpected happiness."
     "I would tell him how trouble comes at the wrong time — although, when does it come at the right time…"
-    "That that the first six months after the news that mother was hit by a car should not be spent searching for the driver who fled the scene of the accident."
+    "That the first six months after the news that mother was hit by a car should not be spent searching for the driver who fled the scene of the accident."
     "That you can't trust people, because they will betray you."
     nvl clear
     "I would've armed myself with knowledge — and would not quarrel with the deputy for academic work."
@@ -547,7 +547,7 @@ label alt_day0_start_h:
     "Probably, I shouldn’t have thrown hands then, but the bullying was fresh in my memory, which in our country has a familiar name for everyone - “hazing”."
     "It couldn't have fixed my mother's situation."
     "As it did not change the fact that if it were not for the stubbornness of this 'jacket', who carried out his plan for the draft, I could take care of her myself."
-    "I wore my probation like a robe in the face of Supreme Justice, but my mother was never released from Skvortsovo-Stepanov, she faded away, looking through thick glass at the dark gray St. Petersburg's melancholy."
+    "I wore my probation like a robe in the face of Supreme Justice, but my mother was never released from Skvortsovo-Stepanov, she faded away, looking through thick glass at the dark gray melancholy of St. Petersburg."
     "Or maybe everything would've still happened, just a bit differently?"
     "My father instilled in me a strive for this Supreme Justice — and that was his only contribution to my upbringing."
     "But despite his cruelty, his betrayal, I continued to foolishly believe in conscience, in justice for all.."

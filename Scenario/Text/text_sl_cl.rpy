@@ -634,7 +634,7 @@ label alt_day4_sl_cl_shurik:
     "Once I got what I was looking for, I proceeded to disarm the dangerous device."
     play music music_7dl["areyouabully"] fadein 3
     "Damn amateur."
-    "The machinery in the hands of a savage is like a pile of scrap metal."
+    "Technology in the hands of a savage is like a pile of scrap metal."
     "After fiddling with the hatch for a while, I threw it back up and adapted the ladder to the edge."
     me "Good luck to me."
     sh "Yeah."
@@ -919,7 +919,7 @@ label alt_day4_sl_cl_laundry:
     "There were events in Tver - the separatists again deployed government agitators against the agitators themselves when they found out they were using psychogenics."
     "In Moscow the business towers burned down, the boastful robocavalry couldn't stand up to our strong-armed men, who can break all the software in security systems on their laptops, twenty years outdated, at their knees."
     "In St. Petersburg the revolution was practically bloodless, the corporations simply moved their production facilities and offices out of the city after the first person was crucified at the Alexander Column."
-    "Russia smoked and smoked at the crossroads, and the surrounding aspen trees were decorated with bluish 'snowdrops', and institutions were hurriedly introducing restored GOST standards for the machinery in use."
+    "Russia smoked and smoked at the crossroads, and the surrounding aspen trees were decorated with bluish 'snowdrops', and institutions were hurriedly introducing restored GOST standards for the hardware in use."
     "The revolution had passed its peak, that difficult moment called by someone the Pugachev limit, and now the purging of the country's territory was simply a matter of time and such pinpoint operations."
     "Russia went on living."
     "Except that I continued to be unnecessary."
@@ -1905,7 +1905,7 @@ label alt_day4_sl_cl_old_camp2:
         dreamgirl "That's right. Calm down or something will happen."
         dreamgirl "So, I explain for the particularly gifted, you take the rod from under the shield."
         dreamgirl "Then you gently lift it in your arms like a bride."
-        dreamgirl "And fix her, so that she presses the button!"
+        dreamgirl "And fix it, so that it presses the button!"
         th "And twist it yourself? Hmm. Curious technology."
         "The next ten minutes were filled with swearing, splintering, and a burning desire to quit the hell and go home."
         play sound sfx_open_metal_hatch
@@ -3275,11 +3275,11 @@ label alt_day5_sl_cl_chief:
     th "If I'm not mistaken, the clubs were supposed to be cordoned off by volunteers and no one was allowed in until..."
     "«Until» what exactly, I still haven't figured out."
     if not alt_day4_sl_cl_tut_iz:
-        th "But the bosses have to take at least some measures - they've got a fucking working vomit generator on the premises!"
+        th "But the management have to take at least some measures - they've got a fucking working vomit generator on the premises!"
         th "Or is that the norm here and in full compliance with the rules?"
         "A counter-argument immediately jumped into my head with the prudent cowardice of a twenty-first century resident."
         "Before I go around threatening and making claims to the powers that be about the local machinery, it would be a good idea to consider one curious point."
-        "The fact is that this machinery passes for a special purpose class - you don't go and buy it in a drugstore for three rubles a bundle in modern conditions - so someone at the top knows."
+        "The fact is that this hardware passes for a special purpose class - you don't go and buy it in a drugstore for three rubles a bundle in modern conditions - so someone at the top knows."
         "Although I did recall that around the same time, the editors of Young Technician and Technics of Youth were, as if in cahoots, publishing in their pages circuits of just this kind."
         "But that's a kind of elite level of clearance - the only one who would be able to assemble such a thing at home..."
         show dreamgirl_overlay with dspr
@@ -8531,7 +8531,7 @@ label alt_day6_sl_cl_sh_problems:
     th "Are you going to do it?"
     dreamgirl "No. You. But you will need..."
     th "What? A sword-cladder? A swag carpet?"
-    dreamgirl "Powers, you fool! {w}March to feed."
+    dreamgirl "Strength, you fool! {w}March to feed."
     "Sharing the considerations of the inner voice, I got consent, a cold palm, and a faithful companion."
     "And we went to the canteen."
     "At last!"
@@ -8618,7 +8618,7 @@ label alt_day6_sl_cl_breakfast:
     "She nodded at the plate."
     "Well, what was there to say?"
     me "Very."
-    "Honestly said me."
+    "I said honestly."
     me "Can I be your little brother?"
     $ renpy.show("bg int_dining_hall_day", at_list = [zenterleft], what = Noon("bg int_dining_hall_day"))
     show sl laugh pioneer at cleft
@@ -8638,7 +8638,7 @@ label alt_day6_sl_cl_ba_quest:
     play music music_list["always_ready"] fadein 3
     ba "Pioneers!"
     "Rattling down on the bench next to me, Sanich clapped me on the shoulder so that I nearly parted with the contents of my stomach."
-    "At least I wasn't chewing anything at that point."
+    "At least I wasn't chewing anything."
     ba "I've been looking all over for you!"
     th "There was no sadness..."
     "It seems my plans for a languid morning alone with a hottie can confidently be said goodbye."
@@ -8745,7 +8745,7 @@ label alt_day6_sl_cl_ba_quest:
     with blind_r
     play sound sfx_bush_leaves
     "Slavya led me down some obscure path, which, apparently, she just didn't venture into at night."
-    "Most likely some rather tangible cut known only to herself."
+    "Most likely some rather tangible cut known only to her."
     if (alt_day4_sl_cl_lf_solo in (0, 3)):
         "She didn't take us this way on our last visit."
         "And Lena didn't say a word about taking a shortcut somewhere - she didn't know."
@@ -8829,7 +8829,7 @@ label alt_day6_sl_cl_ba_quest:
     "And I wish I could really catch everything from life, but..."
     "I've touched something no one should know about."
     "I was lucky to have a pioneer in front of me, Shurik, who took the brunt of the local security systems."
-    "I was lucky that I always had a person with me, not only to lean on in case of emergency."
+    "I was lucky that I always had a person with me, not only to rely on in case of emergency."
     "But that person also demanded the same - which meant no room for slackness or weakness."
     "I didn't know what was in the mines, and I didn't want to know."
     "I didn't know what the story was with that buzzer, and I didn't care."
@@ -8898,7 +8898,7 @@ label alt_day6_sl_cl_ba_quest:
 label alt_day6_sl_cl_ba_kgb:
     scene bg ext_path_day with dissolve
     play ambience ambience_forest_day fadein 3
-    "The path «back», as is always the case, took much less time than the way «there»."
+    "The way «back», as is always the case, took much less time than the way «there»."
     "It was half past two on the clock when we reached the south gate of the camp."
     scene bg ext_admins_day_7dl at zenterleft
     "After asking the pioneers around a bit, we went to the camp director."
@@ -8912,7 +8912,7 @@ label alt_day6_sl_cl_ba_kgb:
     "The truth is that our precautions were clearly unnecessary - the chief's office was so crowded that we could have held a herd of elephants here and no one would have noticed."
     "There were three voices."
     "Sanich's whooshing bass."
-    "The cracked, dry voice of the camp commander made my throat scratch and made me want to cough."
+    "The cracked, dry voice of the camp leader made my throat scratch and made me want to cough."
     "The third voice was vaguely familiar, but no matter how hard I tried, I couldn't remember who it might belong to."
     "Slavya was giggling next to me, snuggling up against me with her hip, and that was a great distraction, too."
     "Probably wouldn't have understood anything, would have walked away empty-handed if it hadn't been for the name that came up."
@@ -8932,7 +8932,7 @@ label alt_day6_sl_cl_ba_kgb:
     if alt_day4_sl_cl_tut_iz:
         voice "You've got these kids without an algorithm climbing into the underground, and you're defending them! Stupidity must be punished."
     ba "But they didn't know anything."
-    voice "And they shouldn't know. {w}And it was your job to make sure they stayed out of the way."
+    voice "And they shouldn't know. {w}And it was your job to make sure they won't by the way."
     voice "Anyway, that's it. {w}I'm sick of it. Pack your things, I'll take you to town - you look like you've given up, old man."
     th "You're one to talk."
     "I snorted."
@@ -8962,7 +8962,7 @@ label alt_day6_sl_cl_ba_kgb:
     with dissolve
     sl "Not really. {w}Boris Alexandrovich, we've locked everything in there."
     "Reported Slavya."
-    "All that was missing was the palm of my hand attached to the visor."
+    "Yea, only salute gesture was missing."
     dreamgirl "You don't put your hand to an empty head, though."
     th "Shush."
     ba "Any trouble?"
@@ -9136,8 +9136,8 @@ label alt_day6_sl_cl_dinner:
     me "It's heavy, isn't it?"
     "I remembered how much my «VEGA» weighed."
     show sl normal pioneer with dspr
-    sl "Not really. {w}But it's machinery!"
-    sl "You boys always tell women to stay away from your machinery!"
+    sl "Not really. {w}But it's hardware!"
+    sl "You boys always tell women to stay away from your hardware!"
     dreamgirl "Look, let me marry her!"
     th "Shush."
     me "Alright."
@@ -9229,7 +9229,7 @@ label alt_day6_sl_cl_amp_list:
     mi "Hello, Senechka! How are you doing? Can you help me, because I'm getting ready for a concert?"
     "She fluttered her arms."
     mi "I don't have time - I haven't taken anything away yet, costumes haven't been ironed, phonograms haven't been put together, I'm a slob!"
-    me "Actually, I'm here on business."
+    me "Actually, I'm here with an assignment."
     show mi normal pioneer at center:
         linear 2.0
     mi "How busy you are!"
@@ -9270,7 +9270,7 @@ label alt_day6_sl_cl_amp_list:
     show mi happy pioneer blond with dissolve2
     th "Perfect, but actually wait, maybe platinum?"
     show mi happy pioneer platinum with flash
-    dreamgirl "Wo!"
+    dreamgirl "Daaamn!"
     "I've been thrown the image of a thumbs-up."
     mi "We've got to get this heavy thing over here."
     "She pointed to the xylophone, seemingly not at all aware that she had just revealed her true identity."
@@ -9289,7 +9289,7 @@ label alt_day6_sl_cl_amp_list:
     "Miku looked at me guiltily."
     mi "Please! {w}I just can't carry it myself, it weighs more than me!"
     th "And where does it say 'ride here' on me, I wonder?"
-    "I sighed, intercepting the xylophone more comfortably."
+    "I sighed, grabbing the xylophone more comfortably."
     stop ambience fadeout 2
     play sound sfx_open_door_strong
     pause(1)
@@ -9487,9 +9487,9 @@ label alt_day6_sl_cl_amp_club:
         "And it was only the board that caused me to still not see the most interesting piece of the picture."
         play music music_list["gentle_predator"] fadein 3
         scene cg d6_sl_zettai_7dl with flash
-        "From the hole leading to the main problem of the local camp, one could see someone's bare feet!"
+        "From the hole leading to the main problem of the local camp, one could see someone's bare legs!"
         "Of the most pleasant topology."
-        "And that tan is golden - without even looking up, I could already tell by the feet alone who had climbed where they shouldn't have."
+        "And that tan is golden - without even looking up, I could already tell by the legs alone who had climbed where they shouldn't have."
         "Of course, I couldn't resist - I snuck up close and..."
         play sound sfx_door_squeak_light
         sl "Semyon, I heard you! And I know what you're going to do!"
@@ -10892,7 +10892,7 @@ label alt_day6_sl_cl_ambulance:
     cs "Probably."
     "I grabbed my head."
     th "Because that means..."
-    dreamgirl "Yes, yes, the very thing Miku Bat'kovna told us - you're more Slavya now than Slavya herself."
+    dreamgirl "Yes, yes, the very thing Miku told us - you're more Slavya now than Slavya herself."
     dreamgirl "Obey!"
     "With a sigh, I got up."
     me "Thank you so much."
@@ -11017,7 +11017,7 @@ label alt_day6_sl_cl_concert:
     "I jerked my shoulders - a little, but still squared up during this week. {w}How tight my shirt is. And not so long ago it was loose."
     "Youth - all it takes to reshape your own body is a simple desire. And a little bit of activity."
     "Even just swinging a broom will be enough."
-    "Let alone things like running cross-country with one girl on your arm."
+    "Let alone things like running cross-country with one girl in your arms."
     if alt_day5_sl_cl_hentai_done:
         "And the accompanying scenes with the same girl a couple of days later."
         "A whole night long - I felt chewed up in the morning and she was chipper. {w}Now we switched roles."
@@ -11225,7 +11225,7 @@ label alt_day6_sl_cl_concert:
         me "I'm sure Slavya would understand."
         show mi upset voca with dspr
         mi "Actually, I'm in charge of the concert!"
-        mi "I'm sorry, Miku, but I'd really feel better if I supervised everything myself."
+        me "I'm sorry, Miku, but I'd really feel better if I supervised everything myself."
         show cs smile with dissolve
         cs "Well done, pioneer girl. Picked herself a cavalier to match."
         "Viola nodded and went to Olga Dmitrievna to whisper about something."
@@ -11352,7 +11352,7 @@ label alt_day6_sl_cl_sh_story:
     play ambience ambience_int_cabin_night fadein 3
     "You can't change the meeting place, meet me in hell."
     "This is where it all started."
-    "It even made me want to climb up into the attic and break the ugly machinery for a long, long time until all that was left was harmless debris."
+    "It even made me want to climb up into the attic and break the ugly contraption for a long, long time until all that was left was harmless debris."
     "Which would never take anyone else away from anyone else."
     "And I wanted to grab the jerk by the chest, shake him hard, punch him in the neck so he'd think he was inventing in the first place."
     "But there was no hate, only an echo, a faint hint, like you always get when you shake the echo in a closed jar."
@@ -11650,7 +11650,7 @@ label alt_day6_sl_cl_sh_tug:
     "{i}And met something, too.{/i}"
     nvl clear
     "{i}So it runs in the family.{/i}"
-    "{i}I couldn't think of anything cleverer, either, if you'll excuse me. But something tells me that it is useless to complain or publicize what is happening.{/i}"
+    "{i}I couldn't think of anything smarter, either, if you'll excuse me. But something tells me that it is useless to complain or publicize what is happening.{/i}"
     "{i}And I don't want any more children with a consciousness treated by a machine I've assembled, I don't want any more children walking around with such dangerous crap.{/i}"
     "{i}Hopefully, this time the camp will not be moved, but they will forget about this direction at all.{/i}"
     "{i}Semyon, don't be mad at me and take care of Slavya. She's really nice.{/i}"
@@ -13122,7 +13122,7 @@ label alt_day7_sl_cl_incident:
         me "I'm sorry. But you shouldn't have known about it yesterday, you already..."
         sl "You should have told me."
         show sl angry pioneer with dspr
-        sl "You have to talk about these things, Semyon. Do you hear me?"
+        sl "You have to talk about such things, Semyon. Do you hear me?"
         me "Do you want to be honest? {w}I'd almost forgotten it myself. I've had enough trouble without worrying about a person who's too weak to live!"
         "Slavya shook her head condemningly."
     else:
@@ -13190,7 +13190,7 @@ label alt_day7_sl_cl_incident:
         th "How?!"
         dreamgirl "Lie."
         me "Not really."
-        "I started it."
+        "I started."
         me "It's just, you know, Alexander's been having mental problems lately, you know?"
         "Wooden arms and legs, a wooden, execrable tongue, and that wretched scarf, and under it like a stone - an Adam's apple."
         me "He ran away in the tunnels - that's when it started."
@@ -13736,7 +13736,7 @@ label alt_day7_sl_cl_photo:
     "Somewhere in the infirmary Viola sat, putting her fingers on her timelessly graying temples."
     "And Slavya and I look at each other with the eyes of a battered dog."
     "But Olga wouldn't be herself if she couldn't manage her emotions:"
-    mt "Thank you all! I've got your addresses, expect a photo in the mail in September/October."
+    mt "Thank you all! I've got your addresses, expect a photo in the mail in September or October."
     show sl normal pioneer at cleft with dissolve
     sl "So why don't we have a convention? Hand out photos, and just see each other."
     sl "I'm sure no one will mind."

@@ -1538,7 +1538,7 @@ label alt_day4_mi_7dl_ch6:
     "But it wasn't like he gave up."
     sak "You dispose of a future to which you have no rights. But you do have responsibilities."
     show mt normal pioneer with dspr
-    mt "As long as this child is in my custody, I am responsible for his future as well."
+    mt "As long as this child is in my custody, I am responsible for her future as well."
     mt "When you bring me all the documents, we'll talk, but in the meantime..."
     "She looked at her watch:"
     mt "Parents' Day ends in two and a half hours - I'll ask you to vacate our camp grounds by then."
@@ -1671,7 +1671,7 @@ label alt_day4_mi_7dl_ch6:
             mi "Are you so fed up with me that you can't wait to get rid of me?"
             "I immediately objected."
             me "Not at all!"
-            mi "Just worried about your future."
+            me "Just worried about your future."
             show mi happy pioneer with dspr
             mi "How thoughtful you are."
         "He probably got offended" if loki:
@@ -2408,7 +2408,7 @@ label alt_day4_mi_7dl_ch81:
     "She must have a clean conscience."
     "Very clean."
     scene bg ext_house_of_un_night_7dl with dissolve
-    "I reached Lena and Miku's cabin, which was the closest, but I was almost alive with fatigue."
+    "I reached Lena and Miku's cabin, which was the closest, but I was barely alive because of fatigue."
     "If I had any plans for the night and the stars and youth, it was..."
     "To hell with it. I'm tired as a cat and I plan to get some sleep."
     "And woe to whoever gets in my way."
@@ -3170,12 +3170,12 @@ label alt_day5_mi_7dl_morning:
             "There's a complete fascination in her gaze in which there is and will be no room for anything else."
             "She's made up her mind, so it's up to others to accept that they'll always be present on a residual basis..."
             "Or self-effacing."
-            "And with that outlook, she will inevitably succeed-because she won't stop and she won't give up."
+            "And with that outlook, she will inevitably succeed - because she won't stop and she won't give up."
             "Have I ever seen a look like that in the mirror?"
             "Or is there really a lack of passionarity?"
             mi "Thank you."
             "I was burned with instant envy - nothing I could ever boast of like that."
-            "I can almost see the expression of my own eyes at the bottom of her pupils-the perfect conversation-mirror."
+            "I can almost see the expression of my own eyes at the bottom of her pupils - the perfect conversation - mirror."
             "What can I see there?"
             "A pale, colorless, wavering figure?"
             "Not my present appearance, but that fellow of little more than thirty, stubble, bags under his eyes, a mop of unshaven hair..."
@@ -4703,7 +4703,7 @@ label alt_day5_mi_7dl_potato:
     "Point 1: All work must be done in good conscience, so that no one will be forced to redo it later."
     "Point 2: Any work must be done responsibly, so that they don't think the task is too unimportant."
     "And point 3: any work should be done with feeling, with thought, with the arrangement - so that it takes the maximum allowable time. So it doesn't have to be overdone when it's done."
-    "Judging by the fact that the faces around me had already become familiar, everyone here had learned the 'Tao of the Sloth' - both Dan'ka from the second troop, and Lilka from the third..."
+    "Judging by the fact that the faces around me had already become familiar, everyone here had learned the 'Tao of the Sloth' - both Dan'ka from the second squad, and Lilka from the third..."
     "There were a few other kids from the younger squads - I didn't know them."
     "And there was a little girl among them."
     "At first I thought she was just here to see what we were up to. But no."
@@ -4788,7 +4788,7 @@ label alt_day5_mi_7dl_potato:
     "I didn't know what to say anymore. I think that was it. That's it?"
     "Angry at myself, I took the empty bag from her - Olga Dmitrievna's orders had to be carried out after all."
     "The hungry pioneers would crucify me if they had this bonfire without the obligatory component."
-    unp "Let me I help?"
+    unp "Let me help?"
     "The girl squatted down beside me and to the best of her ability began to help."
     "She didn't seem to have dealt with potatoes until now - the 'eyeballed' tubers flew into the pouch, big, rotten..."
     "No wonder it took her so long to dig in."
@@ -4820,7 +4820,7 @@ label alt_day5_mi_7dl_potato:
     "Stupid potatoes, stupid assignment."
     "But I was smiling anyway."
     "I must tell Miku about this!"
-    "All that's left is to dig up the actual Japanese girl."
+    "All that's left is to dig up the Japanese girl."
     stop music fadeout 3
     stop ambience fadeout 6
     with fade
@@ -5006,7 +5006,7 @@ label alt_day5_mi_7dl_camp_cleance:
     mi "We had a full hour."
     "Miku complained to me."
     mi "We were supposed to have a bonfire just for the two of us, I've never had a bonfire for two, not even in school, not even with Dad, not with anyone."
-    me "So with no one or with a troop?"
+    me "So with no one or with a squad?"
     "I couldn't help myself."
     mi "Come on."
     "Tapping my shoulder with her head, Miku pulled away."
@@ -8135,7 +8135,7 @@ label alt_day6_mi_7dl_human_day:
     mi "Sen, what are you doing?"
     "I waved it off."
     me "Don't mind me. You should be getting ready, writing albums, and here I am with my negative thinking and selfish pretensions."
-    me "Sorry. {w}I totally ruined your last hours before I left."
+    me "Sorry. {w}I totally ruined your last hours before departure."
     scene bg ext_camp_entrance_day
     show mi normal pioneer
     with dissolve
@@ -8156,7 +8156,7 @@ label alt_day6_mi_7dl_human_day:
     "Of all the feelings I felt for Miku, perhaps the strongest was sympathy."
     "But the honorable second place was suddenly occupied by something I'd almost given up feeling."
     "Respect."
-    th "I see you as a Man, Miku."
+    th "I see you as a Human, Miku."
     th "Not an empty-eyed anime puppet."
     th "And that's why you have to live your own life, your own life."
     th "Not what others expect of you."
@@ -8189,10 +8189,10 @@ label alt_day6_mi_7dl_human_day:
     mi "You see... All my life I've been going with the flow, all my life I've been looking for salvation in something that gives itself, floats in my hands."
     mi "I was bullied at school - I followed my father into another school. I never had the anger I needed to hit an abuser."
     mi "Much later I realized that all the people, all the people around me - they are not my friends at all, they don't have to be with me 'Nice&Kind,' as our English teacher puts it."
-    mi "Don't ask me how the panicked fear of hurting another got along in me - with a holy respect for the right of anyone to be a creep and a bastard of the last. {w}Somehow we got along."
+    mi "Don’t ask me how my fear of hurting others got along with my respect for one’s rights to act like a creep or an utter bastard. Somehow, these two got along."
     mi "Then music."
     mi "Then UNICEF's special school - my former classmate Megurine came there with me, she turned out to be a nice girl."
-    mi "The other guys were great, too - but I had already learned to hesitate when 'it's too good.'"
+    mi "The other guys were great, too - but I had already learned to doubt when 'it's too good.'"
     show mi upset pioneer with dspr
     mi "Especially since it kept falling into my hands without any effort on my part."
     mi "And then you showed up. And started asking the questions that I kept asking myself - will I be a slave all my life? Am I going to breathe and love and live by someone else's orders? I don't want to."
@@ -8575,7 +8575,7 @@ label alt_day6_mi_7dl_discoteque:
         "Still, before we had all these... displays of affection between us... it was a little easier."
         show mi normal pioneer with dspr
         mi "If you have a deal, that's okay, I'm not your wife..."
-        mi "Stop talking nonsense."
+        me "Stop talking nonsense."
         "I asked."
         "I suddenly had an interesting idea."
         me "Listen, you don't have to dance. Why don't we go for a walk?"
@@ -9265,7 +9265,7 @@ label alt_day7_mi_7dl_packing:
         show mi serious pioneer with dspr
         mi "Senya, he..."
         "Miku took the most serious look and even started to explain something, but I interrupted her:"
-        mi "Okay, I won't sing. {w}I'll tell it like it is."
+        me "Okay, I won't sing. {w}I'll tell it like it is."
         show mi shy pioneer with dspr
         mi "Oh..."
         me "Long story short, I slept in a tree house."
@@ -9370,7 +9370,7 @@ label alt_day7_mi_7dl_packing:
         "She giggled again."
         mi "Mighty Semyon is struck down by flying rags."
         with fade
-        "Apparently, after pulling out all the essentials, the Japanese woman nodded contentedly and slammed the door-so much so that the windows shook."
+        "Apparently, after pulling out all the essentials, the Japanese woman nodded contentedly and slammed the door - so much so that the windows shook."
         me "Look! Does it have to be like this - all with all the ramming and the psychos?"
         show mi laugh pioneer with dspr
         mi "Wow, what a gentle nature."
@@ -9449,7 +9449,7 @@ label alt_day7_mi_7dl_packing:
         mi "I'm used to everything being clean, sterile, and well-kept in my home country."
         mi "So I just fell in without looking."
         mi "And there's tar. Gross!"
-        mi "why are you giggling?! {w}It doesn't come off or come off at all!"
+        mi "Why are you giggling?! {w}It doesn't come off or come off at all!"
         mi "Especially because it's like a plush, soft, soft material - I was trying to get one spot off, and I got all the others dirty."
         show mi smile casual with dspr
         "Crumpling the suit, Miku tucked it deeper into her suitcase and waved her hand for me to help."
@@ -10207,7 +10207,7 @@ label alt_day7_mi_7dl_bad_human:
     ml "How old are you?"
     ml2 "...forty-two."
     "Calmly answered the little man. And I suddenly realized that he wasn't young at all - good genetics kept his skin firm, but you could already make out the almost invisible gray hair and the wrinkles in his eyes."
-    ml2 "I have two children, my eldest is going to get a granddaughter in February."
+    ml2 "I have two children, my eldest is going to give me a granddaughter in February."
     me "And you... You're just going to go off in the middle of nowhere? From them?"
     ml2 "Not just like that."
     "Seriously, the little guy replied."
